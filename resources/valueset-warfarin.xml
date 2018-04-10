@@ -1,0 +1,126 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="warfarin"/>
+   <status value="draft"/>
+   <date value="2018-04-06"/>
+   <compose>
+      <include>
+         <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+         <concept>
+            <code value="855350"/>
+            <display value="Warfarin Sodium 0.5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855288"/>
+            <display value="Warfarin Sodium 1 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855296"/>
+            <display value="Warfarin Sodium 10 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855302"/>
+            <display value="Warfarin Sodium 2 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855308"/>
+            <display value="Warfarin Sodium 2 MG/ML Injectable Solution"/>
+         </concept>
+         <concept>
+            <code value="855312"/>
+            <display value="Warfarin Sodium 2.5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855318"/>
+            <display value="Warfarin Sodium 3 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855324"/>
+            <display value="Warfarin Sodium 4 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855332"/>
+            <display value="Warfarin Sodium 5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855338"/>
+            <display value="Warfarin Sodium 6 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855344"/>
+            <display value="Warfarin Sodium 7.5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855290"/>
+            <display value="Coumadin 1 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855298"/>
+            <display value="Coumadin 10 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855304"/>
+            <display value="Coumadin 2 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855314"/>
+            <display value="Coumadin 2.5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855320"/>
+            <display value="Coumadin 3 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855326"/>
+            <display value="Coumadin 4 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855334"/>
+            <display value="Coumadin 5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855340"/>
+            <display value="Coumadin 6 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855346"/>
+            <display value="Coumadin 7.5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855292"/>
+            <display value="Jantoven 1 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855300"/>
+            <display value="Jantoven 10 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855306"/>
+            <display value="Jantoven 2 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855316"/>
+            <display value="Jantoven 2.5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855322"/>
+            <display value="Jantoven 3 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855328"/>
+            <display value="Jantoven 4 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855336"/>
+            <display value="Jantoven 5 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855342"/>
+            <display value="Jantoven 6 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="855348"/>
+            <display value="Jantoven 7.5 MG Oral Tablet"/>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

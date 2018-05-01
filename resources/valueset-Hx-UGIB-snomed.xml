@@ -4,7 +4,7 @@
    <date value="2018-04-09"/>
    <compose>
       <include>
-         <system value=" http://snomed.info/sct"/>
+         <system value="http://snomed.info/sct"/>
          <concept>
             <code value="12847006"/>
             <display value="Acute duodenal ulcer with hemorrhage"/>

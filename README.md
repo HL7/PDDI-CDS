@@ -13,3 +13,6 @@ Richard Boyce boycerd@upmc.edu
 
 Guilherme Del Fiol guilherme.delfiol@utah.edu
 
+## Local Build
+    java -jar "org.hl7.fhir.igpublisher.jar" -ig ig.json
+

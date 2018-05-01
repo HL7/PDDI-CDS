@@ -1,7 +1,7 @@
 {
   "tool" : "jekyll",
   "paths": {
-    "resources": ["resources", "examples"],
+    "resources": ["resources"],
     "pages": "pages",
     "temp": "temp",
     "output": "output",
@@ -26,7 +26,7 @@
     "mappings"
   ],
   "canonicalBase": "http://hl7.org/fhir/ig/PDDI-CDS",
-  "source": "",
+  "source": "pddi-cds.xml",
   "spreadsheets": [
   ],
   "resources": {

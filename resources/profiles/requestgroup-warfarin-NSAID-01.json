@@ -1,0 +1,54 @@
+{
+  "resourceType" : "RequestGroup",
+  "identifier" : [{ Identifier }],
+  "definition" : [{ Reference(Any) }],
+  "basedOn" : [{ Reference(Any) }],
+  "replaces" : [{ Reference(Any) }],
+  "groupIdentifier" : { Identifier },
+  "status" : "<code>",
+  "intent" : "<code>",
+  "priority" : "<code>", // routine | urgent | asap | stat
+  "subject" : { Reference(Patient|Group) },
+  "context" : { Reference(Encounter|EpisodeOfCare) },
+  "authoredOn" : "<dateTime>",
+  "author" : { Reference(Device|Practitioner) },
+  "reasonCodeableConcept" : { CodeableConcept },
+  "reasonReference" : { Reference(Any) },
+  "note" : [{ Annotation }],
+  "action" : [{
+    "label" : "<string>",
+    "title" : "<string>",
+    "description" : "<string>",
+    "textEquivalent" : "<string>",
+    "code" : [{ CodeableConcept }],
+    "documentation" : [{ RelatedArtifact }],
+    "condition" : [{
+      "kind" : "<code>",
+      "description" : "<string>",
+      "language" : "<string>",
+      "expression" : "<string>"
+    }],
+    "relatedAction" : [{ // Relationship to another action
+      "actionId" : "<id>", // R!  What action this is related to
+      "relationship" : "<code>", // R!  before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end
+      // offset[x]: Time offset for the relationship. One of these 2:
+      "offsetDuration" : { Duration }
+      "offsetRange" : { Range }
+    }],
+    // timing[x]: When the action should take place. One of these 5:
+    "timingDateTime" : "<dateTime>",
+    "timingPeriod" : { Period },
+    "timingDuration" : { Duration },
+    "timingRange" : { Range },
+    "timingTiming" : { Timing },
+    "participant" : [{ Reference(Patient|Person|Practitioner|RelatedPerson) }],
+    "type" : { Coding }, // create | update | remove | fire-event
+    "groupingBehavior" : "<code>", // visual-group | logical-group | sentence-group
+    "selectionBehavior" : "<code>", // any | all | all-or-none | exactly-one | at-most-one | one-or-more
+    "requiredBehavior" : "<code>", // must | could | must-unless-documented
+    "precheckBehavior" : "<code>", // yes | no
+    "cardinalityBehavior" : "<code>", // single | multiple
+    "resource" : { Reference(Any) }, // C? The target of the action
+    "action" : [{ Content as for RequestGroup.action }] // C? Sub action
+  }]
+}

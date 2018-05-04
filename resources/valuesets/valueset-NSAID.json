@@ -1,0 +1,2072 @@
+{
+  "resourceType" : "ValueSet",
+  "id": "NSAID",
+  "url" : "http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/NSAID",
+  "identifier" : [
+    {
+      "system": "https://mor.nlm.nih.gov/RxMix/",
+      "value": "Needed"
+    }
+  ],
+  "version" : "1.0",
+  "name" : "valueset-NSAIDs",
+  "title" : "RxCUIs and Names for Systemic NSAIDs",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2018-04-13",
+  "publisher" : "PDDI-CDS",
+  "contact" : [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "rdb20@pitt.edu"
+        }
+      ]
+    }
+  ],
+  "description" : "<WFE><filteredOutputs>RXCUI|name</filteredOutputs><input>n0000175722</input><FS><service>NOINPUT</service><function>getClassMembers</function><level>0</level><paramSize>5</paramSize><param order ='0'>?</param><param order ='1'>DAILYMED</param><param order ='2'>has_EPC</param><param order ='3'>0</param><param order ='4'>IN,MIN,PIN</param></FS><FS><service>NOINPUT</service><function>getRelatedByType</function><level>1</level><paramSize>2</paramSize><param order ='0'>?</param><param order ='1'>BPCK,GPCK,SBD,SCD</param></FS></WFE>",
+  "purpose" : "This valueset is defined for CDS to identify systemic NSAIDs",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept" : [
+          {
+            "display": "{30 (Aspirin 81 MG Oral Tablet) / 30 (Pravastatin Sodium 40 MG Oral Tablet) } Pack",
+            "code": "904668"
+          },
+          {
+            "display": "{30 (Aspirin 325 MG Oral Tablet) / 30 (Pravastatin Sodium 80 MG Oral Tablet) } Pack",
+            "code": "904664"
+          },
+          {
+            "display": "{12 (Aspirin 325 MG / Dextromethorphan Hydrobromide 10 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) / 8 (Aspirin 500 MG / Dextromethorphan Hydrobromide 10 MG / doxylamine succinate 6.25 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) } Pack",
+            "code": "1730187"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Arthriten Max]",
+            "code": "1944113"
+          },
+          {
+            "display": "Aspirin 325 MG Delayed Release Oral Tablet [Ecpirin]",
+            "code": "1001476"
+          },
+          {
+            "display": "Aspirin 500 MG Oral Tablet [Migralex]",
+            "code": "1039499"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Pamprin Max Formula]",
+            "code": "1052416"
+          },
+          {
+            "display": "Aspirin 845 MG / Caffeine 65 MG Oral Powder [Stanback Headache Powder Reformulated Jan 2011]",
+            "code": "1053327"
+          },
+          {
+            "display": "Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1985 MG Granules for Oral Solution [Alka-Seltzer]",
+            "code": "1872088"
+          },
+          {
+            "display": "Aspirin 325 MG Delayed Release Oral Tablet [Ecotrin]",
+            "code": "212086"
+          },
+          {
+            "display": "Aspirin 500 MG Oral Tablet [Ascriptin]",
+            "code": "830525"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Tablet [Ascriptin]",
+            "code": "830530"
+          },
+          {
+            "display": "Aspirin 228 MG Chewing Gum [Aspergum]",
+            "code": "853501"
+          },
+          {
+            "display": "Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1916 MG Effervescent Oral Tablet [Alka-Seltzer]",
+            "code": "1536680"
+          },
+          {
+            "display": "Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1985 MG Effervescent Oral Tablet [Alka-Seltzer]",
+            "code": "1536835"
+          },
+          {
+            "display": "Aspirin 500 MG Delayed Release Oral Tablet [Ecotrin]",
+            "code": "1189776"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Ecotrin]",
+            "code": "1189781"
+          },
+          {
+            "display": "Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1700 MG Effervescent Oral Tablet [Alka-Seltzer]",
+            "code": "1925790"
+          },
+          {
+            "display": "Aspirin 400 MG / Caffeine 32 MG Oral Tablet [Anacin]",
+            "code": "211292"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Tablet [Bayer Aspirin]",
+            "code": "211874"
+          },
+          {
+            "display": "Aspirin 500 MG Oral Tablet [Bayer Aspirin]",
+            "code": "211887"
+          },
+          {
+            "display": "Aspirin 650 MG Oral Tablet [Bayer Aspirin]",
+            "code": "211902"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Tablet [Bufferin]",
+            "code": "260847"
+          },
+          {
+            "display": "Aspirin 325 MG Delayed Release Oral Tablet [Bayer Aspirin]",
+            "code": "387090"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 32 MG Oral Tablet [Anacin]",
+            "code": "608696"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Bayer Aspirin]",
+            "code": "794229"
+          },
+          {
+            "display": "Aspirin 81 MG Chewable Tablet [Bayer Aspirin]",
+            "code": "825180"
+          },
+          {
+            "display": "Aspirin 81 MG Oral Tablet [Bayer Aspirin]",
+            "code": "825181"
+          },
+          {
+            "display": "Aspirin 500 MG Oral Tablet [Bufferin]",
+            "code": "848166"
+          },
+          {
+            "display": "Aspirin 81 MG Oral Tablet [Bufferin]",
+            "code": "979118"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Bufferin]",
+            "code": "1592700"
+          },
+          {
+            "display": "Aspirin 500 MG Delayed Release Oral Tablet [Bayer Aspirin]",
+            "code": "1792832"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+            "code": "1293665"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Excedrin]",
+            "code": "209468"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Halfprin]",
+            "code": "211835"
+          },
+          {
+            "display": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine Phosphate 30 MG Oral Capsule [Fiorinal with Codeine]",
+            "code": "994277"
+          },
+          {
+            "display": "Aspirin 400 MG / Caffeine 32 MG Oral Tablet [P-A-C Analgesic]",
+            "code": "211297"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Tablet [Norwich Aspirin]",
+            "code": "211881"
+          },
+          {
+            "display": "Aspirin 500 MG Oral Tablet [Norwich Aspirin]",
+            "code": "211891"
+          },
+          {
+            "display": "Acetaminophen 115 MG / Aspirin 210 MG / Caffeine 16 MG / salicylamide 65 MG Oral Tablet [Saleto]",
+            "code": "210864"
+          },
+          {
+            "display": "Aspirin 81 MG Chewable Tablet [St. Joseph Aspirin]",
+            "code": "211832"
+          },
+          {
+            "display": "Acetaminophen 160 MG / Aspirin 230 MG / Caffeine 33 MG Oral Tablet [Supac]",
+            "code": "213290"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [St. Joseph Aspirin]",
+            "code": "749795"
+          },
+          {
+            "display": "Aspirin 325 MG / Carisoprodol 200 MG / Codeine Phosphate 16 MG Oral Tablet [Soma Compound with Codeine]",
+            "code": "994228"
+          },
+          {
+            "display": "Aspirin 356.4 MG / Caffeine 30 MG / dihydrocodeine bitartrate 16 MG Oral Capsule [Synalgos-DC]",
+            "code": "1234976"
+          },
+          {
+            "display": "Acetaminophen 194 MG / Aspirin 227 MG / Caffeine 33 MG Oral Tablet [Vanquish]",
+            "code": "1101754"
+          },
+          {
+            "display": "Aspirin 325 MG / Meprobamate 200 MG Oral Tablet [Equagesic]",
+            "code": "209823"
+          },
+          {
+            "display": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Capsule [Fiorinal]",
+            "code": "211310"
+          },
+          {
+            "display": "12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release Oral Capsule [Aggrenox]",
+            "code": "1362082"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet [Alka-Seltzer Morning Relief]",
+            "code": "1536818"
+          },
+          {
+            "display": "Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent Oral Tablet [Alka-Seltzer PM]",
+            "code": "1536673"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet [Bayer Back and Body Pain]",
+            "code": "702320"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet [Excedrin Back & Body]",
+            "code": "723530"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Anacin Advanced Headache Formula]",
+            "code": "723533"
+          },
+          {
+            "display": "Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]",
+            "code": "724444"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Goody's Extra Strength]",
+            "code": "209470"
+          },
+          {
+            "display": "Aspirin 81 MG Disintegrating Oral Tablet [Fasprin]",
+            "code": "747236"
+          },
+          {
+            "display": "Acetaminophen 325 MG / Aspirin 500 MG Oral Powder [Goody's Body Pain]",
+            "code": "763115"
+          },
+          {
+            "display": "Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG Oral Powder [Goody's Extra Strength]",
+            "code": "1188388"
+          },
+          {
+            "display": "Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral Powder [Goody's Extra Strength]",
+            "code": "1188440"
+          },
+          {
+            "display": "Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral Powder [Stanback Headache Powder]",
+            "code": "797053"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Miniprin]",
+            "code": "1052678"
+          },
+          {
+            "display": "Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet [Endodan Reformulated May 2009]",
+            "code": "848928"
+          },
+          {
+            "display": "Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet [Percodan Reformulated May 2009]",
+            "code": "848772"
+          },
+          {
+            "display": "Aspirin 650 MG / Caffeine 33.3 MG / salicylamide 195 MG Oral Powder [BC Headache]",
+            "code": "896876"
+          },
+          {
+            "display": "Aspirin 325 MG / Caffeine 16 MG / salicylamide 95 MG Oral Tablet [BC Headache]",
+            "code": "896893"
+          },
+          {
+            "display": "Acetaminophen 110 MG / Aspirin 162 MG / Caffeine 32.4 MG / salicylamide 152 MG Oral Tablet [Exaprin]",
+            "code": "1358853"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Painaid ESF]",
+            "code": "1359083"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Backaid IPF]",
+            "code": "1361402"
+          },
+          {
+            "display": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine Phosphate 30 MG Oral Capsule [Ascomp]",
+            "code": "994239"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Goody's Migraine Relief]",
+            "code": "1423844"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Uricalm Intensive]",
+            "code": "1438297"
+          },
+          {
+            "display": "Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1916 MG Effervescent Oral Tablet [Zee-Seltzer Antacid and Pain Reliever]",
+            "code": "1551559"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine Citrate 38 MG Oral Tablet [Excedrin PM Triple Action]",
+            "code": "1593116"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet [Aspi-Cor]",
+            "code": "1600991"
+          },
+          {
+            "display": "24 HR Aspirin 162.5 MG Extended Release Oral Capsule [Durlaza]",
+            "code": "1665362"
+          },
+          {
+            "display": "Aspirin 81 MG / Calcium Carbonate 777 MG Oral Tablet [Bayer Womens]",
+            "code": "1722695"
+          },
+          {
+            "display": "Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral Tablet [Yosprala]",
+            "code": "1811916"
+          },
+          {
+            "display": "Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet [Yosprala]",
+            "code": "1811918"
+          },
+          {
+            "display": "Aspirin 500 MG / Diphenhydramine Citrate 38.3 MG Oral Tablet [Bayer Aspirin PM Reformulated Nov 2011]",
+            "code": "1250909"
+          },
+          {
+            "display": "Aspirin 1000 MG / Caffeine 65 MG Oral Powder [BC Arthritis]",
+            "code": "1247397"
+          },
+          {
+            "display": "Aspirin 845 MG / Caffeine 65 MG Oral Powder [BC Original Formula]",
+            "code": "1247402"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Arthriten Inflammatory Pain]",
+            "code": "1303159"
+          },
+          {
+            "display": "Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1916 MG Effervescent Oral Tablet [Bromo Seltzer Antacid Pain Reliever]",
+            "code": "1537012"
+          },
+          {
+            "display": "Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1985 MG Granules for Oral Solution",
+            "code": "1872085"
+          },
+          {
+            "display": "Aspirin 150 MG Rectal Suppository",
+            "code": "103863"
+          },
+          {
+            "display": "Aspirin 75 MG Delayed Release Oral Tablet",
+            "code": "103954"
+          },
+          {
+            "display": "Aspirin 75 MG Oral Tablet",
+            "code": "104474"
+          },
+          {
+            "display": "Aspirin 75 MG Disintegrating Oral Tablet",
+            "code": "104475"
+          },
+          {
+            "display": "Aspirin 300 MG Delayed Release Oral Tablet",
+            "code": "104899"
+          },
+          {
+            "display": "Aspirin 500 MG / Glycine 133 MG Disintegrating Oral Tablet",
+            "code": "106809"
+          },
+          {
+            "display": "Aspirin 500 MG / Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+            "code": "1092398"
+          },
+          {
+            "display": "Aspirin 800 MG Extended Release Oral Tablet",
+            "code": "197374"
+          },
+          {
+            "display": "Aspirin 300 MG Rectal Suppository",
+            "code": "198464"
+          },
+          {
+            "display": "Aspirin 500 MG Oral Tablet",
+            "code": "198471"
+          },
+          {
+            "display": "Aspirin 600 MG Rectal Suppository",
+            "code": "198473"
+          },
+          {
+            "display": "Aspirin 650 MG Oral Tablet",
+            "code": "198475"
+          },
+          {
+            "display": "Aspirin 400 MG / Caffeine 32 MG Oral Tablet",
+            "code": "198479"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 32 MG Oral Tablet",
+            "code": "198480"
+          },
+          {
+            "display": "Aspirin 300 MG Oral Capsule",
+            "code": "199274"
+          },
+          {
+            "display": "Aspirin 300 MG Oral Tablet",
+            "code": "199281"
+          },
+          {
+            "display": "Aspirin 81 MG Oral Tablet",
+            "code": "243670"
+          },
+          {
+            "display": "Aspirin 650 MG Oral Powder",
+            "code": "247137"
+          },
+          {
+            "display": "Aspirin 165 MG Delayed Release Oral Tablet",
+            "code": "308403"
+          },
+          {
+            "display": "Aspirin 500 MG Delayed Release Oral Tablet",
+            "code": "308409"
+          },
+          {
+            "display": "Aspirin 500 MG / phenyltoloxamine 15 MG Oral Tablet",
+            "code": "308410"
+          },
+          {
+            "display": "Aspirin 650 MG Delayed Release Oral Tablet",
+            "code": "308411"
+          },
+          {
+            "display": "Aspirin 650 MG Extended Release Oral Tablet",
+            "code": "308412"
+          },
+          {
+            "display": "Aspirin 81 MG Delayed Release Oral Tablet",
+            "code": "308416"
+          },
+          {
+            "display": "Aspirin 975 MG Delayed Release Oral Tablet",
+            "code": "308417"
+          },
+          {
+            "display": "Aspirin 975 MG Extended Release Oral Tablet",
+            "code": "308418"
+          },
+          {
+            "display": "Aspirin 81 MG Chewable Tablet",
+            "code": "318272"
+          },
+          {
+            "display": "Aspirin 60 MG Chewable Tablet",
+            "code": "333834"
+          },
+          {
+            "display": "Aspirin 800 MG Oral Tablet",
+            "code": "349516"
+          },
+          {
+            "display": "Aspirin 975 MG Oral Tablet",
+            "code": "391930"
+          },
+          {
+            "display": "Aspirin 300 MG Chewable Tablet",
+            "code": "433353"
+          },
+          {
+            "display": "Aspirin 650 MG / Caffeine 33.3 MG / salicylamide 195 MG Oral Powder",
+            "code": "605252"
+          },
+          {
+            "display": "Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral Powder",
+            "code": "692836"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet",
+            "code": "702316"
+          },
+          {
+            "display": "Aspirin 81 MG Disintegrating Oral Tablet",
+            "code": "747211"
+          },
+          {
+            "display": "Acetaminophen 325 MG / Aspirin 500 MG Oral Powder",
+            "code": "763111"
+          },
+          {
+            "display": "Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral Powder",
+            "code": "797050"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 65 MG Oral Tablet",
+            "code": "806446"
+          },
+          {
+            "display": "Aspirin 500 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "code": "857121"
+          },
+          {
+            "display": "Aspirin 150 MG / Isosorbide Mononitrate 60 MG Extended Release Oral Tablet",
+            "code": "876666"
+          },
+          {
+            "display": "Aspirin 75 MG / Isosorbide Mononitrate 60 MG Extended Release Oral Tablet",
+            "code": "876667"
+          },
+          {
+            "display": "Aspirin 850 MG / Caffeine 65 MG Oral Powder",
+            "code": "900528"
+          },
+          {
+            "display": "Aspirin 300 MG / Codeine Phosphate 8 MG Oral Tablet",
+            "code": "996988"
+          },
+          {
+            "display": "Aspirin 81 MG Oral Strip",
+            "code": "1535484"
+          },
+          {
+            "display": "Aspirin 500 MG / Dextromethorphan Hydrobromide 10 MG / doxylamine succinate 6.25 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet",
+            "code": "1536503"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet",
+            "code": "1536815"
+          },
+          {
+            "display": "Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1985 MG Effervescent Oral Tablet",
+            "code": "1536833"
+          },
+          {
+            "display": "Aspirin 500 MG / Chlorpheniramine Maleate 2 MG / Phenylephrine bitartrate 8 MG Effervescent Oral Tablet",
+            "code": "1536993"
+          },
+          {
+            "display": "Aspirin 500 MG / Caffeine 60 MG Effervescent Oral Tablet",
+            "code": "1537019"
+          },
+          {
+            "display": "Aspirin 500 MG / Chlorpheniramine Maleate 2 MG / Dextromethorphan Hydrobromide 15 MG Effervescent Oral Tablet",
+            "code": "1537200"
+          },
+          {
+            "display": "Aspirin 81 MG / Calcium Carbonate 777 MG Oral Tablet",
+            "code": "1722689"
+          },
+          {
+            "display": "Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet",
+            "code": "1811631"
+          },
+          {
+            "display": "Aspirin 356.4 MG / Caffeine 30 MG / dihydrocodeine bitartrate 16 MG Oral Capsule",
+            "code": "1234872"
+          },
+          {
+            "display": "Aspirin 500 MG / Diphenhydramine Citrate 38.3 MG Oral Tablet",
+            "code": "1250907"
+          },
+          {
+            "display": "Aspirin 650 MG / Caffeine 60 MG Oral Powder",
+            "code": "1312718"
+          },
+          {
+            "display": "Aspirin 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet",
+            "code": "1049691"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Powder",
+            "code": "1050241"
+          },
+          {
+            "display": "Aspirin 325 MG / Carisoprodol 200 MG Oral Tablet",
+            "code": "197447"
+          },
+          {
+            "display": "Aspirin 325 MG / Meprobamate 200 MG Oral Tablet",
+            "code": "197930"
+          },
+          {
+            "display": "Aspirin 325 MG / Methocarbamol 400 MG Oral Tablet",
+            "code": "197945"
+          },
+          {
+            "display": "Aspirin 120 MG Rectal Suppository",
+            "code": "198461"
+          },
+          {
+            "display": "Aspirin 200 MG Rectal Suppository",
+            "code": "198463"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Capsule",
+            "code": "198466"
+          },
+          {
+            "display": "Aspirin 325 MG Delayed Release Oral Tablet",
+            "code": "198467"
+          },
+          {
+            "display": "Aspirin 162 MG Delayed Release Oral Tablet",
+            "code": "198477"
+          },
+          {
+            "display": "Aspirin 325 MG Oral Tablet",
+            "code": "212033"
+          },
+          {
+            "display": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Capsule",
+            "code": "238134"
+          },
+          {
+            "display": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Tablet",
+            "code": "238135"
+          },
+          {
+            "display": "Aspirin 325 MG / Caffeine 16 MG / salicylamide 95 MG Oral Tablet",
+            "code": "308363"
+          },
+          {
+            "display": "Acetaminophen 110 MG / Aspirin 162 MG / Caffeine 32.4 MG / salicylamide 152 MG Oral Tablet",
+            "code": "359221"
+          },
+          {
+            "display": "Aspirin 325 MG / Oxycodone Hydrochloride 4.5 MG / oxycodone terephthalate 0.38 MG Oral Tablet",
+            "code": "637540"
+          },
+          {
+            "display": "Aspirin 325 MG / Oxycodone Hydrochloride 2.25 MG / oxycodone terephthalate 0.19 MG Oral Tablet",
+            "code": "724614"
+          },
+          {
+            "display": "Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet",
+            "code": "848768"
+          },
+          {
+            "display": "Aspirin 325 MG / Carisoprodol 200 MG / Codeine Phosphate 16 MG Oral Tablet",
+            "code": "994226"
+          },
+          {
+            "display": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine Phosphate 30 MG Oral Capsule",
+            "code": "994237"
+          },
+          {
+            "display": "Aspirin 325 MG / Codeine Phosphate 30 MG Oral Tablet",
+            "code": "996991"
+          },
+          {
+            "display": "Aspirin 325 MG / Codeine Phosphate 60 MG Oral Tablet",
+            "code": "996994"
+          },
+          {
+            "display": "Aspirin 120 MG Chewable Tablet",
+            "code": "1433630"
+          },
+          {
+            "display": "Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1700 MG Effervescent Oral Tablet",
+            "code": "1536467"
+          },
+          {
+            "display": "Aspirin 325 MG / Dextromethorphan Hydrobromide 10 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet",
+            "code": "1536498"
+          },
+          {
+            "display": "Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent Oral Tablet",
+            "code": "1536670"
+          },
+          {
+            "display": "Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate 1916 MG Effervescent Oral Tablet",
+            "code": "1536675"
+          },
+          {
+            "display": "Aspirin 325 MG / Chlorpheniramine Maleate 2 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet",
+            "code": "1536840"
+          },
+          {
+            "display": "Aspirin 325 MG / Chlorpheniramine Maleate 2 MG / Dextromethorphan Hydrobromide 10 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet",
+            "code": "1537029"
+          },
+          {
+            "display": "Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral Tablet",
+            "code": "1811632"
+          },
+          {
+            "display": "Aspirin 325 MG / Diphenhydramine Citrate 38 MG Oral Tablet",
+            "code": "1291868"
+          },
+          {
+            "display": "Aspirin 325 MG / Caffeine 30 MG Oral Powder",
+            "code": "1312713"
+          },
+          {
+            "display": "Aspirin 421 MG / Caffeine 32 MG Oral Tablet",
+            "code": "243685"
+          },
+          {
+            "display": "Aspirin 100 MG Oral Tablet",
+            "code": "246461"
+          },
+          {
+            "display": "12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release Oral Capsule",
+            "code": "259081"
+          },
+          {
+            "display": "Aspirin 228 MG Chewing Gum",
+            "code": "853499"
+          },
+          {
+            "display": "Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG Oral Powder",
+            "code": "763116"
+          },
+          {
+            "display": "Acetaminophen 160 MG / Aspirin 230 MG / Caffeine 33 MG Oral Tablet",
+            "code": "205251"
+          },
+          {
+            "display": "Acetaminophen 115 MG / Aspirin 210 MG / Caffeine 16 MG / salicylamide 65 MG Oral Tablet",
+            "code": "308278"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet",
+            "code": "308297"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet",
+            "code": "432638"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Capsule",
+            "code": "827318"
+          },
+          {
+            "display": "Aspirin 389 MG / Caffeine 32.4 MG / Propoxyphene Hydrochloride 32 MG Oral Capsule",
+            "code": "828585"
+          },
+          {
+            "display": "Aspirin 389 MG / Caffeine 32.4 MG / Propoxyphene Hydrochloride 65 MG Oral Capsule",
+            "code": "828594"
+          },
+          {
+            "display": "Aspirin 742 MG / Caffeine 38 MG / salicylamide 222 MG Oral Powder",
+            "code": "896884"
+          },
+          {
+            "display": "Aspirin 385 MG / Caffeine 30 MG / Orphenadrine Citrate 25 MG Oral Tablet",
+            "code": "994528"
+          },
+          {
+            "display": "Aspirin 770 MG / Caffeine 60 MG / Orphenadrine Citrate 50 MG Oral Tablet",
+            "code": "994535"
+          },
+          {
+            "display": "Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine Citrate 38 MG Oral Tablet",
+            "code": "1593110"
+          },
+          {
+            "display": "Aspirin 250 MG / Chlorpheniramine Maleate 2 MG / Dextromethorphan Hydrobromide 10 MG / Phenylephrine Hydrochloride 5 MG Effervescent Oral Tablet",
+            "code": "1927026"
+          },
+          {
+            "display": "Acetaminophen 194 MG / Aspirin 227 MG / Caffeine 33 MG Oral Tablet",
+            "code": "243694"
+          },
+          {
+            "display": "Aspirin 428 MG / Caffeine 30 MG / Orphenadrine Citrate 25 MG Oral Tablet",
+            "code": "994810"
+          },
+          {
+            "display": "Aspirin 856 MG / Caffeine 60 MG / Orphenadrine Citrate 50 MG Oral Tablet",
+            "code": "994811"
+          },
+          {
+            "display": "Aspirin 1.5 MG/ML Oral Solution",
+            "code": "685589"
+          },
+          {
+            "display": "Aspirin 2.5 MG/ML Oral Solution",
+            "code": "688214"
+          },
+          {
+            "display": "Aspirin 360 MG / Caffeine 75 MG / magnesium carbonate 100 MG / Magnesium Salicylate 60 MG Oral Tablet",
+            "code": "863184"
+          },
+          {
+            "display": "Aspirin 410 MG / Caffeine 60 MG / salicylamide 30 MG Oral Tablet",
+            "code": "863186"
+          },
+          {
+            "display": "Aspirin 15600 MG Oral Tablet",
+            "code": "891134"
+          },
+          {
+            "display": "Aspirin 31200 MG Oral Tablet",
+            "code": "891136"
+          },
+          {
+            "display": "Aspirin 3900 MG Oral Tablet",
+            "code": "892160"
+          },
+          {
+            "display": "Aspirin 1 MG/MG Oral Powder",
+            "code": "900470"
+          },
+          {
+            "display": "Aspirin 1000 MG / Caffeine 65 MG Oral Powder",
+            "code": "994430"
+          },
+          {
+            "display": "Aspirin 845 MG / Caffeine 65 MG Oral Powder",
+            "code": "994435"
+          },
+          {
+            "display": "24 HR Aspirin 162.5 MG Extended Release Oral Capsule",
+            "code": "1665356"
+          },
+          {
+            "display": "Acetaminophen 200 MG / Aspirin 220 MG / Caffeine 27 MG Oral Tablet",
+            "code": "1673788"
+          },
+          {
+            "display": "celecoxib 100 MG Oral Capsule [Celebrex]",
+            "code": "213468"
+          },
+          {
+            "display": "celecoxib 200 MG Oral Capsule [Celebrex]",
+            "code": "213469"
+          },
+          {
+            "display": "celecoxib 400 MG Oral Capsule [Celebrex]",
+            "code": "352314"
+          },
+          {
+            "display": "celecoxib 50 MG Oral Capsule [Celebrex]",
+            "code": "686381"
+          },
+          {
+            "display": "celecoxib 100 MG Oral Capsule",
+            "code": "205322"
+          },
+          {
+            "display": "celecoxib 200 MG Oral Capsule",
+            "code": "205323"
+          },
+          {
+            "display": "celecoxib 400 MG Oral Capsule",
+            "code": "349514"
+          },
+          {
+            "display": "celecoxib 50 MG Oral Capsule",
+            "code": "686379"
+          },
+          {
+            "display": "24 HR Diclofenac Sodium 100 MG Extended Release Oral Tablet [Voltaren]",
+            "code": "855659"
+          },
+          {
+            "display": "Diclofenac Sodium 75 MG Delayed Release Oral Tablet [Voltaren]",
+            "code": "855928"
+          },
+          {
+            "display": "Diclofenac Potassium 50 MG Oral Tablet [Cataflam]",
+            "code": "855944"
+          },
+          {
+            "display": "Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet [Arthrotec]",
+            "code": "1359107"
+          },
+          {
+            "display": "Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet [Arthrotec]",
+            "code": "1359109"
+          },
+          {
+            "display": "Diclofenac Potassium 25 MG Oral Capsule [Zipsor]",
+            "code": "858346"
+          },
+          {
+            "display": "Diclofenac Potassium 50 MG Powder for Oral Solution [Cambia]",
+            "code": "859066"
+          },
+          {
+            "display": "Diclofenac 18 MG Oral Capsule [Zorvolex]",
+            "code": "1442122"
+          },
+          {
+            "display": "Diclofenac 35 MG Oral Capsule [Zorvolex]",
+            "code": "1442130"
+          },
+          {
+            "display": "1 ML Diclofenac Sodium 37.5 MG/ML Injection [Dyloject]",
+            "code": "1607582"
+          },
+          {
+            "display": "24 HR Diclofenac Sodium 100 MG Extended Release Oral Tablet",
+            "code": "855657"
+          },
+          {
+            "display": "Diclofenac Sodium 25 MG Delayed Release Oral Tablet",
+            "code": "855664"
+          },
+          {
+            "display": "Diclofenac Sodium 50 MG Delayed Release Oral Tablet",
+            "code": "855906"
+          },
+          {
+            "display": "Diclofenac Sodium 75 MG Delayed Release Oral Tablet",
+            "code": "855926"
+          },
+          {
+            "display": "Diclofenac Potassium 50 MG Oral Tablet",
+            "code": "855942"
+          },
+          {
+            "display": "Diclofenac Sodium 0.25 MG/ML Oral Solution",
+            "code": "857689"
+          },
+          {
+            "display": "Diclofenac Sodium 100 MG Rectal Suppository",
+            "code": "857696"
+          },
+          {
+            "display": "Diclofenac Sodium 12.5 MG Rectal Suppository",
+            "code": "857698"
+          },
+          {
+            "display": "Diclofenac Potassium 25 MG Oral Tablet",
+            "code": "857702"
+          },
+          {
+            "display": "Diclofenac Sodium 25 MG Rectal Suppository",
+            "code": "857703"
+          },
+          {
+            "display": "Diclofenac Sodium 25 MG/ML Injectable Solution",
+            "code": "857705"
+          },
+          {
+            "display": "Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet",
+            "code": "857706"
+          },
+          {
+            "display": "Diclofenac Sodium 50 MG Extended Release Oral Tablet",
+            "code": "857707"
+          },
+          {
+            "display": "Diclofenac Sodium 50 MG Rectal Suppository",
+            "code": "857709"
+          },
+          {
+            "display": "Diclofenac Sodium 75 MG Extended Release Oral Tablet",
+            "code": "857713"
+          },
+          {
+            "display": "Diclofenac Potassium 25 MG Oral Capsule",
+            "code": "858342"
+          },
+          {
+            "display": "Diclofenac Potassium 50 MG Powder for Oral Solution",
+            "code": "859063"
+          },
+          {
+            "display": "Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet",
+            "code": "1359105"
+          },
+          {
+            "display": "Diclofenac Sodium 100 MG Oral Capsule",
+            "code": "1234493"
+          },
+          {
+            "display": "Diclofenac 18 MG Oral Capsule",
+            "code": "1442116"
+          },
+          {
+            "display": "Diclofenac 35 MG Oral Capsule",
+            "code": "1442128"
+          },
+          {
+            "display": "1 ML Diclofenac Sodium 37.5 MG/ML Injection",
+            "code": "1599787"
+          },
+          {
+            "display": "Diflunisal 500 MG Oral Tablet",
+            "code": "197603"
+          },
+          {
+            "display": "Diflunisal 250 MG Oral Tablet",
+            "code": "197602"
+          },
+          {
+            "display": "Etodolac 400 MG Oral Tablet [Lodine]",
+            "code": "206812"
+          },
+          {
+            "display": "Etodolac 200 MG Oral Capsule",
+            "code": "197684"
+          },
+          {
+            "display": "Etodolac 300 MG Oral Capsule",
+            "code": "197685"
+          },
+          {
+            "display": "Etodolac 400 MG Oral Tablet",
+            "code": "197686"
+          },
+          {
+            "display": "Etodolac 500 MG Oral Tablet",
+            "code": "199390"
+          },
+          {
+            "display": "24 HR Etodolac 400 MG Extended Release Oral Tablet",
+            "code": "310245"
+          },
+          {
+            "display": "24 HR Etodolac 600 MG Extended Release Oral Tablet",
+            "code": "310247"
+          },
+          {
+            "display": "24 HR Etodolac 500 MG Extended Release Oral Tablet",
+            "code": "359500"
+          },
+          {
+            "display": "Fenoprofen 200 MG Oral Capsule [Nalfon]",
+            "code": "260323"
+          },
+          {
+            "display": "Fenoprofen 400 MG Oral Capsule [Nalfon]",
+            "code": "858118"
+          },
+          {
+            "display": "Fenoprofen 400 MG Oral Capsule [Fenortho]",
+            "code": "1799323"
+          },
+          {
+            "display": "Fenoprofen 200 MG Oral Capsule [Fenortho]",
+            "code": "1799325"
+          },
+          {
+            "display": "Fenoprofen 600 MG Oral Tablet [Profeno]",
+            "code": "1945850"
+          },
+          {
+            "display": "Fenoprofen 200 MG Oral Capsule",
+            "code": "197694"
+          },
+          {
+            "display": "Fenoprofen 300 MG Oral Capsule",
+            "code": "197695"
+          },
+          {
+            "display": "Fenoprofen 300 MG Oral Tablet",
+            "code": "250469"
+          },
+          {
+            "display": "Fenoprofen 600 MG Oral Tablet",
+            "code": "310291"
+          },
+          {
+            "display": "Fenoprofen 400 MG Oral Capsule",
+            "code": "858116"
+          },
+          {
+            "display": "Flurbiprofen 100 MG Oral Tablet [Ansaid]",
+            "code": "205626"
+          },
+          {
+            "display": "Flurbiprofen 100 MG Rectal Suppository",
+            "code": "105845"
+          },
+          {
+            "display": "Flurbiprofen 100 MG Oral Tablet",
+            "code": "197724"
+          },
+          {
+            "display": "Flurbiprofen 50 MG Oral Tablet",
+            "code": "197725"
+          },
+          {
+            "display": "Flurbiprofen 200 MG Extended Release Oral Capsule",
+            "code": "199749"
+          },
+          {
+            "display": "Flurbiprofen 8.75 MG Oral Lozenge",
+            "code": "389247"
+          },
+          {
+            "display": "{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 800 MG Oral Tablet) } Pack [IC 800 Kit]",
+            "code": "851212"
+          },
+          {
+            "display": "{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]",
+            "code": "851210"
+          },
+          {
+            "display": "{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 800 MG Oral Tablet) } Pack",
+            "code": "851211"
+          },
+          {
+            "display": "{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 400 MG Oral Tablet) } Pack",
+            "code": "851209"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet [Wal-Profen Cold and Sinus]",
+            "code": "1299089"
+          },
+          {
+            "display": "Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet [Duexis]",
+            "code": "1100070"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Counteract IB]",
+            "code": "1101919"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Advil]",
+            "code": "153008"
+          },
+          {
+            "display": "Ibuprofen 20 MG/ML Oral Suspension [Advil]",
+            "code": "206878"
+          },
+          {
+            "display": "Ibuprofen 50 MG Chewable Tablet [Advil]",
+            "code": "731529"
+          },
+          {
+            "display": "Ibuprofen 40 MG/ML Oral Suspension [Advil]",
+            "code": "731531"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Capsule [Advil]",
+            "code": "731533"
+          },
+          {
+            "display": "Ibuprofen 100 MG Oral Tablet [Advil]",
+            "code": "731535"
+          },
+          {
+            "display": "Ibuprofen 100 MG Chewable Tablet [Advil]",
+            "code": "731536"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+            "code": "201126"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Nuprin]",
+            "code": "206893"
+          },
+          {
+            "display": "Ibuprofen 20 MG/ML Oral Suspension [Motrin]",
+            "code": "544393"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Capsule [Motrin]",
+            "code": "606990"
+          },
+          {
+            "display": "Ibuprofen 100 MG Chewable Tablet [Motrin]",
+            "code": "792242"
+          },
+          {
+            "display": "Ibuprofen 100 MG Oral Tablet [Motrin]",
+            "code": "806013"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [MIdol Cramps & Bodyaches]",
+            "code": "854760"
+          },
+          {
+            "display": "Ibuprofen 40 MG/ML Oral Suspension [Motrin]",
+            "code": "854762"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Capsule [MIdol Cramps & Bodyaches]",
+            "code": "1190622"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Capsule [Advil Cold and Sinus]",
+            "code": "1299020"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet [Advil Cold and Sinus]",
+            "code": "1299022"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Genpril]",
+            "code": "206886"
+          },
+          {
+            "display": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+            "code": "206905"
+          },
+          {
+            "display": "Ibuprofen 600 MG Oral Tablet [Ibu]",
+            "code": "206913"
+          },
+          {
+            "display": "Ibuprofen 800 MG Oral Tablet [Ibu]",
+            "code": "206917"
+          },
+          {
+            "display": "Ibuprofen 40 MG/ML Oral Suspension [Pediacare Fever]",
+            "code": "206876"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG Oral Tablet [Vicoprofen]",
+            "code": "858838"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 2.5 MG / Ibuprofen 200 MG Oral Tablet [Reprexain]",
+            "code": "858772"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG Oral Tablet [Reprexain]",
+            "code": "858784"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Reprexain]",
+            "code": "859331"
+          },
+          {
+            "display": "2 ML Ibuprofen 10 MG/ML Injection [Neoprofen]",
+            "code": "637197"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Wal-Profen]",
+            "code": "643102"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Capsule [Wal-Profen]",
+            "code": "644386"
+          },
+          {
+            "display": "Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet [Advil PM]",
+            "code": "901818"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Ibuprohm]",
+            "code": "850424"
+          },
+          {
+            "display": "8 ML Ibuprofen 100 MG/ML Injection [Caldolor]",
+            "code": "854187"
+          },
+          {
+            "display": "Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet [Motrin PM]",
+            "code": "895666"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Addaprin]",
+            "code": "900434"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Ultraprin]",
+            "code": "900438"
+          },
+          {
+            "display": "Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG Oral Capsule [Advil PM Liqui Gels]",
+            "code": "902633"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet [Advil Congestion Relief]",
+            "code": "1369777"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Ibutab]",
+            "code": "1359097"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG Oral Tablet [Ibudone]",
+            "code": "858780"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Ibudone]",
+            "code": "859317"
+          },
+          {
+            "display": "Ibuprofen 20 MG/ML Oral Suspension [PediaCare Children's Pain & Fever w/ Ibuprofen]",
+            "code": "1429987"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Xylon]",
+            "code": "1542988"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet [Advil Sinus Congestion and Pain]",
+            "code": "1722333"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+            "code": "1300267"
+          },
+          {
+            "display": "Ibuprofen 800 MG Oral Tablet [Samson 8]",
+            "code": "541713"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet [Wal-Profen Congestion Relief and Pain]",
+            "code": "1940587"
+          },
+          {
+            "display": "Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet",
+            "code": "1100066"
+          },
+          {
+            "display": "Ibuprofen 20 MG/ML Oral Suspension",
+            "code": "197803"
+          },
+          {
+            "display": "Ibuprofen 600 MG Oral Tablet",
+            "code": "197806"
+          },
+          {
+            "display": "Ibuprofen 800 MG Oral Tablet",
+            "code": "197807"
+          },
+          {
+            "display": "Ibuprofen 100 MG Oral Tablet",
+            "code": "198405"
+          },
+          {
+            "display": "Ibuprofen 200 MG Extended Release Oral Capsule",
+            "code": "227159"
+          },
+          {
+            "display": "Ibuprofen 800 MG Extended Release Oral Tablet",
+            "code": "250418"
+          },
+          {
+            "display": "Ibuprofen 100 MG Chewable Tablet",
+            "code": "310963"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Capsule",
+            "code": "310964"
+          },
+          {
+            "display": "Ibuprofen 200 MG Oral Tablet",
+            "code": "310965"
+          },
+          {
+            "display": "Ibuprofen 50 MG Chewable Tablet",
+            "code": "314047"
+          },
+          {
+            "display": "Ibuprofen 300 MG Extended Release Oral Capsule",
+            "code": "380813"
+          },
+          {
+            "display": "Ibuprofen 300 MG / Pseudoephedrine 45 MG Oral Capsule",
+            "code": "401976"
+          },
+          {
+            "display": "Ibuprofen 20 MG/ML Oral Solution",
+            "code": "748641"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 2.5 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "858770"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "858778"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "858798"
+          },
+          {
+            "display": "Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "859315"
+          },
+          {
+            "display": "Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "895664"
+          },
+          {
+            "display": "Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG Oral Capsule",
+            "code": "901814"
+          },
+          {
+            "display": "Codeine Phosphate 12.5 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "997164"
+          },
+          {
+            "display": "Codeine Phosphate 12.8 MG / Ibuprofen 200 MG Oral Tablet",
+            "code": "997165"
+          },
+          {
+            "display": "Codeine Phosphate 20 MG / Ibuprofen 300 MG Extended Release Oral Tablet",
+            "code": "997280"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet",
+            "code": "1369775"
+          },
+          {
+            "display": "Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Capsule",
+            "code": "1292323"
+          },
+          {
+            "display": "Chlorpheniramine Maleate 0.2 MG/ML / Ibuprofen 20 MG/ML / Pseudoephedrine Hydrochloride 3 MG/ML Oral Suspension",
+            "code": "1297369"
+          },
+          {
+            "display": "Chlorpheniramine Maleate 2 MG / Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet",
+            "code": "1297390"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Capsule",
+            "code": "1299018"
+          },
+          {
+            "display": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet",
+            "code": "1299021"
+          },
+          {
+            "display": "Ibuprofen 20 MG/ML / Pseudoephedrine Hydrochloride 3 MG/ML Oral Suspension",
+            "code": "1310487"
+          },
+          {
+            "display": "Chlorpheniramine Maleate 4 MG / Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet",
+            "code": "1310503"
+          },
+          {
+            "display": "Ibuprofen 400 MG / Oxycodone Hydrochloride 5 MG Oral Tablet",
+            "code": "1049589"
+          },
+          {
+            "display": "Ibuprofen 400 MG Oral Tablet",
+            "code": "197805"
+          },
+          {
+            "display": "Ibuprofen 40 MG/ML Oral Suspension",
+            "code": "204442"
+          },
+          {
+            "display": "Ibuprofen 3 MG/ML Oral Suspension",
+            "code": "141993"
+          },
+          {
+            "display": "2 ML Ibuprofen 10 MG/ML Injection",
+            "code": "1747294"
+          },
+          {
+            "display": "8 ML Ibuprofen 100 MG/ML Injection",
+            "code": "854183"
+          },
+          {
+            "display": "Indomethacin 50 MG Rectal Suppository [Indocin]",
+            "code": "206969"
+          },
+          {
+            "display": "Indomethacin 5 MG/ML Oral Suspension [Indocin]",
+            "code": "206971"
+          },
+          {
+            "display": "Indomethacin 75 MG Extended Release Oral Capsule [Indocin]",
+            "code": "891867"
+          },
+          {
+            "display": "Indomethacin 20 MG Oral Capsule [Tivorbex]",
+            "code": "1491527"
+          },
+          {
+            "display": "Indomethacin 40 MG Oral Capsule [Tivorbex]",
+            "code": "1491531"
+          },
+          {
+            "display": "Indomethacin 1 MG Injection",
+            "code": "346508"
+          },
+          {
+            "display": "Indomethacin 50 MG Extended Release Oral Tablet",
+            "code": "105864"
+          },
+          {
+            "display": "Indomethacin 25 MG Extended Release Oral Tablet",
+            "code": "105866"
+          },
+          {
+            "display": "Indomethacin 25 MG Oral Capsule",
+            "code": "197817"
+          },
+          {
+            "display": "Indomethacin 50 MG Oral Capsule",
+            "code": "197818"
+          },
+          {
+            "display": "Indomethacin 50 MG Rectal Suppository",
+            "code": "197819"
+          },
+          {
+            "display": "Indomethacin 75 MG Extended Release Oral Tablet",
+            "code": "250526"
+          },
+          {
+            "display": "Indomethacin 25 MG Extended Release Oral Capsule",
+            "code": "251255"
+          },
+          {
+            "display": "Indomethacin 5 MG/ML Oral Suspension",
+            "code": "310991"
+          },
+          {
+            "display": "Indomethacin 75 MG Extended Release Oral Capsule",
+            "code": "310992"
+          },
+          {
+            "display": "Indomethacin 75 MG Oral Capsule",
+            "code": "392073"
+          },
+          {
+            "display": "Indomethacin 100 MG Rectal Suppository",
+            "code": "199549"
+          },
+          {
+            "display": "Indomethacin 20 MG Oral Capsule",
+            "code": "1490727"
+          },
+          {
+            "display": "Indomethacin 40 MG Oral Capsule",
+            "code": "1491529"
+          },
+          {
+            "display": "Ketoprofen 100 MG/ML Injectable Solution [Ketofen]",
+            "code": "1551482"
+          },
+          {
+            "display": "Ketoprofen 25 MG Oral Capsule",
+            "code": "197854"
+          },
+          {
+            "display": "Ketoprofen 50 MG Oral Capsule",
+            "code": "197855"
+          },
+          {
+            "display": "Ketoprofen 75 MG Oral Capsule",
+            "code": "197856"
+          },
+          {
+            "display": "Ketoprofen 12.5 MG Oral Tablet",
+            "code": "199169"
+          },
+          {
+            "display": "Ketoprofen 50 MG Rectal Suppository",
+            "code": "247630"
+          },
+          {
+            "display": "24 HR Ketoprofen 150 MG Extended Release Oral Capsule",
+            "code": "311230"
+          },
+          {
+            "display": "24 HR Ketoprofen 200 MG Extended Release Oral Capsule",
+            "code": "359697"
+          },
+          {
+            "display": "Ketoprofen 25 MG Oral Tablet",
+            "code": "429192"
+          },
+          {
+            "display": "Ketoprofen 150 MG Extended Release Oral Tablet",
+            "code": "431823"
+          },
+          {
+            "display": "Ketoprofen 100 MG Oral Capsule",
+            "code": "199321"
+          },
+          {
+            "display": "Ketoprofen 100 MG Rectal Suppository",
+            "code": "199553"
+          },
+          {
+            "display": "Ketoprofen 100 MG Oral Tablet",
+            "code": "249482"
+          },
+          {
+            "display": "24 HR Ketoprofen 100 MG Extended Release Oral Capsule",
+            "code": "314059"
+          },
+          {
+            "display": "Ketoprofen 50 MG/ML Injectable Solution",
+            "code": "246236"
+          },
+          {
+            "display": "Ketoprofen 100 MG/ML Injectable Solution",
+            "code": "1551477"
+          },
+          {
+            "display": "Ketorolac Tromethamine 10 MG Oral Tablet",
+            "code": "834022"
+          },
+          {
+            "display": "1 ML Ketorolac Tromethamine 15 MG/ML Injection",
+            "code": "860092"
+          },
+          {
+            "display": "Ketorolac Tromethamine 30 MG/ML Injectable Solution",
+            "code": "860096"
+          },
+          {
+            "display": "1 ML Ketorolac Tromethamine 15 MG/ML Prefilled Syringe",
+            "code": "860113"
+          },
+          {
+            "display": "1 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe",
+            "code": "860114"
+          },
+          {
+            "display": "2 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe",
+            "code": "860115"
+          },
+          {
+            "display": "2 ML Ketorolac Tromethamine 30 MG/ML Injection",
+            "code": "1665459"
+          },
+          {
+            "display": "1 ML Ketorolac Tromethamine 30 MG/ML Injection",
+            "code": "1665461"
+          },
+          {
+            "display": "1 ML Ketorolac Tromethamine 15 MG/ML Cartridge",
+            "code": "1665675"
+          },
+          {
+            "display": "1 ML Ketorolac Tromethamine 30 MG/ML Cartridge",
+            "code": "1665679"
+          },
+          {
+            "display": "2 ML Ketorolac Tromethamine 30 MG/ML Cartridge",
+            "code": "1665682"
+          },
+          {
+            "display": "Ketorolac Tromethamine 10 MG/ML Injectable Solution",
+            "code": "861846"
+          },
+          {
+            "display": "Mefenamic Acid 250 MG Oral Capsule [Ponstel]",
+            "code": "829502"
+          },
+          {
+            "display": "Mefenamic Acid 250 MG Oral Capsule",
+            "code": "829500"
+          },
+          {
+            "display": "Mefenamic Acid 500 MG Oral Tablet",
+            "code": "829613"
+          },
+          {
+            "display": "meloxicam 5 MG/ML Injectable Solution [Metacam]",
+            "code": "1086711"
+          },
+          {
+            "display": "meloxicam 0.5 MG/ML Oral Suspension [Metacam]",
+            "code": "1091879"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension [Metacam]",
+            "code": "1092195"
+          },
+          {
+            "display": "meloxicam 7.5 MG Oral Tablet [Mobic]",
+            "code": "152697"
+          },
+          {
+            "display": "meloxicam 15 MG Oral Tablet [Mobic]",
+            "code": "152698"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension [Mobic]",
+            "code": "603844"
+          },
+          {
+            "display": "meloxicam 5 MG/ML Injectable Solution [Loxicom]",
+            "code": "1364061"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension [Loxicom]",
+            "code": "1648919"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension [Meloxidyl]",
+            "code": "1439982"
+          },
+          {
+            "display": "meloxicam 5 MG/ML Injectable Solution [Ostilox]",
+            "code": "1482674"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension [Ostilox]",
+            "code": "1649014"
+          },
+          {
+            "display": "meloxicam 5 MG/ML Injectable Solution [Eloxiject]",
+            "code": "1495055"
+          },
+          {
+            "display": "meloxicam 5 MG Oral Capsule [Vivlodex]",
+            "code": "1722355"
+          },
+          {
+            "display": "meloxicam 10 MG Oral Capsule [Vivlodex]",
+            "code": "1722359"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension [EloxiOral]",
+            "code": "1788852"
+          },
+          {
+            "display": "meloxicam 5 MG/ML Injectable Solution",
+            "code": "1086707"
+          },
+          {
+            "display": "meloxicam 0.5 MG/ML Oral Suspension",
+            "code": "1091876"
+          },
+          {
+            "display": "meloxicam 7.5 MG Rectal Suppository",
+            "code": "226923"
+          },
+          {
+            "display": "meloxicam 7.5 MG Oral Tablet",
+            "code": "311486"
+          },
+          {
+            "display": "meloxicam 15 MG Rectal Suppository",
+            "code": "152694"
+          },
+          {
+            "display": "meloxicam 15 MG Oral Tablet",
+            "code": "152695"
+          },
+          {
+            "display": "meloxicam 1.5 MG/ML Oral Suspension",
+            "code": "597406"
+          },
+          {
+            "display": "meloxicam 5 MG Oral Capsule",
+            "code": "1722349"
+          },
+          {
+            "display": "meloxicam 10 MG Oral Capsule",
+            "code": "1722357"
+          },
+          {
+            "display": "nabumetone 100 MG/ML Oral Suspension",
+            "code": "105953"
+          },
+          {
+            "display": "nabumetone 500 MG Oral Tablet",
+            "code": "311892"
+          },
+          {
+            "display": "nabumetone 750 MG Oral Tablet",
+            "code": "311893"
+          },
+          {
+            "display": "nabumetone 2.5 MG/ML Oral Solution",
+            "code": "392641"
+          },
+          {
+            "display": "{7 (lansoprazole 15 MG Delayed Release Oral Capsule) / 14 (Naproxen 375 MG Oral Tablet) } Pack",
+            "code": "758486"
+          },
+          {
+            "display": "{7 (lansoprazole 15 MG Delayed Release Oral Capsule) / 14 (Naproxen 500 MG Oral Tablet) } Pack",
+            "code": "758497"
+          },
+          {
+            "display": "Naproxen sodium 275 MG Oral Tablet [Anaprox]",
+            "code": "849400"
+          },
+          {
+            "display": "Naproxen sodium 550 MG Oral Tablet [Anaprox]",
+            "code": "849438"
+          },
+          {
+            "display": "Naproxen 250 MG Oral Tablet [Naprosyn]",
+            "code": "105898"
+          },
+          {
+            "display": "Naproxen 500 MG Oral Tablet [Naprosyn]",
+            "code": "105899"
+          },
+          {
+            "display": "Naproxen 375 MG Oral Tablet [Naprosyn]",
+            "code": "105914"
+          },
+          {
+            "display": "Naproxen 25 MG/ML Oral Suspension [Naprosyn]",
+            "code": "207093"
+          },
+          {
+            "display": "Naproxen 375 MG Delayed Release Oral Tablet [Naprosyn]",
+            "code": "608793"
+          },
+          {
+            "display": "Naproxen 500 MG Delayed Release Oral Tablet [Naprosyn]",
+            "code": "835560"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Capsule [Aleve]",
+            "code": "1112233"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Tablet [Aleve]",
+            "code": "849728"
+          },
+          {
+            "display": "24 HR Naproxen 375 MG Extended Release Oral Tablet [Naprelan]",
+            "code": "1116331"
+          },
+          {
+            "display": "24 HR Naproxen 500 MG Extended Release Oral Tablet [Naprelan]",
+            "code": "1116341"
+          },
+          {
+            "display": "24 HR Naproxen 750 MG Extended Release Oral Tablet [Naprelan]",
+            "code": "1116351"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Tablet [Midol Extended Relief]",
+            "code": "849752"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Tablet [Wal-Proxen]",
+            "code": "849737"
+          },
+          {
+            "display": "Naproxen sodium 500 MG / Sumatriptan 85 MG Oral Tablet [Treximet]",
+            "code": "849452"
+          },
+          {
+            "display": "Naproxen sodium 60 MG / Sumatriptan 10 MG Oral Tablet [Treximet]",
+            "code": "1653767"
+          },
+          {
+            "display": "12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120 MG Extended Release Oral Tablet [Aleve-D]",
+            "code": "1367428"
+          },
+          {
+            "display": "12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120 MG Extended Release Oral Tablet [Sudafed Sinus & Pain]",
+            "code": "1373034"
+          },
+          {
+            "display": "Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral Tablet [Vimovo]",
+            "code": "994007"
+          },
+          {
+            "display": "Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral Tablet [Vimovo]",
+            "code": "994010"
+          },
+          {
+            "display": "12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120 MG Extended Release Oral Tablet [Aleve Sinus & Headache]",
+            "code": "1494160"
+          },
+          {
+            "display": "Diphenhydramine Hydrochloride 25 MG / Naproxen sodium 220 MG Oral Tablet [Aleve PM]",
+            "code": "1550963"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Tablet [Menstridol]",
+            "code": "1593660"
+          },
+          {
+            "display": "Naproxen 250 MG Delayed Release Oral Tablet",
+            "code": "105918"
+          },
+          {
+            "display": "24 HR Naproxen 375 MG Extended Release Oral Tablet",
+            "code": "1116320"
+          },
+          {
+            "display": "24 HR Naproxen 500 MG Extended Release Oral Tablet",
+            "code": "1116339"
+          },
+          {
+            "display": "Naproxen 375 MG Oral Tablet",
+            "code": "198012"
+          },
+          {
+            "display": "Naproxen 250 MG Oral Tablet",
+            "code": "198013"
+          },
+          {
+            "display": "Naproxen 500 MG Oral Tablet",
+            "code": "198014"
+          },
+          {
+            "display": "Naproxen 500 MG Rectal Suppository",
+            "code": "199490"
+          },
+          {
+            "display": "Naproxen 500 MG Delayed Release Oral Tablet",
+            "code": "311915"
+          },
+          {
+            "display": "Naproxen 375 MG Delayed Release Oral Tablet",
+            "code": "603103"
+          },
+          {
+            "display": "Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral Tablet",
+            "code": "994005"
+          },
+          {
+            "display": "Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral Tablet",
+            "code": "994008"
+          },
+          {
+            "display": "Naproxen 25 MG/ML Oral Suspension",
+            "code": "311913"
+          },
+          {
+            "display": "24 HR Naproxen 750 MG Extended Release Oral Tablet",
+            "code": "1116349"
+          },
+          {
+            "display": "24 HR Naproxen 1000 MG Extended Release Oral Tablet",
+            "code": "433845"
+          },
+          {
+            "display": "Naproxen 125 MG Oral Tablet",
+            "code": "245420"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Capsule",
+            "code": "1112231"
+          },
+          {
+            "display": "Naproxen sodium 275 MG Oral Tablet",
+            "code": "849398"
+          },
+          {
+            "display": "Naproxen sodium 550 MG Oral Tablet",
+            "code": "849431"
+          },
+          {
+            "display": "Naproxen sodium 500 MG / Sumatriptan 85 MG Oral Tablet",
+            "code": "849450"
+          },
+          {
+            "display": "Naproxen sodium 220 MG Oral Tablet",
+            "code": "849574"
+          },
+          {
+            "display": "12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120 MG Extended Release Oral Tablet",
+            "code": "1367426"
+          },
+          {
+            "display": "Diphenhydramine Hydrochloride 25 MG / Naproxen sodium 220 MG Oral Tablet",
+            "code": "1550957"
+          },
+          {
+            "display": "Naproxen 200 MG Oral Tablet",
+            "code": "1608797"
+          },
+          {
+            "display": "Naproxen sodium 60 MG / Sumatriptan 10 MG Oral Tablet",
+            "code": "1653765"
+          },
+          {
+            "display": "oxaprozin 600 MG Oral Tablet [Daypro]",
+            "code": "207243"
+          },
+          {
+            "display": "oxaprozin 600 MG Oral Tablet",
+            "code": "312132"
+          },
+          {
+            "display": "oxaprozin 600 MG Delayed Release Oral Capsule",
+            "code": "349188"
+          },
+          {
+            "display": "Piroxicam 10 MG Oral Capsule [Feldene]",
+            "code": "105929"
+          },
+          {
+            "display": "Piroxicam 20 MG Oral Capsule [Feldene]",
+            "code": "105930"
+          },
+          {
+            "display": "Piroxicam 10 MG Oral Capsule",
+            "code": "198107"
+          },
+          {
+            "display": "Piroxicam 10 MG Oral Tablet",
+            "code": "199559"
+          },
+          {
+            "display": "Piroxicam 10 MG Rectal Suppository",
+            "code": "247066"
+          },
+          {
+            "display": "Piroxicam 20 MG Rectal Suppository",
+            "code": "105942"
+          },
+          {
+            "display": "Piroxicam 20 MG Oral Capsule",
+            "code": "198108"
+          },
+          {
+            "display": "Piroxicam 20 MG Oral Tablet",
+            "code": "199560"
+          },
+          {
+            "display": "Piroxicam 20 MG Disintegrating Oral Tablet",
+            "code": "384786"
+          },
+          {
+            "display": "Piroxicam 20 MG/ML Injectable Solution",
+            "code": "246246"
+          },
+          {
+            "display": "Sulindac 150 MG Oral Tablet",
+            "code": "198238"
+          },
+          {
+            "display": "Sulindac 200 MG Oral Tablet",
+            "code": "198239"
+          },
+          {
+            "display": "Sulindac 100 MG Oral Tablet",
+            "code": "199279"
+          },
+          {
+            "display": "Tolmetin 200 MG Oral Tablet",
+            "code": "198295"
+          },
+          {
+            "display": "Tolmetin 400 MG Oral Capsule",
+            "code": "198296"
+          },
+          {
+            "display": "Tolmetin 600 MG Oral Tablet",
+            "code": "198297"
+          }
+
+        ]
+      }
+    ]
+  }
+}

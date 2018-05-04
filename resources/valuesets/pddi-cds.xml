@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+    <id value="pddi-cds"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ImplementationGuide/pddi-cds"/>
+    <version value="1"/>
+    <name value="potential-drug-drug-interaction-clinical-decision-support"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hl7 CDS"/>
+    <date value="2018-05-01"/>
+    <description value="Documents and code related to the CDS and Pharmacy WG sponsored implementation guide for potential drug-drug interaction clinical decision support"/>
+    <package>
+        <name value="Potential Drug-Drug Interaction Clinical Decision Support Package"/>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/aldosterone-antagonists"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/misoprostol"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/NSAID"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/warfarin"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/Hx-UGIB-snomed"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/NSAID-exclude"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="true"/>
+            <!--<name value=""/>-->
+            <!--<description value=""/>-->
+            <sourceReference>
+                <reference value="ValueSet/proton-pump-inhibitors"/>
+            </sourceReference>
+        </resource>
+    </package>
+    <page>
+        <source value="index.html"/>
+        <title value="Potential Drug-Drug Interaction Clinical Decision Support"/>
+        <kind value="page"/>
+        <format value="html"/>
+    </page>
+</ImplementationGuide>

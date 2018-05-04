@@ -3,9 +3,8 @@
 ---
 {% include header.html %}
 
+<h2>{{[title]}}</h2>
 
-<h2>Logical Models</h2>
-
-{% include table-logicals.xhtml %}
+{% include {{[type]}}-{{[name]}}.xhtml %}
 
 {% include footer.html %}

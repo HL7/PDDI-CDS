@@ -1,0 +1,106 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="Hx-UGIB-snomed"/>
+   <status value="draft"/>
+   <date value="2018-04-09"/>
+   <compose>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="12847006"/>
+            <display value="Acute duodenal ulcer with hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="86895006"/>
+            <display value="Acute duodenal ulcer with hemorrhage AND perforation"/>
+         </concept>
+         <concept>
+            <code value="89748001"/>
+            <display value="Acute gastric ulcer with hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="48974009"/>
+            <display value="Acute gastric ulcer with hemorrhage AND perforation"/>
+         </concept>
+         <concept>
+            <code value="63954007"/>
+            <display value="Acute gastrojejunal ulcer with hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="81387001"/>
+            <display value="Acute gastrojejunal ulcer with hemorrhage AND perforation"/>
+         </concept>
+         <concept>
+            <code value="2367005"/>
+            <display value="Acute hemorrhagic gastritis"/>
+         </concept>
+         <concept>
+            <code value="12274003"/>
+            <display value="Acute peptic ulcer with hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="47064007"/>
+            <display value="Acute peptic ulcer with hemorrhage AND with perforation but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="235853006"/>
+            <display value="Angiodysplasia of intestine"/>
+         </concept>
+         <concept>
+            <code value="84568007"/>
+            <display value="Atrophic gastritis"/>
+         </concept>
+         <concept>
+            <code value="81142005"/>
+            <display value="Chronic duodenal ulcer with hemorrhage AND with perforation but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="62341002"/>
+            <display value="Chronic duodenal ulcer with hemorrhage but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="74341002"/>
+            <display value="Chronic gastric ulcer with hemorrhage AND with perforation but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="76078009"/>
+            <display value="Chronic gastric ulcer with hemorrhage but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="62838000"/>
+            <display value="Chronic gastrojejunal ulcer with hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="46523000"/>
+            <display value="Chronic gastrojejunal ulcer with hemorrhage AND with perforation but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="55746001"/>
+            <display value="Chronic peptic ulcer with hemorrhage AND with perforation but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="81518000"/>
+            <display value="Chronic peptic ulcer with hemorrhage but without obstruction"/>
+         </concept>
+         <concept>
+            <code value="109558001"/>
+            <display value="Dieulafoy's vascular malformation"/>
+         </concept>
+         <concept>
+            <code value="61401005"/>
+            <display value="Gastric hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="196731005"/>
+            <display value="Gastroduodenitis"/>
+         </concept>
+         <concept>
+            <code value="74474003"/>
+            <display value="Gastrointestinal hemorrhage"/>
+         </concept>
+         <concept>
+            <code value="95531001"/>
+            <display value="Hemorrhagic duodenitis"/>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

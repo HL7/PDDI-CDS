@@ -1,0 +1,42 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="misoprostol"/>
+   <status value="draft"/>
+   <date value="2018-04-09"/>
+   <compose>
+      <include>
+         <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+         <concept>
+            <code value="857706"/>
+            <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="1359105"/>
+            <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="311727"/>
+            <display value="Misoprostol 0.1 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="317128"/>
+            <display value="Misoprostol 0.2 MG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="1359107"/>
+            <display value="Arthrotec (diclofenac sodium (enteric coated core) 50 MG / misoprostol (non-enteric coated mantle) 200 MCG) Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="1359109"/>
+            <display value="Arthrotec (diclofenac sodium (enteric coated core) 75 MG / misoprostol (non-enteric coated mantle) 200 MCG) Delayed Release Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="104098"/>
+            <display value="Cyotec 200 MCG Oral Tablet"/>
+         </concept>
+         <concept>
+            <code value="209177"/>
+            <display value="Cytotec 0.1 MG Oral Tablet"/>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

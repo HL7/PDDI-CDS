@@ -9,10 +9,13 @@ http://wiki.hl7.org/index.php?title=PDDI_CDS
 
 * Project Facilitators
 
-Richard Boyce boycerd@upmc.edu 
+Richard Boyce boycerd@upmc.edu
 
 Guilherme Del Fiol guilherme.delfiol@utah.edu
 
 ## Local Build
     java -jar "org.hl7.fhir.igpublisher.jar" -ig ig.json
 
+## ig publisher
+Execute ig.json
+Render webpage with html files in output folder    

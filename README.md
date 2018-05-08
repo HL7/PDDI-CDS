@@ -15,7 +15,12 @@ Guilherme Del Fiol guilherme.delfiol@utah.edu
 
 ## Local Build
     java -jar "org.hl7.fhir.igpublisher.jar" -ig ig.json
+    
+    
 
-## ig publisher
-Execute ig.json
-Render webpage with html files in output folder    
+## ig publisher GUI
+
+    java -jar org.hl7.fhir.igpublisher.jar
+     
+    Execute ig.json
+render webpage with html files in output folder (e.g., index.html)    

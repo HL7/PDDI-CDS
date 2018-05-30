@@ -1,1 +1,0 @@
-An extension indicating the status of an identifier. Appropriate codes include: active, inactive, issued in error, revoked, pending, or unknown

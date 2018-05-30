@@ -1,1 +1,0 @@
-An extension to support the addition of a reference to a location for the careTeam resource.

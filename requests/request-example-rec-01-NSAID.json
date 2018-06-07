@@ -1,0 +1,73 @@
+{
+  "hookInstance": "1bf95787-c6eb-42c5-aacd-405803921024",
+  "fhirServer": "http://measure.eval.kanvix.com/cqf-ruler/baseDstu3",
+  "hook": "medication-prescribe",
+  "user": "Practitioner123",
+  "context": {
+    "patientId": "Patient123",
+    "encounterId": "123",
+    "medications": [
+      {
+        "resourceType": "MedicationRequest",
+        "id": "12345",
+        "status": "draft",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "857713",
+              "display": "Diclofenac Sodium 75 MG Extended Release Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/Patient123"
+        },
+        "_authoredOn": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+              "valueString": "Today()"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text" : "Take 1 tablet twice daily as needed for pain",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": true,
+            "doseQuantity": {
+              "value": 1,
+              "unit": "TAB",
+              "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+              "code": "TAB"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start" : "2018-06-06",
+            "end" : "2019-06-06"
+          },
+          "numberOfRepeatsAllowed": 1,
+          "quantity": {
+            "value": 60,
+            "unit": "TAB",
+            "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+            "code": "TAB"
+          },
+          "expectedSupplyDuration": {
+            "value": 30,
+            "unit": "d"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,12 +1,27 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="valueset-warfarin"/>
-   <status value="draft"/>
    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin"/>
-   <name value="Warfarin Medications Value Set"/>
-   <date value="2018-04-06"/>
+   <id value="valueset-warfarin"/>
+   <version value="1.0.0"/>
+   <name value="valueset-warfarin"/>
+   <title value="Warfarin Medications Value Set"/>
+   <status value="draft"/>
+   <date value="2018-06-20"/>
+   <publisher value="PDDI CDS"/>
+   <contact value="Richard Boyce boycerd@upmc.edu"/>
+   <description value="ValueSet containing all orderable drug representations for warfarin."/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="US"/>
+         <display value="United States of America"/>
+      </coding>
+   </jurisdiction>
+   <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
+   <copyright value="HL7"/>
    <compose>
       <include>
          <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+         <version value="04-Jun-2018"/>
          <concept>
             <code value="855350"/>
             <display value="Warfarin Sodium 0.5 MG Oral Tablet"/>

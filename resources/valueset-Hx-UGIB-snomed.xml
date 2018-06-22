@@ -1,7 +1,23 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="Hx-UGIB-snomed"/>
+   <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-Hx-UGIB-snomed"/>
+   <id value="valueset-Hx-UGIB-snomed"/>
+   <version value="1.0"/>
+   <name value="valueset-Hx-UGIB-snomed"/>
+   <title value="Upper gastrointestinal bleed Value Set"/>
    <status value="draft"/>
-   <date value="2018-04-09"/>
+   <date value="2018-06-20"/>
+   <publisher value="PDDI CDS"/>
+   <contact value="Richard Boyce boycerd@upmc.edu"/>
+   <description value="ValueSet containing SNOMED-CT codes for upper gastrointestinal bleed."/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="US"/>
+         <display value="United States of America"/>
+      </coding>
+   </jurisdiction>
+   <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
+   <copyright value="HL7 - TBD"/>
    <compose>
       <include>
          <system value=" http://snomed.info/sct"/>

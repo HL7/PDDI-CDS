@@ -1,0 +1,59 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-topicaldiclofenac"/>
+    <id value="valueset-topicaldiclofenac"/>
+    <version value="1.0"/>
+    <name value="valueset-topicaldiclofenac"/>
+    <title value="Topical Diclofenac Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for 1-2% topical diclofenac (cream, gel, or solution)."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS (warfarin + NSAIDs rule) FHIR resources"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML Topical Cream [Surpass Anti-Inflammatory]"/>
+                <code value="1043483"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+                <code value="855635"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML Topical Cream"/>
+                <code value="1043479"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel"/>
+                <code value="855633"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 15 MG/ML Topical Solution [Pennsaid]"/>
+                <code value="967944"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 20 MG/ML Topical Solution [Pennsaid]"/>
+                <code value="1487076"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 15 MG/ML Topical Solution"/>
+                <code value="857700"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 20 MG/ML Topical Solution"/>
+                <code value="1487074"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

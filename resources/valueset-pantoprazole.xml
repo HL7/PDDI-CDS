@@ -1,0 +1,59 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole"/>
+    <id value="valueset-pantoprazole"/>
+    <version value="1.0"/>
+    <name value="valueset-pantoprazole"/>
+    <title value="Pantoprazole Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for pantoprazole."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="pantoprazole 40 MG Delayed Release Oral Tablet [Protonix]"/>
+                <code value="284400"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 20 MG Delayed Release Oral Tablet [Protonix]"/>
+                <code value="352125"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Oral Granules [Protonix]"/>
+                <code value="763308"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Injection [Protonix]"/>
+                <code value="885257"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Injection"/>
+                <code value="283669"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="314200"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Oral Granules"/>
+                <code value="763306"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 20 MG Delayed Release Oral Tablet"/>
+                <code value="251872"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

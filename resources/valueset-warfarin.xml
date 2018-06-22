@@ -1,14 +1,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin"/>
    <id value="valueset-warfarin"/>
-   <version value="1.0.0"/>
+   <version value="1.0"/>
    <name value="valueset-warfarin"/>
    <title value="Warfarin Medications Value Set"/>
    <status value="draft"/>
    <date value="2018-06-20"/>
    <publisher value="PDDI CDS"/>
    <contact value="Richard Boyce boycerd@upmc.edu"/>
-   <description value="ValueSet containing all orderable drug representations for warfarin."/>
+   <description value="ValueSet containing orderable drug representations for warfarin."/>
    <jurisdiction>
       <coding>
          <system value="urn:iso:std:iso:3166"/>
@@ -17,7 +17,7 @@
       </coding>
    </jurisdiction>
    <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
-   <copyright value="HL7"/>
+   <copyright value="HL7 - TBD"/>
    <compose>
       <include>
          <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>

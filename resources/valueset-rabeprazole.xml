@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole"/>
+    <id value="valueset-rabeprazole"/>
+    <version value="1.0"/>
+    <name value="valueset-rabeprazole"/>
+    <title value="Rabeprazole Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for rabeprazole."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Rabeprazole sodium 20 MG Delayed Release Oral Tablet [Aciphex]"/>
+                <code value="854870"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 5 MG Oral Granules [Aciphex]"/>
+                <code value="1437492"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG Oral Granules [Aciphex]"/>
+                <code value="1483319"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 20 MG Delayed Release Oral Tablet"/>
+                <code value="854868"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG Delayed Release Oral Tablet"/>
+                <code value="854872"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG Oral Granules"/>
+                <code value="1483318"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 5 MG Oral Granules"/>
+                <code value="1437489"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

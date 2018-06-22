@@ -1,0 +1,349 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-betamethasone"/>
+    <id value="valueset-betamethasone"/>
+    <version value="1.0"/>
+    <name value="valueset-betamethasone"/>
+    <title value="Betamethasone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for betamethasone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Cream [Betanate]"/>
+                <code value="213540"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML Topical Cream [Betaderm]"/>
+                <code value="213560"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Cream [Del-Beta]"/>
+                <code value="213541"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Lotion [Del-Beta]"/>
+                <code value="351894"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.5 MG/ML Topical Cream [Diprolene]"/>
+                <code value="848195"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.5 MG/ML Topical Lotion [Diprolene]"/>
+                <code value="848197"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.0005 MG/MG Topical Ointment [Diprolene]"/>
+                <code value="848200"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / Clotrimazole 10 MG/ML Topical
+                    Cream [Lotrisone]"/>
+                <code value="213641"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone valerate 1.2 MG/ML Topical Foam [Luxiq]"/>
+                <code value="1244636"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 3 MG/ML / Betamethasone acetate 3 MG/ML
+                    Injectable Suspension [Celestone Soluspan]"/>
+                <code value="578806"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / calcipotriene 0.05 MG/ML Topical
+                    Lotion [Taclonex]"/>
+                <code value="833463"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.0005 MG/MG / calcipotriene 0.00005 MG/MG
+                    Topical Ointment [Taclonex]"/>
+                <code value="833472"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical
+                    Spray [GentaVed]"/>
+                <code value="1426861"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML / Gentamicin 3 MG/ML Otic Solution [GentaVed]"/>
+                <code value="1549539"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clotrimazole 0.01 MG/MG /
+                    Gentamicin 0.003 MG/MG Otic Ointment [Vetromax]"/>
+                <code value="1367702"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical
+                    Spray [Gentacalm]"/>
+                <code value="1546288"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clotrimazole 0.01 MG/MG /
+                    Gentamicin 0.003 MG/MG Otic Ointment [Tri-Otic for Canines]"/>
+                <code value="1430115"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical
+                    Spray [Betagen brand of Betamethasone and Gentamicin]"/>
+                <code value="1435267"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical
+                    Spray [Gentaspray]"/>
+                <code value="1438528"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical
+                    Spray [Genone]"/>
+                <code value="1551493"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML / Gentamicin 3 MG/ML Otic Solution [Gentaotic]"/>
+                <code value="1551498"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clotrimazole 0.01 MG/MG /
+                    Gentamicin 0.003 MG/MG Otic Ointment [Malotic]"/>
+                <code value="1552573"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical
+                    Spray [Relifor]"/>
+                <code value="1595997"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clotrimazole 0.01 MG/MG /
+                    Gentamicin 0.003 MG/MG Otic Ointment [Remicin]"/>
+                <code value="1596460"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 6 MG/ML Injectable Suspension [Betavet]"/>
+                <code value="1660750"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clotrimazole 0.01 MG/MG /
+                    Gentamicin 0.003 MG/MG Otic Ointment [Otomax]"/>
+                <code value="1666758"/>
+            </concept>
+            <concept>
+                <display value="betamethasone dipropionate 0.643 MG/ML / calcipotriene 0.05
+                    MG/ML Topical Foam [Enstilar]"/>
+                <code value="1716099"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Spray [Sernivo]"/>
+                <code value="1738541"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.6 MG Oral Tablet"/>
+                <code value="308709"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.12 MG/ML Oral Solution"/>
+                <code value="670084"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clioquinol 0.03 MG/MG Topical Ointment"/>
+                <code value="106242"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG Topical Ointment"/>
+                <code value="197409"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG Ophthalmic Ointment"/>
+                <code value="249596"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Neomycin 0.005 MG/MG Ophthalmic Ointment"/>
+                <code value="250726"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Neomycin 0.005 MG/MG Topical Ointment"/>
+                <code value="250727"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 3 MG/ML Injectable Solution"/>
+                <code value="308717"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1.2 MG/ML Topical Spray"/>
+                <code value="313874"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 3 MG/ML / Betamethasone acetate 3 MG/ML
+                    Injectable Suspension"/>
+                <code value="578803"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.001 MG/MG / Clotrimazole 0.01 MG/MG /
+                    Gentamicin 0.003 MG/MG Otic Ointment"/>
+                <code value="1596455"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.0005 MG/MG Topical Ointment"/>
+                <code value="197405"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.0005 MG/MG Topical Gel"/>
+                <code value="240571"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.0005 MG/MG / Salicylic Acid 0.03 MG/MG
+                    Topical Ointment"/>
+                <code value="247451"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.00025 MG/MG Topical Ointment"/>
+                <code value="308713"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 4 MG/ML Injectable Solution"/>
+                <code value="308718"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.0005 MG/MG / calcipotriene 0.00005 MG/MG
+                    Topical Ointment"/>
+                <code value="388525"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.0005 MG/MG Topical Ointment"/>
+                <code value="848180"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.0005 MG/MG Topical Gel"/>
+                <code value="848208"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG Disintegrating Oral Tablet"/>
+                <code value="105389"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 5 MG/ML / hydroquinone 120 MG/ML / Tretinoin 1
+                    MG/ML Topical Cream"/>
+                <code value="1651571"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG Oral Tablet"/>
+                <code value="245258"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / Salicylic Acid 30 MG/ML Topical Lotion"/>
+                <code value="106241"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML / Clioquinol 30 MG/ML Topical Cream"/>
+                <code value="106243"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML Topical Cream"/>
+                <code value="197407"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML Topical Lotion"/>
+                <code value="197408"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Cream"/>
+                <code value="238920"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Lotion"/>
+                <code value="240209"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML / Neomycin 5 MG/ML Topical Cream"/>
+                <code value="249576"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML Topical Solution"/>
+                <code value="250861"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / Clotrimazole 10 MG/ML Topical Cream"/>
+                <code value="308714"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / Clotrimazole 10 MG/ML Topical Lotion"/>
+                <code value="308715"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML / Fusidate 20 MG/ML Topical Cream"/>
+                <code value="618616"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / calcipotriene 0.05 MG/ML Topical Lotion"/>
+                <code value="833461"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.5 MG/ML Topical Cream"/>
+                <code value="848176"/>
+            </concept>
+            <concept>
+                <display value="Augmented Betamethasone 0.5 MG/ML Topical Lotion"/>
+                <code value="848178"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML / Gentamicin 3 MG/ML Otic Solution"/>
+                <code value="1546194"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML Topical Spray"/>
+                <code value="1738536"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.5 MG/ML / Salicylic Acid 20 MG/ML Topical Lotion"/>
+                <code value="247443"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 1 MG/ML Ophthalmic Solution"/>
+                <code value="247480"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.25 MG/ML Topical Cream"/>
+                <code value="244486"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 6 MG/ML Injectable Suspension"/>
+                <code value="1660745"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.284 MG/ML / Gentamicin 0.57 MG/ML Topical Spray"/>
+                <code value="1093235"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.005 MG/MG Topical Ointment"/>
+                <code value="895257"/>
+            </concept>
+            <concept>
+                <display value="betamethasone dipropionate 0.643 MG/ML / calcipotriene 0.05
+                    MG/ML Topical Foam"/>
+                <code value="1716094"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone valerate 1.2 MG/ML Topical Foam"/>
+                <code value="1244634"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone 0.05 MG/ML Enema"/>
+                <code value="247070"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

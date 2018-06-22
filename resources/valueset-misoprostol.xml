@@ -1,42 +1,63 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="misoprostol"/>
-   <status value="draft"/>
-   <date value="2018-04-09"/>
-   <compose>
-      <include>
-         <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-         <concept>
-            <code value="857706"/>
-            <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="1359105"/>
-            <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="311727"/>
-            <display value="Misoprostol 0.1 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="317128"/>
-            <display value="Misoprostol 0.2 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="1359107"/>
-            <display value="Arthrotec (diclofenac sodium (enteric coated core) 50 MG / misoprostol (non-enteric coated mantle) 200 MCG) Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="1359109"/>
-            <display value="Arthrotec (diclofenac sodium (enteric coated core) 75 MG / misoprostol (non-enteric coated mantle) 200 MCG) Delayed Release Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="104098"/>
-            <display value="Cyotec 200 MCG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="209177"/>
-            <display value="Cytotec 0.1 MG Oral Tablet"/>
-         </concept>
-      </include>
-   </compose>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-misoprostol"/>
+    <id value="valueset-misoprostol"/>
+    <version value="1.0"/>
+    <name value="valueset-misoprostol"/>
+    <title value="Misoprostol Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for misoprostol."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Misoprostol 0.2 MG Oral Tablet [Cytotec]"/>
+                <code value="104098"/>
+            </concept>
+            <concept>
+                <display value="Misoprostol 0.1 MG Oral Tablet [Cytotec]"/>
+                <code value="209177"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet [Arthrotec]"/>
+                <code value="1359107"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet [Arthrotec]"/>
+                <code value="1359109"/>
+            </concept>
+            <concept>
+                <display value="Misoprostol 0.2 MG Oral Tablet"/>
+                <code value="317128"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet"/>
+                <code value="857706"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet"/>
+                <code value="1359105"/>
+            </concept>
+            <concept>
+                <display value="Misoprostol 0.1 MG Oral Tablet"/>
+                <code value="311727"/>
+            </concept>
+        </include>
+    </compose>
 </ValueSet>

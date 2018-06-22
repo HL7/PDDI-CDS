@@ -1,0 +1,270 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone"/>
+    <id value="valueset-triamcinolone"/>
+    <version value="1.0"/>
+    <name value="valueset-triamcinolone"/>
+    <title value="Triamcinolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for triamcinolone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Pediaderm TA]"/>
+                <code value="1014318"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.0005 MG/MG Topical Ointment [Trianex]"/>
+                <code value="1110806"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.055 MG/ACTUAT Metered Dose Nasal
+                    Spray [Nasacort]"/>
+                <code value="1797915"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.147 MG/ML Topical Spray [Kenalog]"/>
+                <code value="1085738"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 10 MG/ML Injectable Suspension [Kenalog]"/>
+                <code value="1085752"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 40 MG/ML Injectable Suspension [Kenalog]"/>
+                <code value="1085756"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 5 MG/ML Injectable Suspension [Aristospan]"/>
+                <code value="1085994"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 20 MG/ML Injectable Suspension [Aristospan]"/>
+                <code value="1085998"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Triderm]"/>
+                <code value="1085773"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML Topical Cream [Triderm]"/>
+                <code value="1648997"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 5 MG/ML Topical Cream [Triderm]"/>
+                <code value="1648999"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.001 MG/MG Oral Paste [Oralone]"/>
+                <code value="1085767"/>
+            </concept>
+            <concept>
+                <display value="1 ML Triamcinolone Acetonide 40 MG/ML Injection [Triesence]"/>
+                <code value="1086259"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.05 MG/ACTUAT Metered Dose Nasal
+                    Spray [AllerNaze]"/>
+                <code value="1797906"/>
+            </concept>
+            <concept>
+                <display value="Neomycin 2.5 MG/ML / Nystatin 100000 UNT/ML / Thiostrepton
+                    2500 UNT/ML / Triamcinolone Acetonide 1 MG/ML Topical Cream [Animax]"/>
+                <code value="1368285"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1.5 MG Oral Tablet [Cortalone]"/>
+                <code value="1376440"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Dermasorb TA]"/>
+                <code value="1442876"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 2 MG/ML Injectable Suspension [Vetalog]"/>
+                <code value="1739207"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 6 MG/ML Injectable Suspension [Vetalog]"/>
+                <code value="1739211"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.15 MG/ML Topical Spray [Genesis]"/>
+                <code value="1805714"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 32 MG Injection [Zilretta]"/>
+                <code value="1947133"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.00025 MG/MG Topical Ointment"/>
+                <code value="1085633"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.005 MG/MG Topical Ointment"/>
+                <code value="1085640"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML Topical Cream"/>
+                <code value="1085644"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone diacetate 25 MG/ML Injectable Suspension"/>
+                <code value="1085666"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone diacetate 40 MG/ML Injectable Suspension"/>
+                <code value="1085680"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 5 MG/ML Topical Cream"/>
+                <code value="1085686"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.147 MG/ML Topical Spray"/>
+                <code value="1085736"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML Topical Lotion"/>
+                <code value="1085741"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 10 MG/ML Injectable Suspension"/>
+                <code value="1085750"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 40 MG/ML Injectable Suspension"/>
+                <code value="1085754"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.5 MG/ML Topical Cream"/>
+                <code value="1085977"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 3 MG/ML Injectable Suspension"/>
+                <code value="1085985"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 5 MG/ML Injectable Suspension"/>
+                <code value="1085992"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 20 MG/ML Injectable Suspension"/>
+                <code value="1085996"/>
+            </concept>
+            <concept>
+                <display value="1 ML Triamcinolone Acetonide 40 MG/ML Prefilled Syringe"/>
+                <code value="1086275"/>
+            </concept>
+            <concept>
+                <display value="2 ML Triamcinolone Acetonide 40 MG/ML Prefilled Syringe"/>
+                <code value="1086276"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.0005 MG/MG Topical Ointment"/>
+                <code value="1090641"/>
+            </concept>
+            <concept>
+                <display value="1 ML Triamcinolone Acetonide 40 MG/ML Injection"/>
+                <code value="1792144"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.055 MG/ACTUAT Metered Dose Nasal Spray"/>
+                <code value="1797913"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.5 MG Oral Tablet"/>
+                <code value="1114840"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1.5 MG Oral Tablet"/>
+                <code value="1114842"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone 1 MG Oral Tablet"/>
+                <code value="198301"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone 4 MG Oral Tablet"/>
+                <code value="198303"/>
+            </concept>
+            <concept>
+                <display value="0.1 ML Triamcinolone Acetonide 80 MG/ML Prefilled Syringe"/>
+                <code value="833449"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.05 MG/ACTUAT Metered Dose Nasal Spray"/>
+                <code value="1797904"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream"/>
+                <code value="1014314"/>
+            </concept>
+            <concept>
+                <display value="Nystatin 100 UNT/MG / Triamcinolone Acetonide 0.001 MG/MG
+                    Topical Ointment"/>
+                <code value="1053697"/>
+            </concept>
+            <concept>
+                <display value="Nystatin 100000 UNT/ML / Triamcinolone Acetonide 1 MG/ML
+                    Topical Cream"/>
+                <code value="1053753"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.001 MG/MG Topical Ointment"/>
+                <code value="1085636"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.001 MG/MG Oral Paste"/>
+                <code value="1085728"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Lotion"/>
+                <code value="1085745"/>
+            </concept>
+            <concept>
+                <display value="Chlortetracycline 0.03 MG/MG / Triamcinolone Acetonide 0.001
+                    MG/MG Topical Ointment"/>
+                <code value="1086277"/>
+            </concept>
+            <concept>
+                <display value="Neomycin 3.5 MG/ML / Triamcinolone Acetonide 1 MG/ML Otic Solution"/>
+                <code value="1086278"/>
+            </concept>
+            <concept>
+                <display value="Neomycin 2.5 MG/ML / Nystatin 100000 UNT/ML / Thiostrepton
+                    2500 UNT/ML / Triamcinolone Acetonide 1 MG/ML Topical Cream"/>
+                <code value="1368280"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 2 MG/ML Injectable Suspension"/>
+                <code value="1739202"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 6 MG/ML Injectable Suspension"/>
+                <code value="1739209"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.15 MG/ML Topical Spray"/>
+                <code value="1805709"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 32 MG Injection"/>
+                <code value="1947131"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

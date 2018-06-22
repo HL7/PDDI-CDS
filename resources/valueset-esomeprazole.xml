@@ -1,0 +1,149 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-esomeprazole"/>
+    <id value="valueset-esomeprazole"/>
+    <version value="1.0"/>
+    <name value="valueset-esomeprazole"/>
+    <title value="Esomeprazole Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for esomeprazole."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Esomeprazole 20 MG Injection [Nexium]"/>
+                <code value="603534"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Injection [Nexium]"/>
+                <code value="603536"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Capsule [Nexium]"/>
+                <code value="606728"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Delayed Release Oral Capsule [Nexium]"/>
+                <code value="606731"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 10 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="861570"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="861576"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="861583"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Tablet [Nexium]"/>
+                <code value="1743279"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 2.5 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="1297660"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 5 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="1297763"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral
+                    Tablet [Vimovo]"/>
+                <code value="994007"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral
+                    Tablet [Vimovo]"/>
+                <code value="994010"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Oral Tablet"/>
+                <code value="389174"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Oral Capsule"/>
+                <code value="391874"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Injection"/>
+                <code value="486501"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Delayed Release Oral Capsule"/>
+                <code value="606730"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Granules for Oral Suspension"/>
+                <code value="692578"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Oral Tablet"/>
+                <code value="389175"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Oral Capsule"/>
+                <code value="391873"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Tablet"/>
+                <code value="433733"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Injection"/>
+                <code value="486499"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Capsule"/>
+                <code value="606726"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Granules for Oral Suspension"/>
+                <code value="692576"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral Tablet"/>
+                <code value="994005"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral Tablet"/>
+                <code value="994008"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 10 MG Granules for Oral Suspension"/>
+                <code value="861568"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole Strontium 49.3 MG Delayed Release Oral Capsule"/>
+                <code value="1810787"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole Strontium 24.65 MG Delayed Release Oral Capsule"/>
+                <code value="1810789"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 2.5 MG Granules for Oral Suspension"/>
+                <code value="1297658"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 5 MG Granules for Oral Suspension"/>
+                <code value="1297761"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

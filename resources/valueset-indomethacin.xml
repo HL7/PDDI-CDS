@@ -1,0 +1,107 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-indomethacin"/>
+    <id value="valueset-indomethacin"/>
+    <version value="1.0"/>
+    <name value="valueset-indomethacin"/>
+    <title value="Indomethacin Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for indomethacin."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Indomethacin 50 MG Rectal Suppository [Indocin]"/>
+                <code value="206969"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 5 MG/ML Oral Suspension [Indocin]"/>
+                <code value="206971"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Extended Release Oral Capsule [Indocin]"/>
+                <code value="891867"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 20 MG Oral Capsule [Tivorbex]"/>
+                <code value="1491527"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 40 MG Oral Capsule [Tivorbex]"/>
+                <code value="1491531"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 1 MG Injection"/>
+                <code value="346508"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 50 MG Extended Release Oral Tablet"/>
+                <code value="105864"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 25 MG Extended Release Oral Tablet"/>
+                <code value="105866"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 25 MG Oral Capsule"/>
+                <code value="197817"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 50 MG Oral Capsule"/>
+                <code value="197818"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 50 MG Rectal Suppository"/>
+                <code value="197819"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Extended Release Oral Tablet"/>
+                <code value="250526"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 25 MG Extended Release Oral Capsule"/>
+                <code value="251255"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 5 MG/ML Oral Suspension"/>
+                <code value="310991"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Extended Release Oral Capsule"/>
+                <code value="310992"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Oral Capsule"/>
+                <code value="392073"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 100 MG Rectal Suppository"/>
+                <code value="199549"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 20 MG Oral Capsule"/>
+                <code value="1490727"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 40 MG Oral Capsule"/>
+                <code value="1491529"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 10 MG/ML Ophthalmic Solution"/>
+                <code value="247069"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

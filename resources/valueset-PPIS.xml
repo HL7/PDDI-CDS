@@ -1,0 +1,464 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PPIS"/>
+    <id value="valueset-PPIS"/>
+    <version value="1.0"/>
+    <name value="valueset-PPIS"/>
+    <title value="Proton Pump Inhibitor Medicaiton Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for each member in the Established Pharmacologic Class (EPC) Proton Pump Inhibitor drug class (id: N0000175525). RxNorm: getRelatedByType (SBD,SCD)"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="dexlansoprazole 30 MG Delayed Release Oral Capsule [Dexilant]"/>
+                <code value="902624"/>
+            </concept>
+            <concept>
+                <display value="dexlansoprazole 60 MG Delayed Release Oral Capsule [Dexilant]"/>
+                <code value="902626"/>
+            </concept>
+            <concept>
+                <display value="dexlansoprazole 30 MG Disintegrating Oral Tablet [Dexilant]"/>
+                <code value="1736034"/>
+            </concept>
+            <concept>
+                <display value="dexlansoprazole 30 MG Delayed Release Oral Capsule"/>
+                <code value="833204"/>
+            </concept>
+            <concept>
+                <display value="dexlansoprazole 60 MG Delayed Release Oral Capsule"/>
+                <code value="833213"/>
+            </concept>
+            <concept>
+                <display value="dexlansoprazole 30 MG Disintegrating Oral Tablet"/>
+                <code value="1736031"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Esomeprazole 20 MG Injection [Nexium]"/>
+                <code value="603534"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Injection [Nexium]"/>
+                <code value="603536"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Capsule [Nexium]"/>
+                <code value="606728"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Delayed Release Oral Capsule [Nexium]"/>
+                <code value="606731"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 10 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="861570"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="861576"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="861583"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Tablet [Nexium]"/>
+                <code value="1743279"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 2.5 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="1297660"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 5 MG Granules for Oral Suspension [Nexium]"/>
+                <code value="1297763"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral
+                    Tablet [Vimovo]"/>
+                <code value="994007"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral
+                    Tablet [Vimovo]"/>
+                <code value="994010"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Oral Tablet"/>
+                <code value="389174"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Oral Capsule"/>
+                <code value="391874"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Injection"/>
+                <code value="486501"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Delayed Release Oral Capsule"/>
+                <code value="606730"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 40 MG Granules for Oral Suspension"/>
+                <code value="692578"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Oral Tablet"/>
+                <code value="389175"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Oral Capsule"/>
+                <code value="391873"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Tablet"/>
+                <code value="433733"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Injection"/>
+                <code value="486499"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Delayed Release Oral Capsule"/>
+                <code value="606726"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG Granules for Oral Suspension"/>
+                <code value="692576"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral Tablet"/>
+                <code value="994005"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral Tablet"/>
+                <code value="994008"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 10 MG Granules for Oral Suspension"/>
+                <code value="861568"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole Strontium 49.3 MG Delayed Release Oral Capsule"/>
+                <code value="1810787"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole Strontium 24.65 MG Delayed Release Oral Capsule"/>
+                <code value="1810789"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 2.5 MG Granules for Oral Suspension"/>
+                <code value="1297658"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 5 MG Granules for Oral Suspension"/>
+                <code value="1297761"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="lansoprazole 15 MG Disintegrating Oral Tablet [Prevacid]"/>
+                <code value="206205"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Delayed Release Oral Capsule [Prevacid]"/>
+                <code value="206206"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 15 MG Delayed Release Oral Capsule [Prevacid]"/>
+                <code value="596918"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Disintegrating Oral Tablet [Prevacid]"/>
+                <code value="866152"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Delayed Release Oral Capsule"/>
+                <code value="311277"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Disintegrating Oral Tablet"/>
+                <code value="351260"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 15 MG Disintegrating Oral Tablet"/>
+                <code value="351261"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 15 MG Delayed Release Oral Capsule"/>
+                <code value="596843"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 0.5 MG/ML Oral Suspension"/>
+                <code value="791878"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 1 MG/ML Oral Suspension"/>
+                <code value="791880"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 6 MG/ML Injectable Solution"/>
+                <code value="477260"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Omeprazole 20 MG Delayed Release Oral Capsule [Prilosec]"/>
+                <code value="207212"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG Delayed Release Oral Capsule [Prilosec]"/>
+                <code value="211691"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG Delayed Release Oral Capsule [Prilosec]"/>
+                <code value="213295"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG Delayed Release Oral Tablet [Prilosec]"/>
+                <code value="608796"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG Granules for Oral Suspension [Prilosec]"/>
+                <code value="797061"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 2.5 MG Granules for Oral Suspension [Prilosec]"/>
+                <code value="797065"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG / Sodium Bicarbonate 1100 MG Oral Capsule
+                    [Zegerid Reformulated Aug 2006]"/>
+                <code value="646344"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG / Sodium Bicarbonate 1100 MG Oral Capsule
+                    [Zegerid Reformulated Aug 2006]"/>
+                <code value="646352"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG / Sodium Bicarbonate 1680 MG Powder for
+                    Oral Suspension [Zegerid Reformulated Aug 2006]"/>
+                <code value="753601"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG / Sodium Bicarbonate 1680 MG Powder for
+                    Oral Suspension [Zegerid Reformulated Aug 2006]"/>
+                <code value="753603"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide 700 MG / Omeprazole 20 MG / Sodium
+                    Bicarbonate 600 MG Chewable Tablet [Zegerid with Magnesium Hydroxide]"/>
+                <code value="695930"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide 700 MG / Omeprazole 40 MG / Sodium
+                    Bicarbonate 600 MG Chewable Tablet [Zegerid with Magnesium Hydroxide]"/>
+                <code value="695932"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG Delayed Release Oral Capsule [Omesec]"/>
+                <code value="967525"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 0.37 MG/MG Oral Paste [UlcerGard]"/>
+                <code value="994514"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral
+                    Tablet [Yosprala]"/>
+                <code value="1811916"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet [Yosprala]"/>
+                <code value="1811918"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG Disintegrating Oral Tablet"/>
+                <code value="2003656"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG Delayed Release Oral Capsule"/>
+                <code value="198051"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG Delayed Release Oral Capsule"/>
+                <code value="199119"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG Oral Tablet"/>
+                <code value="389171"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG Oral Tablet"/>
+                <code value="389172"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG Delayed Release Oral Tablet"/>
+                <code value="402013"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG Delayed Release Oral Tablet"/>
+                <code value="402014"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG / Sodium Bicarbonate 1100 MG Oral Capsule"/>
+                <code value="616539"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide 700 MG / Omeprazole 20 MG / Sodium
+                    Bicarbonate 600 MG Chewable Tablet"/>
+                <code value="645295"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG / Sodium Bicarbonate 1680 MG Powder for
+                    Oral Suspension"/>
+                <code value="753562"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG Granules for Oral Suspension"/>
+                <code value="797058"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG Delayed Release Oral Capsule"/>
+                <code value="200329"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG Oral Tablet"/>
+                <code value="389173"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="402015"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG Extended Release Oral Capsule"/>
+                <code value="541247"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG / Sodium Bicarbonate 1100 MG Oral Capsule"/>
+                <code value="616541"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide 700 MG / Omeprazole 40 MG / Sodium
+                    Bicarbonate 600 MG Chewable Tablet"/>
+                <code value="645296"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG / Sodium Bicarbonate 1680 MG Powder for
+                    Oral Suspension"/>
+                <code value="753557"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="1811631"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="1811632"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 4 MG/ML Injectable Solution"/>
+                <code value="199493"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 0.37 MG/MG Oral Paste"/>
+                <code value="994510"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 2.5 MG Granules for Oral Suspension"/>
+                <code value="797063"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="pantoprazole 40 MG Delayed Release Oral Tablet [Protonix]"/>
+                <code value="284400"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 20 MG Delayed Release Oral Tablet [Protonix]"/>
+                <code value="352125"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Oral Granules [Protonix]"/>
+                <code value="763308"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Injection [Protonix]"/>
+                <code value="885257"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Injection"/>
+                <code value="283669"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="314200"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG Oral Granules"/>
+                <code value="763306"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 20 MG Delayed Release Oral Tablet"/>
+                <code value="251872"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Rabeprazole sodium 20 MG Delayed Release Oral Tablet [Aciphex]"/>
+                <code value="854870"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 5 MG Oral Granules [Aciphex]"/>
+                <code value="1437492"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG Oral Granules [Aciphex]"/>
+                <code value="1483319"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 20 MG Delayed Release Oral Tablet"/>
+                <code value="854868"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG Delayed Release Oral Tablet"/>
+                <code value="854872"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG Oral Granules"/>
+                <code value="1483318"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 5 MG Oral Granules"/>
+                <code value="1437489"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

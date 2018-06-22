@@ -1,0 +1,71 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole"/>
+    <id value="valueset-lansoprazole"/>
+    <version value="1.0"/>
+    <name value="valueset-lansoprazole"/>
+    <title value="Lansoprazole Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for lansoprazole."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="lansoprazole 15 MG Disintegrating Oral Tablet [Prevacid]"/>
+                <code value="206205"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Delayed Release Oral Capsule [Prevacid]"/>
+                <code value="206206"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 15 MG Delayed Release Oral Capsule [Prevacid]"/>
+                <code value="596918"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Disintegrating Oral Tablet [Prevacid]"/>
+                <code value="866152"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Delayed Release Oral Capsule"/>
+                <code value="311277"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 30 MG Disintegrating Oral Tablet"/>
+                <code value="351260"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 15 MG Disintegrating Oral Tablet"/>
+                <code value="351261"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 15 MG Delayed Release Oral Capsule"/>
+                <code value="596843"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 0.5 MG/ML Oral Suspension"/>
+                <code value="791878"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 1 MG/ML Oral Suspension"/>
+                <code value="791880"/>
+            </concept>
+            <concept>
+                <display value="lansoprazole 6 MG/ML Injectable Solution"/>
+                <code value="477260"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

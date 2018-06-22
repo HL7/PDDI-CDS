@@ -1,0 +1,903 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aspirin"/>
+    <id value="valueset-aspirin"/>
+    <version value="1.0"/>
+    <display value="valueset-aspirin"/>
+    <title value="Aspirin Value Set"/>
+    <status value="draft"/>
+    <date value="2018-06-20"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing orderable drug representations for aspirin."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
+    <copyright value="HL7 - TBD"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Arthriten Max]"/>
+                <code value="1944113"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet [Ecpirin]"/>
+                <code value="1001476"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet [Migralex]"/>
+                <code value="1039499"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Pamprin Max Formula]"/>
+                <code value="1052416"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 845 MG / Caffeine 65 MG Oral Powder [Stanback
+                    Headache Powder Reformulated Jan 2011]"/>
+                <code value="1053327"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Granules for Oral Solution [Alka-Seltzer]"/>
+                <code value="1872088"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet [Ecotrin]"/>
+                <code value="212086"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet [Ascriptin]"/>
+                <code value="830525"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet [Ascriptin]"/>
+                <code value="830530"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 228 MG Chewing Gum [Aspergum]"/>
+                <code value="853501"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet [Alka-Seltzer]"/>
+                <code value="1536680"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Effervescent Oral Tablet [Alka-Seltzer]"/>
+                <code value="1536835"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Delayed Release Oral Tablet [Ecotrin]"/>
+                <code value="1189776"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Ecotrin]"/>
+                <code value="1189781"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1700 MG Effervescent Oral Tablet [Alka-Seltzer]"/>
+                <code value="1925790"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 400 MG / Caffeine 32 MG Oral Tablet [Anacin]"/>
+                <code value="211292"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="211874"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="211887"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="211902"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet [Bufferin]"/>
+                <code value="260847"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet [Bayer Aspirin]"/>
+                <code value="387090"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32 MG Oral Tablet [Anacin]"/>
+                <code value="608696"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Bayer Aspirin]"/>
+                <code value="794229"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Chewable Tablet [Bayer Aspirin]"/>
+                <code value="825180"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="825181"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet [Bufferin]"/>
+                <code value="848166"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Tablet [Bufferin]"/>
+                <code value="979118"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Bufferin]"/>
+                <code value="1592700"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Delayed Release Oral Tablet [Bayer Aspirin]"/>
+                <code value="1792832"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]"/>
+                <code value="1293665"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Excedrin]"/>
+                <code value="209468"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Halfprin]"/>
+                <code value="211835"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine
+                    Phosphate 30 MG Oral Capsule [Fiorinal with Codeine]"/>
+                <code value="994277"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet [Norwich Aspirin]"/>
+                <code value="211881"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet [Norwich Aspirin]"/>
+                <code value="211891"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 400 MG / Caffeine 32 MG Oral Tablet [P-A-C Analgesic]"/>
+                <code value="211297"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 115 MG / Aspirin 210 MG / Caffeine 16 MG /
+                    salicylamide 65 MG Oral Tablet [Saleto]"/>
+                <code value="210864"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Chewable Tablet [St. Joseph Aspirin]"/>
+                <code value="211832"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 160 MG / Aspirin 230 MG / Caffeine 33 MG Oral
+                    Tablet [Supac]"/>
+                <code value="213290"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [St. Joseph Aspirin]"/>
+                <code value="749795"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Carisoprodol 200 MG / Codeine Phosphate 16
+                    MG Oral Tablet [Soma Compound with Codeine]"/>
+                <code value="994228"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 356.4 MG / Caffeine 30 MG / dihydrocodeine
+                    bitartrate 16 MG Oral Capsule [Synalgos-DC]"/>
+                <code value="1234976"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 194 MG / Aspirin 227 MG / Caffeine 33 MG Oral
+                    Tablet [Vanquish]"/>
+                <code value="1101754"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Meprobamate 200 MG Oral Tablet [Equagesic]"/>
+                <code value="209823"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral
+                    Capsule [Fiorinal]"/>
+                <code value="211310"/>
+            </concept>
+            <concept>
+                <display value="12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release
+                    Oral Capsule [Aggrenox]"/>
+                <code value="1362082"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet
+                    [Alka-Seltzer Morning Relief]"/>
+                <code value="1536818"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet [Bayer Back
+                    and Body Pain]"/>
+                <code value="702320"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent
+                    Oral Tablet [Alka-Seltzer PM]"/>
+                <code value="1536673"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet [Excedrin
+                    Back & Body]"/>
+                <code value="723530"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Anacin Advanced Headache Formula]"/>
+                <code value="723533"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]"/>
+                <code value="724444"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Goody's Extra Strength]"/>
+                <code value="209470"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Disintegrating Oral Tablet [Fasprin]"/>
+                <code value="747236"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG Oral Powder
+                    [Goody's Body Pain]"/>
+                <code value="763115"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral
+                    Powder [Stanback Headache Powder]"/>
+                <code value="797053"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG
+                    Oral Powder [Goody's Extra Strength]"/>
+                <code value="1188388"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral
+                    Powder [Goody's Extra Strength]"/>
+                <code value="1188440"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Miniprin]"/>
+                <code value="1052678"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet
+                    [Percodan Reformulated May 2009]"/>
+                <code value="848772"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet
+                    [Endodan Reformulated May 2009]"/>
+                <code value="848928"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 33.3 MG / salicylamide 195 MG Oral
+                    Powder [BC Headache]"/>
+                <code value="896876"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Caffeine 16 MG / salicylamide 95 MG Oral
+                    Tablet [BC Headache]"/>
+                <code value="896893"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 110 MG / Aspirin 162 MG / Caffeine 32.4 MG /
+                    salicylamide 152 MG Oral Tablet [Exaprin]"/>
+                <code value="1358853"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Painaid ESF]"/>
+                <code value="1359083"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Backaid IPF]"/>
+                <code value="1361402"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine
+                    Phosphate 30 MG Oral Capsule [Ascomp]"/>
+                <code value="994239"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Uricalm Intensive]"/>
+                <code value="1438297"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet [Zee-Seltzer Antacid and Pain Reliever]"/>
+                <code value="1551559"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine
+                    Citrate 38 MG Oral Tablet [Excedrin PM Triple Action]"/>
+                <code value="1593116"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Aspi-Cor]"/>
+                <code value="1600991"/>
+            </concept>
+            <concept>
+                <display value="24 HR Aspirin 162.5 MG Extended Release Oral Capsule [Durlaza]"/>
+                <code value="1665362"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Calcium Carbonate 777 MG Oral Tablet [Bayer Womens]"/>
+                <code value="1722695"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral
+                    Tablet [Yosprala]"/>
+                <code value="1811916"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet [Yosprala]"/>
+                <code value="1811918"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Diphenhydramine Citrate 38.3 MG Oral Tablet
+                    [Bayer Aspirin PM Reformulated Nov 2011]"/>
+                <code value="1250909"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1000 MG / Caffeine 65 MG Oral Powder [BC Arthritis]"/>
+                <code value="1247397"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 845 MG / Caffeine 65 MG Oral Powder [BC Original Formula]"/>
+                <code value="1247402"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet [Bromo Seltzer Antacid Pain Reliever]"/>
+                <code value="1537012"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Arthriten Inflammatory Pain]"/>
+                <code value="1303159"/>
+            </concept>
+            <concept_type>SCD</concept_type>
+            <concept>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Granules for Oral Solution"/>
+                <code value="1872085"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 150 MG Rectal Suppository"/>
+                <code value="103863"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG Delayed Release Oral Tablet"/>
+                <code value="103954"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG Oral Tablet"/>
+                <code value="104474"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG Disintegrating Oral Tablet"/>
+                <code value="104475"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Delayed Release Oral Tablet"/>
+                <code value="104899"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Glycine 133 MG Disintegrating Oral Tablet"/>
+                <code value="106809"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Diphenhydramine Hydrochloride 25 MG Oral Tablet"/>
+                <code value="1092398"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 800 MG Extended Release Oral Tablet"/>
+                <code value="197374"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Rectal Suppository"/>
+                <code value="198464"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet"/>
+                <code value="198471"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 600 MG Rectal Suppository"/>
+                <code value="198473"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Oral Tablet"/>
+                <code value="198475"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 400 MG / Caffeine 32 MG Oral Tablet"/>
+                <code value="198479"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32 MG Oral Tablet"/>
+                <code value="198480"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Oral Capsule"/>
+                <code value="199274"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Oral Tablet"/>
+                <code value="199281"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Tablet"/>
+                <code value="243670"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Oral Powder"/>
+                <code value="247137"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 165 MG Delayed Release Oral Tablet"/>
+                <code value="308403"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Delayed Release Oral Tablet"/>
+                <code value="308409"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / phenyltoloxamine 15 MG Oral Tablet"/>
+                <code value="308410"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Delayed Release Oral Tablet"/>
+                <code value="308411"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Extended Release Oral Tablet"/>
+                <code value="308412"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet"/>
+                <code value="308416"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 975 MG Delayed Release Oral Tablet"/>
+                <code value="308417"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 975 MG Extended Release Oral Tablet"/>
+                <code value="308418"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Chewable Tablet"/>
+                <code value="318272"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 60 MG Chewable Tablet"/>
+                <code value="333834"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 800 MG Oral Tablet"/>
+                <code value="349516"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 975 MG Oral Tablet"/>
+                <code value="391930"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Chewable Tablet"/>
+                <code value="433353"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 33.3 MG / salicylamide 195 MG Oral Powder"/>
+                <code value="605252"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="692836"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet"/>
+                <code value="702316"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Disintegrating Oral Tablet"/>
+                <code value="747211"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG Oral Powder"/>
+                <code value="763111"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral Powder"/>
+                <code value="797050"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 65 MG Oral Tablet"/>
+                <code value="806446"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Hydrocodone Bitartrate 5 MG Oral Tablet"/>
+                <code value="857121"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 150 MG / Isosorbide Mononitrate 60 MG Extended
+                    Release Oral Tablet"/>
+                <code value="876666"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG / Isosorbide Mononitrate 60 MG Extended
+                    Release Oral Tablet"/>
+                <code value="876667"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 850 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="900528"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG / Codeine Phosphate 8 MG Oral Tablet"/>
+                <code value="996988"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Strip"/>
+                <code value="1535484"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Dextromethorphan Hydrobromide 10 MG /
+                    doxylamine succinate 6.25 MG / Phenylephrine bitartrate 7.8 MG
+                    Effervescent Oral Tablet"/>
+                <code value="1536503"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet"/>
+                <code value="1536815"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Effervescent Oral Tablet"/>
+                <code value="1536833"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Chlorpheniramine Maleate 2 MG /
+                    Phenylephrine bitartrate 8 MG Effervescent Oral Tablet"/>
+                <code value="1536993"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 60 MG Effervescent Oral Tablet"/>
+                <code value="1537019"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Chlorpheniramine Maleate 2 MG /
+                    Dextromethorphan Hydrobromide 15 MG Effervescent Oral Tablet"/>
+                <code value="1537200"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Calcium Carbonate 777 MG Oral Tablet"/>
+                <code value="1722689"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="1811631"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 356.4 MG / Caffeine 30 MG / dihydrocodeine
+                    bitartrate 16 MG Oral Capsule"/>
+                <code value="1234872"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Diphenhydramine Citrate 38.3 MG Oral Tablet"/>
+                <code value="1250907"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 60 MG Oral Powder"/>
+                <code value="1312718"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet"/>
+                <code value="1049691"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Powder"/>
+                <code value="1050241"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Carisoprodol 200 MG Oral Tablet"/>
+                <code value="197447"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Meprobamate 200 MG Oral Tablet"/>
+                <code value="197930"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Methocarbamol 400 MG Oral Tablet"/>
+                <code value="197945"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 120 MG Rectal Suppository"/>
+                <code value="198461"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 200 MG Rectal Suppository"/>
+                <code value="198463"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Capsule"/>
+                <code value="198466"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet"/>
+                <code value="198467"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 162 MG Delayed Release Oral Tablet"/>
+                <code value="198477"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet"/>
+                <code value="212033"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Capsule"/>
+                <code value="238134"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Tablet"/>
+                <code value="238135"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Caffeine 16 MG / salicylamide 95 MG Oral Tablet"/>
+                <code value="308363"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 110 MG / Aspirin 162 MG / Caffeine 32.4 MG /
+                    salicylamide 152 MG Oral Tablet"/>
+                <code value="359221"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.5 MG / oxycodone
+                    terephthalate 0.38 MG Oral Tablet"/>
+                <code value="637540"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 2.25 MG / oxycodone
+                    terephthalate 0.19 MG Oral Tablet"/>
+                <code value="724614"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet"/>
+                <code value="848768"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Carisoprodol 200 MG / Codeine Phosphate 16
+                    MG Oral Tablet"/>
+                <code value="994226"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine
+                    Phosphate 30 MG Oral Capsule"/>
+                <code value="994237"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Codeine Phosphate 30 MG Oral Tablet"/>
+                <code value="996991"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Codeine Phosphate 60 MG Oral Tablet"/>
+                <code value="996994"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 120 MG Chewable Tablet"/>
+                <code value="1433630"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1700 MG Effervescent Oral Tablet"/>
+                <code value="1536467"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Dextromethorphan Hydrobromide 10 MG /
+                    Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet"/>
+                <code value="1536498"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent
+                    Oral Tablet"/>
+                <code value="1536670"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet"/>
+                <code value="1536675"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Chlorpheniramine Maleate 2 MG /
+                    Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet"/>
+                <code value="1536840"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Chlorpheniramine Maleate 2 MG /
+                    Dextromethorphan Hydrobromide 10 MG / Phenylephrine bitartrate
+                    7.8 MG Effervescent Oral Tablet"/>
+                <code value="1537029"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="1811632"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Oral Tablet"/>
+                <code value="1291868"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Caffeine 30 MG Oral Powder"/>
+                <code value="1312713"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 421 MG / Caffeine 32 MG Oral Tablet"/>
+                <code value="243685"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 100 MG Oral Tablet"/>
+                <code value="246461"/>
+            </concept>
+            <concept>
+                <display value="12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release
+                    Oral Capsule"/>
+                <code value="259081"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 228 MG Chewing Gum"/>
+                <code value="853499"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG
+                    Oral Powder"/>
+                <code value="763116"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 160 MG / Aspirin 230 MG / Caffeine 33 MG Oral Tablet"/>
+                <code value="205251"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 115 MG / Aspirin 210 MG / Caffeine 16 MG /
+                    salicylamide 65 MG Oral Tablet"/>
+                <code value="308278"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet"/>
+                <code value="308297"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet"/>
+                <code value="432638"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Capsule"/>
+                <code value="827318"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 389 MG / Caffeine 32.4 MG / Propoxyphene
+                    Hydrochloride 32 MG Oral Capsule"/>
+                <code value="828585"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 389 MG / Caffeine 32.4 MG / Propoxyphene
+                    Hydrochloride 65 MG Oral Capsule"/>
+                <code value="828594"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 742 MG / Caffeine 38 MG / salicylamide 222 MG Oral Powder"/>
+                <code value="896884"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 385 MG / Caffeine 30 MG / Orphenadrine Citrate 25 MG
+                    Oral Tablet"/>
+                <code value="994528"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 770 MG / Caffeine 60 MG / Orphenadrine Citrate 50 MG
+                    Oral Tablet"/>
+                <code value="994535"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine
+                    Citrate 38 MG Oral Tablet"/>
+                <code value="1593110"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 250 MG / Chlorpheniramine Maleate 2 MG /
+                    Dextromethorphan Hydrobromide 10 MG / Phenylephrine
+                    Hydrochloride 5 MG Effervescent Oral Tablet"/>
+                <code value="1927026"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 194 MG / Aspirin 227 MG / Caffeine 33 MG Oral Tablet"/>
+                <code value="243694"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 428 MG / Caffeine 30 MG / Orphenadrine Citrate 25 MG
+                    Oral Tablet"/>
+                <code value="994810"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 856 MG / Caffeine 60 MG / Orphenadrine Citrate 50 MG
+                    Oral Tablet"/>
+                <code value="994811"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1.5 MG/ML Oral Solution"/>
+                <code value="685589"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 2.5 MG/ML Oral Solution"/>
+                <code value="688214"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 360 MG / Caffeine 75 MG / magnesium carbonate 100 MG
+                    / Magnesium Salicylate 60 MG Oral Tablet"/>
+                <code value="863184"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 410 MG / Caffeine 60 MG / salicylamide 30 MG Oral Tablet"/>
+                <code value="863186"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 15600 MG Oral Tablet"/>
+                <code value="891134"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 31200 MG Oral Tablet"/>
+                <code value="891136"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 3900 MG Oral Tablet"/>
+                <code value="892160"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1 MG/MG Oral Powder"/>
+                <code value="900470"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1000 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="994430"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 845 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="994435"/>
+            </concept>
+            <concept>
+                <display value="24 HR Aspirin 162.5 MG Extended Release Oral Capsule"/>
+                <code value="1665356"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 200 MG / Aspirin 220 MG / Caffeine 27 MG Oral Tablet"/>
+                <code value="1673788"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

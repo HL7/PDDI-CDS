@@ -1,14 +1,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-NSAIDgrouper"/>
-    <id value="valueset-NSAIDgrouper"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-NSAIDS"/>
+    <id value="valueset-NSAIDS"/>
     <version value="1.0"/>
-    <name value="valueset-NSAIDgrouper"/>
+    <name value="valueset-NSAIDS"/>
     <title value="Nonsteroidal Anti-inflammatory Drugs Value Set"/>
     <status value="draft"/>
     <date value="2018-06-20"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing members in the EPC Nonsteroidal Anti-inflammatory Drug class."/>
+    <description value="ValueSet containing orderable drug representations for each member in the Established Pharmacologic Class (EPC) Nonsteroidal Anti-inflammatory Drug class (id: N0000175722). RxNorm: getRelatedByType (SBD,SCD)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,127 +16,2388 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="NSAID value set comprised Provide terminology for PDDI CDS FHIR resources"/>
+    <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
     <copyright value="HL7 - TBD"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="04-Jun-2018"/>
             <concept>
-                <code value="855350"/>
-                <display value="Warfarin Sodium 0.5 MG Oral Tablet"/>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Arthriten Max]"/>
+                <code value="1944113"/>
             </concept>
             <concept>
-                <code value="855288"/>
-                <display value="Warfarin Sodium 1 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet [Ecpirin]"/>
+                <code value="1001476"/>
             </concept>
             <concept>
-                <code value="855296"/>
-                <display value="Warfarin Sodium 10 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG Oral Tablet [Migralex]"/>
+                <code value="1039499"/>
             </concept>
             <concept>
-                <code value="855302"/>
-                <display value="Warfarin Sodium 2 MG Oral Tablet"/>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Pamprin Max Formula]"/>
+                <code value="1052416"/>
             </concept>
             <concept>
-                <code value="855308"/>
-                <display value="Warfarin Sodium 2 MG/ML Injectable Solution"/>
+                <display value="Aspirin 845 MG / Caffeine 65 MG Oral Powder [Stanback
+                    Headache Powder Reformulated Jan 2011]"/>
+                <code value="1053327"/>
             </concept>
             <concept>
-                <code value="855312"/>
-                <display value="Warfarin Sodium 2.5 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Granules for Oral Solution [Alka-Seltzer]"/>
+                <code value="1872088"/>
             </concept>
             <concept>
-                <code value="855318"/>
-                <display value="Warfarin Sodium 3 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet [Ecotrin]"/>
+                <code value="212086"/>
             </concept>
             <concept>
-                <code value="855324"/>
-                <display value="Warfarin Sodium 4 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG Oral Tablet [Ascriptin]"/>
+                <code value="830525"/>
             </concept>
             <concept>
-                <code value="855332"/>
-                <display value="Warfarin Sodium 5 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG Oral Tablet [Ascriptin]"/>
+                <code value="830530"/>
             </concept>
             <concept>
-                <code value="855338"/>
-                <display value="Warfarin Sodium 6 MG Oral Tablet"/>
+                <display value="Aspirin 228 MG Chewing Gum [Aspergum]"/>
+                <code value="853501"/>
             </concept>
             <concept>
-                <code value="855344"/>
-                <display value="Warfarin Sodium 7.5 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet [Alka-Seltzer]"/>
+                <code value="1536680"/>
             </concept>
             <concept>
-                <code value="855290"/>
-                <display value="Coumadin 1 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Effervescent Oral Tablet [Alka-Seltzer]"/>
+                <code value="1536835"/>
             </concept>
             <concept>
-                <code value="855298"/>
-                <display value="Coumadin 10 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG Delayed Release Oral Tablet [Ecotrin]"/>
+                <code value="1189776"/>
             </concept>
             <concept>
-                <code value="855304"/>
-                <display value="Coumadin 2 MG Oral Tablet"/>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Ecotrin]"/>
+                <code value="1189781"/>
             </concept>
             <concept>
-                <code value="855314"/>
-                <display value="Coumadin 2.5 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1700 MG Effervescent Oral Tablet [Alka-Seltzer]"/>
+                <code value="1925790"/>
             </concept>
             <concept>
-                <code value="855320"/>
-                <display value="Coumadin 3 MG Oral Tablet"/>
+                <display value="Aspirin 400 MG / Caffeine 32 MG Oral Tablet [Anacin]"/>
+                <code value="211292"/>
             </concept>
             <concept>
-                <code value="855326"/>
-                <display value="Coumadin 4 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="211874"/>
             </concept>
             <concept>
-                <code value="855334"/>
-                <display value="Coumadin 5 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="211887"/>
             </concept>
             <concept>
-                <code value="855340"/>
-                <display value="Coumadin 6 MG Oral Tablet"/>
+                <display value="Aspirin 650 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="211902"/>
             </concept>
             <concept>
-                <code value="855346"/>
-                <display value="Coumadin 7.5 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG Oral Tablet [Bufferin]"/>
+                <code value="260847"/>
             </concept>
             <concept>
-                <code value="855292"/>
-                <display value="Jantoven 1 MG Oral Tablet"/>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet [Bayer Aspirin]"/>
+                <code value="387090"/>
             </concept>
             <concept>
-                <code value="855300"/>
-                <display value="Jantoven 10 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG / Caffeine 32 MG Oral Tablet [Anacin]"/>
+                <code value="608696"/>
             </concept>
             <concept>
-                <code value="855306"/>
-                <display value="Jantoven 2 MG Oral Tablet"/>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Bayer Aspirin]"/>
+                <code value="794229"/>
             </concept>
             <concept>
-                <code value="855316"/>
-                <display value="Jantoven 2.5 MG Oral Tablet"/>
+                <display value="Aspirin 81 MG Chewable Tablet [Bayer Aspirin]"/>
+                <code value="825180"/>
             </concept>
             <concept>
-                <code value="855322"/>
-                <display value="Jantoven 3 MG Oral Tablet"/>
+                <display value="Aspirin 81 MG Oral Tablet [Bayer Aspirin]"/>
+                <code value="825181"/>
             </concept>
             <concept>
-                <code value="855328"/>
-                <display value="Jantoven 4 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG Oral Tablet [Bufferin]"/>
+                <code value="848166"/>
             </concept>
             <concept>
-                <code value="855336"/>
-                <display value="Jantoven 5 MG Oral Tablet"/>
+                <display value="Aspirin 81 MG Oral Tablet [Bufferin]"/>
+                <code value="979118"/>
             </concept>
             <concept>
-                <code value="855342"/>
-                <display value="Jantoven 6 MG Oral Tablet"/>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Bufferin]"/>
+                <code value="1592700"/>
             </concept>
             <concept>
-                <code value="855348"/>
-                <display value="Jantoven 7.5 MG Oral Tablet"/>
+                <display value="Aspirin 500 MG Delayed Release Oral Tablet [Bayer Aspirin]"/>
+                <code value="1792832"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]"/>
+                <code value="1293665"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Excedrin]"/>
+                <code value="209468"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Halfprin]"/>
+                <code value="211835"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine
+                    Phosphate 30 MG Oral Capsule [Fiorinal with Codeine]"/>
+                <code value="994277"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet [Norwich Aspirin]"/>
+                <code value="211881"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet [Norwich Aspirin]"/>
+                <code value="211891"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 400 MG / Caffeine 32 MG Oral Tablet [P-A-C Analgesic]"/>
+                <code value="211297"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 115 MG / Aspirin 210 MG / Caffeine 16 MG /
+                    salicylamide 65 MG Oral Tablet [Saleto]"/>
+                <code value="210864"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Chewable Tablet [St. Joseph Aspirin]"/>
+                <code value="211832"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 160 MG / Aspirin 230 MG / Caffeine 33 MG Oral
+                    Tablet [Supac]"/>
+                <code value="213290"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [St. Joseph Aspirin]"/>
+                <code value="749795"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Carisoprodol 200 MG / Codeine Phosphate 16
+                    MG Oral Tablet [Soma Compound with Codeine]"/>
+                <code value="994228"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 356.4 MG / Caffeine 30 MG / dihydrocodeine
+                    bitartrate 16 MG Oral Capsule [Synalgos-DC]"/>
+                <code value="1234976"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 194 MG / Aspirin 227 MG / Caffeine 33 MG Oral
+                    Tablet [Vanquish]"/>
+                <code value="1101754"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Meprobamate 200 MG Oral Tablet [Equagesic]"/>
+                <code value="209823"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral
+                    Capsule [Fiorinal]"/>
+                <code value="211310"/>
+            </concept>
+            <concept>
+                <display value="12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release
+                    Oral Capsule [Aggrenox]"/>
+                <code value="1362082"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet
+                    [Alka-Seltzer Morning Relief]"/>
+                <code value="1536818"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet [Bayer Back
+                    and Body Pain]"/>
+                <code value="702320"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent
+                    Oral Tablet [Alka-Seltzer PM]"/>
+                <code value="1536673"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet [Excedrin
+                    Back & Body]"/>
+                <code value="723530"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Anacin Advanced Headache Formula]"/>
+                <code value="723533"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]"/>
+                <code value="724444"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Goody's Extra Strength]"/>
+                <code value="209470"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Disintegrating Oral Tablet [Fasprin]"/>
+                <code value="747236"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG Oral Powder
+                    [Goody's Body Pain]"/>
+                <code value="763115"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral
+                    Powder [Stanback Headache Powder]"/>
+                <code value="797053"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG
+                    Oral Powder [Goody's Extra Strength]"/>
+                <code value="1188388"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral
+                    Powder [Goody's Extra Strength]"/>
+                <code value="1188440"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Miniprin]"/>
+                <code value="1052678"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet
+                    [Percodan Reformulated May 2009]"/>
+                <code value="848772"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet
+                    [Endodan Reformulated May 2009]"/>
+                <code value="848928"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 33.3 MG / salicylamide 195 MG Oral
+                    Powder [BC Headache]"/>
+                <code value="896876"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Caffeine 16 MG / salicylamide 95 MG Oral
+                    Tablet [BC Headache]"/>
+                <code value="896893"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 110 MG / Aspirin 162 MG / Caffeine 32.4 MG /
+                    salicylamide 152 MG Oral Tablet [Exaprin]"/>
+                <code value="1358853"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Painaid ESF]"/>
+                <code value="1359083"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Backaid IPF]"/>
+                <code value="1361402"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine
+                    Phosphate 30 MG Oral Capsule [Ascomp]"/>
+                <code value="994239"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Uricalm Intensive]"/>
+                <code value="1438297"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet [Zee-Seltzer Antacid and Pain Reliever]"/>
+                <code value="1551559"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine
+                    Citrate 38 MG Oral Tablet [Excedrin PM Triple Action]"/>
+                <code value="1593116"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet [Aspi-Cor]"/>
+                <code value="1600991"/>
+            </concept>
+            <concept>
+                <display value="24 HR Aspirin 162.5 MG Extended Release Oral Capsule [Durlaza]"/>
+                <code value="1665362"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Calcium Carbonate 777 MG Oral Tablet [Bayer Womens]"/>
+                <code value="1722695"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral
+                    Tablet [Yosprala]"/>
+                <code value="1811916"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet [Yosprala]"/>
+                <code value="1811918"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Diphenhydramine Citrate 38.3 MG Oral Tablet
+                    [Bayer Aspirin PM Reformulated Nov 2011]"/>
+                <code value="1250909"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1000 MG / Caffeine 65 MG Oral Powder [BC Arthritis]"/>
+                <code value="1247397"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 845 MG / Caffeine 65 MG Oral Powder [BC Original Formula]"/>
+                <code value="1247402"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet [Bromo Seltzer Antacid Pain Reliever]"/>
+                <code value="1537012"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
+                    Tablet [Arthriten Inflammatory Pain]"/>
+                <code value="1303159"/>
+            </concept>
+            <concept_type>SCD</concept_type>
+            <concept>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Granules for Oral Solution"/>
+                <code value="1872085"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 150 MG Rectal Suppository"/>
+                <code value="103863"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG Delayed Release Oral Tablet"/>
+                <code value="103954"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG Oral Tablet"/>
+                <code value="104474"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG Disintegrating Oral Tablet"/>
+                <code value="104475"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Delayed Release Oral Tablet"/>
+                <code value="104899"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Glycine 133 MG Disintegrating Oral Tablet"/>
+                <code value="106809"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Diphenhydramine Hydrochloride 25 MG Oral Tablet"/>
+                <code value="1092398"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 800 MG Extended Release Oral Tablet"/>
+                <code value="197374"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Rectal Suppository"/>
+                <code value="198464"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Oral Tablet"/>
+                <code value="198471"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 600 MG Rectal Suppository"/>
+                <code value="198473"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Oral Tablet"/>
+                <code value="198475"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 400 MG / Caffeine 32 MG Oral Tablet"/>
+                <code value="198479"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32 MG Oral Tablet"/>
+                <code value="198480"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Oral Capsule"/>
+                <code value="199274"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Oral Tablet"/>
+                <code value="199281"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Tablet"/>
+                <code value="243670"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Oral Powder"/>
+                <code value="247137"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 165 MG Delayed Release Oral Tablet"/>
+                <code value="308403"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG Delayed Release Oral Tablet"/>
+                <code value="308409"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / phenyltoloxamine 15 MG Oral Tablet"/>
+                <code value="308410"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Delayed Release Oral Tablet"/>
+                <code value="308411"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG Extended Release Oral Tablet"/>
+                <code value="308412"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Delayed Release Oral Tablet"/>
+                <code value="308416"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 975 MG Delayed Release Oral Tablet"/>
+                <code value="308417"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 975 MG Extended Release Oral Tablet"/>
+                <code value="308418"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Chewable Tablet"/>
+                <code value="318272"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 60 MG Chewable Tablet"/>
+                <code value="333834"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 800 MG Oral Tablet"/>
+                <code value="349516"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 975 MG Oral Tablet"/>
+                <code value="391930"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG Chewable Tablet"/>
+                <code value="433353"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 33.3 MG / salicylamide 195 MG Oral Powder"/>
+                <code value="605252"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="692836"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet"/>
+                <code value="702316"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Disintegrating Oral Tablet"/>
+                <code value="747211"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 325 MG / Aspirin 500 MG Oral Powder"/>
+                <code value="763111"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral Powder"/>
+                <code value="797050"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 65 MG Oral Tablet"/>
+                <code value="806446"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Hydrocodone Bitartrate 5 MG Oral Tablet"/>
+                <code value="857121"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 150 MG / Isosorbide Mononitrate 60 MG Extended
+                    Release Oral Tablet"/>
+                <code value="876666"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 75 MG / Isosorbide Mononitrate 60 MG Extended
+                    Release Oral Tablet"/>
+                <code value="876667"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 850 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="900528"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 300 MG / Codeine Phosphate 8 MG Oral Tablet"/>
+                <code value="996988"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG Oral Strip"/>
+                <code value="1535484"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Dextromethorphan Hydrobromide 10 MG /
+                    doxylamine succinate 6.25 MG / Phenylephrine bitartrate 7.8 MG
+                    Effervescent Oral Tablet"/>
+                <code value="1536503"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet"/>
+                <code value="1536815"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1985 MG Effervescent Oral Tablet"/>
+                <code value="1536833"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Chlorpheniramine Maleate 2 MG /
+                    Phenylephrine bitartrate 8 MG Effervescent Oral Tablet"/>
+                <code value="1536993"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Caffeine 60 MG Effervescent Oral Tablet"/>
+                <code value="1537019"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Chlorpheniramine Maleate 2 MG /
+                    Dextromethorphan Hydrobromide 15 MG Effervescent Oral Tablet"/>
+                <code value="1537200"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Calcium Carbonate 777 MG Oral Tablet"/>
+                <code value="1722689"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="1811631"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 356.4 MG / Caffeine 30 MG / dihydrocodeine
+                    bitartrate 16 MG Oral Capsule"/>
+                <code value="1234872"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 500 MG / Diphenhydramine Citrate 38.3 MG Oral Tablet"/>
+                <code value="1250907"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 650 MG / Caffeine 60 MG Oral Powder"/>
+                <code value="1312718"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet"/>
+                <code value="1049691"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Powder"/>
+                <code value="1050241"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Carisoprodol 200 MG Oral Tablet"/>
+                <code value="197447"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Meprobamate 200 MG Oral Tablet"/>
+                <code value="197930"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Methocarbamol 400 MG Oral Tablet"/>
+                <code value="197945"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 120 MG Rectal Suppository"/>
+                <code value="198461"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 200 MG Rectal Suppository"/>
+                <code value="198463"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Capsule"/>
+                <code value="198466"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Delayed Release Oral Tablet"/>
+                <code value="198467"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 162 MG Delayed Release Oral Tablet"/>
+                <code value="198477"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG Oral Tablet"/>
+                <code value="212033"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Capsule"/>
+                <code value="238134"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Tablet"/>
+                <code value="238135"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Caffeine 16 MG / salicylamide 95 MG Oral Tablet"/>
+                <code value="308363"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 110 MG / Aspirin 162 MG / Caffeine 32.4 MG /
+                    salicylamide 152 MG Oral Tablet"/>
+                <code value="359221"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.5 MG / oxycodone
+                    terephthalate 0.38 MG Oral Tablet"/>
+                <code value="637540"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 2.25 MG / oxycodone
+                    terephthalate 0.19 MG Oral Tablet"/>
+                <code value="724614"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Oxycodone Hydrochloride 4.84 MG Oral Tablet"/>
+                <code value="848768"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Carisoprodol 200 MG / Codeine Phosphate 16
+                    MG Oral Tablet"/>
+                <code value="994226"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine
+                    Phosphate 30 MG Oral Capsule"/>
+                <code value="994237"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Codeine Phosphate 30 MG Oral Tablet"/>
+                <code value="996991"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Codeine Phosphate 60 MG Oral Tablet"/>
+                <code value="996994"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 120 MG Chewable Tablet"/>
+                <code value="1433630"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1700 MG Effervescent Oral Tablet"/>
+                <code value="1536467"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Dextromethorphan Hydrobromide 10 MG /
+                    Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet"/>
+                <code value="1536498"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent
+                    Oral Tablet"/>
+                <code value="1536670"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Citric Acid 1000 MG / Sodium Bicarbonate
+                    1916 MG Effervescent Oral Tablet"/>
+                <code value="1536675"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Chlorpheniramine Maleate 2 MG /
+                    Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet"/>
+                <code value="1536840"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Chlorpheniramine Maleate 2 MG /
+                    Dextromethorphan Hydrobromide 10 MG / Phenylephrine bitartrate
+                    7.8 MG Effervescent Oral Tablet"/>
+                <code value="1537029"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG Delayed Release Oral Tablet"/>
+                <code value="1811632"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Oral Tablet"/>
+                <code value="1291868"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Caffeine 30 MG Oral Powder"/>
+                <code value="1312713"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 421 MG / Caffeine 32 MG Oral Tablet"/>
+                <code value="243685"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 100 MG Oral Tablet"/>
+                <code value="246461"/>
+            </concept>
+            <concept>
+                <display value="12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release
+                    Oral Capsule"/>
+                <code value="259081"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 228 MG Chewing Gum"/>
+                <code value="853499"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG
+                    Oral Powder"/>
+                <code value="763116"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 160 MG / Aspirin 230 MG / Caffeine 33 MG Oral Tablet"/>
+                <code value="205251"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 115 MG / Aspirin 210 MG / Caffeine 16 MG /
+                    salicylamide 65 MG Oral Tablet"/>
+                <code value="308278"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet"/>
+                <code value="308297"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet"/>
+                <code value="432638"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Capsule"/>
+                <code value="827318"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 389 MG / Caffeine 32.4 MG / Propoxyphene
+                    Hydrochloride 32 MG Oral Capsule"/>
+                <code value="828585"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 389 MG / Caffeine 32.4 MG / Propoxyphene
+                    Hydrochloride 65 MG Oral Capsule"/>
+                <code value="828594"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 742 MG / Caffeine 38 MG / salicylamide 222 MG Oral Powder"/>
+                <code value="896884"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 385 MG / Caffeine 30 MG / Orphenadrine Citrate 25 MG
+                    Oral Tablet"/>
+                <code value="994528"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 770 MG / Caffeine 60 MG / Orphenadrine Citrate 50 MG
+                    Oral Tablet"/>
+                <code value="994535"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine
+                    Citrate 38 MG Oral Tablet"/>
+                <code value="1593110"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 250 MG / Chlorpheniramine Maleate 2 MG /
+                    Dextromethorphan Hydrobromide 10 MG / Phenylephrine
+                    Hydrochloride 5 MG Effervescent Oral Tablet"/>
+                <code value="1927026"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 194 MG / Aspirin 227 MG / Caffeine 33 MG Oral Tablet"/>
+                <code value="243694"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 428 MG / Caffeine 30 MG / Orphenadrine Citrate 25 MG
+                    Oral Tablet"/>
+                <code value="994810"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 856 MG / Caffeine 60 MG / Orphenadrine Citrate 50 MG
+                    Oral Tablet"/>
+                <code value="994811"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1.5 MG/ML Oral Solution"/>
+                <code value="685589"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 2.5 MG/ML Oral Solution"/>
+                <code value="688214"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 360 MG / Caffeine 75 MG / magnesium carbonate 100 MG
+                    / Magnesium Salicylate 60 MG Oral Tablet"/>
+                <code value="863184"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 410 MG / Caffeine 60 MG / salicylamide 30 MG Oral Tablet"/>
+                <code value="863186"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 15600 MG Oral Tablet"/>
+                <code value="891134"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 31200 MG Oral Tablet"/>
+                <code value="891136"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 3900 MG Oral Tablet"/>
+                <code value="892160"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1 MG/MG Oral Powder"/>
+                <code value="900470"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 1000 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="994430"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 845 MG / Caffeine 65 MG Oral Powder"/>
+                <code value="994435"/>
+            </concept>
+            <concept>
+                <display value="24 HR Aspirin 162.5 MG Extended Release Oral Capsule"/>
+                <code value="1665356"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen 200 MG / Aspirin 220 MG / Caffeine 27 MG Oral Tablet"/>
+                <code value="1673788"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="bromfenac 0.9 MG/ML Ophthalmic Solution [Bromday]"/>
+                <code value="1020510"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.7 MG/ML Ophthalmic Solution [Prolensa]"/>
+                <code value="1375922"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.75 MG/ML Ophthalmic Solution [Bromsite]"/>
+                <code value="1790146"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.9 MG/ML Ophthalmic Solution"/>
+                <code value="578018"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.7 MG/ML Ophthalmic Solution"/>
+                <code value="1375917"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.75 MG/ML Ophthalmic Solution"/>
+                <code value="1790141"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="celecoxib 100 MG Oral Capsule [Celebrex]"/>
+                <code value="213468"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 200 MG Oral Capsule [Celebrex]"/>
+                <code value="213469"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 400 MG Oral Capsule [Celebrex]"/>
+                <code value="352314"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 50 MG Oral Capsule [Celebrex]"/>
+                <code value="686381"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 100 MG Oral Capsule"/>
+                <code value="205322"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 200 MG Oral Capsule"/>
+                <code value="205323"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 400 MG Oral Capsule"/>
+                <code value="349514"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 50 MG Oral Capsule"/>
+                <code value="686379"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML Topical Cream [Surpass Anti-Inflammatory]"/>
+                <code value="1043483"/>
+            </concept>
+            <concept>
+                <display value="diclofenac epolamine 0.013 MG/MG Medicated Patch [Flector]"/>
+                <code value="855628"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 1 MG/ML Ophthalmic Solution [Voltaren]"/>
+                <code value="854803"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+                <code value="855635"/>
+            </concept>
+            <concept>
+                <display value="24 HR Diclofenac Sodium 100 MG Extended Release Oral Tablet [Voltaren]"/>
+                <code value="855659"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG Delayed Release Oral Tablet [Voltaren]"/>
+                <code value="855928"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG Oral Tablet [Cataflam]"/>
+                <code value="855944"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.03 MG/MG Topical Gel [Solaraze]"/>
+                <code value="855644"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet [Arthrotec]"/>
+                <code value="1359107"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet [Arthrotec]"/>
+                <code value="1359109"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 25 MG Oral Capsule [Zipsor]"/>
+                <code value="858346"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG Powder for Oral Solution [Cambia]"/>
+                <code value="859066"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 15 MG/ML Topical Solution [Pennsaid]"/>
+                <code value="967944"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 20 MG/ML Topical Solution [Pennsaid]"/>
+                <code value="1487076"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 18 MG Oral Capsule [Zorvolex]"/>
+                <code value="1442122"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 35 MG Oral Capsule [Zorvolex]"/>
+                <code value="1442130"/>
+            </concept>
+            <concept>
+                <display value="1 ML Diclofenac Sodium 37.5 MG/ML Injection [Dyloject]"/>
+                <code value="1607582"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML Topical Cream"/>
+                <code value="1043479"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML / Fluorouracil 50 MG/ML Topical Cream"/>
+                <code value="1600382"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 1 MG/ML Ophthalmic Solution"/>
+                <code value="854801"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel"/>
+                <code value="855633"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.03 MG/MG Topical Gel"/>
+                <code value="855642"/>
+            </concept>
+            <concept>
+                <display value="24 HR Diclofenac Sodium 100 MG Extended Release Oral Tablet"/>
+                <code value="855657"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 25 MG Delayed Release Oral Tablet"/>
+                <code value="855664"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG Delayed Release Oral Tablet"/>
+                <code value="855906"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG Delayed Release Oral Tablet"/>
+                <code value="855926"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG Oral Tablet"/>
+                <code value="855942"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.25 MG/ML Oral Solution"/>
+                <code value="857689"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 100 MG Rectal Suppository"/>
+                <code value="857696"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 12.5 MG Rectal Suppository"/>
+                <code value="857698"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 15 MG/ML Topical Solution"/>
+                <code value="857700"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 25 MG Oral Tablet"/>
+                <code value="857702"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 25 MG Rectal Suppository"/>
+                <code value="857703"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 25 MG/ML Injectable Solution"/>
+                <code value="857705"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet"/>
+                <code value="857706"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG Extended Release Oral Tablet"/>
+                <code value="857707"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG Rectal Suppository"/>
+                <code value="857709"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG Extended Release Oral Tablet"/>
+                <code value="857713"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 25 MG Oral Capsule"/>
+                <code value="858342"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG Powder for Oral Solution"/>
+                <code value="859063"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet"/>
+                <code value="1359105"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 100 MG Oral Capsule"/>
+                <code value="1234493"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 18 MG Oral Capsule"/>
+                <code value="1442116"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 35 MG Oral Capsule"/>
+                <code value="1442128"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 20 MG/ML Topical Solution"/>
+                <code value="1487074"/>
+            </concept>
+            <concept>
+                <display value="1 ML Diclofenac Sodium 37.5 MG/ML Injection"/>
+                <code value="1599787"/>
+            </concept>
+            <concept>
+                <display value="diclofenac epolamine 0.013 MG/MG Medicated Patch"/>
+                <code value="855626"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Diflunisal 500 MG Oral Tablet"/>
+                <code value="197603"/>
+            </concept>
+            <concept>
+                <display value="Diflunisal 250 MG Oral Tablet"/>
+                <code value="197602"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Etodolac 400 MG Oral Tablet [Lodine]"/>
+                <code value="206812"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 200 MG Oral Capsule"/>
+                <code value="197684"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 300 MG Oral Capsule"/>
+                <code value="197685"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 400 MG Oral Tablet"/>
+                <code value="197686"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 500 MG Oral Tablet"/>
+                <code value="199390"/>
+            </concept>
+            <concept>
+                <display value="24 HR Etodolac 400 MG Extended Release Oral Tablet"/>
+                <code value="310245"/>
+            </concept>
+            <concept>
+                <display value="24 HR Etodolac 600 MG Extended Release Oral Tablet"/>
+                <code value="310247"/>
+            </concept>
+            <concept>
+                <display value="24 HR Etodolac 500 MG Extended Release Oral Tablet"/>
+                <code value="359500"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Fenoprofen 200 MG Oral Capsule [Nalfon]"/>
+                <code value="260323"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 400 MG Oral Capsule [Nalfon]"/>
+                <code value="858118"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 400 MG Oral Capsule [Fenortho]"/>
+                <code value="1799323"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 200 MG Oral Capsule [Fenortho]"/>
+                <code value="1799325"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 600 MG Oral Tablet [Profeno]"/>
+                <code value="1945850"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 200 MG Oral Capsule"/>
+                <code value="197694"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 300 MG Oral Capsule"/>
+                <code value="197695"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 300 MG Oral Tablet"/>
+                <code value="250469"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 600 MG Oral Tablet"/>
+                <code value="310291"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 400 MG Oral Capsule"/>
+                <code value="858116"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Flurbiprofen 100 MG Oral Tablet [Ansaid]"/>
+                <code value="205626"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen sodium 0.3 MG/ML Ophthalmic Solution [Ocufen]"/>
+                <code value="1243587"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 100 MG Rectal Suppository"/>
+                <code value="105845"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 100 MG Oral Tablet"/>
+                <code value="197724"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 50 MG Oral Tablet"/>
+                <code value="197725"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 200 MG Extended Release Oral Capsule"/>
+                <code value="199749"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 8.75 MG Oral Lozenge"/>
+                <code value="389247"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen sodium 0.3 MG/ML Ophthalmic Solution"/>
+                <code value="1243585"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
+                    Tablet [Wal-Profen Cold and Sinus]"/>
+                <code value="1299089"/>
+            </concept>
+            <concept>
+                <display value="Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet [Duexis]"/>
+                <code value="1100070"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Counteract IB]"/>
+                <code value="1101919"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Advil]"/>
+                <code value="153008"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML Oral Suspension [Advil]"/>
+                <code value="206878"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG Chewable Tablet [Advil]"/>
+                <code value="731529"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML Oral Suspension [Advil]"/>
+                <code value="731531"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Capsule [Advil]"/>
+                <code value="731533"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG Oral Tablet [Advil]"/>
+                <code value="731535"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG Chewable Tablet [Advil]"/>
+                <code value="731536"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Motrin]"/>
+                <code value="201126"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Nuprin]"/>
+                <code value="206893"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML Oral Suspension [Motrin]"/>
+                <code value="544393"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Capsule [Motrin]"/>
+                <code value="606990"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG Chewable Tablet [Motrin]"/>
+                <code value="792242"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG Oral Tablet [Motrin]"/>
+                <code value="806013"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [MIdol Cramps & Bodyaches]"/>
+                <code value="854760"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML Oral Suspension [Motrin]"/>
+                <code value="854762"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Capsule [MIdol Cramps & Bodyaches]"/>
+                <code value="1190622"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG Oral Tablet [Motrin]"/>
+                <code value="202098"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
+                    Capsule [Advil Cold and Sinus]"/>
+                <code value="1299020"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
+                    Tablet [Advil Cold and Sinus]"/>
+                <code value="1299022"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Genpril]"/>
+                <code value="206886"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 400 MG Oral Tablet [Ibu]"/>
+                <code value="206905"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 600 MG Oral Tablet [Ibu]"/>
+                <code value="206913"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG Oral Tablet [Ibu]"/>
+                <code value="206917"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML Oral Suspension [Pediacare Fever]"/>
+                <code value="206876"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG Oral Tablet [Vicoprofen]"/>
+                <code value="858838"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 2.5 MG / Ibuprofen 200 MG Oral Tablet [Reprexain]"/>
+                <code value="858772"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG Oral Tablet [Reprexain]"/>
+                <code value="858784"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Reprexain]"/>
+                <code value="859331"/>
+            </concept>
+            <concept>
+                <display value="2 ML Ibuprofen 10 MG/ML Injection [Neoprofen]"/>
+                <code value="637197"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Wal-Profen]"/>
+                <code value="643102"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Capsule [Wal-Profen]"/>
+                <code value="644386"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet
+                    [Advil PM]"/>
+                <code value="901818"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Ibuprohm]"/>
+                <code value="850424"/>
+            </concept>
+            <concept>
+                <display value="8 ML Ibuprofen 100 MG/ML Injection [Caldolor]"/>
+                <code value="854187"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet
+                    [Motrin PM]"/>
+                <code value="895666"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Addaprin]"/>
+                <code value="900434"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Ultraprin]"/>
+                <code value="900438"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG Oral
+                    Capsule [Advil PM Liqui Gels]"/>
+                <code value="902633"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral
+                    Tablet [Advil Congestion Relief]"/>
+                <code value="1369777"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Ibutab]"/>
+                <code value="1359097"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG Oral Tablet [Ibudone]"/>
+                <code value="858780"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Ibudone]"/>
+                <code value="859317"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML Oral Suspension [PediaCare
+                    Children's Pain & Fever w/ Ibuprofen]"/>
+                <code value="1429987"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Xylon]"/>
+                <code value="1542988"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral
+                    Tablet [Advil Sinus Congestion and Pain]"/>
+                <code value="1722333"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Proprinal]"/>
+                <code value="1300267"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG Oral Tablet [Samson 8]"/>
+                <code value="541713"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet [Dragon Tabs]"/>
+                <code value="2045477"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral
+                    Tablet [Wal-Profen Congestion Relief and Pain]"/>
+                <code value="1940587"/>
+            </concept>
+            <concept>
+                <display value="Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet"/>
+                <code value="1100066"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML Oral Suspension"/>
+                <code value="197803"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 600 MG Oral Tablet"/>
+                <code value="197806"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG Oral Tablet"/>
+                <code value="197807"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG Oral Tablet"/>
+                <code value="198405"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Extended Release Oral Capsule"/>
+                <code value="227159"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG Extended Release Oral Tablet"/>
+                <code value="250418"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG Chewable Tablet"/>
+                <code value="310963"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Capsule"/>
+                <code value="310964"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG Oral Tablet"/>
+                <code value="310965"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG Chewable Tablet"/>
+                <code value="314047"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 300 MG Extended Release Oral Capsule"/>
+                <code value="380813"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 300 MG / Pseudoephedrine 45 MG Oral Capsule"/>
+                <code value="401976"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML Oral Solution"/>
+                <code value="748641"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 2.5 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="858770"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="858778"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="858798"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="859315"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="895664"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG Oral Capsule"/>
+                <code value="901814"/>
+            </concept>
+            <concept>
+                <display value="Codeine Phosphate 12.5 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="997164"/>
+            </concept>
+            <concept>
+                <display value="Codeine Phosphate 12.8 MG / Ibuprofen 200 MG Oral Tablet"/>
+                <code value="997165"/>
+            </concept>
+            <concept>
+                <display value="Codeine Phosphate 20 MG / Ibuprofen 300 MG Extended Release
+                    Oral Tablet"/>
+                <code value="997280"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet"/>
+                <code value="1369775"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Capsule"/>
+                <code value="1292323"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine Maleate 0.2 MG/ML / Ibuprofen 20 MG/ML /
+                    Pseudoephedrine Hydrochloride 3 MG/ML Oral Suspension"/>
+                <code value="1297369"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine Maleate 2 MG / Ibuprofen 200 MG /
+                    Pseudoephedrine Hydrochloride 30 MG Oral Tablet"/>
+                <code value="1297390"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Capsule"/>
+                <code value="1299018"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet"/>
+                <code value="1299021"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML / Pseudoephedrine Hydrochloride 3 MG/ML
+                    Oral Suspension"/>
+                <code value="1310487"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine Maleate 4 MG / Ibuprofen 200 MG /
+                    Phenylephrine Hydrochloride 10 MG Oral Tablet"/>
+                <code value="1310503"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 400 MG / Oxycodone Hydrochloride 5 MG Oral Tablet"/>
+                <code value="1049589"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 400 MG Oral Tablet"/>
+                <code value="197805"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG/ML Topical Cream"/>
+                <code value="141998"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG/ML Topical Spray"/>
+                <code value="142102"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML Oral Suspension"/>
+                <code value="204442"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG/ML Topical Foam"/>
+                <code value="226617"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 3 MG/ML Oral Suspension"/>
+                <code value="141993"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 0.05 MG/MG Topical Gel"/>
+                <code value="141997"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 0.05 MG/MG / LEVOMENTHOL 0.03 MG/MG Topical Gel"/>
+                <code value="392668"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 0.1 MG/MG Topical Gel"/>
+                <code value="389244"/>
+            </concept>
+            <concept>
+                <display value="2 ML Ibuprofen 10 MG/ML Injection"/>
+                <code value="1747294"/>
+            </concept>
+            <concept>
+                <display value="8 ML Ibuprofen 100 MG/ML Injection"/>
+                <code value="854183"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Indomethacin 50 MG Rectal Suppository [Indocin]"/>
+                <code value="206969"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 5 MG/ML Oral Suspension [Indocin]"/>
+                <code value="206971"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Extended Release Oral Capsule [Indocin]"/>
+                <code value="891867"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 20 MG Oral Capsule [Tivorbex]"/>
+                <code value="1491527"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 40 MG Oral Capsule [Tivorbex]"/>
+                <code value="1491531"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 1 MG Injection"/>
+                <code value="346508"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 50 MG Extended Release Oral Tablet"/>
+                <code value="105864"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 25 MG Extended Release Oral Tablet"/>
+                <code value="105866"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 25 MG Oral Capsule"/>
+                <code value="197817"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 50 MG Oral Capsule"/>
+                <code value="197818"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 50 MG Rectal Suppository"/>
+                <code value="197819"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Extended Release Oral Tablet"/>
+                <code value="250526"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 25 MG Extended Release Oral Capsule"/>
+                <code value="251255"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 5 MG/ML Oral Suspension"/>
+                <code value="310991"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Extended Release Oral Capsule"/>
+                <code value="310992"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 75 MG Oral Capsule"/>
+                <code value="392073"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 100 MG Rectal Suppository"/>
+                <code value="199549"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 20 MG Oral Capsule"/>
+                <code value="1490727"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 40 MG Oral Capsule"/>
+                <code value="1491529"/>
+            </concept>
+            <concept>
+                <display value="Indomethacin 10 MG/ML Ophthalmic Solution"/>
+                <code value="247069"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Ketoprofen 100 MG/ML Injectable Solution [Ketofen]"/>
+                <code value="1551482"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 25 MG Oral Capsule"/>
+                <code value="197854"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 50 MG Oral Capsule"/>
+                <code value="197855"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 75 MG Oral Capsule"/>
+                <code value="197856"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 12.5 MG Oral Tablet"/>
+                <code value="199169"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 50 MG Rectal Suppository"/>
+                <code value="247630"/>
+            </concept>
+            <concept>
+                <display value="24 HR Ketoprofen 150 MG Extended Release Oral Capsule"/>
+                <code value="311230"/>
+            </concept>
+            <concept>
+                <display value="24 HR Ketoprofen 200 MG Extended Release Oral Capsule"/>
+                <code value="359697"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 25 MG Oral Tablet"/>
+                <code value="429192"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 150 MG Extended Release Oral Tablet"/>
+                <code value="431823"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 50 MG Delayed Release Oral Tablet"/>
+                <code value="245419"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 100 MG Oral Capsule"/>
+                <code value="199321"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 100 MG Rectal Suppository"/>
+                <code value="199553"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 100 MG Oral Tablet"/>
+                <code value="249482"/>
+            </concept>
+            <concept>
+                <display value="24 HR Ketoprofen 100 MG Extended Release Oral Capsule"/>
+                <code value="314059"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 100 MG Delayed Release Oral Tablet"/>
+                <code value="199758"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 0.025 MG/MG Topical Gel"/>
+                <code value="105999"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 50 MG/ML Injectable Solution"/>
+                <code value="246236"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 100 MG/ML Injectable Solution"/>
+                <code value="1551477"/>
+            </concept>
+            <concept>
+                <display value="Ketoprofen 0.05 MG/MG Topical Powder"/>
+                <code value="1488714"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution [Acular]"/>
+                <code value="860105"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution [Acular]"/>
+                <code value="860109"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution [Acuvail]"/>
+                <code value="858366"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT Metered Dose Nasal
+                    Spray [Sprix]"/>
+                <code value="1797857"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML Ophthalmic
+                    Irrigation Solution [Omidria]"/>
+                <code value="1540235"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 10 MG Oral Tablet"/>
+                <code value="834022"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution"/>
+                <code value="858364"/>
+            </concept>
+            <concept>
+                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
+                <code value="860092"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 30 MG/ML Injectable Solution"/>
+                <code value="860096"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution"/>
+                <code value="860103"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution"/>
+                <code value="860107"/>
+            </concept>
+            <concept>
+                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Prefilled Syringe"/>
+                <code value="860113"/>
+            </concept>
+            <concept>
+                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe"/>
+                <code value="860114"/>
+            </concept>
+            <concept>
+                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe"/>
+                <code value="860115"/>
+            </concept>
+            <concept>
+                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Injection"/>
+                <code value="1665459"/>
+            </concept>
+            <concept>
+                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Injection"/>
+                <code value="1665461"/>
+            </concept>
+            <concept>
+                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Cartridge"/>
+                <code value="1665675"/>
+            </concept>
+            <concept>
+                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Cartridge"/>
+                <code value="1665679"/>
+            </concept>
+            <concept>
+                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Cartridge"/>
+                <code value="1665682"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 10 MG/ML Injectable Solution"/>
+                <code value="861846"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT Metered Dose Nasal Spray"/>
+                <code value="1797855"/>
+            </concept>
+            <concept>
+                <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML Ophthalmic
+                    Irrigation Solution"/>
+                <code value="1540230"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Mefenamic Acid 250 MG Oral Capsule [Ponstel]"/>
+                <code value="829502"/>
+            </concept>
+            <concept>
+                <display value="Mefenamic Acid 250 MG Oral Capsule"/>
+                <code value="829500"/>
+            </concept>
+            <concept>
+                <display value="Mefenamic Acid 500 MG Oral Tablet"/>
+                <code value="829613"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="meloxicam 5 MG/ML Injectable Solution [Metacam]"/>
+                <code value="1086711"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 0.5 MG/ML Oral Suspension [Metacam]"/>
+                <code value="1091879"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension [Metacam]"/>
+                <code value="1092195"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 7.5 MG Oral Tablet [Mobic]"/>
+                <code value="152697"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 15 MG Oral Tablet [Mobic]"/>
+                <code value="152698"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension [Mobic]"/>
+                <code value="603844"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML Injectable Solution [Loxicom]"/>
+                <code value="1364061"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension [Loxicom]"/>
+                <code value="1648919"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension [Meloxidyl]"/>
+                <code value="1439982"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML Injectable Solution [Ostilox]"/>
+                <code value="1482674"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension [Ostilox]"/>
+                <code value="1649014"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML Injectable Solution [Eloxiject]"/>
+                <code value="1495055"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG Oral Capsule [Vivlodex]"/>
+                <code value="1722355"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 10 MG Oral Capsule [Vivlodex]"/>
+                <code value="1722359"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension [EloxiOral]"/>
+                <code value="1788852"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML Injectable Solution"/>
+                <code value="1086707"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 0.5 MG/ML Oral Suspension"/>
+                <code value="1091876"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 7.5 MG Rectal Suppository"/>
+                <code value="226923"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 7.5 MG Oral Tablet"/>
+                <code value="311486"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 15 MG Rectal Suppository"/>
+                <code value="152694"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 15 MG Oral Tablet"/>
+                <code value="152695"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML Oral Suspension"/>
+                <code value="597406"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG Oral Capsule"/>
+                <code value="1722349"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 10 MG Oral Capsule"/>
+                <code value="1722357"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="nabumetone 100 MG/ML Oral Suspension"/>
+                <code value="105953"/>
+            </concept>
+            <concept>
+                <display value="nabumetone 500 MG Oral Tablet"/>
+                <code value="311892"/>
+            </concept>
+            <concept>
+                <display value="nabumetone 750 MG Oral Tablet"/>
+                <code value="311893"/>
+            </concept>
+            <concept>
+                <display value="nabumetone 2.5 MG/ML Oral Solution"/>
+                <code value="392641"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Naproxen sodium 275 MG Oral Tablet [Anaprox]"/>
+                <code value="849400"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 550 MG Oral Tablet [Anaprox]"/>
+                <code value="849438"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 250 MG Oral Tablet [Naprosyn]"/>
+                <code value="105898"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG Oral Tablet [Naprosyn]"/>
+                <code value="105899"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG Oral Tablet [Naprosyn]"/>
+                <code value="105914"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 25 MG/ML Oral Suspension [Naprosyn]"/>
+                <code value="207093"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG Delayed Release Oral Tablet [Naprosyn]"/>
+                <code value="608793"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG Delayed Release Oral Tablet [Naprosyn]"/>
+                <code value="835560"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Capsule [Aleve]"/>
+                <code value="1112233"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Tablet [Aleve]"/>
+                <code value="849728"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 375 MG Extended Release Oral Tablet [Naprelan]"/>
+                <code value="1116331"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 500 MG Extended Release Oral Tablet [Naprelan]"/>
+                <code value="1116341"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 750 MG Extended Release Oral Tablet [Naprelan]"/>
+                <code value="1116351"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Tablet [Midol Extended Relief]"/>
+                <code value="849752"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Tablet [Wal-Proxen]"/>
+                <code value="849737"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 500 MG / Sumatriptan 85 MG Oral Tablet [Treximet]"/>
+                <code value="849452"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 60 MG / Sumatriptan 10 MG Oral Tablet [Treximet]"/>
+                <code value="1653767"/>
+            </concept>
+            <concept>
+                <display value="12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride
+                    120 MG Extended Release Oral Tablet [Aleve-D]"/>
+                <code value="1367428"/>
+            </concept>
+            <concept>
+                <display value="12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride
+                    120 MG Extended Release Oral Tablet [Sudafed Sinus & Pain]"/>
+                <code value="1373034"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral
+                    Tablet [Vimovo]"/>
+                <code value="994007"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral
+                    Tablet [Vimovo]"/>
+                <code value="994010"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 25 MG / Naproxen sodium 220 MG
+                    Oral Tablet [Aleve PM]"/>
+                <code value="1550963"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Tablet [Menstridol]"/>
+                <code value="1593660"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 250 MG Delayed Release Oral Tablet"/>
+                <code value="105918"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 375 MG Extended Release Oral Tablet"/>
+                <code value="1116320"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 500 MG Extended Release Oral Tablet"/>
+                <code value="1116339"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG Oral Tablet"/>
+                <code value="198012"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 250 MG Oral Tablet"/>
+                <code value="198013"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG Oral Tablet"/>
+                <code value="198014"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG Rectal Suppository"/>
+                <code value="199490"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG Delayed Release Oral Tablet"/>
+                <code value="311915"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG Delayed Release Oral Tablet"/>
+                <code value="603103"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral Tablet"/>
+                <code value="994005"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG Delayed Release Oral Tablet"/>
+                <code value="994008"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 25 MG/ML Oral Suspension"/>
+                <code value="311913"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 750 MG Extended Release Oral Tablet"/>
+                <code value="1116349"/>
+            </concept>
+            <concept>
+                <display value="24 HR Naproxen 1000 MG Extended Release Oral Tablet"/>
+                <code value="433845"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 125 MG Oral Tablet"/>
+                <code value="245420"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Capsule"/>
+                <code value="1112231"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 275 MG Oral Tablet"/>
+                <code value="849398"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 550 MG Oral Tablet"/>
+                <code value="849431"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 500 MG / Sumatriptan 85 MG Oral Tablet"/>
+                <code value="849450"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG Oral Tablet"/>
+                <code value="849574"/>
+            </concept>
+            <concept>
+                <display value="12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride
+                    120 MG Extended Release Oral Tablet"/>
+                <code value="1367426"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 25 MG / Naproxen sodium 220 MG
+                    Oral Tablet"/>
+                <code value="1550957"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 200 MG Oral Tablet"/>
+                <code value="1608797"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 60 MG / Sumatriptan 10 MG Oral Tablet"/>
+                <code value="1653765"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="nepafenac 1 MG/ML Ophthalmic Suspension [Nevanac]"/>
+                <code value="603978"/>
+            </concept>
+            <concept>
+                <display value="nepafenac 3 MG/ML Ophthalmic Suspension [Ilevro]"/>
+                <code value="1365866"/>
+            </concept>
+            <concept>
+                <display value="nepafenac 1 MG/ML Ophthalmic Suspension"/>
+                <code value="578044"/>
+            </concept>
+            <concept>
+                <display value="nepafenac 3 MG/ML Ophthalmic Suspension"/>
+                <code value="1362132"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="oxaprozin 600 MG Oral Tablet [Daypro]"/>
+                <code value="207243"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin 600 MG Oral Tablet"/>
+                <code value="312132"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin 600 MG Delayed Release Oral Capsule"/>
+                <code value="349188"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Piroxicam 10 MG Oral Capsule [Feldene]"/>
+                <code value="105929"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG Oral Capsule [Feldene]"/>
+                <code value="105930"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 10 MG Oral Capsule"/>
+                <code value="198107"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 10 MG Oral Tablet"/>
+                <code value="199559"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 10 MG Rectal Suppository"/>
+                <code value="247066"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG Rectal Suppository"/>
+                <code value="105942"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG Oral Capsule"/>
+                <code value="198108"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG Oral Tablet"/>
+                <code value="199560"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG Disintegrating Oral Tablet"/>
+                <code value="384786"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 0.005 MG/MG Topical Gel"/>
+                <code value="106002"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG/ML Injectable Solution"/>
+                <code value="246246"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Sulindac 150 MG Oral Tablet"/>
+                <code value="198238"/>
+            </concept>
+            <concept>
+                <display value="Sulindac 200 MG Oral Tablet"/>
+                <code value="198239"/>
+            </concept>
+            <concept>
+                <display value="Sulindac 100 MG Oral Tablet"/>
+                <code value="199279"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="04-Jun-2018"/>
+            <concept>
+                <display value="Tolmetin 200 MG Oral Tablet"/>
+                <code value="198295"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin 400 MG Oral Capsule"/>
+                <code value="198296"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin 600 MG Oral Tablet"/>
+                <code value="198297"/>
             </concept>
         </include>
     </compose>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PPIS"/>
-    <id value="valueset-PPIS"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-AAS"/>
+    <id value="valueset-AAS"/>
     <version value="US 1.1"/>
-    <name value="valueset-PPIS"/>
-    <title value="Proton Pump Inhibitor Drug Value Set"/>
+    <name value="valueset-AAS"/>
+    <title value="Aldosterone Antagonists Drug Value Set"/>
     <status value="draft"/>
     <date value="2018-06-27"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the
-    Established Pharmacologic Class (EPC) Proton Pump Inhibitor drug class (id: N0000175525).
+    Established Pharmacologic Class (EPC) Aldosterone Antagonist drug class (id: N0000175557).
     Member by RxNorm: getRelatedByType (BN,BPCK,GPCK,IN,MIN,PIN,SBD,SBDC,SBDF,SBDG,SCD,SCDC,SCDF,SCDG)"/>
     <jurisdiction>
         <coding>
@@ -19,7 +19,7 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Proton Pump Inhibitor drug class terminology for PDDI CDS FHIR resources"/>
+    <purpose value="Provide Aldosterone Antagonist drug class terminology for PDDI CDS FHIR resources"/>
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>

@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-omeprazole"/>
     <id value="valueset-omeprazole"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-omeprazole"/>
     <title value="Omeprazole Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for omeprazole."/>
+    <description value="ValueSet containing drug identifiers for omeprazole."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +17,71 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Prilosec"/>
+                <code value="203345"/>
+            </concept>
+            <concept>
+                <display value="Zegerid Reformulated Aug 2006"/>
+                <code value="646341"/>
+            </concept>
+            <concept>
+                <display value="Zegerid with Magnesium Hydroxide"/>
+                <code value="695927"/>
+            </concept>
+            <concept>
+                <display value="Omesec"/>
+                <code value="967522"/>
+            </concept>
+            <concept>
+                <display value="UlcerGard"/>
+                <code value="994511"/>
+            </concept>
+            <concept>
+                <display value="Yosprala"/>
+                <code value="1811911"/>
+            </concept>
+            <concept>
+                <display value="{4 (Amoxicillin 500 MG Oral Capsule) / 2 (Clarithromycin 500
+                    MG Oral Tablet) / 2 (Omeprazole 20 MG Delayed Release Oral
+                    Capsule) } Pack [Omeclamox]"/>
+                <code value="1291987"/>
+            </concept>
+            <concept>
+                <display value="{4 (Amoxicillin 500 MG Oral Capsule) / 2 (Clarithromycin 500
+                    MG Oral Tablet) / 2 (Omeprazole 20 MG Delayed Release Oral
+                    Capsule) } Pack"/>
+                <code value="1291986"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole"/>
+                <code value="7646"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate"/>
+                <code value="617777"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate"/>
+                <code value="645168"/>
+            </concept>
+            <concept>
+                <display value="Aspirin / Omeprazole"/>
+                <code value="1811630"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole magnesium"/>
+                <code value="236486"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Sodium"/>
+                <code value="1792108"/>
+            </concept>
             <concept>
                 <display value="Omeprazole 20 MG Delayed Release Oral Capsule [Prilosec]"/>
                 <code value="207212"/>
@@ -92,6 +152,107 @@
             <concept>
                 <display value="Aspirin 81 MG / Omeprazole 40 MG Delayed Release Oral Tablet [Yosprala]"/>
                 <code value="1811918"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG [Prilosec]"/>
+                <code value="541192"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG [Prilosec]"/>
+                <code value="541245"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG [Prilosec]"/>
+                <code value="541248"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 2.5 MG [Prilosec]"/>
+                <code value="1855336"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG / Sodium Bicarbonate 1100 MG [Zegerid
+                    Reformulated Aug 2006]"/>
+                <code value="646342"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG / Sodium Bicarbonate 1100 MG [Zegerid
+                    Reformulated Aug 2006]"/>
+                <code value="646351"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG / Sodium Bicarbonate 1680 MG [Zegerid
+                    Reformulated Aug 2006]"/>
+                <code value="1855342"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG / Sodium Bicarbonate 1680 MG [Zegerid
+                    Reformulated Aug 2006]"/>
+                <code value="1855347"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide 700 MG / Omeprazole 20 MG / Sodium
+                    Bicarbonate 600 MG [Zegerid with Magnesium Hydroxide]"/>
+                <code value="695928"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide 700 MG / Omeprazole 40 MG / Sodium
+                    Bicarbonate 600 MG [Zegerid with Magnesium Hydroxide]"/>
+                <code value="695931"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG [Omesec]"/>
+                <code value="967523"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 0.37 MG/MG [UlcerGard]"/>
+                <code value="994512"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 325 MG / Omeprazole 40 MG [Yosprala]"/>
+                <code value="1811912"/>
+            </concept>
+            <concept>
+                <display value="Aspirin 81 MG / Omeprazole 40 MG [Yosprala]"/>
+                <code value="1811917"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Delayed Release Oral Capsule [Prilosec]"/>
+                <code value="366804"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Delayed Release Oral Tablet [Prilosec]"/>
+                <code value="608795"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Oral Capsule [Zegerid
+                    Reformulated Aug 2006]"/>
+                <code value="646343"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate
+                    Chewable Tablet [Zegerid with Magnesium Hydroxide]"/>
+                <code value="695929"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Delayed Release Oral Capsule [Omesec]"/>
+                <code value="967524"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Granules for Oral Suspension [Prilosec]"/>
+                <code value="1855332"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Powder for Oral Suspension
+                    [Zegerid Reformulated Aug 2006]"/>
+                <code value="1855343"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Oral Paste [UlcerGard]"/>
+                <code value="1796431"/>
+            </concept>
+            <concept>
+                <display value="Aspirin / Omeprazole Delayed Release Oral Tablet [Yosprala]"/>
+                <code value="1811913"/>
             </concept>
             <concept>
                 <display value="Omeprazole 20 MG Disintegrating Oral Tablet"/>
@@ -188,6 +349,204 @@
             <concept>
                 <display value="Omeprazole 2.5 MG Granules for Oral Suspension"/>
                 <code value="797063"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 10 MG"/>
+                <code value="316407"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 20 MG"/>
+                <code value="316408"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 40 MG"/>
+                <code value="317451"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 4 MG/ML"/>
+                <code value="332271"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 0.37 MG/MG"/>
+                <code value="994508"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole 2.5 MG"/>
+                <code value="1855326"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Disintegrating Oral Tablet"/>
+                <code value="2003655"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Injectable Solution"/>
+                <code value="375193"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Delayed Release Oral Capsule"/>
+                <code value="378236"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Oral Tablet"/>
+                <code value="393435"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Delayed Release Oral Tablet"/>
+                <code value="402424"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Extended Release Oral Capsule"/>
+                <code value="541190"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Oral Capsule"/>
+                <code value="616538"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate
+                    Chewable Tablet"/>
+                <code value="645294"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Oral Paste"/>
+                <code value="1796429"/>
+            </concept>
+            <concept>
+                <display value="Aspirin / Omeprazole Delayed Release Oral Tablet"/>
+                <code value="1811629"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Granules for Oral Suspension"/>
+                <code value="1855328"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Powder for Oral Suspension"/>
+                <code value="1855340"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Disintegrating Oral Product"/>
+                <code value="2003654"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate Oral Product"/>
+                <code value="1157482"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate Pill"/>
+                <code value="1157483"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Oral Paste Product"/>
+                <code value="1796427"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Paste Product"/>
+                <code value="1796428"/>
+            </concept>
+            <concept>
+                <display value="Aspirin / Omeprazole Oral Product"/>
+                <code value="1811627"/>
+            </concept>
+            <concept>
+                <display value="Aspirin / Omeprazole Pill"/>
+                <code value="1811628"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Granule Product"/>
+                <code value="1855327"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Oral Powder Product"/>
+                <code value="1855339"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Oral Product"/>
+                <code value="1161024"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole / Sodium Bicarbonate Pill"/>
+                <code value="1161025"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Injectable Product"/>
+                <code value="1161026"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Oral Product"/>
+                <code value="1161028"/>
+            </concept>
+            <concept>
+                <display value="Omeprazole Pill"/>
+                <code value="1161029"/>
+            </concept>
+            <concept>
+                <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate
+                    Chewable Product"/>
+                <code value="1295655"/>
+            </concept>
+            <concept>
+                <display value="Zegerid with Magnesium Hydroxide Oral Product"/>
+                <code value="1187230"/>
+            </concept>
+            <concept>
+                <display value="Zegerid with Magnesium Hydroxide Pill"/>
+                <code value="1187231"/>
+            </concept>
+            <concept>
+                <display value="UlcerGard Oral Paste Product"/>
+                <code value="1796432"/>
+            </concept>
+            <concept>
+                <display value="UlcerGard Paste Product"/>
+                <code value="1796434"/>
+            </concept>
+            <concept>
+                <display value="Yosprala Oral Product"/>
+                <code value="1811914"/>
+            </concept>
+            <concept>
+                <display value="Yosprala Pill"/>
+                <code value="1811915"/>
+            </concept>
+            <concept>
+                <display value="Prilosec Granule Product"/>
+                <code value="1855333"/>
+            </concept>
+            <concept>
+                <display value="Zegerid Reformulated Aug 2006 Oral Powder Product"/>
+                <code value="1855344"/>
+            </concept>
+            <concept>
+                <display value="UlcerGard Oral Product"/>
+                <code value="1796433"/>
+            </concept>
+            <concept>
+                <display value="Prilosec Oral Product"/>
+                <code value="1178238"/>
+            </concept>
+            <concept>
+                <display value="Prilosec Pill"/>
+                <code value="1178239"/>
+            </concept>
+            <concept>
+                <display value="Omesec Oral Product"/>
+                <code value="1181167"/>
+            </concept>
+            <concept>
+                <display value="Omesec Pill"/>
+                <code value="1181168"/>
+            </concept>
+            <concept>
+                <display value="Zegerid Reformulated Aug 2006 Oral Product"/>
+                <code value="1187228"/>
+            </concept>
+            <concept>
+                <display value="Zegerid Reformulated Aug 2006 Pill"/>
+                <code value="1187229"/>
+            </concept>
+            <concept>
+                <display value="Zegerid with Magnesium Hydroxide Chewable Product"/>
+                <code value="1296694"/>
             </concept>
         </include>
     </compose>

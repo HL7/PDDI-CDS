@@ -1,143 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-   <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin"/>
-   <id value="valueset-warfarin"/>
-   <version value="1.0"/>
-   <name value="valueset-warfarin"/>
-   <title value="Warfarin Medications Value Set"/>
-   <status value="draft"/>
-   <date value="2018-06-20"/>
-   <publisher value="PDDI CDS"/>
-   <contact value="Richard Boyce boycerd@upmc.edu"/>
-   <description value="ValueSet containing orderable drug representations for warfarin."/>
-   <jurisdiction>
-      <coding>
-         <system value="urn:iso:std:iso:3166"/>
-         <code value="US"/>
-         <display value="United States of America"/>
-      </coding>
-   </jurisdiction>
-   <purpose value="Provide terminology for PDDI CDS FHIR resources"/>
-   <copyright value="HL7 - TBD"/>
-   <compose>
-      <include>
-         <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-         <version value="04-Jun-2018"/>
-         <concept>
-            <code value="855350"/>
-            <display value="Warfarin Sodium 0.5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855288"/>
-            <display value="Warfarin Sodium 1 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855296"/>
-            <display value="Warfarin Sodium 10 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855302"/>
-            <display value="Warfarin Sodium 2 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855308"/>
-            <display value="Warfarin Sodium 2 MG/ML Injectable Solution"/>
-         </concept>
-         <concept>
-            <code value="855312"/>
-            <display value="Warfarin Sodium 2.5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855318"/>
-            <display value="Warfarin Sodium 3 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855324"/>
-            <display value="Warfarin Sodium 4 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855332"/>
-            <display value="Warfarin Sodium 5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855338"/>
-            <display value="Warfarin Sodium 6 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855344"/>
-            <display value="Warfarin Sodium 7.5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855290"/>
-            <display value="Coumadin 1 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855298"/>
-            <display value="Coumadin 10 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855304"/>
-            <display value="Coumadin 2 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855314"/>
-            <display value="Coumadin 2.5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855320"/>
-            <display value="Coumadin 3 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855326"/>
-            <display value="Coumadin 4 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855334"/>
-            <display value="Coumadin 5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855340"/>
-            <display value="Coumadin 6 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855346"/>
-            <display value="Coumadin 7.5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855292"/>
-            <display value="Jantoven 1 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855300"/>
-            <display value="Jantoven 10 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855306"/>
-            <display value="Jantoven 2 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855316"/>
-            <display value="Jantoven 2.5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855322"/>
-            <display value="Jantoven 3 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855328"/>
-            <display value="Jantoven 4 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855336"/>
-            <display value="Jantoven 5 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855342"/>
-            <display value="Jantoven 6 MG Oral Tablet"/>
-         </concept>
-         <concept>
-            <code value="855348"/>
-            <display value="Jantoven 7.5 MG Oral Tablet"/>
-         </concept>
-      </include>
-   </compose>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin"/>
+    <id value="valueset-warfarin"/>
+    <version value="US 1.1"/>
+    <name value="valueset-warfarin"/>
+    <title value="Warfarin Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing drug identifiers for warfarin."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Coumadin"/>
+                <code value="202421"/>
+            </concept>
+            <concept>
+                <display value="Jantoven"/>
+                <code value="405155"/>
+            </concept>
+            <concept>
+                <display value="Warfarin"/>
+                <code value="11289"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium"/>
+                <code value="114194"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Potassium"/>
+                <code value="82118"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 1 MG Oral Tablet [Coumadin]"/>
+                <code value="855290"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 10 MG Oral Tablet [Coumadin]"/>
+                <code value="855298"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG Oral Tablet [Coumadin]"/>
+                <code value="855304"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2.5 MG Oral Tablet [Coumadin]"/>
+                <code value="855314"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 3 MG Oral Tablet [Coumadin]"/>
+                <code value="855320"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 4 MG Oral Tablet [Coumadin]"/>
+                <code value="855326"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 5 MG Oral Tablet [Coumadin]"/>
+                <code value="855334"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 6 MG Oral Tablet [Coumadin]"/>
+                <code value="855340"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 7.5 MG Oral Tablet [Coumadin]"/>
+                <code value="855346"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 1 MG Oral Tablet [Jantoven]"/>
+                <code value="855292"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 10 MG Oral Tablet [Jantoven]"/>
+                <code value="855300"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG Oral Tablet [Jantoven]"/>
+                <code value="855306"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2.5 MG Oral Tablet [Jantoven]"/>
+                <code value="855316"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 3 MG Oral Tablet [Jantoven]"/>
+                <code value="855322"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 4 MG Oral Tablet [Jantoven]"/>
+                <code value="855328"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 5 MG Oral Tablet [Jantoven]"/>
+                <code value="855336"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 6 MG Oral Tablet [Jantoven]"/>
+                <code value="855342"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 7.5 MG Oral Tablet [Jantoven]"/>
+                <code value="855348"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 1 MG [Coumadin]"/>
+                <code value="855289"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 10 MG [Coumadin]"/>
+                <code value="855297"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG [Coumadin]"/>
+                <code value="855303"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2.5 MG [Coumadin]"/>
+                <code value="855313"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 3 MG [Coumadin]"/>
+                <code value="855319"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 4 MG [Coumadin]"/>
+                <code value="855325"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 5 MG [Coumadin]"/>
+                <code value="855333"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 6 MG [Coumadin]"/>
+                <code value="855339"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 7.5 MG [Coumadin]"/>
+                <code value="855345"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 1 MG [Jantoven]"/>
+                <code value="855291"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 10 MG [Jantoven]"/>
+                <code value="855299"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG [Jantoven]"/>
+                <code value="855305"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2.5 MG [Jantoven]"/>
+                <code value="855315"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 3 MG [Jantoven]"/>
+                <code value="855321"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 4 MG [Jantoven]"/>
+                <code value="855327"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 5 MG [Jantoven]"/>
+                <code value="855335"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 6 MG [Jantoven]"/>
+                <code value="855341"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 7.5 MG [Jantoven]"/>
+                <code value="855347"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Oral Tablet [Coumadin]"/>
+                <code value="368417"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Oral Tablet [Jantoven]"/>
+                <code value="406078"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 1 MG Oral Tablet"/>
+                <code value="855288"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 10 MG Oral Tablet"/>
+                <code value="855296"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG Oral Tablet"/>
+                <code value="855302"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG/ML Injectable Solution"/>
+                <code value="855308"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2.5 MG Oral Tablet"/>
+                <code value="855312"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 3 MG Oral Tablet"/>
+                <code value="855318"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 4 MG Oral Tablet"/>
+                <code value="855324"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 5 MG Oral Tablet"/>
+                <code value="855332"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 6 MG Oral Tablet"/>
+                <code value="855338"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 7.5 MG Oral Tablet"/>
+                <code value="855344"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 0.5 MG Oral Tablet"/>
+                <code value="855350"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 1 MG"/>
+                <code value="855287"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 10 MG"/>
+                <code value="855295"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG"/>
+                <code value="855301"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2 MG/ML"/>
+                <code value="855307"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 2.5 MG"/>
+                <code value="855311"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 3 MG"/>
+                <code value="855317"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 4 MG"/>
+                <code value="855323"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 5 MG"/>
+                <code value="855331"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 6 MG"/>
+                <code value="855337"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 7.5 MG"/>
+                <code value="855343"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Sodium 0.5 MG"/>
+                <code value="855349"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Oral Tablet"/>
+                <code value="374319"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Injectable Solution"/>
+                <code value="374320"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Injectable Product"/>
+                <code value="1161789"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Oral Product"/>
+                <code value="1161790"/>
+            </concept>
+            <concept>
+                <display value="Warfarin Pill"/>
+                <code value="1161791"/>
+            </concept>
+            <concept>
+                <display value="Jantoven Oral Product"/>
+                <code value="1167808"/>
+            </concept>
+            <concept>
+                <display value="Jantoven Pill"/>
+                <code value="1167809"/>
+            </concept>
+            <concept>
+                <display value="Coumadin Oral Product"/>
+                <code value="1171655"/>
+            </concept>
+            <concept>
+                <display value="Coumadin Pill"/>
+                <code value="1171656"/>
+            </concept>
+        </include>
+    </compose>
 </ValueSet>

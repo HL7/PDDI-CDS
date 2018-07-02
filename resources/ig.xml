@@ -15,12 +15,26 @@
 			<name value="base" />
 		</package>
 		<resource>
-			<reference>
-				<reference value="ValueSet/valueset-warfarin" />
-			</reference>
-			<name value="valueset-warfarin" />
-			<exampleBoolean value="false" />
-		</resource>
+            <reference>
+                <reference value="ValueSet/valueset-topicaldiclofenac"/>
+            </reference>
+            <name value="valueset-topicaldiclofenac"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-warfarin" />
+            </reference>
+            <name value="valueset-warfarin" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-NSAIDS" />
+            </reference>
+            <name value="valueset-NSAIDS" />
+            <exampleBoolean value="false" />
+        </resource>
 		<page>
 			<nameUrl value="index.html" />
 			<title value="PDDI CDS Homepage" />

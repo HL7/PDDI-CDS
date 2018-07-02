@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole"/>
     <id value="valueset-pantoprazole"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-pantoprazole"/>
     <title value="Pantoprazole Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for pantoprazole."/>
+    <description value="ValueSet containing drug identifiers for pantoprazole."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +17,27 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Protonix"/>
+                <code value="261624"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole"/>
+                <code value="40790"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole (as pantoprazole sodium sesquihydrate)"/>
+                <code value="236632"/>
+            </concept>
+            <concept>
+                <display value="Pantoprazole sodium"/>
+                <code value="253191"/>
+            </concept>
             <concept>
                 <display value="pantoprazole 40 MG Delayed Release Oral Tablet [Protonix]"/>
                 <code value="284400"/>
@@ -39,6 +55,26 @@
                 <code value="885257"/>
             </concept>
             <concept>
+                <display value="pantoprazole 20 MG [Protonix]"/>
+                <code value="542443"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG [Protonix]"/>
+                <code value="542447"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Delayed Release Oral Tablet [Protonix]"/>
+                <code value="369821"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Oral Granules [Protonix]"/>
+                <code value="763307"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Injection [Protonix]"/>
+                <code value="1737589"/>
+            </concept>
+            <concept>
                 <display value="pantoprazole 40 MG Injection"/>
                 <code value="283669"/>
             </concept>
@@ -53,6 +89,58 @@
             <concept>
                 <display value="pantoprazole 20 MG Delayed Release Oral Tablet"/>
                 <code value="251872"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 40 MG"/>
+                <code value="330396"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole 20 MG"/>
+                <code value="336764"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Delayed Release Oral Tablet"/>
+                <code value="373222"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Oral Granules"/>
+                <code value="763305"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Injection"/>
+                <code value="1737587"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Injectable Product"/>
+                <code value="1160733"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Oral Product"/>
+                <code value="1160735"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Pill"/>
+                <code value="1160736"/>
+            </concept>
+            <concept>
+                <display value="pantoprazole Granule Product"/>
+                <code value="1295163"/>
+            </concept>
+            <concept>
+                <display value="Protonix Injectable Product"/>
+                <code value="1182454"/>
+            </concept>
+            <concept>
+                <display value="Protonix Oral Product"/>
+                <code value="1182455"/>
+            </concept>
+            <concept>
+                <display value="Protonix Pill"/>
+                <code value="1182456"/>
+            </concept>
+            <concept>
+                <display value="Protonix Granule Product"/>
+                <code value="1296856"/>
             </concept>
         </include>
     </compose>

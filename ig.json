@@ -62,10 +62,18 @@
    "version":"3.4.0",
    "license":"",
    "resources":{
-    "ValueSet/valueset-warfarin": {
-      "base": "ValueSet-valueset-warfarin.html",
-      "source": "valueset-warfarin.xml"
-    }
+    "ValueSet/valueset-topicaldiclofenac": {
+      "base": "ValueSet-valueset-topicaldiclofenac.html",
+      "source": "valueset-topicaldiclofenac.xml"
+    },
+     "ValueSet/valueset-warfarin": {
+       "base": "ValueSet-valueset-warfarin.html",
+       "source": "valueset-warfarin.xml"
+     },
+     "ValueSet/valueset-NSAIDS": {
+       "base": "ValueSet-valueset-NSIADS.html",
+       "source": "valueset-warfarin.xml"
+     }
    },
    "extensions":[
 

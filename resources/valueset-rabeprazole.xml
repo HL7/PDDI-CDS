@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole"/>
     <id value="valueset-rabeprazole"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-rabeprazole"/>
     <title value="Rabeprazole Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for rabeprazole."/>
+    <description value="ValueSet containing drug identifiers for rabeprazole."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +17,23 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Proton Pump Inhibitor (PPI) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Aciphex"/>
+                <code value="261440"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole"/>
+                <code value="114979"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium"/>
+                <code value="226868"/>
+            </concept>
             <concept>
                 <display value="Rabeprazole sodium 20 MG Delayed Release Oral Tablet [Aciphex]"/>
                 <code value="854870"/>
@@ -33,6 +45,26 @@
             <concept>
                 <display value="Rabeprazole sodium 10 MG Oral Granules [Aciphex]"/>
                 <code value="1483319"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 20 MG [Aciphex]"/>
+                <code value="854865"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG [Aciphex]"/>
+                <code value="1437485"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 5 MG [Aciphex]"/>
+                <code value="1437490"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Oral Granules [Aciphex]"/>
+                <code value="1944641"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Delayed Release Oral Tablet [Aciphex]"/>
+                <code value="854869"/>
             </concept>
             <concept>
                 <display value="Rabeprazole sodium 20 MG Delayed Release Oral Tablet"/>
@@ -49,6 +81,50 @@
             <concept>
                 <display value="Rabeprazole sodium 5 MG Oral Granules"/>
                 <code value="1437489"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 20 MG"/>
+                <code value="854862"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 10 MG"/>
+                <code value="854871"/>
+            </concept>
+            <concept>
+                <display value="Rabeprazole sodium 5 MG"/>
+                <code value="1437487"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Oral Granules"/>
+                <code value="1944639"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Delayed Release Oral Tablet"/>
+                <code value="375256"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Granule Product"/>
+                <code value="1944638"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Oral Product"/>
+                <code value="1157892"/>
+            </concept>
+            <concept>
+                <display value="rabeprazole Pill"/>
+                <code value="1157893"/>
+            </concept>
+            <concept>
+                <display value="Aciphex Granule Product"/>
+                <code value="1944642"/>
+            </concept>
+            <concept>
+                <display value="Aciphex Oral Product"/>
+                <code value="1168435"/>
+            </concept>
+            <concept>
+                <display value="Aciphex Pill"/>
+                <code value="1168436"/>
             </concept>
         </include>
     </compose>

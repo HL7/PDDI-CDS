@@ -23,7 +23,7 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet value="https://github.com/HL7/PDDI-CDS/blob/master/resources/valueset-aspirin.xml"/>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-eplerenone.xml"/>
         </include>
     </compose>
 </ValueSet>

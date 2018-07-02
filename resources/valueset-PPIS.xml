@@ -23,7 +23,22 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet value="https://github.com/HL7/PDDI-CDS/blob/master/resources/valueset-aspirin.xml"/>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-dexlansoprazole.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-esomeprazole.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-lansoprazole.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-omeprazole.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-pantoprazole.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-rabeprazole.xml"/>
         </include>
     </compose>
 </ValueSet>

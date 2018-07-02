@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone"/>
+    <id value="valueset-eplerenone"/>
+    <version value="US 1.1"/>
+    <name value="valueset-eplerenone"/>
+    <title value="Eplerenone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <description value="ValueSet containing drug identifiers for eplerenone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Inspra"/>
+                <code value="342280"/>
+            </concept>
+            <concept>
+                <display value="eplerenone"/>
+                <code value="298869"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 50 MG Oral Tablet [Inspra]"/>
+                <code value="402105"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 25 MG Oral Tablet [Inspra]"/>
+                <code value="402106"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 50 MG [Inspra]"/>
+                <code value="576107"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 25 MG [Inspra]"/>
+                <code value="576108"/>
+            </concept>
+            <concept>
+                <display value="eplerenone Oral Tablet [Inspra]"/>
+                <code value="402363"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 25 MG Oral Tablet"/>
+                <code value="351256"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 50 MG Oral Tablet"/>
+                <code value="351257"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 100 MG Oral Tablet"/>
+                <code value="351258"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 25 MG"/>
+                <code value="353386"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 50 MG"/>
+                <code value="353387"/>
+            </concept>
+            <concept>
+                <display value="eplerenone 100 MG"/>
+                <code value="353388"/>
+            </concept>
+            <concept>
+                <display value="eplerenone Oral Tablet"/>
+                <code value="378726"/>
+            </concept>
+            <concept>
+                <display value="eplerenone Oral Product"/>
+                <code value="1161909"/>
+            </concept>
+            <concept>
+                <display value="eplerenone Pill"/>
+                <code value="1161910"/>
+            </concept>
+            <concept>
+                <display value="Inspra Oral Product"/>
+                <code value="1173417"/>
+            </concept>
+            <concept>
+                <display value="Inspra Pill"/>
+                <code value="1173418"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

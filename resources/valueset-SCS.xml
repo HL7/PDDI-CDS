@@ -6,7 +6,7 @@
     <name value="valueset-SCS"/>
     <title value="Systemic Corticosteroid Drug Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-27"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the

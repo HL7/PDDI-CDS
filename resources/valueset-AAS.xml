@@ -6,7 +6,7 @@
     <name value="valueset-AAS"/>
     <title value="Aldosterone Antagonists Drug Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-27"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact value="Richard Boyce boycerd@upmc.edu"/>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the
@@ -24,6 +24,9 @@
     <compose>
         <include>
             <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-eplerenone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-spironolactone.xml"/>
         </include>
     </compose>
 </ValueSet>

@@ -30,5 +30,59 @@
         <include>
             <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-betamethasone.xml"/>
         </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-cloprednol.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-cortisone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-cortivazol.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-deflazacort.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-desoxycorticosterone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-dexamethasone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-fludrocortisone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-fluocortolone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-hydrocortisone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-meprednisone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-methylprednisolone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-paramethasone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-prednisolone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-prednisone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-prednylidene.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-rimexolone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-triamcinolone.xml"/>
+        </include>
+        <include>
+            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-trilostane.xml"/>
+        </include>
     </compose>
 </ValueSet>

@@ -8,7 +8,9 @@
     <status value="draft"/>
     <date value="2018-06-27"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the
     Established Pharmacologic Class (EPC) Proton Pump Inhibitor drug class (id: N0000175525).
     Member by RxNorm: getRelatedByType (BN,BPCK,GPCK,IN,MIN,PIN,SBD,SBDC,SBDF,SBDG,SCD,SCDC,SCDF,SCDG)"/>

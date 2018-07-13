@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-oxaprozin"/>
     <id value="valueset-oxaprozin"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-oxaprozin"/>
-    <title value="oxaprozin Medications Value Set"/>
+    <title value="Oxaprozin Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for oxaprozin."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for oxaprozin."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,15 +19,34 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Daypro"/>
+                <code value="157381"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin"/>
+                <code value="32613"/>
+            </concept>
+            <concept>
+                <display value="Oxaprozin potassium"/>
+                <code value="660767"/>
+            </concept>
             <concept>
                 <display value="oxaprozin 600 MG Oral Tablet [Daypro]"/>
                 <code value="207243"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin 600 MG [Daypro]"/>
+                <code value="568030"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin Oral Tablet [Daypro]"/>
+                <code value="368765"/>
             </concept>
             <concept>
                 <display value="oxaprozin 600 MG Oral Tablet"/>
@@ -33,6 +55,34 @@
             <concept>
                 <display value="oxaprozin 600 MG Delayed Release Oral Capsule"/>
                 <code value="349188"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin 600 MG"/>
+                <code value="316413"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin Oral Tablet"/>
+                <code value="373169"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin Delayed Release Oral Capsule"/>
+                <code value="378275"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin Oral Product"/>
+                <code value="1160122"/>
+            </concept>
+            <concept>
+                <display value="oxaprozin Pill"/>
+                <code value="1160123"/>
+            </concept>
+            <concept>
+                <display value="Daypro Oral Product"/>
+                <code value="1168832"/>
+            </concept>
+            <concept>
+                <display value="Daypro Pill"/>
+                <code value="1168833"/>
             </concept>
         </include>
     </compose>

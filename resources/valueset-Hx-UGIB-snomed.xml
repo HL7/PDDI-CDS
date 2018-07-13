@@ -7,7 +7,9 @@
    <status value="draft"/>
    <date value="2018-06-20"/>
    <publisher value="PDDI CDS"/>
-   <contact value="Richard Boyce boycerd@upmc.edu"/>
+   <contact>
+      <name value="Richard Boyce boycerd@upmc.edu"/>
+   </contact>
    <description value="ValueSet containing SNOMED-CT codes for upper gastrointestinal bleed."/>
    <jurisdiction>
       <coding>

@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone"/>
     <id value="valueset-spironolactone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-spironolactone"/>
     <title value="Spironolactone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for spironolactone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for spironolactone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,51 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Aldosterone Antagonist class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Carospir"/>
+                <code value="1943340"/>
+            </concept>
+            <concept>
+                <display value="Aldactone"/>
+                <code value="151317"/>
+            </concept>
+            <concept>
+                <display value="Aldactazide"/>
+                <code value="17276"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone"/>
+                <code value="9997"/>
+            </concept>
+            <concept>
+                <display value="althiazide / Spironolactone"/>
+                <code value="1008908"/>
+            </concept>
+            <concept>
+                <display value="Bendroflumethiazide / Spironolactone"/>
+                <code value="1008922"/>
+            </concept>
+            <concept>
+                <display value="Hydroflumethiazide / Spironolactone"/>
+                <code value="151194"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide / Spironolactone"/>
+                <code value="324042"/>
+            </concept>
+            <concept>
+                <display value="Furosemide / Spironolactone"/>
+                <code value="392462"/>
+            </concept>
+            <concept>
+                <display value="buthiazide / Spironolactone"/>
+                <code value="814684"/>
+            </concept>
             <concept>
                 <display value="Spironolactone 5 MG/ML Oral Suspension [Carospir]"/>
                 <code value="1943345"/>
@@ -45,6 +87,42 @@
             <concept>
                 <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG Oral Tablet [Aldactazide]"/>
                 <code value="208116"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 5 MG/ML [Carospir]"/>
+                <code value="1943341"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 50 MG [Aldactone]"/>
+                <code value="565465"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 25 MG [Aldactone]"/>
+                <code value="565468"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 100 MG [Aldactone]"/>
+                <code value="565473"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide 25 MG / Spironolactone 25 MG [Aldactazide]"/>
+                <code value="568840"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG [Aldactazide]"/>
+                <code value="568844"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Oral Suspension [Carospir]"/>
+                <code value="1943342"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Oral Tablet [Aldactone]"/>
+                <code value="368071"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide / Spironolactone Oral Tablet [Aldactazide]"/>
+                <code value="369279"/>
             </concept>
             <concept>
                 <display value="Spironolactone 100 MG Oral Tablet"/>
@@ -93,6 +171,114 @@
             <concept>
                 <display value="Spironolactone 10 MG/ML Oral Suspension"/>
                 <code value="104233"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 100 MG"/>
+                <code value="316727"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 25 MG"/>
+                <code value="316728"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 50 MG"/>
+                <code value="317508"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 1 MG/ML"/>
+                <code value="360518"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 2 MG/ML"/>
+                <code value="360519"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 5 MG/ML"/>
+                <code value="360520"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone 10 MG/ML"/>
+                <code value="360521"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide / Spironolactone Oral Tablet"/>
+                <code value="370639"/>
+            </concept>
+            <concept>
+                <display value="Furosemide / Spironolactone Oral Capsule"/>
+                <code value="373944"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Oral Tablet"/>
+                <code value="373946"/>
+            </concept>
+            <concept>
+                <display value="Hydroflumethiazide / Spironolactone Oral Tablet"/>
+                <code value="373948"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Oral Suspension"/>
+                <code value="379251"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Oral Liquid Product"/>
+                <code value="1161121"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Oral Product"/>
+                <code value="1161122"/>
+            </concept>
+            <concept>
+                <display value="Spironolactone Pill"/>
+                <code value="1161123"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide / Spironolactone Oral Product"/>
+                <code value="1162146"/>
+            </concept>
+            <concept>
+                <display value="Hydrochlorothiazide / Spironolactone Pill"/>
+                <code value="1162147"/>
+            </concept>
+            <concept>
+                <display value="Furosemide / Spironolactone Oral Product"/>
+                <code value="1162708"/>
+            </concept>
+            <concept>
+                <display value="Furosemide / Spironolactone Pill"/>
+                <code value="1162709"/>
+            </concept>
+            <concept>
+                <display value="Hydroflumethiazide / Spironolactone Oral Product"/>
+                <code value="1164019"/>
+            </concept>
+            <concept>
+                <display value="Hydroflumethiazide / Spironolactone Pill"/>
+                <code value="1164020"/>
+            </concept>
+            <concept>
+                <display value="Carospir Oral Liquid Product"/>
+                <code value="1943343"/>
+            </concept>
+            <concept>
+                <display value="Carospir Oral Product"/>
+                <code value="1943344"/>
+            </concept>
+            <concept>
+                <display value="Aldactone Oral Product"/>
+                <code value="1174848"/>
+            </concept>
+            <concept>
+                <display value="Aldactone Pill"/>
+                <code value="1174849"/>
+            </concept>
+            <concept>
+                <display value="Aldactazide Oral Product"/>
+                <code value="1174846"/>
+            </concept>
+            <concept>
+                <display value="Aldactazide Pill"/>
+                <code value="1174847"/>
             </concept>
         </include>
     </compose>

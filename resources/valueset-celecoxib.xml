@@ -1,14 +1,16 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-celecoxib"/>
     <id value="valueset-celecoxib"/>
-    <version value="1.0"/>
-    <name value="valueset-celecoxib"/>
-    <title value="Celecoxib Medications Value Set"/>
+    <version value="US 1.1"/>
+    <display value="valueset-celecoxib"/>
+    <title value="Celecoxib Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for celecoxib."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for celecoxib."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +18,23 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Celebrex"/>
+                <code value="215927"/>
+            </concept>
+            <concept>
+                <display value="celecoxib"/>
+                <code value="140587"/>
+            </concept>
+            <concept>
+                <display value="Amlodipine / celecoxib"/>
+                <code value="2047714"/>
+            </concept>
             <concept>
                 <display value="celecoxib 100 MG Oral Capsule [Celebrex]"/>
                 <code value="213468"/>
@@ -39,6 +52,26 @@
                 <code value="686381"/>
             </concept>
             <concept>
+                <display value="celecoxib 100 MG [Celebrex]"/>
+                <code value="573356"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 200 MG [Celebrex]"/>
+                <code value="573357"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 400 MG [Celebrex]"/>
+                <code value="576008"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 50 MG [Celebrex]"/>
+                <code value="686380"/>
+            </concept>
+            <concept>
+                <display value="celecoxib Oral Capsule [Celebrex]"/>
+                <code value="366443"/>
+            </concept>
+            <concept>
                 <display value="celecoxib 100 MG Oral Capsule"/>
                 <code value="205322"/>
             </concept>
@@ -47,12 +80,72 @@
                 <code value="205323"/>
             </concept>
             <concept>
+                <display value="Amlodipine 2.5 MG / celecoxib 200 MG Oral Tablet"/>
+                <code value="2047715"/>
+            </concept>
+            <concept>
+                <display value="Amlodipine 5 MG / celecoxib 200 MG Oral Tablet"/>
+                <code value="2047716"/>
+            </concept>
+            <concept>
+                <display value="Amlodipine 10 MG / celecoxib 200 MG Oral Tablet"/>
+                <code value="2047717"/>
+            </concept>
+            <concept>
                 <display value="celecoxib 400 MG Oral Capsule"/>
                 <code value="349514"/>
             </concept>
             <concept>
                 <display value="celecoxib 50 MG Oral Capsule"/>
                 <code value="686379"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 100 MG"/>
+                <code value="315603"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 200 MG"/>
+                <code value="315604"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 400 MG"/>
+                <code value="350656"/>
+            </concept>
+            <concept>
+                <display value="celecoxib 50 MG"/>
+                <code value="686378"/>
+            </concept>
+            <concept>
+                <display value="celecoxib Oral Capsule"/>
+                <code value="371343"/>
+            </concept>
+            <concept>
+                <display value="Amlodipine / celecoxib Oral Tablet"/>
+                <code value="2047713"/>
+            </concept>
+            <concept>
+                <display value="celecoxib Oral Product"/>
+                <code value="1161223"/>
+            </concept>
+            <concept>
+                <display value="celecoxib Pill"/>
+                <code value="1161224"/>
+            </concept>
+            <concept>
+                <display value="Amlodipine / celecoxib Oral Product"/>
+                <code value="2047711"/>
+            </concept>
+            <concept>
+                <display value="Amlodipine / celecoxib Pill"/>
+                <code value="2047712"/>
+            </concept>
+            <concept>
+                <display value="Celebrex Oral Product"/>
+                <code value="1166198"/>
+            </concept>
+            <concept>
+                <display value="Celebrex Pill"/>
+                <code value="1166199"/>
             </concept>
         </include>
     </compose>

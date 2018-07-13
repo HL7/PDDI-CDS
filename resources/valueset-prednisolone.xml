@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisolone"/>
     <id value="valueset-prednisolone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-prednisolone"/>
     <title value="Prednisolone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for prednisolone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for prednisolone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,229 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Pred Forte"/>
+                <code value="202844"/>
+            </concept>
+            <concept>
+                <display value="Pred Mild"/>
+                <code value="202845"/>
+            </concept>
+            <concept>
+                <display value="Blephamide"/>
+                <code value="215703"/>
+            </concept>
+            <concept>
+                <display value="Econopred"/>
+                <code value="216840"/>
+            </concept>
+            <concept>
+                <display value="Econopred Plus"/>
+                <code value="216841"/>
+            </concept>
+            <concept>
+                <display value="Pediapred"/>
+                <code value="219136"/>
+            </concept>
+            <concept>
+                <display value="Pred-G"/>
+                <code value="219339"/>
+            </concept>
+            <concept>
+                <display value="Prednisol"/>
+                <code value="219351"/>
+            </concept>
+            <concept>
+                <display value="Orapred"/>
+                <code value="285077"/>
+            </concept>
+            <concept>
+                <display value="Omnipred"/>
+                <code value="731217"/>
+            </concept>
+            <concept>
+                <display value="Flo-Pred"/>
+                <code value="792207"/>
+            </concept>
+            <concept>
+                <display value="MILLIPRED"/>
+                <code value="795094"/>
+            </concept>
+            <concept>
+                <display value="Veripred"/>
+                <code value="824886"/>
+            </concept>
+            <concept>
+                <display value="Surolan"/>
+                <code value="891150"/>
+            </concept>
+            <concept>
+                <display value="Temaril-P"/>
+                <code value="897060"/>
+            </concept>
+            <concept>
+                <display value="Prednistab"/>
+                <code value="1191678"/>
+            </concept>
+            <concept>
+                <display value="{21 (prednisolone 5 MG Oral Tablet [MILLIPRED]) } Pack
+                    [Millipred DP 6 Day]"/>
+                <code value="1235042"/>
+            </concept>
+            <concept>
+                <display value="{48 (prednisolone 5 MG Oral Tablet [MILLIPRED]) } Pack
+                    [Millipred DP 12 Day]"/>
+                <code value="1005831"/>
+            </concept>
+            <concept>
+                <display value="{21 (prednisolone 5 MG Oral Tablet) } Pack"/>
+                <code value="1013114"/>
+            </concept>
+            <concept>
+                <display value="{48 (prednisolone 5 MG Oral Tablet) } Pack"/>
+                <code value="1005830"/>
+            </concept>
+            <concept>
+                <display value="prednisolone"/>
+                <code value="8638"/>
+            </concept>
+            <concept>
+                <display value="Dequalinium / polidocanol / prednisolone"/>
+                <code value="1007035"/>
+            </concept>
+            <concept>
+                <display value="Phenylephrine / prednisolone"/>
+                <code value="1007257"/>
+            </concept>
+            <concept>
+                <display value="Oxytetracycline / prednisolone"/>
+                <code value="1007260"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Rifamycins"/>
+                <code value="1007261"/>
+            </concept>
+            <concept>
+                <display value="Estradiol / prednisolone"/>
+                <code value="1007263"/>
+            </concept>
+            <concept>
+                <display value="Oxyquinoline / prednisolone"/>
+                <code value="1007264"/>
+            </concept>
+            <concept>
+                <display value="Idoxuridine / prednisolone"/>
+                <code value="1007725"/>
+            </concept>
+            <concept>
+                <display value="bisdequalinium / prednisolone"/>
+                <code value="1007726"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Trimeprazine"/>
+                <code value="1008055"/>
+            </concept>
+            <concept>
+                <display value="Chloramphenicol / prednisolone"/>
+                <code value="1008236"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Zinc Oxide"/>
+                <code value="1008241"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / PROPYLENE GLYCOL SALICYLATE"/>
+                <code value="1008244"/>
+            </concept>
+            <concept>
+                <display value="Menthol / prednisolone / Thymol"/>
+                <code value="1008245"/>
+            </concept>
+            <concept>
+                <display value="Niacinamide / prednisolone"/>
+                <code value="1008247"/>
+            </concept>
+            <concept>
+                <display value="Miconazole / Polymyxin B / prednisolone"/>
+                <code value="1008294"/>
+            </concept>
+            <concept>
+                <display value="Clotrimazole / hexamidine / prednisolone"/>
+                <code value="1008474"/>
+            </concept>
+            <concept>
+                <display value="BISMUTH CHLORIDE OXIDE / prednisolone / Zinc Oxide"/>
+                <code value="1008707"/>
+            </concept>
+            <concept>
+                <display value="dexpanthenol / prednisolone / Salicylic Acid"/>
+                <code value="1008863"/>
+            </concept>
+            <concept>
+                <display value="polidocanol / prednisolone / Promethazine"/>
+                <code value="1008864"/>
+            </concept>
+            <concept>
+                <display value="Dibucaine / prednisolone"/>
+                <code value="1008890"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Salicylic Acid"/>
+                <code value="1009010"/>
+            </concept>
+            <concept>
+                <display value="Atropine / prednisolone"/>
+                <code value="689615"/>
+            </concept>
+            <concept>
+                <display value="Phenylephrine / prednisolone / Sulfacetamide"/>
+                <code value="689752"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide"/>
+                <code value="690161"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Polymyxin B / prednisolone"/>
+                <code value="693010"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / prednisolone"/>
+                <code value="693011"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / prednisolone"/>
+                <code value="689325"/>
+            </concept>
+            <concept>
+                <display value="prednisolone sodium metasulphobenzoate"/>
+                <code value="268872"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate"/>
+                <code value="34372"/>
+            </concept>
+            <concept>
+                <display value="prednisolone phosphate"/>
+                <code value="34374"/>
+            </concept>
+            <concept>
+                <display value="prednisolone tebutate"/>
+                <code value="34376"/>
+            </concept>
+            <concept>
+                <display value="Prednisolone sodium phosphate"/>
+                <code value="55062"/>
+            </concept>
+            <concept>
+                <display value="prednisolone sodium succinate"/>
+                <code value="55063"/>
+            </concept>
             <concept>
                 <display value="prednisolone 1.2 MG/ML Ophthalmic Suspension [Pred Mild]"/>
                 <code value="209002"/>
@@ -119,6 +339,181 @@
             <concept>
                 <display value="prednisolone 5 MG Oral Tablet [Prednistab]"/>
                 <code value="1191686"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1.2 MG/ML [Pred Mild]"/>
+                <code value="569642"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 10 MG/ML [Pred Forte]"/>
+                <code value="1548723"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 0.002 MG/MG / Sulfacetamide Sodium 0.1
+                    MG/MG [Blephamide]"/>
+                <code value="1011986"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 2 MG/ML / Sulfacetamide Sodium 100
+                    MG/ML [Blephamide]"/>
+                <code value="1012016"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 10 MG/ML [Econopred Plus]"/>
+                <code value="1548704"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 1.25 MG/ML [Econopred]"/>
+                <code value="1549316"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 10 MG/ML [Prednisol]"/>
+                <code value="572092"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1 MG/ML [Pediapred]"/>
+                <code value="574196"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin 0.003 MG/MG / prednisolone acetate 0.006 MG/MG [Pred-G]"/>
+                <code value="1870659"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin 3 MG/ML / prednisolone acetate 10 MG/ML [Pred-G]"/>
+                <code value="1870668"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 3 MG/ML [Orapred]"/>
+                <code value="574944"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 15 MG [Orapred]"/>
+                <code value="647125"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 10 MG [Orapred]"/>
+                <code value="668657"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 30 MG [Orapred]"/>
+                <code value="668659"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 10 MG/ML [Omnipred]"/>
+                <code value="1548713"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 2 MG/ML [MILLIPRED]"/>
+                <code value="795095"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 3 MG/ML [Flo-Pred]"/>
+                <code value="803306"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 5 MG [MILLIPRED]"/>
+                <code value="808116"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 4 MG/ML [Veripred]"/>
+                <code value="824887"/>
+            </concept>
+            <concept>
+                <display value="Miconazole Nitrate 23 MG/ML / Polymyxin B Sulfate 0.5293
+                    MG/ML / prednisolone acetate 5 MG/ML [Surolan]"/>
+                <code value="891151"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 2 MG / trimeprazine tartrate 5 MG [Temaril-P]"/>
+                <code value="897061"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 20 MG [Prednistab]"/>
+                <code value="1191679"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 5 MG [Prednistab]"/>
+                <code value="1191685"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Suspension [Pred Forte]"/>
+                <code value="365822"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Suspension [Pred Mild]"/>
+                <code value="365832"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Suspension [Blephamide]"/>
+                <code value="365841"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Suspension [Econopred]"/>
+                <code value="365821"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Suspension [Econopred Plus]"/>
+                <code value="365831"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Solution [Prednisol]"/>
+                <code value="363766"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Solution [Orapred]"/>
+                <code value="364478"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Disintegrating Oral Tablet [Orapred]"/>
+                <code value="647126"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Ointment [Blephamide]"/>
+                <code value="856820"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Suspension [Omnipred]"/>
+                <code value="731219"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Suspension [Flo-Pred]"/>
+                <code value="803307"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Tablet [MILLIPRED]"/>
+                <code value="808117"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Solution [MILLIPRED]"/>
+                <code value="795096"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Solution [Veripred]"/>
+                <code value="824888"/>
+            </concept>
+            <concept>
+                <display value="Miconazole / Polymyxin B / prednisolone Otic Suspension [Surolan]"/>
+                <code value="891152"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Trimeprazine Oral Tablet [Temaril-P]"/>
+                <code value="897062"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Solution [Pediapred]"/>
+                <code value="93720"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Tablet [Prednistab]"/>
+                <code value="1191680"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / prednisolone Ophthalmic Ointment [Pred-G]"/>
+                <code value="1870660"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / prednisolone Ophthalmic Suspension [Pred-G]"/>
+                <code value="1870669"/>
             </concept>
             <concept>
                 <display value="prednisolone acetate 0.0025 MG/MG / Sulfacetamide Sodium 0.1
@@ -334,14 +729,422 @@
                 <code value="1549315"/>
             </concept>
             <concept>
+                <display value="Gentamicin 0.003 MG/MG / prednisolone acetate 0.006 MG/MG
+                    Ophthalmic Ointment"/>
+                <code value="310468"/>
+            </concept>
+            <concept>
                 <display value="prednisolone acetate 0.005 MG/MG / Sulfacetamide Sodium 0.1
                     MG/MG Ophthalmic Ointment"/>
                 <code value="1012000"/>
             </concept>
             <concept>
-                <display value="Gentamicin 0.003 MG/MG / prednisolone acetate 0.006 MG/MG
-                    Ophthalmic Ointment"/>
-                <code value="310468"/>
+                <display value="prednisolone acetate 0.0025 MG/MG"/>
+                <code value="1011978"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 0.002 MG/MG"/>
+                <code value="1011984"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 2 MG/ML"/>
+                <code value="1012014"/>
+            </concept>
+            <concept>
+                <display value="Prednisolone sodium phosphate 2.5 MG/ML"/>
+                <code value="1012020"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 2.5 MG/ML"/>
+                <code value="1012079"/>
+            </concept>
+            <concept>
+                <display value="Prednisolone sodium phosphate 5 MG/ML"/>
+                <code value="1012149"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 5 MG"/>
+                <code value="316579"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 3 MG/ML"/>
+                <code value="317474"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 80 MG/ML"/>
+                <code value="323918"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 40 MG/ML"/>
+                <code value="323977"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 10 MG/ML"/>
+                <code value="328310"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 20 MG/ML"/>
+                <code value="328808"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1 MG/ML"/>
+                <code value="328809"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 2 MG/ML"/>
+                <code value="328812"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 5 MG/ML"/>
+                <code value="328814"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1.2 MG/ML"/>
+                <code value="328815"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1.25 MG/ML"/>
+                <code value="328816"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1 MG"/>
+                <code value="333209"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 25 MG"/>
+                <code value="333210"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 0.3 MG/ML"/>
+                <code value="335262"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 0.2 MG/ML"/>
+                <code value="335528"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 2.5 MG"/>
+                <code value="335529"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 1.3 MG"/>
+                <code value="335535"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 20 MG"/>
+                <code value="336584"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 25 MG/ML"/>
+                <code value="337411"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 50 MG/ML"/>
+                <code value="343660"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 0.01 MG/ML"/>
+                <code value="345097"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 0.03 MG/ML"/>
+                <code value="345098"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 0.1 MG/ML"/>
+                <code value="345099"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 50 MG"/>
+                <code value="349801"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 4 MG/ML"/>
+                <code value="446683"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 2 MG"/>
+                <code value="451086"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 10 MG"/>
+                <code value="452820"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 15 MG"/>
+                <code value="643124"/>
+            </concept>
+            <concept>
+                <display value="prednisolone 30 MG"/>
+                <code value="643126"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 5 MG/ML"/>
+                <code value="891147"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 10 MG/ML"/>
+                <code value="1376335"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 1.25 MG/ML"/>
+                <code value="1549314"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 0.005 MG/MG"/>
+                <code value="1011999"/>
+            </concept>
+            <concept>
+                <display value="prednisolone acetate 0.006 MG/MG"/>
+                <code value="1870654"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Injectable Suspension"/>
+                <code value="373568"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Enema"/>
+                <code value="373569"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Suspension"/>
+                <code value="373571"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Delayed Release Oral Tablet"/>
+                <code value="373572"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Rectal Foam"/>
+                <code value="373574"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Solution"/>
+                <code value="373575"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Solution"/>
+                <code value="373576"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Rectal Suppository"/>
+                <code value="373577"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Tablet"/>
+                <code value="373578"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Injectable Solution"/>
+                <code value="373579"/>
+            </concept>
+            <concept>
+                <display value="Dibucaine / prednisolone Rectal Suppository"/>
+                <code value="373582"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Ointment"/>
+                <code value="373972"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Solution"/>
+                <code value="373973"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Suspension"/>
+                <code value="373974"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Polymyxin B / prednisolone Ophthalmic Suspension"/>
+                <code value="374690"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Disintegrating Oral Tablet"/>
+                <code value="379264"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Suspension"/>
+                <code value="792956"/>
+            </concept>
+            <concept>
+                <display value="Miconazole / Polymyxin B / prednisolone Otic Suspension"/>
+                <code value="891148"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Trimeprazine Oral Tablet"/>
+                <code value="897058"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / prednisolone Ophthalmic Ointment"/>
+                <code value="1870656"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / prednisolone Ophthalmic Suspension"/>
+                <code value="1870666"/>
+            </concept>
+            <concept>
+                <display value="Dibucaine / prednisolone Rectal Product"/>
+                <code value="1155885"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Pill"/>
+                <code value="1156758"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Rectal Product"/>
+                <code value="1156759"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Topical Product"/>
+                <code value="1156760"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Polymyxin B / prednisolone Ophthalmic Product"/>
+                <code value="1157539"/>
+            </concept>
+            <concept>
+                <display value="Miconazole / Polymyxin B / prednisolone Otic Product"/>
+                <code value="1164102"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Product"/>
+                <code value="1165752"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Trimeprazine Oral Product"/>
+                <code value="1165753"/>
+            </concept>
+            <concept>
+                <display value="prednisolone / Trimeprazine Pill"/>
+                <code value="1165754"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Injectable Product"/>
+                <code value="1165756"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Ophthalmic Product"/>
+                <code value="1165757"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Liquid Product"/>
+                <code value="1165758"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Oral Product"/>
+                <code value="1165759"/>
+            </concept>
+            <concept>
+                <display value="prednisolone Disintegrating Oral Product"/>
+                <code value="1295508"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / prednisolone Ophthalmic Product"/>
+                <code value="1870655"/>
+            </concept>
+            <concept>
+                <display value="Orapred Pill"/>
+                <code value="1183439"/>
+            </concept>
+            <concept>
+                <display value="MILLIPRED Pill"/>
+                <code value="1184935"/>
+            </concept>
+            <concept>
+                <display value="Prednistab Pill"/>
+                <code value="1191682"/>
+            </concept>
+            <concept>
+                <display value="Surolan Otic Product"/>
+                <code value="1184898"/>
+            </concept>
+            <concept>
+                <display value="Flo-Pred Oral Liquid Product"/>
+                <code value="1169771"/>
+            </concept>
+            <concept>
+                <display value="Flo-Pred Oral Product"/>
+                <code value="1169772"/>
+            </concept>
+            <concept>
+                <display value="Econopred Ophthalmic Product"/>
+                <code value="1171795"/>
+            </concept>
+            <concept>
+                <display value="Econopred Plus Ophthalmic Product"/>
+                <code value="1171796"/>
+            </concept>
+            <concept>
+                <display value="Blephamide Ophthalmic Product"/>
+                <code value="1175059"/>
+            </concept>
+            <concept>
+                <display value="Temaril-P Oral Product"/>
+                <code value="1181408"/>
+            </concept>
+            <concept>
+                <display value="Temaril-P Pill"/>
+                <code value="1181409"/>
+            </concept>
+            <concept>
+                <display value="Omnipred Ophthalmic Product"/>
+                <code value="1181709"/>
+            </concept>
+            <concept>
+                <display value="Orapred Oral Liquid Product"/>
+                <code value="1183437"/>
+            </concept>
+            <concept>
+                <display value="Orapred Oral Product"/>
+                <code value="1183438"/>
+            </concept>
+            <concept>
+                <display value="Pediapred Oral Liquid Product"/>
+                <code value="1184005"/>
+            </concept>
+            <concept>
+                <display value="Pediapred Oral Product"/>
+                <code value="1184006"/>
+            </concept>
+            <concept>
+                <display value="MILLIPRED Oral Liquid Product"/>
+                <code value="1184933"/>
+            </concept>
+            <concept>
+                <display value="MILLIPRED Oral Product"/>
+                <code value="1184934"/>
+            </concept>
+            <concept>
+                <display value="Pred Forte Ophthalmic Product"/>
+                <code value="1185239"/>
+            </concept>
+            <concept>
+                <display value="Pred Mild Ophthalmic Product"/>
+                <code value="1185240"/>
+            </concept>
+            <concept>
+                <display value="Prednisol Ophthalmic Product"/>
+                <code value="1185260"/>
+            </concept>
+            <concept>
+                <display value="Veripred Oral Liquid Product"/>
+                <code value="1187894"/>
+            </concept>
+            <concept>
+                <display value="Veripred Oral Product"/>
+                <code value="1187895"/>
+            </concept>
+            <concept>
+                <display value="Prednistab Oral Product"/>
+                <code value="1191681"/>
+            </concept>
+            <concept>
+                <display value="Orapred Disintegrating Oral Product"/>
+                <code value="1296584"/>
+            </concept>
+            <concept>
+                <display value="Pred-G Ophthalmic Product"/>
+                <code value="1185241"/>
             </concept>
         </include>
     </compose>

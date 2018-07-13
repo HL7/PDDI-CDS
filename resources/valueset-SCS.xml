@@ -8,7 +8,9 @@
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the
     Anatomical Therapeutic Chemical (ATC1-4) Corticosteroids For Systemic Use drug class (id: H02).
     Member by RxNorm: getRelatedByType (BN,BPCK,GPCK,IN,MIN,PIN,SBD,SBDC,SBDF,SBDG,SCD,SCDC,SCDF,SCDG)"/>

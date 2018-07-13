@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-piroxicam"/>
     <id value="valueset-piroxicam"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-piroxicam"/>
     <title value="Piroxicam Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for piroxicam."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for piroxicam."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,59 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Feldene"/>
+                <code value="197288"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam"/>
+                <code value="8356"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam / Vitamin B 12"/>
+                <code value="1007384"/>
+            </concept>
+            <concept>
+                <display value="Amoxicillin / Piroxicam"/>
+                <code value="1008606"/>
+            </concept>
+            <concept>
+                <display value="Chlorzoxazone / Piroxicam"/>
+                <code value="813792"/>
+            </concept>
+            <concept>
+                <display value="Ascorbic Acid / Piroxicam"/>
+                <code value="815628"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam / Prednisone"/>
+                <code value="815961"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Piroxicam"/>
+                <code value="817105"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen / Piroxicam"/>
+                <code value="818190"/>
+            </concept>
+            <concept>
+                <display value="Orphenadrine / Piroxicam"/>
+                <code value="819919"/>
+            </concept>
+            <concept>
+                <display value="piroxicam cinnamate"/>
+                <code value="33787"/>
+            </concept>
+            <concept>
+                <display value="piroxicam-beta-cyclodextrin"/>
+                <code value="68115"/>
+            </concept>
             <concept>
                 <display value="Piroxicam 10 MG Oral Capsule [Feldene]"/>
                 <code value="105929"/>
@@ -29,6 +79,18 @@
             <concept>
                 <display value="Piroxicam 20 MG Oral Capsule [Feldene]"/>
                 <code value="105930"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 10 MG [Feldene]"/>
+                <code value="564263"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG [Feldene]"/>
+                <code value="564264"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Oral Capsule [Feldene]"/>
+                <code value="366276"/>
             </concept>
             <concept>
                 <display value="Piroxicam 10 MG Oral Capsule"/>
@@ -65,6 +127,78 @@
             <concept>
                 <display value="Piroxicam 20 MG/ML Injectable Solution"/>
                 <code value="246246"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 10 MG"/>
+                <code value="316524"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG"/>
+                <code value="317467"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 0.005 MG/MG"/>
+                <code value="335470"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam 20 MG/ML"/>
+                <code value="335471"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Oral Tablet"/>
+                <code value="373485"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Oral Capsule"/>
+                <code value="373486"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Injectable Solution"/>
+                <code value="373487"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Rectal Suppository"/>
+                <code value="373488"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Topical Gel"/>
+                <code value="377958"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Disintegrating Oral Tablet"/>
+                <code value="379306"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Injectable Product"/>
+                <code value="1159302"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Oral Product"/>
+                <code value="1159304"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Pill"/>
+                <code value="1159305"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Rectal Product"/>
+                <code value="1159306"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Topical Product"/>
+                <code value="1159307"/>
+            </concept>
+            <concept>
+                <display value="Piroxicam Disintegrating Oral Product"/>
+                <code value="1294789"/>
+            </concept>
+            <concept>
+                <display value="Feldene Oral Product"/>
+                <code value="1176007"/>
+            </concept>
+            <concept>
+                <display value="Feldene Pill"/>
+                <code value="1176009"/>
             </concept>
         </include>
     </compose>

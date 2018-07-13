@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone"/>
     <id value="valueset-triamcinolone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-triamcinolone"/>
     <title value="Triamcinolone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for triamcinolone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for triamcinolone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,144 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Pediaderm TA"/>
+                <code value="1014315"/>
+            </concept>
+            <concept>
+                <display value="Trianex"/>
+                <code value="1110803"/>
+            </concept>
+            <concept>
+                <display value="Nasacort"/>
+                <code value="153239"/>
+            </concept>
+            <concept>
+                <display value="Kenalog"/>
+                <code value="202877"/>
+            </concept>
+            <concept>
+                <display value="Aristospan"/>
+                <code value="203789"/>
+            </concept>
+            <concept>
+                <display value="Triderm"/>
+                <code value="220458"/>
+            </concept>
+            <concept>
+                <display value="Oralone"/>
+                <code value="544401"/>
+            </concept>
+            <concept>
+                <display value="Triesence"/>
+                <code value="753380"/>
+            </concept>
+            <concept>
+                <display value="AllerNaze"/>
+                <code value="833246"/>
+            </concept>
+            <concept>
+                <display value="Animax"/>
+                <code value="1368281"/>
+            </concept>
+            <concept>
+                <display value="Cortalone"/>
+                <code value="1395721"/>
+            </concept>
+            <concept>
+                <display value="Dermasorb TA"/>
+                <code value="1442872"/>
+            </concept>
+            <concept>
+                <display value="Vetalog"/>
+                <code value="1739203"/>
+            </concept>
+            <concept>
+                <display value="Genesis"/>
+                <code value="1805710"/>
+            </concept>
+            <concept>
+                <display value="Zilretta"/>
+                <code value="1947125"/>
+            </concept>
+            <concept>
+                <display value="{1 (118 ML) (dimethicone 20 MG/ML Topical Cream) / 1 (80000
+                    MG) (Triamcinolone Acetonide 1 MG/ML Topical Cream) } Pack"/>
+                <code value="1720617"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone"/>
+                <code value="10759"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Triamcinolone"/>
+                <code value="1006921"/>
+            </concept>
+            <concept>
+                <display value="Polymyxin B / Triamcinolone"/>
+                <code value="1007115"/>
+            </concept>
+            <concept>
+                <display value="Salicylic Acid / Triamcinolone"/>
+                <code value="1007148"/>
+            </concept>
+            <concept>
+                <display value="Amphotericin B / Triamcinolone"/>
+                <code value="1007674"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone / Urea"/>
+                <code value="1007849"/>
+            </concept>
+            <concept>
+                <display value="Coal Tar / Triamcinolone"/>
+                <code value="1008595"/>
+            </concept>
+            <concept>
+                <display value="Lidocaine / Triamcinolone"/>
+                <code value="1009025"/>
+            </concept>
+            <concept>
+                <display value="Ceramides / Triamcinolone"/>
+                <code value="1009104"/>
+            </concept>
+            <concept>
+                <display value="Chlortetracycline / Triamcinolone"/>
+                <code value="107010"/>
+            </concept>
+            <concept>
+                <display value="Nystatin / Triamcinolone"/>
+                <code value="107011"/>
+            </concept>
+            <concept>
+                <display value="Econazole / Triamcinolone"/>
+                <code value="107012"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Triamcinolone"/>
+                <code value="107013"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone"/>
+                <code value="1368279"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide"/>
+                <code value="10761"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone diacetate"/>
+                <code value="10762"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide"/>
+                <code value="38546"/>
+            </concept>
             <concept>
                 <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Pediaderm TA]"/>
                 <code value="1014318"/>
@@ -108,6 +243,156 @@
             <concept>
                 <display value="Triamcinolone Acetonide 32 MG Injection [Zilretta]"/>
                 <code value="1947133"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML [Pediaderm TA]"/>
+                <code value="1014316"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.0005 MG/MG [Trianex]"/>
+                <code value="1110804"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.055 MG/ACTUAT [Nasacort]"/>
+                <code value="1085796"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.147 MG/ML [Kenalog]"/>
+                <code value="1085737"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 10 MG/ML [Kenalog]"/>
+                <code value="1085751"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 40 MG/ML [Kenalog]"/>
+                <code value="1085755"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 5 MG/ML [Aristospan]"/>
+                <code value="1085993"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 20 MG/ML [Aristospan]"/>
+                <code value="1085997"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML [Triderm]"/>
+                <code value="1085772"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML [Triderm]"/>
+                <code value="1648996"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 5 MG/ML [Triderm]"/>
+                <code value="1648998"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.001 MG/MG [Oralone]"/>
+                <code value="1085766"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 40 MG/ML [Triesence]"/>
+                <code value="1086258"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.05 MG/ACTUAT [AllerNaze]"/>
+                <code value="833247"/>
+            </concept>
+            <concept>
+                <display value="Neomycin 2.5 MG/ML / Nystatin 100000 UNT/ML / Thiostrepton
+                    2500 UNT/ML / Triamcinolone Acetonide 1 MG/ML [Animax]"/>
+                <code value="1368282"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1.5 MG [Cortalone]"/>
+                <code value="1376436"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML [Dermasorb TA]"/>
+                <code value="1442873"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 2 MG/ML [Vetalog]"/>
+                <code value="1739204"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 6 MG/ML [Vetalog]"/>
+                <code value="1739210"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.15 MG/ML [Genesis]"/>
+                <code value="1805711"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 32 MG [Zilretta]"/>
+                <code value="1947132"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Cream [Pediaderm TA]"/>
+                <code value="1014317"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Ointment [Trianex]"/>
+                <code value="1110805"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injectable Suspension [Kenalog]"/>
+                <code value="365675"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Cream [Triderm]"/>
+                <code value="362100"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injectable Suspension [Aristospan]"/>
+                <code value="380844"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Oral Paste [Oralone]"/>
+                <code value="707357"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Spray [Kenalog]"/>
+                <code value="93044"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone Topical
+                    Cream [Animax]"/>
+                <code value="1368283"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Oral Tablet [Cortalone]"/>
+                <code value="1376437"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Cream [Dermasorb TA]"/>
+                <code value="1442874"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injectable Suspension [Vetalog]"/>
+                <code value="1739205"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Metered Dose Nasal Spray [Nasacort]"/>
+                <code value="1797914"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injection [Triesence]"/>
+                <code value="1792145"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Metered Dose Nasal Spray [AllerNaze]"/>
+                <code value="1797905"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Spray [Genesis]"/>
+                <code value="1805712"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injection [Zilretta]"/>
+                <code value="1947127"/>
             </concept>
             <concept>
                 <display value="Triamcinolone Acetonide 0.00025 MG/MG Topical Ointment"/>
@@ -264,6 +549,306 @@
             <concept>
                 <display value="Triamcinolone Acetonide 32 MG Injection"/>
                 <code value="1947131"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.00025 MG/MG"/>
+                <code value="1085632"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.005 MG/MG"/>
+                <code value="1085639"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML"/>
+                <code value="1085643"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone diacetate 25 MG/ML"/>
+                <code value="1085665"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone diacetate 40 MG/ML"/>
+                <code value="1085679"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 5 MG/ML"/>
+                <code value="1085685"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.147 MG/ML"/>
+                <code value="1085735"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 10 MG/ML"/>
+                <code value="1085749"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 40 MG/ML"/>
+                <code value="1085753"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.055 MG/ACTUAT"/>
+                <code value="1085794"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.5 MG/ML"/>
+                <code value="1085976"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 3 MG/ML"/>
+                <code value="1085984"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 5 MG/ML"/>
+                <code value="1085991"/>
+            </concept>
+            <concept>
+                <display value="triamcinolone hexacetonide 20 MG/ML"/>
+                <code value="1085995"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.0005 MG/MG"/>
+                <code value="1090640"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.5 MG"/>
+                <code value="1114839"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1.5 MG"/>
+                <code value="1114841"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone 1 MG"/>
+                <code value="317524"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone 4 MG"/>
+                <code value="345865"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.05 MG/ACTUAT"/>
+                <code value="833244"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 80 MG/ML"/>
+                <code value="833448"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.001 MG/MG"/>
+                <code value="857692"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 1 MG/ML"/>
+                <code value="857694"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 2 MG/ML"/>
+                <code value="1739201"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 6 MG/ML"/>
+                <code value="1739208"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 0.15 MG/ML"/>
+                <code value="1805708"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Acetonide 32 MG"/>
+                <code value="1947130"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Oral Paste"/>
+                <code value="10760"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Triamcinolone Otic Solution"/>
+                <code value="373041"/>
+            </concept>
+            <concept>
+                <display value="Nystatin / Triamcinolone Topical Ointment"/>
+                <code value="374401"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Ointment"/>
+                <code value="374434"/>
+            </concept>
+            <concept>
+                <display value="Chlortetracycline / Triamcinolone Topical Ointment"/>
+                <code value="376478"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Spray"/>
+                <code value="377376"/>
+            </concept>
+            <concept>
+                <display value="Nystatin / Triamcinolone Topical Cream"/>
+                <code value="377781"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Cream"/>
+                <code value="377831"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Lotion"/>
+                <code value="378693"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Prefilled Syringe"/>
+                <code value="727885"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injectable Suspension"/>
+                <code value="96818"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Oral Tablet"/>
+                <code value="96819"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone Topical Cream"/>
+                <code value="1368278"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injection"/>
+                <code value="1792143"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Metered Dose Nasal Spray"/>
+                <code value="1797903"/>
+            </concept>
+            <concept>
+                <display value="Chlortetracycline / Triamcinolone Topical Product"/>
+                <code value="1155778"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Triamcinolone Otic Product"/>
+                <code value="1157544"/>
+            </concept>
+            <concept>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone Topical Product"/>
+                <code value="1368277"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Inhalant Product"/>
+                <code value="1158223"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Injectable Product"/>
+                <code value="1158224"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Nasal Product"/>
+                <code value="1158225"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Oral Product"/>
+                <code value="1158228"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Paste Product"/>
+                <code value="1158229"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Pill"/>
+                <code value="1158230"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Topical Product"/>
+                <code value="1158231"/>
+            </concept>
+            <concept>
+                <display value="Nystatin / Triamcinolone Topical Product"/>
+                <code value="1160432"/>
+            </concept>
+            <concept>
+                <display value="Triamcinolone Oral Paste Product"/>
+                <code value="1295518"/>
+            </concept>
+            <concept>
+                <display value="Animax Topical Product"/>
+                <code value="1368284"/>
+            </concept>
+            <concept>
+                <display value="Cortalone Oral Product"/>
+                <code value="1376438"/>
+            </concept>
+            <concept>
+                <display value="Cortalone Pill"/>
+                <code value="1376439"/>
+            </concept>
+            <concept>
+                <display value="Dermasorb TA Topical Product"/>
+                <code value="1442875"/>
+            </concept>
+            <concept>
+                <display value="Vetalog Injectable Product"/>
+                <code value="1739206"/>
+            </concept>
+            <concept>
+                <display value="Nasacort Nasal Product"/>
+                <code value="1801240"/>
+            </concept>
+            <concept>
+                <display value="AllerNaze Nasal Product"/>
+                <code value="1801245"/>
+            </concept>
+            <concept>
+                <display value="Genesis Topical Product"/>
+                <code value="1805713"/>
+            </concept>
+            <concept>
+                <display value="AllerNaze Inhalant Product"/>
+                <code value="1166679"/>
+            </concept>
+            <concept>
+                <display value="Kenalog Injectable Product"/>
+                <code value="1170041"/>
+            </concept>
+            <concept>
+                <display value="Kenalog Topical Product"/>
+                <code value="1170044"/>
+            </concept>
+            <concept>
+                <display value="Aristospan Injectable Product"/>
+                <code value="1170762"/>
+            </concept>
+            <concept>
+                <display value="Nasacort Inhalant Product"/>
+                <code value="1179329"/>
+            </concept>
+            <concept>
+                <display value="Trianex Topical Product"/>
+                <code value="1182127"/>
+            </concept>
+            <concept>
+                <display value="Triderm Topical Product"/>
+                <code value="1182722"/>
+            </concept>
+            <concept>
+                <display value="Triesence Injectable Product"/>
+                <code value="1183227"/>
+            </concept>
+            <concept>
+                <display value="Oralone Oral Product"/>
+                <code value="1183428"/>
+            </concept>
+            <concept>
+                <display value="Oralone Paste Product"/>
+                <code value="1183429"/>
+            </concept>
+            <concept>
+                <display value="Pediaderm TA Topical Product"/>
+                <code value="1183995"/>
+            </concept>
+            <concept>
+                <display value="Zilretta Injectable Product"/>
+                <code value="1947128"/>
+            </concept>
+            <concept>
+                <display value="Oralone Oral Paste Product"/>
+                <code value="1295793"/>
             </concept>
         </include>
     </compose>

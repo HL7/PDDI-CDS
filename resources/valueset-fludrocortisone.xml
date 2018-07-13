@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fludrocortisone"/>
+    <id value="valueset-fludrocortisone"/>
+    <version value="US 1.1"/>
+    <name value="valueset-fludrocortisone"/>
+    <title value="Fludrocortisone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for fludrocortisone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Fludrocortisone"/>
+                <code value="4452"/>
+            </concept>
+            <concept>
+                <display value="Fludrocortisone / hexamidine / selenium sulfide"/>
+                <code value="1007783"/>
+            </concept>
+            <concept>
+                <display value="fluorocortisol acetate"/>
+                <code value="165516"/>
+            </concept>
+            <concept>
+                <display value="Fludrocortisone 0.1 MG Oral Tablet"/>
+                <code value="313979"/>
+            </concept>
+            <concept>
+                <display value="Fludrocortisone 0.1 MG"/>
+                <code value="328433"/>
+            </concept>
+            <concept>
+                <display value="Fludrocortisone Oral Tablet"/>
+                <code value="372213"/>
+            </concept>
+            <concept>
+                <display value="Fludrocortisone Oral Product"/>
+                <code value="1160242"/>
+            </concept>
+            <concept>
+                <display value="Fludrocortisone Pill"/>
+                <code value="1160243"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

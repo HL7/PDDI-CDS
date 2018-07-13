@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexamethasone"/>
     <id value="valueset-dexamethasone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-dexamethasone"/>
     <title value="Dexamethasone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for dexamethasone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for dexamethasone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,253 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Tresaderm"/>
+                <code value="1009389"/>
+            </concept>
+            <concept>
+                <display value="Dexium"/>
+                <code value="1049383"/>
+            </concept>
+            <concept>
+                <display value="Maxitrol"/>
+                <code value="134920"/>
+            </concept>
+            <concept>
+                <display value="Dexasone"/>
+                <code value="203704"/>
+            </concept>
+            <concept>
+                <display value="Maxidex"/>
+                <code value="203705"/>
+            </concept>
+            <concept>
+                <display value="De-Sone LA"/>
+                <code value="216384"/>
+            </concept>
+            <concept>
+                <display value="Poly-Dex"/>
+                <code value="219289"/>
+            </concept>
+            <concept>
+                <display value="Tobradex"/>
+                <code value="220330"/>
+            </concept>
+            <concept>
+                <display value="Decadron"/>
+                <code value="227682"/>
+            </concept>
+            <concept>
+                <display value="Ciprodex"/>
+                <code value="404930"/>
+            </concept>
+            <concept>
+                <display value="Ozurdex"/>
+                <code value="854178"/>
+            </concept>
+            <concept>
+                <display value="Baycadron"/>
+                <code value="855602"/>
+            </concept>
+            <concept>
+                <display value="DexaJect"/>
+                <code value="880654"/>
+            </concept>
+            <concept>
+                <display value="Dexycu"/>
+                <code value="2045405"/>
+            </concept>
+            <concept>
+                <display value="{21 (Dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak
+                    TaperPak 6 Day]"/>
+                <code value="847225"/>
+            </concept>
+            <concept>
+                <display value="{21 (Dexamethasone 1.5 MG Oral Tablet) } Pack [ZoDex 6 Day Taper]"/>
+                <code value="1943549"/>
+            </concept>
+            <concept>
+                <display value="{51 (Dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak
+                    TaperPak 13 Day]"/>
+                <code value="797023"/>
+            </concept>
+            <concept>
+                <display value="{35 (Dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak
+                    TaperPak Junior 10 Day]"/>
+                <code value="797022"/>
+            </concept>
+            <concept>
+                <display value="{49 (Dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 12
+                    Day Taper]"/>
+                <code value="1998481"/>
+            </concept>
+            <concept>
+                <display value="{21 (Dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 6
+                    Day Taper]"/>
+                <code value="1998482"/>
+            </concept>
+            <concept>
+                <display value="{49 (Dexamethasone 1.5 MG Oral Tablet) } Pack [Zodex 12 Day Taper]"/>
+                <code value="1943551"/>
+            </concept>
+            <concept>
+                <display value="{12 (Dexamethasone 0.75 MG Oral Tablet [Decadron]) } Pack
+                    [Decadron 5-12]"/>
+                <code value="795716"/>
+            </concept>
+            <concept>
+                <display value="{49 (Dexamethasone 1.5 MG Oral Tablet) } Pack"/>
+                <code value="1943550"/>
+            </concept>
+            <concept>
+                <display value="{51 (Dexamethasone 1.5 MG Oral Tablet) } Pack"/>
+                <code value="759481"/>
+            </concept>
+            <concept>
+                <display value="{35 (Dexamethasone 1.5 MG Oral Tablet) } Pack"/>
+                <code value="759697"/>
+            </concept>
+            <concept>
+                <display value="{21 (Dexamethasone 1.5 MG Oral Tablet) } Pack"/>
+                <code value="846192"/>
+            </concept>
+            <concept>
+                <display value="{12 (Dexamethasone 0.75 MG Oral Tablet) } Pack"/>
+                <code value="759696"/>
+            </concept>
+            <concept>
+                <display value="{41 (Dexamethasone 1.5 MG Oral Tablet) } Pack"/>
+                <code value="1869605"/>
+            </concept>
+            <concept>
+                <display value="{27 (Dexamethasone 1.5 MG Oral Tablet) } Pack"/>
+                <code value="1869595"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone"/>
+                <code value="3264"/>
+            </concept>
+            <concept>
+                <display value="Astemizole / Dexamethasone"/>
+                <code value="1007105"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Dexamethasone"/>
+                <code value="1007256"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Oxytetracycline"/>
+                <code value="1007423"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / hypromellose"/>
+                <code value="1007483"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / DOBESILIC ACID / Lidocaine"/>
+                <code value="1007628"/>
+            </concept>
+            <concept>
+                <display value="Clotrimazole / Dexamethasone"/>
+                <code value="1007854"/>
+            </concept>
+            <concept>
+                <display value="Clemastine / Dexamethasone"/>
+                <code value="1008217"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Phenylephrine"/>
+                <code value="1008930"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / sodium phosphate"/>
+                <code value="1009150"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Thiabendazole"/>
+                <code value="1009387"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Lidocaine"/>
+                <code value="214478"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin"/>
+                <code value="216524"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B"/>
+                <code value="216525"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Dexamethasone"/>
+                <code value="465397"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / tramazoline"/>
+                <code value="687304"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Theophylline"/>
+                <code value="813683"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Indomethacin"/>
+                <code value="814504"/>
+            </concept>
+            <concept>
+                <display value="Chloramphenicol / Dexamethasone"/>
+                <code value="815833"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Terfenadine"/>
+                <code value="818139"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Dexamethasone / Ibuprofen"/>
+                <code value="820465"/>
+            </concept>
+            <concept>
+                <display value="Cyproheptadine / Dexamethasone"/>
+                <code value="821542"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Dexamethasone / tenoxicam"/>
+                <code value="822000"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Dexamethasone"/>
+                <code value="823322"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Tobramycin"/>
+                <code value="883815"/>
+            </concept>
+            <concept>
+                <display value="dexamethasone acetate"/>
+                <code value="22690"/>
+            </concept>
+            <concept>
+                <display value="dexamethasone trimethyl acetate"/>
+                <code value="22694"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone phosphate"/>
+                <code value="235486"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Isonicotinate"/>
+                <code value="3265"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone sodium phosphate"/>
+                <code value="48933"/>
+            </concept>
             <concept>
                 <display value="Dexamethasone 1 MG/ML / Neomycin 3.2 MG/ML / Thiabendazole
                     40 MG/ML Topical Solution [Tresaderm]"/>
@@ -112,24 +356,205 @@
                 <code value="404630"/>
             </concept>
             <concept>
-                <display value="Dexamethasone 0.7 MG Drug Implant [Ozurdex]"/>
-                <code value="854181"/>
-            </concept>
-            <concept>
-                <display value="Dexamethasone 0.1 MG/ML Oral Solution [Baycadron]"/>
-                <code value="901649"/>
-            </concept>
-            <concept>
                 <display value="Dexamethasone 2 MG/ML Injectable Solution [DexaJect]"/>
                 <code value="1049549"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.7 MG Drug Implant [Ozurdex]"/>
+                <code value="854181"/>
             </concept>
             <concept>
                 <display value="Dexamethasone 3 MG/ML Injectable Solution [DexaJect]"/>
                 <code value="880657"/>
             </concept>
             <concept>
+                <display value="Dexamethasone 0.1 MG/ML Oral Solution [Baycadron]"/>
+                <code value="901649"/>
+            </concept>
+            <concept>
                 <display value="0.005 ML Dexamethasone 103.4 MG/ML Injection [Dexycu]"/>
                 <code value="2045409"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG/ML / Neomycin 3.2 MG/ML / Thiabendazole
+                    40 MG/ML [Tresaderm]"/>
+                <code value="1009390"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 2 MG/ML [Dexium]"/>
+                <code value="1049384"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 3 MG/ML [Dexium]"/>
+                <code value="1087918"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG/ML / Neomycin 3.5 MG/ML / Polymyxin B
+                    10000 UNT/ML [Maxitrol]"/>
+                <code value="569262"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.001 MG/MG / Neomycin 0.0035 MG/MG /
+                    Polymyxin B 10 UNT/MG [Maxitrol]"/>
+                <code value="569272"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 2 MG/ML [Dexasone]"/>
+                <code value="1087756"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG/ML [Maxidex]"/>
+                <code value="566561"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.0005 MG/MG [Maxidex]"/>
+                <code value="688243"/>
+            </concept>
+            <concept>
+                <display value="dexamethasone acetate 8 MG/ML [De-Sone LA]"/>
+                <code value="1534398"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG/ML / Neomycin 3.5 MG/ML / Polymyxin B
+                    10000 UNT/ML [Poly-Dex]"/>
+                <code value="569264"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.001 MG/MG / Neomycin 0.0035 MG/MG /
+                    Polymyxin B 10 UNT/MG [Poly-Dex]"/>
+                <code value="569273"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.5 MG/ML / Tobramycin 3 MG/ML [Tobradex]"/>
+                <code value="1011079"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG/ML / Tobramycin 3 MG/ML [Tobradex]"/>
+                <code value="569462"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.001 MG/MG / Tobramycin 0.003 MG/MG [Tobradex]"/>
+                <code value="569470"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.5 MG [Decadron]"/>
+                <code value="564044"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.1 MG/ML [Decadron]"/>
+                <code value="566581"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 4 MG [Decadron]"/>
+                <code value="566603"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 6 MG [Decadron]"/>
+                <code value="566608"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.75 MG [Decadron]"/>
+                <code value="575233"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML [Ciprodex]"/>
+                <code value="545158"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 2 MG/ML [DexaJect]"/>
+                <code value="1049548"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.7 MG [Ozurdex]"/>
+                <code value="854179"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 3 MG/ML [DexaJect]"/>
+                <code value="880655"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.1 MG/ML [Baycadron]"/>
+                <code value="901647"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 103.4 MG/ML [Dexycu]"/>
+                <code value="2045406"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Thiabendazole Topical Solution [Tresaderm]"/>
+                <code value="1009391"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Solution [Dexium]"/>
+                <code value="1049385"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Solution [Decadron]"/>
+                <code value="757087"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Solution [Dexasone]"/>
+                <code value="363482"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Ophthalmic Suspension [Maxidex]"/>
+                <code value="365842"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Suspension [De-Sone LA]"/>
+                <code value="365692"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Suspension [Poly-Dex]"/>
+                <code value="365818"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Ointment [Poly-Dex]"/>
+                <code value="367266"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Ophthalmic Ointment [Maxidex]"/>
+                <code value="688244"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Tablet [Decadron]"/>
+                <code value="369461"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Dexamethasone Otic Suspension [Ciprodex]"/>
+                <code value="405941"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Drug Implant [Ozurdex]"/>
+                <code value="854180"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Solution [Baycadron]"/>
+                <code value="901648"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Solution [DexaJect]"/>
+                <code value="880656"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Ointment [Maxitrol]"/>
+                <code value="93249"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Suspension [Maxitrol]"/>
+                <code value="93250"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Tobramycin Ophthalmic Suspension [Tobradex]"/>
+                <code value="94334"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Tobramycin Ophthalmic Ointment [Tobradex]"/>
+                <code value="94335"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injection [Dexycu]"/>
+                <code value="2045407"/>
             </concept>
             <concept>
                 <display value="Dexamethasone sodium phosphate 4 MG/ML Injectable Solution"/>
@@ -311,6 +736,330 @@
             <concept>
                 <display value="0.005 ML Dexamethasone 103.4 MG/ML Injection"/>
                 <code value="2045404"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone sodium phosphate 4 MG/ML"/>
+                <code value="1049399"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone phosphate 4 MG/ML"/>
+                <code value="1116926"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.1 MG/ML"/>
+                <code value="315773"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.25 MG"/>
+                <code value="315774"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.5 MG"/>
+                <code value="315775"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG"/>
+                <code value="315776"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1.5 MG"/>
+                <code value="315777"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 4 MG"/>
+                <code value="315778"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 6 MG"/>
+                <code value="315779"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 2 MG"/>
+                <code value="317346"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 1 MG/ML"/>
+                <code value="317629"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 8 MG/ML"/>
+                <code value="323884"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.0005 MG/MG"/>
+                <code value="328266"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.4 MG/ML"/>
+                <code value="328743"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 4 MG/ML"/>
+                <code value="330437"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 5 MG/ML"/>
+                <code value="331791"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 3 MG/ML"/>
+                <code value="332981"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.02 MG/ACTUAT"/>
+                <code value="335766"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.001 MG/MG"/>
+                <code value="339981"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 16 MG/ML"/>
+                <code value="343643"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.75 MG"/>
+                <code value="345816"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.5 MG/ML"/>
+                <code value="438889"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 2 MG/ML"/>
+                <code value="451789"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 0.7 MG"/>
+                <code value="854175"/>
+            </concept>
+            <concept>
+                <display value="dexamethasone acetate 8 MG/ML"/>
+                <code value="1374371"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone sodium phosphate 24 MG/ML"/>
+                <code value="1376067"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone phosphate 10 MG/ML"/>
+                <code value="1812078"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone sodium phosphate 0.4 MG/ML"/>
+                <code value="1249711"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone 103.4 MG/ML"/>
+                <code value="2045403"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Thiabendazole Topical Solution"/>
+                <code value="1009386"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Ophthalmic Ointment"/>
+                <code value="103217"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Suspension"/>
+                <code value="371721"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Ophthalmic Suspension"/>
+                <code value="371723"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Solution"/>
+                <code value="371725"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Solution"/>
+                <code value="371728"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Tablet"/>
+                <code value="371729"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Tobramycin Ophthalmic Ointment"/>
+                <code value="374438"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Suspension"/>
+                <code value="374698"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Ointment"/>
+                <code value="374699"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Ophthalmic Solution"/>
+                <code value="377418"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / hypromellose Ophthalmic Solution"/>
+                <code value="377456"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin Topical Ointment"/>
+                <code value="378593"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Tobramycin Ophthalmic Suspension"/>
+                <code value="378984"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Topical Solution"/>
+                <code value="393151"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / tramazoline Nasal Spray"/>
+                <code value="393542"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Dexamethasone Otic Suspension"/>
+                <code value="405942"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Drug Implant"/>
+                <code value="854176"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injection"/>
+                <code value="1812073"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Prefilled Syringe"/>
+                <code value="1812094"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Dexamethasone Otic Product"/>
+                <code value="1152113"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Polymyxin B Ophthalmic Product"/>
+                <code value="1154245"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin / Thiabendazole Topical Product"/>
+                <code value="1154246"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Neomycin Topical Product"/>
+                <code value="1154249"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / Tobramycin Ophthalmic Product"/>
+                <code value="1154524"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / hypromellose Ophthalmic Product"/>
+                <code value="1154525"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / tramazoline Inhalant Product"/>
+                <code value="1154527"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone / tramazoline Nasal Product"/>
+                <code value="1154528"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Drug Implant Product"/>
+                <code value="1154529"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Injectable Product"/>
+                <code value="1154531"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Ophthalmic Product"/>
+                <code value="1154533"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Liquid Product"/>
+                <code value="1154534"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Oral Product"/>
+                <code value="1154535"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Pill"/>
+                <code value="1154537"/>
+            </concept>
+            <concept>
+                <display value="Dexamethasone Topical Product"/>
+                <code value="1154539"/>
+            </concept>
+            <concept>
+                <display value="Ciprodex Otic Product"/>
+                <code value="1170903"/>
+            </concept>
+            <concept>
+                <display value="Maxitrol Ophthalmic Product"/>
+                <code value="1182730"/>
+            </concept>
+            <concept>
+                <display value="Poly-Dex Ophthalmic Product"/>
+                <code value="1182982"/>
+            </concept>
+            <concept>
+                <display value="Baycadron Oral Liquid Product"/>
+                <code value="1168624"/>
+            </concept>
+            <concept>
+                <display value="Baycadron Oral Product"/>
+                <code value="1168625"/>
+            </concept>
+            <concept>
+                <display value="De-Sone LA Injectable Product"/>
+                <code value="1169579"/>
+            </concept>
+            <concept>
+                <display value="Decadron Oral Product"/>
+                <code value="1170297"/>
+            </concept>
+            <concept>
+                <display value="Decadron Pill"/>
+                <code value="1170298"/>
+            </concept>
+            <concept>
+                <display value="DexaJect Injectable Product"/>
+                <code value="1175231"/>
+            </concept>
+            <concept>
+                <display value="Dexasone Injectable Product"/>
+                <code value="1175250"/>
+            </concept>
+            <concept>
+                <display value="Dexium Injectable Product"/>
+                <code value="1175843"/>
+            </concept>
+            <concept>
+                <display value="Ozurdex Drug Implant Product"/>
+                <code value="1177629"/>
+            </concept>
+            <concept>
+                <display value="Tobradex Ophthalmic Product"/>
+                <code value="1179099"/>
+            </concept>
+            <concept>
+                <display value="Tresaderm Topical Product"/>
+                <code value="1179675"/>
+            </concept>
+            <concept>
+                <display value="Maxidex Ophthalmic Product"/>
+                <code value="1181604"/>
+            </concept>
+            <concept>
+                <display value="Dexycu Injectable Product"/>
+                <code value="2045408"/>
+            </concept>
+            <concept>
+                <display value="Decadron Oral Liquid Product"/>
+                <code value="1170296"/>
             </concept>
         </include>
     </compose>

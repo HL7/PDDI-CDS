@@ -1,27 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-naproxen"/>
     <id value="valueset-naproxen"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-naproxen"/>
     <title value="Naproxen Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for naproxen."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for naproxen."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
+            <code value="USA"/>
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Anaprox"/>
+                <code value="202399"/>
+            </concept>
+            <concept>
+                <display value="Naprosyn"/>
+                <code value="203012"/>
+            </concept>
+            <concept>
+                <display value="Aleve"/>
+                <code value="215101"/>
+            </concept>
+            <concept>
+                <display value="Naprelan"/>
+                <code value="218599"/>
+            </concept>
+            <concept>
+                <display value="Midol Extended Relief"/>
+                <code value="603347"/>
+            </concept>
+            <concept>
+                <display value="Wal-Proxen"/>
+                <code value="643130"/>
+            </concept>
+            <concept>
+                <display value="Treximet"/>
+                <code value="794765"/>
+            </concept>
+            <concept>
+                <display value="Aleve-D"/>
+                <code value="849730"/>
+            </concept>
+            <concept>
+                <display value="Sudafed Sinus & Pain"/>
+                <code value="880900"/>
+            </concept>
+            <concept>
+                <display value="Vimovo"/>
+                <code value="1372705"/>
+            </concept>
+            <concept>
+                <display value="Aleve PM"/>
+                <code value="1550958"/>
+            </concept>
+            <concept>
+                <display value="Menstridol"/>
+                <code value="1593655"/>
+            </concept>
+            <concept>
+                <display value="{7 (lansoprazole 15 MG Delayed Release Oral Capsule) / 14
+                    (Naproxen 375 MG Oral Tablet) } Pack"/>
+                <code value="758486"/>
+            </concept>
+            <concept>
+                <display value="{7 (lansoprazole 15 MG Delayed Release Oral Capsule) / 14
+                    (Naproxen 500 MG Oral Tablet) } Pack"/>
+                <code value="758497"/>
+            </concept>
+            <concept>
+                <display value="Naproxen"/>
+                <code value="7258"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen / Naproxen"/>
+                <code value="1008561"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Thiamine"/>
+                <code value="1008689"/>
+            </concept>
+            <concept>
+                <display value="Misoprostol / Naproxen"/>
+                <code value="106637"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Pseudoephedrine"/>
+                <code value="284641"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Sumatriptan"/>
+                <code value="797426"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Naproxen"/>
+                <code value="818929"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole / Naproxen"/>
+                <code value="994202"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Naproxen"/>
+                <code value="1550956"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium"/>
+                <code value="142442"/>
+            </concept>
             <concept>
                 <display value="Naproxen sodium 275 MG Oral Tablet [Anaprox]"/>
                 <code value="849400"/>
@@ -120,6 +220,150 @@
                 <code value="1593660"/>
             </concept>
             <concept>
+                <display value="Naproxen sodium 275 MG [Anaprox]"/>
+                <code value="849399"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 550 MG [Anaprox]"/>
+                <code value="849437"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 250 MG [Naprosyn]"/>
+                <code value="564237"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG [Naprosyn]"/>
+                <code value="564238"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG [Naprosyn]"/>
+                <code value="564251"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 25 MG/ML [Naprosyn]"/>
+                <code value="567887"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG [Aleve]"/>
+                <code value="849727"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG [Naprelan]"/>
+                <code value="1116330"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG [Naprelan]"/>
+                <code value="1116340"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 750 MG [Naprelan]"/>
+                <code value="1116350"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG [Midol Extended Relief]"/>
+                <code value="849751"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG [Wal-Proxen]"/>
+                <code value="849736"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 500 MG / Sumatriptan 85 MG [Treximet]"/>
+                <code value="849451"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 60 MG / Sumatriptan 10 MG [Treximet]"/>
+                <code value="1653766"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120
+                    MG [Aleve-D]"/>
+                <code value="1367427"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120
+                    MG [Sudafed Sinus & Pain]"/>
+                <code value="1373033"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 375 MG [Vimovo]"/>
+                <code value="994006"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole 20 MG / Naproxen 500 MG [Vimovo]"/>
+                <code value="994009"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 25 MG / Naproxen sodium 220 MG
+                    [Aleve PM]"/>
+                <code value="1550959"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG [Menstridol]"/>
+                <code value="1593656"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Capsule [Aleve]"/>
+                <code value="1112232"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet [Aleve]"/>
+                <code value="368447"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Delayed Release Oral Tablet [Naprosyn]"/>
+                <code value="608792"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Extended Release Oral Tablet [Naprelan]"/>
+                <code value="369974"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet [Midol Extended Relief]"/>
+                <code value="603349"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet [Wal-Proxen]"/>
+                <code value="643132"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Sumatriptan Oral Tablet [Treximet]"/>
+                <code value="794767"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Pseudoephedrine Extended Release Oral Tablet [Aleve-D]"/>
+                <code value="849732"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Pseudoephedrine Extended Release Oral Tablet
+                    [Sudafed Sinus & Pain]"/>
+                <code value="880902"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet [Anaprox]"/>
+                <code value="91796"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Suspension [Naprosyn]"/>
+                <code value="93416"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet [Naprosyn]"/>
+                <code value="93417"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole / Naproxen Delayed Release Oral Tablet [Vimovo]"/>
+                <code value="977957"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Naproxen Oral Tablet [Aleve PM]"/>
+                <code value="1550960"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet [Menstridol]"/>
+                <code value="1593657"/>
+            </concept>
+            <concept>
                 <display value="Naproxen 250 MG Delayed Release Oral Tablet"/>
                 <code value="105918"/>
             </concept>
@@ -216,6 +460,246 @@
             <concept>
                 <display value="Naproxen sodium 60 MG / Sumatriptan 10 MG Oral Tablet"/>
                 <code value="1653765"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 250 MG"/>
+                <code value="316326"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 375 MG"/>
+                <code value="316327"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 500 MG"/>
+                <code value="316328"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 25 MG/ML"/>
+                <code value="317653"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 1000 MG"/>
+                <code value="332248"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 750 MG"/>
+                <code value="332249"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 125 MG"/>
+                <code value="335266"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 275 MG"/>
+                <code value="849397"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 550 MG"/>
+                <code value="849430"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 500 MG"/>
+                <code value="849449"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 220 MG"/>
+                <code value="849573"/>
+            </concept>
+            <concept>
+                <display value="Naproxen 200 MG"/>
+                <code value="1608796"/>
+            </concept>
+            <concept>
+                <display value="Naproxen sodium 60 MG"/>
+                <code value="1653763"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Capsule"/>
+                <code value="373002"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Rectal Suppository"/>
+                <code value="373003"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Suspension"/>
+                <code value="373004"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Tablet"/>
+                <code value="373005"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Extended Release Oral Tablet"/>
+                <code value="373006"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Delayed Release Oral Tablet"/>
+                <code value="373009"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Pseudoephedrine Extended Release Oral Tablet"/>
+                <code value="374618"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Sumatriptan Oral Tablet"/>
+                <code value="794763"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole / Naproxen Delayed Release Oral Tablet"/>
+                <code value="977953"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Naproxen Oral Tablet"/>
+                <code value="1550955"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Pseudoephedrine Oral Product"/>
+                <code value="1157003"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Pseudoephedrine Pill"/>
+                <code value="1157004"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Sumatriptan Oral Product"/>
+                <code value="1157005"/>
+            </concept>
+            <concept>
+                <display value="Naproxen / Sumatriptan Pill"/>
+                <code value="1157512"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Liquid Product"/>
+                <code value="1157516"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Oral Product"/>
+                <code value="1157517"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Pill"/>
+                <code value="1157518"/>
+            </concept>
+            <concept>
+                <display value="Naproxen Rectal Product"/>
+                <code value="1157519"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Naproxen Oral Product"/>
+                <code value="1550953"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Naproxen Pill"/>
+                <code value="1550954"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole / Naproxen Oral Product"/>
+                <code value="1164523"/>
+            </concept>
+            <concept>
+                <display value="Esomeprazole / Naproxen Pill"/>
+                <code value="1164524"/>
+            </concept>
+            <concept>
+                <display value="Aleve-D Oral Product"/>
+                <code value="1175504"/>
+            </concept>
+            <concept>
+                <display value="Aleve-D Pill"/>
+                <code value="1175505"/>
+            </concept>
+            <concept>
+                <display value="Treximet Oral Product"/>
+                <code value="1179685"/>
+            </concept>
+            <concept>
+                <display value="Sudafed Sinus & Pain Oral Product"/>
+                <code value="1181400"/>
+            </concept>
+            <concept>
+                <display value="Sudafed Sinus & Pain Pill"/>
+                <code value="1181401"/>
+            </concept>
+            <concept>
+                <display value="Menstridol Oral Product"/>
+                <code value="1593658"/>
+            </concept>
+            <concept>
+                <display value="Menstridol Pill"/>
+                <code value="1593659"/>
+            </concept>
+            <concept>
+                <display value="Anaprox Oral Product"/>
+                <code value="1174929"/>
+            </concept>
+            <concept>
+                <display value="Anaprox Pill"/>
+                <code value="1174930"/>
+            </concept>
+            <concept>
+                <display value="Aleve Oral Product"/>
+                <code value="1175502"/>
+            </concept>
+            <concept>
+                <display value="Aleve Pill"/>
+                <code value="1175503"/>
+            </concept>
+            <concept>
+                <display value="Midol Extended Relief Oral Product"/>
+                <code value="1178096"/>
+            </concept>
+            <concept>
+                <display value="Midol Extended Relief Pill"/>
+                <code value="1178097"/>
+            </concept>
+            <concept>
+                <display value="Naprelan Oral Product"/>
+                <code value="1178761"/>
+            </concept>
+            <concept>
+                <display value="Naprelan Pill"/>
+                <code value="1178762"/>
+            </concept>
+            <concept>
+                <display value="Naprosyn Oral Liquid Product"/>
+                <code value="1179303"/>
+            </concept>
+            <concept>
+                <display value="Naprosyn Oral Product"/>
+                <code value="1179304"/>
+            </concept>
+            <concept>
+                <display value="Naprosyn Pill"/>
+                <code value="1179305"/>
+            </concept>
+            <concept>
+                <display value="Treximet Pill"/>
+                <code value="1179686"/>
+            </concept>
+            <concept>
+                <display value="Wal-Proxen Oral Product"/>
+                <code value="1187796"/>
+            </concept>
+            <concept>
+                <display value="Wal-Proxen Pill"/>
+                <code value="1187797"/>
+            </concept>
+            <concept>
+                <display value="Aleve PM Oral Product"/>
+                <code value="1550961"/>
+            </concept>
+            <concept>
+                <display value="Aleve PM Pill"/>
+                <code value="1550962"/>
+            </concept>
+            <concept>
+                <display value="Vimovo Oral Product"/>
+                <code value="1186604"/>
+            </concept>
+            <concept>
+                <display value="Vimovo Pill"/>
+                <code value="1186607"/>
             </concept>
         </include>
     </compose>

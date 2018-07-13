@@ -1,35 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diflunisal"/>
-    <id value="valueset-diflunisal"/>
-    <version value="1.0"/>
-    <name value="valueset-diflunisal"/>
-    <title value="Diflunisal Medications Value Set"/>
-    <status value="draft"/>
-    <date value="2018-06-20"/>
-    <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for diflunisal."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-    </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
-    <compose>
-        <include>
-            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
-            <concept>
-                <display value="Diflunisal 500 MG Oral Tablet"/>
-                <code value="197603"/>
-            </concept>
-            <concept>
-                <display value="Diflunisal 250 MG Oral Tablet"/>
-                <code value="197602"/>
-            </concept>
+<url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diflunisal"/>
+<id value="valueset-diflunisal"/>
+<version value="US 1.1"/>
+<name value="valueset-diflunisal"/>
+<title value="Diflunisal Medications Value Set"/>
+<status value="draft"/>
+<date value="2018-07-02"/>
+<publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+<description value="ValueSet containing drug identifiers for diflunisal."/>
+<jurisdiction>
+    <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="US"/>
+        <display value="United States of America"/>
+    </coding>
+</jurisdiction>
+<copyright value="Attribution CC BY"/>
+<compose>
+    <include>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <version value="02-Jul-2018"/>
+        <concept>
+            <display value="Diflunisal"/>
+            <code value="3393"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal 500 MG Oral Tablet"/>
+            <code value="197603"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal 250 MG Oral Tablet"/>
+            <code value="197602"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal 500 MG"/>
+            <code value="315811"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal 250 MG"/>
+            <code value="317354"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal Oral Tablet"/>
+            <code value="371828"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal Oral Product"/>
+            <code value="1151511"/>
+        </concept>
+        <concept>
+            <display value="Diflunisal Pill"/>
+            <code value="1151512"/>
+        </concept>
         </include>
     </compose>
 </ValueSet>

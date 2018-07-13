@@ -1,14 +1,16 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aldosterone"/>
-    <id value="valueset-aldosterone"/>
-    <version value="1.0"/>
-    <name value="valueset-aldosterone"/>
-    <title value="Aldosterone Medications Value Set"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone"/>
+    <id value="valueset-cortisone"/>
+    <version value="US 1.1"/>
+    <display value="valueset-cortisone"/>
+    <title value="Cortisone Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for aldosterone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for cortisone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +18,19 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Cortisone"/>
+                <code value="2878"/>
+            </concept>
+            <concept>
+                <display value="cortisone acetate"/>
+                <code value="21655"/>
+            </concept>
             <concept>
                 <display value="Cortisone 50 MG/ML Injectable Suspension"/>
                 <code value="206445"/>
@@ -37,6 +46,42 @@
             <concept>
                 <display value="cortisone acetate 25 MG Oral Tablet"/>
                 <code value="828248"/>
+            </concept>
+            <concept>
+                <display value="Cortisone 50 MG/ML"/>
+                <code value="315722"/>
+            </concept>
+            <concept>
+                <display value="Cortisone 5 MG"/>
+                <code value="329229"/>
+            </concept>
+            <concept>
+                <display value="Cortisone 10 MG"/>
+                <code value="329479"/>
+            </concept>
+            <concept>
+                <display value="cortisone acetate 25 MG"/>
+                <code value="828247"/>
+            </concept>
+            <concept>
+                <display value="Cortisone Injectable Suspension"/>
+                <code value="371634"/>
+            </concept>
+            <concept>
+                <display value="Cortisone Oral Tablet"/>
+                <code value="371635"/>
+            </concept>
+            <concept>
+                <display value="Cortisone Injectable Product"/>
+                <code value="1155527"/>
+            </concept>
+            <concept>
+                <display value="Cortisone Oral Product"/>
+                <code value="1155528"/>
+            </concept>
+            <concept>
+                <display value="Cortisone Pill"/>
+                <code value="1155815"/>
             </concept>
         </include>
     </compose>

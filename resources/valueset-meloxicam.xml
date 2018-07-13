@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meloxicam"/>
     <id value="valueset-meloxicam"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-meloxicam"/>
     <title value="Meloxicam Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for meloxicam."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for meloxicam."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,47 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Metacam"/>
+                <code value="1086708"/>
+            </concept>
+            <concept>
+                <display value="Mobic"/>
+                <code value="152699"/>
+            </concept>
+            <concept>
+                <display value="Loxicom"/>
+                <code value="1364057"/>
+            </concept>
+            <concept>
+                <display value="Meloxidyl"/>
+                <code value="1439977"/>
+            </concept>
+            <concept>
+                <display value="Ostilox"/>
+                <code value="1482670"/>
+            </concept>
+            <concept>
+                <display value="Eloxiject"/>
+                <code value="1495051"/>
+            </concept>
+            <concept>
+                <display value="Vivlodex"/>
+                <code value="1722350"/>
+            </concept>
+            <concept>
+                <display value="EloxiOral"/>
+                <code value="1788847"/>
+            </concept>
+            <concept>
+                <display value="meloxicam"/>
+                <code value="41493"/>
+            </concept>
             <concept>
                 <display value="meloxicam 5 MG/ML Injectable Solution [Metacam]"/>
                 <code value="1086711"/>
@@ -83,6 +121,114 @@
                 <code value="1788852"/>
             </concept>
             <concept>
+                <display value="meloxicam 5 MG/ML [Metacam]"/>
+                <code value="1086709"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 0.5 MG/ML [Metacam]"/>
+                <code value="1091877"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML [Metacam]"/>
+                <code value="1092194"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 15 MG [Mobic]"/>
+                <code value="565024"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 7.5 MG [Mobic]"/>
+                <code value="565025"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML [Mobic]"/>
+                <code value="603842"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML [Loxicom]"/>
+                <code value="1364058"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML [Loxicom]"/>
+                <code value="1648915"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML [Meloxidyl]"/>
+                <code value="1439978"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML [Ostilox]"/>
+                <code value="1482671"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML [Ostilox]"/>
+                <code value="1649010"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML [Eloxiject]"/>
+                <code value="1495052"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG [Vivlodex]"/>
+                <code value="1722351"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 10 MG [Vivlodex]"/>
+                <code value="1722358"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML [EloxiOral]"/>
+                <code value="1788848"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension [Metacam]"/>
+                <code value="1091878"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Injectable Solution [Metacam]"/>
+                <code value="1086710"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Tablet [Mobic]"/>
+                <code value="368154"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension [Mobic]"/>
+                <code value="603843"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Injectable Solution [Loxicom]"/>
+                <code value="1364059"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension [Meloxidyl]"/>
+                <code value="1439979"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Injectable Solution [Ostilox]"/>
+                <code value="1482672"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Injectable Solution [Eloxiject]"/>
+                <code value="1495053"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension [Loxicom]"/>
+                <code value="1648916"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension [Ostilox]"/>
+                <code value="1649011"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Capsule [Vivlodex]"/>
+                <code value="1722352"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension [EloxiOral]"/>
+                <code value="1788849"/>
+            </concept>
+            <concept>
                 <display value="meloxicam 5 MG/ML Injectable Solution"/>
                 <code value="1086707"/>
             </concept>
@@ -117,6 +263,150 @@
             <concept>
                 <display value="meloxicam 10 MG Oral Capsule"/>
                 <code value="1722357"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG/ML"/>
+                <code value="1086706"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 0.5 MG/ML"/>
+                <code value="1091875"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 7.5 MG"/>
+                <code value="323968"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 15 MG"/>
+                <code value="332451"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 1.5 MG/ML"/>
+                <code value="597404"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 5 MG"/>
+                <code value="1722348"/>
+            </concept>
+            <concept>
+                <display value="meloxicam 10 MG"/>
+                <code value="1722356"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Injectable Solution"/>
+                <code value="372752"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Rectal Suppository"/>
+                <code value="372753"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Tablet"/>
+                <code value="372754"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Capsule"/>
+                <code value="446251"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Suspension"/>
+                <code value="597405"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Injectable Product"/>
+                <code value="1165106"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Liquid Product"/>
+                <code value="1165107"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Oral Product"/>
+                <code value="1165678"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Pill"/>
+                <code value="1165679"/>
+            </concept>
+            <concept>
+                <display value="meloxicam Rectal Product"/>
+                <code value="1165680"/>
+            </concept>
+            <concept>
+                <display value="Loxicom Injectable Product"/>
+                <code value="1364060"/>
+            </concept>
+            <concept>
+                <display value="Meloxidyl Oral Liquid Product"/>
+                <code value="1439980"/>
+            </concept>
+            <concept>
+                <display value="Ostilox Injectable Product"/>
+                <code value="1482673"/>
+            </concept>
+            <concept>
+                <display value="Eloxiject Injectable Product"/>
+                <code value="1495054"/>
+            </concept>
+            <concept>
+                <display value="Loxicom Oral Liquid Product"/>
+                <code value="1648917"/>
+            </concept>
+            <concept>
+                <display value="Ostilox Oral Liquid Product"/>
+                <code value="1649012"/>
+            </concept>
+            <concept>
+                <display value="EloxiOral Oral Liquid Product"/>
+                <code value="1788850"/>
+            </concept>
+            <concept>
+                <display value="Mobic Oral Liquid Product"/>
+                <code value="1181061"/>
+            </concept>
+            <concept>
+                <display value="Metacam Injectable Product"/>
+                <code value="1185044"/>
+            </concept>
+            <concept>
+                <display value="Metacam Oral Liquid Product"/>
+                <code value="1185045"/>
+            </concept>
+            <concept>
+                <display value="Meloxidyl Oral Product"/>
+                <code value="1439981"/>
+            </concept>
+            <concept>
+                <display value="Loxicom Oral Product"/>
+                <code value="1648918"/>
+            </concept>
+            <concept>
+                <display value="Ostilox Oral Product"/>
+                <code value="1649013"/>
+            </concept>
+            <concept>
+                <display value="Vivlodex Oral Product"/>
+                <code value="1722353"/>
+            </concept>
+            <concept>
+                <display value="Vivlodex Pill"/>
+                <code value="1722354"/>
+            </concept>
+            <concept>
+                <display value="EloxiOral Oral Product"/>
+                <code value="1788851"/>
+            </concept>
+            <concept>
+                <display value="Mobic Oral Product"/>
+                <code value="1181062"/>
+            </concept>
+            <concept>
+                <display value="Mobic Pill"/>
+                <code value="1181063"/>
+            </concept>
+            <concept>
+                <display value="Metacam Oral Product"/>
+                <code value="1185046"/>
             </concept>
         </include>
     </compose>

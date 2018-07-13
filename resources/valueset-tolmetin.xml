@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-tolmetin"/>
     <id value="valueset-tolmetin"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-tolmetin"/>
     <title value="Tolmetin Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for tolmetin."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for tolmetin."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,19 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Tolmetin"/>
+                <code value="10636"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin Sodium"/>
+                <code value="42935"/>
+            </concept>
             <concept>
                 <display value="Tolmetin 200 MG Oral Tablet"/>
                 <code value="198295"/>
@@ -33,6 +43,34 @@
             <concept>
                 <display value="Tolmetin 600 MG Oral Tablet"/>
                 <code value="198297"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin 200 MG"/>
+                <code value="328642"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin 400 MG"/>
+                <code value="328644"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin 600 MG"/>
+                <code value="328645"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin Oral Capsule"/>
+                <code value="374155"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin Oral Tablet"/>
+                <code value="374157"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin Oral Product"/>
+                <code value="1157646"/>
+            </concept>
+            <concept>
+                <display value="Tolmetin Pill"/>
+                <code value="1157647"/>
             </concept>
         </include>
     </compose>

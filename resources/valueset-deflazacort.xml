@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-deflazacort"/>
     <id value="valueset-deflazacort"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-deflazacort"/>
     <title value="Deflazacort Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for deflazacort."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for deflazacort."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,19 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Emflaza"/>
+                <code value="1870945"/>
+            </concept>
+            <concept>
+                <display value="deflazacort"/>
+                <code value="22396"/>
+            </concept>
             <concept>
                 <display value="deflazacort 6 MG Oral Tablet [Emflaza]"/>
                 <code value="1870950"/>
@@ -41,6 +51,34 @@
             <concept>
                 <display value="deflazacort 22.75 MG/ML Oral Suspension [Emflaza]"/>
                 <code value="1870968"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 6 MG [Emflaza]"/>
+                <code value="1870946"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 30 MG [Emflaza]"/>
+                <code value="1870951"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 18 MG [Emflaza]"/>
+                <code value="1870955"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 36 MG [Emflaza]"/>
+                <code value="1870959"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 22.75 MG/ML [Emflaza]"/>
+                <code value="1870965"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Oral Tablet [Emflaza]"/>
+                <code value="1870947"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Oral Suspension [Emflaza]"/>
+                <code value="1870966"/>
             </concept>
             <concept>
                 <display value="deflazacort 6 MG Oral Tablet"/>
@@ -69,6 +107,66 @@
             <concept>
                 <display value="deflazacort 22.75 MG/ML Oral Suspension"/>
                 <code value="1870964"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 30 MG"/>
+                <code value="332963"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 6 MG"/>
+                <code value="332964"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 1 MG"/>
+                <code value="385598"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 7.5 MG"/>
+                <code value="438840"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 18 MG"/>
+                <code value="1870953"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 36 MG"/>
+                <code value="1870957"/>
+            </concept>
+            <concept>
+                <display value="deflazacort 22.75 MG/ML"/>
+                <code value="1870961"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Oral Tablet"/>
+                <code value="371693"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Oral Suspension"/>
+                <code value="1870963"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Oral Product"/>
+                <code value="1157200"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Pill"/>
+                <code value="1157201"/>
+            </concept>
+            <concept>
+                <display value="deflazacort Oral Liquid Product"/>
+                <code value="1870962"/>
+            </concept>
+            <concept>
+                <display value="Emflaza Oral Product"/>
+                <code value="1870948"/>
+            </concept>
+            <concept>
+                <display value="Emflaza Pill"/>
+                <code value="1870949"/>
+            </concept>
+            <concept>
+                <display value="Emflaza Oral Liquid Product"/>
+                <code value="1870967"/>
             </concept>
         </include>
     </compose>

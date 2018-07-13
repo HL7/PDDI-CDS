@@ -1,14 +1,16 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac"/>
     <id value="valueset-bromfenac"/>
-    <version value="1.0"/>
-    <name value="valueset-warfarin"/>
-    <title value="Bromfenac Medications Value Set"/>
+    <version value="US 1.1"/>
+    <display value="valueset-bromfenac"/>
+    <title value="Bromfenac Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for bromfenac."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for bromfenac."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +18,31 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Bromday"/>
+                <code value="1020507"/>
+            </concept>
+            <concept>
+                <display value="Prolensa"/>
+                <code value="1375918"/>
+            </concept>
+            <concept>
+                <display value="Bromsite"/>
+                <code value="1790142"/>
+            </concept>
+            <concept>
+                <display value="bromfenac"/>
+                <code value="19737"/>
+            </concept>
+            <concept>
+                <display value="Bromfenac sodium"/>
+                <code value="47364"/>
+            </concept>
             <concept>
                 <display value="bromfenac 0.9 MG/ML Ophthalmic Solution [Bromday]"/>
                 <code value="1020510"/>
@@ -35,6 +56,30 @@
                 <code value="1790146"/>
             </concept>
             <concept>
+                <display value="bromfenac 0.9 MG/ML [Bromday]"/>
+                <code value="1020508"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.7 MG/ML [Prolensa]"/>
+                <code value="1375919"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.75 MG/ML [Bromsite]"/>
+                <code value="1790143"/>
+            </concept>
+            <concept>
+                <display value="bromfenac Ophthalmic Solution [Bromday]"/>
+                <code value="1020509"/>
+            </concept>
+            <concept>
+                <display value="bromfenac Ophthalmic Solution [Prolensa]"/>
+                <code value="1375920"/>
+            </concept>
+            <concept>
+                <display value="bromfenac Ophthalmic Solution [Bromsite]"/>
+                <code value="1790144"/>
+            </concept>
+            <concept>
                 <display value="bromfenac 0.9 MG/ML Ophthalmic Solution"/>
                 <code value="578018"/>
             </concept>
@@ -45,6 +90,38 @@
             <concept>
                 <display value="bromfenac 0.75 MG/ML Ophthalmic Solution"/>
                 <code value="1790141"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.9 MG/ML"/>
+                <code value="578016"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.7 MG/ML"/>
+                <code value="1375916"/>
+            </concept>
+            <concept>
+                <display value="bromfenac 0.75 MG/ML"/>
+                <code value="1790140"/>
+            </concept>
+            <concept>
+                <display value="bromfenac Ophthalmic Solution"/>
+                <code value="578017"/>
+            </concept>
+            <concept>
+                <display value="bromfenac Ophthalmic Product"/>
+                <code value="1163102"/>
+            </concept>
+            <concept>
+                <display value="Prolensa Ophthalmic Product"/>
+                <code value="1375921"/>
+            </concept>
+            <concept>
+                <display value="Bromsite Ophthalmic Product"/>
+                <code value="1790145"/>
+            </concept>
+            <concept>
+                <display value="Bromday Ophthalmic Product"/>
+                <code value="1166170"/>
             </concept>
         </include>
     </compose>

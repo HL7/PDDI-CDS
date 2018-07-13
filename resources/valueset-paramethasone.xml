@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-paramethasone"/>
     <id value="valueset-paramethasone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-paramethasone"/>
     <title value="Paramethasone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for paramethasone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for paramethasone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,23 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <output>
+                <display value="Paramethasone"/>
+                <code value="7910"/>
+            </output>
+            <output>
+                <display value="Chlorpheniramine / Paramethasone"/>
+                <code value="1008557"/>
+            </output>
+            <output>
+                <display value="paramethasone acetate"/>
+                <code value="32895"/>
+            </output>
         </include>
     </compose>
 </ValueSet>

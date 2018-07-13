@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-hydrocortisone"/>
     <id value="valueset-hydrocortisone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-hydrocortisone"/>
     <title value="Hydrocortisone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for hydrocortisone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for hydrocortisone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,834 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Cortizone"/>
+                <code value="1987140"/>
+            </concept>
+            <concept>
+                <display value="Malacetic"/>
+                <code value="2003646"/>
+            </concept>
+            <concept>
+                <display value="Ana-Lex"/>
+                <code value="1012324"/>
+            </concept>
+            <concept>
+                <display value="Scalpicin Itch Relief"/>
+                <code value="1039270"/>
+            </concept>
+            <concept>
+                <display value="Vagisil Satin"/>
+                <code value="1039350"/>
+            </concept>
+            <concept>
+                <display value="Maximum-H"/>
+                <code value="1039920"/>
+            </concept>
+            <concept>
+                <display value="Beta-HC"/>
+                <code value="1043071"/>
+            </concept>
+            <concept>
+                <display value="Otomax HC"/>
+                <code value="1086614"/>
+            </concept>
+            <concept>
+                <display value="Hydroskin"/>
+                <code value="1086947"/>
+            </concept>
+            <concept>
+                <display value="HC Derma-Pax"/>
+                <code value="1089742"/>
+            </concept>
+            <concept>
+                <display value="Z-Pram"/>
+                <code value="1094444"/>
+            </concept>
+            <concept>
+                <display value="Procort 1.85/1.15"/>
+                <code value="1115727"/>
+            </concept>
+            <concept>
+                <display value="Neo-Polycin HC"/>
+                <code value="1116151"/>
+            </concept>
+            <concept>
+                <display value="PramCort"/>
+                <code value="1116500"/>
+            </concept>
+            <concept>
+                <display value="Anusol HC"/>
+                <code value="151363"/>
+            </concept>
+            <concept>
+                <display value="Cortenema"/>
+                <code value="202639"/>
+            </concept>
+            <concept>
+                <display value="Cortef"/>
+                <code value="202645"/>
+            </concept>
+            <concept>
+                <display value="Dermacort"/>
+                <code value="202647"/>
+            </concept>
+            <concept>
+                <display value="Proctocort"/>
+                <code value="202655"/>
+            </concept>
+            <concept>
+                <display value="Solu-Cortef"/>
+                <code value="203592"/>
+            </concept>
+            <concept>
+                <display value="A-Hydrocort"/>
+                <code value="203594"/>
+            </concept>
+            <concept>
+                <display value="Acetasol HC"/>
+                <code value="214969"/>
+            </concept>
+            <concept>
+                <display value="Ala-Cort"/>
+                <code value="215068"/>
+            </concept>
+            <concept>
+                <display value="Ala-Quin"/>
+                <code value="215069"/>
+            </concept>
+            <concept>
+                <display value="Analpram HC"/>
+                <code value="215264"/>
+            </concept>
+            <concept>
+                <display value="Anucort-HC"/>
+                <code value="215344"/>
+            </concept>
+            <concept>
+                <display value="Aquanil HC"/>
+                <code value="215381"/>
+            </concept>
+            <concept>
+                <display value="Caldecort"/>
+                <code value="215840"/>
+            </concept>
+            <concept>
+                <display value="Carmol HC"/>
+                <code value="215899"/>
+            </concept>
+            <concept>
+                <display value="Cipro HC"/>
+                <code value="216063"/>
+            </concept>
+            <concept>
+                <display value="Coly Mycin S"/>
+                <code value="216160"/>
+            </concept>
+            <concept>
+                <display value="Cortaid"/>
+                <code value="216234"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin-TC"/>
+                <code value="216244"/>
+            </concept>
+            <concept>
+                <display value="Dermarest Dricort"/>
+                <code value="216481"/>
+            </concept>
+            <concept>
+                <display value="Dermtex HC"/>
+                <code value="216490"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin"/>
+                <code value="21659"/>
+            </concept>
+            <concept>
+                <display value="Drotic"/>
+                <code value="216754"/>
+            </concept>
+            <concept>
+                <display value="Earsol-HC"/>
+                <code value="216839"/>
+            </concept>
+            <concept>
+                <display value="Pandel"/>
+                <code value="219083"/>
+            </concept>
+            <concept>
+                <display value="Pramosone"/>
+                <code value="219334"/>
+            </concept>
+            <concept>
+                <display value="Recort Plus"/>
+                <code value="219591"/>
+            </concept>
+            <concept>
+                <display value="Sarnol-HC"/>
+                <code value="219806"/>
+            </concept>
+            <concept>
+                <display value="Texacort"/>
+                <code value="220238"/>
+            </concept>
+            <concept>
+                <display value="Vanoxide-HC"/>
+                <code value="220750"/>
+            </concept>
+            <concept>
+                <display value="Vytone"/>
+                <code value="220926"/>
+            </concept>
+            <concept>
+                <display value="Westcort"/>
+                <code value="220938"/>
+            </concept>
+            <concept>
+                <display value="Preparation H Hydrocortisone"/>
+                <code value="261618"/>
+            </concept>
+            <concept>
+                <display value="Colocort"/>
+                <code value="284702"/>
+            </concept>
+            <concept>
+                <display value="Proctozone HC"/>
+                <code value="285086"/>
+            </concept>
+            <concept>
+                <display value="Proctofoam-HC"/>
+                <code value="34552"/>
+            </concept>
+            <concept>
+                <display value="Dermazene"/>
+                <code value="352581"/>
+            </concept>
+            <concept>
+                <display value="Exotic-HC"/>
+                <code value="352639"/>
+            </concept>
+            <concept>
+                <display value="Terra-Cortril"/>
+                <code value="37820"/>
+            </concept>
+            <concept>
+                <display value="Instacort"/>
+                <code value="405149"/>
+            </concept>
+            <concept>
+                <display value="U-Cort"/>
+                <code value="405371"/>
+            </concept>
+            <concept>
+                <display value="Epifoam"/>
+                <code value="49670"/>
+            </concept>
+            <concept>
+                <display value="Locoid"/>
+                <code value="52147"/>
+            </concept>
+            <concept>
+                <display value="Procto-Pak"/>
+                <code value="543489"/>
+            </concept>
+            <concept>
+                <display value="Novacort"/>
+                <code value="544125"/>
+            </concept>
+            <concept>
+                <display value="Alcortin"/>
+                <code value="581494"/>
+            </concept>
+            <concept>
+                <display value="Cortane-B"/>
+                <code value="581875"/>
+            </concept>
+            <concept>
+                <display value="Nuzon"/>
+                <code value="606037"/>
+            </concept>
+            <concept>
+                <display value="Dermarest Eczema"/>
+                <code value="702425"/>
+            </concept>
+            <concept>
+                <display value="Gynecort"/>
+                <code value="707790"/>
+            </concept>
+            <concept>
+                <display value="MiCort-HC"/>
+                <code value="758861"/>
+            </concept>
+            <concept>
+                <display value="Procto-Kit"/>
+                <code value="759714"/>
+            </concept>
+            <concept>
+                <display value="Itch-X Maximum Strength"/>
+                <code value="761646"/>
+            </concept>
+            <concept>
+                <display value="Oticin HC"/>
+                <code value="763092"/>
+            </concept>
+            <concept>
+                <display value="Coraz"/>
+                <code value="763540"/>
+            </concept>
+            <concept>
+                <display value="Corticool"/>
+                <code value="795064"/>
+            </concept>
+            <concept>
+                <display value="Nucort"/>
+                <code value="827343"/>
+            </concept>
+            <concept>
+                <display value="Scalacort"/>
+                <code value="830758"/>
+            </concept>
+            <concept>
+                <display value="TriOxin"/>
+                <code value="853316"/>
+            </concept>
+            <concept>
+                <display value="ZyPram"/>
+                <code value="853379"/>
+            </concept>
+            <concept>
+                <display value="Pediaderm HC"/>
+                <code value="877491"/>
+            </concept>
+            <concept>
+                <display value="Ala-Scalp"/>
+                <code value="884074"/>
+            </concept>
+            <concept>
+                <display value="Propet"/>
+                <code value="900406"/>
+            </concept>
+            <concept>
+                <display value="Excel Pet"/>
+                <code value="900412"/>
+            </concept>
+            <concept>
+                <display value="Cortifoam"/>
+                <code value="92265"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin Ointment"/>
+                <code value="92267"/>
+            </concept>
+            <concept>
+                <display value="Sentry HC Dermasphere"/>
+                <code value="978042"/>
+            </concept>
+            <concept>
+                <display value="Xerese"/>
+                <code value="998423"/>
+            </concept>
+            <concept>
+                <display value="Oticin HC Ear Drops"/>
+                <code value="999597"/>
+            </concept>
+            <concept>
+                <display value="Aveeno Hydrocortisone Anti-Itch"/>
+                <code value="1314860"/>
+            </concept>
+            <concept>
+                <display value="Kera-HC"/>
+                <code value="1314928"/>
+            </concept>
+            <concept>
+                <display value="Cortisil MDX"/>
+                <code value="1373235"/>
+            </concept>
+            <concept>
+                <display value="Rectacort-HC"/>
+                <code value="1429375"/>
+            </concept>
+            <concept>
+                <display value="Gadaderm Hydrocortisone"/>
+                <code value="1438748"/>
+            </concept>
+            <concept>
+                <display value="Dermasorb AF"/>
+                <code value="1442844"/>
+            </concept>
+            <concept>
+                <display value="Dermasorb HC"/>
+                <code value="1442867"/>
+            </concept>
+            <concept>
+                <display value="Dermacool HC"/>
+                <code value="1483214"/>
+            </concept>
+            <concept>
+                <display value="Resicort"/>
+                <code value="1483219"/>
+            </concept>
+            <concept>
+                <display value="Hemorrodil Plus"/>
+                <code value="1491718"/>
+            </concept>
+            <concept>
+                <display value="Vetropolycin HC"/>
+                <code value="1541111"/>
+            </concept>
+            <concept>
+                <display value="Selsun Blue Scalp Itch"/>
+                <code value="1650984"/>
+            </concept>
+            <concept>
+                <display value="Blue-Emu Anti-Itch"/>
+                <code value="1664355"/>
+            </concept>
+            <concept>
+                <display value="Hemmorex"/>
+                <code value="1674193"/>
+            </concept>
+            <concept>
+                <display value="Psoriasin Itch"/>
+                <code value="1739867"/>
+            </concept>
+            <concept>
+                <display value="Procto-Med"/>
+                <code value="1790680"/>
+            </concept>
+            <concept>
+                <display value="Neosporin Eczema"/>
+                <code value="1189202"/>
+            </concept>
+            <concept>
+                <display value="Monistat Itch Relief"/>
+                <code value="1190613"/>
+            </concept>
+            <concept>
+                <display value="Alcortin A"/>
+                <code value="1191043"/>
+            </concept>
+            <concept>
+                <display value="Biocorneum"/>
+                <code value="1235743"/>
+            </concept>
+            <concept>
+                <display value="Easotic"/>
+                <code value="1245246"/>
+            </concept>
+            <concept>
+                <display value="Hemril"/>
+                <code value="1291086"/>
+            </concept>
+            <concept>
+                <display value="Proctosol"/>
+                <code value="1291376"/>
+            </concept>
+            <concept>
+                <display value="{2 (Hydrocortisone 10 MG/ML Topical Cream [Dermarest
+                    Dricort]) } Pack [Dermarest DriCort Creme Pack]"/>
+                <code value="762583"/>
+            </concept>
+            <concept>
+                <display value="{1 (42000 MG) (Colloidal oatmeal 10 MG/ML Topical Cream
+                    [Neosporin Moisturizing]) / 1 (8500 MG) (Hydrocortisone 10 MG/ML
+                    Topical Cream [Neosporin Eczema]) } Pack [Neosporin Essentials
+                    Trial Pack]"/>
+                <code value="1193311"/>
+            </concept>
+            <concept>
+                <display value="{1 (30 ML) (Hydrocortisone 20 MG/ML Topical Lotion [Coraz])
+                    / 1 (177 ML) (Salicylic Acid 20 MG/ML / Sulfur 20 MG/ML
+                    Medicated Shampoo [Pulere]) } Pack [Coraz Lotion Kit]"/>
+                <code value="763548"/>
+            </concept>
+            <concept>
+                <display value="{1 (30 ML) (Hydrocortisone 20 MG/ML Topical Lotion
+                    [Scalacort]) / 1 (118 ML) (Salicylic Acid 20 MG/ML / Sulfur 20
+                    MG/ML Medicated Shampoo) } Pack [Scalacort DK]"/>
+                <code value="833507"/>
+            </concept>
+            <concept>
+                <display value="{1 (28400 MG) (hydrocortisone acetate 25 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML Rectal Cream [Analpram HC]) / 6
+                    (Pramoxine hydrochloride 10 MG/ML Medicated Pad [Prax]) } Pack
+                    [Analpram E Kit with 6 Prax Medicated Pad]"/>
+                <code value="1362223"/>
+            </concept>
+            <concept>
+                <display value="{30 (4000 MG) (hydrocortisone acetate 25 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML Rectal Cream [Analpram HC]) / 18
+                    (Pramoxine hydrochloride 10 MG/ML Medicated Pad [Prax]) } Pack
+                    [Analpram E Kit with 18 Prax Medicated Pads]"/>
+                <code value="1362213"/>
+            </concept>
+            <concept>
+                <display value="{2 (Hydrocortisone 10 MG/ML Topical Cream) } Pack"/>
+                <code value="762582"/>
+            </concept>
+            <concept>
+                <display value="{1 (30 ML) (Hydrocortisone 20 MG/ML Topical Lotion) / 1 (177
+                    ML) (Salicylic Acid 20 MG/ML / Sulfur 20 MG/ML Medicated
+                    Shampoo) } Pack"/>
+                <code value="763539"/>
+            </concept>
+            <concept>
+                <display value="{1 (30 ML) (Hydrocortisone 20 MG/ML Topical Lotion) / 1 (118
+                    ML) (Salicylic Acid 20 MG/ML / Sulfur 20 MG/ML Medicated
+                    Shampoo) } Pack"/>
+                <code value="833505"/>
+            </concept>
+            <concept>
+                <display value="{30 (4000 MG) (hydrocortisone acetate 25 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML Rectal Cream) / 18 (Pramoxine
+                    hydrochloride 10 MG/ML Medicated Pad) } Pack"/>
+                <code value="1362212"/>
+            </concept>
+            <concept>
+                <display value="{1 (28400 MG) (hydrocortisone acetate 25 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML Rectal Cream) / 6 (Pramoxine
+                    hydrochloride 10 MG/ML Medicated Pad) } Pack"/>
+                <code value="1362222"/>
+            </concept>
+            <concept>
+                <display value="{1 (42000 MG) (Colloidal oatmeal 10 MG/ML Topical Cream) / 1
+                    (8500 MG) (Hydrocortisone 10 MG/ML Topical Cream) } Pack"/>
+                <code value="1193304"/>
+            </concept>
+            <concept>
+                <display value="{1 (30000 MG) (Hydrocortisone 25 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML Rectal Cream) / 6 (Pramoxine
+                    hydrochloride 10 MG/ML Medicated Pad) } Pack"/>
+                <code value="1246586"/>
+            </concept>
+            <concept>
+                <display value="{30 (4000 MG) (Hydrocortisone 25 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML Rectal Cream) / 18 (Pramoxine
+                    hydrochloride 10 MG/ML Medicated Pad) } Pack"/>
+                <code value="1246538"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone"/>
+                <code value="5492"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Hydrocortisone / Pyrilamine"/>
+                <code value="1006891"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Natamycin / Neomycin"/>
+                <code value="1006991"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Metronidazole / Miconazole"/>
+                <code value="1007197"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lactate"/>
+                <code value="1007334"/>
+            </concept>
+            <concept>
+                <display value="bismuth subgallate / Hydrocortisone"/>
+                <code value="1007391"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine / PROCYANIDOLIC OLIGOMER"/>
+                <code value="1007683"/>
+            </concept>
+            <concept>
+                <display value="diperodon / Hydrocortisone"/>
+                <code value="1007717"/>
+            </concept>
+            <concept>
+                <display value="Acyclovir / Hydrocortisone"/>
+                <code value="1007804"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Salicylic Acid / sodium thiosulfate"/>
+                <code value="1007883"/>
+            </concept>
+            <concept>
+                <display value="Framycetin / Hydrocortisone"/>
+                <code value="1007907"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Sodium Chloride / Urea"/>
+                <code value="1007933"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Sulfacetamide"/>
+                <code value="1007936"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole"/>
+                <code value="1008033"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin"/>
+                <code value="1008095"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine / Zinc Sulfate"/>
+                <code value="1008114"/>
+            </concept>
+            <concept>
+                <display value="Atropine / Hydrocortisone"/>
+                <code value="1008192"/>
+            </concept>
+            <concept>
+                <display value="Fusidate / Hydrocortisone"/>
+                <code value="1008341"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / hydroquinone / Tretinoin"/>
+                <code value="1008425"/>
+            </concept>
+            <concept>
+                <display value="Benzocaine / chloroxylenol / Hydrocortisone"/>
+                <code value="1008536"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lactate / Urea"/>
+                <code value="1008660"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / ICTASOL"/>
+                <code value="1008829"/>
+            </concept>
+            <concept>
+                <display value="Benzalkonium / chloroxylenol / Hydrocortisone"/>
+                <code value="1008913"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Tetracycline"/>
+                <code value="1008917"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / POTASSIUM OXYQUINOLONE"/>
+                <code value="1008958"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Zinc Sulfate"/>
+                <code value="1009075"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine"/>
+                <code value="106955"/>
+            </concept>
+            <concept>
+                <display value="crotamiton / Hydrocortisone"/>
+                <code value="106957"/>
+            </concept>
+            <concept>
+                <display value="Chloramphenicol / Hydrocortisone"/>
+                <code value="106960"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin"/>
+                <code value="106963"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine"/>
+                <code value="106964"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Miconazole"/>
+                <code value="106967"/>
+            </concept>
+            <concept>
+                <display value="Econazole / Hydrocortisone"/>
+                <code value="106970"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Nystatin"/>
+                <code value="106984"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Oxytetracycline"/>
+                <code value="106986"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone"/>
+                <code value="106987"/>
+            </concept>
+            <concept>
+                <display value="Chlorquinaldol / Hydrocortisone"/>
+                <code value="106990"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol"/>
+                <code value="217626"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B"/>
+                <code value="217627"/>
+            </concept>
+            <concept>
+                <display value="Clotrimazole / Hydrocortisone"/>
+                <code value="262272"/>
+            </concept>
+            <concept>
+                <display value="Benzoyl Peroxide / Hydrocortisone"/>
+                <code value="392454"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Hydrocortisone"/>
+                <code value="465711"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid / Hydrocortisone"/>
+                <code value="466530"/>
+            </concept>
+            <concept>
+                <display value="Dibucaine / Hydrocortisone"/>
+                <code value="608716"/>
+            </concept>
+            <concept>
+                <display value="Antipyrine / Hydrocortisone / Neomycin / Polymyxin B"/>
+                <code value="689241"/>
+            </concept>
+            <concept>
+                <display value="Chloramphenicol / Hydrocortisone / Polymyxin B"/>
+                <code value="689288"/>
+            </concept>
+            <concept>
+                <display value="chlorcyclizine / Hydrocortisone"/>
+                <code value="689289"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine"/>
+                <code value="689371"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Hydrocortisone / Pheniramine / Pyrilamine"/>
+                <code value="689410"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B"/>
+                <code value="689623"/>
+            </concept>
+            <concept>
+                <display value="Hexachlorophene / Hydrocortisone / Menthol"/>
+                <code value="689704"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Coal Tar / Hydrocortisone"/>
+                <code value="689865"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone / pramoxine"/>
+                <code value="689867"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Isopropyl Alcohol / resorcinol / Sulfur"/>
+                <code value="689914"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Polymyxin B"/>
+                <code value="689920"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Salicylic Acid / Sulfur"/>
+                <code value="689922"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Sulfur / Zinc Oxide"/>
+                <code value="689923"/>
+            </concept>
+            <concept>
+                <display value="Colistin / Hydrocortisone / Neomycin / THONZONIUM"/>
+                <code value="690105"/>
+            </concept>
+            <concept>
+                <display value="diperodon / Hydrocortisone / Zinc Oxide"/>
+                <code value="690688"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Hydrocortisone"/>
+                <code value="690691"/>
+            </concept>
+            <concept>
+                <display value="Coal Tar / Hydrocortisone"/>
+                <code value="815532"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / phenol"/>
+                <code value="1372889"/>
+            </concept>
+            <concept>
+                <display value="Benzethonium / Diphenhydramine / Hydrocortisone"/>
+                <code value="1537193"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine / pramoxine"/>
+                <code value="1537197"/>
+            </concept>
+            <concept>
+                <display value="Chlorhexidine / Hydrocortisone"/>
+                <code value="1541212"/>
+            </concept>
+            <concept>
+                <display value="Chlorhexidine / Hydrocortisone / Ketoconazole"/>
+                <code value="1648131"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Tretinoin"/>
+                <code value="1651331"/>
+            </concept>
+            <concept>
+                <display value="Aloe Polysaccharide / Hydrocortisone / Iodoquinol"/>
+                <code value="1191375"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone"/>
+                <code value="106983"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone / Miconazole"/>
+                <code value="1870699"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone butyrate"/>
+                <code value="103468"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone cypionate"/>
+                <code value="163524"/>
+            </concept>
+            <concept>
+                <display value="cortisol succinate"/>
+                <code value="21651"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone sodium phosphate"/>
+                <code value="235482"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone sodium succinate"/>
+                <code value="235483"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone probutate"/>
+                <code value="27196"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate"/>
+                <code value="27197"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone valerate"/>
+                <code value="27199"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone aceponate"/>
+                <code value="41277"/>
+            </concept>
             <concept>
                 <display value="Hydrocortisone 10 MG/ML / Ketoconazole 1.5 MG/ML Medicated
                     Shampoo [Malacetic]"/>
@@ -164,6 +989,14 @@
                 <code value="105398"/>
             </concept>
             <concept>
+                <display value="Hydrocortisone 10 MG/ML Topical Cream [Ala-Cort]"/>
+                <code value="206347"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML Topical Lotion [Ala-Cort]"/>
+                <code value="206368"/>
+            </concept>
+            <concept>
                 <display value="Hydrocortisone 100 MG Injection [A-Hydrocort]"/>
                 <code value="208947"/>
             </concept>
@@ -191,14 +1024,6 @@
             <concept>
                 <display value="Clioquinol 30 MG/ML / Hydrocortisone 5 MG/ML Topical Cream [Ala-Quin]"/>
                 <code value="206026"/>
-            </concept>
-            <concept>
-                <display value="Hydrocortisone 10 MG/ML Topical Cream [Ala-Cort]"/>
-                <code value="206347"/>
-            </concept>
-            <concept>
-                <display value="Hydrocortisone 10 MG/ML Topical Lotion [Ala-Cort]"/>
-                <code value="206368"/>
             </concept>
             <concept>
                 <display value="Hydrocortisone 10 MG/ML Topical Cream [Caldecort]"/>
@@ -398,17 +1223,17 @@
                 <code value="404284"/>
             </concept>
             <concept>
+                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML Topical Foam [Epifoam]"/>
+                <code value="904783"/>
+            </concept>
+            <concept>
                 <display value="hydrocortisone acetate 10 MG/ML Topical Cream [U-Cort]"/>
                 <code value="1360949"/>
             </concept>
             <concept>
                 <display value="Hydrocortisone 10 MG/ML Rectal Cream [Procto-Pak]"/>
                 <code value="543492"/>
-            </concept>
-            <concept>
-                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
-                    MG/ML Topical Foam [Epifoam]"/>
-                <code value="904783"/>
             </concept>
             <concept>
                 <display value="Hydrocortisone butyrate 0.001 MG/MG Topical Ointment [Locoid]"/>
@@ -432,6 +1257,10 @@
                 <code value="1293729"/>
             </concept>
             <concept>
+                <display value="Hydrocortisone 0.02 MG/MG Topical Gel [Nuzon]"/>
+                <code value="606794"/>
+            </concept>
+            <concept>
                 <display value="Hydrocortisone 0.02 MG/MG / Iodoquinol 0.01 MG/MG Topical
                     Gel [Alcortin]"/>
                 <code value="1191414"/>
@@ -445,10 +1274,6 @@
                 <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
                     hydrochloride 10 MG/ML Topical Lotion [Cortane-B]"/>
                 <code value="1293943"/>
-            </concept>
-            <concept>
-                <display value="Hydrocortisone 0.02 MG/MG Topical Gel [Nuzon]"/>
-                <code value="606794"/>
             </concept>
             <concept>
                 <display value="Hydrocortisone 10 MG/ML Topical Lotion [Dermarest Eczema]"/>
@@ -657,13 +1482,13 @@
                 <code value="1235747"/>
             </concept>
             <concept>
-                <display value="Hydrocortisone 25 MG/ML Topical Cream [Proctosol]"/>
-                <code value="1540356"/>
-            </concept>
-            <concept>
                 <display value="gentamicin sulfate 1.5 MG/ML / hydrocortisone aceponate 1.11
                     MG/ML / Miconazole Nitrate 15.1 MG/ML Otic Suspension [Easotic]"/>
                 <code value="1245250"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML Topical Cream [Proctosol]"/>
+                <code value="1540356"/>
             </concept>
             <concept>
                 <display value="hydrocortisone acetate 30 MG Rectal Suppository [Hemril]"/>
@@ -676,6 +1501,1111 @@
             <concept>
                 <display value="hydrocortisone acetate 25 MG Rectal Suppository [Proctosol]"/>
                 <code value="1291383"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.005 MG/MG [Cortizone]"/>
+                <code value="1987141"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG/ML [Cortizone]"/>
+                <code value="1987145"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.01 MG/MG [Cortizone]"/>
+                <code value="1987151"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Cortizone]"/>
+                <code value="1987155"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML / Ketoconazole 1.5 MG/ML [Malacetic]"/>
+                <code value="2003647"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 20 MG/ML / Lidocaine Hydrochloride 20
+                    MG/ML [Ana-Lex]"/>
+                <code value="1012325"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Scalpicin Itch Relief]"/>
+                <code value="1039271"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML [Vagisil Satin]"/>
+                <code value="1039351"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Maximum-H]"/>
+                <code value="1039921"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Beta-HC]"/>
+                <code value="1043072"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Hydroskin]"/>
+                <code value="1086948"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML [Otomax HC]"/>
+                <code value="1294254"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 23.5 MG/ML / Pramoxine hydrochloride
+                    10 MG/ML [Z-Pram]"/>
+                <code value="1094445"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 5 MG/ML / Hydrocortisone 5
+                    MG/ML [HC Derma-Pax]"/>
+                <code value="1297951"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 18.5 MG/ML / Pramoxine hydrochloride
+                    11.5 MG/ML [Procort 1.85/1.15]"/>
+                <code value="1115728"/>
+            </concept>
+            <concept>
+                <display value="bacitracin zinc 0.4 UNT/MG / hydrocortisone acetate 0.01
+                    MG/MG / Neomycin Sulfate 0.0035 MG/MG / Polymyxin B Sulfate 10
+                    UNT/MG [Neo-Polycin HC]"/>
+                <code value="1116152"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [PramCort]"/>
+                <code value="1116501"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Anusol HC]"/>
+                <code value="574115"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG [Anusol HC]"/>
+                <code value="1291102"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Proctocort]"/>
+                <code value="543689"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1.67 MG/ML [Cortenema]"/>
+                <code value="562955"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Dermacort]"/>
+                <code value="567198"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG [Cortef]"/>
+                <code value="569343"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG [Cortef]"/>
+                <code value="569375"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG [Cortef]"/>
+                <code value="569465"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 2 MG/ML [Cortef]"/>
+                <code value="569869"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 30 MG [Proctocort]"/>
+                <code value="1291091"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid 20 MG/ML / Hydrocortisone 10 MG/ML [Acetasol HC]"/>
+                <code value="573411"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1000 MG [Solu-Cortef]"/>
+                <code value="1738587"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 250 MG [Solu-Cortef]"/>
+                <code value="1738591"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 500 MG [Solu-Cortef]"/>
+                <code value="1738595"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 100 MG [Solu-Cortef]"/>
+                <code value="1738600"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 100 MG [A-Hydrocort]"/>
+                <code value="1738602"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol 30 MG/ML / Hydrocortisone 5 MG/ML [Ala-Quin]"/>
+                <code value="566907"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Aquanil HC]"/>
+                <code value="567169"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Ala-Cort]"/>
+                <code value="567191"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Caldecort]"/>
+                <code value="575290"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [Analpram HC]"/>
+                <code value="1360950"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [Analpram HC]"/>
+                <code value="1360955"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Ala-Cort]"/>
+                <code value="1729510"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML [Carmol HC]"/>
+                <code value="1250485"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG [Anucort-HC]"/>
+                <code value="1291100"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Cortaid]"/>
+                <code value="567171"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Dermarest Dricort]"/>
+                <code value="567199"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML / Neomycin 3.5 MG/ML / Polymyxin B
+                    10000 UNT/ML [Drotic]"/>
+                <code value="567344"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG/ML [Cortaid]"/>
+                <code value="571951"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin 2 MG/ML / Hydrocortisone 10 MG/ML [Cipro HC]"/>
+                <code value="573221"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid 20 MG/ML / Hydrocortisone 10 MG/ML [Earsol-HC]"/>
+                <code value="573412"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Dermtex HC]"/>
+                <code value="576137"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.01 MG/MG [Cortaid]"/>
+                <code value="604513"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML / Neomycin 3.5 MG/ML / Polymyxin B
+                    10000 UNT/ML [Cortisporin]"/>
+                <code value="825188"/>
+            </concept>
+            <concept>
+                <display value="Colistin 3 MG/ML / Hydrocortisone 10 MG/ML / Neomycin 3.3
+                    MG/ML / thonzonium bromide 0.5 MG/ML [Coly Mycin S]"/>
+                <code value="854994"/>
+            </concept>
+            <concept>
+                <display value="Colistin 3 MG/ML / Hydrocortisone 10 MG/ML / Neomycin 3.3
+                    MG/ML / thonzonium bromide 0.5 MG/ML [Cortisporin-TC]"/>
+                <code value="854996"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 5 MG/ML / Neomycin 3.5 MG/ML /
+                    Polymyxin B 10000 UNT/ML [Cortisporin]"/>
+                <code value="1542805"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Recort Plus]"/>
+                <code value="567176"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone probutate 1 MG/ML [Pandel]"/>
+                <code value="1370747"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.01 MG/MG / Pramoxine hydrochloride
+                    0.01 MG/MG [Pramosone]"/>
+                <code value="1234319"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.025 MG/MG / Pramoxine hydrochloride
+                    0.01 MG/MG [Pramosone]"/>
+                <code value="1234335"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [Pramosone]"/>
+                <code value="1234394"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [Pramosone]"/>
+                <code value="1234507"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Sarnol-HC]"/>
+                <code value="567177"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Texacort]"/>
+                <code value="567182"/>
+            </concept>
+            <concept>
+                <display value="Benzoyl Peroxide 50 MG/ML / Hydrocortisone 5 MG/ML [Vanoxide-HC]"/>
+                <code value="572100"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone valerate 0.002 MG/MG [Westcort]"/>
+                <code value="1370751"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 19 MG/ML / Iodoquinol 10 MG/ML [Vytone]"/>
+                <code value="1436948"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Preparation H Hydrocortisone]"/>
+                <code value="574110"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1.67 MG/ML [Colocort]"/>
+                <code value="574908"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Proctozone HC]"/>
+                <code value="575327"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [Proctofoam-HC]"/>
+                <code value="828363"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML / Iodoquinol 10 MG/ML [Dermazene]"/>
+                <code value="575554"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML [Exotic-HC]"/>
+                <code value="1294245"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 15 MG/ML / Oxytetracycline 5 MG/ML [Terra-Cortril]"/>
+                <code value="567244"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.01 MG/MG [Instacort]"/>
+                <code value="576301"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
+                    MG/ML [Epifoam]"/>
+                <code value="833508"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML [U-Cort]"/>
+                <code value="1360948"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Procto-Pak]"/>
+                <code value="543490"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone butyrate 0.001 MG/MG [Locoid]"/>
+                <code value="1370759"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone butyrate 1 MG/ML [Locoid]"/>
+                <code value="1370764"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.02 MG/MG / Pramoxine hydrochloride
+                    0.01 MG/MG [Novacort]"/>
+                <code value="1293728"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.02 MG/MG [Nuzon]"/>
+                <code value="606792"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.02 MG/MG / Iodoquinol 0.01 MG/MG [Alcortin]"/>
+                <code value="1191412"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML [Cortane-B]"/>
+                <code value="1293875"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Dermarest Eczema]"/>
+                <code value="702426"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Gynecort]"/>
+                <code value="707791"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Procto-Kit]"/>
+                <code value="759715"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Procto-Kit]"/>
+                <code value="759718"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Itch-X Maximum Strength]"/>
+                <code value="761647"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML / Neomycin 3.5 MG/ML / Polymyxin B
+                    10000 UNT/ML [Oticin HC]"/>
+                <code value="763093"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML [Coraz]"/>
+                <code value="763541"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.01 MG/MG [Corticool]"/>
+                <code value="795065"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 20 MG/ML [MiCort-HC]"/>
+                <code value="1809639"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG/ML [MiCort-HC]"/>
+                <code value="1809844"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML [Nucort]"/>
+                <code value="827344"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML [Scalacort]"/>
+                <code value="830759"/>
+            </concept>
+            <concept>
+                <display value="Benzocaine 15 MG/ML / chloroxylenol 1 MG/ML / hydrocortisone
+                    acetate 10 MG/ML [TriOxin]"/>
+                <code value="1549402"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 23.5 MG/ML / Pramoxine hydrochloride
+                    10 MG/ML [ZyPram]"/>
+                <code value="1293747"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML [Pediaderm HC]"/>
+                <code value="877492"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML [Ala-Scalp]"/>
+                <code value="884075"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG/ML [Propet]"/>
+                <code value="900407"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.005 MG/MG [Excel Pet]"/>
+                <code value="900413"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG/ML [Excel Pet]"/>
+                <code value="900498"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin 0.4 UNT/MG / Hydrocortisone 0.01 MG/MG / Neomycin
+                    0.0035 MG/MG / Polymyxin B 5 UNT/MG [Cortisporin Ointment]"/>
+                <code value="688702"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 100 MG/ML [Cortifoam]"/>
+                <code value="1545173"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 2.5 MG/ML [Sentry HC Dermasphere]"/>
+                <code value="978952"/>
+            </concept>
+            <concept>
+                <display value="Acyclovir 50 MG/ML / Hydrocortisone 10 MG/ML [Xerese]"/>
+                <code value="998424"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
+                    hydrochloride 10 MG/ML [Oticin HC Ear Drops]"/>
+                <code value="1294247"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Aveeno Hydrocortisone Anti-Itch]"/>
+                <code value="1314861"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Kera-HC]"/>
+                <code value="1314929"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.01 MG/MG [Cortisil MDX]"/>
+                <code value="1373236"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG [Rectacort-HC]"/>
+                <code value="1429376"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 5 MG/ML [Gadaderm Hydrocortisone]"/>
+                <code value="1438753"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol 30 MG/ML / Hydrocortisone 5 MG/ML [Dermasorb AF]"/>
+                <code value="1442845"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML [Dermasorb HC]"/>
+                <code value="1442868"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Dermacool HC]"/>
+                <code value="1483215"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Resicort]"/>
+                <code value="1483220"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.01 MG/MG [Hemorrodil Plus]"/>
+                <code value="1491719"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin 0.4 UNT/MG / Hydrocortisone 0.01 MG/MG / Neomycin
+                    0.0035 MG/MG / Polymyxin B 10 UNT/MG [Vetropolycin HC]"/>
+                <code value="1541112"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Selsun Blue Scalp Itch]"/>
+                <code value="1650985"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Blue-Emu Anti-Itch]"/>
+                <code value="1664356"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG [Hemmorex]"/>
+                <code value="1674194"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 30 MG [Hemmorex]"/>
+                <code value="1674199"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Psoriasin Itch]"/>
+                <code value="1739868"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Procto-Med]"/>
+                <code value="1790681"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Neosporin Eczema]"/>
+                <code value="1189203"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML [Monistat Itch Relief]"/>
+                <code value="1190615"/>
+            </concept>
+            <concept>
+                <display value="Aloe Polysaccharide 0.01 MG/MG / hydrocortisone acetate 0.02
+                    MG/MG / Iodoquinol 0.01 MG/MG [Alcortin A]"/>
+                <code value="1191377"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.01 MG/MG [Biocorneum]"/>
+                <code value="1235744"/>
+            </concept>
+            <concept>
+                <display value="gentamicin sulfate 1.5 MG/ML / hydrocortisone aceponate 1.11
+                    MG/ML / Miconazole Nitrate 15.1 MG/ML [Easotic]"/>
+                <code value="1870701"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 30 MG [Hemril]"/>
+                <code value="1291087"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML [Proctosol]"/>
+                <code value="1291377"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG [Proctosol]"/>
+                <code value="1291381"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Cortizone]"/>
+                <code value="1987146"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Cortizone]"/>
+                <code value="1987157"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution [Cortizone]"/>
+                <code value="1987159"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Ointment [Cortizone]"/>
+                <code value="1987142"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel [Cortizone]"/>
+                <code value="1987152"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Medicated Shampoo [Malacetic]"/>
+                <code value="2003648"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Rectal Cream [Ana-Lex]"/>
+                <code value="1012326"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution [Scalpicin Itch Relief]"/>
+                <code value="1039272"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Vaginal Cream [Vagisil Satin]"/>
+                <code value="1039352"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Maximum-H]"/>
+                <code value="1039922"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Beta-HC]"/>
+                <code value="1043073"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Solution
+                    [Otomax HC]"/>
+                <code value="1086616"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Hydroskin]"/>
+                <code value="1086949"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Hydrocortisone Topical Spray [HC Derma-Pax]"/>
+                <code value="1089744"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Cream [Z-Pram]"/>
+                <code value="1094446"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Cream [Procort 1.85/1.15]"/>
+                <code value="1115729"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B
+                    Ophthalmic Ointment [Neo-Polycin HC]"/>
+                <code value="1116153"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Proctocort]"/>
+                <code value="1865143"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Aquanil HC]"/>
+                <code value="1043062"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Solution [Cortane-B]"/>
+                <code value="1044535"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Anusol HC]"/>
+                <code value="367599"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Suspension [Cortef]"/>
+                <code value="365876"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Dermacort]"/>
+                <code value="362295"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream [Proctocort]"/>
+                <code value="362060"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Proctocort]"/>
+                <code value="367588"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid / Hydrocortisone Otic Solution [Acetasol HC]"/>
+                <code value="365312"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Ala-Cort]"/>
+                <code value="365795"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Ala-Cort]"/>
+                <code value="362302"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Topical Cream [Ala-Quin]"/>
+                <code value="362366"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Lotion [Analpram HC]"/>
+                <code value="365803"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Anucort-HC]"/>
+                <code value="367601"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Caldecort]"/>
+                <code value="362314"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Carmol HC]"/>
+                <code value="362301"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Hydrocortisone Otic Suspension [Cipro HC]"/>
+                <code value="366134"/>
+            </concept>
+            <concept>
+                <display value="Colistin / Hydrocortisone / Neomycin / THONZONIUM Otic
+                    Suspension [Coly Mycin S]"/>
+                <code value="366140"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Cortaid]"/>
+                <code value="362300"/>
+            </concept>
+            <concept>
+                <display value="Colistin / Hydrocortisone / Neomycin / THONZONIUM Otic
+                    Suspension [Cortisporin-TC]"/>
+                <code value="366141"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Dermarest Dricort]"/>
+                <code value="362294"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Dermtex HC]"/>
+                <code value="362309"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Otic Solution [Cortisporin]"/>
+                <code value="365354"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Topical Cream [Cortisporin]"/>
+                <code value="362410"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Otic Solution [Drotic]"/>
+                <code value="365317"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid / Hydrocortisone Otic Solution [Earsol-HC]"/>
+                <code value="365311"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Pandel]"/>
+                <code value="362317"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream [Recort Plus]"/>
+                <code value="362058"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution [Sarnol-HC]"/>
+                <code value="365375"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution [Texacort]"/>
+                <code value="365531"/>
+            </concept>
+            <concept>
+                <display value="Benzoyl Peroxide / Hydrocortisone Topical Lotion [Vanoxide-HC]"/>
+                <code value="365771"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol Topical Cream [Vytone]"/>
+                <code value="362305"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Ointment [Westcort]"/>
+                <code value="367302"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream [Preparation H Hydrocortisone]"/>
+                <code value="362067"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Foam [Proctofoam-HC]"/>
+                <code value="362450"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol Topical Cream [Dermazene]"/>
+                <code value="362180"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Solution [Exotic-HC]"/>
+                <code value="365353"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution [Locoid]"/>
+                <code value="365452"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Ointment [Locoid]"/>
+                <code value="367412"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Foam [Cortifoam]"/>
+                <code value="362448"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Enema [Cortenema]"/>
+                <code value="385208"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Tablet [Cortef]"/>
+                <code value="369183"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray [Cortaid]"/>
+                <code value="702502"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Ointment [Cortaid]"/>
+                <code value="604514"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Cortaid]"/>
+                <code value="702423"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray [Dermtex HC]"/>
+                <code value="405906"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel [Instacort]"/>
+                <code value="406072"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [U-Cort]"/>
+                <code value="406307"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Foam [Epifoam]"/>
+                <code value="544996"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Locoid]"/>
+                <code value="385399"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream [Procto-Pak]"/>
+                <code value="543491"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Gel [Novacort]"/>
+                <code value="544127"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Topical Lotion [Cortane-B]"/>
+                <code value="581877"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel [Nuzon]"/>
+                <code value="606793"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Dermarest Eczema]"/>
+                <code value="702427"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Gynecort]"/>
+                <code value="707792"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B Topical
+                    Ointment [Cortisporin Ointment]"/>
+                <code value="688703"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Enema [Colocort]"/>
+                <code value="802058"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [MiCort-HC]"/>
+                <code value="758863"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream [Procto-Kit]"/>
+                <code value="759716"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Itch-X Maximum Strength]"/>
+                <code value="761648"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Otic Suspension
+                    [Oticin HC]"/>
+                <code value="763094"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Coraz]"/>
+                <code value="763542"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel [Corticool]"/>
+                <code value="795066"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Nucort]"/>
+                <code value="827345"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Scalacort]"/>
+                <code value="830760"/>
+            </concept>
+            <concept>
+                <display value="Benzocaine / chloroxylenol / Hydrocortisone Otic Suspension [TriOxin]"/>
+                <code value="853318"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Pediaderm HC]"/>
+                <code value="877493"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Ala-Scalp]"/>
+                <code value="884076"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray [Propet]"/>
+                <code value="900408"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray [Excel Pet]"/>
+                <code value="900417"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Excel Pet]"/>
+                <code value="900499"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Medicated Shampoo [Excel Pet]"/>
+                <code value="900414"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Ointment [Excel Pet]"/>
+                <code value="900419"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Cream [PramCort]"/>
+                <code value="1539196"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Proctozone HC]"/>
+                <code value="1440934"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Oxytetracycline Ophthalmic Suspension [Terra-Cortril]"/>
+                <code value="94280"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Locoid]"/>
+                <code value="1370771"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Medicated Shampoo [Sentry HC Dermasphere]"/>
+                <code value="978953"/>
+            </concept>
+            <concept>
+                <display value="Acyclovir / Hydrocortisone Topical Cream [Xerese]"/>
+                <code value="998425"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Solution
+                    [Oticin HC Ear Drops]"/>
+                <code value="999599"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Aveeno Hydrocortisone Anti-Itch]"/>
+                <code value="1314862"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Kera-HC]"/>
+                <code value="1314930"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel [Cortisil MDX]"/>
+                <code value="1373237"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Rectacort-HC]"/>
+                <code value="1429377"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Gadaderm Hydrocortisone]"/>
+                <code value="1438750"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Topical Cream [Dermasorb AF]"/>
+                <code value="1442846"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Dermasorb HC]"/>
+                <code value="1442869"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray [Dermacool HC]"/>
+                <code value="1483216"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion [Resicort]"/>
+                <code value="1483221"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Ointment [Hemorrodil Plus]"/>
+                <code value="1491720"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B
+                    Ophthalmic Ointment [Vetropolycin HC]"/>
+                <code value="1541113"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Vaginal Cream [Monistat Itch Relief]"/>
+                <code value="1494033"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Proctosol]"/>
+                <code value="1540332"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Anusol HC]"/>
+                <code value="1659443"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Injection [Solu-Cortef]"/>
+                <code value="1738588"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Injection [A-Hydrocort]"/>
+                <code value="1738603"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution [Selsun Blue Scalp Itch]"/>
+                <code value="1650986"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Blue-Emu Anti-Itch]"/>
+                <code value="1664357"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Hemmorex]"/>
+                <code value="1674195"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Psoriasin Itch]"/>
+                <code value="1739869"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Procto-Med]"/>
+                <code value="1790682"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Hydroskin]"/>
+                <code value="1924603"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Cream [Analpram HC]"/>
+                <code value="1246573"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Ointment [Pramosone]"/>
+                <code value="1234320"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Cream [Pramosone]"/>
+                <code value="1234518"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Lotion [Pramosone]"/>
+                <code value="1234395"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol Topical Gel [Alcortin]"/>
+                <code value="1191413"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray [Dermarest Eczema]"/>
+                <code value="1250460"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Medicated Pad [Dermarest Eczema]"/>
+                <code value="1250439"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Cream [ZyPram]"/>
+                <code value="1293832"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream [Neosporin Eczema]"/>
+                <code value="1189204"/>
+            </concept>
+            <concept>
+                <display value="Aloe Polysaccharide / Hydrocortisone / Iodoquinol Topical
+                    Gel [Alcortin A]"/>
+                <code value="1191378"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel [Biocorneum]"/>
+                <code value="1235745"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Hemril]"/>
+                <code value="1291088"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream [Proctosol]"/>
+                <code value="1291378"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository [Proctosol]"/>
+                <code value="1291382"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone / Miconazole Otic Suspension [Easotic]"/>
+                <code value="1870702"/>
             </concept>
             <concept>
                 <display value="hydrocortisone acetate 0.00275 MG/MG / Lidocaine
@@ -1382,6 +3312,1296 @@
             <concept>
                 <display value="hydrocortisone acetate 30 MG Rectal Suppository"/>
                 <code value="1291085"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.00275 MG/MG"/>
+                <code value="1012215"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.0055 MG/MG"/>
+                <code value="1012219"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.025 MG/MG"/>
+                <code value="1012222"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 20 MG/ML"/>
+                <code value="1012232"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 5 MG/ML"/>
+                <code value="1012234"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 2 MG/ML"/>
+                <code value="1012361"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.01 MG/MG"/>
+                <code value="1013097"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 50 MG/ML"/>
+                <code value="1037327"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone sodium phosphate 50 MG/ML"/>
+                <code value="1037337"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 23.5 MG/ML"/>
+                <code value="1094442"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 18.5 MG/ML"/>
+                <code value="1114852"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG"/>
+                <code value="316056"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 10 MG/ML"/>
+                <code value="316057"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG"/>
+                <code value="316058"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG"/>
+                <code value="317387"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 5 MG/ML"/>
+                <code value="328348"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1 MG/ML"/>
+                <code value="329209"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 15 MG/ML"/>
+                <code value="329836"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1 MG/MG"/>
+                <code value="329837"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1.67 MG/ML"/>
+                <code value="329838"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 25 MG/ML"/>
+                <code value="330460"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 2 MG/ML"/>
+                <code value="330825"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 4 MG"/>
+                <code value="332093"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.5 MG/ML"/>
+                <code value="334971"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 2.5 MG"/>
+                <code value="334972"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.01 MG/MG"/>
+                <code value="339972"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.005 MG/MG"/>
+                <code value="339990"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 100 MG/ML"/>
+                <code value="340099"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.025 MG/MG"/>
+                <code value="340118"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 2.5 MG/ML"/>
+                <code value="343175"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 20 MG/ML"/>
+                <code value="343191"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 250 MG"/>
+                <code value="446496"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 0.02 MG/MG"/>
+                <code value="476784"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 10 MG/ML"/>
+                <code value="828360"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone probutate 1 MG/ML"/>
+                <code value="1370745"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone valerate 0.002 MG/MG"/>
+                <code value="1370749"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone valerate 2 MG/ML"/>
+                <code value="1370753"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone butyrate 0.001 MG/MG"/>
+                <code value="1370757"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone butyrate 1 MG/ML"/>
+                <code value="1370762"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 19 MG/ML"/>
+                <code value="1436946"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 100 MG/ML"/>
+                <code value="1545171"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 15 MG/ML"/>
+                <code value="1549473"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 1000 MG"/>
+                <code value="1738584"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 500 MG"/>
+                <code value="1738593"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 100 MG"/>
+                <code value="1738598"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone 7.5 MG/ML"/>
+                <code value="1792288"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.02 MG/MG"/>
+                <code value="1191372"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG/ML"/>
+                <code value="1234505"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone aceponate 1.11 MG/ML"/>
+                <code value="1245240"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 25 MG"/>
+                <code value="1291081"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 30 MG"/>
+                <code value="1291084"/>
+            </concept>
+            <concept>
+                <display value="hydrocortisone acetate 0.005 MG/MG"/>
+                <code value="1294011"/>
+            </concept>
+            <concept>
+                <display value="Chloramphenicol / Hydrocortisone Ophthalmic Ointment"/>
+                <code value="376468"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Medicated Shampoo"/>
+                <code value="2003644"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Vaginal Cream"/>
+                <code value="1039348"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Ophthalmic Ointment"/>
+                <code value="108133"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Suppository"/>
+                <code value="370645"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Solution"/>
+                <code value="370646"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Suspension"/>
+                <code value="370647"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Injectable Solution"/>
+                <code value="370648"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Tablet"/>
+                <code value="370649"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Ointment"/>
+                <code value="372416"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Ophthalmic Solution"/>
+                <code value="372417"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Ointment"/>
+                <code value="372418"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Enema"/>
+                <code value="372421"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Lozenge"/>
+                <code value="372422"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Otic Solution"/>
+                <code value="372423"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Miconazole Topical Ointment"/>
+                <code value="372919"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Otic Solution"/>
+                <code value="373035"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Oxytetracycline Ophthalmic Suspension"/>
+                <code value="373212"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Ointment"/>
+                <code value="373557"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Topical Ointment"/>
+                <code value="374381"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Hydrocortisone Otic Suspension"/>
+                <code value="374589"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid / Hydrocortisone Otic Solution"/>
+                <code value="374605"/>
+            </concept>
+            <concept>
+                <display value="Colistin / Hydrocortisone / Neomycin / THONZONIUM Otic Suspension"/>
+                <code value="374668"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Ophthalmic Suspension"/>
+                <code value="374762"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Solution"/>
+                <code value="374766"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B
+                    Ophthalmic Ointment"/>
+                <code value="374806"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B Topical Ointment"/>
+                <code value="374807"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Otic Suspension"/>
+                <code value="375450"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Ophthalmic Solution"/>
+                <code value="376397"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Oxytetracycline Topical Ointment"/>
+                <code value="376506"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Powder"/>
+                <code value="376507"/>
+            </concept>
+            <concept>
+                <display value="Chlorquinaldol / Hydrocortisone Topical Ointment"/>
+                <code value="376582"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Foam"/>
+                <code value="376828"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Spray"/>
+                <code value="377305"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Hydrocortisone Topical Spray"/>
+                <code value="377362"/>
+            </concept>
+            <concept>
+                <display value="Benzoyl Peroxide / Hydrocortisone Topical Lotion"/>
+                <code value="377600"/>
+            </concept>
+            <concept>
+                <display value="Chlorquinaldol / Hydrocortisone Topical Cream"/>
+                <code value="377647"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Topical Lotion"/>
+                <code value="377653"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Topical Cream"/>
+                <code value="377654"/>
+            </concept>
+            <concept>
+                <display value="Clotrimazole / Hydrocortisone Topical Cream"/>
+                <code value="377659"/>
+            </concept>
+            <concept>
+                <display value="Econazole / Hydrocortisone Topical Cream"/>
+                <code value="377692"/>
+            </concept>
+            <concept>
+                <display value="Hexachlorophene / Hydrocortisone / Menthol Topical Cream"/>
+                <code value="377708"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Cream"/>
+                <code value="377712"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Lotion"/>
+                <code value="377713"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Topical Cream"/>
+                <code value="377714"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol Topical Cream"/>
+                <code value="377716"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Topical Cream"/>
+                <code value="377718"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Cream"/>
+                <code value="377721"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Lotion"/>
+                <code value="377722"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Cream"/>
+                <code value="377723"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Miconazole Topical Cream"/>
+                <code value="377725"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Cream"/>
+                <code value="377728"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Foam"/>
+                <code value="377729"/>
+            </concept>
+            <concept>
+                <display value="crotamiton / Hydrocortisone Topical Cream"/>
+                <code value="377880"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Topical Lotion"/>
+                <code value="377946"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Gel"/>
+                <code value="377961"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Injectable Suspension"/>
+                <code value="378635"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Otic Solution"/>
+                <code value="378643"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Rectal Cream"/>
+                <code value="379014"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Foam"/>
+                <code value="379415"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Topical Spray"/>
+                <code value="385517"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Topical Ointment"/>
+                <code value="393533"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Topical Lotion"/>
+                <code value="406043"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol Topical Gel"/>
+                <code value="544117"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Gel"/>
+                <code value="544123"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Rectal Gel"/>
+                <code value="603799"/>
+            </concept>
+            <concept>
+                <display value="Fusidate / Hydrocortisone Topical Ointment"/>
+                <code value="618610"/>
+            </concept>
+            <concept>
+                <display value="Fusidate / Hydrocortisone Topical Cream"/>
+                <code value="618622"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Spray"/>
+                <code value="670097"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Medicated Pad"/>
+                <code value="797806"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Topical Gel"/>
+                <code value="804511"/>
+            </concept>
+            <concept>
+                <display value="Benzocaine / chloroxylenol / Hydrocortisone Otic Suspension"/>
+                <code value="853314"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Medicated Shampoo"/>
+                <code value="900410"/>
+            </concept>
+            <concept>
+                <display value="Acyclovir / Hydrocortisone Topical Cream"/>
+                <code value="998421"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / phenol Topical Gel"/>
+                <code value="1372888"/>
+            </concept>
+            <concept>
+                <display value="Benzethonium / Diphenhydramine / Hydrocortisone Topical Spray"/>
+                <code value="1537192"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine / pramoxine Medicated Shampoo"/>
+                <code value="1537196"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Hydrocortisone Medicated Shampoo"/>
+                <code value="1537339"/>
+            </concept>
+            <concept>
+                <display value="Chlorhexidine / Hydrocortisone Medicated Shampoo"/>
+                <code value="1541211"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Otic Ointment"/>
+                <code value="1606352"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Rectal Cream"/>
+                <code value="1606482"/>
+            </concept>
+            <concept>
+                <display value="Chlorhexidine / Hydrocortisone / Ketoconazole Medicated Shampoo"/>
+                <code value="1648130"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Tretinoin Topical Cream"/>
+                <code value="1651330"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Salicylic Acid / Sulfur Topical Cream"/>
+                <code value="1738573"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Injection"/>
+                <code value="1738585"/>
+            </concept>
+            <concept>
+                <display value="Aloe Polysaccharide / Hydrocortisone / Iodoquinol Topical Gel"/>
+                <code value="1191374"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Topical Cream"/>
+                <code value="377717"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Ophthalmic Suspension"/>
+                <code value="373034"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Topical Ointment"/>
+                <code value="374385"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone / Miconazole Otic Suspension"/>
+                <code value="1870698"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone Otic Suspension"/>
+                <code value="1870713"/>
+            </concept>
+            <concept>
+                <display value="Chloramphenicol / Hydrocortisone Ophthalmic Product"/>
+                <code value="1153044"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Shampoo Product"/>
+                <code value="2003643"/>
+            </concept>
+            <concept>
+                <display value="Ciprofloxacin / Hydrocortisone Otic Product"/>
+                <code value="1152114"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Hydrocortisone Topical Product"/>
+                <code value="1152221"/>
+            </concept>
+            <concept>
+                <display value="Benzocaine / chloroxylenol / Hydrocortisone Otic Product"/>
+                <code value="1152651"/>
+            </concept>
+            <concept>
+                <display value="Acetic Acid / Hydrocortisone Otic Product"/>
+                <code value="1152855"/>
+            </concept>
+            <concept>
+                <display value="Benzoyl Peroxide / Hydrocortisone Topical Product"/>
+                <code value="1152981"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone / pramoxine Topical Product"/>
+                <code value="1153071"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Topical Product"/>
+                <code value="1153072"/>
+            </concept>
+            <concept>
+                <display value="Acyclovir / Hydrocortisone Topical Product"/>
+                <code value="1153457"/>
+            </concept>
+            <concept>
+                <display value="Clotrimazole / Hydrocortisone Topical Product"/>
+                <code value="1153911"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B
+                    Ophthalmic Product"/>
+                <code value="1155342"/>
+            </concept>
+            <concept>
+                <display value="Bacitracin / Hydrocortisone / Neomycin / Polymyxin B Topical Product"/>
+                <code value="1155343"/>
+            </concept>
+            <concept>
+                <display value="Chlorquinaldol / Hydrocortisone Topical Product"/>
+                <code value="1155478"/>
+            </concept>
+            <concept>
+                <display value="Colistin / Hydrocortisone / Neomycin / THONZONIUM Otic Product"/>
+                <code value="1155491"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / phenol Topical Product"/>
+                <code value="1372887"/>
+            </concept>
+            <concept>
+                <display value="Benzethonium / Diphenhydramine / Hydrocortisone Topical Product"/>
+                <code value="1537191"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine / pramoxine Shampoo Product"/>
+                <code value="1537195"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Hydrocortisone Shampoo Product"/>
+                <code value="1537338"/>
+            </concept>
+            <concept>
+                <display value="Chlorhexidine / Hydrocortisone Shampoo Product"/>
+                <code value="1541210"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Otic Product"/>
+                <code value="1606351"/>
+            </concept>
+            <concept>
+                <display value="Clioquinol / Hydrocortisone Rectal Product"/>
+                <code value="1606481"/>
+            </concept>
+            <concept>
+                <display value="Chlorhexidine / Hydrocortisone / Ketoconazole Shampoo Product"/>
+                <code value="1648129"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Tretinoin Topical Product"/>
+                <code value="1651329"/>
+            </concept>
+            <concept>
+                <display value="Hexachlorophene / Hydrocortisone / Menthol Topical Product"/>
+                <code value="1160896"/>
+            </concept>
+            <concept>
+                <display value="chlorcyclizine / Hydrocortisone Topical Product"/>
+                <code value="1161868"/>
+            </concept>
+            <concept>
+                <display value="Econazole / Hydrocortisone Topical Product"/>
+                <code value="1162031"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Product"/>
+                <code value="1162463"/>
+            </concept>
+            <concept>
+                <display value="chloroxylenol / Hydrocortisone / pramoxine Topical Product"/>
+                <code value="1162464"/>
+            </concept>
+            <concept>
+                <display value="Fusidate / Hydrocortisone Topical Product"/>
+                <code value="1163317"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Iodoquinol Topical Product"/>
+                <code value="1163409"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Ketoconazole Topical Product"/>
+                <code value="1163411"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Rectal Product"/>
+                <code value="1163416"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Lidocaine Topical Product"/>
+                <code value="1163417"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Miconazole Topical Product"/>
+                <code value="1163419"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Ophthalmic Product"/>
+                <code value="1163422"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Otic Product"/>
+                <code value="1163423"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin / Polymyxin B Topical Product"/>
+                <code value="1163424"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Ophthalmic Product"/>
+                <code value="1163425"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Otic Product"/>
+                <code value="1163426"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Neomycin Topical Product"/>
+                <code value="1163427"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Oxytetracycline Ophthalmic Product"/>
+                <code value="1163429"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Oxytetracycline Topical Product"/>
+                <code value="1163430"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / Salicylic Acid / Sulfur Topical Product"/>
+                <code value="1163433"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Rectal Product"/>
+                <code value="1164000"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone / pramoxine Topical Product"/>
+                <code value="1164001"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Injectable Product"/>
+                <code value="1164003"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Medicated Pad or Tape"/>
+                <code value="1164004"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Ophthalmic Product"/>
+                <code value="1164005"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Liquid Product"/>
+                <code value="1164006"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Oral Product"/>
+                <code value="1164007"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Otic Product"/>
+                <code value="1164008"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Pill"/>
+                <code value="1164010"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Rectal Product"/>
+                <code value="1164011"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Topical Product"/>
+                <code value="1164013"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Vaginal Product"/>
+                <code value="1164014"/>
+            </concept>
+            <concept>
+                <display value="crotamiton / Hydrocortisone Topical Product"/>
+                <code value="1165619"/>
+            </concept>
+            <concept>
+                <display value="Aloe Polysaccharide / Hydrocortisone / Iodoquinol Topical Product"/>
+                <code value="1191373"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Shampoo Product"/>
+                <code value="1294904"/>
+            </concept>
+            <concept>
+                <display value="Hydrocortisone Lozenge Product"/>
+                <code value="1294967"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone / Miconazole Otic Product"/>
+                <code value="1870697"/>
+            </concept>
+            <concept>
+                <display value="Gentamicin / Hydrocortisone Otic Product"/>
+                <code value="1870712"/>
+            </concept>
+            <concept>
+                <display value="Malacetic Shampoo Product"/>
+                <code value="2003649"/>
+            </concept>
+            <concept>
+                <display value="Cipro HC Otic Product"/>
+                <code value="1170896"/>
+            </concept>
+            <concept>
+                <display value="Dermasorb AF Topical Product"/>
+                <code value="1442847"/>
+            </concept>
+            <concept>
+                <display value="Acetasol HC Otic Product"/>
+                <code value="1168413"/>
+            </concept>
+            <concept>
+                <display value="Earsol-HC Otic Product"/>
+                <code value="1171775"/>
+            </concept>
+            <concept>
+                <display value="Ala-Quin Topical Product"/>
+                <code value="1173482"/>
+            </concept>
+            <concept>
+                <display value="HC Derma-Pax Topical Product"/>
+                <code value="1176059"/>
+            </concept>
+            <concept>
+                <display value="TriOxin Otic Product"/>
+                <code value="1180360"/>
+            </concept>
+            <concept>
+                <display value="Vanoxide-HC Topical Product"/>
+                <code value="1187554"/>
+            </concept>
+            <concept>
+                <display value="Xerese Topical Product"/>
+                <code value="1186419"/>
+            </concept>
+            <concept>
+                <display value="Vetropolycin HC Ophthalmic Product"/>
+                <code value="1541114"/>
+            </concept>
+            <concept>
+                <display value="Coly Mycin S Otic Product"/>
+                <code value="1166872"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin Ointment Topical Product"/>
+                <code value="1170976"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin-TC Otic Product"/>
+                <code value="1170984"/>
+            </concept>
+            <concept>
+                <display value="Neo-Polycin HC Ophthalmic Product"/>
+                <code value="1181120"/>
+            </concept>
+            <concept>
+                <display value="Drotic Otic Product"/>
+                <code value="1166384"/>
+            </concept>
+            <concept>
+                <display value="Cortane-B Otic Product"/>
+                <code value="1170295"/>
+            </concept>
+            <concept>
+                <display value="Cortane-B Topical Product"/>
+                <code value="1170948"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin Otic Product"/>
+                <code value="1170982"/>
+            </concept>
+            <concept>
+                <display value="Cortisporin Topical Product"/>
+                <code value="1170983"/>
+            </concept>
+            <concept>
+                <display value="Exotic-HC Otic Product"/>
+                <code value="1173274"/>
+            </concept>
+            <concept>
+                <display value="Dermazene Topical Product"/>
+                <code value="1173792"/>
+            </concept>
+            <concept>
+                <display value="Alcortin Topical Product"/>
+                <code value="1174191"/>
+            </concept>
+            <concept>
+                <display value="Ana-Lex Rectal Product"/>
+                <code value="1174217"/>
+            </concept>
+            <concept>
+                <display value="Oticin HC Ear Drops Otic Product"/>
+                <code value="1185165"/>
+            </concept>
+            <concept>
+                <display value="Oticin HC Otic Product"/>
+                <code value="1185166"/>
+            </concept>
+            <concept>
+                <display value="Otomax HC Otic Product"/>
+                <code value="1185181"/>
+            </concept>
+            <concept>
+                <display value="Vytone Topical Product"/>
+                <code value="1187600"/>
+            </concept>
+            <concept>
+                <display value="Terra-Cortril Ophthalmic Product"/>
+                <code value="1182659"/>
+            </concept>
+            <concept>
+                <display value="Cortizone Topical Product"/>
+                <code value="1987143"/>
+            </concept>
+            <concept>
+                <display value="Proctocort Topical Product"/>
+                <code value="1180028"/>
+            </concept>
+            <concept>
+                <display value="Aveeno Hydrocortisone Anti-Itch Topical Product"/>
+                <code value="1314863"/>
+            </concept>
+            <concept>
+                <display value="Kera-HC Topical Product"/>
+                <code value="1314931"/>
+            </concept>
+            <concept>
+                <display value="Cortisil MDX Topical Product"/>
+                <code value="1373238"/>
+            </concept>
+            <concept>
+                <display value="Rectacort-HC Rectal Product"/>
+                <code value="1429378"/>
+            </concept>
+            <concept>
+                <display value="Gadaderm Hydrocortisone Topical Product"/>
+                <code value="1438751"/>
+            </concept>
+            <concept>
+                <display value="Proctozone HC Topical Product"/>
+                <code value="1440935"/>
+            </concept>
+            <concept>
+                <display value="Dermasorb HC Topical Product"/>
+                <code value="1442870"/>
+            </concept>
+            <concept>
+                <display value="Dermacool HC Topical Product"/>
+                <code value="1483217"/>
+            </concept>
+            <concept>
+                <display value="Resicort Topical Product"/>
+                <code value="1483222"/>
+            </concept>
+            <concept>
+                <display value="Hemorrodil Plus Rectal Product"/>
+                <code value="1491721"/>
+            </concept>
+            <concept>
+                <display value="Monistat Itch Relief Vaginal Product"/>
+                <code value="1494034"/>
+            </concept>
+            <concept>
+                <display value="PramCort Rectal Product"/>
+                <code value="1539197"/>
+            </concept>
+            <concept>
+                <display value="Proctosol Topical Product"/>
+                <code value="1540333"/>
+            </concept>
+            <concept>
+                <display value="Selsun Blue Scalp Itch Topical Product"/>
+                <code value="1650987"/>
+            </concept>
+            <concept>
+                <display value="Anusol HC Topical Product"/>
+                <code value="1659444"/>
+            </concept>
+            <concept>
+                <display value="Blue-Emu Anti-Itch Topical Product"/>
+                <code value="1664358"/>
+            </concept>
+            <concept>
+                <display value="Hemmorex Rectal Product"/>
+                <code value="1674196"/>
+            </concept>
+            <concept>
+                <display value="Psoriasin Itch Topical Product"/>
+                <code value="1739870"/>
+            </concept>
+            <concept>
+                <display value="Procto-Med Topical Product"/>
+                <code value="1790683"/>
+            </concept>
+            <concept>
+                <display value="A-Hydrocort Injectable Product"/>
+                <code value="1165880"/>
+            </concept>
+            <concept>
+                <display value="Anucort-HC Rectal Product"/>
+                <code value="1166707"/>
+            </concept>
+            <concept>
+                <display value="Anusol HC Rectal Product"/>
+                <code value="1166715"/>
+            </concept>
+            <concept>
+                <display value="Colocort Rectal Product"/>
+                <code value="1166861"/>
+            </concept>
+            <concept>
+                <display value="Itch-X Maximum Strength Topical Product"/>
+                <code value="1167179"/>
+            </concept>
+            <concept>
+                <display value="Epifoam Topical Product"/>
+                <code value="1167612"/>
+            </concept>
+            <concept>
+                <display value="Aquanil HC Topical Product"/>
+                <code value="1169328"/>
+            </concept>
+            <concept>
+                <display value="Coraz Topical Product"/>
+                <code value="1169504"/>
+            </concept>
+            <concept>
+                <display value="Cortaid Topical Product"/>
+                <code value="1170290"/>
+            </concept>
+            <concept>
+                <display value="Cortef Oral Liquid Product"/>
+                <code value="1170954"/>
+            </concept>
+            <concept>
+                <display value="Cortef Oral Product"/>
+                <code value="1170955"/>
+            </concept>
+            <concept>
+                <display value="Cortef Pill"/>
+                <code value="1170956"/>
+            </concept>
+            <concept>
+                <display value="Cortenema Rectal Product"/>
+                <code value="1170957"/>
+            </concept>
+            <concept>
+                <display value="Corticool Topical Product"/>
+                <code value="1170961"/>
+            </concept>
+            <concept>
+                <display value="Cortifoam Rectal Product"/>
+                <code value="1170970"/>
+            </concept>
+            <concept>
+                <display value="Caldecort Topical Product"/>
+                <code value="1171549"/>
+            </concept>
+            <concept>
+                <display value="Beta-HC Topical Product"/>
+                <code value="1172224"/>
+            </concept>
+            <concept>
+                <display value="Excel Pet Topical Product"/>
+                <code value="1172573"/>
+            </concept>
+            <concept>
+                <display value="Instacort Topical Product"/>
+                <code value="1173423"/>
+            </concept>
+            <concept>
+                <display value="Ala-Cort Topical Product"/>
+                <code value="1173465"/>
+            </concept>
+            <concept>
+                <display value="Ala-Scalp Topical Product"/>
+                <code value="1173483"/>
+            </concept>
+            <concept>
+                <display value="Dermacort Topical Product"/>
+                <code value="1173768"/>
+            </concept>
+            <concept>
+                <display value="Dermarest Dricort Topical Product"/>
+                <code value="1173776"/>
+            </concept>
+            <concept>
+                <display value="Dermarest Eczema Topical Product"/>
+                <code value="1173778"/>
+            </concept>
+            <concept>
+                <display value="Dermtex HC Topical Product"/>
+                <code value="1174502"/>
+            </concept>
+            <concept>
+                <display value="Analpram HC Topical Product"/>
+                <code value="1174911"/>
+            </concept>
+            <concept>
+                <display value="Gynecort Topical Product"/>
+                <code value="1175439"/>
+            </concept>
+            <concept>
+                <display value="Hydroskin Topical Product"/>
+                <code value="1175480"/>
+            </concept>
+            <concept>
+                <display value="Carmol HC Topical Product"/>
+                <code value="1175778"/>
+            </concept>
+            <concept>
+                <display value="Scalacort Topical Product"/>
+                <code value="1177188"/>
+            </concept>
+            <concept>
+                <display value="Scalpicin Itch Relief Topical Product"/>
+                <code value="1177192"/>
+            </concept>
+            <concept>
+                <display value="Novacort Topical Product"/>
+                <code value="1177606"/>
+            </concept>
+            <concept>
+                <display value="MiCort-HC Topical Product"/>
+                <code value="1178051"/>
+            </concept>
+            <concept>
+                <display value="Nuzon Topical Product"/>
+                <code value="1178780"/>
+            </concept>
+            <concept>
+                <display value="Nucort Topical Product"/>
+                <code value="1178793"/>
+            </concept>
+            <concept>
+                <display value="Locoid Topical Product"/>
+                <code value="1179154"/>
+            </concept>
+            <concept>
+                <display value="Recort Plus Rectal Product"/>
+                <code value="1179554"/>
+            </concept>
+            <concept>
+                <display value="Procort 1.85/1.15 Rectal Product"/>
+                <code value="1180019"/>
+            </concept>
+            <concept>
+                <display value="Procto-Kit Rectal Product"/>
+                <code value="1180023"/>
+            </concept>
+            <concept>
+                <display value="Procto-Pak Rectal Product"/>
+                <code value="1180024"/>
+            </concept>
+            <concept>
+                <display value="Proctocort Rectal Product"/>
+                <code value="1180027"/>
+            </concept>
+            <concept>
+                <display value="Proctofoam-HC Rectal Product"/>
+                <code value="1180031"/>
+            </concept>
+            <concept>
+                <display value="Pandel Topical Product"/>
+                <code value="1180603"/>
+            </concept>
+            <concept>
+                <display value="Propet Topical Product"/>
+                <code value="1181832"/>
+            </concept>
+            <concept>
+                <display value="Maximum-H Topical Product"/>
+                <code value="1182187"/>
+            </concept>
+            <concept>
+                <display value="Pediaderm HC Topical Product"/>
+                <code value="1183994"/>
+            </concept>
+            <concept>
+                <display value="Solu-Cortef Injectable Product"/>
+                <code value="1184839"/>
+            </concept>
+            <concept>
+                <display value="Texacort Topical Product"/>
+                <code value="1184926"/>
+            </concept>
+            <concept>
+                <display value="Preparation H Hydrocortisone Rectal Product"/>
+                <code value="1185861"/>
+            </concept>
+            <concept>
+                <display value="Sarnol-HC Topical Product"/>
+                <code value="1186000"/>
+            </concept>
+            <concept>
+                <display value="Z-Pram Rectal Product"/>
+                <code value="1186851"/>
+            </concept>
+            <concept>
+                <display value="Vagisil Satin Vaginal Product"/>
+                <code value="1187128"/>
+            </concept>
+            <concept>
+                <display value="U-Cort Topical Product"/>
+                <code value="1187521"/>
+            </concept>
+            <concept>
+                <display value="Westcort Topical Product"/>
+                <code value="1187962"/>
+            </concept>
+            <concept>
+                <display value="Neosporin Eczema Topical Product"/>
+                <code value="1189205"/>
+            </concept>
+            <concept>
+                <display value="Pramosone Topical Product"/>
+                <code value="1234321"/>
+            </concept>
+            <concept>
+                <display value="Biocorneum Topical Product"/>
+                <code value="1235746"/>
+            </concept>
+            <concept>
+                <display value="Analpram HC Rectal Product"/>
+                <code value="1246574"/>
+            </concept>
+            <concept>
+                <display value="Dermarest Eczema Medicated Pad or Tape"/>
+                <code value="1250440"/>
+            </concept>
+            <concept>
+                <display value="Hemril Rectal Product"/>
+                <code value="1291089"/>
+            </concept>
+            <concept>
+                <display value="Proctosol Rectal Product"/>
+                <code value="1291379"/>
+            </concept>
+            <concept>
+                <display value="ZyPram Rectal Product"/>
+                <code value="1293833"/>
+            </concept>
+            <concept>
+                <display value="Cortef Topical Product"/>
+                <code value="1294112"/>
+            </concept>
+            <concept>
+                <display value="Alcortin A Topical Product"/>
+                <code value="1191046"/>
+            </concept>
+            <concept>
+                <display value="Sentry HC Dermasphere Shampoo Product"/>
+                <code value="1295787"/>
+            </concept>
+            <concept>
+                <display value="Excel Pet Shampoo Product"/>
+                <code value="1296013"/>
+            </concept>
+            <concept>
+                <display value="Easotic Otic Product"/>
+                <code value="1245249"/>
             </concept>
         </include>
     </compose>

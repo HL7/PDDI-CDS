@@ -8,7 +8,9 @@
     <status value="draft"/>
     <date value="2018-06-20"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
     <description value="ValueSet containing orderable drug identifiers for 1-2% topical diclofenac (cream, gel, or solution)."/>
     <jurisdiction>
         <coding>

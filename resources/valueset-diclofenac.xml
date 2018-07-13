@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diclofenac"/>
     <id value="valueset-diclofenac"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-diclofenac"/>
     <title value="Diclofenac Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for diclofenac."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for diclofenac."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,119 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Surpass Anti-Inflammatory"/>
+                <code value="1043480"/>
+            </concept>
+            <concept>
+                <display value="Flector"/>
+                <code value="135123"/>
+            </concept>
+            <concept>
+                <display value="Voltaren"/>
+                <code value="202976"/>
+            </concept>
+            <concept>
+                <display value="Cataflam"/>
+                <code value="215916"/>
+            </concept>
+            <concept>
+                <display value="Solaraze"/>
+                <code value="284870"/>
+            </concept>
+            <concept>
+                <display value="Arthrotec"/>
+                <code value="68373"/>
+            </concept>
+            <concept>
+                <display value="Zipsor"/>
+                <code value="858343"/>
+            </concept>
+            <concept>
+                <display value="Cambia"/>
+                <code value="858655"/>
+            </concept>
+            <concept>
+                <display value="Pennsaid"/>
+                <code value="967941"/>
+            </concept>
+            <concept>
+                <display value="Zorvolex"/>
+                <code value="1442117"/>
+            </concept>
+            <concept>
+                <display value="Dyloject"/>
+                <code value="1607578"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac"/>
+                <code value="3355"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / pridinol"/>
+                <code value="1007108"/>
+            </concept>
+            <concept>
+                <display value="Codeine / Diclofenac"/>
+                <code value="1008110"/>
+            </concept>
+            <concept>
+                <display value="Amoxicillin / Diclofenac"/>
+                <code value="1008370"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Diclofenac"/>
+                <code value="1008452"/>
+            </concept>
+            <concept>
+                <display value="Ampicillin / Diclofenac"/>
+                <code value="1008558"/>
+            </concept>
+            <concept>
+                <display value="Betamethasone / Diclofenac / Vitamin B 12"/>
+                <code value="1008651"/>
+            </concept>
+            <concept>
+                <display value="Cholestyramine Resin / Diclofenac"/>
+                <code value="1009044"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / troxerutin"/>
+                <code value="1009080"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Misoprostol"/>
+                <code value="214502"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen / Diclofenac"/>
+                <code value="819516"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Fluorouracil"/>
+                <code value="1600381"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium"/>
+                <code value="203214"/>
+            </concept>
+            <concept>
+                <display value="diclofenac diethylammonium"/>
+                <code value="236125"/>
+            </concept>
+            <concept>
+                <display value="diclofenac epolamine"/>
+                <code value="40968"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium"/>
+                <code value="81997"/>
+            </concept>
             <concept>
                 <display value="Diclofenac Sodium 10 MG/ML Topical Cream [Surpass Anti-Inflammatory]"/>
                 <code value="1043483"/>
@@ -91,6 +201,130 @@
             <concept>
                 <display value="1 ML Diclofenac Sodium 37.5 MG/ML Injection [Dyloject]"/>
                 <code value="1607582"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML [Surpass Anti-Inflammatory]"/>
+                <code value="1043481"/>
+            </concept>
+            <concept>
+                <display value="diclofenac epolamine 0.013 MG/MG [Flector]"/>
+                <code value="1792848"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 1 MG/ML [Voltaren]"/>
+                <code value="854802"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.01 MG/MG [Voltaren]"/>
+                <code value="855634"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 100 MG [Voltaren]"/>
+                <code value="855658"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG [Voltaren]"/>
+                <code value="855927"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG [Cataflam]"/>
+                <code value="855943"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.03 MG/MG [Solaraze]"/>
+                <code value="855643"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG [Arthrotec]"/>
+                <code value="855683"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG [Arthrotec]"/>
+                <code value="855917"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 25 MG [Zipsor]"/>
+                <code value="858344"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG [Cambia]"/>
+                <code value="1856556"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 15 MG/ML [Pennsaid]"/>
+                <code value="967942"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 20 MG/ML [Pennsaid]"/>
+                <code value="1487075"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 18 MG [Zorvolex]"/>
+                <code value="1442118"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 35 MG [Zorvolex]"/>
+                <code value="1442129"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 37.5 MG/ML [Dyloject]"/>
+                <code value="1607579"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Cream [Surpass Anti-Inflammatory]"/>
+                <code value="1043482"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Extended Release Oral Tablet [Voltaren]"/>
+                <code value="491344"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Delayed Release Oral Tablet [Voltaren]"/>
+                <code value="369846"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Tablet [Cataflam]"/>
+                <code value="369164"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Gel [Solaraze]"/>
+                <code value="370383"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Ophthalmic Solution [Voltaren]"/>
+                <code value="790412"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Gel [Voltaren]"/>
+                <code value="752882"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Capsule [Zipsor]"/>
+                <code value="858345"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Solution [Pennsaid]"/>
+                <code value="967943"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Capsule [Zorvolex]"/>
+                <code value="1442119"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Medicated Patch [Flector]"/>
+                <code value="1792849"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Misoprostol Delayed Release Oral Tablet [Arthrotec]"/>
+                <code value="1808541"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Powder for Oral Solution [Cambia]"/>
+                <code value="1856557"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Injection [Dyloject]"/>
+                <code value="1812340"/>
             </concept>
             <concept>
                 <display value="Diclofenac Sodium 10 MG/ML Topical Cream"/>
@@ -213,6 +447,270 @@
             <concept>
                 <display value="diclofenac epolamine 0.013 MG/MG Medicated Patch"/>
                 <code value="855626"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 10 MG/ML"/>
+                <code value="1043478"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 1 MG/ML"/>
+                <code value="854800"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.01 MG/MG"/>
+                <code value="855632"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.03 MG/MG"/>
+                <code value="855641"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 100 MG"/>
+                <code value="855656"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 25 MG"/>
+                <code value="855663"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 50 MG"/>
+                <code value="855681"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 75 MG"/>
+                <code value="855915"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 50 MG"/>
+                <code value="855941"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 0.25 MG/ML"/>
+                <code value="857688"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 12.5 MG"/>
+                <code value="857697"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 15 MG/ML"/>
+                <code value="857699"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Potassium 25 MG"/>
+                <code value="857701"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 25 MG/ML"/>
+                <code value="857704"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 18 MG"/>
+                <code value="1442115"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac 35 MG"/>
+                <code value="1442127"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 20 MG/ML"/>
+                <code value="1487073"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Sodium 37.5 MG/ML"/>
+                <code value="1599786"/>
+            </concept>
+            <concept>
+                <display value="diclofenac epolamine 0.013 MG/MG"/>
+                <code value="1792845"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Extended Release Oral Capsule"/>
+                <code value="371793"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Delayed Release Oral Tablet"/>
+                <code value="371794"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Injectable Solution"/>
+                <code value="371795"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Rectal Suppository"/>
+                <code value="371796"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Tablet"/>
+                <code value="371798"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Extended Release Oral Tablet"/>
+                <code value="371799"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Capsule"/>
+                <code value="376352"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Gel"/>
+                <code value="377959"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Ophthalmic Solution"/>
+                <code value="378986"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Solution"/>
+                <code value="393139"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Solution"/>
+                <code value="393225"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Cream"/>
+                <code value="438948"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Fluorouracil Topical Cream"/>
+                <code value="1600380"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Medicated Patch"/>
+                <code value="1792846"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Misoprostol Delayed Release Oral Tablet"/>
+                <code value="1808539"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Injection"/>
+                <code value="1812338"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Powder for Oral Solution"/>
+                <code value="1856554"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Misoprostol Oral Product"/>
+                <code value="1151144"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Misoprostol Pill"/>
+                <code value="1151145"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Injectable Product"/>
+                <code value="1151149"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Ophthalmic Product"/>
+                <code value="1151150"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Liquid Product"/>
+                <code value="1151151"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Product"/>
+                <code value="1151152"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Pill"/>
+                <code value="1151153"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Rectal Product"/>
+                <code value="1151154"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Topical Product"/>
+                <code value="1151155"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac / Fluorouracil Topical Product"/>
+                <code value="1600379"/>
+            </concept>
+            <concept>
+                <display value="Diclofenac Oral Powder Product"/>
+                <code value="1856553"/>
+            </concept>
+            <concept>
+                <display value="Zorvolex Oral Product"/>
+                <code value="1442120"/>
+            </concept>
+            <concept>
+                <display value="Zorvolex Pill"/>
+                <code value="1442121"/>
+            </concept>
+            <concept>
+                <display value="Dyloject Injectable Product"/>
+                <code value="1607581"/>
+            </concept>
+            <concept>
+                <display value="Flector Topical Product"/>
+                <code value="1169035"/>
+            </concept>
+            <concept>
+                <display value="Arthrotec Oral Product"/>
+                <code value="1171432"/>
+            </concept>
+            <concept>
+                <display value="Arthrotec Pill"/>
+                <code value="1171435"/>
+            </concept>
+            <concept>
+                <display value="Cambia Oral Product"/>
+                <code value="1172293"/>
+            </concept>
+            <concept>
+                <display value="Cataflam Oral Product"/>
+                <code value="1176384"/>
+            </concept>
+            <concept>
+                <display value="Cataflam Pill"/>
+                <code value="1176385"/>
+            </concept>
+            <concept>
+                <display value="Pennsaid Topical Product"/>
+                <code value="1184581"/>
+            </concept>
+            <concept>
+                <display value="Solaraze Topical Product"/>
+                <code value="1184815"/>
+            </concept>
+            <concept>
+                <display value="Surpass Anti-Inflammatory Topical Product"/>
+                <code value="1184899"/>
+            </concept>
+            <concept>
+                <display value="Voltaren Ophthalmic Product"/>
+                <code value="1187416"/>
+            </concept>
+            <concept>
+                <display value="Voltaren Oral Product"/>
+                <code value="1187417"/>
+            </concept>
+            <concept>
+                <display value="Voltaren Pill"/>
+                <code value="1187418"/>
+            </concept>
+            <concept>
+                <display value="Voltaren Topical Product"/>
+                <code value="1187421"/>
+            </concept>
+            <concept>
+                <display value="Zipsor Oral Product"/>
+                <code value="1187666"/>
+            </concept>
+            <concept>
+                <display value="Zipsor Pill"/>
+                <code value="1187667"/>
+            </concept>
+            <concept>
+                <display value="Cambia Oral Powder Product"/>
+                <code value="1856558"/>
             </concept>   
         </include>
     </compose>

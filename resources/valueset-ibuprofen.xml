@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen"/>
     <id value="valueset-ibuprofen"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-ibuprofen"/>
     <title value="Ibuprofen Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for ibuprofen."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for ibuprofen."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,287 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Wal-Profen Cold and Sinus"/>
+                <code value="1090447"/>
+            </concept>
+            <concept>
+                <display value="Duexis"/>
+                <code value="1100067"/>
+            </concept>
+            <concept>
+                <display value="Counteract IB"/>
+                <code value="1101916"/>
+            </concept>
+            <concept>
+                <display value="Advil"/>
+                <code value="153010"/>
+            </concept>
+            <concept>
+                <display value="MIdol Cramps & Bodyaches"/>
+                <code value="165786"/>
+            </concept>
+            <concept>
+                <display value="Motrin"/>
+                <code value="202488"/>
+            </concept>
+            <concept>
+                <display value="Nuprin"/>
+                <code value="202490"/>
+            </concept>
+            <concept>
+                <display value="Advil Cold and Sinus"/>
+                <code value="215041"/>
+            </concept>
+            <concept>
+                <display value="Genpril"/>
+                <code value="217324"/>
+            </concept>
+            <concept>
+                <display value="Ibu"/>
+                <code value="217693"/>
+            </concept>
+            <concept>
+                <display value="Pediacare Fever"/>
+                <code value="219128"/>
+            </concept>
+            <concept>
+                <display value="Vicoprofen"/>
+                <code value="220826"/>
+            </concept>
+            <concept>
+                <display value="Reprexain"/>
+                <code value="579458"/>
+            </concept>
+            <concept>
+                <display value="Neoprofen"/>
+                <code value="637194"/>
+            </concept>
+            <concept>
+                <display value="Advil PM"/>
+                <code value="643061"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen"/>
+                <code value="643099"/>
+            </concept>
+            <concept>
+                <display value="Ibuprohm"/>
+                <code value="850404"/>
+            </concept>
+            <concept>
+                <display value="Caldolor"/>
+                <code value="854184"/>
+            </concept>
+            <concept>
+                <display value="Motrin PM"/>
+                <code value="895656"/>
+            </concept>
+            <concept>
+                <display value="Addaprin"/>
+                <code value="900431"/>
+            </concept>
+            <concept>
+                <display value="Ultraprin"/>
+                <code value="900435"/>
+            </concept>
+            <concept>
+                <display value="Advil PM Liqui Gels"/>
+                <code value="902630"/>
+            </concept>
+            <concept>
+                <display value="Advil Congestion Relief"/>
+                <code value="993800"/>
+            </concept>
+            <concept>
+                <display value="Ibutab"/>
+                <code value="1359092"/>
+            </concept>
+            <concept>
+                <display value="Ibudone"/>
+                <code value="1372755"/>
+            </concept>
+            <concept>
+                <display value="PediaCare Children's Pain & Fever w/ Ibuprofen"/>
+                <code value="1429982"/>
+            </concept>
+            <concept>
+                <display value="Xylon"/>
+                <code value="1542983"/>
+            </concept>
+            <concept>
+                <display value="Advil Sinus Congestion and Pain"/>
+                <code value="1722328"/>
+            </concept>
+            <concept>
+                <display value="Proprinal"/>
+                <code value="1300262"/>
+            </concept>
+            <concept>
+                <display value="Samson 8"/>
+                <code value="541710"/>
+            </concept>
+            <concept>
+                <display value="Dragon Tabs"/>
+                <code value="2045472"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Congestion Relief and Pain"/>
+                <code value="1940582"/>
+            </concept>
+            <concept>
+                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
+                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
+                    (Ibuprofen 800 MG Oral Tablet) } Pack [IC 800 Kit]"/>
+                <code value="851212"/>
+            </concept>
+            <concept>
+                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
+                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
+                    (Ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]"/>
+                <code value="851210"/>
+            </concept>
+            <concept>
+                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
+                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
+                    (Ibuprofen 800 MG Oral Tablet) } Pack"/>
+                <code value="851211"/>
+            </concept>
+            <concept>
+                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
+                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
+                    (Ibuprofen 400 MG Oral Tablet) } Pack"/>
+                <code value="851209"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen"/>
+                <code value="5640"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine"/>
+                <code value="1007329"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Vitamin B 12"/>
+                <code value="1007373"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Ibuprofen"/>
+                <code value="1007410"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Lidocaine"/>
+                <code value="1007482"/>
+            </concept>
+            <concept>
+                <display value="cyclonium / Ibuprofen"/>
+                <code value="1007823"/>
+            </concept>
+            <concept>
+                <display value="Hydroxocobalamin / Ibuprofen"/>
+                <code value="1007917"/>
+            </concept>
+            <concept>
+                <display value="homatropine / Ibuprofen"/>
+                <code value="1008079"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Niacin"/>
+                <code value="1008170"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Scopolamine"/>
+                <code value="1008440"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / pseudoisocytidine"/>
+                <code value="1008502"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Methocarbamol"/>
+                <code value="1009037"/>
+            </concept>
+            <concept>
+                <display value="Caffeine / Ergotamine / Ibuprofen"/>
+                <code value="1009128"/>
+            </concept>
+            <concept>
+                <display value="Famotidine / Ibuprofen"/>
+                <code value="1100065"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen"/>
+                <code value="214627"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine"/>
+                <code value="214652"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Menthol"/>
+                <code value="392617"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Pseudoephedrine"/>
+                <code value="404789"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Oxycodone"/>
+                <code value="484259"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen"/>
+                <code value="644895"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / LEVOMENTHOL"/>
+                <code value="687386"/>
+            </concept>
+            <concept>
+                <display value="Codeine / Ibuprofen"/>
+                <code value="710303"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Tolperisone"/>
+                <code value="814985"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen / Codeine / Ibuprofen"/>
+                <code value="817356"/>
+            </concept>
+            <concept>
+                <display value="Acetaminophen / Ibuprofen"/>
+                <code value="818102"/>
+            </concept>
+            <concept>
+                <display value="Carisoprodol / Dexamethasone / Ibuprofen"/>
+                <code value="820465"/>
+            </concept>
+            <concept>
+                <display value="Chlorzoxazone / Ibuprofen"/>
+                <code value="821036"/>
+            </concept>
+            <concept>
+                <display value="Chondroitin Sulfates / Glucosamine / Ibuprofen"/>
+                <code value="1597118"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Phenylephrine"/>
+                <code value="1310502"/>
+            </concept>
+            <concept>
+                <display value="solufenum"/>
+                <code value="36761"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen, Sodium Salt"/>
+                <code value="1429044"/>
+            </concept>
             <concept>
                 <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
                     Tablet [Wal-Profen Cold and Sinus]"/>
@@ -241,6 +519,360 @@
                 <code value="1940587"/>
             </concept>
             <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG
+                    [Wal-Profen Cold and Sinus]"/>
+                <code value="1299088"/>
+            </concept>
+            <concept>
+                <display value="Famotidine 26.6 MG / Ibuprofen 800 MG [Duexis]"/>
+                <code value="1100068"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Counteract IB]"/>
+                <code value="1101917"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Advil]"/>
+                <code value="565143"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML [Advil]"/>
+                <code value="567680"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG [Advil]"/>
+                <code value="731527"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML [Advil]"/>
+                <code value="731530"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG [Advil]"/>
+                <code value="731534"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML [Motrin]"/>
+                <code value="544391"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Motrin]"/>
+                <code value="565689"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Nuprin]"/>
+                <code value="567695"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG [Motrin]"/>
+                <code value="792240"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [MIdol Cramps & Bodyaches]"/>
+                <code value="854758"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML [Motrin]"/>
+                <code value="854761"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG [Motrin]"/>
+                <code value="566095"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG
+                    [Advil Cold and Sinus]"/>
+                <code value="1299019"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Genpril]"/>
+                <code value="567688"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 400 MG [Ibu]"/>
+                <code value="567707"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 600 MG [Ibu]"/>
+                <code value="567715"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG [Ibu]"/>
+                <code value="567719"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML [Pediacare Fever]"/>
+                <code value="567678"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG [Vicoprofen]"/>
+                <code value="858837"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 2.5 MG / Ibuprofen 200 MG [Reprexain]"/>
+                <code value="858771"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG [Reprexain]"/>
+                <code value="858783"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG [Reprexain]"/>
+                <code value="859330"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 10 MG/ML [Neoprofen]"/>
+                <code value="637195"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Wal-Profen]"/>
+                <code value="643100"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG [Advil PM]"/>
+                <code value="901817"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Ibuprohm]"/>
+                <code value="850422"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG/ML [Caldolor]"/>
+                <code value="854185"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG [Motrin PM]"/>
+                <code value="895665"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Addaprin]"/>
+                <code value="900432"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Ultraprin]"/>
+                <code value="900436"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG
+                    [Advil PM Liqui Gels]"/>
+                <code value="902631"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG [Advil
+                    Congestion Relief]"/>
+                <code value="1369776"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Ibutab]"/>
+                <code value="1359093"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 5 MG / Ibuprofen 200 MG [Ibudone]"/>
+                <code value="858779"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG [Ibudone]"/>
+                <code value="859316"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML [PediaCare Children's Pain &
+                    Fever w/ Ibuprofen]"/>
+                <code value="1429983"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG [Xylon]"/>
+                <code value="1542984"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG [Advil
+                    Sinus Congestion and Pain]"/>
+                <code value="1722329"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Proprinal]"/>
+                <code value="1300263"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG [Samson 8]"/>
+                <code value="541711"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG [Dragon Tabs]"/>
+                <code value="2045473"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG
+                    [Wal-Profen Congestion Relief and Pain]"/>
+                <code value="1940583"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Tablet [Wal-Profen Cold and Sinus]"/>
+                <code value="1090449"/>
+            </concept>
+            <concept>
+                <display value="Famotidine / Ibuprofen Oral Tablet [Duexis]"/>
+                <code value="1100069"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Counteract IB]"/>
+                <code value="1101918"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Suspension [Advil]"/>
+                <code value="365861"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Tablet [Advil Cold and Sinus]"/>
+                <code value="367939"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Suspension [Pediacare Fever]"/>
+                <code value="365862"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Oral Tablet [Vicoprofen]"/>
+                <code value="368308"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Capsule [Motrin]"/>
+                <code value="606989"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Suspension [Motrin]"/>
+                <code value="544392"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Genpril]"/>
+                <code value="368840"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Ibu]"/>
+                <code value="368823"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Oral Tablet [Advil PM]"/>
+                <code value="643063"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Capsule [Wal-Profen]"/>
+                <code value="644385"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Wal-Profen]"/>
+                <code value="643101"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Chewable Tablet [Advil]"/>
+                <code value="731528"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Capsule [Advil]"/>
+                <code value="731532"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [MIdol Cramps & Bodyaches]"/>
+                <code value="854759"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Chewable Tablet [Motrin]"/>
+                <code value="792241"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Capsule [Advil Cold and Sinus]"/>
+                <code value="795911"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Oral Tablet [Reprexain]"/>
+                <code value="724134"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Ibuprohm]"/>
+                <code value="850423"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Oral Tablet [Motrin PM]"/>
+                <code value="895658"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Addaprin]"/>
+                <code value="900433"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Ultraprin]"/>
+                <code value="900437"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Oral Tablet [Ibudone]"/>
+                <code value="758973"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Advil]"/>
+                <code value="91703"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Motrin]"/>
+                <code value="93358"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Nuprin]"/>
+                <code value="93574"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Oral Capsule [Advil PM Liqui Gels]"/>
+                <code value="902632"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine Oral Tablet [Advil Congestion Relief]"/>
+                <code value="993802"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Ibutab]"/>
+                <code value="1359094"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Suspension [PediaCare Children's Pain
+                    & Fever w/ Ibuprofen]"/>
+                <code value="1429984"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Oral Tablet [Xylon]"/>
+                <code value="1542985"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine Oral Tablet [Advil Sinus
+                    Congestion and Pain]"/>
+                <code value="1722330"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Capsule [MIdol Cramps & Bodyaches]"/>
+                <code value="1190621"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Injection [Neoprofen]"/>
+                <code value="1791366"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Injection [Caldolor]"/>
+                <code value="1791362"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Proprinal]"/>
+                <code value="1300264"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Samson 8]"/>
+                <code value="541712"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet [Dragon Tabs]"/>
+                <code value="2045474"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine Oral Tablet [Wal-Profen Congestion
+                    Relief and Pain]"/>
+                <code value="1940584"/>
+            </concept>
+            <concept>
                 <display value="Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet"/>
                 <code value="1100066"/>
             </concept>
@@ -416,6 +1048,547 @@
             <concept>
                 <display value="8 ML Ibuprofen 100 MG/ML Injection"/>
                 <code value="854183"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG"/>
+                <code value="316072"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 20 MG/ML"/>
+                <code value="316073"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 200 MG"/>
+                <code value="316074"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 300 MG"/>
+                <code value="316075"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG"/>
+                <code value="316076"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 600 MG"/>
+                <code value="316077"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 800 MG"/>
+                <code value="316078"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 400 MG"/>
+                <code value="317388"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 40 MG/ML"/>
+                <code value="333683"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 50 MG/ML"/>
+                <code value="335000"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 3 MG/ML"/>
+                <code value="379847"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 0.05 MG/MG"/>
+                <code value="380845"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 0.1 MG/MG"/>
+                <code value="393432"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 10 MG/ML"/>
+                <code value="637192"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen 100 MG/ML"/>
+                <code value="854182"/>
+            </concept>
+            <concept>
+                <display value="Famotidine / Ibuprofen Oral Tablet"/>
+                <code value="1100064"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Suspension"/>
+                <code value="370672"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Chewable Tablet"/>
+                <code value="370673"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Tablet"/>
+                <code value="370674"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Capsule"/>
+                <code value="370675"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Oral Tablet"/>
+                <code value="370676"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Suspension"/>
+                <code value="370677"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Tablet"/>
+                <code value="370678"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Extended Release Oral Tablet"/>
+                <code value="372449"/>
+            </concept>
+            <concept>
+                <display value="Codeine / Ibuprofen Oral Tablet"/>
+                <code value="372455"/>
+            </concept>
+            <concept>
+                <display value="Codeine / Ibuprofen Extended Release Oral Tablet"/>
+                <code value="372456"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Capsule"/>
+                <code value="373693"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Topical Spray"/>
+                <code value="377325"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Topical Cream"/>
+                <code value="377732"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Topical Gel"/>
+                <code value="377956"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Extended Release Oral Capsule"/>
+                <code value="380812"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Topical Foam"/>
+                <code value="380819"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / LEVOMENTHOL Topical Gel"/>
+                <code value="393550"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Pseudoephedrine Oral Tablet"/>
+                <code value="405928"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Oxycodone Oral Tablet"/>
+                <code value="483322"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Pseudoephedrine Oral Suspension"/>
+                <code value="577191"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Oral Tablet"/>
+                <code value="643059"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Oral Capsule"/>
+                <code value="645634"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Solution"/>
+                <code value="748640"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine Oral Tablet"/>
+                <code value="993798"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Injection"/>
+                <code value="1747293"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Phenylephrine Oral Tablet"/>
+                <code value="1310501"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Oral Product"/>
+                <code value="1152222"/>
+            </concept>
+            <concept>
+                <display value="Diphenhydramine / Ibuprofen Pill"/>
+                <code value="1152223"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Pseudoephedrine Oral Liquid Product"/>
+                <code value="1154775"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Pseudoephedrine Oral Product"/>
+                <code value="1154776"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Pseudoephedrine Pill"/>
+                <code value="1154777"/>
+            </concept>
+            <concept>
+                <display value="Codeine / Ibuprofen Oral Product"/>
+                <code value="1154818"/>
+            </concept>
+            <concept>
+                <display value="Codeine / Ibuprofen Pill"/>
+                <code value="1154819"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Injectable Product"/>
+                <code value="1156275"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Liquid Product"/>
+                <code value="1156276"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Oral Product"/>
+                <code value="1156277"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Pill"/>
+                <code value="1156278"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Topical Product"/>
+                <code value="1156280"/>
+            </concept>
+            <concept>
+                <display value="Famotidine / Ibuprofen Oral Product"/>
+                <code value="1158493"/>
+            </concept>
+            <concept>
+                <display value="Famotidine / Ibuprofen Pill"/>
+                <code value="1159018"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Oral Product"/>
+                <code value="1162788"/>
+            </concept>
+            <concept>
+                <display value="Hydrocodone / Ibuprofen Pill"/>
+                <code value="1162789"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / LEVOMENTHOL Topical Product"/>
+                <code value="1165299"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Oxycodone Oral Product"/>
+                <code value="1165305"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Oxycodone Pill"/>
+                <code value="1165306"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine Oral Product"/>
+                <code value="1165307"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Phenylephrine Pill"/>
+                <code value="1165308"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Liquid Product"/>
+                <code value="1165309"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Oral Product"/>
+                <code value="1165310"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen / Pseudoephedrine Pill"/>
+                <code value="1165311"/>
+            </concept>
+            <concept>
+                <display value="Ibuprofen Chewable Product"/>
+                <code value="1295502"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Phenylephrine Oral Product"/>
+                <code value="1310499"/>
+            </concept>
+            <concept>
+                <display value="Chlorpheniramine / Ibuprofen / Phenylephrine Pill"/>
+                <code value="1310500"/>
+            </concept>
+            <concept>
+                <display value="Advil PM Liqui Gels Oral Product"/>
+                <code value="1172034"/>
+            </concept>
+            <concept>
+                <display value="Advil PM Liqui Gels Pill"/>
+                <code value="1172035"/>
+            </concept>
+            <concept>
+                <display value="Advil PM Oral Product"/>
+                <code value="1172036"/>
+            </concept>
+            <concept>
+                <display value="Advil PM Pill"/>
+                <code value="1172037"/>
+            </concept>
+            <concept>
+                <display value="Motrin PM Oral Product"/>
+                <code value="1182819"/>
+            </concept>
+            <concept>
+                <display value="Motrin PM Pill"/>
+                <code value="1182820"/>
+            </concept>
+            <concept>
+                <display value="Samson 8 Oral Product"/>
+                <code value="1185399"/>
+            </concept>
+            <concept>
+                <display value="Samson 8 Pill"/>
+                <code value="1185400"/>
+            </concept>
+            <concept>
+                <display value="Ibutab Oral Product"/>
+                <code value="1359095"/>
+            </concept>
+            <concept>
+                <display value="Ibutab Pill"/>
+                <code value="1359096"/>
+            </concept>
+            <concept>
+                <display value="PediaCare Children's Pain & Fever w/ Ibuprofen Oral
+                    Liquid Product"/>
+                <code value="1429985"/>
+            </concept>
+            <concept>
+                <display value="PediaCare Children's Pain & Fever w/ Ibuprofen Oral Product"/>
+                <code value="1429986"/>
+            </concept>
+            <concept>
+                <display value="Ibu Oral Product"/>
+                <code value="1166575"/>
+            </concept>
+            <concept>
+                <display value="Ibu Pill"/>
+                <code value="1166576"/>
+            </concept>
+            <concept>
+                <display value="Ibuprohm Oral Product"/>
+                <code value="1166591"/>
+            </concept>
+            <concept>
+                <display value="Ibuprohm Pill"/>
+                <code value="1166592"/>
+            </concept>
+            <concept>
+                <display value="Genpril Oral Product"/>
+                <code value="1169834"/>
+            </concept>
+            <concept>
+                <display value="Genpril Pill"/>
+                <code value="1169835"/>
+            </concept>
+            <concept>
+                <display value="Addaprin Oral Product"/>
+                <code value="1170617"/>
+            </concept>
+            <concept>
+                <display value="Addaprin Pill"/>
+                <code value="1170618"/>
+            </concept>
+            <concept>
+                <display value="Advil Oral Liquid Product"/>
+                <code value="1171345"/>
+            </concept>
+            <concept>
+                <display value="Advil Oral Product"/>
+                <code value="1171346"/>
+            </concept>
+            <concept>
+                <display value="Counteract IB Oral Product"/>
+                <code value="1171662"/>
+            </concept>
+            <concept>
+                <display value="Counteract IB Pill"/>
+                <code value="1171663"/>
+            </concept>
+            <concept>
+                <display value="Advil Pill"/>
+                <code value="1172038"/>
+            </concept>
+            <concept>
+                <display value="Caldolor Injectable Product"/>
+                <code value="1172242"/>
+            </concept>
+            <concept>
+                <display value="Nuprin Oral Product"/>
+                <code value="1179363"/>
+            </concept>
+            <concept>
+                <display value="Nuprin Pill"/>
+                <code value="1179364"/>
+            </concept>
+            <concept>
+                <display value="Neoprofen Injectable Product"/>
+                <code value="1181670"/>
+            </concept>
+            <concept>
+                <display value="Motrin Oral Liquid Product"/>
+                <code value="1182817"/>
+            </concept>
+            <concept>
+                <display value="Motrin Oral Product"/>
+                <code value="1182818"/>
+            </concept>
+            <concept>
+                <display value="Motrin Pill"/>
+                <code value="1182821"/>
+            </concept>
+            <concept>
+                <display value="Pediacare Fever Oral Liquid Product"/>
+                <code value="1183472"/>
+            </concept>
+            <concept>
+                <display value="Pediacare Fever Oral Product"/>
+                <code value="1183473"/>
+            </concept>
+            <concept>
+                <display value="MIdol Cramps & Bodyaches Oral Product"/>
+                <code value="1184939"/>
+            </concept>
+            <concept>
+                <display value="MIdol Cramps & Bodyaches Pill"/>
+                <code value="1184940"/>
+            </concept>
+            <concept>
+                <display value="Ultraprin Oral Product"/>
+                <code value="1187718"/>
+            </concept>
+            <concept>
+                <display value="Ultraprin Pill"/>
+                <code value="1187719"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Oral Product"/>
+                <code value="1187794"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Pill"/>
+                <code value="1187795"/>
+            </concept>
+            <concept>
+                <display value="Proprinal Oral Product"/>
+                <code value="1300265"/>
+            </concept>
+            <concept>
+                <display value="Proprinal Pill"/>
+                <code value="1300266"/>
+            </concept>
+            <concept>
+                <display value="Dragon Tabs Oral Product"/>
+                <code value="2045475"/>
+            </concept>
+            <concept>
+                <display value="Dragon Tabs Pill"/>
+                <code value="2045476"/>
+            </concept>
+            <concept>
+                <display value="Duexis Oral Product"/>
+                <code value="1166407"/>
+            </concept>
+            <concept>
+                <display value="Duexis Pill"/>
+                <code value="1166408"/>
+            </concept>
+            <concept>
+                <display value="Xylon Oral Product"/>
+                <code value="1542986"/>
+            </concept>
+            <concept>
+                <display value="Xylon Pill"/>
+                <code value="1542987"/>
+            </concept>
+            <concept>
+                <display value="Ibudone Oral Product"/>
+                <code value="1166579"/>
+            </concept>
+            <concept>
+                <display value="Ibudone Pill"/>
+                <code value="1166582"/>
+            </concept>
+            <concept>
+                <display value="Reprexain Oral Product"/>
+                <code value="1181342"/>
+            </concept>
+            <concept>
+                <display value="Reprexain Pill"/>
+                <code value="1181345"/>
+            </concept>
+            <concept>
+                <display value="Vicoprofen Oral Product"/>
+                <code value="1186574"/>
+            </concept>
+            <concept>
+                <display value="Vicoprofen Pill"/>
+                <code value="1186575"/>
+            </concept>
+            <concept>
+                <display value="Advil Sinus Congestion and Pain Oral Product"/>
+                <code value="1722331"/>
+            </concept>
+            <concept>
+                <display value="Advil Sinus Congestion and Pain Pill"/>
+                <code value="1722332"/>
+            </concept>
+            <concept>
+                <display value="Advil Cold and Sinus Oral Product"/>
+                <code value="1171337"/>
+            </concept>
+            <concept>
+                <display value="Advil Cold and Sinus Pill"/>
+                <code value="1171338"/>
+            </concept>
+            <concept>
+                <display value="Advil Congestion Relief Oral Product"/>
+                <code value="1171339"/>
+            </concept>
+            <concept>
+                <display value="Advil Congestion Relief Pill"/>
+                <code value="1171340"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Cold and Sinus Oral Product"/>
+                <code value="1187792"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Cold and Sinus Pill"/>
+                <code value="1187793"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Congestion Relief and Pain Oral Product"/>
+                <code value="1940585"/>
+            </concept>
+            <concept>
+                <display value="Wal-Profen Congestion Relief and Pain Pill"/>
+                <code value="1940586"/>
+            </concept>
+            <concept>
+                <display value="Motrin Chewable Product"/>
+                <code value="1296120"/>
+            </concept>
+            <concept>
+                <display value="Advil Chewable Product"/>
+                <code value="1296361"/>
             </concept>
         </include>
     </compose>

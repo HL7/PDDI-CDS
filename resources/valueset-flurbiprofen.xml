@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-flurbiprofen"/>
     <id value="valueset-flurbiprofen"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-flurbiprofen"/>
-    <title value="Warfarin Medications Value Set"/>
+    <title value="Flurbiprofen Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for flurbiprofen."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for flurbiprofen."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,27 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Ansaid"/>
+                <code value="203411"/>
+            </concept>
+            <concept>
+                <display value="Ocufen"/>
+                <code value="93588"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen"/>
+                <code value="4502"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen sodium"/>
+                <code value="91351"/>
+            </concept>
             <concept>
                 <display value="Flurbiprofen 100 MG Oral Tablet [Ansaid]"/>
                 <code value="205626"/>
@@ -29,6 +47,22 @@
             <concept>
                 <display value="Flurbiprofen sodium 0.3 MG/ML Ophthalmic Solution [Ocufen]"/>
                 <code value="1243587"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 100 MG [Ansaid]"/>
+                <code value="566518"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen sodium 0.3 MG/ML [Ocufen]"/>
+                <code value="1243586"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Ophthalmic Solution [Ocufen]"/>
+                <code value="363680"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Oral Tablet [Ansaid]"/>
+                <code value="369463"/>
             </concept>
             <concept>
                 <display value="Flurbiprofen 100 MG Rectal Suppository"/>
@@ -53,6 +87,78 @@
             <concept>
                 <display value="Flurbiprofen sodium 0.3 MG/ML Ophthalmic Solution"/>
                 <code value="1243585"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 100 MG"/>
+                <code value="315958"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 50 MG"/>
+                <code value="315959"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 200 MG"/>
+                <code value="331958"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen 8.75 MG"/>
+                <code value="393448"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen sodium 0.3 MG/ML"/>
+                <code value="1243584"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Extended Release Oral Capsule"/>
+                <code value="372245"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Ophthalmic Solution"/>
+                <code value="372246"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Rectal Suppository"/>
+                <code value="372247"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Oral Tablet"/>
+                <code value="372249"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Oral Lozenge"/>
+                <code value="393449"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Ophthalmic Product"/>
+                <code value="1161452"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Oral Product"/>
+                <code value="1161453"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Pill"/>
+                <code value="1161454"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Rectal Product"/>
+                <code value="1161455"/>
+            </concept>
+            <concept>
+                <display value="Flurbiprofen Lozenge Product"/>
+                <code value="1295079"/>
+            </concept>
+            <concept>
+                <display value="Ansaid Oral Product"/>
+                <code value="1176829"/>
+            </concept>
+            <concept>
+                <display value="Ansaid Pill"/>
+                <code value="1176830"/>
+            </concept>
+            <concept>
+                <display value="Ocufen Ophthalmic Product"/>
+                <code value="1180561"/>
             </concept>
         </include>
     </compose>

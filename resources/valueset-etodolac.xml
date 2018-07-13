@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-etodolac"/>
     <id value="valueset-etodolac"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-etodolac"/>
     <title value="Etodolac Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for etodolac."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for etodolac."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,15 +19,30 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Lodine"/>
+                <code value="202998"/>
+            </concept>
+            <concept>
+                <display value="Etodolac"/>
+                <code value="24605"/>
+            </concept>
             <concept>
                 <display value="Etodolac 400 MG Oral Tablet [Lodine]"/>
                 <code value="206812"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 400 MG [Lodine]"/>
+                <code value="567619"/>
+            </concept>
+            <concept>
+                <display value="Etodolac Oral Tablet [Lodine]"/>
+                <code value="367620"/>
             </concept>
             <concept>
                 <display value="Etodolac 200 MG Oral Capsule"/>
@@ -53,6 +71,54 @@
             <concept>
                 <display value="24 HR Etodolac 500 MG Extended Release Oral Tablet"/>
                 <code value="359500"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 200 MG"/>
+                <code value="315906"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 300 MG"/>
+                <code value="315907"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 400 MG"/>
+                <code value="315908"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 500 MG"/>
+                <code value="315909"/>
+            </concept>
+            <concept>
+                <display value="Etodolac 600 MG"/>
+                <code value="315910"/>
+            </concept>
+            <concept>
+                <display value="Etodolac Oral Capsule"/>
+                <code value="372125"/>
+            </concept>
+            <concept>
+                <display value="Etodolac Oral Tablet"/>
+                <code value="372126"/>
+            </concept>
+            <concept>
+                <display value="Etodolac Extended Release Oral Tablet"/>
+                <code value="379169"/>
+            </concept>
+            <concept>
+                <display value="Etodolac Oral Product"/>
+                <code value="1157924"/>
+            </concept>
+            <concept>
+                <display value="Etodolac Pill"/>
+                <code value="1157925"/>
+            </concept>
+            <concept>
+                <display value="Lodine Oral Product"/>
+                <code value="1179157"/>
+            </concept>
+            <concept>
+                <display value="Lodine Pill"/>
+                <code value="1179158"/>
             </concept>
         </include>
     </compose>

@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fenoprofen"/>
     <id value="valueset-fenoprofen"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-fenoprofen"/>
     <title value="Fenoprofen Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for fenoprofen."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for fenoprofen."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,31 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Nonsteroidal Anti-inflammatory Drug (NSAID) class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Nalfon"/>
+                <code value="203313"/>
+            </concept>
+            <concept>
+                <display value="Fenortho"/>
+                <code value="1799318"/>
+            </concept>
+            <concept>
+                <display value="Profeno"/>
+                <code value="1945845"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen"/>
+                <code value="4331"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Calcium"/>
+                <code value="267171"/>
+            </concept>
             <concept>
                 <display value="Fenoprofen 200 MG Oral Capsule [Nalfon]"/>
                 <code value="260323"/>
@@ -43,6 +65,38 @@
                 <code value="1945850"/>
             </concept>
             <concept>
+                <display value="Fenoprofen 200 MG [Nalfon]"/>
+                <code value="574119"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 400 MG [Nalfon]"/>
+                <code value="858117"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 400 MG [Fenortho]"/>
+                <code value="1799319"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 200 MG [Fenortho]"/>
+                <code value="1799324"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 600 MG [Profeno]"/>
+                <code value="1945846"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Oral Capsule [Nalfon]"/>
+                <code value="366226"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Oral Capsule [Fenortho]"/>
+                <code value="1799320"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Oral Tablet [Profeno]"/>
+                <code value="1945847"/>
+            </concept>
+            <concept>
                 <display value="Fenoprofen 200 MG Oral Capsule"/>
                 <code value="197694"/>
             </concept>
@@ -61,6 +115,62 @@
             <concept>
                 <display value="Fenoprofen 400 MG Oral Capsule"/>
                 <code value="858116"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 200 MG"/>
+                <code value="328372"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 300 MG"/>
+                <code value="328373"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 600 MG"/>
+                <code value="328374"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen 400 MG"/>
+                <code value="858115"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Oral Capsule"/>
+                <code value="372153"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Oral Tablet"/>
+                <code value="372154"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Oral Product"/>
+                <code value="1159045"/>
+            </concept>
+            <concept>
+                <display value="Fenoprofen Pill"/>
+                <code value="1159046"/>
+            </concept>
+            <concept>
+                <display value="Fenortho Oral Product"/>
+                <code value="1799321"/>
+            </concept>
+            <concept>
+                <display value="Fenortho Pill"/>
+                <code value="1799322"/>
+            </concept>
+            <concept>
+                <display value="Nalfon Oral Product"/>
+                <code value="1178732"/>
+            </concept>
+            <concept>
+                <display value="Nalfon Pill"/>
+                <code value="1178733"/>
+            </concept>
+            <concept>
+                <display value="Profeno Oral Product"/>
+                <code value="1945848"/>
+            </concept>
+            <concept>
+                <display value="Profeno Pill"/>
+                <code value="1945849"/>
             </concept>
         </include>
     </compose>

@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fluocortolone"/>
     <id value="valueset-fluocortolone"/>
-    <version value="1.0"/>
+    <version value="US 1.1"/>
     <name value="valueset-fluocortolone"/>
     <title value="Fluocortolone Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
-    <contact value="Richard Boyce boycerd@upmc.edu"/>
-    <description value="ValueSet containing orderable drug representations for fluocortolone."/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for fluocortolone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16,12 +19,31 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <purpose value="Provide terminology for PDDI CDS FHIR resources as a member of the Systemic Corticosteroids class value set"/>
-    <copyright value="HL7 - TBD"/>
+    <copyright value="Attribution CC BY"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="04-Jun-2018"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <display value="Fluocortolone"/>
+                <code value="4463"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone / Salicylic Acid"/>
+                <code value="1007487"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone / Lidocaine"/>
+                <code value="1007700"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Caproate"/>
+                <code value="4464"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Pivalate"/>
+                <code value="4465"/>
+            </concept>
             <concept>
                 <display value="Fluocortolone Caproate 2.5 MG/ML / Fluocortolone Pivalate
                     2.5 MG/ML Topical Cream"/>
@@ -31,6 +53,34 @@
                 <display value="Fluocortolone Caproate 0.0025 MG/MG / Fluocortolone Pivalate
                     0.0025 MG/MG Topical Ointment"/>
                 <code value="103462"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Caproate 2.5 MG/ML"/>
+                <code value="392958"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Pivalate 2.5 MG/ML"/>
+                <code value="392959"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Caproate 0.0025 MG/MG"/>
+                <code value="392962"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Pivalate 0.0025 MG/MG"/>
+                <code value="439746"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Topical Cream"/>
+                <code value="392955"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Topical Ointment"/>
+                <code value="392957"/>
+            </concept>
+            <concept>
+                <display value="Fluocortolone Topical Product"/>
+                <code value="1160822"/>
             </concept>
         </include>
     </compose>

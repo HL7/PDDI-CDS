@@ -69,10 +69,6 @@
      "ValueSet/valueset-warfarin": {
        "base": "ValueSet-valueset-warfarin.html",
        "source": "valueset-warfarin.xml"
-     },
-     "ValueSet/valueset-NSAIDS": {
-       "base": "ValueSet-valueset-NSIADS.html",
-       "source": "valueset-warfarin.xml"
      }
    },
    "extensions":[

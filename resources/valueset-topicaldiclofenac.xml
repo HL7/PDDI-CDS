@@ -3,7 +3,7 @@
     <id value="valueset-topicaldiclofenac"/>
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-topicaldiclofenac"/>
     <name value="valueset-topicaldiclofenac"/>
-    <version value="US 1.0"/>
+    <version value="US 1.1"/>
     <title value="Topical Diclofenac Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-06-20"/>

@@ -25,224 +25,224 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Ketofen"/>
                 <code value="1551478"/>
+                <display value="Ketofen"/>
             </concept>
             <concept>
-                <display value="Ketoprofen"/>
                 <code value="6142"/>
+                <display value="Ketoprofen"/>
             </concept>
             <concept>
-                <display value="Chlorzoxazone / Ketoprofen"/>
                 <code value="1008197"/>
+                <display value="Chlorzoxazone / Ketoprofen"/>
             </concept>
             <concept>
-                <display value="Acetaminophen / Ketoprofen"/>
                 <code value="1008935"/>
+                <display value="Acetaminophen / Ketoprofen"/>
             </concept>
             <concept>
-                <display value="Ketoprofen / Lidocaine"/>
                 <code value="1491503"/>
+                <display value="Ketoprofen / Lidocaine"/>
             </concept>
             <concept>
-                <display value="ketoprofen lysine"/>
                 <code value="28199"/>
+                <display value="ketoprofen lysine"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG/ML Injectable Solution [Ketofen]"/>
                 <code value="1551482"/>
+                <display value="Ketoprofen 100 MG/ML Injectable Solution [Ketofen]"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG/ML [Ketofen]"/>
                 <code value="1551479"/>
+                <display value="Ketoprofen 100 MG/ML [Ketofen]"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Injectable Solution [Ketofen]"/>
                 <code value="1551480"/>
+                <display value="Ketoprofen Injectable Solution [Ketofen]"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 25 MG Oral Capsule"/>
                 <code value="197854"/>
+                <display value="Ketoprofen 25 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 50 MG Oral Capsule"/>
                 <code value="197855"/>
+                <display value="Ketoprofen 50 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 75 MG Oral Capsule"/>
                 <code value="197856"/>
+                <display value="Ketoprofen 75 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 12.5 MG Oral Tablet"/>
                 <code value="199169"/>
+                <display value="Ketoprofen 12.5 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 50 MG Rectal Suppository"/>
                 <code value="247630"/>
+                <display value="Ketoprofen 50 MG Rectal Suppository"/>
             </concept>
             <concept>
-                <display value="24 HR Ketoprofen 150 MG Extended Release Oral Capsule"/>
                 <code value="311230"/>
+                <display value="24 HR Ketoprofen 150 MG Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="24 HR Ketoprofen 200 MG Extended Release Oral Capsule"/>
                 <code value="359697"/>
+                <display value="24 HR Ketoprofen 200 MG Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 25 MG Oral Tablet"/>
                 <code value="429192"/>
+                <display value="Ketoprofen 25 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 150 MG Extended Release Oral Tablet"/>
                 <code value="431823"/>
+                <display value="Ketoprofen 150 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 50 MG Delayed Release Oral Tablet"/>
                 <code value="245419"/>
+                <display value="Ketoprofen 50 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG Oral Capsule"/>
                 <code value="199321"/>
+                <display value="Ketoprofen 100 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG Rectal Suppository"/>
                 <code value="199553"/>
+                <display value="Ketoprofen 100 MG Rectal Suppository"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG Oral Tablet"/>
                 <code value="249482"/>
+                <display value="Ketoprofen 100 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="24 HR Ketoprofen 100 MG Extended Release Oral Capsule"/>
                 <code value="314059"/>
+                <display value="24 HR Ketoprofen 100 MG Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG Delayed Release Oral Tablet"/>
                 <code value="199758"/>
+                <display value="Ketoprofen 100 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 0.025 MG/MG Topical Gel"/>
                 <code value="105999"/>
+                <display value="Ketoprofen 0.025 MG/MG Topical Gel"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 50 MG/ML Injectable Solution"/>
                 <code value="246236"/>
+                <display value="Ketoprofen 50 MG/ML Injectable Solution"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG/ML Injectable Solution"/>
                 <code value="1551477"/>
+                <display value="Ketoprofen 100 MG/ML Injectable Solution"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 0.05 MG/MG Topical Powder"/>
                 <code value="1488714"/>
+                <display value="Ketoprofen 0.05 MG/MG Topical Powder"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 12.5 MG"/>
                 <code value="316115"/>
+                <display value="Ketoprofen 12.5 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 150 MG"/>
                 <code value="316116"/>
+                <display value="Ketoprofen 150 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 200 MG"/>
                 <code value="316117"/>
+                <display value="Ketoprofen 200 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 25 MG"/>
                 <code value="316118"/>
+                <display value="Ketoprofen 25 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 50 MG"/>
                 <code value="316119"/>
+                <display value="Ketoprofen 50 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 75 MG"/>
                 <code value="316120"/>
+                <display value="Ketoprofen 75 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG"/>
                 <code value="317643"/>
+                <display value="Ketoprofen 100 MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 0.025 MG/MG"/>
                 <code value="335102"/>
+                <display value="Ketoprofen 0.025 MG/MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 50 MG/ML"/>
                 <code value="335104"/>
+                <display value="Ketoprofen 50 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 100 MG/ML"/>
                 <code value="1365880"/>
+                <display value="Ketoprofen 100 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketoprofen 0.05 MG/MG"/>
                 <code value="1488712"/>
+                <display value="Ketoprofen 0.05 MG/MG"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Oral Capsule"/>
                 <code value="372535"/>
+                <display value="Ketoprofen Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Extended Release Oral Capsule"/>
                 <code value="372536"/>
+                <display value="Ketoprofen Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Injectable Solution"/>
                 <code value="372537"/>
+                <display value="Ketoprofen Injectable Solution"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Rectal Suppository"/>
                 <code value="372539"/>
+                <display value="Ketoprofen Rectal Suppository"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Oral Tablet"/>
                 <code value="372540"/>
+                <display value="Ketoprofen Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Extended Release Oral Tablet"/>
                 <code value="372543"/>
+                <display value="Ketoprofen Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Topical Gel"/>
                 <code value="377957"/>
+                <display value="Ketoprofen Topical Gel"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Topical Powder"/>
                 <code value="1488713"/>
+                <display value="Ketoprofen Topical Powder"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Delayed Release Oral Tablet"/>
                 <code value="372544"/>
+                <display value="Ketoprofen Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Injectable Product"/>
                 <code value="1160959"/>
+                <display value="Ketoprofen Injectable Product"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Oral Product"/>
                 <code value="1160961"/>
+                <display value="Ketoprofen Oral Product"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Pill"/>
                 <code value="1160962"/>
+                <display value="Ketoprofen Pill"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Rectal Product"/>
                 <code value="1160963"/>
+                <display value="Ketoprofen Rectal Product"/>
             </concept>
             <concept>
-                <display value="Ketoprofen Topical Product"/>
                 <code value="1160964"/>
+                <display value="Ketoprofen Topical Product"/>
             </concept>
             <concept>
-                <display value="Ketoprofen / Lidocaine Topical Product"/>
                 <code value="1491501"/>
+                <display value="Ketoprofen / Lidocaine Topical Product"/>
             </concept>
             <concept>
-                <display value="Ketofen Injectable Product"/>
                 <code value="1551481"/>
+                <display value="Ketofen Injectable Product"/>
             </concept>
         </include>
     </compose>

@@ -25,268 +25,268 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Indocin"/>
                 <code value="203365"/>
+                <display value="Indocin"/>
             </concept>
             <concept>
-                <display value="Tivorbex"/>
                 <code value="1491522"/>
+                <display value="Tivorbex"/>
             </concept>
             <concept>
-                <display value="Indomethacin"/>
                 <code value="5781"/>
+                <display value="Indomethacin"/>
             </concept>
             <concept>
-                <display value="Indomethacin / Methocarbamol"/>
                 <code value="1008069"/>
+                <display value="Indomethacin / Methocarbamol"/>
             </concept>
             <concept>
-                <display value="Indomethacin / polidocanol"/>
                 <code value="1008657"/>
+                <display value="Indomethacin / polidocanol"/>
             </concept>
             <concept>
-                <display value="Dexamethasone / Indomethacin"/>
                 <code value="814504"/>
+                <display value="Dexamethasone / Indomethacin"/>
             </concept>
             <concept>
-                <display value="Indomethacin / Thiamine"/>
                 <code value="817635"/>
+                <display value="Indomethacin / Thiamine"/>
             </concept>
             <concept>
-                <display value="Indomethacin sodium trihydrate"/>
                 <code value="258329"/>
+                <display value="Indomethacin sodium trihydrate"/>
             </concept>
             <concept>
-                <display value="INDOMETHACIN SODIUM"/>
                 <code value="1294612"/>
+                <display value="INDOMETHACIN SODIUM"/>
             </concept>
             <concept>
-                <display value="Indomethacin 50 MG Rectal Suppository [Indocin]"/>
                 <code value="206969"/>
+                <display value="Indomethacin 50 MG Rectal Suppository [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 5 MG/ML Oral Suspension [Indocin]"/>
                 <code value="206971"/>
+                <display value="Indomethacin 5 MG/ML Oral Suspension [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 75 MG Extended Release Oral Capsule [Indocin]"/>
                 <code value="891867"/>
+                <display value="Indomethacin 75 MG Extended Release Oral Capsule [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 20 MG Oral Capsule [Tivorbex]"/>
                 <code value="1491527"/>
+                <display value="Indomethacin 20 MG Oral Capsule [Tivorbex]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 40 MG Oral Capsule [Tivorbex]"/>
                 <code value="1491531"/>
+                <display value="Indomethacin 40 MG Oral Capsule [Tivorbex]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 50 MG [Indocin]"/>
                 <code value="567764"/>
+                <display value="Indomethacin 50 MG [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 5 MG/ML [Indocin]"/>
                 <code value="567771"/>
+                <display value="Indomethacin 5 MG/ML [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 75 MG [Indocin]"/>
                 <code value="891865"/>
+                <display value="Indomethacin 75 MG [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 20 MG [Tivorbex]"/>
                 <code value="1491523"/>
+                <display value="Indomethacin 20 MG [Tivorbex]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 40 MG [Tivorbex]"/>
                 <code value="1491530"/>
+                <display value="Indomethacin 40 MG [Tivorbex]"/>
             </concept>
             <concept>
-                <display value="Indomethacin Rectal Suppository [Indocin]"/>
                 <code value="367528"/>
+                <display value="Indomethacin Rectal Suppository [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin Extended Release Oral Capsule [Indocin]"/>
                 <code value="891866"/>
+                <display value="Indomethacin Extended Release Oral Capsule [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin Oral Suspension [Indocin]"/>
                 <code value="92965"/>
+                <display value="Indomethacin Oral Suspension [Indocin]"/>
             </concept>
             <concept>
-                <display value="Indomethacin Oral Capsule [Tivorbex]"/>
                 <code value="1491524"/>
+                <display value="Indomethacin Oral Capsule [Tivorbex]"/>
             </concept>
             <concept>
-                <display value="Indomethacin 1 MG Injection"/>
                 <code value="346508"/>
+                <display value="Indomethacin 1 MG Injection"/>
             </concept>
             <concept>
-                <display value="Indomethacin 50 MG Extended Release Oral Tablet"/>
                 <code value="105864"/>
+                <display value="Indomethacin 50 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Indomethacin 25 MG Extended Release Oral Tablet"/>
                 <code value="105866"/>
+                <display value="Indomethacin 25 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Indomethacin 25 MG Oral Capsule"/>
                 <code value="197817"/>
+                <display value="Indomethacin 25 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 50 MG Oral Capsule"/>
                 <code value="197818"/>
+                <display value="Indomethacin 50 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 50 MG Rectal Suppository"/>
                 <code value="197819"/>
+                <display value="Indomethacin 50 MG Rectal Suppository"/>
             </concept>
             <concept>
-                <display value="Indomethacin 75 MG Extended Release Oral Tablet"/>
                 <code value="250526"/>
+                <display value="Indomethacin 75 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Indomethacin 25 MG Extended Release Oral Capsule"/>
                 <code value="251255"/>
+                <display value="Indomethacin 25 MG Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 5 MG/ML Oral Suspension"/>
                 <code value="310991"/>
+                <display value="Indomethacin 5 MG/ML Oral Suspension"/>
             </concept>
             <concept>
-                <display value="Indomethacin 75 MG Extended Release Oral Capsule"/>
                 <code value="310992"/>
+                <display value="Indomethacin 75 MG Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 75 MG Oral Capsule"/>
                 <code value="392073"/>
+                <display value="Indomethacin 75 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 100 MG Rectal Suppository"/>
                 <code value="199549"/>
+                <display value="Indomethacin 100 MG Rectal Suppository"/>
             </concept>
             <concept>
-                <display value="Indomethacin 20 MG Oral Capsule"/>
                 <code value="1490727"/>
+                <display value="Indomethacin 20 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 40 MG Oral Capsule"/>
                 <code value="1491529"/>
+                <display value="Indomethacin 40 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin 10 MG/ML Ophthalmic Solution"/>
                 <code value="247069"/>
+                <display value="Indomethacin 10 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="Indomethacin 1 MG"/>
                 <code value="1863326"/>
+                <display value="Indomethacin 1 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 25 MG"/>
                 <code value="316082"/>
+                <display value="Indomethacin 25 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 5 MG/ML"/>
                 <code value="316083"/>
+                <display value="Indomethacin 5 MG/ML"/>
             </concept>
             <concept>
-                <display value="Indomethacin 50 MG"/>
                 <code value="316084"/>
+                <display value="Indomethacin 50 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 75 MG"/>
                 <code value="316085"/>
+                <display value="Indomethacin 75 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 100 MG"/>
                 <code value="329869"/>
+                <display value="Indomethacin 100 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 20 MG"/>
                 <code value="335019"/>
+                <display value="Indomethacin 20 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 40 MG"/>
                 <code value="1491528"/>
+                <display value="Indomethacin 40 MG"/>
             </concept>
             <concept>
-                <display value="Indomethacin 10 MG/ML"/>
                 <code value="335017"/>
+                <display value="Indomethacin 10 MG/ML"/>
             </concept>
             <concept>
-                <display value="Indomethacin Injection"/>
                 <code value="1863327"/>
+                <display value="Indomethacin Injection"/>
             </concept>
             <concept>
-                <display value="Indomethacin Oral Suspension"/>
                 <code value="370686"/>
+                <display value="Indomethacin Oral Suspension"/>
             </concept>
             <concept>
-                <display value="Indomethacin Oral Capsule"/>
                 <code value="370687"/>
+                <display value="Indomethacin Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin Rectal Suppository"/>
                 <code value="370688"/>
+                <display value="Indomethacin Rectal Suppository"/>
             </concept>
             <concept>
-                <display value="Indomethacin Extended Release Oral Capsule"/>
                 <code value="370689"/>
+                <display value="Indomethacin Extended Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Indomethacin Extended Release Oral Tablet"/>
                 <code value="372474"/>
+                <display value="Indomethacin Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Indomethacin Ophthalmic Solution"/>
                 <code value="372470"/>
+                <display value="Indomethacin Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="Indomethacin Injectable Product"/>
                 <code value="1156902"/>
+                <display value="Indomethacin Injectable Product"/>
             </concept>
             <concept>
-                <display value="Indomethacin Oral Liquid Product"/>
                 <code value="1156904"/>
+                <display value="Indomethacin Oral Liquid Product"/>
             </concept>
             <concept>
-                <display value="Indomethacin Oral Product"/>
                 <code value="1156905"/>
+                <display value="Indomethacin Oral Product"/>
             </concept>
             <concept>
-                <display value="Indomethacin Pill"/>
                 <code value="1156906"/>
+                <display value="Indomethacin Pill"/>
             </concept>
             <concept>
-                <display value="Indomethacin Rectal Product"/>
                 <code value="1156907"/>
+                <display value="Indomethacin Rectal Product"/>
             </concept>
             <concept>
-                <display value="Indomethacin Ophthalmic Product"/>
                 <code value="1156903"/>
+                <display value="Indomethacin Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Tivorbex Oral Product"/>
                 <code value="1491525"/>
+                <display value="Tivorbex Oral Product"/>
             </concept>
             <concept>
-                <display value="Tivorbex Pill"/>
                 <code value="1491526"/>
+                <display value="Tivorbex Pill"/>
             </concept>
             <concept>
-                <display value="Indocin Oral Liquid Product"/>
                 <code value="1172729"/>
+                <display value="Indocin Oral Liquid Product"/>
             </concept>
             <concept>
-                <display value="Indocin Oral Product"/>
                 <code value="1172730"/>
+                <display value="Indocin Oral Product"/>
             </concept>
             <concept>
-                <display value="Indocin Pill"/>
                 <code value="1172731"/>
+                <display value="Indocin Pill"/>
             </concept>
             <concept>
-                <display value="Indocin Rectal Product"/>
                 <code value="1172732"/>
+                <display value="Indocin Rectal Product"/>
             </concept>
         </include>
     </compose>

@@ -11,7 +11,8 @@
     <contact>
         <name value="Richard Boyce boycerd@upmc.edu"/>
     </contact>
-    <description value="ValueSet containing orderable drug identifiers for 1-2% topical diclofenac (cream, gel, or solution)."/>
+    <description
+            value="ValueSet containing orderable drug identifiers for 1-2% topical diclofenac (cream, gel, or solution)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

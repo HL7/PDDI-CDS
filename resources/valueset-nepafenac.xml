@@ -25,72 +25,72 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Nevanac"/>
                 <code value="613876"/>
+                <display value="Nevanac"/>
             </concept>
             <concept>
-                <display value="Ilevro"/>
                 <code value="1365862"/>
+                <display value="Ilevro"/>
             </concept>
             <concept>
-                <display value="nepafenac"/>
                 <code value="298665"/>
+                <display value="nepafenac"/>
             </concept>
             <concept>
-                <display value="nepafenac 1 MG/ML Ophthalmic Suspension [Nevanac]"/>
                 <code value="603978"/>
+                <display value="nepafenac 1 MG/ML Ophthalmic Suspension [Nevanac]"/>
             </concept>
             <concept>
-                <display value="nepafenac 3 MG/ML Ophthalmic Suspension [Ilevro]"/>
                 <code value="1365866"/>
+                <display value="nepafenac 3 MG/ML Ophthalmic Suspension [Ilevro]"/>
             </concept>
             <concept>
-                <display value="nepafenac 1 MG/ML [Nevanac]"/>
                 <code value="603976"/>
+                <display value="nepafenac 1 MG/ML [Nevanac]"/>
             </concept>
             <concept>
-                <display value="nepafenac 3 MG/ML [Ilevro]"/>
                 <code value="1365863"/>
+                <display value="nepafenac 3 MG/ML [Ilevro]"/>
             </concept>
             <concept>
-                <display value="nepafenac Ophthalmic Suspension [Nevanac]"/>
                 <code value="603977"/>
+                <display value="nepafenac Ophthalmic Suspension [Nevanac]"/>
             </concept>
             <concept>
-                <display value="nepafenac Ophthalmic Suspension [Ilevro]"/>
                 <code value="1365864"/>
+                <display value="nepafenac Ophthalmic Suspension [Ilevro]"/>
             </concept>
             <concept>
-                <display value="nepafenac 1 MG/ML Ophthalmic Suspension"/>
                 <code value="578044"/>
+                <display value="nepafenac 1 MG/ML Ophthalmic Suspension"/>
             </concept>
             <concept>
-                <display value="nepafenac 3 MG/ML Ophthalmic Suspension"/>
                 <code value="1362132"/>
+                <display value="nepafenac 3 MG/ML Ophthalmic Suspension"/>
             </concept>
             <concept>
-                <display value="nepafenac 1 MG/ML"/>
                 <code value="578042"/>
+                <display value="nepafenac 1 MG/ML"/>
             </concept>
             <concept>
-                <display value="nepafenac 3 MG/ML"/>
                 <code value="1362131"/>
+                <display value="nepafenac 3 MG/ML"/>
             </concept>
             <concept>
-                <display value="nepafenac Ophthalmic Suspension"/>
                 <code value="578043"/>
+                <display value="nepafenac Ophthalmic Suspension"/>
             </concept>
             <concept>
-                <display value="nepafenac Ophthalmic Product"/>
                 <code value="1158407"/>
+                <display value="nepafenac Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Ilevro Ophthalmic Product"/>
                 <code value="1365865"/>
+                <display value="Ilevro Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Nevanac Ophthalmic Product"/>
                 <code value="1182860"/>
+                <display value="Nevanac Ophthalmic Product"/>
             </concept>
         </include>
     </compose>

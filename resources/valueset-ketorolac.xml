@@ -25,275 +25,275 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Acular"/>
                 <code value="152819"/>
+                <display value="Acular"/>
             </concept>
             <concept>
-                <display value="Acuvail"/>
                 <code value="858359"/>
+                <display value="Acuvail"/>
             </concept>
             <concept>
-                <display value="Sprix"/>
                 <code value="992421"/>
+                <display value="Sprix"/>
             </concept>
             <concept>
-                <display value="Omidria"/>
                 <code value="1540231"/>
+                <display value="Omidria"/>
             </concept>
             <concept>
-                <display value="Ketorolac"/>
                 <code value="35827"/>
+                <display value="Ketorolac"/>
             </concept>
             <concept>
-                <display value="Ketorolac / Phenylephrine"/>
                 <code value="1540229"/>
+                <display value="Ketorolac / Phenylephrine"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine"/>
                 <code value="28200"/>
+                <display value="Ketorolac Tromethamine"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution [Acular]"/>
                 <code value="860105"/>
+                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution [Acular]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution [Acular]"/>
                 <code value="860109"/>
+                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution [Acular]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution [Acuvail]"/>
                 <code value="858366"/>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution [Acuvail]"/>
             </concept>
             <concept>
+                <code value="1797857"/>
                 <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT Metered Dose Nasal
                     Spray [Sprix]"/>
-                <code value="1797857"/>
             </concept>
             <concept>
+                <code value="1540235"/>
                 <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML Ophthalmic
                     Irrigation Solution [Omidria]"/>
-                <code value="1540235"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4 MG/ML [Acular]"/>
                 <code value="860104"/>
+                <display value="Ketorolac Tromethamine 4 MG/ML [Acular]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 5 MG/ML [Acular]"/>
                 <code value="860108"/>
+                <display value="Ketorolac Tromethamine 5 MG/ML [Acular]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4.5 MG/ML [Acuvail]"/>
                 <code value="858365"/>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML [Acuvail]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT [Sprix]"/>
                 <code value="992422"/>
+                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT [Sprix]"/>
             </concept>
             <concept>
-                <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML [Omidria]"/>
                 <code value="1540232"/>
+                <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML [Omidria]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Ophthalmic Solution [Acular]"/>
                 <code value="363846"/>
+                <display value="Ketorolac Ophthalmic Solution [Acular]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Ophthalmic Solution [Acuvail]"/>
                 <code value="858361"/>
+                <display value="Ketorolac Ophthalmic Solution [Acuvail]"/>
             </concept>
             <concept>
-                <display value="Ketorolac / Phenylephrine Ophthalmic Irrigation Solution [Omidria]"/>
                 <code value="1543461"/>
+                <display value="Ketorolac / Phenylephrine Ophthalmic Irrigation Solution [Omidria]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Metered Dose Nasal Spray [Sprix]"/>
                 <code value="1797856"/>
+                <display value="Ketorolac Metered Dose Nasal Spray [Sprix]"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 10 MG Oral Tablet"/>
                 <code value="834022"/>
+                <display value="Ketorolac Tromethamine 10 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution"/>
                 <code value="858364"/>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
                 <code value="860092"/>
+                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 30 MG/ML Injectable Solution"/>
                 <code value="860096"/>
+                <display value="Ketorolac Tromethamine 30 MG/ML Injectable Solution"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution"/>
                 <code value="860103"/>
+                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution"/>
                 <code value="860107"/>
+                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Prefilled Syringe"/>
                 <code value="860113"/>
+                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Prefilled Syringe"/>
             </concept>
             <concept>
-                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe"/>
                 <code value="860114"/>
+                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe"/>
             </concept>
             <concept>
-                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe"/>
                 <code value="860115"/>
+                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Prefilled Syringe"/>
             </concept>
             <concept>
-                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Injection"/>
                 <code value="1665459"/>
+                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Injection"/>
             </concept>
             <concept>
-                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Injection"/>
                 <code value="1665461"/>
+                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Injection"/>
             </concept>
             <concept>
-                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Cartridge"/>
                 <code value="1665675"/>
+                <display value="1 ML Ketorolac Tromethamine 15 MG/ML Cartridge"/>
             </concept>
             <concept>
-                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Cartridge"/>
                 <code value="1665679"/>
+                <display value="1 ML Ketorolac Tromethamine 30 MG/ML Cartridge"/>
             </concept>
             <concept>
-                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Cartridge"/>
                 <code value="1665682"/>
+                <display value="2 ML Ketorolac Tromethamine 30 MG/ML Cartridge"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 10 MG/ML Injectable Solution"/>
                 <code value="861846"/>
+                <display value="Ketorolac Tromethamine 10 MG/ML Injectable Solution"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT Metered Dose Nasal Spray"/>
                 <code value="1797855"/>
+                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT Metered Dose Nasal Spray"/>
             </concept>
             <concept>
+                <code value="1540230"/>
                 <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML Ophthalmic
                     Irrigation Solution"/>
-                <code value="1540230"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 10 MG"/>
                 <code value="834021"/>
+                <display value="Ketorolac Tromethamine 10 MG"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4.5 MG/ML"/>
                 <code value="858363"/>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 15 MG/ML"/>
                 <code value="860091"/>
+                <display value="Ketorolac Tromethamine 15 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 30 MG/ML"/>
                 <code value="860095"/>
+                <display value="Ketorolac Tromethamine 30 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 4 MG/ML"/>
                 <code value="860102"/>
+                <display value="Ketorolac Tromethamine 4 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 5 MG/ML"/>
                 <code value="860106"/>
+                <display value="Ketorolac Tromethamine 5 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 10 MG/ML"/>
                 <code value="861845"/>
+                <display value="Ketorolac Tromethamine 10 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT"/>
                 <code value="992418"/>
+                <display value="Ketorolac Tromethamine 15.8 MG/ACTUAT"/>
             </concept>
             <concept>
-                <display value="Ketorolac 2.88 MG/ML"/>
                 <code value="1540225"/>
+                <display value="Ketorolac 2.88 MG/ML"/>
             </concept>
             <concept>
-                <display value="Ketorolac Injectable Solution"/>
                 <code value="372545"/>
+                <display value="Ketorolac Injectable Solution"/>
             </concept>
             <concept>
-                <display value="Ketorolac Oral Tablet"/>
                 <code value="372547"/>
+                <display value="Ketorolac Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Ketorolac Ophthalmic Solution"/>
                 <code value="377446"/>
+                <display value="Ketorolac Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="Ketorolac Prefilled Syringe"/>
                 <code value="727596"/>
+                <display value="Ketorolac Prefilled Syringe"/>
             </concept>
             <concept>
-                <display value="Ketorolac / Phenylephrine Ophthalmic Irrigation Solution"/>
                 <code value="1543459"/>
+                <display value="Ketorolac / Phenylephrine Ophthalmic Irrigation Solution"/>
             </concept>
             <concept>
-                <display value="Ketorolac Injection"/>
                 <code value="1665000"/>
+                <display value="Ketorolac Injection"/>
             </concept>
             <concept>
-                <display value="Ketorolac Cartridge"/>
                 <code value="1665674"/>
+                <display value="Ketorolac Cartridge"/>
             </concept>
             <concept>
-                <display value="Ketorolac Metered Dose Nasal Spray"/>
                 <code value="1797854"/>
+                <display value="Ketorolac Metered Dose Nasal Spray"/>
             </concept>
             <concept>
-                <display value="Ketorolac / Phenylephrine Ophthalmic Product"/>
                 <code value="1543458"/>
+                <display value="Ketorolac / Phenylephrine Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Ketorolac Nasal Product"/>
                 <code value="1801234"/>
+                <display value="Ketorolac Nasal Product"/>
             </concept>
             <concept>
-                <display value="Ketorolac Inhalant Product"/>
                 <code value="1160965"/>
+                <display value="Ketorolac Inhalant Product"/>
             </concept>
             <concept>
-                <display value="Ketorolac Injectable Product"/>
                 <code value="1160966"/>
+                <display value="Ketorolac Injectable Product"/>
             </concept>
             <concept>
-                <display value="Ketorolac Ophthalmic Product"/>
                 <code value="1160968"/>
+                <display value="Ketorolac Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Ketorolac Oral Product"/>
                 <code value="1160969"/>
+                <display value="Ketorolac Oral Product"/>
             </concept>
             <concept>
-                <display value="Ketorolac Pill"/>
                 <code value="1160970"/>
+                <display value="Ketorolac Pill"/>
             </concept>
             <concept>
-                <display value="Omidria Ophthalmic Product"/>
                 <code value="1543462"/>
+                <display value="Omidria Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Sprix Nasal Product"/>
                 <code value="1801261"/>
+                <display value="Sprix Nasal Product"/>
             </concept>
             <concept>
-                <display value="Acular Ophthalmic Product"/>
                 <code value="1169934"/>
+                <display value="Acular Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Acuvail Ophthalmic Product"/>
                 <code value="1169948"/>
+                <display value="Acuvail Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Sprix Inhalant Product"/>
                 <code value="1177779"/>
+                <display value="Sprix Inhalant Product"/>
             </concept>
         </include>
     </compose>

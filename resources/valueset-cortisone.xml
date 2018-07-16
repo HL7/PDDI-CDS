@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone"/>
     <id value="valueset-cortisone"/>
     <version value="US 1.1"/>
-    <display value="valueset-cortisone"/>
-    <title value="Cortisone Value Set"/>
+    <name value="valueset-cortisone"/>
+    <title value="Cortisone Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
@@ -24,64 +25,64 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Cortisone"/>
                 <code value="2878"/>
+                <display value="Cortisone"/>
             </concept>
             <concept>
-                <display value="cortisone acetate"/>
                 <code value="21655"/>
+                <display value="cortisone acetate"/>
             </concept>
             <concept>
-                <display value="Cortisone 50 MG/ML Injectable Suspension"/>
                 <code value="206445"/>
+                <display value="Cortisone 50 MG/ML Injectable Suspension"/>
             </concept>
             <concept>
-                <display value="Cortisone 10 MG Oral Tablet"/>
                 <code value="197543"/>
+                <display value="Cortisone 10 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Cortisone 5 MG Oral Tablet"/>
                 <code value="197545"/>
+                <display value="Cortisone 5 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="cortisone acetate 25 MG Oral Tablet"/>
                 <code value="828248"/>
+                <display value="cortisone acetate 25 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Cortisone 50 MG/ML"/>
                 <code value="315722"/>
+                <display value="Cortisone 50 MG/ML"/>
             </concept>
             <concept>
-                <display value="Cortisone 5 MG"/>
                 <code value="329229"/>
+                <display value="Cortisone 5 MG"/>
             </concept>
             <concept>
-                <display value="Cortisone 10 MG"/>
                 <code value="329479"/>
+                <display value="Cortisone 10 MG"/>
             </concept>
             <concept>
-                <display value="cortisone acetate 25 MG"/>
                 <code value="828247"/>
+                <display value="cortisone acetate 25 MG"/>
             </concept>
             <concept>
-                <display value="Cortisone Injectable Suspension"/>
                 <code value="371634"/>
+                <display value="Cortisone Injectable Suspension"/>
             </concept>
             <concept>
-                <display value="Cortisone Oral Tablet"/>
                 <code value="371635"/>
+                <display value="Cortisone Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Cortisone Injectable Product"/>
                 <code value="1155527"/>
+                <display value="Cortisone Injectable Product"/>
             </concept>
             <concept>
-                <display value="Cortisone Oral Product"/>
                 <code value="1155528"/>
+                <display value="Cortisone Oral Product"/>
             </concept>
             <concept>
-                <display value="Cortisone Pill"/>
                 <code value="1155815"/>
+                <display value="Cortisone Pill"/>
             </concept>
         </include>
     </compose>

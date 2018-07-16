@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cloprednol"/>
     <id value="valueset-cloprednol"/>
     <version value="US 1.1"/>
-    <display value="valueset-cloprednol"/>
-    <title value="Cloprednol Value Set"/>
+    <name value="valueset-cloprednol"/>
+    <title value="Cloprednol Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
@@ -24,8 +25,8 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="cloprednol"/>
                 <code value="21285"/>
+                <display value="cloprednol"/>
             </concept>
         </include>
     </compose>

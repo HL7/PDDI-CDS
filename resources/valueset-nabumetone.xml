@@ -25,64 +25,64 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="nabumetone"/>
                 <code value="31448"/>
+                <display value="nabumetone"/>
             </concept>
             <concept>
-                <display value="nabumetone 100 MG/ML Oral Suspension"/>
                 <code value="105953"/>
+                <display value="nabumetone 100 MG/ML Oral Suspension"/>
             </concept>
             <concept>
-                <display value="nabumetone 500 MG Oral Tablet"/>
                 <code value="311892"/>
+                <display value="nabumetone 500 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="nabumetone 750 MG Oral Tablet"/>
                 <code value="311893"/>
+                <display value="nabumetone 750 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="nabumetone 2.5 MG/ML Oral Solution"/>
                 <code value="392641"/>
+                <display value="nabumetone 2.5 MG/ML Oral Solution"/>
             </concept>
             <concept>
-                <display value="nabumetone 100 MG/ML"/>
                 <code value="335255"/>
+                <display value="nabumetone 100 MG/ML"/>
             </concept>
             <concept>
-                <display value="nabumetone 750 MG"/>
                 <code value="343093"/>
+                <display value="nabumetone 750 MG"/>
             </concept>
             <concept>
-                <display value="nabumetone 500 MG"/>
                 <code value="343109"/>
+                <display value="nabumetone 500 MG"/>
             </concept>
             <concept>
-                <display value="nabumetone 2.5 MG/ML"/>
                 <code value="393527"/>
+                <display value="nabumetone 2.5 MG/ML"/>
             </concept>
             <concept>
-                <display value="nabumetone Oral Suspension"/>
                 <code value="372976"/>
+                <display value="nabumetone Oral Suspension"/>
             </concept>
             <concept>
-                <display value="nabumetone Oral Tablet"/>
                 <code value="378684"/>
+                <display value="nabumetone Oral Tablet"/>
             </concept>
             <concept>
-                <display value="nabumetone Oral Solution"/>
                 <code value="393528"/>
+                <display value="nabumetone Oral Solution"/>
             </concept>
             <concept>
-                <display value="nabumetone Oral Liquid Product"/>
                 <code value="1158378"/>
+                <display value="nabumetone Oral Liquid Product"/>
             </concept>
             <concept>
-                <display value="nabumetone Oral Product"/>
                 <code value="1158379"/>
+                <display value="nabumetone Oral Product"/>
             </concept>
             <concept>
-                <display value="nabumetone Pill"/>
                 <code value="1158380"/>
+                <display value="nabumetone Pill"/>
             </concept>
         </include>
     </compose>

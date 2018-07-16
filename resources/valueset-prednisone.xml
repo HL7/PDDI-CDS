@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aldosterone"/>
-    <id value="valueset-aldosterone"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisone"/>
+    <id value="valueset-prednisone"/>
     <version value="US 1.1"/>
-    <name value="valueset-aldosterone"/>
-    <title value="Aldosterone Medications Value Set"/>
+    <name value="valueset-prednisone"/>
+    <title value="Prednisone Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
         <name value="Richard Boyce boycerd@upmc.edu"/>
     </contact>
-    <description value="ValueSet containing drug identifiers for aldosterone."/>
+    <description value="ValueSet containing drug identifiers for prednisone."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25,236 +25,236 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Deltasone"/>
                 <code value="227730"/>
+                <display value="Deltasone"/>
             </concept>
             <concept>
-                <display value="Rayos"/>
                 <code value="1303126"/>
+                <display value="Rayos"/>
             </concept>
             <concept>
-                <display value="{21 (Prednisone 5 MG Oral Tablet) } Pack"/>
                 <code value="763181"/>
+                <display value="{21 (Prednisone 5 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
-                <display value="{48 (Prednisone 5 MG Oral Tablet) } Pack"/>
                 <code value="763179"/>
+                <display value="{48 (Prednisone 5 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
-                <display value="{48 (Prednisone 10 MG Oral Tablet) } Pack"/>
                 <code value="763183"/>
+                <display value="{48 (Prednisone 10 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
-                <display value="{21 (Prednisone 10 MG Oral Tablet) } Pack"/>
                 <code value="763185"/>
+                <display value="{21 (Prednisone 10 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
-                <display value="{10 (Prednisone 10 MG Oral Tablet) } Pack"/>
                 <code value="795858"/>
+                <display value="{10 (Prednisone 10 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
-                <display value="Prednisone"/>
                 <code value="8640"/>
+                <display value="Prednisone"/>
             </concept>
             <concept>
-                <display value="Chloramphenicol / Prednisone"/>
                 <code value="1008942"/>
+                <display value="Chloramphenicol / Prednisone"/>
             </concept>
             <concept>
-                <display value="Piroxicam / Prednisone"/>
                 <code value="815961"/>
+                <display value="Piroxicam / Prednisone"/>
             </concept>
             <concept>
-                <display value="Prednisone 2.5 MG Oral Tablet [Deltasone]"/>
                 <code value="206837"/>
+                <display value="Prednisone 2.5 MG Oral Tablet [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG Oral Tablet [Deltasone]"/>
                 <code value="206954"/>
+                <display value="Prednisone 5 MG Oral Tablet [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 10 MG Oral Tablet [Deltasone]"/>
                 <code value="206988"/>
+                <display value="Prednisone 10 MG Oral Tablet [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 20 MG Oral Tablet [Deltasone]"/>
                 <code value="206997"/>
+                <display value="Prednisone 20 MG Oral Tablet [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 50 MG Oral Tablet [Deltasone]"/>
                 <code value="207048"/>
+                <display value="Prednisone 50 MG Oral Tablet [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG Delayed Release Oral Tablet [Rayos]"/>
                 <code value="1303131"/>
+                <display value="Prednisone 1 MG Delayed Release Oral Tablet [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone 2 MG Delayed Release Oral Tablet [Rayos]"/>
                 <code value="1303134"/>
+                <display value="Prednisone 2 MG Delayed Release Oral Tablet [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG Delayed Release Oral Tablet [Rayos]"/>
                 <code value="1303137"/>
+                <display value="Prednisone 5 MG Delayed Release Oral Tablet [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone 2.5 MG [Deltasone]"/>
                 <code value="567645"/>
+                <display value="Prednisone 2.5 MG [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG [Deltasone]"/>
                 <code value="567755"/>
+                <display value="Prednisone 5 MG [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 10 MG [Deltasone]"/>
                 <code value="567784"/>
+                <display value="Prednisone 10 MG [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 20 MG [Deltasone]"/>
                 <code value="567793"/>
+                <display value="Prednisone 20 MG [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 50 MG [Deltasone]"/>
                 <code value="567841"/>
+                <display value="Prednisone 50 MG [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG [Rayos]"/>
                 <code value="1303127"/>
+                <display value="Prednisone 1 MG [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone 2 MG [Rayos]"/>
                 <code value="1303133"/>
+                <display value="Prednisone 2 MG [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG [Rayos]"/>
                 <code value="1303136"/>
+                <display value="Prednisone 5 MG [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone Oral Tablet [Deltasone]"/>
                 <code value="92354"/>
+                <display value="Prednisone Oral Tablet [Deltasone]"/>
             </concept>
             <concept>
-                <display value="Prednisone Delayed Release Oral Tablet [Rayos]"/>
                 <code value="1303128"/>
+                <display value="Prednisone Delayed Release Oral Tablet [Rayos]"/>
             </concept>
             <concept>
-                <display value="Prednisone 2.5 MG Oral Tablet"/>
                 <code value="198146"/>
+                <display value="Prednisone 2.5 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 50 MG Oral Tablet"/>
                 <code value="198148"/>
+                <display value="Prednisone 50 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG/ML Oral Solution"/>
                 <code value="205301"/>
+                <display value="Prednisone 5 MG/ML Oral Solution"/>
             </concept>
             <concept>
-                <display value="Prednisone 20 MG Oral Tablet"/>
                 <code value="312615"/>
+                <display value="Prednisone 20 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG Oral Tablet"/>
                 <code value="312617"/>
+                <display value="Prednisone 5 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG/ML Oral Solution"/>
                 <code value="315187"/>
+                <display value="Prednisone 1 MG/ML Oral Solution"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG Delayed Release Oral Tablet"/>
                 <code value="1303135"/>
+                <display value="Prednisone 5 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG Oral Tablet"/>
                 <code value="198144"/>
+                <display value="Prednisone 1 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 10 MG Oral Tablet"/>
                 <code value="198145"/>
+                <display value="Prednisone 10 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG Delayed Release Oral Tablet"/>
                 <code value="1303125"/>
+                <display value="Prednisone 1 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 2 MG Delayed Release Oral Tablet"/>
                 <code value="1303132"/>
+                <display value="Prednisone 2 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG/ML"/>
                 <code value="316580"/>
+                <display value="Prednisone 1 MG/ML"/>
             </concept>
             <concept>
-                <display value="Prednisone 2.5 MG"/>
                 <code value="316581"/>
+                <display value="Prednisone 2.5 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone 20 MG"/>
                 <code value="316582"/>
+                <display value="Prednisone 20 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG"/>
                 <code value="316584"/>
+                <display value="Prednisone 5 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone 5 MG/ML"/>
                 <code value="316585"/>
+                <display value="Prednisone 5 MG/ML"/>
             </concept>
             <concept>
-                <display value="Prednisone 50 MG"/>
                 <code value="316586"/>
+                <display value="Prednisone 50 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone 1 MG"/>
                 <code value="317475"/>
+                <display value="Prednisone 1 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone 10 MG"/>
                 <code value="317663"/>
+                <display value="Prednisone 10 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone 2 MG"/>
                 <code value="335473"/>
+                <display value="Prednisone 2 MG"/>
             </concept>
             <concept>
-                <display value="Prednisone Oral Solution"/>
                 <code value="373583"/>
+                <display value="Prednisone Oral Solution"/>
             </concept>
             <concept>
-                <display value="Prednisone Oral Tablet"/>
                 <code value="373585"/>
+                <display value="Prednisone Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone Delayed Release Oral Tablet"/>
                 <code value="1303124"/>
+                <display value="Prednisone Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Prednisone Oral Liquid Product"/>
                 <code value="1161704"/>
+                <display value="Prednisone Oral Liquid Product"/>
             </concept>
             <concept>
-                <display value="Prednisone Oral Product"/>
                 <code value="1161705"/>
+                <display value="Prednisone Oral Product"/>
             </concept>
             <concept>
-                <display value="Prednisone Pill"/>
                 <code value="1161706"/>
+                <display value="Prednisone Pill"/>
             </concept>
             <concept>
-                <display value="Deltasone Oral Product"/>
                 <code value="1172410"/>
+                <display value="Deltasone Oral Product"/>
             </concept>
             <concept>
-                <display value="Deltasone Pill"/>
                 <code value="1172411"/>
+                <display value="Deltasone Pill"/>
             </concept>
             <concept>
-                <display value="Rayos Oral Product"/>
                 <code value="1303129"/>
+                <display value="Rayos Oral Product"/>
             </concept>
             <concept>
-                <display value="Rayos Pill"/>
                 <code value="1303130"/>
+                <display value="Rayos Pill"/>
             </concept>
         </include>
     </compose>

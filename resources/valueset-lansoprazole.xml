@@ -25,162 +25,162 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Prevacid"/>
                 <code value="83156"/>
+                <display value="Prevacid"/>
             </concept>
             <concept>
+                <code value="757969"/>
                 <display value="{4 (Amoxicillin 500 MG Oral Capsule [Trimox]) / 2
                     (Clarithromycin 500 MG Oral Tablet [Biaxin]) / 2 (lansoprazole
                     30 MG Delayed Release Oral Capsule [Prevacid]) } Pack [Prevpac]"/>
-                <code value="757969"/>
             </concept>
             <concept>
+                <code value="758486"/>
                 <display value="{7 (lansoprazole 15 MG Delayed Release Oral Capsule) / 14
                     (Naproxen 375 MG Oral Tablet) } Pack"/>
-                <code value="758486"/>
             </concept>
             <concept>
+                <code value="758497"/>
                 <display value="{7 (lansoprazole 15 MG Delayed Release Oral Capsule) / 14
                     (Naproxen 500 MG Oral Tablet) } Pack"/>
-                <code value="758497"/>
             </concept>
             <concept>
+                <code value="757968"/>
                 <display value="{4 (Amoxicillin 500 MG Oral Capsule) / 2 (Clarithromycin 500
                     MG Oral Tablet) / 2 (lansoprazole 30 MG Delayed Release Oral
                     Capsule) } Pack"/>
-                <code value="757968"/>
             </concept>
             <concept>
-                <display value="lansoprazole"/>
                 <code value="17128"/>
+                <display value="lansoprazole"/>
             </concept>
             <concept>
-                <display value="lansoprazole 15 MG Disintegrating Oral Tablet [Prevacid]"/>
                 <code value="206205"/>
+                <display value="lansoprazole 15 MG Disintegrating Oral Tablet [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole 30 MG Delayed Release Oral Capsule [Prevacid]"/>
                 <code value="206206"/>
+                <display value="lansoprazole 30 MG Delayed Release Oral Capsule [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole 15 MG Delayed Release Oral Capsule [Prevacid]"/>
                 <code value="596918"/>
+                <display value="lansoprazole 15 MG Delayed Release Oral Capsule [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole 30 MG Disintegrating Oral Tablet [Prevacid]"/>
                 <code value="866152"/>
+                <display value="lansoprazole 30 MG Disintegrating Oral Tablet [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole 15 MG [Prevacid]"/>
                 <code value="541184"/>
+                <display value="lansoprazole 15 MG [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole 30 MG [Prevacid]"/>
                 <code value="541188"/>
+                <display value="lansoprazole 30 MG [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole Delayed Release Oral Capsule [Prevacid]"/>
                 <code value="379705"/>
+                <display value="lansoprazole Delayed Release Oral Capsule [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole Disintegrating Oral Tablet [Prevacid]"/>
                 <code value="844359"/>
+                <display value="lansoprazole Disintegrating Oral Tablet [Prevacid]"/>
             </concept>
             <concept>
-                <display value="lansoprazole 30 MG Delayed Release Oral Capsule"/>
                 <code value="311277"/>
+                <display value="lansoprazole 30 MG Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="lansoprazole 30 MG Disintegrating Oral Tablet"/>
                 <code value="351260"/>
+                <display value="lansoprazole 30 MG Disintegrating Oral Tablet"/>
             </concept>
             <concept>
-                <display value="lansoprazole 15 MG Disintegrating Oral Tablet"/>
                 <code value="351261"/>
+                <display value="lansoprazole 15 MG Disintegrating Oral Tablet"/>
             </concept>
             <concept>
-                <display value="lansoprazole 15 MG Delayed Release Oral Capsule"/>
                 <code value="596843"/>
+                <display value="lansoprazole 15 MG Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="lansoprazole 0.5 MG/ML Oral Suspension"/>
                 <code value="791878"/>
+                <display value="lansoprazole 0.5 MG/ML Oral Suspension"/>
             </concept>
             <concept>
-                <display value="lansoprazole 1 MG/ML Oral Suspension"/>
                 <code value="791880"/>
+                <display value="lansoprazole 1 MG/ML Oral Suspension"/>
             </concept>
             <concept>
-                <display value="lansoprazole 6 MG/ML Injectable Solution"/>
                 <code value="477260"/>
+                <display value="lansoprazole 6 MG/ML Injectable Solution"/>
             </concept>
             <concept>
-                <display value="lansoprazole 15 MG"/>
                 <code value="343086"/>
+                <display value="lansoprazole 15 MG"/>
             </concept>
             <concept>
-                <display value="lansoprazole 30 MG"/>
                 <code value="343108"/>
+                <display value="lansoprazole 30 MG"/>
             </concept>
             <concept>
-                <display value="lansoprazole 1 MG/ML"/>
                 <code value="353363"/>
+                <display value="lansoprazole 1 MG/ML"/>
             </concept>
             <concept>
-                <display value="lansoprazole 0.5 MG/ML"/>
                 <code value="353364"/>
+                <display value="lansoprazole 0.5 MG/ML"/>
             </concept>
             <concept>
-                <display value="lansoprazole 6 MG/ML"/>
                 <code value="477261"/>
+                <display value="lansoprazole 6 MG/ML"/>
             </concept>
             <concept>
-                <display value="lansoprazole Delayed Release Oral Capsule"/>
                 <code value="378648"/>
+                <display value="lansoprazole Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="lansoprazole Injectable Solution"/>
                 <code value="477263"/>
+                <display value="lansoprazole Injectable Solution"/>
             </concept>
             <concept>
-                <display value="lansoprazole Oral Suspension"/>
                 <code value="562810"/>
+                <display value="lansoprazole Oral Suspension"/>
             </concept>
             <concept>
-                <display value="lansoprazole Disintegrating Oral Tablet"/>
                 <code value="706238"/>
+                <display value="lansoprazole Disintegrating Oral Tablet"/>
             </concept>
             <concept>
-                <display value="lansoprazole Injectable Product"/>
                 <code value="1162543"/>
+                <display value="lansoprazole Injectable Product"/>
             </concept>
             <concept>
-                <display value="lansoprazole Oral Liquid Product"/>
                 <code value="1162544"/>
+                <display value="lansoprazole Oral Liquid Product"/>
             </concept>
             <concept>
-                <display value="lansoprazole Oral Product"/>
                 <code value="1162545"/>
+                <display value="lansoprazole Oral Product"/>
             </concept>
             <concept>
-                <display value="lansoprazole Pill"/>
                 <code value="1162546"/>
+                <display value="lansoprazole Pill"/>
             </concept>
             <concept>
-                <display value="lansoprazole Disintegrating Oral Product"/>
                 <code value="1295364"/>
+                <display value="lansoprazole Disintegrating Oral Product"/>
             </concept>
             <concept>
-                <display value="Prevacid Oral Product"/>
                 <code value="1177101"/>
+                <display value="Prevacid Oral Product"/>
             </concept>
             <concept>
-                <display value="Prevacid Pill"/>
                 <code value="1177102"/>
+                <display value="Prevacid Pill"/>
             </concept>
             <concept>
-                <display value="Prevacid Disintegrating Oral Product"/>
                 <code value="1296812"/>
+                <display value="Prevacid Disintegrating Oral Product"/>
             </concept>
         </include>
     </compose>

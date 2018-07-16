@@ -55,17 +55,217 @@
    "valuesets":[
 
    ],
-   "fixed-business-version":"0.0.0",
+
    "searches":[
 
    ],
    "version":"3.4.0",
    "license":"",
    "resources":{
-    "ValueSet/valueset-topicaldiclofenac": {
-      "base": "ValueSet-valueset-topicaldiclofenac.html",
-      "source": "valueset-topicaldiclofenac.xml"
-    },
+     "ValueSet/valueset-aldosterone": {
+         "base": "ValueSet-valueset-aldosterone.html",
+         "source": "valueset-aldosterone.xml"
+      },
+     "ValueSet/valueset-aspirin": {
+       "base": "ValueSet-valueset-aspirin.html",
+       "source": "valueset-aspirin.xml"
+     },
+     "ValueSet/valueset-betamethasone": {
+       "base": "ValueSet-valueset-betamethasone.html",
+       "source": "valueset-betamethasone.xml"
+     },
+     "ValueSet/valueset-bromfenac": {
+       "base": "ValueSet-valueset-bromfenac.html",
+       "source": "valueset-bromfenac.xml"
+     },
+     "ValueSet/valueset-celecoxib": {
+       "base": "ValueSet-valueset-celecoxib.html",
+       "source": "valueset-celecoxib.xml"
+     },
+     "ValueSet/valueset-cloprednol": {
+       "base": "ValueSet-valueset-cloprednol.html",
+       "source": "valueset-cloprednol.xml"
+     },
+     "ValueSet/valueset-cortisone": {
+       "base": "ValueSet-valueset-cortisone.html",
+       "source": "valueset-cortisone.xml"
+     },
+     "ValueSet/valueset-cortivazol": {
+       "base": "ValueSet-valueset-cortivazol.html",
+       "source": "valueset-cortivazol.xml"
+     },
+     "ValueSet/valueset-deflazacort": {
+       "base": "ValueSet-valueset-deflazacort.html",
+       "source": "valueset-deflazacort.xml"
+     },
+     "ValueSet/valueset-desoxycorticosterone": {
+       "base": "ValueSet-valueset-desoxycorticosterone.html",
+       "source": "valueset-desoxycorticosterone.xml"
+     },
+     "ValueSet/valueset-dexamethasone": {
+       "base": "ValueSet-valueset-dexamethasone.html",
+       "source": "valueset-dexamethasone.xml"
+     },
+     "ValueSet/valueset-dexlansoprazole": {
+       "base": "ValueSet-valueset-dexlansoprazole.html",
+       "source": "valueset-dexlansoprazole.xml"
+     },
+     "ValueSet/valueset-diclofenac": {
+       "base": "ValueSet-valueset-diclofenac.html",
+       "source": "valueset-diclofenac.xml"
+     },
+     "ValueSet/valueset-diflunisal": {
+       "base": "ValueSet-valueset-diflunisal.html",
+       "source": "valueset-diflunisal.xml"
+     },
+     "ValueSet/valueset-eplerenone": {
+       "base": "ValueSet-valueset-eplerenone.html",
+       "source": "valueset-eplerenone.xml"
+     },
+     "ValueSet/valueset-esomeprazole": {
+       "base": "ValueSet-valueset-esomeprazole.html",
+       "source": "valueset-esomeprazole.xml"
+     },
+     "ValueSet/valueset-etodolac": {
+       "base": "ValueSet-valueset-etodolac.html",
+       "source": "valueset-etodolac.xml"
+     },
+     "ValueSet/valueset-fenoprofen": {
+       "base": "ValueSet-valueset-fenoprofen.html",
+       "source": "valueset-fenoprofen.xml"
+     },
+     "ValueSet/valueset-fludrocortisone": {
+       "base": "ValueSet-valueset-fludrocortisone.html",
+       "source": "valueset-fludrocortisone.xml"
+     },
+     "ValueSet/valueset-flurbiprofen": {
+       "base": "ValueSet-valueset-flurbiprofen.html",
+       "source": "valueset-flurbiprofen.xml"
+     },
+     "ValueSet/valueset-Hx-UGIB-snomed": {
+       "base": "ValueSet-valueset-Hx-UGIB-snomed.html",
+       "source": "valueset-Hx-UGIB-snomed.xml"
+     },
+     "ValueSet/valueset-hydrocortisone": {
+       "base": "ValueSet-valueset-hydrocortisone.html",
+       "source": "valueset-hydrocortisone.xml"
+     },
+     "ValueSet/valueset-ibuprofen": {
+       "base": "ValueSet-valueset-ibuprofen.html",
+       "source": "valueset-ibuprofen.xml"
+     },
+     "ValueSet/valueset-indomethacin": {
+       "base": "ValueSet-valueset-indomethacin.html",
+       "source": "valueset-indomethacin.xml"
+     },
+     "ValueSet/valueset-ketoprofen": {
+       "base": "ValueSet-valueset-ketoprofen.html",
+       "source": "valueset-ketoprofen.xml"
+     },
+    "ValueSet/valueset-ketorolac": {
+      "base": "ValueSet-valueset-ketorolac.html",
+      "source": "valueset-ketorolac.xml"
+     },
+     "ValueSet/valueset-lansoprazole": {
+       "base": "ValueSet-valueset-lansoprazole.html",
+       "source": "valueset-lansoprazole.xml"
+      },
+     "ValueSet/valueset-mefenamate": {
+       "base": "ValueSet-valueset-mefenamate.html",
+       "source": "valueset-mefenamate.xml"
+      },
+       "ValueSet/valueset-meloxicam": {
+         "base": "ValueSet-valueset-meloxicam.html",
+         "source": "valueset-meloxicam.xml"
+      },
+       "ValueSet/valueset-meprednisone": {
+         "base": "ValueSet-valueset-meprednisone.html",
+         "source": "valueset-meprednisone.xml"
+      },
+         "ValueSet/valueset-methylprednisolone": {
+           "base": "ValueSet-valueset-methylprednisolone.html",
+           "source": "valueset-methylprednisolone.xml"
+      },
+      "ValueSet/valueset-misoprostol": {
+        "base": "ValueSet-valueset-misoprostol.html",
+        "source": "valueset-misoprostol.xml"
+      },
+     "ValueSet/valueset-nabumetone": {
+       "base": "ValueSet-valueset-nabumetone.html",
+       "source": "valueset-nabumetone.xml"
+     },
+     "ValueSet/valueset-naproxen": {
+       "base": "ValueSet-valueset-naproxen.html",
+       "source": "valueset-naproxen.xml"
+     },
+     "ValueSet/valueset-nepafenac": {
+       "base": "ValueSet-valueset-nepafenac.html",
+       "source": "valueset-nepafenac.xml"
+     },
+     "ValueSet/valueset-omeprazole": {
+       "base": "ValueSet-valueset-omeprazole.html",
+       "source": "valueset-omeprazole.xml"
+     },
+     "ValueSet/valueset-oxaprozin": {
+       "base": "ValueSet-valueset-oxaprozin.html",
+       "source": "valueset-oxaprozin.xml"
+     },
+     "ValueSet/valueset-pantoprazole": {
+       "base": "ValueSet-valueset-pantoprazole.html",
+       "source": "valueset-pantoprazole.xml"
+     },
+     "ValueSet/valueset-paramethasone": {
+       "base": "ValueSet-valueset-paramethasone.html",
+       "source": "valueset-paramethasone.xml"
+     },
+     "ValueSet/valueset-piroxicam": {
+       "base": "ValueSet-valueset-piroxicam.html",
+       "source": "valueset-piroxicam.xml"
+     },
+     "ValueSet/valueset-prednisolone": {
+       "base": "ValueSet-valueset-prednisolone.html",
+       "source": "valueset-prednisolone.xml"
+     },
+     "ValueSet/valueset-prednisone": {
+       "base": "ValueSet-valueset-prednisone.html",
+       "source": "valueset-prednisone.xml"
+     },
+     "ValueSet/valueset-prednylidene": {
+       "base": "ValueSet-valueset-prednylidene.html",
+       "source": "valueset-prednylidene.xml"
+     },
+     "ValueSet/valueset-rabeprazole": {
+       "base": "ValueSet-valueset-rabeprazole.html",
+       "source": "valueset-rabeprazole.xml"
+     },
+     "ValueSet/valueset-rimexolone": {
+       "base": "ValueSet-valueset-rimexolone.html",
+       "source": "valueset-rimexolone.xml"
+     },
+     "ValueSet/valueset-spironolactone": {
+       "base": "ValueSet-valueset-spironolactone.html",
+       "source": "valueset-spironolactone.xml"
+     },
+     "ValueSet/valueset-sulindac": {
+       "base": "ValueSet-valueset-sulindac.html",
+       "source": "valueset-sulindac.xml"
+     },
+     "ValueSet/valueset-tolmetin": {
+       "base": "ValueSet-valueset-tolmetin.html",
+       "source": "valueset-tolmetin.xml"
+     },
+     "ValueSet/valueset-triamcinolone": {
+       "base": "ValueSet-valueset-triamcinolone.html",
+       "source": "valueset-triamcinolone.xml"
+     },
+     "ValueSet/valueset-topicaldiclofenac": {
+       "base": "ValueSet-valueset-topicaldiclofenac.html",
+       "source": "valueset-topicaldiclofenac.xml"
+     },
+     "ValueSet/valueset-trilostane": {
+       "base": "ValueSet-valueset-trilostane.html",
+       "source": "valueset-trilostane.xml"
+     },
      "ValueSet/valueset-warfarin": {
        "base": "ValueSet-valueset-warfarin.html",
        "source": "valueset-warfarin.xml"

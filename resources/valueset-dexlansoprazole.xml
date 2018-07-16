@@ -25,92 +25,92 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Dexilant"/>
                 <code value="902621"/>
+                <display value="Dexilant"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole"/>
                 <code value="816346"/>
+                <display value="dexlansoprazole"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 30 MG Delayed Release Oral Capsule [Dexilant]"/>
                 <code value="902624"/>
+                <display value="dexlansoprazole 30 MG Delayed Release Oral Capsule [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 60 MG Delayed Release Oral Capsule [Dexilant]"/>
                 <code value="902626"/>
+                <display value="dexlansoprazole 60 MG Delayed Release Oral Capsule [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 30 MG Disintegrating Oral Tablet [Dexilant]"/>
                 <code value="1736034"/>
+                <display value="dexlansoprazole 30 MG Disintegrating Oral Tablet [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 30 MG [Dexilant]"/>
                 <code value="902622"/>
+                <display value="dexlansoprazole 30 MG [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 60 MG [Dexilant]"/>
                 <code value="902625"/>
+                <display value="dexlansoprazole 60 MG [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Delayed Release Oral Capsule [Dexilant]"/>
                 <code value="902623"/>
+                <display value="dexlansoprazole Delayed Release Oral Capsule [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Disintegrating Oral Tablet [Dexilant]"/>
                 <code value="1736032"/>
+                <display value="dexlansoprazole Disintegrating Oral Tablet [Dexilant]"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 30 MG Delayed Release Oral Capsule"/>
                 <code value="833204"/>
+                <display value="dexlansoprazole 30 MG Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 60 MG Delayed Release Oral Capsule"/>
                 <code value="833213"/>
+                <display value="dexlansoprazole 60 MG Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 30 MG Disintegrating Oral Tablet"/>
                 <code value="1736031"/>
+                <display value="dexlansoprazole 30 MG Disintegrating Oral Tablet"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 30 MG"/>
                 <code value="833202"/>
+                <display value="dexlansoprazole 30 MG"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole 60 MG"/>
                 <code value="833212"/>
+                <display value="dexlansoprazole 60 MG"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Delayed Release Oral Capsule"/>
                 <code value="833203"/>
+                <display value="dexlansoprazole Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Disintegrating Oral Tablet"/>
                 <code value="1736030"/>
+                <display value="dexlansoprazole Disintegrating Oral Tablet"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Oral Product"/>
                 <code value="1157800"/>
+                <display value="dexlansoprazole Oral Product"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Pill"/>
                 <code value="1157801"/>
+                <display value="dexlansoprazole Pill"/>
             </concept>
             <concept>
-                <display value="dexlansoprazole Disintegrating Oral Product"/>
                 <code value="1736029"/>
+                <display value="dexlansoprazole Disintegrating Oral Product"/>
             </concept>
             <concept>
-                <display value="Dexilant Oral Product"/>
                 <code value="1175841"/>
+                <display value="Dexilant Oral Product"/>
             </concept>
             <concept>
-                <display value="Dexilant Pill"/>
                 <code value="1175842"/>
+                <display value="Dexilant Pill"/>
             </concept>
             <concept>
-                <display value="Dexilant Disintegrating Oral Product"/>
                 <code value="1736033"/>
+                <display value="Dexilant Disintegrating Oral Product"/>
             </concept>
         </include>
     </compose>

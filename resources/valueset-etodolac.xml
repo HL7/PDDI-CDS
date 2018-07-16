@@ -25,100 +25,100 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Lodine"/>
                 <code value="202998"/>
+                <display value="Lodine"/>
             </concept>
             <concept>
-                <display value="Etodolac"/>
                 <code value="24605"/>
+                <display value="Etodolac"/>
             </concept>
             <concept>
-                <display value="Etodolac 400 MG Oral Tablet [Lodine]"/>
                 <code value="206812"/>
+                <display value="Etodolac 400 MG Oral Tablet [Lodine]"/>
             </concept>
             <concept>
-                <display value="Etodolac 400 MG [Lodine]"/>
                 <code value="567619"/>
+                <display value="Etodolac 400 MG [Lodine]"/>
             </concept>
             <concept>
-                <display value="Etodolac Oral Tablet [Lodine]"/>
                 <code value="367620"/>
+                <display value="Etodolac Oral Tablet [Lodine]"/>
             </concept>
             <concept>
-                <display value="Etodolac 200 MG Oral Capsule"/>
                 <code value="197684"/>
+                <display value="Etodolac 200 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Etodolac 300 MG Oral Capsule"/>
                 <code value="197685"/>
+                <display value="Etodolac 300 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Etodolac 400 MG Oral Tablet"/>
                 <code value="197686"/>
+                <display value="Etodolac 400 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Etodolac 500 MG Oral Tablet"/>
                 <code value="199390"/>
+                <display value="Etodolac 500 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="24 HR Etodolac 400 MG Extended Release Oral Tablet"/>
                 <code value="310245"/>
+                <display value="24 HR Etodolac 400 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="24 HR Etodolac 600 MG Extended Release Oral Tablet"/>
                 <code value="310247"/>
+                <display value="24 HR Etodolac 600 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="24 HR Etodolac 500 MG Extended Release Oral Tablet"/>
                 <code value="359500"/>
+                <display value="24 HR Etodolac 500 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Etodolac 200 MG"/>
                 <code value="315906"/>
+                <display value="Etodolac 200 MG"/>
             </concept>
             <concept>
-                <display value="Etodolac 300 MG"/>
                 <code value="315907"/>
+                <display value="Etodolac 300 MG"/>
             </concept>
             <concept>
-                <display value="Etodolac 400 MG"/>
                 <code value="315908"/>
+                <display value="Etodolac 400 MG"/>
             </concept>
             <concept>
-                <display value="Etodolac 500 MG"/>
                 <code value="315909"/>
+                <display value="Etodolac 500 MG"/>
             </concept>
             <concept>
-                <display value="Etodolac 600 MG"/>
                 <code value="315910"/>
+                <display value="Etodolac 600 MG"/>
             </concept>
             <concept>
-                <display value="Etodolac Oral Capsule"/>
                 <code value="372125"/>
+                <display value="Etodolac Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Etodolac Oral Tablet"/>
                 <code value="372126"/>
+                <display value="Etodolac Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Etodolac Extended Release Oral Tablet"/>
                 <code value="379169"/>
+                <display value="Etodolac Extended Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Etodolac Oral Product"/>
                 <code value="1157924"/>
+                <display value="Etodolac Oral Product"/>
             </concept>
             <concept>
-                <display value="Etodolac Pill"/>
                 <code value="1157925"/>
+                <display value="Etodolac Pill"/>
             </concept>
             <concept>
-                <display value="Lodine Oral Product"/>
                 <code value="1179157"/>
+                <display value="Lodine Oral Product"/>
             </concept>
             <concept>
-                <display value="Lodine Pill"/>
                 <code value="1179158"/>
+                <display value="Lodine Pill"/>
             </concept>
         </include>
     </compose>

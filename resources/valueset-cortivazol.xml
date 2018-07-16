@@ -25,8 +25,8 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="cortivazol"/>
                 <code value="21660"/>
+                <display value="cortivazol"/>
             </concept>
         </include>
     </compose>

@@ -25,124 +25,124 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Protonix"/>
                 <code value="261624"/>
+                <display value="Protonix"/>
             </concept>
             <concept>
-                <display value="pantoprazole"/>
                 <code value="40790"/>
+                <display value="pantoprazole"/>
             </concept>
             <concept>
-                <display value="pantoprazole (as pantoprazole sodium sesquihydrate)"/>
                 <code value="236632"/>
+                <display value="pantoprazole (as pantoprazole sodium sesquihydrate)"/>
             </concept>
             <concept>
-                <display value="Pantoprazole sodium"/>
                 <code value="253191"/>
+                <display value="Pantoprazole sodium"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG Delayed Release Oral Tablet [Protonix]"/>
                 <code value="284400"/>
+                <display value="pantoprazole 40 MG Delayed Release Oral Tablet [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole 20 MG Delayed Release Oral Tablet [Protonix]"/>
                 <code value="352125"/>
+                <display value="pantoprazole 20 MG Delayed Release Oral Tablet [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG Oral Granules [Protonix]"/>
                 <code value="763308"/>
+                <display value="pantoprazole 40 MG Oral Granules [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG Injection [Protonix]"/>
                 <code value="885257"/>
+                <display value="pantoprazole 40 MG Injection [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole 20 MG [Protonix]"/>
                 <code value="542443"/>
+                <display value="pantoprazole 20 MG [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG [Protonix]"/>
                 <code value="542447"/>
+                <display value="pantoprazole 40 MG [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole Delayed Release Oral Tablet [Protonix]"/>
                 <code value="369821"/>
+                <display value="pantoprazole Delayed Release Oral Tablet [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole Oral Granules [Protonix]"/>
                 <code value="763307"/>
+                <display value="pantoprazole Oral Granules [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole Injection [Protonix]"/>
                 <code value="1737589"/>
+                <display value="pantoprazole Injection [Protonix]"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG Injection"/>
                 <code value="283669"/>
+                <display value="pantoprazole 40 MG Injection"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG Delayed Release Oral Tablet"/>
                 <code value="314200"/>
+                <display value="pantoprazole 40 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG Oral Granules"/>
                 <code value="763306"/>
+                <display value="pantoprazole 40 MG Oral Granules"/>
             </concept>
             <concept>
-                <display value="pantoprazole 20 MG Delayed Release Oral Tablet"/>
                 <code value="251872"/>
+                <display value="pantoprazole 20 MG Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="pantoprazole 40 MG"/>
                 <code value="330396"/>
+                <display value="pantoprazole 40 MG"/>
             </concept>
             <concept>
-                <display value="pantoprazole 20 MG"/>
                 <code value="336764"/>
+                <display value="pantoprazole 20 MG"/>
             </concept>
             <concept>
-                <display value="pantoprazole Delayed Release Oral Tablet"/>
                 <code value="373222"/>
+                <display value="pantoprazole Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="pantoprazole Oral Granules"/>
                 <code value="763305"/>
+                <display value="pantoprazole Oral Granules"/>
             </concept>
             <concept>
-                <display value="pantoprazole Injection"/>
                 <code value="1737587"/>
+                <display value="pantoprazole Injection"/>
             </concept>
             <concept>
-                <display value="pantoprazole Injectable Product"/>
                 <code value="1160733"/>
+                <display value="pantoprazole Injectable Product"/>
             </concept>
             <concept>
-                <display value="pantoprazole Oral Product"/>
                 <code value="1160735"/>
+                <display value="pantoprazole Oral Product"/>
             </concept>
             <concept>
-                <display value="pantoprazole Pill"/>
                 <code value="1160736"/>
+                <display value="pantoprazole Pill"/>
             </concept>
             <concept>
-                <display value="pantoprazole Granule Product"/>
                 <code value="1295163"/>
+                <display value="pantoprazole Granule Product"/>
             </concept>
             <concept>
-                <display value="Protonix Injectable Product"/>
                 <code value="1182454"/>
+                <display value="Protonix Injectable Product"/>
             </concept>
             <concept>
-                <display value="Protonix Oral Product"/>
                 <code value="1182455"/>
+                <display value="Protonix Oral Product"/>
             </concept>
             <concept>
-                <display value="Protonix Pill"/>
                 <code value="1182456"/>
+                <display value="Protonix Pill"/>
             </concept>
             <concept>
-                <display value="Protonix Granule Product"/>
                 <code value="1296856"/>
+                <display value="Protonix Granule Product"/>
             </concept>
         </include>
     </compose>

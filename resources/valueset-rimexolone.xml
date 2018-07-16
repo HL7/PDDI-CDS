@@ -25,44 +25,44 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Vexol"/>
                 <code value="220785"/>
+                <display value="Vexol"/>
             </concept>
             <concept>
-                <display value="rimexolone"/>
                 <code value="55681"/>
+                <display value="rimexolone"/>
             </concept>
             <concept>
-                <display value="rimexolone 10 MG/ML Ophthalmic Suspension [Vexol]"/>
                 <code value="207446"/>
+                <display value="rimexolone 10 MG/ML Ophthalmic Suspension [Vexol]"/>
             </concept>
             <concept>
-                <display value="rimexolone 10 MG/ML [Vexol]"/>
                 <code value="568209"/>
+                <display value="rimexolone 10 MG/ML [Vexol]"/>
             </concept>
             <concept>
-                <display value="rimexolone Ophthalmic Suspension [Vexol]"/>
                 <code value="365826"/>
+                <display value="rimexolone Ophthalmic Suspension [Vexol]"/>
             </concept>
             <concept>
-                <display value="rimexolone 10 MG/ML Ophthalmic Suspension"/>
                 <code value="199115"/>
+                <display value="rimexolone 10 MG/ML Ophthalmic Suspension"/>
             </concept>
             <concept>
-                <display value="rimexolone 10 MG/ML"/>
                 <code value="328510"/>
+                <display value="rimexolone 10 MG/ML"/>
             </concept>
             <concept>
-                <display value="rimexolone Ophthalmic Suspension"/>
                 <code value="379299"/>
+                <display value="rimexolone Ophthalmic Suspension"/>
             </concept>
             <concept>
-                <display value="rimexolone Ophthalmic Product"/>
                 <code value="1157440"/>
+                <display value="rimexolone Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Vexol Ophthalmic Product"/>
                 <code value="1188083"/>
+                <display value="Vexol Ophthalmic Product"/>
             </concept>
         </include>
     </compose>

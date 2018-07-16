@@ -25,76 +25,76 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Inspra"/>
                 <code value="342280"/>
+                <display value="Inspra"/>
             </concept>
             <concept>
-                <display value="eplerenone"/>
                 <code value="298869"/>
+                <display value="eplerenone"/>
             </concept>
             <concept>
-                <display value="eplerenone 50 MG Oral Tablet [Inspra]"/>
                 <code value="402105"/>
+                <display value="eplerenone 50 MG Oral Tablet [Inspra]"/>
             </concept>
             <concept>
-                <display value="eplerenone 25 MG Oral Tablet [Inspra]"/>
                 <code value="402106"/>
+                <display value="eplerenone 25 MG Oral Tablet [Inspra]"/>
             </concept>
             <concept>
-                <display value="eplerenone 50 MG [Inspra]"/>
                 <code value="576107"/>
+                <display value="eplerenone 50 MG [Inspra]"/>
             </concept>
             <concept>
-                <display value="eplerenone 25 MG [Inspra]"/>
                 <code value="576108"/>
+                <display value="eplerenone 25 MG [Inspra]"/>
             </concept>
             <concept>
-                <display value="eplerenone Oral Tablet [Inspra]"/>
                 <code value="402363"/>
+                <display value="eplerenone Oral Tablet [Inspra]"/>
             </concept>
             <concept>
-                <display value="eplerenone 25 MG Oral Tablet"/>
                 <code value="351256"/>
+                <display value="eplerenone 25 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="eplerenone 50 MG Oral Tablet"/>
                 <code value="351257"/>
+                <display value="eplerenone 50 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="eplerenone 100 MG Oral Tablet"/>
                 <code value="351258"/>
+                <display value="eplerenone 100 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="eplerenone 25 MG"/>
                 <code value="353386"/>
+                <display value="eplerenone 25 MG"/>
             </concept>
             <concept>
-                <display value="eplerenone 50 MG"/>
                 <code value="353387"/>
+                <display value="eplerenone 50 MG"/>
             </concept>
             <concept>
-                <display value="eplerenone 100 MG"/>
                 <code value="353388"/>
+                <display value="eplerenone 100 MG"/>
             </concept>
             <concept>
-                <display value="eplerenone Oral Tablet"/>
                 <code value="378726"/>
+                <display value="eplerenone Oral Tablet"/>
             </concept>
             <concept>
-                <display value="eplerenone Oral Product"/>
                 <code value="1161909"/>
+                <display value="eplerenone Oral Product"/>
             </concept>
             <concept>
-                <display value="eplerenone Pill"/>
                 <code value="1161910"/>
+                <display value="eplerenone Pill"/>
             </concept>
             <concept>
-                <display value="Inspra Oral Product"/>
                 <code value="1173417"/>
+                <display value="Inspra Oral Product"/>
             </concept>
             <concept>
-                <display value="Inspra Pill"/>
                 <code value="1173418"/>
+                <display value="Inspra Pill"/>
             </concept>
         </include>
     </compose>

@@ -28,7 +28,8 @@
             <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-eplerenone.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-spironolactone.xml"/>
+            <valueSet
+                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-spironolactone.xml"/>
         </include>
     </compose>
 </ValueSet>

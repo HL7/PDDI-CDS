@@ -25,36 +25,36 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Fludrocortisone"/>
                 <code value="4452"/>
+                <display value="Fludrocortisone"/>
             </concept>
             <concept>
-                <display value="Fludrocortisone / hexamidine / selenium sulfide"/>
                 <code value="1007783"/>
+                <display value="Fludrocortisone / hexamidine / selenium sulfide"/>
             </concept>
             <concept>
-                <display value="fluorocortisol acetate"/>
                 <code value="165516"/>
+                <display value="fluorocortisol acetate"/>
             </concept>
             <concept>
-                <display value="Fludrocortisone 0.1 MG Oral Tablet"/>
                 <code value="313979"/>
+                <display value="Fludrocortisone 0.1 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Fludrocortisone 0.1 MG"/>
                 <code value="328433"/>
+                <display value="Fludrocortisone 0.1 MG"/>
             </concept>
             <concept>
-                <display value="Fludrocortisone Oral Tablet"/>
                 <code value="372213"/>
+                <display value="Fludrocortisone Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Fludrocortisone Oral Product"/>
                 <code value="1160242"/>
+                <display value="Fludrocortisone Oral Product"/>
             </concept>
             <concept>
-                <display value="Fludrocortisone Pill"/>
                 <code value="1160243"/>
+                <display value="Fludrocortisone Pill"/>
             </concept>
         </include>
     </compose>

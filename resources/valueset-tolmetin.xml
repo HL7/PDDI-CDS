@@ -25,52 +25,52 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Tolmetin"/>
                 <code value="10636"/>
+                <display value="Tolmetin"/>
             </concept>
             <concept>
-                <display value="Tolmetin Sodium"/>
                 <code value="42935"/>
+                <display value="Tolmetin Sodium"/>
             </concept>
             <concept>
-                <display value="Tolmetin 200 MG Oral Tablet"/>
                 <code value="198295"/>
+                <display value="Tolmetin 200 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Tolmetin 400 MG Oral Capsule"/>
                 <code value="198296"/>
+                <display value="Tolmetin 400 MG Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Tolmetin 600 MG Oral Tablet"/>
                 <code value="198297"/>
+                <display value="Tolmetin 600 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Tolmetin 200 MG"/>
                 <code value="328642"/>
+                <display value="Tolmetin 200 MG"/>
             </concept>
             <concept>
-                <display value="Tolmetin 400 MG"/>
                 <code value="328644"/>
+                <display value="Tolmetin 400 MG"/>
             </concept>
             <concept>
-                <display value="Tolmetin 600 MG"/>
                 <code value="328645"/>
+                <display value="Tolmetin 600 MG"/>
             </concept>
             <concept>
-                <display value="Tolmetin Oral Capsule"/>
                 <code value="374155"/>
+                <display value="Tolmetin Oral Capsule"/>
             </concept>
             <concept>
-                <display value="Tolmetin Oral Tablet"/>
                 <code value="374157"/>
+                <display value="Tolmetin Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Tolmetin Oral Product"/>
                 <code value="1157646"/>
+                <display value="Tolmetin Oral Product"/>
             </concept>
             <concept>
-                <display value="Tolmetin Pill"/>
                 <code value="1157647"/>
+                <display value="Tolmetin Pill"/>
             </concept>
         </include>
     </compose>

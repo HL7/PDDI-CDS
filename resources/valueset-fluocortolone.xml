@@ -25,62 +25,62 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Fluocortolone"/>
                 <code value="4463"/>
+                <display value="Fluocortolone"/>
             </concept>
             <concept>
-                <display value="Fluocortolone / Salicylic Acid"/>
                 <code value="1007487"/>
+                <display value="Fluocortolone / Salicylic Acid"/>
             </concept>
             <concept>
-                <display value="Fluocortolone / Lidocaine"/>
                 <code value="1007700"/>
+                <display value="Fluocortolone / Lidocaine"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Caproate"/>
                 <code value="4464"/>
+                <display value="Fluocortolone Caproate"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Pivalate"/>
                 <code value="4465"/>
+                <display value="Fluocortolone Pivalate"/>
             </concept>
             <concept>
+                <code value="103461"/>
                 <display value="Fluocortolone Caproate 2.5 MG/ML / Fluocortolone Pivalate
                     2.5 MG/ML Topical Cream"/>
-                <code value="103461"/>
             </concept>
             <concept>
+                <code value="103462"/>
                 <display value="Fluocortolone Caproate 0.0025 MG/MG / Fluocortolone Pivalate
                     0.0025 MG/MG Topical Ointment"/>
-                <code value="103462"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Caproate 2.5 MG/ML"/>
                 <code value="392958"/>
+                <display value="Fluocortolone Caproate 2.5 MG/ML"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Pivalate 2.5 MG/ML"/>
                 <code value="392959"/>
+                <display value="Fluocortolone Pivalate 2.5 MG/ML"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Caproate 0.0025 MG/MG"/>
                 <code value="392962"/>
+                <display value="Fluocortolone Caproate 0.0025 MG/MG"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Pivalate 0.0025 MG/MG"/>
                 <code value="439746"/>
+                <display value="Fluocortolone Pivalate 0.0025 MG/MG"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Topical Cream"/>
                 <code value="392955"/>
+                <display value="Fluocortolone Topical Cream"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Topical Ointment"/>
                 <code value="392957"/>
+                <display value="Fluocortolone Topical Ointment"/>
             </concept>
             <concept>
-                <display value="Fluocortolone Topical Product"/>
                 <code value="1160822"/>
+                <display value="Fluocortolone Topical Product"/>
             </concept>
         </include>
     </compose>

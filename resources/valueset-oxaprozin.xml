@@ -25,64 +25,64 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Daypro"/>
                 <code value="157381"/>
+                <display value="Daypro"/>
             </concept>
             <concept>
-                <display value="oxaprozin"/>
                 <code value="32613"/>
+                <display value="oxaprozin"/>
             </concept>
             <concept>
-                <display value="Oxaprozin potassium"/>
                 <code value="660767"/>
+                <display value="Oxaprozin potassium"/>
             </concept>
             <concept>
-                <display value="oxaprozin 600 MG Oral Tablet [Daypro]"/>
                 <code value="207243"/>
+                <display value="oxaprozin 600 MG Oral Tablet [Daypro]"/>
             </concept>
             <concept>
-                <display value="oxaprozin 600 MG [Daypro]"/>
                 <code value="568030"/>
+                <display value="oxaprozin 600 MG [Daypro]"/>
             </concept>
             <concept>
-                <display value="oxaprozin Oral Tablet [Daypro]"/>
                 <code value="368765"/>
+                <display value="oxaprozin Oral Tablet [Daypro]"/>
             </concept>
             <concept>
-                <display value="oxaprozin 600 MG Oral Tablet"/>
                 <code value="312132"/>
+                <display value="oxaprozin 600 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="oxaprozin 600 MG Delayed Release Oral Capsule"/>
                 <code value="349188"/>
+                <display value="oxaprozin 600 MG Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="oxaprozin 600 MG"/>
                 <code value="316413"/>
+                <display value="oxaprozin 600 MG"/>
             </concept>
             <concept>
-                <display value="oxaprozin Oral Tablet"/>
                 <code value="373169"/>
+                <display value="oxaprozin Oral Tablet"/>
             </concept>
             <concept>
-                <display value="oxaprozin Delayed Release Oral Capsule"/>
                 <code value="378275"/>
+                <display value="oxaprozin Delayed Release Oral Capsule"/>
             </concept>
             <concept>
-                <display value="oxaprozin Oral Product"/>
                 <code value="1160122"/>
+                <display value="oxaprozin Oral Product"/>
             </concept>
             <concept>
-                <display value="oxaprozin Pill"/>
                 <code value="1160123"/>
+                <display value="oxaprozin Pill"/>
             </concept>
             <concept>
-                <display value="Daypro Oral Product"/>
                 <code value="1168832"/>
+                <display value="Daypro Oral Product"/>
             </concept>
             <concept>
-                <display value="Daypro Pill"/>
                 <code value="1168833"/>
+                <display value="Daypro Pill"/>
             </concept>
         </include>
     </compose>

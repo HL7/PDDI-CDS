@@ -46,13 +46,15 @@
             <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-fenoprofen.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-flurbiprofen.xml"/>
+            <valueSet
+                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-flurbiprofen.xml"/>
         </include>
         <include>
             <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-ibuprofen.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-indomethacin.xml"/>
+            <valueSet
+                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-indomethacin.xml"/>
         </include>
         <include>
             <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-ketoprofen.xml"/>

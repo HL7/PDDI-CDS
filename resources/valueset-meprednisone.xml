@@ -25,12 +25,12 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="meprednisone"/>
                 <code value="29523"/>
+                <display value="meprednisone"/>
             </concept>
             <concept>
-                <display value="meprednisone disodium phosphate"/>
                 <code value="1742508"/>
+                <display value="meprednisone disodium phosphate"/>
             </concept>
         </include>
     </compose>

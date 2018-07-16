@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac"/>
     <id value="valueset-bromfenac"/>
     <version value="US 1.1"/>
-    <display value="valueset-bromfenac"/>
-    <title value="Bromfenac Value Set"/>
+    <name value="valueset-bromfenac"/>
+    <title value="Bromfenac Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
@@ -24,104 +25,104 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Bromday"/>
                 <code value="1020507"/>
+                <display value="Bromday"/>
             </concept>
             <concept>
-                <display value="Prolensa"/>
                 <code value="1375918"/>
+                <display value="Prolensa"/>
             </concept>
             <concept>
-                <display value="Bromsite"/>
                 <code value="1790142"/>
+                <display value="Bromsite"/>
             </concept>
             <concept>
-                <display value="bromfenac"/>
                 <code value="19737"/>
+                <display value="bromfenac"/>
             </concept>
             <concept>
-                <display value="Bromfenac sodium"/>
                 <code value="47364"/>
+                <display value="Bromfenac sodium"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.9 MG/ML Ophthalmic Solution [Bromday]"/>
                 <code value="1020510"/>
+                <display value="bromfenac 0.9 MG/ML Ophthalmic Solution [Bromday]"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.7 MG/ML Ophthalmic Solution [Prolensa]"/>
                 <code value="1375922"/>
+                <display value="bromfenac 0.7 MG/ML Ophthalmic Solution [Prolensa]"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.75 MG/ML Ophthalmic Solution [Bromsite]"/>
                 <code value="1790146"/>
+                <display value="bromfenac 0.75 MG/ML Ophthalmic Solution [Bromsite]"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.9 MG/ML [Bromday]"/>
                 <code value="1020508"/>
+                <display value="bromfenac 0.9 MG/ML [Bromday]"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.7 MG/ML [Prolensa]"/>
                 <code value="1375919"/>
+                <display value="bromfenac 0.7 MG/ML [Prolensa]"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.75 MG/ML [Bromsite]"/>
                 <code value="1790143"/>
+                <display value="bromfenac 0.75 MG/ML [Bromsite]"/>
             </concept>
             <concept>
-                <display value="bromfenac Ophthalmic Solution [Bromday]"/>
                 <code value="1020509"/>
+                <display value="bromfenac Ophthalmic Solution [Bromday]"/>
             </concept>
             <concept>
-                <display value="bromfenac Ophthalmic Solution [Prolensa]"/>
                 <code value="1375920"/>
+                <display value="bromfenac Ophthalmic Solution [Prolensa]"/>
             </concept>
             <concept>
-                <display value="bromfenac Ophthalmic Solution [Bromsite]"/>
                 <code value="1790144"/>
+                <display value="bromfenac Ophthalmic Solution [Bromsite]"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.9 MG/ML Ophthalmic Solution"/>
                 <code value="578018"/>
+                <display value="bromfenac 0.9 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.7 MG/ML Ophthalmic Solution"/>
                 <code value="1375917"/>
+                <display value="bromfenac 0.7 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.75 MG/ML Ophthalmic Solution"/>
                 <code value="1790141"/>
+                <display value="bromfenac 0.75 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.9 MG/ML"/>
                 <code value="578016"/>
+                <display value="bromfenac 0.9 MG/ML"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.7 MG/ML"/>
                 <code value="1375916"/>
+                <display value="bromfenac 0.7 MG/ML"/>
             </concept>
             <concept>
-                <display value="bromfenac 0.75 MG/ML"/>
                 <code value="1790140"/>
+                <display value="bromfenac 0.75 MG/ML"/>
             </concept>
             <concept>
-                <display value="bromfenac Ophthalmic Solution"/>
                 <code value="578017"/>
+                <display value="bromfenac Ophthalmic Solution"/>
             </concept>
             <concept>
-                <display value="bromfenac Ophthalmic Product"/>
                 <code value="1163102"/>
+                <display value="bromfenac Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Prolensa Ophthalmic Product"/>
                 <code value="1375921"/>
+                <display value="Prolensa Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Bromsite Ophthalmic Product"/>
                 <code value="1790145"/>
+                <display value="Bromsite Ophthalmic Product"/>
             </concept>
             <concept>
-                <display value="Bromday Ophthalmic Product"/>
                 <code value="1166170"/>
+                <display value="Bromday Ophthalmic Product"/>
             </concept>
         </include>
     </compose>

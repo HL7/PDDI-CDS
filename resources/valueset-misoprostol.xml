@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aldosterone"/>
-    <id value="valueset-aldosterone"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-misoprostol"/>
+    <id value="valueset-misoprostol"/>
     <version value="US 1.1"/>
-    <name value="valueset-aldosterone"/>
-    <title value="Aldosterone Medications Value Set"/>
+    <name value="valueset-misoprostol"/>
+    <title value="Misoprostol Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
         <name value="Richard Boyce boycerd@upmc.edu"/>
     </contact>
-    <description value="ValueSet containing drug identifiers for aldosterone."/>
+    <description value="ValueSet containing drug identifiers for misoprostol."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -25,132 +25,132 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <display value="Cytotec"/>
                 <code value="151578"/>
+                <display value="Cytotec"/>
             </concept>
             <concept>
-                <display value="Arthrotec"/>
                 <code value="68373"/>
+                <display value="Arthrotec"/>
             </concept>
             <concept>
-                <display value="Misoprostol"/>
                 <code value="42331"/>
+                <display value="Misoprostol"/>
             </concept>
             <concept>
-                <display value="Misoprostol / Naproxen"/>
                 <code value="106637"/>
+                <display value="Misoprostol / Naproxen"/>
             </concept>
             <concept>
-                <display value="Diclofenac / Misoprostol"/>
                 <code value="214502"/>
+                <display value="Diclofenac / Misoprostol"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.2 MG Oral Tablet [Cytotec]"/>
                 <code value="104098"/>
+                <display value="Misoprostol 0.2 MG Oral Tablet [Cytotec]"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.1 MG Oral Tablet [Cytotec]"/>
                 <code value="209177"/>
+                <display value="Misoprostol 0.1 MG Oral Tablet [Cytotec]"/>
             </concept>
             <concept>
-                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
-                    Oral Tablet [Arthrotec]"/>
                 <code value="1359107"/>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
+                    Oral Tablet [Arthrotec]"/>
             </concept>
             <concept>
+                <code value="1359109"/>
                 <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release
                     Oral Tablet [Arthrotec]"/>
-                <code value="1359109"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.2 MG [Cytotec]"/>
                 <code value="563519"/>
+                <display value="Misoprostol 0.2 MG [Cytotec]"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.1 MG [Cytotec]"/>
                 <code value="569804"/>
+                <display value="Misoprostol 0.1 MG [Cytotec]"/>
             </concept>
             <concept>
-                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG [Arthrotec]"/>
                 <code value="855683"/>
+                <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG [Arthrotec]"/>
             </concept>
             <concept>
-                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG [Arthrotec]"/>
                 <code value="855917"/>
+                <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG [Arthrotec]"/>
             </concept>
             <concept>
-                <display value="Misoprostol Oral Tablet [Cytotec]"/>
                 <code value="369139"/>
+                <display value="Misoprostol Oral Tablet [Cytotec]"/>
             </concept>
             <concept>
-                <display value="Diclofenac / Misoprostol Delayed Release Oral Tablet [Arthrotec]"/>
                 <code value="1808541"/>
+                <display value="Diclofenac / Misoprostol Delayed Release Oral Tablet [Arthrotec]"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.2 MG Oral Tablet"/>
                 <code value="317128"/>
+                <display value="Misoprostol 0.2 MG Oral Tablet"/>
             </concept>
             <concept>
+                <code value="857706"/>
                 <display value="Diclofenac Sodium 50 MG / Misoprostol 0.2 MG Delayed Release
                     Oral Tablet"/>
-                <code value="857706"/>
             </concept>
             <concept>
+                <code value="1359105"/>
                 <display value="Diclofenac Sodium 75 MG / Misoprostol 0.2 MG Delayed Release
                     Oral Tablet"/>
-                <code value="1359105"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.1 MG Oral Tablet"/>
                 <code value="311727"/>
+                <display value="Misoprostol 0.1 MG Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.2 MG"/>
                 <code value="316311"/>
+                <display value="Misoprostol 0.2 MG"/>
             </concept>
             <concept>
-                <display value="Misoprostol 0.1 MG"/>
                 <code value="317431"/>
+                <display value="Misoprostol 0.1 MG"/>
             </concept>
             <concept>
-                <display value="Misoprostol Oral Tablet"/>
                 <code value="372941"/>
+                <display value="Misoprostol Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Diclofenac / Misoprostol Delayed Release Oral Tablet"/>
                 <code value="1808539"/>
+                <display value="Diclofenac / Misoprostol Delayed Release Oral Tablet"/>
             </concept>
             <concept>
-                <display value="Diclofenac / Misoprostol Oral Product"/>
                 <code value="1151144"/>
+                <display value="Diclofenac / Misoprostol Oral Product"/>
             </concept>
             <concept>
-                <display value="Diclofenac / Misoprostol Pill"/>
                 <code value="1151145"/>
+                <display value="Diclofenac / Misoprostol Pill"/>
             </concept>
             <concept>
-                <display value="Misoprostol Oral Product"/>
                 <code value="1165368"/>
+                <display value="Misoprostol Oral Product"/>
             </concept>
             <concept>
-                <display value="Misoprostol Pill"/>
                 <code value="1165369"/>
+                <display value="Misoprostol Pill"/>
             </concept>
             <concept>
-                <display value="Arthrotec Oral Product"/>
                 <code value="1171432"/>
+                <display value="Arthrotec Oral Product"/>
             </concept>
             <concept>
-                <display value="Arthrotec Pill"/>
                 <code value="1171435"/>
+                <display value="Arthrotec Pill"/>
             </concept>
             <concept>
-                <display value="Cytotec Oral Product"/>
                 <code value="1174487"/>
+                <display value="Cytotec Oral Product"/>
             </concept>
             <concept>
-                <display value="Cytotec Pill"/>
                 <code value="1174488"/>
+                <display value="Cytotec Pill"/>
             </concept>
         </include>
     </compose>

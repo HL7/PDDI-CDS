@@ -1,0 +1,360 @@
+= Log =
+Load Configuration from /Users/TomLeslie/PDDI-CDS/ig.json                        (00.0000sec)
+Root directory: /Users/TomLeslie/PDDI-CDS                                        (00.0110sec)
+Check folders                                                                    (00.0118sec)
+Source: /Users/TomLeslie/PDDI-CDS/resources                                      (00.0118sec)
+Source: /Users/TomLeslie/PDDI-CDS/examples                                       (00.0120sec)
+Pages: /Users/TomLeslie/PDDI-CDS/pages                                           (00.0120sec)
+Temp: /Users/TomLeslie/PDDI-CDS/temp                                             (00.0120sec)
+Output: /Users/TomLeslie/PDDI-CDS/output                                         (00.0696sec)
+Temp: /Users/TomLeslie/PDDI-CDS/qa                                               (00.0868sec)
+Terminology Cache is at /Users/TomLeslie/PDDI-CDS/txCache. 155 files in cache    (00.0879sec)
+Load Validation Pack (internal)                                                  (00.0879sec)
+Definitions 3.4.0-13727                                                          (30.0114sec)
+Load Terminology Cache from /Users/TomLeslie/PDDI-CDS/txCache                    (30.0119sec)
+Connect to Terminology Server at http://tx.fhir.org/r4                           (30.0121sec)
+Error : Error sending Http Request: Connect to tx.fhir.org:80 timed out
+   org.hl7.fhir.r4.utils.client.ClientUtils.sendRequest(ClientUtils.java:310)
+   org.hl7.fhir.r4.utils.client.ClientUtils.issueResourceRequest(ClientUtils.java:230)
+   org.hl7.fhir.r4.utils.client.ClientUtils.issueResourceRequest(ClientUtils.java:214)
+   org.hl7.fhir.r4.utils.client.ClientUtils.issueResourceRequest(ClientUtils.java:205)
+   org.hl7.fhir.r4.utils.client.ClientUtils.issueGetResourceRequest(ClientUtils.java:141)
+   org.hl7.fhir.r4.utils.client.FHIRToolingClient.getCapabilitiesStatementQuick(FHIRToolingClient.java:177)
+   org.hl7.fhir.r4.context.SimpleWorkerContext.connectToTSServer(SimpleWorkerContext.java:189)
+   org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:1008)
+   org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:456)
+   org.hl7.fhir.igtools.ui.IGPublisherFrame$BackgroundPublisherTask.doInBackground(IGPublisherFrame.java:250)
+   org.hl7.fhir.igtools.ui.IGPublisherFrame$BackgroundPublisherTask.doInBackground(IGPublisherFrame.java:239)
+   javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+   java.util.concurrent.FutureTask.run(FutureTask.java:266)
+   javax.swing.SwingWorker.run(SwingWorker.java:334)
+   java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+   java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+   java.lang.Thread.run(Thread.java:745)
+
+
+= System =
+ig: /Users/TomLeslie/PDDI-CDS/ig.json
+current.dir: /Users/TomLeslie/PDDI-CDS/.
+ig: /Users/TomLeslie/PDDI-CDS/ig.json
+source: null
+user.dir: /Users/TomLeslie
+tx.server: http://tx.fhir.org/r4
+tx.cache: /Users/TomLeslie/fhircache
+
+= Validation =
+
+
+= IG =
+{
+   "defaults":{
+      "Endpoint":{
+         "template-base":"ex.html"
+      },
+      "Any":{
+         "template-format":"format.html",
+         "template-base":"base.html"
+      },
+      "Bundle":{
+         "template-base":"ex.html"
+      },
+      "ConceptMap":{
+         "template-base":"cm.html"
+      },
+      "StructureDefinition":{
+         "template-defns":"sd-definitions.html",
+         "template-mappings":"sd-mappings.html",
+         "template-examples":"sd-examples.html",
+         "template-base":"sd.html"
+      },
+      "CodeSystem":{
+         "template-base":"codesys.html"
+      },
+      "ValueSet":{
+         "template-base":"vs.html"
+      },
+      "OperationDefinition":{
+         "template-base":"op.html"
+      }
+   },
+   "jurisdiction":"International",
+   "publisher":"HL7 Clinical Decision Support Committee",
+   "status":"draft",
+   "sct-edition":"http://snomed.info/sct/731000124108",
+   "paths":{
+      "txCache":"txCache",
+      "resources":[
+         "resources",
+         "examples"
+      ],
+      "pages":[
+         "pages"
+      ],
+      "temp":"temp",
+      "qa":"qa",
+      "output":"output",
+      "specification":"http://hl7.org/fhir/STU3"
+   },
+   "tool":"jekyll",
+   "spreadsheets":[
+   ],
+   "do-transforms":"false",
+   "canonicalBase":"http://hl7.org/fhir/ig/PDDI-CDS",
+   "valuesets":[
+
+   ],
+
+   "searches":[
+
+   ],
+   "version":"3.4.0",
+   "license":"",
+   "resources":{
+     "ValueSet/valueset-AAS": {
+       "base": "ValueSet-valueset-AAS.html",
+       "source": "valueset-AAS.xml"
+     },
+     "ValueSet/valueset-NSAIDS": {
+       "base": "ValueSet-valueset-NSAIDS.html",
+       "source": "valueset-NSAIDS.xml"
+     },
+     "ValueSet/valueset-PPIS": {
+       "base": "ValueSet-valueset-PPIS.html",
+       "source": "valueset-PPIS.xml"
+     },
+     "ValueSet/valueset-SCS": {
+       "base": "ValueSet-valueset-SCS.html",
+       "source": "valueset-SCS.xml"
+     },
+     "ValueSet/valueset-aldosterone": {
+         "base": "ValueSet-valueset-aldosterone.html",
+         "source": "valueset-aldosterone.xml"
+      },
+     "ValueSet/valueset-aspirin": {
+       "base": "ValueSet-valueset-aspirin.html",
+       "source": "valueset-aspirin.xml"
+     },
+     "ValueSet/valueset-betamethasone": {
+       "base": "ValueSet-valueset-betamethasone.html",
+       "source": "valueset-betamethasone.xml"
+     },
+     "ValueSet/valueset-bromfenac": {
+       "base": "ValueSet-valueset-bromfenac.html",
+       "source": "valueset-bromfenac.xml"
+     },
+     "ValueSet/valueset-celecoxib": {
+       "base": "ValueSet-valueset-celecoxib.html",
+       "source": "valueset-celecoxib.xml"
+     },
+     "ValueSet/valueset-cloprednol": {
+       "base": "ValueSet-valueset-cloprednol.html",
+       "source": "valueset-cloprednol.xml"
+     },
+     "ValueSet/valueset-cortisone": {
+       "base": "ValueSet-valueset-cortisone.html",
+       "source": "valueset-cortisone.xml"
+     },
+     "ValueSet/valueset-cortivazol": {
+       "base": "ValueSet-valueset-cortivazol.html",
+       "source": "valueset-cortivazol.xml"
+     },
+     "ValueSet/valueset-deflazacort": {
+       "base": "ValueSet-valueset-deflazacort.html",
+       "source": "valueset-deflazacort.xml"
+     },
+     "ValueSet/valueset-desoxycorticosterone": {
+       "base": "ValueSet-valueset-desoxycorticosterone.html",
+       "source": "valueset-desoxycorticosterone.xml"
+     },
+     "ValueSet/valueset-dexamethasone": {
+       "base": "ValueSet-valueset-dexamethasone.html",
+       "source": "valueset-dexamethasone.xml"
+     },
+     "ValueSet/valueset-dexlansoprazole": {
+       "base": "ValueSet-valueset-dexlansoprazole.html",
+       "source": "valueset-dexlansoprazole.xml"
+     },
+     "ValueSet/valueset-diclofenac": {
+       "base": "ValueSet-valueset-diclofenac.html",
+       "source": "valueset-diclofenac.xml"
+     },
+     "ValueSet/valueset-diflunisal": {
+       "base": "ValueSet-valueset-diflunisal.html",
+       "source": "valueset-diflunisal.xml"
+     },
+     "ValueSet/valueset-eplerenone": {
+       "base": "ValueSet-valueset-eplerenone.html",
+       "source": "valueset-eplerenone.xml"
+     },
+     "ValueSet/valueset-esomeprazole": {
+       "base": "ValueSet-valueset-esomeprazole.html",
+       "source": "valueset-esomeprazole.xml"
+     },
+     "ValueSet/valueset-etodolac": {
+       "base": "ValueSet-valueset-etodolac.html",
+       "source": "valueset-etodolac.xml"
+     },
+     "ValueSet/valueset-fenoprofen": {
+       "base": "ValueSet-valueset-fenoprofen.html",
+       "source": "valueset-fenoprofen.xml"
+     },
+     "ValueSet/valueset-fludrocortisone": {
+       "base": "ValueSet-valueset-fludrocortisone.html",
+       "source": "valueset-fludrocortisone.xml"
+     },
+     "ValueSet/valueset-flurbiprofen": {
+       "base": "ValueSet-valueset-flurbiprofen.html",
+       "source": "valueset-flurbiprofen.xml"
+     },
+     "ValueSet/valueset-Hx-UGIB-snomed": {
+       "base": "ValueSet-valueset-Hx-UGIB-snomed.html",
+       "source": "valueset-Hx-UGIB-snomed.xml"
+     },
+     "ValueSet/valueset-hydrocortisone": {
+       "base": "ValueSet-valueset-hydrocortisone.html",
+       "source": "valueset-hydrocortisone.xml"
+     },
+     "ValueSet/valueset-ibuprofen": {
+       "base": "ValueSet-valueset-ibuprofen.html",
+       "source": "valueset-ibuprofen.xml"
+     },
+     "ValueSet/valueset-indomethacin": {
+       "base": "ValueSet-valueset-indomethacin.html",
+       "source": "valueset-indomethacin.xml"
+     },
+     "ValueSet/valueset-ketoprofen": {
+       "base": "ValueSet-valueset-ketoprofen.html",
+       "source": "valueset-ketoprofen.xml"
+     },
+    "ValueSet/valueset-ketorolac": {
+      "base": "ValueSet-valueset-ketorolac.html",
+      "source": "valueset-ketorolac.xml"
+     },
+     "ValueSet/valueset-lansoprazole": {
+       "base": "ValueSet-valueset-lansoprazole.html",
+       "source": "valueset-lansoprazole.xml"
+      },
+     "ValueSet/valueset-mefenamate": {
+       "base": "ValueSet-valueset-mefenamate.html",
+       "source": "valueset-mefenamate.xml"
+      },
+       "ValueSet/valueset-meloxicam": {
+         "base": "ValueSet-valueset-meloxicam.html",
+         "source": "valueset-meloxicam.xml"
+      },
+       "ValueSet/valueset-meprednisone": {
+         "base": "ValueSet-valueset-meprednisone.html",
+         "source": "valueset-meprednisone.xml"
+      },
+         "ValueSet/valueset-methylprednisolone": {
+           "base": "ValueSet-valueset-methylprednisolone.html",
+           "source": "valueset-methylprednisolone.xml"
+      },
+      "ValueSet/valueset-misoprostol": {
+        "base": "ValueSet-valueset-misoprostol.html",
+        "source": "valueset-misoprostol.xml"
+      },
+     "ValueSet/valueset-nabumetone": {
+       "base": "ValueSet-valueset-nabumetone.html",
+       "source": "valueset-nabumetone.xml"
+     },
+     "ValueSet/valueset-naproxen": {
+       "base": "ValueSet-valueset-naproxen.html",
+       "source": "valueset-naproxen.xml"
+     },
+     "ValueSet/valueset-nepafenac": {
+       "base": "ValueSet-valueset-nepafenac.html",
+       "source": "valueset-nepafenac.xml"
+     },
+     "ValueSet/valueset-omeprazole": {
+       "base": "ValueSet-valueset-omeprazole.html",
+       "source": "valueset-omeprazole.xml"
+     },
+     "ValueSet/valueset-oxaprozin": {
+       "base": "ValueSet-valueset-oxaprozin.html",
+       "source": "valueset-oxaprozin.xml"
+     },
+     "ValueSet/valueset-pantoprazole": {
+       "base": "ValueSet-valueset-pantoprazole.html",
+       "source": "valueset-pantoprazole.xml"
+     },
+     "ValueSet/valueset-paramethasone": {
+       "base": "ValueSet-valueset-paramethasone.html",
+       "source": "valueset-paramethasone.xml"
+     },
+     "ValueSet/valueset-piroxicam": {
+       "base": "ValueSet-valueset-piroxicam.html",
+       "source": "valueset-piroxicam.xml"
+     },
+     "ValueSet/valueset-prednisolone": {
+       "base": "ValueSet-valueset-prednisolone.html",
+       "source": "valueset-prednisolone.xml"
+     },
+     "ValueSet/valueset-prednisone": {
+       "base": "ValueSet-valueset-prednisone.html",
+       "source": "valueset-prednisone.xml"
+     },
+     "ValueSet/valueset-prednylidene": {
+       "base": "ValueSet-valueset-prednylidene.html",
+       "source": "valueset-prednylidene.xml"
+     },
+     "ValueSet/valueset-rabeprazole": {
+       "base": "ValueSet-valueset-rabeprazole.html",
+       "source": "valueset-rabeprazole.xml"
+     },
+     "ValueSet/valueset-rimexolone": {
+       "base": "ValueSet-valueset-rimexolone.html",
+       "source": "valueset-rimexolone.xml"
+     },
+     "ValueSet/valueset-spironolactone": {
+       "base": "ValueSet-valueset-spironolactone.html",
+       "source": "valueset-spironolactone.xml"
+     },
+     "ValueSet/valueset-sulindac": {
+       "base": "ValueSet-valueset-sulindac.html",
+       "source": "valueset-sulindac.xml"
+     },
+     "ValueSet/valueset-tolmetin": {
+       "base": "ValueSet-valueset-tolmetin.html",
+       "source": "valueset-tolmetin.xml"
+     },
+     "ValueSet/valueset-triamcinolone": {
+       "base": "ValueSet-valueset-triamcinolone.html",
+       "source": "valueset-triamcinolone.xml"
+     },
+     "ValueSet/valueset-topicaldiclofenac": {
+       "base": "ValueSet-valueset-topicaldiclofenac.html",
+       "source": "valueset-topicaldiclofenac.xml"
+     },
+     "ValueSet/valueset-trilostane": {
+       "base": "ValueSet-valueset-trilostane.html",
+       "source": "valueset-trilostane.xml"
+     },
+     "ValueSet/valueset-warfarin": {
+       "base": "ValueSet-valueset-warfarin.html",
+       "source": "valueset-warfarin.xml"
+     }
+   },
+   "extensions":[
+
+   ],
+   "title":"PDDI CDS",
+   "extraTemplates":[
+      "mappings", "examples"
+   ],
+   "special-urls":[
+      "urn:oid:2.16.840.1.113883.6.238"
+   ],
+   "codesystems":[
+
+   ],
+   "source":"ig.xml",
+   "structuremaps":[
+
+   ],
+   "no-inactive-codes":"false",
+   "working-dir":"/git/onc-pd-ig/",
+   "gen-examples":"false"
+}
+
+

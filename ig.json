@@ -62,6 +62,22 @@
    "version":"3.4.0",
    "license":"",
    "resources":{
+     "ValueSet/valueset-AAS": {
+       "base": "ValueSet-valueset-AAS.html",
+       "source": "valueset-AAS.xml"
+     },
+     "ValueSet/valueset-NSAIDS": {
+       "base": "ValueSet-valueset-NSAIDS.html",
+       "source": "valueset-NSAIDS.xml"
+     },
+     "ValueSet/valueset-PPIS": {
+       "base": "ValueSet-valueset-PPIS.html",
+       "source": "valueset-PPIS.xml"
+     },
+     "ValueSet/valueset-SCS": {
+       "base": "ValueSet-valueset-SCS.html",
+       "source": "valueset-SCS.xml"
+     },
      "ValueSet/valueset-aldosterone": {
          "base": "ValueSet-valueset-aldosterone.html",
          "source": "valueset-aldosterone.xml"

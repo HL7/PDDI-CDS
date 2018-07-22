@@ -16,6 +16,34 @@
 		</package>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-AAS"/>
+			</reference>
+			<name value="valueset-AAS"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-NSAIDS"/>
+			</reference>
+			<name value="valueset-NSAIDS"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-PPIS"/>
+			</reference>
+			<name value="valueset-PPIS"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-SCS"/>
+			</reference>
+			<name value="valueset-SCS"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-aldosterone"/>
 			</reference>
 			<name value="valueset-aldosterone"/>

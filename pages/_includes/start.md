@@ -3,8 +3,7 @@
 ## Status
 Currently, there are three PDDI CDS artifacts available in this Implemenation Guide. These specific PDDIs were chosen based on complexity, decision points, and priority. 
 * [Warfarin + NSAIDs](documentation.html) 
-* 
-*
+* [Digoxin + Cyclosporin](documentation.html)
 
 # Process 
 This section provides an overview of the processes and components that were used to develop the PDDI CDS artifacts Artifact specific details can be found in the Documentation section.  
@@ -23,7 +22,13 @@ The initial implementation focus is on Epic and Cerner EHR platforms. Each cite,
 * FHIR resources include but may not be limited to those listed under [Profiles](profiles.html)
 * SMART authentication and FHIR server requests
 
-![Summary](assets/images/Summary_of_operations.png){:height = "800px" width="800px"}
+
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Summary of Operations </strong></figcaption>
+  <img src="assets/images/Summary_of_operations.png" class="figure-img img-responsive img-rounded center-block" alt="Summary_of_operations.png" />
+</figure>
+
 
 #### CDS Hooks
 The PDDI CDS artifacts use the HL7 [CDS Hooks specification](http://cds-hooks.org/specification/1.0/). 
@@ -33,7 +38,12 @@ The CDS Hooks define the data structure to facilitate communication between the 
 The CDS service discovery is invoked for querying data that is needed for an anticipated CDS Hook request. This is a process that is performed at the EHR vendors discretion to improve the performance by supplying data that is needed for most CDS services associated with a specific Hook. 
 
 
-![Discovery](assets/images/Discover_CDS_Service.png){:height = "800px" width="800px"}
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 2: CDS Service Discovery </strong></figcaption>
+  <img src="assets/images/Discover_CDS_Service.png" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.png" />
+</figure>
+
+
 
 
 
@@ -64,6 +74,8 @@ The CDS service discovery is invoked for querying data that is needed for an ant
 ```
 
 
+
+
 ##### Request 
 The EHR calls the PDDI CDS service by `POST` ing a `JSON` file (CDS Hook) to the service endpoint `{baseUrl}/cds-services/{PDDI-CDS}`. Two components of a request are processed to determine if a request is relevant for a specific PDDI: `context` and `prefetch`.
 
@@ -85,6 +97,12 @@ While fulfilling the `prefetch` element of the CDS Hook is not required, it is h
 A `Bundle` is a FHIR resource that is used to group a collection of resources into a single instance. For this use case, using the `bundle` resource for each of the CDS Hook components (i.e., `context` and `prefetch`) is ideal for messaging with CDS Hooks, storing the collection of resources obtained on CDS discovery, and providing flexibility in using the collections as a persistent instance. 
 
 TODO example of request together
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 3: Parse and Pre-process Request </strong></figcaption>
+  <img src="assets/images/Parse_and_pre-process_Request.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_Request.png" />
+</figure>
+
 
 ## Clinical Reasoning
 This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning Module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts.
@@ -210,5 +228,5 @@ TODO Phi add about CQL
 * JSON Parser
 
 
-![Summary](assets/images/Parse_and_pre-process_Request.png){:height = "800px" width="800px"}
+
 

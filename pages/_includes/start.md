@@ -208,6 +208,11 @@ The RequestGroup and Careplan fall into FHIR resource workflow as Requests, whic
 
 TODO add example of response and discuss the Cards
 
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 4: Flow Diagram for CDS Hooks Request and Response </strong></figcaption>
+  <img src="assets/images/CDS_Hooks_Request_Response.png" class="figure-img img-responsive img-rounded center-block" alt="CDS_Hooks_Request_Response.png" />
+</figure>
+
 ### PDDI CDS CQL Library
 
 TODO Phi add about CQL

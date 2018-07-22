@@ -6,7 +6,10 @@ This section contains documentation for implementers from both the clinical and 
 
 #### Decision Points
 
-
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 3: Warfarin + NSAID Decision Logic </strong></figcaption>
+  <img src="assets/images/Warfarin_NSAID_logic.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_logic.png" />
+</figure>
 
 ### Digoxin + Cyclosporin
 

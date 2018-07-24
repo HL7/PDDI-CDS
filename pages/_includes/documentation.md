@@ -53,6 +53,19 @@ This section contains documentation for implementers from both the clinical and 
   <img src="assets/images/Warfarin_NSAID_logic.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_logic.png" />
 </figure>
 
+#### Content
+The following artifacts formalize the description of the logic and behavior defined by this recommendation.
+
+| Resource | Type | Description |
+| --- | --- | --- |
+| [Common PDDI CDS Logic](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | CQL Library that provides common logic for the recommendations |
+| [Common PDDI CDS Logic](documentation.html) | CQL Source | For reference, the complete CQL source for the common logic. |
+| [PDDI CDS Data](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | CQL Library that provides data for the recommendations |
+| [PDDI CDS Data](documentation.html) | CQL Source | For reference, the complete CQL source for the data. |
+| [Warfarin NSAIDs Recommendation Workflow](documentation.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
+| [Warfarin NSAIDs Recommendation](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Warfarin NSAIDs recommendation |
+| [Warfarin NSAIDs Recommendation](documentation.html) | CQL Source | For reference, the complete CQL source for Warfarin NSAIDs recommendation |
+
 ### Digoxin + Cyclosporin
 
 #### Decision Points

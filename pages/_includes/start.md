@@ -216,6 +216,7 @@ TODO add example of response and discuss the Cards
 ### PDDI CDS CQL Library
 
 TODO Phi update this description
+
 This library contains the logic used by the PlanDefinition to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
 
 ## Implementation

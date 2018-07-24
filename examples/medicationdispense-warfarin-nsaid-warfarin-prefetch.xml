@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationDispense xmlns="http://hl7.org/fhir">
+    <id value="medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <code value="outpatient"/>
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="855332"/>
+            <display value="Warfarin Sodium 5 MG Oral Tablet"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/warfarin-nsaid-over65-prefetch"/>
+    </subject>
+    <context>
+        <reference value="Encounter/warfarin-nsaid-prefetch"/>
+    </context>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <frequency value="1"/>
+                <period value="1.0"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="false"/>
+        <doseQuantity>
+            <value value="1.0"/>
+            <unit value="tablet"/>
+        </doseQuantity>
+    </dosageInstruction>
+    <quantity>
+        <value value="90"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="TAB"/>
+    </quantity>
+    <daysSupply>
+        <value value="90"/>
+        <unit value="Day"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+    </daysSupply>
+</MedicationDispense>

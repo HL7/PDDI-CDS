@@ -285,6 +285,70 @@
      "ValueSet/valueset-warfarin": {
        "base": "ValueSet-valueset-warfarin.html",
        "source": "valueset-warfarin.xml"
+     },
+     "Encounter/encounter-warfarin-nsaid-context": {
+       "base": "Encounter-encounter-warfarin-nsaid-context.html",
+       "source": "encounter-warfarin-nsaid-context.xml"
+     },
+     "Encounter/encounter-warfarin-nsaid-prefetch": {
+       "base": "Encounter-encounter-warfarin-nsaid-prefetch.html",
+       "source": "encounter-warfarin-nsaid-prefetch.xml"
+     },
+     "MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationAdministration-medicationadministration-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationadministration-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationDispense-medicationdispense-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationdispense-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-corticosteroid-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-corticosteroid-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-corticosteroid-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-misoprostol-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-misoprostol-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-misoprostol-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-context": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-nsaid-context.html",
+       "source": "medicationrequest-warfarin-nsaid-nsaid-context.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-nsaid-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-nsaid-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-ppi-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-ppi-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-ppi-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-topicaldiclofenac-context": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-topicaldiclofenac-context.html",
+       "source": "medicationrequest-warfarin-nsaid-topicaldiclofenac-context.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-context": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-warfarin-context.html",
+       "source": "medicationrequest-warfarin-nsaid-warfarin-context.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "MedicationStatement/medicationstatement-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationStatement-medicationstatement-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationstatement-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "Patient/patient-warfarin-nsaid-over65-prefetch": {
+       "base": "Patient-patient-warfarin-nsaid-over65-prefetch.html",
+       "source": "patient-warfarin-nsaid-over65-prefetch.xml"
+     },
+     "Patient/patient-warfarin-nsaid-under65-prefetch": {
+       "base": "Patient-patient-warfarin-nsaid-under65-prefetch.html",
+       "source": "patient-warfarin-nsaid-under65-prefetch.xml"
      }
    },
    "extensions":[

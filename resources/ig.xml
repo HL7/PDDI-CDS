@@ -413,6 +413,118 @@
 			<name value="valueset-warfarin" />
 			<exampleBoolean value="false" />
 		</resource>
+		<resource>
+			<reference>
+				<reference value="Encounter/encounter-warfarin-nsaid-context" />
+			</reference>
+			<name value="valueset-encounter-warfarin-nsaid-context" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Encounter/encounter-warfarin-nsaid-prefetch" />
+			</reference>
+			<name value="valueset-encounter-warfarin-nsaid-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch" />
+			</reference>
+			<name value="medicationadministration-warfarin-nsaid-warfarin-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch" />
+			</reference>
+			<name value="medicationdispense-warfarin-nsaid-warfarin-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-corticosteroid-prefetch" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-corticosteroid-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-misoprostol-prefetch" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-misoprostol-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-context" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-nsaid-context" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-prefetch" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-nsaid-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-ppi-prefetch" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-ppi-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-topicaldiclofenac-context" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-topicaldiclofenac-context" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-context" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-warfarin-context" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-prefetch" />
+			</reference>
+			<name value="medicationrequest-warfarin-nsaid-warfarin-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationStatement/medicationstatement-warfarin-nsaid-warfarin-prefetch" />
+			</reference>
+			<name value="medicationstatement-warfarin-nsaid-warfarin-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/patient-warfarin-nsaid-over65-prefetch" />
+			</reference>
+			<name value="patient-warfarin-nsaid-over65-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/patient-warfarin-nsaid-under65-prefetch" />
+			</reference>
+			<name value="patient-warfarin-nsaid-under65-prefetch" />
+			<exampleBoolean value="true" />
+		</resource>
 		<page>
 			<nameUrl value="index.html" />
 			<title value="PDDI CDS Homepage" />

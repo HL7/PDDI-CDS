@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="encounter-warfarin-nsaid-prefetch"/>
+    <status value="finished"/>
+    <subject>
+        <reference value="patient-warfarin-nsaid-over65-prefetch"/>
+    </subject>
+    <period>
+        <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
+            <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
+        </extension>
+    </period>
+</Encounter>

@@ -32,12 +32,11 @@ The Element ValueSet-excludes are signified with an identical name to the Elemen
   <img src="assets/images/Value_Sets.png" class="figure-img img-responsive img-rounded center-block" alt="Value_Sets.png" />
 </figure>
 
-#### Value Sets
+## ValueSet
 
 {% include list-simple-valuesets.xhtml %} 
 
 <p/><p/>
-
 
 
 #### Code Systems

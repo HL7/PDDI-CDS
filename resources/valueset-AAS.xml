@@ -25,11 +25,11 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-eplerenone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone"/>
         </include>
         <include>
             <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-spironolactone.xml"/>
+                    value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone"/>
         </include>
     </compose>
 </ValueSet>

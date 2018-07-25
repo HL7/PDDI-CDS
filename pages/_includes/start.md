@@ -1,18 +1,18 @@
 # Getting Started with PDDI CDS
 
 ## Status
-Currently, there are three PDDI CDS artifacts available in this Implemenation Guide. These specific PDDIs were chosen based on complexity, decision points, and priority. 
-* [Warfarin + NSAIDs](documentation.html) 
-* [Digoxin + Cyclosporin](documentation.html)
+There are two PDDI CDS artifacts available in this Implemenation Guide. These specific PDDIs were chosen based on complexity, decision points, and priority. These examples serve as reference for the methodology and procedures that may be adopted when developing and implementing PDDI CDS using FHIR and CDS Hooks standards.  
+* Warfarin + NSAIDs
+* Digoxin + Cyclosporin
 
 # Process 
-This section provides an overview of the processes and components that were used to develop the PDDI CDS artifacts Artifact specific details can be found in the Documentation section.  
+This section provides an overview of the processes and components that were used to develop the PDDI CDS artifacts. Specific details regarding the individual artifacts can be found in the [Documentation](documentation.html) section.  
 
 #### CDS Function
-For a PDDI CDS service to be invoked, the patient needs to be prescribed a medication (i.e., `context`) that conflicts with a medication that the patient is presumably taking (i.e., `prefetch` or FHIR server request). Contextual or individualized information is based on the "Mimimum Information Model" from the W3C initiative.  
+To invoke the PDDI CDS service, the patient in question needs to be prescribed a medication (i.e., in the `context` element of CDS Hook) that conflicts with a medication that the patient is presumably taking (i.e., `prefetch` element or FHIR server request). The CDS Service provides contextual information based on the coinciding  patient factors and the "Mimimum Information Model" knowledge base.  
 
 #### Assumptions
-PDDIs, to an extent, are theoretical. The goal of contextualizing or individualizing these alerts is to not only reduce the number of alerts by increasing the specificity of alerts, but to improve the clinical relevance of the information that is presented. In this regard, PDDI CDS functions as an educational tool to raise awareness of known factors that may mitigate or increase risk associated with PDDIs. Gaps in the literature regarding contextual factors is a known issue in the domain and a key limitation to this implementation and other drug-drug interaction CDS. Compounded with medication adherence issues and data quality/availability, it is ultimately up to the clinician's discretion to proceed with interacting orders. 
+Potential drug-drug interactions, to an extent, are theoretical due to knowledge gaps in the literature. Thus, the specificity of alerts and individualized information is limited by the available knowledge.  The goal of contextualizing or individualizing these alerts is to not only reduce the number of alerts by increasing the specificity of alerts, but to improve the clinical relevance of the information that is presented. In this regard, PDDI CDS functions as an educational tool to raise awareness of known factors that may mitigate or increase risk associated with PDDIs. Gaps in the literature regarding contextual factors is a known issue in the domain and a key limitation to this implementation and other drug-drug interaction CDS. Compounded with medication adherence issues and data quality/availability, it is ultimately up to the clinician's discretion to proceed with interacting orders. 
 
 The initial implementation focus is on Epic and Cerner EHR platforms. Each cite, however, will need to determine the best approach to ensure a successful integration. There are several general aspects that need to assessed:
 * Technical frame work for the EHR to interact with CDS Hooks
@@ -51,10 +51,10 @@ The CDS service discovery is invoked for querying data that is needed for an ant
 ```{
   "services": [
     {
-      "hook": "patient-view",
-      "title": "Static CDS Service Example",
-      "description": "An example of a CDS Service that returns a static set of cards",
-      "id": "static-patient-greeter",
+      "hook": "medication-prescribe",
+      "title": "PDDI CDS Service",
+      "description": "CDS Service for drug-drug interactions",
+      "id": "PDDI-CDS",
       "prefetch": {
         "patientToGreet": "Patient/{{context.patientId}}"
       }

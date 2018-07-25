@@ -1,8 +1,8 @@
-
+-*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
 ## Introduction
 
-This implementation guide was developed for potential drug-drug interaction (PDDI) clinical decision support (CDS). It was developed by the Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center and Wolters Kluwer Health. The project focused on developing standardized and shareable artifacts to contextualize PDDIs.
+This implementation guide was developed for potential drug-drug interaction (PDDI) clinical decision support (CDS). It was developed by the Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health. The project focused on developing standardized and shareable artifacts to contextualize PDDIs.
 
 
 ## Scope

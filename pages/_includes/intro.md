@@ -1,7 +1,10 @@
--*- --from markdown_strict+footnotes+backtick_code_blocks -*-
+[//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
 ## Introduction
 
+**TODO: write this last sort of like an abstract**
+
+**TODO: This content mostly is about collabarators and can be moved to that sub**
 This implementation guide was developed for potential drug-drug interaction (PDDI) clinical decision support (CDS). It was developed by the Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health. The project focused on developing standardized and shareable artifacts to contextualize PDDIs.
 
 
@@ -9,28 +12,48 @@ This implementation guide was developed for potential drug-drug interaction (PDD
 
 This implementation guide is for PDDI CDS. The guide specifies both a knowledge representation format for PDDI logic and CDS services. Specifically, the implementation guide includes specifications for:
 
-* How to represent PDDI logic in CQL and evidence in computational format using the FHIR Clinical Reasoning module.
-* How to use CDS Hooks as a mechanism for EHRs to request PDDI CDS from CDS services.
+* How to represent PDDI logic in Clinical Quality Language **TODO: CITATION** CQL and evidence in computational format using the **TODO: spell out and link** FHIR Clinical Reasoning module.
+* How to use CDS Hooks **TODO: link** as a mechanism for electronic health records (EHRs) to request PDDI CDS from CDS web services.
  
 
 
 ## A Project Rationale
 
-New information regarding potential drug-drug interactions (PDDIs) is published every day in primary sources such as drug product labeling
+
+* Motivate the need for PDDI decision support at the various places in med therapy workflow -- esp at drug selection and signing.
+
+* Motivate the need for this CDS to be available as a service
+
+    * maintainance of PDDI CDS is difficult (cite https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5064943/), there is broad disagreement across sources (https://www.ncbi.nlm.nih.gov/pubmed/28339701), more opportunities for innovation, perhaps a better evidence base 
+	
+	* Knowledge vendors provide a better service using broadly adopted HIT standards 
+
+* Motivate the need for contextual PDDIs 
+
+    * address the overalerting issue - use EHR data to make alerts more specific w/out losing sensitivity
+	
+	* mention the minimum info model as a vehicle for contextualization and supporting clinical cognition
+
+* Motivate the need for sharable CDS written in CQL 
+
+    * CQL, in principal, enable domain experts to assist with developing the CDS -- CDS authoring for CQL https://grants.nih.gov/grants/guide/pa-files/PA-18-792.html 
+
+
+New information regarding PDDIs is published every day in primary sources such as drug product labeling
      and the scientific literature. A PubMed search for publications indexed with the Medical Subject Headings keyword “Drug interactions” shows
      an average of 3,970 publications per year from 2000 through 2016. This suggests that the body of evidence about PDDIs is overwhelming and
      dynamic. Food and drug regulatory agencies in the United States, European Union, and Japan have issued guidance to industry recommending
-     the use of drug product labeling to communicate potential involvements in drug interactions (Rekić et al. 2017). As it is impossible for
+     the use of drug product labeling to communicate potential involvements in drug interactions (Rekić et al. 2017) **TODO: PLACE REFERENCE**. As it is impossible for
      clinicians to keep up with the PDDI evidence base, drug experts generate summaries of PDDI evidence from primary sources. These summaries
      bring PDDI knowledge to clinicians in the form of published drug information compendia, clinical decision support rules, and interaction
-     checking applications. <b> However, there are currently no broadly accepted standards to guide these experts in the knowledge representation
+     checking applications. **TODO: check that this makes sense relative to the publishing of the W3C note**  <b> However, there are currently no broadly accepted standards to guide these experts in the knowledge representation
      and services implementation of PDDI information that would be most effective for clinical decision support.</b> Without international coordination
      for the extensions and profiles used to express PDDI CDS, needless variation is certain to occur in implementations. This project will provide
      the opportunity for the international community to collaborate and come to consensus on patterns used in implementations.
 
    This need for a standard representation of PDDI information was one of the topics addressed at two multi-stakeholder conference meetings/series
-    (Hines et al. 2011; Scheife et al. 2015; Payne et al. 2015; Tilson et al. 2016). Attendees at both conferences included international stakeholders
-    from drug information content providers, regulatory agencies, and academic organizations. Among the key recommendations was the following suggested
+   **TODO: REFERENCE AND ELSEWHERE IN THIS PAGE** (Hines et al. 2011; Scheife et al. 2015; Payne et al. 2015; Tilson et al. 2016). Attendees at both conferences included international stakeholders
+    from drug information content providers, regulatory agencies, and academic organizations. **TODO: probably reference the W3C note rather than this citation**  Among the key recommendations was the following suggested
     set of core information that should be included for every PDDI mentioned in a clinically-oriented drug information resource (Payne et al. 2015):
     
    * Drugs involved 
@@ -43,6 +66,7 @@ New information regarding potential drug-drug interactions (PDDIs) is published 
    * Recommended actions
    * Seriousness rating
    
+   **TODO: probably delete this**
  These core information elements are consistent with the results of a separate international Delphi study on how to
      improve the delivery of medication alerts within computerized physician order entry systems (Riedmann et al. 2011).
      This suggested list of core information elements includes some that are present in one or more of the 15 PDDI conceptual models
@@ -56,10 +80,10 @@ New information regarding potential drug-drug interactions (PDDIs) is published 
 
 ### Collaborators
 
-W3C Healthcare and Lifesciences Working Group. A volunteer-based task force <a href="https://www.w3.org/wiki/HCLSIG/DDI">https://www.w3.org/wiki/HCLSIG/DDI</a>
-    was formed in January 2016 within the Health Care and Life Sciences Interest Group that operates publicly through
-    the World Wide Web Consortium (W3C). The goal of the task force was to develop a minimal information model for drug
+The Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, Wolters Kluwer Health, and ~~a volunteer-based W3C task force~~ <a href="https://www.w3.org/wiki/HCLSIG/DDI">https://www.w3.org/wiki/HCLSIG/DDI>W3C Healthcare and Lifesciences Working Group</a>
+    ~~was formed in January 2016 within the Health Care and Life Sciences Interest Group that operates publicly through
+    the World Wide Web Consortium ( W3C). The goal of the task force was to develop a minimal information model for drug
     interaction evidence and knowledge as part of an HIT standard like HL7. The workgroup’s results will serve as requirements
     and business knowledge for the current project. The task force is in the process of finalizing a draft Interest Group Note
     that provides use cases, user stories, definitions, and exemplar potential drug-drug interaction descriptions for a minimal
-    information model for drug interaction evidence and knowledge.
+    information model for drug interaction evidence and knowledge.~~

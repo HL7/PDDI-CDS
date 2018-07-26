@@ -1,29 +1,52 @@
+[//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
+
 # Getting Started with PDDI CDS
 
 ## Status
-There are two PDDI CDS artifacts available in this Implemenation Guide. These specific PDDIs were chosen based on complexity, decision points, and priority. These examples serve as reference for the methodology and procedures that may be adopted when developing and implementing PDDI CDS using FHIR and CDS Hooks standards.  
+There are two PDDI CDS artifacts available in this Implementation Guide:
+
 * Warfarin + NSAIDs
+
 * Digoxin + Cyclosporin
+
+These specific PDDIs were chosen based on complexity, decision points, and priority. These examples serve as reference for the methodology and procedures that may be adopted when developing and implementing PDDI CDS using FHIR and CDS Hooks standards.
+
+There are two different points in the medication therapy workflow discussed in this implementation guide:
+
+* Signing a medication order (`medication-request`)
+
+* Selecting a drug product to include in medication order (`medication-select`)
+
+*Note:* A the time of this writing, `medication-request` exists in the CDS Hooks standard but `medication-select` is under development. 
 
 # Process 
 This section provides an overview of the processes and components that were used to develop the PDDI CDS artifacts. Specific details regarding the individual artifacts can be found in the [Documentation](documentation.html) section.  
 
 #### CDS Function
+
+**TODO: slightly reword to reflect the two different CDS scenarios**
+
 To invoke the PDDI CDS service, the patient in question needs to be prescribed a medication (i.e., in the `context` element of CDS Hook) that conflicts with a medication that the patient is presumably taking (i.e., `prefetch` element or FHIR server request). The CDS Service provides contextual information based on the coinciding  patient factors and the "Mimimum Information Model" knowledge base.  
 
 #### Assumptions
 Potential drug-drug interactions, to an extent, are theoretical due to knowledge gaps in the literature. Thus, the specificity of alerts and individualized information is limited by the available knowledge.  The goal of contextualizing or individualizing these alerts is to not only reduce the number of alerts by increasing the specificity of alerts, but to improve the clinical relevance of the information that is presented. In this regard, PDDI CDS functions as an educational tool to raise awareness of known factors that may mitigate or increase risk associated with PDDIs. Gaps in the literature regarding contextual factors is a known issue in the domain and a key limitation to this implementation and other drug-drug interaction CDS. Compounded with medication adherence issues and data quality/availability, it is ultimately up to the clinician's discretion to proceed with interacting orders. 
 
-The initial implementation focus is on Epic and Cerner EHR platforms. Each cite, however, will need to determine the best approach to ensure a successful integration. There are several general aspects that need to assessed:
+The initial implementation focus is on Epic and Cerner EHR platforms. Each implementation site, however, will need to determine the best approach to ensure a successful integration. There are several general aspects that need to assessed:
+
 * Technical frame work for the EHR to interact with CDS Hooks
+
     * EHR CDS Hooks request for medication-prescribe and medication-select
+
     * EHR caputure and presentation of CDS Hooks response
+
 * Terminology mapping (e.g., RxNorm, LOINC)
+
 * FHIR resources include but may not be limited to those listed under [Profiles](profiles.html)
+
 * SMART authentication and FHIR server requests
 
 
-
+**TODO: up the font for the headings** 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Summary of Operations </strong></figcaption>
   <img src="assets/images/Summary_of_operations.png" class="figure-img img-responsive img-rounded center-block" alt="Summary_of_operations.png" />
@@ -32,9 +55,14 @@ The initial implementation focus is on Epic and Cerner EHR platforms. Each cite,
 
 #### CDS Hooks
 The PDDI CDS artifacts use the HL7 [CDS Hooks specification](http://cds-hooks.org/specification/1.0/). 
-The CDS Hooks define the data structure to facilitate communication between the electronic health record and the PDDI CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that can better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. Relevant examples and clarifications for CDS Hooks in this implementation guide are below   
+The CDS Hooks define the data structure to facilitate communication between the electronic health record and the PDDI CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that can better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. Relevant examples and clarifications for CDS Hooks in this implementation guide are below
+
+**TODO: possibly mention briefly that the CDS service is more general than CDS Hooks (i.e., it is not dependent on it for every CDS use case) but, we chose to combine CDS Hooks and the CDS service for this IG because of the simplicity and specific orientation to standardized clinical workflow ** 
 
 ##### Discovery
+
+**TODO: for the whole section, revise to address medication-select**
+
 The CDS service discovery is invoked for querying data that is needed for an anticipated CDS Hook request. This is a process that is performed at the EHR vendors discretion to improve the performance by supplying data that is needed for most CDS services associated with a specific Hook. 
 
 
@@ -77,13 +105,13 @@ The CDS service discovery is invoked for querying data that is needed for an ant
 
 
 ##### Request 
-The EHR calls the PDDI CDS service by `POST` ing a `JSON` file (CDS Hook) to the service endpoint `{baseUrl}/cds-services/{PDDI-CDS}`. Two components of a request are processed to determine if a request is relevant for a specific PDDI: `context` and `prefetch`.
 
-`curl -0 -v -X POST http://localhost:XXXX/cds-services/pddi-cds  -H 'Content-type: application/json' -d\`
+**TODO: remove the curl. Mention the header of the request (raw application/json)
+
+The EHR calls the PDDI CDS service by `POST` ing a `JSON` file (CDS Hook) to the service endpoint `{baseUrl}/cds-services/{PDDI-CDS}`. Two components of a request are processed to determine if a request is relevant for a specific PDDI: `context` and `prefetch`.
 
 ###### Context
 The `context` of a CDS Hook request contains Hook-specific data that is processed to determine if the CDS rule is satisfied for one or more PDDI. The `context` resource used for both the `medication-prescribe` and `medication-select` hooks is `MedicationRequest`. While the `MedicationRequest` resource may be present in the `context` or `prefetch`, it represents the medication that is currently being prescribed in the `context`. 
-
 
 
 ###### Prefetch

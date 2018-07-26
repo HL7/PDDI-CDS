@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>start.html</title>
+
+</head>
+
+<body>
+
+<h1 id="getting-started-with-pddi-cds">Getting Started with PDDI CDS</h1>
+<h2 id="status">Status</h2>
+<p>There are two PDDI CDS artifacts available in this Implementation Guide:</p>
+<ul>
+<li><p>Warfarin + NSAIDs</p></li>
+<li><p>Digoxin + Cyclosporin</p></li>
+</ul>
+<p>These specific PDDIs were chosen based on complexity, decision points, and priority. These examples serve as reference for the methodology and procedures that may be adopted when developing and implementing PDDI CDS using FHIR and CDS Hooks standards.</p>
+<p>There are two different points in the medication therapy workflow discussed in this implementation guide:</p>
+<ul>
+<li><p>Signing a medication order (<code>medication-request</code>)</p></li>
+<li><p>Selecting a drug product to include in medication order (<code>medication-select</code>)</p></li>
+</ul>
+<p><em>Note:</em> A the time of this writing, <code>medication-request</code> exists in the CDS Hooks standard but <code>medication-select</code> is under development.</p>
+<h1 id="process">Process</h1>
+<p>This section provides an overview of the processes and components that were used to develop the PDDI CDS artifacts. Specific details regarding the individual artifacts can be found in the <a href="documentation.html">Documentation</a> section.</p>
+<h4 id="cds-function">CDS Function</h4>
+<p><strong>TODO: slightly reword to reflect the two different CDS scenarios</strong></p>
+<p>To invoke the PDDI CDS service, the patient in question needs to be prescribed a medication (i.e., in the <code>context</code> element of CDS Hook) that conflicts with a medication that the patient is presumably taking (i.e., <code>prefetch</code> element or FHIR server request). The CDS Service provides contextual information based on the coinciding patient factors and the &quot;Mimimum Information Model&quot; knowledge base.</p>
+<h4 id="assumptions">Assumptions</h4>
+<p>Potential drug-drug interactions, to an extent, are theoretical due to knowledge gaps in the literature. Thus, the specificity of alerts and individualized information is limited by the available knowledge. The goal of contextualizing or individualizing these alerts is to not only reduce the number of alerts by increasing the specificity of alerts, but to improve the clinical relevance of the information that is presented. In this regard, PDDI CDS functions as an educational tool to raise awareness of known factors that may mitigate or increase risk associated with PDDIs. Gaps in the literature regarding contextual factors is a known issue in the domain and a key limitation to this implementation and other drug-drug interaction CDS. Compounded with medication adherence issues and data quality/availability, it is ultimately up to the clinician's discretion to proceed with interacting orders.</p>
+<p>The initial implementation focus is on Epic and Cerner EHR platforms. Each implementation site, however, will need to determine the best approach to ensure a successful integration. There are several general aspects that need to assessed:</p>
+<ul>
+<li><p>Technical frame work for the EHR to interact with CDS Hooks</p>
+<ul>
+<li><p>EHR CDS Hooks request for medication-prescribe and medication-select</p></li>
+<li><p>EHR caputure and presentation of CDS Hooks response</p></li>
+</ul></li>
+<li><p>Terminology mapping (e.g., RxNorm, LOINC)</p></li>
+<li><p>FHIR resources include but may not be limited to those listed under <a href="profiles.html">Profiles</a></p></li>
+<li><p>SMART authentication and FHIR server requests</p></li>
+</ul>
+<strong>TODO: up the font for the headings</strong>
+<figure class="figure">
+<figcaption class="figure-caption">
+<strong>Figure 1: Summary of Operations </strong>
+</figcaption>
+<img src="assets/images/Summary_of_operations.png" class="figure-img img-responsive img-rounded center-block" alt="Summary_of_operations.png" />
+</figure>
+<h4 id="cds-hooks">CDS Hooks</h4>
+<p>The PDDI CDS artifacts use the HL7 <a href="http://cds-hooks.org/specification/1.0/">CDS Hooks specification</a>. The CDS Hooks define the data structure to facilitate communication between the electronic health record and the PDDI CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that can better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. Relevant examples and clarifications for CDS Hooks in this implementation guide are below</p>
+<p><strong>TODO: possibly mention briefly that the CDS service is more general than CDS Hooks (i.e., it is not dependent on it for every CDS use case) but, we chose to combine CDS Hooks and the CDS service for this IG because of the simplicity and specific orientation to standardized clinical workflow </strong></p>
+<h5 id="discovery">Discovery</h5>
+<p><strong>TODO: for the whole section, revise to address medication-select</strong></p>
+<p>The CDS service discovery is invoked for querying data that is needed for an anticipated CDS Hook request. This is a process that is performed at the EHR vendors discretion to improve the performance by supplying data that is needed for most CDS services associated with a specific Hook.</p>
+<figure class="figure">
+<figcaption class="figure-caption">
+<strong>Figure 2: CDS Service Discovery </strong>
+</figcaption>
+<img src="assets/images/Discover_CDS_Service.png" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.png" />
+</figure>
+<pre class="{"><code>  &quot;services&quot;: [
+    {
+      &quot;hook&quot;: &quot;medication-prescribe&quot;,
+      &quot;title&quot;: &quot;PDDI CDS Service&quot;,
+      &quot;description&quot;: &quot;CDS Service for drug-drug interactions&quot;,
+      &quot;id&quot;: &quot;PDDI-CDS&quot;,
+      &quot;prefetch&quot;: {
+        &quot;patientToGreet&quot;: &quot;Patient/{{context.patientId}}&quot;
+      }
+    },
+    {
+      &quot;hook&quot;: &quot;medication-prescribe&quot;,
+      &quot;title&quot;: &quot;Medication Echo CDS Service&quot;,
+      &quot;description&quot;: &quot;An example of a CDS Service that simply echos the medication being prescribed&quot;,
+      &quot;id&quot;: &quot;medication-echo&quot;,
+      &quot;prefetch&quot;: {
+        &quot;patient&quot;: &quot;Patient/{{context.patientId}}&quot;,
+        &quot;medications&quot;: &quot;MedicationOrder?patient={{context.patientId}}&quot;
+      }
+    }
+  ]
+}</code></pre>
+<h5 id="request">Request</h5>
+<p>The EHR calls the PDDI CDS service by <code>POST</code> ing a <code>JSON</code> file (CDS Hook) to the service endpoint <code>{baseUrl}/cds-services/{PDDI-CDS}</code>. Two components of a request are processed to determine if a request is relevant for a specific PDDI: <code>context</code> and <code>prefetch</code>.</p>
+<p><code>curl -0 -v -X POST http://localhost:XXXX/cds-services/pddi-cds  -H 'Content-type: application/json' -d\</code></p>
+<h6 id="context">Context</h6>
+<p>The <code>context</code> of a CDS Hook request contains Hook-specific data that is processed to determine if the CDS rule is satisfied for one or more PDDI. The <code>context</code> resource used for both the <code>medication-prescribe</code> and <code>medication-select</code> hooks is <code>MedicationRequest</code>. While the <code>MedicationRequest</code> resource may be present in the <code>context</code> or <code>prefetch</code>, it represents the medication that is currently being prescribed in the <code>context</code>.</p>
+<h6 id="prefetch">Prefetch</h6>
+<p>The <code>prefetch</code> element contains patient data that has been previously queried during the CDS discovery phase. For this implementation, <code>prefetch</code> elements include medication resources: <code>MedicationRequest,</code> <code>MedicationDispense,</code> <code>MedicationStatement,</code> and <code>MedicationAdministration.</code> A typical scenario is when the patient has an ongoing medication presented in the <code>prefetch</code> element and the current or new medication (conflicting) in the context.</p>
+<blockquote>
+<p><em>Prefetch Parameters</em> While fulfilling the <code>prefetch</code> element of the CDS Hook is not required, it is highly recommended for performance of the CDS system. Since the majority of PDDI alerts rely on medication order characteristics (e.g., dose, timing), this implementation guide recommends only medication associated resources should be implemented as <code>prefetch.</code> Based on the regularity of dispensed prescription days-supply, the time-frame parameter for <code>prefetch</code> is 100 days for all medication resources (i.e., <code>MedicationRequest, MedicationDispense, MedicationStatement, MedicationAdministration).</code></p>
+</blockquote>
+<h6 id="bundle">Bundle</h6>
+<p>A <code>Bundle</code> is a FHIR resource that is used to group a collection of resources into a single instance. For this use case, using the <code>bundle</code> resource for each of the CDS Hook components (i.e., <code>context</code> and <code>prefetch</code>) is ideal for messaging with CDS Hooks, storing the collection of resources obtained on CDS discovery, and providing flexibility in using the collections as a persistent instance.</p>
+<p>TODO example of request together</p>
+<figure class="figure">
+<figcaption class="figure-caption">
+<strong>Figure 3: Parse and Pre-process Request </strong>
+</figcaption>
+<img src="assets/images/Parse_and_pre-process_Request.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_Request.png" />
+</figure>
+<h2 id="clinical-reasoning">Clinical Reasoning</h2>
+<p>This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning Module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts.</p>
+<h3 id="plandefinition">PlanDefinition</h3>
+<p><code>PlanDefinition</code> falls into the FHIR resource workflow as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the PlanDefinition that are used for the PDDI CDS instances. These include <code>TriggerDefinition</code>, <code>Condition</code>, and <code>Action.</code> #### TriggerDefinition The TriggerDefinition uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The TriggerDefinition for the PDDI CDS is based on the CDS Hooks requests <code>medication-prescribe</code> and <code>medication-select.</code></p>
+<pre><code>&quot;triggerDefinition&quot;: {
+              &quot;type&quot;: &quot;named-event&quot;,
+              &quot;eventName&quot;: &quot;medication-prescribe&quot;</code></pre>
+<pre><code>&quot;triggerDefinition&quot;: {
+              &quot;type&quot;: &quot;named-event&quot;,
+              &quot;eventName&quot;: &quot;medication-select&quot;</code></pre>
+<h4 id="condition">Condition</h4>
+<p>The Condition element is used to determine whether or not the CDS logic is to be applied. If the Condition is satisfied (i.e., true or false), an action(s) is intiated.</p>
+<pre><code>&quot;condition&quot;: [
+              {
+                &quot;kind&quot;: &quot;applicability&quot;,
+                &quot;language&quot;: &quot;text/cql&quot;,
+                &quot;expression&quot;: &quot;Inclusion Criteria&quot;</code></pre>
+<h4 id="action">Action</h4>
+<p>The Action element provides the actions and information associated with the actions that are to be taken. For this implementation, each action with a Condition signifies a CDS Hook response card.</p>
+<pre><code>&quot;condition&quot;: [
+              {
+                &quot;kind&quot;: &quot;applicability&quot;,
+                &quot;language&quot;: &quot;text/cql&quot;,
+                &quot;expression&quot;: &quot;Inclusion Criteria&quot;
+              }
+            ],
+            &quot;action&quot;: [
+              {
+                &quot;title&quot;: &quot;Increased risk of bleeding&quot;,
+                &quot;description&quot;: &quot;Potential Drug-Drug Interaction between warfarin (product) and NSAID (product)&quot;,
+                &quot;dynamicValue&quot;: [
+                  {
+                    &quot;path&quot;: &quot;action.title&quot;,
+                    &quot;expression&quot;: &quot;Get Base Summary&quot;
+                  },
+                  {
+                    &quot;path&quot;: &quot;action.description&quot;,
+                    &quot;expression&quot;: &quot;Get Base Detail&quot;
+                  },
+                  {
+                    &quot;path&quot;: &quot;activity.extension&quot;,
+                    &quot;expression&quot;: &quot;Get Base Indicator&quot;
+                  }
+                ],
+                &quot;action&quot;: [
+                snipped for brevity</code></pre>
+<h4 id="dynamicvalue">DynamicValue</h4>
+<p>The DynamicValue enables customization of the statically defined resources. Since each decision block for PDDIs have one or more individualized information componenets that are potentially useful to the clinician, integrating patient-specific data into each response card is necessary.</p>
+<pre><code>&quot;action&quot;: [
+                  {
+                    &quot;label&quot;: &quot;Assess risk and take action if necessary.&quot;,
+                    &quot;dynamicValue&quot;: [
+                      {
+                        &quot;path&quot;: &quot;action.label&quot;,
+                        &quot;expression&quot;: &quot;Get Card 2 Label&quot;</code></pre>
+<h3 id="requestgroup-and-careplan">RequestGroup and Careplan</h3>
+<p>The RequestGroup and Careplan fall into FHIR resource workflow as Requests, which expressed the intention for something to occur. For the PDDI CDS instance this could involve initiating another medication, substituting a medication order, or discontinuing the current order.</p>
+<pre><code>{
+  &quot;resourceType&quot;: &quot;CarePlan&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;intent&quot;: &quot;order&quot;,
+  &quot;title&quot;: &quot;High risk for opioid overdose - taper now&quot;,
+  &quot;description&quot;: &quot;Total morphine milligram equivalent (MME) is 20200.700mg/d. Taper to less than 50.&quot;,
+  &quot;activity&quot;: [
+    {
+      &quot;detail&quot;: {
+        &quot;status&quot;: &quot;in-progress&quot;,
+        &quot;statusReason&quot;: &quot;warning&quot;
+      }
+    }
+  ],
+  &quot;note&quot;: [
+    {
+      &quot;id&quot;: &quot;CDC guideline for prescribing opioids for chronic pain&quot;,
+      &quot;text&quot;: &quot;https://guidelines.gov/summaries/summary/50153/cdc-guideline-for-prescribing-opioids-for-chronic-pain---united-states-2016#420&quot;
+    },
+    {
+      &quot;id&quot;: &quot;MME Conversion Tables&quot;,
+      &quot;text&quot;: &quot;https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf&quot;
+    }
+  ]
+}</code></pre>
+<h3 id="cds-hook-response">CDS Hook Response</h3>
+<p>TODO add example of response and discuss the Cards</p>
+<figure class="figure">
+<figcaption class="figure-caption">
+<strong>Figure 4: Flow Diagram for CDS Hooks Request and Response </strong>
+</figcaption>
+<img src="assets/images/CDS_Hooks_Request_Response.png" class="figure-img img-responsive img-rounded center-block" alt="CDS_Hooks_Request_Response.png" />
+</figure>
+<h3 id="pddi-cds-cql-library">PDDI CDS CQL Library</h3>
+<p>TODO Phi update this description</p>
+<p>This library contains the logic used by the PlanDefinition to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.</p>
+<h2 id="implementation">Implementation</h2>
+<h3 id="what-you-will-need">What You Will Need</h3>
+<ul>
+<li>CQL Evaluation Engine to enable the translation and execution of CQL libraries</li>
+<li>FHIR Server
+<ul>
+<li><a href="http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing">Public</a></li>
+<li>Local (preferred)
+<ul>
+<li><a href="http://hapifhir.io/doc_rest_server.html">HAPI RESTful Server</a></li>
+<li><a href="http://hapifhir.io/doc_jpa.html">HAPI JPA Server</a></li>
+<li><a href="http://hapifhir.io/doc_rest_server_jaxrs.html">HAPI JAX-RS Server</a></li>
+<li><a href="https://github.com/ewoutkramer/fhir-net-api">.NET Server</a></li>
+</ul></li>
+</ul></li>
+<li>CDS Hooks API</li>
+<li>JSON Parser</li>
+</ul>
+
+</body>
+</html>

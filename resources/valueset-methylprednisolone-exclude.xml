@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-methylprednisolone-exclude"/>
+    <id value="valueset-methylprednisolone-exclude"/>
+    <version value="US 1.1"/>
+    <name value="valueset-methylprednisolone-exclude"/>
+    <title value="Exclude Methylprednisolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1100391"/>
+                <display value="methylprednisolone acetate 0.01 MG/MG Topical Gel [HybriSil]"/>
+            </concept>
+            <concept>
+                <code value="1100390"/>
+                <display value="Methylprednisolone Topical Gel [HybriSil]"/>
+            </concept>
+            <concept>
+                <code value="1358506"/>
+                <display value="methylprednisolone acetate 0.0025 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1100387"/>
+                <display value="methylprednisolone acetate 0.01 MG/MG Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="1100386"/>
+                <display value="Methylprednisolone Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="372863"/>
+                <display value="Methylprednisolone Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1163491"/>
+                <display value="Methylprednisolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1172713"/>
+                <display value="HybriSil Topical Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

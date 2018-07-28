@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketorolac-exclude"/>
+    <id value="valueset-ketorolac-exclude"/>
+    <version value="US 1.1"/>
+    <name value="valueset-ketorolac-exclude"/>
+    <title value="Exclude Ketorolac Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="860105"/>
+                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution [Acular]"/>
+            </concept>
+            <concept>
+                <code value="860109"/>
+                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution [Acular]"/>
+            </concept>
+            <concept>
+                <code value="858366"/>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution [Acuvail]"/>
+            </concept>
+            <concept>
+                <code value="1540235"/>
+                <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML Ophthalmic
+                    Irrigation Solution [Omidria]"/>
+            </concept>
+            <concept>
+                <code value="363846"/>
+                <display value="Ketorolac Ophthalmic Solution [Acular]"/>
+            </concept>
+            <concept>
+                <code value="858361"/>
+                <display value="Ketorolac Ophthalmic Solution [Acuvail]"/>
+            </concept>
+            <concept>
+                <code value="1543461"/>
+                <display value="Ketorolac / Phenylephrine Ophthalmic Irrigation Solution [Omidria]"/>
+            </concept>
+            <concept>
+                <code value="858364"/>
+                <display value="Ketorolac Tromethamine 4.5 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="860103"/>
+                <display value="Ketorolac Tromethamine 4 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="860107"/>
+                <display value="Ketorolac Tromethamine 5 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="1540230"/>
+                <display value="Ketorolac 2.88 MG/ML / Phenylephrine 10.16 MG/ML Ophthalmic
+                    Irrigation Solution"/>
+            </concept>
+            <concept>
+                <code value="377446"/>
+                <display value="Ketorolac Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="1543459"/>
+                <display value="Ketorolac / Phenylephrine Ophthalmic Irrigation Solution"/>
+            </concept>
+            <concept>
+                <code value="1543458"/>
+                <display value="Ketorolac / Phenylephrine Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1160968"/>
+                <display value="Ketorolac Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1543462"/>
+                <display value="Omidria Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1169934"/>
+                <display value="Acular Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1169948"/>
+                <display value="Acuvail Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

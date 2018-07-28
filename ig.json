@@ -90,9 +90,17 @@
        "base": "ValueSet-valueset-betamethasone.html",
        "source": "valueset-betamethasone.xml"
      },
+     "ValueSet/valueset-betamethasone-exclude": {
+       "base": "ValueSet-valueset-betamethasone-exclude.html",
+       "source": "valueset-betamethasone-exclude.xml"
+     },
      "ValueSet/valueset-bromfenac": {
        "base": "ValueSet-valueset-bromfenac.html",
        "source": "valueset-bromfenac.xml"
+     },
+     "ValueSet/valueset-bromfenac-exclude": {
+       "base": "ValueSet-valueset-bromfenac-exclude.html",
+       "source": "valueset-bromfenac-exclude.xml"
      },
      "ValueSet/valueset-celecoxib": {
        "base": "ValueSet-valueset-celecoxib.html",
@@ -122,6 +130,10 @@
        "base": "ValueSet-valueset-dexamethasone.html",
        "source": "valueset-dexamethasone.xml"
      },
+     "ValueSet/valueset-dexamethasone-exclude": {
+       "base": "ValueSet-valueset-dexamethasone-exclude.html",
+       "source": "valueset-dexamethasone-exclude.xml"
+     },
      "ValueSet/valueset-dexlansoprazole": {
        "base": "ValueSet-valueset-dexlansoprazole.html",
        "source": "valueset-dexlansoprazole.xml"
@@ -129,6 +141,10 @@
      "ValueSet/valueset-diclofenac": {
        "base": "ValueSet-valueset-diclofenac.html",
        "source": "valueset-diclofenac.xml"
+     },
+     "ValueSet/valueset-diclofenac-exclude": {
+       "base": "ValueSet-valueset-diclofenac-exclude.html",
+       "source": "valueset-diclofenac-exclude.xml"
      },
      "ValueSet/valueset-diflunisal": {
        "base": "ValueSet-valueset-diflunisal.html",
@@ -154,9 +170,21 @@
        "base": "ValueSet-valueset-fludrocortisone.html",
        "source": "valueset-fludrocortisone.xml"
      },
+     "ValueSet/valueset-fluocortolone": {
+       "base": "ValueSet-valueset-fluocortolone.html",
+       "source": "valueset-fluocortolone.xml"
+     },
+     "ValueSet/valueset-fluocortolone-exclude": {
+       "base": "ValueSet-valueset-fluocortolone-exclude.html",
+       "source": "valueset-fluocortolone-exclude.xml"
+     },
      "ValueSet/valueset-flurbiprofen": {
        "base": "ValueSet-valueset-flurbiprofen.html",
        "source": "valueset-flurbiprofen.xml"
+     },
+     "ValueSet/valueset-flurbiprofen-exclude": {
+       "base": "ValueSet-valueset-flurbiprofen-exclude.html",
+       "source": "valueset-flurbiprofen-exclude.xml"
      },
      "ValueSet/valueset-Hx-UGIB-snomed": {
        "base": "ValueSet-valueset-Hx-UGIB-snomed.html",
@@ -166,9 +194,17 @@
        "base": "ValueSet-valueset-hydrocortisone.html",
        "source": "valueset-hydrocortisone.xml"
      },
+     "ValueSet/valueset-hydrocortisone-exclude": {
+       "base": "ValueSet-valueset-hydrocortisone-exclude.html",
+       "source": "valueset-hydrocortisone-exclude.xml"
+     },
      "ValueSet/valueset-ibuprofen": {
        "base": "ValueSet-valueset-ibuprofen.html",
        "source": "valueset-ibuprofen.xml"
+     },
+     "ValueSet/valueset-ibuprofen-exclude": {
+       "base": "ValueSet-valueset-ibuprofen-exclude.html",
+       "source": "valueset-ibuprofen-exclude.xml"
      },
      "ValueSet/valueset-indomethacin": {
        "base": "ValueSet-valueset-indomethacin.html",
@@ -178,9 +214,17 @@
        "base": "ValueSet-valueset-ketoprofen.html",
        "source": "valueset-ketoprofen.xml"
      },
+     "ValueSet/valueset-ketoprofen-exclude": {
+       "base": "ValueSet-valueset-ketoprofen-exclude.html",
+       "source": "valueset-ketoprofen-exclude.xml"
+     },
     "ValueSet/valueset-ketorolac": {
       "base": "ValueSet-valueset-ketorolac.html",
       "source": "valueset-ketorolac.xml"
+     },
+     "ValueSet/valueset-ketorolac-exclude": {
+       "base": "ValueSet-valueset-ketorolac-exclude.html",
+       "source": "valueset-ketorolac-exclude.xml"
      },
      "ValueSet/valueset-lansoprazole": {
        "base": "ValueSet-valueset-lansoprazole.html",
@@ -202,6 +246,10 @@
            "base": "ValueSet-valueset-methylprednisolone.html",
            "source": "valueset-methylprednisolone.xml"
       },
+     "ValueSet/valueset-methylprednisolone-exclude": {
+       "base": "ValueSet-valueset-methylprednisolone-exclude.html",
+       "source": "valueset-methylprednisolone-exclude.xml"
+     },
       "ValueSet/valueset-misoprostol": {
         "base": "ValueSet-valueset-misoprostol.html",
         "source": "valueset-misoprostol.xml"
@@ -217,6 +265,10 @@
      "ValueSet/valueset-nepafenac": {
        "base": "ValueSet-valueset-nepafenac.html",
        "source": "valueset-nepafenac.xml"
+     },
+     "ValueSet/valueset-nepafenac-exclude": {
+       "base": "ValueSet-valueset-nepafenac-exclude.html",
+       "source": "valueset-nepafenac-exclude.xml"
      },
      "ValueSet/valueset-omeprazole": {
        "base": "ValueSet-valueset-omeprazole.html",
@@ -238,9 +290,17 @@
        "base": "ValueSet-valueset-piroxicam.html",
        "source": "valueset-piroxicam.xml"
      },
+     "ValueSet/valueset-piroxicam-exclude": {
+       "base": "ValueSet-valueset-piroxicam-exclude.html",
+       "source": "valueset-piroxicam-exclude.xml"
+     },
      "ValueSet/valueset-prednisolone": {
        "base": "ValueSet-valueset-prednisolone.html",
        "source": "valueset-prednisolone.xml"
+     },
+     "ValueSet/valueset-prednisolone-exclude": {
+       "base": "ValueSet-valueset-prednisolone-exclude.html",
+       "source": "valueset-prednisolone-exclude.xml"
      },
      "ValueSet/valueset-prednisone": {
        "base": "ValueSet-valueset-prednisone.html",
@@ -258,6 +318,10 @@
        "base": "ValueSet-valueset-rimexolone.html",
        "source": "valueset-rimexolone.xml"
      },
+     "ValueSet/valueset-rimexolone-exclude": {
+       "base": "ValueSet-valueset-rimexolone-exclude.html",
+       "source": "valueset-rimexolone-exclude.xml"
+     },
      "ValueSet/valueset-spironolactone": {
        "base": "ValueSet-valueset-spironolactone.html",
        "source": "valueset-spironolactone.xml"
@@ -273,6 +337,10 @@
      "ValueSet/valueset-triamcinolone": {
        "base": "ValueSet-valueset-triamcinolone.html",
        "source": "valueset-triamcinolone.xml"
+     },
+     "ValueSet/valueset-triamcinolone-exclude": {
+       "base": "ValueSet-valueset-triamcinolone-exclude.html",
+       "source": "valueset-triamcinolone-exclude.xml"
      },
      "ValueSet/valueset-topicaldiclofenac": {
        "base": "ValueSet-valueset-topicaldiclofenac.html",

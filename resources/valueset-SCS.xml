@@ -25,76 +25,88 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-aldosterone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aldosterone.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-betamethasone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-betamethasone.xml"/>
+        </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-betamethasone-exclude.xml"/>
+        </exclude>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cloprednol.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-cloprednol.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-cortisone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortivazol.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-cortivazol.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-deflazacort.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-deflazacort.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-desoxycorticosterone.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-desoxycorticosterone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexamethasone.xml"/>
+        </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexamethasone-exclude.xml"/>
+        </exclude>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fludrocortisone.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-dexamethasone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fluocortolone.xml"/>
+        </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fluocortolone-exclude.xml"/>
+        </exclude>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-hydrocortisone.xml"/>
+        </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-hydrocortisone-exclude.xml"/>
+        </exclude>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meprednisone.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-fludrocortisone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-methylprednisolone.xml"/>
+        </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-methylprednisolone-exclude.xml"/>
+        </exclude>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-paramethasone.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-fluocortolone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisolone.xml"/>
+        </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisolone-exclude.xml"/>
+        </exclude>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisone.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-hydrocortisone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednylidene.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-meprednisone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rimexolone.xml"/>
         </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rimexolone-exclude.xml"/>
+        </exclude>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-methylprednisolone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone.xml"/>
         </include>
+        <exclude>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone-exclude.xml"/>
+        </exclude>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-paramethasone.xml"/>
-        </include>
-        <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-prednisolone.xml"/>
-        </include>
-        <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-prednisone.xml"/>
-        </include>
-        <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-prednylidene.xml"/>
-        </include>
-        <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-rimexolone.xml"/>
-        </include>
-        <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-triamcinolone.xml"/>
-        </include>
-        <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-trilostane.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-trilostane.xml"/>
         </include>
     </compose>
 </ValueSet>

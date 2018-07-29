@@ -25,26 +25,22 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-dexlansoprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexlansoprazole.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-esomeprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-esomeprazole.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-lansoprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-omeprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-omeprazole.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-pantoprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-rabeprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole.xml"/>
         </include>
     </compose>
 </ValueSet>

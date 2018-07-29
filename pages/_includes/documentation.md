@@ -1,11 +1,35 @@
-## PDDI CDS - Documentation
+# PDDI CDS - Documentation
 
 * **TODO** add Digoxin + Cyclosporin
 
 {:.no_toc}
 This section contains documentation for implementers from both the clinical and technical perspectives. The process documentation describes the assumptions and decisions made, as well as a functional description of the recommendations. The integration documentation describes the overall approach and documents the artifacts contained in the IG, while the implementation documentation provides developer-level documentation on how to use the artifacts.
 
-### Warfarin + NSAIDs 
+## Warfarin + NSAIDs 
+
+### Decision Points
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Warfarin + NSAID medication-select logic </strong></figcaption>
+  <img src="assets/images/Warfarin_NSAID_select.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.png" />
+</figure>
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 2: Parse and Pre-process medication-select request </strong></figcaption>
+  <img src="assets/images/Parse_pre-process_select.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_select.png" />
+</figure>
+
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 3: Warfarin + NSAID medication-prescribe logic </strong></figcaption>
+  <img src="assets/images/Warfarin_NSAID_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.png" />
+</figure>
+
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 4: Parse and Pre-process medication-prescribe request </strong></figcaption>
+  <img src="assets/images/Parse_pre-process_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.png" />
+</figure>
 
 #### Minimal Information Model 
 
@@ -49,12 +73,7 @@ This section contains documentation for implementers from both the clinical and 
 > **Frequency of Harm for persons who have been exposed to the PDDI:** Unknown.
 > *Comment:* Frequency of exposure and frequency of harm information is rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available.
 
-#### Decision Points
 
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Warfarin + NSAID Decision Logic </strong></figcaption>
-  <img src="assets/images/Warfarin_NSAID_logic.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_logic.png" />
-</figure>
 
 #### Content
 The following artifacts formalize the description of the logic and behavior defined by this recommendation.

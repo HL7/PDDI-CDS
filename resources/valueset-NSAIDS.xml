@@ -30,18 +30,12 @@
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac.xml"/>
         </include>
-       <exclude>
-           <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac-exclude.xml"/>
-       </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-celecoxib.xml"/>
         </include>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diclofenac.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diclofenac-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diflunisal.xml"/>
         </include>
@@ -54,30 +48,18 @@
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-flurbiprofen.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-flurbiprofen-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-indomethacin.xml"/>
         </include>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketoprofen.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketoprofen-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketorolac.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketorolac-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-mefenamate.xml"/>
         </include>
@@ -93,18 +75,12 @@
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nepafenac.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nepafenac-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-oxaprozin.xml"/>
         </include>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-piroxicam.xml"/>
         </include>
-        <exclude>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-piroxicam-exclude.xml"/>
-        </exclude>
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-sulindac.xml"/>
         </include>

@@ -1,0 +1,1238 @@
+= Log =
+Load Configuration from /Users/TomLeslie/PDDI-CDS/ig.json                        (00.0000sec)
+Root directory: /Users/TomLeslie/PDDI-CDS                                        (00.0132sec)
+Check folders                                                                    (00.0142sec)
+Source: /Users/TomLeslie/PDDI-CDS/resources                                      (00.0143sec)
+Source: /Users/TomLeslie/PDDI-CDS/examples                                       (00.0144sec)
+Pages: /Users/TomLeslie/PDDI-CDS/pages                                           (00.0144sec)
+Temp: /Users/TomLeslie/PDDI-CDS/temp                                             (00.0144sec)
+Output: /Users/TomLeslie/PDDI-CDS/output                                         (00.0809sec)
+Temp: /Users/TomLeslie/PDDI-CDS/qa                                               (01.0087sec)
+Terminology Cache is at /Users/TomLeslie/PDDI-CDS/txCache. 74 files in cache     (01.0094sec)
+Load Validation Pack (internal)                                                  (01.0094sec)
+Definitions 3.4.0-13727                                                          (30.0046sec)
+Load Terminology Cache from /Users/TomLeslie/PDDI-CDS/txCache                    (30.0051sec)
+Connect to Terminology Server at http://tx.fhir.org/r4                           (30.0052sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1512.png                      (32.0533sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1512.png                    (32.0534sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck01000.png                     (32.0535sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck01000.png                   (32.0536sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_profile.png                     (32.0536sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_profile.png                   (32.0537sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck01.png                        (32.0537sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck01.png                      (32.0538sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-infrastructure.png              (32.0538sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-infrastructure.png            (32.0542sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11110.png                     (32.0543sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11110.png                   (32.0543sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck010.png                       (32.0544sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck010.png                     (32.0545sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1040.png                      (32.0545sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1040.png                    (32.0546sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck001001.png                    (32.0546sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck001001.png                  (32.0547sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck00010.png                     (32.0548sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck00010.png                   (32.0549sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0111.png                      (32.0549sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0111.png                    (32.0550sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck041.png                       (32.0551sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck041.png                     (32.0551sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1001010.png                   (32.0552sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1001010.png                 (32.0552sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0510.png                      (32.0553sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0510.png                    (32.0553sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_element.gif                     (32.0554sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_element.gif                   (32.0554sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10011.png                     (32.0555sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10011.png                   (32.0555sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck150.png                       (32.0556sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck150.png                     (32.0556sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0.png                         (32.0557sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0.png                       (32.0558sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-include.png                     (32.0558sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-include.png                   (32.0559sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck05140.png                     (32.0559sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck05140.png                   (32.0562sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck014.png                       (32.0563sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck014.png                     (32.0661sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10010000.png                  (32.0662sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10010000.png                (32.0663sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0010010.png                   (32.0663sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0010010.png                 (32.0664sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-toc.png                         (32.0664sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-toc.png                       (32.0665sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-page.png                        (32.0666sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-page.png                      (32.0674sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0410.png                      (32.0674sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0410.png                    (32.0675sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck101100.png                    (32.0675sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck101100.png                  (32.0676sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_modifier_extension_simple.png   (32.0677sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_modifier_extension_simple.png (32.0677sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/mustsupport.png                      (32.0678sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/mustsupport.png                    (32.0678sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_page.gif                        (32.0679sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_page.gif                      (32.0679sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_resource.png                    (32.0680sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_resource.png                  (32.0680sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck100000.png                    (32.0681sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck100000.png                  (32.0681sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1540.png                      (32.0682sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1540.png                    (32.0683sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vline_slice.png                  (32.0683sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vline_slice.png                (32.0684sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck01100.png                     (32.0684sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck01100.png                   (32.0685sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck110.png                       (32.0685sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck110.png                     (32.0685sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck111000.png                    (32.0686sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck111000.png                  (32.0686sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_blank.png                        (32.0686sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_blank.png                      (32.0687sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck12.png                        (32.0688sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck12.png                      (32.0689sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0011.png                      (32.0689sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0011.png                    (32.0694sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck010110.png                    (32.0695sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck010110.png                  (32.0695sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck001.png                       (32.0696sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck001.png                     (32.0696sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck00.png                        (32.0697sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck00.png                      (32.0697sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11101.png                     (32.0698sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11101.png                   (32.0698sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck05050.png                     (32.0699sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck05050.png                   (32.0699sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vline_slicer.png                 (32.0700sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vline_slicer.png               (32.0700sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10111.png                     (32.0701sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10111.png                   (32.0701sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck111100.png                    (32.0702sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck111100.png                  (32.0702sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_modifier_extension_complex.png  (32.0703sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_modifier_extension_complex.png (32.0704sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10.png                        (32.0704sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10.png                      (32.0705sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-clinical.png                    (32.0705sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-clinical.png                  (32.0707sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck05040.png                     (32.0708sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck05040.png                   (32.0709sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck011.png                       (32.0709sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck011.png                     (32.0710sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck050.png                       (32.0711sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck050.png                     (32.0711sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck100.png                       (32.0712sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck100.png                     (32.0712sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_page_n.gif                      (32.0712sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_page_n.gif                    (32.0713sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/target.png                           (32.0713sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/target.png                         (32.0714sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10010.png                     (32.0714sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10010.png                   (32.0715sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck04.png                        (32.0715sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck04.png                      (32.0716sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1010.png                      (32.0716sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1010.png                    (32.0718sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1515.png                      (32.0720sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1515.png                    (32.0720sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck115.png                       (32.0721sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck115.png                     (32.0721sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck100010.png                    (32.0721sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck100010.png                  (32.0722sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1550.png                      (32.0722sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1550.png                    (32.0723sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck05.png                        (32.0723sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck05.png                      (32.0724sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck111.png                       (32.0724sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck111.png                     (32.0724sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_datatype.gif                    (32.0725sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_datatype.gif                  (32.0725sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck01110.png                     (32.0725sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck01110.png                   (32.0726sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_extension.png                   (32.0726sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_extension.png                 (32.0727sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_extension_complex.png           (32.0727sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_extension_complex.png         (32.0728sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10000.png                     (32.0728sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10000.png                   (32.0729sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-example.png                     (32.0729sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-example.png                   (32.0730sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1500.png                      (32.0730sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1500.png                    (32.0731sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1110.png                      (32.0731sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1110.png                    (32.0732sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/external.png                         (32.0732sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/external.png                       (32.0733sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck15.png                        (32.0733sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck15.png                      (32.0733sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-administration.png              (32.0734sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-administration.png            (32.0736sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10010010.png                  (32.0737sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10010010.png                (32.0738sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_choice.gif                      (32.0742sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_choice.gif                    (32.0743sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11.png                        (32.0743sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11.png                      (32.0744sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1001001.png                   (32.0744sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1001001.png                 (32.0744sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck100110.png                    (32.0745sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck100110.png                  (32.0745sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck05150.png                     (32.0746sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck05150.png                   (32.0746sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck111110.png                    (32.0747sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck111110.png                  (32.0747sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1505.png                      (32.0748sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1505.png                    (32.0748sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck105.png                       (32.0748sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck105.png                     (32.0749sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1400.png                      (32.0749sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1400.png                    (32.0750sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_reuse.png                       (32.0750sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_reuse.png                     (32.0750sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10100.png                     (32.0751sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10100.png                   (32.0751sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck000.png                       (32.0752sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck000.png                     (32.0752sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-fhir-16.png                     (32.0753sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-fhir-16.png                   (32.0753sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0512.png                      (32.0754sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0512.png                    (32.0754sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10110.png                     (32.0754sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10110.png                   (32.0755sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck111010.png                    (32.0755sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck111010.png                  (32.0756sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck00000.png                     (32.0756sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck00000.png                   (32.0757sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck140.png                       (32.0757sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck140.png                     (32.0758sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck051.png                       (32.0758sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck051.png                     (32.0759sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1001000.png                   (32.0759sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1001000.png                 (32.0760sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vline.png                        (32.0760sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vline.png                      (32.0761sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-list.gif                        (32.0761sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-list.gif                      (32.0761sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck01010.png                     (32.0762sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck01010.png                   (32.0762sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck101.png                       (32.0763sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck101.png                     (32.0763sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0001.png                      (32.0763sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0001.png                    (32.0764sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vjoin_end.png                    (32.0764sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vjoin_end.png                  (32.0765sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0010000.png                   (32.0765sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0010000.png                 (32.0767sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/summary.png                          (32.0768sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/summary.png                        (32.0768sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11100.png                     (32.0768sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11100.png                   (32.0769sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck00101.png                     (32.0769sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck00101.png                   (32.0769sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_primitive.png                   (32.0769sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_primitive.png                 (32.0770sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0400.png                      (32.0770sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0400.png                    (32.0770sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1011.png                      (32.0771sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1011.png                    (32.0771sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_extension_simple.png            (32.0771sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_extension_simple.png          (32.0773sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_text.png                        (32.0773sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_text.png                      (32.0773sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1100.png                      (32.0774sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1100.png                    (32.0774sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck14.png                        (32.0775sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck14.png                      (32.0775sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0101.png                      (32.0776sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0101.png                    (32.0776sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1.png                         (32.0777sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1.png                       (32.0777sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck112.png                       (32.0777sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck112.png                     (32.0778sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1410.png                      (32.0778sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1410.png                    (32.0779sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck155.png                       (32.0779sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck155.png                     (32.0779sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11000.png                     (32.0780sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11000.png                   (32.0780sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0500.png                      (32.0781sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0500.png                    (32.0781sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck100100.png                    (32.0782sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck100100.png                  (32.0782sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/lock.png                             (32.0784sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/lock.png                           (32.0786sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-dictionary.png                  (32.0786sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-dictionary.png                (32.0787sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck10001.png                     (32.0787sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck10001.png                   (32.0787sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1111.png                      (32.0788sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1111.png                    (32.0788sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck010100.png                    (32.0789sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck010100.png                  (32.0789sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_reference.png                   (32.0790sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_reference.png                 (32.0790sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1510.png                      (32.0791sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1510.png                    (32.0791sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_slice.png                       (32.0792sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_slice.png                     (32.0792sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0515.png                      (32.0793sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0515.png                    (32.0793sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck141.png                       (32.0793sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck141.png                     (32.0794sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0114.png                      (32.0794sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0114.png                    (32.0795sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-implementation.png              (32.0795sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-implementation.png            (32.0798sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vjoin_end_slicer.png             (32.0799sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vjoin_end_slicer.png           (32.0799sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon_bundle.png                      (32.0800sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon_bundle.png                    (32.0800sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-resource.png                    (32.0800sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-resource.png                  (32.0801sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vjoin.png                        (32.0801sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vjoin.png                      (32.0802sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11111.png                     (32.0802sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11111.png                   (32.0802sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1140.png                      (32.0802sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1140.png                    (32.0803sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-documentation.png               (32.0803sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-documentation.png             (32.0804sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck15150.png                     (32.0804sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck15150.png                   (32.0805sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0000.png                      (32.0805sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0000.png                    (32.0805sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1000.png                      (32.0805sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1000.png                    (32.0806sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck101110.png                    (32.0806sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck101110.png                  (32.0807sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vjoin_end_slice.png              (32.0807sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vjoin_end_slice.png            (32.0808sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck151.png                       (32.0809sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck151.png                     (32.0810sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck01011.png                     (32.0810sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck01011.png                   (32.0811sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck00100.png                     (32.0811sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck00100.png                   (32.0811sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0505.png                      (32.0811sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0505.png                    (32.0812sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vjoin_slice.png                  (32.0812sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vjoin_slice.png                (32.0812sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck040.png                       (32.0813sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck040.png                     (32.0813sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/cc0.png                              (32.0813sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/cc0.png                            (32.0814sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck00110.png                     (32.0814sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck00110.png                   (32.0815sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck15050.png                     (32.0815sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck15050.png                   (32.0815sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0100.png                      (32.0816sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0100.png                    (32.0816sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck13.png                        (32.0817sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck13.png                      (32.0817sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/fhir.css                             (32.0817sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/fhir.css                           (32.0820sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck120.png                       (32.0820sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck120.png                     (32.0821sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0110.png                      (32.0821sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0110.png                    (32.0822sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1101.png                      (32.0822sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1101.png                    (32.0823sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1150.png                      (32.0823sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1150.png                    (32.0823sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck100101.png                    (32.0824sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck100101.png                  (32.0825sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0004.png                      (32.0825sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0004.png                    (32.0825sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck15040.png                     (32.0825sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck15040.png                   (32.0826sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck130.png                       (32.0826sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck130.png                     (32.0826sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck11010.png                     (32.0827sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck11010.png                   (32.0827sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1001.png                      (32.0827sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1001.png                    (32.0827sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/icon-directory.gif                   (32.0828sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/icon-directory.gif                 (32.0828sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck0010.png                      (32.0829sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck0010.png                    (32.0829sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck15140.png                     (32.0829sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck15140.png                   (32.0830sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_vjoin_slicer.png                 (32.0830sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_vjoin_slicer.png               (32.0830sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/modifier.png                         (32.0830sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/modifier.png                       (32.0831sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_bck1050.png                      (32.0831sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_bck1050.png                    (32.0831sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/qa/tbl_spacer.png                       (32.0832sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/tbl_spacer.png                     (32.0832sec)
+Initialization complete                                                          (32.0832sec)
+Load Content                                                                     (32.0832sec)
+Processing Conformance Resources                                                 (41.0409sec)
+process type: NamingSystem                                                       (41.0410sec)
+process type: CodeSystem                                                         (41.0410sec)
+process type: ValueSet                                                           (41.0410sec)
+process res: valueset-AAS                                                        (41.0410sec)
+process res: valueset-NSAIDS                                                     (41.0681sec)
+process res: valueset-PPIS                                                       (41.0715sec)
+process res: valueset-SCS                                                        (41.0737sec)
+process res: valueset-aldosterone                                                (41.0778sec)
+process res: valueset-aspirin                                                    (41.0793sec)
+process res: valueset-betamethasone                                              (42.0856sec)
+process res: valueset-betamethasone-exclude                                      (42.0928sec)
+process res: valueset-bromfenac                                                  (42.0959sec)
+process res: valueset-bromfenac-exclude                                          (42.0973sec)
+process res: valueset-celecoxib                                                  (42.0981sec)
+process res: valueset-cloprednol                                                 (42.0992sec)
+process res: valueset-cortisone                                                  (42.0999sec)
+process res: valueset-cortivazol                                                 (43.0009sec)
+process res: valueset-deflazacort                                                (43.0013sec)
+process res: valueset-desoxycorticosterone                                       (43.0033sec)
+process res: valueset-dexamethasone                                              (43.0042sec)
+process res: valueset-dexamethasone-exclude                                      (43.0101sec)
+process res: valueset-dexlansoprazole                                            (43.0114sec)
+process res: valueset-diclofenac                                                 (43.0121sec)
+process res: valueset-diclofenac-exclude                                         (43.0177sec)
+process res: valueset-diflunisal                                                 (43.0186sec)
+process res: valueset-eplerenone                                                 (43.0192sec)
+process res: valueset-esomeprazole                                               (43.0199sec)
+process res: valueset-etodolac                                                   (43.0216sec)
+process res: valueset-fenoprofen                                                 (43.0227sec)
+process res: valueset-fludrocortisone                                            (43.0239sec)
+process res: valueset-fluocortolone                                              (43.0246sec)
+process res: valueset-fluocortolone-exclude                                      (43.0253sec)
+process res: valueset-flurbiprofen                                               (43.0257sec)
+process res: valueset-flurbiprofen-exclude                                       (43.0272sec)
+process res: valueset-Hx-UGIB-snomed                                             (43.0279sec)
+process res: valueset-hydrocortisone                                             (43.0292sec)
+process res: valueset-hydrocortisone-exclude                                     (43.0486sec)
+process res: valueset-ibuprofen                                                  (43.0642sec)
+process res: valueset-ibuprofen-exclude                                          (43.0712sec)
+process res: valueset-indomethacin                                               (43.0719sec)
+process res: valueset-ketoprofen                                                 (43.0735sec)
+process res: valueset-ketoprofen-exclude                                         (43.0748sec)
+process res: valueset-ketorolac                                                  (43.0753sec)
+process res: valueset-ketorolac-exclude                                          (43.0771sec)
+process res: valueset-lansoprazole                                               (43.0778sec)
+process res: valueset-mefenamate                                                 (43.0789sec)
+process res: valueset-meloxicam                                                  (43.0796sec)
+process res: valueset-meprednisone                                               (43.0818sec)
+process res: valueset-methylprednisolone                                         (43.0824sec)
+process res: valueset-methylprednisolone-exclude                                 (43.0859sec)
+process res: valueset-misoprostol                                                (43.0881sec)
+process res: valueset-nabumetone                                                 (43.0891sec)
+process res: valueset-naproxen                                                   (43.0898sec)
+process res: valueset-nepafenac                                                  (43.0934sec)
+process res: valueset-nepafenac-exclude                                          (43.0944sec)
+process res: valueset-omeprazole                                                 (43.0950sec)
+process res: valueset-oxaprozin                                                  (43.0977sec)
+process res: valueset-pantoprazole                                               (43.0986sec)
+process res: valueset-paramethasone                                              (43.0998sec)
+process res: valueset-piroxicam                                                  (44.0002sec)
+process res: valueset-piroxicam-exclude                                          (44.0037sec)
+process res: valueset-prednisolone                                               (44.0043sec)
+process res: valueset-prednisolone-exclude                                       (44.0098sec)
+process res: valueset-prednisone                                                 (44.0118sec)
+process res: valueset-prednylidene                                               (44.0130sec)
+process res: valueset-rabeprazole                                                (44.0135sec)
+process res: valueset-rimexolone                                                 (44.0155sec)
+process res: valueset-rimexolone-exclude                                         (44.0162sec)
+process res: valueset-spironolactone                                             (44.0167sec)
+process res: valueset-sulindac                                                   (44.0189sec)
+process res: valueset-tolmetin                                                   (44.0193sec)
+process res: valueset-topicaldiclofenac                                          (44.0203sec)
+process res: valueset-triamcinolone                                              (44.0211sec)
+process res: valueset-triamcinolone-exclude                                      (44.0272sec)
+process res: valueset-trilostane                                                 (44.0286sec)
+process res: valueset-warfarin                                                   (44.0295sec)
+process type: ConceptMap                                                         (44.0326sec)
+process type: DataElement                                                        (44.0327sec)
+process type: StructureDefinition                                                (44.0327sec)
+process type: OperationDefinition                                                (44.0327sec)
+process type: CapabilityStatement                                                (44.0327sec)
+Generate Snapshots                                                               (44.0327sec)
+process type: StructureMap                                                       (44.0363sec)
+validate Expressions                                                             (44.0363sec)
+Generating Narratives                                                            (44.0363sec)
+gen narratives                                                                   (44.0363sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/ig : ig                        (44.0403sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-AAS : valueset-AAS    (44.0425sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-NSAIDS : valueset-NSAIDS (44.0523sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-PPIS : valueset-PPIS  (44.0537sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-SCS : valueset-SCS    (44.0546sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-aldosterone : valueset-aldosterone (44.0558sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-aspirin : valueset-aspirin (44.0568sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-betamethasone : valueset-betamethasone (49.0206sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-betamethasone-exclude : valueset-betamethasone-exclude (49.0616sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-bromfenac : valueset-bromfenac (49.0864sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-bromfenac-exclude : valueset-bromfenac-exclude (49.0878sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-celecoxib : valueset-celecoxib (49.0889sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-cloprednol : valueset-cloprednol (49.0905sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-cortisone : valueset-cortisone (49.0911sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-cortivazol : valueset-cortivazol (49.0933sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-deflazacort : valueset-deflazacort (49.0940sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-desoxycorticosterone : valueset-desoxycorticosterone (49.0961sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-dexamethasone : valueset-dexamethasone (49.0974sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-dexamethasone-exclude : valueset-dexamethasone-exclude (50.0306sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-dexlansoprazole : valueset-dexlansoprazole (50.0339sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-diclofenac : valueset-diclofenac (50.0350sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-diclofenac-exclude : valueset-diclofenac-exclude (50.0507sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-diflunisal : valueset-diflunisal (50.0515sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-eplerenone : valueset-eplerenone (50.0522sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-esomeprazole : valueset-esomeprazole (50.0531sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-etodolac : valueset-etodolac (50.0591sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-fenoprofen : valueset-fenoprofen (50.0613sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-fludrocortisone : valueset-fludrocortisone (50.0640sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-fluocortolone : valueset-fluocortolone (50.0647sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-fluocortolone-exclude : valueset-fluocortolone-exclude (50.0657sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-flurbiprofen : valueset-flurbiprofen (50.0666sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-flurbiprofen-exclude : valueset-flurbiprofen-exclude (50.0692sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-Hx-UGIB-snomed : valueset-Hx-UGIB-snomed (50.0698sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-hydrocortisone : valueset-hydrocortisone (50.0711sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-hydrocortisone-exclude : valueset-hydrocortisone-exclude (54.0191sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-ibuprofen : valueset-ibuprofen (55.0738sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-ibuprofen-exclude : valueset-ibuprofen-exclude (56.0470sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-indomethacin : valueset-indomethacin (56.0481sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-ketoprofen : valueset-ketoprofen (56.0513sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-ketoprofen-exclude : valueset-ketoprofen-exclude (56.0537sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-ketorolac : valueset-ketorolac (56.0547sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-ketorolac-exclude : valueset-ketorolac-exclude (56.0591sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-lansoprazole : valueset-lansoprazole (56.0604sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-mefenamate : valueset-mefenamate (56.0625sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-meloxicam : valueset-meloxicam (56.0634sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-meprednisone : valueset-meprednisone (56.0695sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-methylprednisolone : valueset-methylprednisolone (56.0700sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-methylprednisolone-exclude : valueset-methylprednisolone-exclude (56.0780sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-misoprostol : valueset-misoprostol (56.0786sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-nabumetone : valueset-nabumetone (56.0796sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-naproxen : valueset-naproxen (56.0802sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-nepafenac : valueset-nepafenac (56.0924sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-nepafenac-exclude : valueset-nepafenac-exclude (56.0931sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-omeprazole : valueset-omeprazole (56.0936sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-oxaprozin : valueset-oxaprozin (57.0000sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-pantoprazole : valueset-pantoprazole (57.0007sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-paramethasone : valueset-paramethasone (57.0019sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-piroxicam : valueset-piroxicam (57.0022sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-piroxicam-exclude : valueset-piroxicam-exclude (57.0044sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisolone : valueset-prednisolone (57.0047sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisolone-exclude : valueset-prednisolone-exclude (57.0388sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisone : valueset-prednisone (57.0418sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-prednylidene : valueset-prednylidene (57.0443sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-rabeprazole : valueset-rabeprazole (57.0449sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-rimexolone : valueset-rimexolone (57.0459sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-rimexolone-exclude : valueset-rimexolone-exclude (57.0467sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-spironolactone : valueset-spironolactone (57.0471sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-sulindac : valueset-sulindac (57.0493sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-tolmetin : valueset-tolmetin (57.0496sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-topicaldiclofenac : valueset-topicaldiclofenac (57.0503sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-triamcinolone : valueset-triamcinolone (57.0509sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-triamcinolone-exclude : valueset-triamcinolone-exclude (57.0679sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-trilostane : valueset-trilostane (57.0704sec)
+narrative for /Users/TomLeslie/PDDI-CDS/resources/valueset-warfarin : valueset-warfarin (57.0713sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/encounter-warfarin-nsaid-context : encounter-warfarin-nsaid-context (57.0741sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/encounter-warfarin-nsaid-prefetch : encounter-warfarin-nsaid-prefetch (57.0765sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationadministration-warfarin-nsaid-warfarin-prefetch : medicationadministration-warfarin-nsaid-warfarin-prefetch (57.0767sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationdispense-warfarin-nsaid-warfarin-prefetch : medicationdispense-warfarin-nsaid-warfarin-prefetch (58.0644sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch : medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch (59.0374sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-corticosteroid-prefetch : medicationrequest-warfarin-nsaid-corticosteroid-prefetch (59.0672sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-misoprostol-prefetch : medicationrequest-warfarin-nsaid-misoprostol-prefetch (00:01:00.0093sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-nsaid-context : medicationrequest-warfarin-nsaid-nsaid-context (00:01:00.0440sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-nsaid-prefetch : medicationrequest-warfarin-nsaid-nsaid-prefetch (00:01:00.0814sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-ppi-prefetch : medicationrequest-warfarin-nsaid-ppi-prefetch (00:01:01.0253sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-topicaldiclofenac-context : medicationrequest-warfarin-nsaid-topicaldiclofenac-context (00:01:01.0589sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-warfarin-context : medicationrequest-warfarin-nsaid-warfarin-context (00:01:01.0932sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-warfarin-prefetch : medicationrequest-warfarin-nsaid-warfarin-prefetch (00:01:02.0330sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/medicationstatement-warfarin-nsaid-warfarin-prefetch : medicationstatement-warfarin-nsaid-warfarin-prefetch (00:01:02.0643sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/patient-warfarin-nsaid-over65-prefetch : patient-warfarin-nsaid-over65-prefetch (00:01:03.0073sec)
+narrative for /Users/TomLeslie/PDDI-CDS/examples/patient-warfarin-nsaid-under65-prefetch : patient-warfarin-nsaid-under65-prefetch (00:01:03.0080sec)
+Validating Resources                                                             (00:01:03.0083sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/ig                              (00:01:03.0083sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/ig                                       (00:01:03.0083sec)
+     validating PDDI CDS                                                         (00:01:03.0083sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-AAS                    (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-AAS                             (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-NSAIDS                 (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-NSAIDS                          (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-PPIS                   (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-PPIS                            (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-SCS                    (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-SCS                             (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-aldosterone            (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-aldosterone                     (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-aspirin                (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-aspirin                         (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-betamethasone          (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-betamethasone                   (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-betamethasone-exclude  (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-betamethasone-exclude           (00:01:03.0661sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-bromfenac              (00:01:03.0661sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-bromfenac                       (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-bromfenac-exclude      (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-bromfenac-exclude               (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-celecoxib              (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-celecoxib                       (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-cloprednol             (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-cloprednol                      (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-cortisone              (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-cortisone                       (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-cortivazol             (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-cortivazol                      (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-deflazacort            (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-deflazacort                     (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-desoxycorticosterone   (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-desoxycorticosterone            (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-dexamethasone          (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-dexamethasone                   (00:01:03.0662sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-dexamethasone-exclude  (00:01:03.0662sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-dexamethasone-exclude           (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-dexlansoprazole        (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-dexlansoprazole                 (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-diclofenac             (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-diclofenac                      (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-diclofenac-exclude     (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-diclofenac-exclude              (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-diflunisal             (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-diflunisal                      (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-eplerenone             (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-eplerenone                      (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-esomeprazole           (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-esomeprazole                    (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-etodolac               (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-etodolac                        (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-fenoprofen             (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-fenoprofen                      (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-fludrocortisone        (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-fludrocortisone                 (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-fluocortolone          (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-fluocortolone                   (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-fluocortolone-exclude  (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-fluocortolone-exclude           (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-flurbiprofen           (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-flurbiprofen                    (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-flurbiprofen-exclude   (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-flurbiprofen-exclude            (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-Hx-UGIB-snomed         (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-Hx-UGIB-snomed                  (00:01:03.0663sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-hydrocortisone         (00:01:03.0663sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-hydrocortisone                  (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-hydrocortisone-exclude (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-hydrocortisone-exclude          (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-ibuprofen              (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-ibuprofen                       (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-ibuprofen-exclude      (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-ibuprofen-exclude               (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-indomethacin           (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-indomethacin                    (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-ketoprofen             (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-ketoprofen                      (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-ketoprofen-exclude     (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-ketoprofen-exclude              (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-ketorolac              (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-ketorolac                       (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-ketorolac-exclude      (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-ketorolac-exclude               (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-lansoprazole           (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-lansoprazole                    (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-mefenamate             (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-mefenamate                      (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-meloxicam              (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-meloxicam                       (00:01:03.0664sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-meprednisone           (00:01:03.0664sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-meprednisone                    (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-methylprednisolone     (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-methylprednisolone              (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-methylprednisolone-exclude (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-methylprednisolone-exclude      (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-misoprostol            (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-misoprostol                     (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-nabumetone             (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-nabumetone                      (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-naproxen               (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-naproxen                        (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-nepafenac              (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-nepafenac                       (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-nepafenac-exclude      (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-nepafenac-exclude               (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-omeprazole             (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-omeprazole                      (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-oxaprozin              (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-oxaprozin                       (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-pantoprazole           (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-pantoprazole                    (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-paramethasone          (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-paramethasone                   (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-piroxicam              (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-piroxicam                       (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-piroxicam-exclude      (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-piroxicam-exclude               (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisolone           (00:01:03.0665sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisolone                    (00:01:03.0665sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisolone-exclude   (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisolone-exclude            (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisone             (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-prednisone                      (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-prednylidene           (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-prednylidene                    (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-rabeprazole            (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-rabeprazole                     (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-rimexolone             (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-rimexolone                      (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-rimexolone-exclude     (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-rimexolone-exclude              (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-spironolactone         (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-spironolactone                  (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-sulindac               (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-sulindac                        (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-tolmetin               (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-tolmetin                        (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-topicaldiclofenac      (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-topicaldiclofenac               (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-triamcinolone          (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-triamcinolone                   (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-triamcinolone-exclude  (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-triamcinolone-exclude           (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-trilostane             (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-trilostane                      (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/resources/valueset-warfarin               (00:01:03.0666sec)
+ .. /Users/TomLeslie/PDDI-CDS/resources/valueset-warfarin                        (00:01:03.0666sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/encounter-warfarin-nsaid-context (00:01:03.0667sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/encounter-warfarin-nsaid-context          (00:01:03.0667sec)
+     validating Encounter encounter-warfarin-nsaid-context                       (00:01:03.0667sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/encounter-warfarin-nsaid-prefetch (00:01:03.0674sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/encounter-warfarin-nsaid-prefetch         (00:01:03.0674sec)
+     validating Encounter encounter-warfarin-nsaid-prefetch                      (00:01:03.0674sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationadministration-warfarin-nsaid-warfarin-prefetch (00:01:03.0676sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationadministration-warfarin-nsaid-warfarin-prefetch (00:01:03.0676sec)
+     validating MedicationAdministration medicationadministration-warfarin-nsaid-warfarin-prefetch (00:01:03.0676sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationdispense-warfarin-nsaid-warfarin-prefetch (00:01:03.0992sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationdispense-warfarin-nsaid-warfarin-prefetch (00:01:03.0993sec)
+     validating MedicationDispense medicationdispense-warfarin-nsaid-warfarin-prefetch (00:01:03.0993sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch (00:01:04.0003sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch (00:01:04.0003sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch (00:01:04.0003sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-corticosteroid-prefetch (00:01:04.0011sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-corticosteroid-prefetch (00:01:04.0011sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-corticosteroid-prefetch (00:01:04.0011sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-misoprostol-prefetch (00:01:04.0016sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-misoprostol-prefetch (00:01:04.0016sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-misoprostol-prefetch (00:01:04.0016sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-nsaid-context (00:01:04.0023sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-nsaid-context (00:01:04.0023sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-nsaid-context (00:01:04.0023sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-nsaid-prefetch (00:01:04.0028sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-nsaid-prefetch (00:01:04.0029sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-nsaid-prefetch (00:01:04.0029sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-ppi-prefetch (00:01:04.0035sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-ppi-prefetch (00:01:04.0035sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-ppi-prefetch  (00:01:04.0035sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-topicaldiclofenac-context (00:01:04.0039sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-topicaldiclofenac-context (00:01:04.0039sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-topicaldiclofenac-context (00:01:04.0039sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-warfarin-context (00:01:04.0045sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-warfarin-context (00:01:04.0045sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-warfarin-context (00:01:04.0045sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-warfarin-prefetch (00:01:04.0051sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationrequest-warfarin-nsaid-warfarin-prefetch (00:01:04.0051sec)
+     validating MedicationRequest medicationrequest-warfarin-nsaid-warfarin-prefetch (00:01:04.0051sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/medicationstatement-warfarin-nsaid-warfarin-prefetch (00:01:04.0055sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/medicationstatement-warfarin-nsaid-warfarin-prefetch (00:01:04.0055sec)
+     validating MedicationStatement medicationstatement-warfarin-nsaid-warfarin-prefetch (00:01:04.0055sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/patient-warfarin-nsaid-over65-prefetch (00:01:04.0061sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/patient-warfarin-nsaid-over65-prefetch    (00:01:04.0061sec)
+     validating Patient patient-warfarin-nsaid-over65-prefetch                   (00:01:04.0061sec)
+ .. validate /Users/TomLeslie/PDDI-CDS/examples/patient-warfarin-nsaid-under65-prefetch (00:01:04.0064sec)
+ .. /Users/TomLeslie/PDDI-CDS/examples/patient-warfarin-nsaid-under65-prefetch   (00:01:04.0064sec)
+     validating Patient patient-warfarin-nsaid-under65-prefetch                  (00:01:04.0064sec)
+Generating Outputs in /Users/TomLeslie/PDDI-CDS/output                           (00:01:04.0065sec)
+Produce outputs for ImplementationGuide/ig                                       (00:01:04.0114sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ImplementationGuide-ig.html        (00:01:04.0117sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ImplementationGuide-ig.xml.html    (00:01:04.0138sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ImplementationGuide-ig.json.html   (00:01:04.0146sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ImplementationGuide-ig.ttl.html    (00:01:04.0202sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ImplementationGuide-ig-xml-html.xhtml (00:01:04.0233sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ImplementationGuide-ig-json-html.xhtml (00:01:04.0260sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ImplementationGuide-ig-ttl-html.xhtml (00:01:04.0289sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ImplementationGuide-ig-html.xhtml (00:01:04.0293sec)
+Produce outputs for ValueSet/valueset-AAS                                        (00:01:04.0294sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-AAS.html         (00:01:04.0295sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-AAS.xml.html     (00:01:04.0297sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-AAS.json.html    (00:01:04.0299sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-AAS.ttl.html     (00:01:04.0302sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-xml-html.xhtml (00:01:04.0303sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-json-html.xhtml (00:01:04.0306sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-ttl-html.xhtml (00:01:04.0307sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-html.xhtml (00:01:04.0308sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-summary.xhtml (00:01:04.0315sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-cld.xhtml (00:01:04.0317sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-xref.xhtml (00:01:04.0532sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-AAS-expansion.xhtml (00:01:04.0535sec)
+Produce outputs for ValueSet/valueset-NSAIDS                                     (00:01:04.0536sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-NSAIDS.html      (00:01:04.0536sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-NSAIDS.xml.html  (00:01:04.0540sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-NSAIDS.json.html (00:01:04.0542sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/ValueSet-valueset-NSAIDS.ttl.html  (00:01:04.0546sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-xml-html.xhtml (00:01:04.0548sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-json-html.xhtml (00:01:04.0551sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-ttl-html.xhtml (00:01:04.0555sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-html.xhtml (00:01:04.0557sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-summary.xhtml (00:01:04.0559sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-cld.xhtml (00:01:04.0561sec)
+Check Generate /Users/TomLeslie/PDDI-CDS/temp/_includes/ValueSet-valueset-NSAIDS-xref.xhtml (00:01:04.0607sec)
+
+
+= System =
+ig: /Users/TomLeslie/PDDI-CDS/ig.json
+current.dir: /Users/TomLeslie/PDDI-CDS/.
+ig: /Users/TomLeslie/PDDI-CDS/ig.json
+source: null
+user.dir: /Users/TomLeslie
+tx.server: http://tx.fhir.org/r4
+tx.cache: /Users/TomLeslie/fhircache
+
+= Validation =
+
+
+= IG =
+{
+   "defaults":{
+      "Endpoint":{
+         "template-base":"ex.html"
+      },
+      "Any":{
+         "template-format":"format.html",
+         "template-base":"base.html"
+      },
+      "Bundle":{
+         "template-base":"ex.html"
+      },
+      "ConceptMap":{
+         "template-base":"cm.html"
+      },
+      "StructureDefinition":{
+         "template-defns":"sd-definitions.html",
+         "template-mappings":"sd-mappings.html",
+         "template-examples":"sd-examples.html",
+         "template-base":"sd.html"
+      },
+      "CodeSystem":{
+         "template-base":"codesys.html"
+      },
+      "ValueSet":{
+         "template-base":"vs.html"
+      },
+      "OperationDefinition":{
+         "template-base":"op.html"
+      }
+   },
+   "jurisdiction":"International",
+   "publisher":"HL7 Clinical Decision Support Committee",
+   "status":"draft",
+   "sct-edition":"http://snomed.info/sct/731000124108",
+   "paths":{
+      "txCache":"txCache",
+      "resources":[
+         "resources",
+         "examples"
+      ],
+      "pages":[
+         "pages"
+      ],
+      "temp":"temp",
+      "qa":"qa",
+      "output":"output",
+      "specification":"http://hl7.org/fhir/STU3"
+   },
+   "tool":"jekyll",
+   "spreadsheets":[
+   ],
+   "do-transforms":"false",
+   "canonicalBase":"http://hl7.org/fhir/ig/PDDI-CDS",
+   "valuesets":[
+
+   ],
+
+   "searches":[
+
+   ],
+   "version":"3.4.0",
+   "license":"",
+   "resources":{
+     "ValueSet/valueset-AAS": {
+       "base": "ValueSet-valueset-AAS.html",
+       "source": "valueset-AAS.xml"
+     },
+     "ValueSet/valueset-NSAIDS": {
+       "base": "ValueSet-valueset-NSAIDS.html",
+       "source": "valueset-NSAIDS.xml"
+     },
+     "ValueSet/valueset-PPIS": {
+       "base": "ValueSet-valueset-PPIS.html",
+       "source": "valueset-PPIS.xml"
+     },
+     "ValueSet/valueset-SCS": {
+       "base": "ValueSet-valueset-SCS.html",
+       "source": "valueset-SCS.xml"
+     },
+     "ValueSet/valueset-aldosterone": {
+         "base": "ValueSet-valueset-aldosterone.html",
+         "source": "valueset-aldosterone.xml"
+      },
+     "ValueSet/valueset-aspirin": {
+       "base": "ValueSet-valueset-aspirin.html",
+       "source": "valueset-aspirin.xml"
+     },
+     "ValueSet/valueset-betamethasone": {
+       "base": "ValueSet-valueset-betamethasone.html",
+       "source": "valueset-betamethasone.xml"
+     },
+     "ValueSet/valueset-betamethasone-exclude": {
+       "base": "ValueSet-valueset-betamethasone-exclude.html",
+       "source": "valueset-betamethasone-exclude.xml"
+     },
+     "ValueSet/valueset-bromfenac": {
+       "base": "ValueSet-valueset-bromfenac.html",
+       "source": "valueset-bromfenac.xml"
+     },
+     "ValueSet/valueset-bromfenac-exclude": {
+       "base": "ValueSet-valueset-bromfenac-exclude.html",
+       "source": "valueset-bromfenac-exclude.xml"
+     },
+     "ValueSet/valueset-celecoxib": {
+       "base": "ValueSet-valueset-celecoxib.html",
+       "source": "valueset-celecoxib.xml"
+     },
+     "ValueSet/valueset-cloprednol": {
+       "base": "ValueSet-valueset-cloprednol.html",
+       "source": "valueset-cloprednol.xml"
+     },
+     "ValueSet/valueset-cortisone": {
+       "base": "ValueSet-valueset-cortisone.html",
+       "source": "valueset-cortisone.xml"
+     },
+     "ValueSet/valueset-cortivazol": {
+       "base": "ValueSet-valueset-cortivazol.html",
+       "source": "valueset-cortivazol.xml"
+     },
+     "ValueSet/valueset-deflazacort": {
+       "base": "ValueSet-valueset-deflazacort.html",
+       "source": "valueset-deflazacort.xml"
+     },
+     "ValueSet/valueset-desoxycorticosterone": {
+       "base": "ValueSet-valueset-desoxycorticosterone.html",
+       "source": "valueset-desoxycorticosterone.xml"
+     },
+     "ValueSet/valueset-dexamethasone": {
+       "base": "ValueSet-valueset-dexamethasone.html",
+       "source": "valueset-dexamethasone.xml"
+     },
+     "ValueSet/valueset-dexamethasone-exclude": {
+       "base": "ValueSet-valueset-dexamethasone-exclude.html",
+       "source": "valueset-dexamethasone-exclude.xml"
+     },
+     "ValueSet/valueset-dexlansoprazole": {
+       "base": "ValueSet-valueset-dexlansoprazole.html",
+       "source": "valueset-dexlansoprazole.xml"
+     },
+     "ValueSet/valueset-diclofenac": {
+       "base": "ValueSet-valueset-diclofenac.html",
+       "source": "valueset-diclofenac.xml"
+     },
+     "ValueSet/valueset-diclofenac-exclude": {
+       "base": "ValueSet-valueset-diclofenac-exclude.html",
+       "source": "valueset-diclofenac-exclude.xml"
+     },
+     "ValueSet/valueset-diflunisal": {
+       "base": "ValueSet-valueset-diflunisal.html",
+       "source": "valueset-diflunisal.xml"
+     },
+     "ValueSet/valueset-eplerenone": {
+       "base": "ValueSet-valueset-eplerenone.html",
+       "source": "valueset-eplerenone.xml"
+     },
+     "ValueSet/valueset-esomeprazole": {
+       "base": "ValueSet-valueset-esomeprazole.html",
+       "source": "valueset-esomeprazole.xml"
+     },
+     "ValueSet/valueset-etodolac": {
+       "base": "ValueSet-valueset-etodolac.html",
+       "source": "valueset-etodolac.xml"
+     },
+     "ValueSet/valueset-fenoprofen": {
+       "base": "ValueSet-valueset-fenoprofen.html",
+       "source": "valueset-fenoprofen.xml"
+     },
+     "ValueSet/valueset-fludrocortisone": {
+       "base": "ValueSet-valueset-fludrocortisone.html",
+       "source": "valueset-fludrocortisone.xml"
+     },
+     "ValueSet/valueset-fluocortolone": {
+       "base": "ValueSet-valueset-fluocortolone.html",
+       "source": "valueset-fluocortolone.xml"
+     },
+     "ValueSet/valueset-fluocortolone-exclude": {
+       "base": "ValueSet-valueset-fluocortolone-exclude.html",
+       "source": "valueset-fluocortolone-exclude.xml"
+     },
+     "ValueSet/valueset-flurbiprofen": {
+       "base": "ValueSet-valueset-flurbiprofen.html",
+       "source": "valueset-flurbiprofen.xml"
+     },
+     "ValueSet/valueset-flurbiprofen-exclude": {
+       "base": "ValueSet-valueset-flurbiprofen-exclude.html",
+       "source": "valueset-flurbiprofen-exclude.xml"
+     },
+     "ValueSet/valueset-Hx-UGIB-snomed": {
+       "base": "ValueSet-valueset-Hx-UGIB-snomed.html",
+       "source": "valueset-Hx-UGIB-snomed.xml"
+     },
+     "ValueSet/valueset-hydrocortisone": {
+       "base": "ValueSet-valueset-hydrocortisone.html",
+       "source": "valueset-hydrocortisone.xml"
+     },
+     "ValueSet/valueset-hydrocortisone-exclude": {
+       "base": "ValueSet-valueset-hydrocortisone-exclude.html",
+       "source": "valueset-hydrocortisone-exclude.xml"
+     },
+     "ValueSet/valueset-ibuprofen": {
+       "base": "ValueSet-valueset-ibuprofen.html",
+       "source": "valueset-ibuprofen.xml"
+     },
+     "ValueSet/valueset-ibuprofen-exclude": {
+       "base": "ValueSet-valueset-ibuprofen-exclude.html",
+       "source": "valueset-ibuprofen-exclude.xml"
+     },
+     "ValueSet/valueset-indomethacin": {
+       "base": "ValueSet-valueset-indomethacin.html",
+       "source": "valueset-indomethacin.xml"
+     },
+     "ValueSet/valueset-ketoprofen": {
+       "base": "ValueSet-valueset-ketoprofen.html",
+       "source": "valueset-ketoprofen.xml"
+     },
+     "ValueSet/valueset-ketoprofen-exclude": {
+       "base": "ValueSet-valueset-ketoprofen-exclude.html",
+       "source": "valueset-ketoprofen-exclude.xml"
+     },
+    "ValueSet/valueset-ketorolac": {
+      "base": "ValueSet-valueset-ketorolac.html",
+      "source": "valueset-ketorolac.xml"
+     },
+     "ValueSet/valueset-ketorolac-exclude": {
+       "base": "ValueSet-valueset-ketorolac-exclude.html",
+       "source": "valueset-ketorolac-exclude.xml"
+     },
+     "ValueSet/valueset-lansoprazole": {
+       "base": "ValueSet-valueset-lansoprazole.html",
+       "source": "valueset-lansoprazole.xml"
+      },
+     "ValueSet/valueset-mefenamate": {
+       "base": "ValueSet-valueset-mefenamate.html",
+       "source": "valueset-mefenamate.xml"
+      },
+       "ValueSet/valueset-meloxicam": {
+         "base": "ValueSet-valueset-meloxicam.html",
+         "source": "valueset-meloxicam.xml"
+      },
+       "ValueSet/valueset-meprednisone": {
+         "base": "ValueSet-valueset-meprednisone.html",
+         "source": "valueset-meprednisone.xml"
+      },
+         "ValueSet/valueset-methylprednisolone": {
+           "base": "ValueSet-valueset-methylprednisolone.html",
+           "source": "valueset-methylprednisolone.xml"
+      },
+     "ValueSet/valueset-methylprednisolone-exclude": {
+       "base": "ValueSet-valueset-methylprednisolone-exclude.html",
+       "source": "valueset-methylprednisolone-exclude.xml"
+     },
+      "ValueSet/valueset-misoprostol": {
+        "base": "ValueSet-valueset-misoprostol.html",
+        "source": "valueset-misoprostol.xml"
+      },
+     "ValueSet/valueset-nabumetone": {
+       "base": "ValueSet-valueset-nabumetone.html",
+       "source": "valueset-nabumetone.xml"
+     },
+     "ValueSet/valueset-naproxen": {
+       "base": "ValueSet-valueset-naproxen.html",
+       "source": "valueset-naproxen.xml"
+     },
+     "ValueSet/valueset-nepafenac": {
+       "base": "ValueSet-valueset-nepafenac.html",
+       "source": "valueset-nepafenac.xml"
+     },
+     "ValueSet/valueset-nepafenac-exclude": {
+       "base": "ValueSet-valueset-nepafenac-exclude.html",
+       "source": "valueset-nepafenac-exclude.xml"
+     },
+     "ValueSet/valueset-omeprazole": {
+       "base": "ValueSet-valueset-omeprazole.html",
+       "source": "valueset-omeprazole.xml"
+     },
+     "ValueSet/valueset-oxaprozin": {
+       "base": "ValueSet-valueset-oxaprozin.html",
+       "source": "valueset-oxaprozin.xml"
+     },
+     "ValueSet/valueset-pantoprazole": {
+       "base": "ValueSet-valueset-pantoprazole.html",
+       "source": "valueset-pantoprazole.xml"
+     },
+     "ValueSet/valueset-paramethasone": {
+       "base": "ValueSet-valueset-paramethasone.html",
+       "source": "valueset-paramethasone.xml"
+     },
+     "ValueSet/valueset-piroxicam": {
+       "base": "ValueSet-valueset-piroxicam.html",
+       "source": "valueset-piroxicam.xml"
+     },
+     "ValueSet/valueset-piroxicam-exclude": {
+       "base": "ValueSet-valueset-piroxicam-exclude.html",
+       "source": "valueset-piroxicam-exclude.xml"
+     },
+     "ValueSet/valueset-prednisolone": {
+       "base": "ValueSet-valueset-prednisolone.html",
+       "source": "valueset-prednisolone.xml"
+     },
+     "ValueSet/valueset-prednisolone-exclude": {
+       "base": "ValueSet-valueset-prednisolone-exclude.html",
+       "source": "valueset-prednisolone-exclude.xml"
+     },
+     "ValueSet/valueset-prednisone": {
+       "base": "ValueSet-valueset-prednisone.html",
+       "source": "valueset-prednisone.xml"
+     },
+     "ValueSet/valueset-prednylidene": {
+       "base": "ValueSet-valueset-prednylidene.html",
+       "source": "valueset-prednylidene.xml"
+     },
+     "ValueSet/valueset-rabeprazole": {
+       "base": "ValueSet-valueset-rabeprazole.html",
+       "source": "valueset-rabeprazole.xml"
+     },
+     "ValueSet/valueset-rimexolone": {
+       "base": "ValueSet-valueset-rimexolone.html",
+       "source": "valueset-rimexolone.xml"
+     },
+     "ValueSet/valueset-rimexolone-exclude": {
+       "base": "ValueSet-valueset-rimexolone-exclude.html",
+       "source": "valueset-rimexolone-exclude.xml"
+     },
+     "ValueSet/valueset-spironolactone": {
+       "base": "ValueSet-valueset-spironolactone.html",
+       "source": "valueset-spironolactone.xml"
+     },
+     "ValueSet/valueset-sulindac": {
+       "base": "ValueSet-valueset-sulindac.html",
+       "source": "valueset-sulindac.xml"
+     },
+     "ValueSet/valueset-tolmetin": {
+       "base": "ValueSet-valueset-tolmetin.html",
+       "source": "valueset-tolmetin.xml"
+     },
+     "ValueSet/valueset-triamcinolone": {
+       "base": "ValueSet-valueset-triamcinolone.html",
+       "source": "valueset-triamcinolone.xml"
+     },
+     "ValueSet/valueset-triamcinolone-exclude": {
+       "base": "ValueSet-valueset-triamcinolone-exclude.html",
+       "source": "valueset-triamcinolone-exclude.xml"
+     },
+     "ValueSet/valueset-topicaldiclofenac": {
+       "base": "ValueSet-valueset-topicaldiclofenac.html",
+       "source": "valueset-topicaldiclofenac.xml"
+     },
+     "ValueSet/valueset-trilostane": {
+       "base": "ValueSet-valueset-trilostane.html",
+       "source": "valueset-trilostane.xml"
+     },
+     "ValueSet/valueset-warfarin": {
+       "base": "ValueSet-valueset-warfarin.html",
+       "source": "valueset-warfarin.xml"
+     },
+     "Encounter/encounter-warfarin-nsaid-context": {
+       "base": "Encounter-encounter-warfarin-nsaid-context.html",
+       "source": "encounter-warfarin-nsaid-context.xml"
+     },
+     "Encounter/encounter-warfarin-nsaid-prefetch": {
+       "base": "Encounter-encounter-warfarin-nsaid-prefetch.html",
+       "source": "encounter-warfarin-nsaid-prefetch.xml"
+     },
+     "MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationAdministration-medicationadministration-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationadministration-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationDispense-medicationdispense-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationdispense-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-corticosteroid-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-corticosteroid-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-corticosteroid-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-misoprostol-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-misoprostol-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-misoprostol-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-context": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-nsaid-context.html",
+       "source": "medicationrequest-warfarin-nsaid-nsaid-context.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-nsaid-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-nsaid-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-ppi-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-ppi-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-ppi-prefetch.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-topicaldiclofenac-context": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-topicaldiclofenac-context.html",
+       "source": "medicationrequest-warfarin-nsaid-topicaldiclofenac-context.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-context": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-warfarin-context.html",
+       "source": "medicationrequest-warfarin-nsaid-warfarin-context.xml"
+     },
+     "MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationRequest-medicationrequest-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationrequest-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "MedicationStatement/medicationstatement-warfarin-nsaid-warfarin-prefetch": {
+       "base": "MedicationStatement-medicationstatement-warfarin-nsaid-warfarin-prefetch.html",
+       "source": "medicationstatement-warfarin-nsaid-warfarin-prefetch.xml"
+     },
+     "Patient/patient-warfarin-nsaid-over65-prefetch": {
+       "base": "Patient-patient-warfarin-nsaid-over65-prefetch.html",
+       "source": "patient-warfarin-nsaid-over65-prefetch.xml"
+     },
+     "Patient/patient-warfarin-nsaid-under65-prefetch": {
+       "base": "Patient-patient-warfarin-nsaid-under65-prefetch.html",
+       "source": "patient-warfarin-nsaid-under65-prefetch.xml"
+     }
+   },
+   "extensions":[
+
+   ],
+   "title":"PDDI CDS",
+   "extraTemplates":[
+      "mappings", "examples"
+   ],
+   "special-urls":[
+      "urn:oid:2.16.840.1.113883.6.238"
+   ],
+   "codesystems":[
+
+   ],
+   "source":"ig.xml",
+   "structuremaps":[
+
+   ],
+   "no-inactive-codes":"false",
+   "working-dir":"/git/onc-pd-ig/",
+   "gen-examples":"false"
+}
+
+

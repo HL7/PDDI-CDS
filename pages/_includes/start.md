@@ -95,15 +95,22 @@ This implementation guide specifies the use of up to two CDS Hooks (i.e., `medic
 
 ##### **`medication-select` 1.0**
 
-| Field       | Optionality        |  Prefetch Token     |Type  | Description |
-| :------------- |:-------------:|:-------: |:-----:| :-----------------|
-| patientId     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
-| encounterId     | OPTIONAL    | Yes |   string | The FHIR Encounter.id of the current encounter in context |
-| medication | REQUIRED     | No |    object | STU3 - FHIR `MedicationRequest` resource |
+Field | Optionality | Prefetch Token | Type | Description
+----- | -------- | ---- | ---- | ----
+<mark>`patientId`</mark> | REQUIRED | Yes | *string* | <mark>Describe the context value</mark>
+<mark>`encounterId`</mark> | OPTIONAL | Yes | *string* | <mark>Describe the context value</mark>
+<mark>`medication`</mark> | REQUIRED | No | *object* | <mark>STU3 - FHIR `MedicationRequest` resource</mark>
 
 ##### **`medication-prescribe` 1.1**
  
  The version for the `medication-prescribe` hook is 1.0. The PDDI CDS implementation requires an additional context field for `DetectedIssue.`This modification is considered Minor but will change the version to 1.1.
+
+Field | Optionality | Prefetch Token | Type | Description
+----- | -------- | ---- | ---- | ----
+<mark>`patientId`</mark> | REQUIRED | Yes | *string* | <mark>Describe the context value</mark>
+<mark>`encounterId`</mark> | OPTIONAL | Yes | *string* | <mark>Describe the context value</mark>
+
+
 
 | Field       | Optionality        |  Prefetch Token     |Type  | Description |
 | :------------- |:-------------:|:-------: |:-----:| :-----------------|
@@ -184,8 +191,13 @@ A `Bundle` is a FHIR resource that is used to group resources into a single inst
 In the event the EHR does NOT provide prefetch data, the PDDI CDS Services MUST request the data from the FHIR server via network call. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hook request. 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Parse and Pre-process Request </strong></figcaption>
-  <img src="assets/images/Parse_and_pre-process_Request.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_Request.png" />
+<figcaption class="figure-caption"><strong>Figure 3: Parse and Pre-process medication-select Request </strong></figcaption>
+  <img src="assets/images/Parse_and_pre-process_select.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_select.png" />
+</figure>
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 4: Parse and Pre-process medication-prescribe Request </strong></figcaption>
+  <img src="assets/images/Parse_and_pre-process_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_prescribe.png" />
 </figure>
 
 ## Clinical Reasoning

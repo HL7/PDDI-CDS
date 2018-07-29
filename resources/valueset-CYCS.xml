@@ -25,8 +25,5 @@
         <include>
             <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine"/>
         </include>
-        <exclude>
-            <valueSet value ="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine-exclude"/>
-        </exclude>
     </compose>
 </ValueSet>

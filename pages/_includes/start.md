@@ -1,5 +1,7 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
+**TODO: do we want to refer to Documentation for questions about how to author the PDDI CDS rules?** 
+
 # Getting Started with PDDI CDS
 
 ## Status
@@ -133,10 +135,13 @@ TODO example of request together
 
 
 ## Clinical Reasoning
+**TODO: please link to the FHIR page for the Clinical Reasoning Module. First mention of all other FHIR resources should link to the pages about them.**
+
 This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning Module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts.
 
 ### PlanDefinition
 `PlanDefinition` falls into the FHIR resource workflow as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the PlanDefinition that are used for the PDDI CDS instances. These include `TriggerDefinition`, `Condition`, and `Action.` 
+
 #### TriggerDefinition
 The TriggerDefinition uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The TriggerDefinition for the PDDI CDS is based on the CDS Hooks requests `medication-prescribe` and `medication-select.`
 ```
@@ -149,6 +154,7 @@ The TriggerDefinition uses the Name Event, which allows triggering of an event o
               "type": "named-event",
               "eventName": "medication-select"
 ```              
+
 #### Condition 
 The Condition element is used to determine whether or not the CDS logic is to be applied. If the Condition is satisfied (i.e., true or false), an action(s) is intiated. 
 ````
@@ -191,6 +197,7 @@ The Action element provides the actions and information associated with the acti
                 "action": [
                 snipped for brevity
 ````                
+
 #### DynamicValue
 The DynamicValue enables customization of the statically defined resources. Since each decision block for PDDIs have one or more individualized information componenets that are potentially useful to the clinician, integrating patient-specific data into each response card is necessary.
 ````
@@ -202,6 +209,8 @@ The DynamicValue enables customization of the statically defined resources. Sinc
                         "path": "action.label",
                         "expression": "Get Card 2 Label"
 ````
+
+
 ### RequestGroup and Careplan
 The RequestGroup and Careplan fall into FHIR resource workflow as Requests, which expressed the intention for something to occur. For the PDDI CDS instance this could involve initiating another medication, substituting a medication order, or discontinuing the current order. 
 

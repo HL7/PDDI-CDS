@@ -1,3 +1,16 @@
+**TODO: Add language in the form of recommendations e.g.,  MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL (Key words for use in RFCs to Indicate Requirement Levels. S. Bradner. IETF. March 1997. Best Current Practice. URL: https://tools.ietf.org/html/rfc2119)**
+
+1. Knowledge representation for the PDDI CDS (e.g, decision tree) - mapping out the decision paths, pre-fetch requirements.....  
+
+2. Translating the KR to CQL  -- after investigation on our part, refering to possibility of using the publicly available CDS Authoring tool -- this will be simple --- libraries to import, specifying the FHIR terminology profile, utility functions, logic 
+
+3. Implementing CDS Hooks and PlanDefinition to receive CDS requests medication-request or medication-prescribe and return the cards with actions
+ 
+4. Implementing the CDS Service - including how to load the Library, PlanDefinition, and where value sets reside....
+
+5. Fine tuning the CDS service for performance -- pre-loading data to reduce calls to the EHR e.g., for all patients who will be seen on a day. Other kinds of caching.....
+
+
 ## PDDI CDS - Documentation
 {:.no_toc}
 This section contains documentation for implementers from both the clinical and technical perspectives. The process documentation describes the assumptions and decisions made, as well as a functional description of the recommendations. The integration documentation describes the overall approach and documents the artifacts contained in the IG, while the implementation documentation provides developer-level documentation on how to use the artifacts.

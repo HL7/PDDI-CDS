@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen-exclude"/>
+    <id value="valueset-ibuprofen-exclude"/>
+    <version value="US 1.1"/>
+    <name value="valueset-ibuprofen-exclude"/>
+    <title value="Exclude Ibuprofen Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="141998"/>
+                <display value="Ibuprofen 50 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="142102"/>
+                <display value="Ibuprofen 50 MG/ML Topical Spray"/>
+            </concept>
+            <concept>
+                <code value="226617"/>
+                <display value="Ibuprofen 50 MG/ML Topical Foam"/>
+            </concept>
+            <concept>
+                <code value="141997"/>
+                <display value="Ibuprofen 0.05 MG/MG Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="392668"/>
+                <display value="Ibuprofen 0.05 MG/MG / LEVOMENTHOL 0.03 MG/MG Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="389244"/>
+                <display value="Ibuprofen 0.1 MG/MG Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="377325"/>
+                <display value="Ibuprofen Topical Spray"/>
+            </concept>
+            <concept>
+                <code value="377732"/>
+                <display value="Ibuprofen Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="377956"/>
+                <display value="Ibuprofen Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="380812"/>
+                <display value="Ibuprofen Extended Release Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="380819"/>
+                <display value="Ibuprofen Topical Foam"/>
+            </concept>
+            <concept>
+                <code value="393550"/>
+                <display value="Ibuprofen / LEVOMENTHOL Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="1156280"/>
+                <display value="Ibuprofen Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1165299"/>
+                <display value="Ibuprofen / LEVOMENTHOL Topical Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

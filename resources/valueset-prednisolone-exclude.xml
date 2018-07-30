@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisolone-exclude"/>
+    <id value="valueset-prednisolone-exclude"/>
+    <version value="US 1.1"/>
+    <name value="valueset-prednisolone-exclude"/>
+    <title value="Exclude Prednisolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1548724"/>
+                <display value="prednisolone acetate 10 MG/ML Ophthalmic Suspension [Pred Forte]"/>
+            </concept>
+            <concept>
+                <code value="1011987"/>
+                <display value="prednisolone acetate 0.002 MG/MG / Sulfacetamide Sodium 0.1
+                    MG/MG Ophthalmic Ointment [Blephamide]"/>
+            </concept>
+            <concept>
+                <code value="1012017"/>
+                <display value="prednisolone acetate 2 MG/ML / Sulfacetamide Sodium 100
+                    MG/ML Ophthalmic Suspension [Blephamide]"/>
+            </concept>
+            <concept>
+                <code value="1548705"/>
+                <display value="prednisolone acetate 10 MG/ML Ophthalmic Suspension
+                    [Econopred Plus]"/>
+            </concept>
+            <concept>
+                <code value="1549317"/>
+                <display value="prednisolone acetate 1.25 MG/ML Ophthalmic Suspension [Econopred]"/>
+            </concept>
+            <concept>
+                <code value="205826"/>
+                <display value="Gentamicin 3 MG/ML / prednisolone acetate 10 MG/ML
+                    Ophthalmic Suspension [Pred-G]"/>
+            </concept>
+            <concept>
+                <code value="211755"/>
+                <display value="prednisolone 10 MG/ML Ophthalmic Solution [Prednisol]"/>
+            </concept>
+            <concept>
+                <code value="260285"/>
+                <display value="Gentamicin 0.003 MG/MG / prednisolone acetate 0.006 MG/MG
+                    Ophthalmic Ointment [Pred-G]"/>
+            </concept>
+            <concept>
+                <code value="1548714"/>
+                <display value="prednisolone acetate 10 MG/ML Ophthalmic Suspension [Omnipred]"/>
+            </concept>
+            <concept>
+                <code value="891153"/>
+                <display value="Miconazole Nitrate 23 MG/ML / Polymyxin B Sulfate 0.5293
+                    MG/ML / prednisolone acetate 5 MG/ML Otic Suspension [Surolan]"/>
+            </concept>
+            <concept>
+                <code value="365822"/>
+                <display value="prednisolone Ophthalmic Suspension [Pred Forte]"/>
+            </concept>
+            <concept>
+                <code value="365832"/>
+                <display value="prednisolone Ophthalmic Suspension [Pred Mild]"/>
+            </concept>
+            <concept>
+                <code value="365841"/>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Suspension [Blephamide]"/>
+            </concept>
+            <concept>
+                <code value="365821"/>
+                <display value="prednisolone Ophthalmic Suspension [Econopred]"/>
+            </concept>
+            <concept>
+                <code value="365831"/>
+                <display value="prednisolone Ophthalmic Suspension [Econopred Plus]"/>
+            </concept>
+            <concept>
+                <code value="363766"/>
+                <display value="prednisolone Ophthalmic Solution [Prednisol]"/>
+            </concept>
+            <concept>
+                <code value="856820"/>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Ointment [Blephamide]"/>
+            </concept>
+            <concept>
+                <code value="731219"/>
+                <display value="prednisolone Ophthalmic Suspension [Omnipred]"/>
+            </concept>
+            <concept>
+                <code value="891152"/>
+                <display value="Miconazole / Polymyxin B / prednisolone Otic Suspension [Surolan]"/>
+            </concept>
+            <concept>
+                <code value="1870660"/>
+                <display value="Gentamicin / prednisolone Ophthalmic Ointment [Pred-G]"/>
+            </concept>
+            <concept>
+                <code value="1870669"/>
+                <display value="Gentamicin / prednisolone Ophthalmic Suspension [Pred-G]"/>
+            </concept>
+            <concept>
+                <code value="1011979"/>
+                <display value="prednisolone acetate 0.0025 MG/MG / Sulfacetamide Sodium 0.1
+                    MG/MG Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="1011985"/>
+                <display value="prednisolone acetate 0.002 MG/MG / Sulfacetamide Sodium 0.1
+                    MG/MG Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="1012015"/>
+                <display value="prednisolone acetate 2 MG/ML / Sulfacetamide Sodium 100
+                    MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1012021"/>
+                <display value="Prednisolone sodium phosphate 2.5 MG/ML / Sulfacetamide
+                    Sodium 100 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="1012080"/>
+                <display value="prednisolone acetate 2.5 MG/ML / Sulfacetamide Sodium 100
+                    MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1012150"/>
+                <display value="Prednisolone sodium phosphate 5 MG/ML / Sulfacetamide Sodium
+                    100 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="1547974"/>
+                <display value="Prednisolone sodium phosphate 5 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="106997"/>
+                <display value="prednisolone 3 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="314165"/>
+                <display value="prednisolone 10 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="106996"/>
+                <display value="prednisolone 1 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="311888"/>
+                <display value="Neomycin 3.5 MG/ML / Polymyxin B 10000 UNT/ML / prednisolone
+                    5 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="345131"/>
+                <display value="prednisolone 1.25 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="562379"/>
+                <display value="prednisolone 1.2 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="199968"/>
+                <display value="prednisolone 5 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="106995"/>
+                <display value="prednisolone 0.3 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="392181"/>
+                <display value="prednisolone 25 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="106992"/>
+                <display value="prednisolone 0.01 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="106993"/>
+                <display value="prednisolone 0.03 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="106994"/>
+                <display value="prednisolone 0.1 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="891149"/>
+                <display value="Miconazole Nitrate 23 MG/ML / Polymyxin B Sulfate 0.5293
+                    MG/ML / prednisolone acetate 5 MG/ML Otic Suspension"/>
+            </concept>
+            <concept>
+                <code value="310469"/>
+                <display value="Gentamicin 3 MG/ML / prednisolone acetate 10 MG/ML
+                    Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1376336"/>
+                <display value="prednisolone acetate 10 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1549315"/>
+                <display value="prednisolone acetate 1.25 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="310468"/>
+                <display value="Gentamicin 0.003 MG/MG / prednisolone acetate 0.006 MG/MG
+                    Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="1012000"/>
+                <display value="prednisolone acetate 0.005 MG/MG / Sulfacetamide Sodium 0.1
+                    MG/MG Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="373571"/>
+                <display value="prednisolone Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="373576"/>
+                <display value="prednisolone Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="373972"/>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="373973"/>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="373974"/>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="374690"/>
+                <display value="Neomycin / Polymyxin B / prednisolone Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="891148"/>
+                <display value="Miconazole / Polymyxin B / prednisolone Otic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1870656"/>
+                <display value="Gentamicin / prednisolone Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="1870666"/>
+                <display value="Gentamicin / prednisolone Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1156760"/>
+                <display value="prednisolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1157539"/>
+                <display value="Neomycin / Polymyxin B / prednisolone Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1164102"/>
+                <display value="Miconazole / Polymyxin B / prednisolone Otic Product"/>
+            </concept>
+            <concept>
+                <code value="1165752"/>
+                <display value="prednisolone / Sulfacetamide Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1165757"/>
+                <display value="prednisolone Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1870655"/>
+                <display value="Gentamicin / prednisolone Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1184898"/>
+                <display value="Surolan Otic Product"/>
+            </concept>
+            <concept>
+                <code value="1171795"/>
+                <display value="Econopred Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1171796"/>
+                <display value="Econopred Plus Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1175059"/>
+                <display value="Blephamide Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1181709"/>
+                <display value="Omnipred Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1185239"/>
+                <display value="Pred Forte Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1185240"/>
+                <display value="Pred Mild Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1185260"/>
+                <display value="Prednisol Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1185241"/>
+                <display value="Pred-G Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

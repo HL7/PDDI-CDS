@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone-exclude"/>
+    <id value="valueset-triamcinolone-exclude"/>
+    <version value="US 1.1"/>
+    <name value="valueset-triamcinolone-exclude"/>
+    <title value="Exclude Triamcinolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1720617"/>
+                <display value="{1 (118 ML) (dimethicone 20 MG/ML Topical Cream) / 1 (80000
+                    MG) (Triamcinolone Acetonide 1 MG/ML Topical Cream) } Pack"/>
+            </concept>
+            <concept>
+                <code value="1014318"/>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Pediaderm TA]"/>
+            </concept>
+            <concept>
+                <code value="1110806"/>
+                <display value="Triamcinolone Acetonide 0.0005 MG/MG Topical Ointment [Trianex]"/>
+            </concept>
+            <concept>
+                <code value="1085738"/>
+                <display value="Triamcinolone Acetonide 0.147 MG/ML Topical Spray [Kenalog]"/>
+            </concept>
+            <concept>
+                <code value="1085773"/>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Triderm]"/>
+            </concept>
+            <concept>
+                <code value="1648997"/>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML Topical Cream [Triderm]"/>
+            </concept>
+            <concept>
+                <code value="1648999"/>
+                <display value="Triamcinolone Acetonide 5 MG/ML Topical Cream [Triderm]"/>
+            </concept>
+            <concept>
+                <code value="1368285"/>
+                <display value="Neomycin 2.5 MG/ML / Nystatin 100000 UNT/ML / Thiostrepton
+                    2500 UNT/ML / Triamcinolone Acetonide 1 MG/ML Topical Cream [Animax]"/>
+            </concept>
+            <concept>
+                <code value="1442876"/>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream [Dermasorb TA]"/>
+            </concept>
+            <concept>
+                <code value="1805714"/>
+                <display value="Triamcinolone Acetonide 0.15 MG/ML Topical Spray [Genesis]"/>
+            </concept>
+            <concept>
+                <code value="1014317"/>
+                <display value="Triamcinolone Topical Cream [Pediaderm TA]"/>
+            </concept>
+            <concept>
+                <code value="1110805"/>
+                <display value="Triamcinolone Topical Ointment [Trianex]"/>
+            </concept>
+            <concept>
+                <code value="362100"/>
+                <display value="Triamcinolone Topical Cream [Triderm]"/>
+            </concept>
+            <concept>
+                <code value="93044"/>
+                <display value="Triamcinolone Topical Spray [Kenalog]"/>
+            </concept>
+            <concept>
+                <code value="1368283"/>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone Topical
+                    Cream [Animax]"/>
+            </concept>
+            <concept>
+                <code value="1442874"/>
+                <display value="Triamcinolone Topical Cream [Dermasorb TA]"/>
+            </concept>
+            <concept>
+                <code value="1805712"/>
+                <display value="Triamcinolone Topical Spray [Genesis]"/>
+            </concept>
+            <concept>
+                <code value="1085633"/>
+                <display value="Triamcinolone Acetonide 0.00025 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1085640"/>
+                <display value="Triamcinolone Acetonide 0.005 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1085644"/>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1085686"/>
+                <display value="Triamcinolone Acetonide 5 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1085736"/>
+                <display value="Triamcinolone Acetonide 0.147 MG/ML Topical Spray"/>
+            </concept>
+            <concept>
+                <code value="1085741"/>
+                <display value="Triamcinolone Acetonide 0.25 MG/ML Topical Lotion"/>
+            </concept>
+            <concept>
+                <code value="1085977"/>
+                <display value="Triamcinolone Acetonide 0.5 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1090641"/>
+                <display value="Triamcinolone Acetonide 0.0005 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1014314"/>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1053697"/>
+                <display value="Nystatin 100 UNT/MG / Triamcinolone Acetonide 0.001 MG/MG
+                    Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1053753"/>
+                <display value="Nystatin 100000 UNT/ML / Triamcinolone Acetonide 1 MG/ML
+                    Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1085636"/>
+                <display value="Triamcinolone Acetonide 0.001 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1085745"/>
+                <display value="Triamcinolone Acetonide 1 MG/ML Topical Lotion"/>
+            </concept>
+            <concept>
+                <code value="1086277"/>
+                <display value="Chlortetracycline 0.03 MG/MG / Triamcinolone Acetonide 0.001
+                    MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1086278"/>
+                <display value="Neomycin 3.5 MG/ML / Triamcinolone Acetonide 1 MG/ML Otic Solution"/>
+            </concept>
+            <concept>
+                <code value="1368280"/>
+                <display value="Neomycin 2.5 MG/ML / Nystatin 100000 UNT/ML / Thiostrepton
+                    2500 UNT/ML / Triamcinolone Acetonide 1 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1805709"/>
+                <display value="Triamcinolone Acetonide 0.15 MG/ML Topical Spray"/>
+            </concept>
+            <concept>
+                <code value="373041"/>
+                <display value="Neomycin / Triamcinolone Otic Solution"/>
+            </concept>
+            <concept>
+                <code value="374401"/>
+                <display value="Nystatin / Triamcinolone Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="374434"/>
+                <display value="Triamcinolone Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="376478"/>
+                <display value="Chlortetracycline / Triamcinolone Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="377376"/>
+                <display value="Triamcinolone Topical Spray"/>
+            </concept>
+            <concept>
+                <code value="377781"/>
+                <display value="Nystatin / Triamcinolone Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="377831"/>
+                <display value="Triamcinolone Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="378693"/>
+                <display value="Triamcinolone Topical Lotion"/>
+            </concept>
+            <concept>
+                <code value="1368278"/>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="1155778"/>
+                <display value="Chlortetracycline / Triamcinolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1157544"/>
+                <display value="Neomycin / Triamcinolone Otic Product"/>
+            </concept>
+            <concept>
+                <code value="1368277"/>
+                <display value="Neomycin / Nystatin / Thiostrepton / Triamcinolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1158231"/>
+                <display value="Triamcinolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1160432"/>
+                <display value="Nystatin / Triamcinolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1368284"/>
+                <display value="Animax Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1442875"/>
+                <display value="Dermasorb TA Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1805713"/>
+                <display value="Genesis Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1170044"/>
+                <display value="Kenalog Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1182127"/>
+                <display value="Trianex Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1182722"/>
+                <display value="Triderm Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1183428"/>
+                <display value="Oralone Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1183995"/>
+                <display value="Pediaderm TA Topical Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -25,69 +25,67 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-aspirin.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aspirin.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-bromfenac.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-celecoxib.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-celecoxib.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-diclofenac.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diclofenac.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-diflunisal.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diflunisal.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-etodolac.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-etodolac.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-fenoprofen.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fenoprofen.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-flurbiprofen.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-flurbiprofen.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-ibuprofen.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen.xml"/>
         </include>
         <include>
-            <valueSet
-                    value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-indomethacin.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-indomethacin.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-ketoprofen.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketoprofen.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-ketorolac.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketorolac.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-mefenamate.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-mefenamate.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-meloxicam.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meloxicam.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-nabumetone.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nabumetone.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-naproxen.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-naproxen.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-nepafenac.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nepafenac.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-oxaprozin.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-oxaprozin.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-piroxicam.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-piroxicam.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-sulindac.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-sulindac.xml"/>
         </include>
         <include>
-            <valueSet value="https://raw.githubusercontent.com/HL7/PDDI-CDS/master/resources/valueset-tolmetin.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-tolmetin.xml"/>
         </include>
     </compose>
 </ValueSet>

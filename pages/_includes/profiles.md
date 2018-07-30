@@ -1,4 +1,7 @@
-##Profiles defined as part of the PDDI CDS Implementation Guide
+## Profiles defined as part of the PDDI CDS Implementation Guide
+
+* **TODO** add structure definition for these
+* **COMMENT** only profiles defined for this implementation guide should be here
 
 The following profiles set the minimum expectations:
 

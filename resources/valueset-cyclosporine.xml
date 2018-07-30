@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine"/>
+    <id value="valueset-cyclosporine"/>
+    <version value="US 1.1"/>
+    <name value="valueset-cyclosporine"/>
+    <title value="Cyclosporine Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for cyclosporine."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1093175"/>
+                <display value="Optimmune"/>
+            </concept>
+            <concept>
+                <code value="202816"/>
+                <display value="Sandimmune"/>
+            </concept>
+            <concept>
+                <code value="202817"/>
+                <display value="Neoral"/>
+            </concept>
+            <concept>
+                <code value="261530"/>
+                <display value="Gengraf"/>
+            </concept>
+            <concept>
+                <code value="352951"/>
+                <display value="Restasis"/>
+            </concept>
+            <concept>
+                <code value="539497"/>
+                <display value="Atopica"/>
+            </concept>
+            <concept>
+                <code value="3008"/>
+                <display value="Cyclosporine"/>
+            </concept>
+            <concept>
+                <code value="236077"/>
+                <display value="cyclosporine, modified"/>
+            </concept>
+            <concept>
+                <code value="484788"/>
+                <display value="cyclosporine microemulsion"/>
+            </concept>
+            <concept>
+                <code value="1093178"/>
+                <display value="Cyclosporine 0.002 MG/MG Ophthalmic Ointment [Optimmune]"/>
+            </concept>
+            <concept>
+                <code value="197552"/>
+                <display value="Cyclosporine 100 MG Oral Capsule [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="212810"/>
+                <display value="Cyclosporine 25 MG Oral Capsule [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="212844"/>
+                <display value="5 ML Cyclosporine 50 MG/ML Injection [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="212957"/>
+                <display value="Cyclosporine 100 MG/ML Oral Solution [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="835899"/>
+                <display value="cyclosporine, modified 100 MG/ML Oral Solution [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="835909"/>
+                <display value="cyclosporine, modified 25 MG Oral Capsule [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="835911"/>
+                <display value="cyclosporine, modified 100 MG Oral Capsule [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="835835"/>
+                <display value="cyclosporine, modified 100 MG Oral Capsule [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="835892"/>
+                <display value="cyclosporine, modified 100 MG/ML Oral Solution [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="835896"/>
+                <display value="cyclosporine, modified 25 MG Oral Capsule [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="1797521"/>
+                <display value="cyclosporine, modified 50 MG Oral Capsule [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="402092"/>
+                <display value="Cyclosporine 0.5 MG/ML Ophthalmic Suspension [Restasis]"/>
+            </concept>
+            <concept>
+                <code value="835917"/>
+                <display value="cyclosporine, modified 100 MG Oral Capsule [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="835921"/>
+                <display value="cyclosporine, modified 10 MG Oral Capsule [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="835923"/>
+                <display value="cyclosporine, modified 25 MG Oral Capsule [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="835927"/>
+                <display value="cyclosporine, modified 50 MG Oral Capsule [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="1233908"/>
+                <display value="cyclosporine, modified 100 MG/ML Oral Solution [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="1093176"/>
+                <display value="Cyclosporine 0.002 MG/MG [Optimmune]"/>
+            </concept>
+            <concept>
+                <code value="486331"/>
+                <display value="Cyclosporine 100 MG/ML [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="565430"/>
+                <display value="Cyclosporine 100 MG [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="572889"/>
+                <display value="Cyclosporine 25 MG [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="572915"/>
+                <display value="Cyclosporine 50 MG/ML [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="835897"/>
+                <display value="cyclosporine, modified 100 MG/ML [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="835900"/>
+                <display value="cyclosporine, modified 100 MG [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="835901"/>
+                <display value="cyclosporine, modified 25 MG [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="835787"/>
+                <display value="cyclosporine, modified 100 MG [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="835887"/>
+                <display value="cyclosporine, modified 100 MG/ML [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="835895"/>
+                <display value="cyclosporine, modified 25 MG [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="1797520"/>
+                <display value="cyclosporine, modified 50 MG [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="576100"/>
+                <display value="Cyclosporine 0.5 MG/ML [Restasis]"/>
+            </concept>
+            <concept>
+                <code value="835916"/>
+                <display value="cyclosporine, modified 100 MG [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="835920"/>
+                <display value="cyclosporine, modified 10 MG [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="835922"/>
+                <display value="cyclosporine, modified 25 MG [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="835926"/>
+                <display value="cyclosporine, modified 50 MG [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="1233905"/>
+                <display value="cyclosporine, modified 100 MG/ML [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="1093177"/>
+                <display value="Cyclosporine Ophthalmic Ointment [Optimmune]"/>
+            </concept>
+            <concept>
+                <code value="366488"/>
+                <display value="Cyclosporine Oral Capsule [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="363942"/>
+                <display value="Cyclosporine Oral Solution [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="366479"/>
+                <display value="Cyclosporine Oral Capsule [Neoral]"/>
+            </concept>
+            <concept>
+                <code value="366173"/>
+                <display value="Cyclosporine Oral Capsule [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="363914"/>
+                <display value="Cyclosporine Oral Solution [Gengraf]"/>
+            </concept>
+            <concept>
+                <code value="402330"/>
+                <display value="Cyclosporine Ophthalmic Suspension [Restasis]"/>
+            </concept>
+            <concept>
+                <code value="539499"/>
+                <display value="Cyclosporine Oral Capsule [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="94035"/>
+                <display value="Cyclosporine Oral Solution [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="1732366"/>
+                <display value="Cyclosporine Injection [Sandimmune]"/>
+            </concept>
+            <concept>
+                <code value="1233906"/>
+                <display value="Cyclosporine Oral Solution [Atopica]"/>
+            </concept>
+            <concept>
+                <code value="1093174"/>
+                <display value="Cyclosporine 0.002 MG/MG Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="197553"/>
+                <display value="Cyclosporine 25 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="205168"/>
+                <display value="Cyclosporine 50 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="205175"/>
+                <display value="5 ML Cyclosporine 50 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="309632"/>
+                <display value="Cyclosporine 100 MG/ML Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="328160"/>
+                <display value="Cyclosporine 100 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="241834"/>
+                <display value="cyclosporine, modified 100 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="351291"/>
+                <display value="Cyclosporine 0.5 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="835886"/>
+                <display value="cyclosporine, modified 100 MG/ML Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="835894"/>
+                <display value="cyclosporine, modified 25 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="835919"/>
+                <display value="cyclosporine, modified 10 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="835925"/>
+                <display value="cyclosporine, modified 50 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="1093172"/>
+                <display value="Cyclosporine 0.002 MG/MG"/>
+            </concept>
+            <concept>
+                <code value="315749"/>
+                <display value="Cyclosporine 100 MG"/>
+            </concept>
+            <concept>
+                <code value="315750"/>
+                <display value="Cyclosporine 100 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="315751"/>
+                <display value="Cyclosporine 25 MG"/>
+            </concept>
+            <concept>
+                <code value="315752"/>
+                <display value="Cyclosporine 50 MG"/>
+            </concept>
+            <concept>
+                <code value="315753"/>
+                <display value="Cyclosporine 50 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="334294"/>
+                <display value="cyclosporine, modified 100 MG"/>
+            </concept>
+            <concept>
+                <code value="353400"/>
+                <display value="Cyclosporine 0.5 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="835885"/>
+                <display value="cyclosporine, modified 100 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="835893"/>
+                <display value="cyclosporine, modified 25 MG"/>
+            </concept>
+            <concept>
+                <code value="835918"/>
+                <display value="cyclosporine, modified 10 MG"/>
+            </concept>
+            <concept>
+                <code value="835924"/>
+                <display value="cyclosporine, modified 50 MG"/>
+            </concept>
+            <concept>
+                <code value="1093173"/>
+                <display value="Cyclosporine Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="371666"/>
+                <display value="Cyclosporine Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="371667"/>
+                <display value="Cyclosporine Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="378766"/>
+                <display value="Cyclosporine Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1732364"/>
+                <display value="Cyclosporine Injection"/>
+            </concept>
+            <concept>
+                <code value="1156186"/>
+                <display value="Cyclosporine Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1156187"/>
+                <display value="Cyclosporine Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1156188"/>
+                <display value="Cyclosporine Oral Liquid Product"/>
+            </concept>
+            <concept>
+                <code value="1156189"/>
+                <display value="Cyclosporine Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1156190"/>
+                <display value="Cyclosporine Pill"/>
+            </concept>
+            <concept>
+                <code value="1169824"/>
+                <display value="Gengraf Oral Liquid Product"/>
+            </concept>
+            <concept>
+                <code value="1169825"/>
+                <display value="Gengraf Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1169826"/>
+                <display value="Gengraf Pill"/>
+            </concept>
+            <concept>
+                <code value="1172882"/>
+                <display value="Atopica Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1172883"/>
+                <display value="Atopica Pill"/>
+            </concept>
+            <concept>
+                <code value="1181672"/>
+                <display value="Neoral Oral Liquid Product"/>
+            </concept>
+            <concept>
+                <code value="1181673"/>
+                <display value="Neoral Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1181674"/>
+                <display value="Neoral Pill"/>
+            </concept>
+            <concept>
+                <code value="1182342"/>
+                <display value="Optimmune Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1182527"/>
+                <display value="Restasis Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1185408"/>
+                <display value="Sandimmune Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1185409"/>
+                <display value="Sandimmune Oral Liquid Product"/>
+            </concept>
+            <concept>
+                <code value="1185410"/>
+                <display value="Sandimmune Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1185411"/>
+                <display value="Sandimmune Pill"/>
+            </concept>
+            <concept>
+                <code value="1233907"/>
+                <display value="Atopica Oral Liquid Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

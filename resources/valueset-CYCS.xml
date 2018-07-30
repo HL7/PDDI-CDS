@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-CYCS"/>
+    <id value="valueset-CYCS"/>
+    <version value="US 1.1"/>
+    <name value="valueset-CYCS"/>
+    <title value="Composite Cyclosporine Drug Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-28"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet of ValueSets containing drug identifiers for cyclosporine"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide a refined value set of FHIR resources for cyclosporine to PDDI CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine"/>
+        </include>
+    </compose>
+</ValueSet>

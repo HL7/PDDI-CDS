@@ -65,9 +65,23 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-betamethasone-exclude" />
+			</reference>
+			<name value="valueset-betamethasone-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-bromfenac"/>
 			</reference>
 			<name value="valueset-bromfenac"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-bromfenac-exclude"/>
+			</reference>
+			<name value="valueset-bromfenac-exclude"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
@@ -121,6 +135,13 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-dexamethasone-exclude" />
+			</reference>
+			<name value="valueset-dexamethasone-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-dexlansoprazole" />
 			</reference>
 			<name value="valueset-dexlansoprazole" />
@@ -131,6 +152,13 @@
 				<reference value="ValueSet/valueset-diclofenac"/>
 			</reference>
 			<name value="valueset-diclofenac"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-diclofenac-exclude"/>
+			</reference>
+			<name value="valueset-diclofenac-exclude"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
@@ -184,9 +212,23 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-fluocortolone-exclude" />
+			</reference>
+			<name value="valueset-fluocortolone-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-flurbiprofen" />
 			</reference>
 			<name value="valueset-flurbiprofen" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-flurbiprofen-exclude" />
+			</reference>
+			<name value="valueset-flurbiprofen-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
@@ -205,9 +247,23 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-hydrocortisone-exclude" />
+			</reference>
+			<name value="valueset-hydrocortisone-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-ibuprofen" />
 			</reference>
 			<name value="valueset-ibuprofen" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-ibuprofen-exclude" />
+			</reference>
+			<name value="valueset-ibuprofen-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
@@ -224,6 +280,13 @@
             <name value="valueset-ketoprofen" />
             <exampleBoolean value="false" />
         </resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-ketoprofen-exclude" />
+			</reference>
+			<name value="valueset-ketoprofen-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
         <resource>
             <reference>
                 <reference value="ValueSet/valueset-ketorolac" />
@@ -231,6 +294,13 @@
             <name value="valueset-ketorolac" />
             <exampleBoolean value="false" />
         </resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-ketorolac-exclude" />
+			</reference>
+			<name value="valueset-ketorolac-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-lansoprazole"/>
@@ -268,6 +338,13 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-methylprednisolone-exclude" />
+			</reference>
+			<name value="valueset-methylprednisolone-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-misoprostol" />
 			</reference>
 			<name value="valueset-misoprostol" />
@@ -292,6 +369,13 @@
 				<reference value="ValueSet/valueset-nepafenac" />
 			</reference>
 			<name value="valueset-nepafenac" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-nepafenac-exclude" />
+			</reference>
+			<name value="valueset-nepafenac-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
@@ -331,9 +415,23 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/valueset-piroxicam-exclude" />
+			</reference>
+			<name value="valueset-piroxicam-exclude" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/valueset-prednisolone" />
 			</reference>
 			<name value="valueset-prednisolone" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-prednisolone-exclude" />
+			</reference>
+			<name value="valueset-prednisolone-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
@@ -362,6 +460,13 @@
 				<reference value="ValueSet/valueset-rimexolone" />
 			</reference>
 			<name value="valueset-rimexolone" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-rimexolone-exclude" />
+			</reference>
+			<name value="valueset-rimexolone-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>
@@ -397,6 +502,13 @@
 				<reference value="ValueSet/valueset-triamcinolone" />
 			</reference>
 			<name value="valueset-triamcinolone" />
+			<exampleBoolean value="false" />
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/valueset-triamcinolone-exclude" />
+			</reference>
+			<name value="valueset-triamcinolone-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
 		<resource>

@@ -1,6 +1,10 @@
 
 ## Terminology defined for the PDDI CDS Implementation Guide
 
+* **TODO** add international section
+* **TODO** add section on scope and purpose of value sets
+* **TODO** add extension for intensional definition 
+
 The following terminology artifacts have been defined for the PDDI CDS implementation guide: ValueSets, CodeSystems, and ConceptMaps 
 
 The ValueSets created for the PDDI-CDS IG have three components:  

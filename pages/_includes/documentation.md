@@ -1,35 +1,46 @@
 # PDDI CDS - Documentation
 
 * **TODO** add Digoxin + Cyclosporin
+* **TODO: Add language in the form of recommendations e.g.,  MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL (Key words for use in RFCs to Indicate Requirement Levels. S. Bradner. IETF. March 1997. Best Current Practice. URL: https://tools.ietf.org/html/rfc2119)**
+
+-1. Knowledge representation for the PDDI CDS (e.g, decision tree) - mapping out the decision paths, pre-fetch requirements.....  
+ 
+-2. Translating the KR to CQL  -- after investigation on our part, refering to possibility of using the publicly available CDS Authoring tool -- this will be simple --- libraries to import, specifying the FHIR terminology profile, utility functions, logic 
+
++This section contains documentation for implementers from both the clinical and technical perspectives. The process documentation describes the assumptions and decisions made, as well as a functional description of the recommendations. The integration documentation describes the overall approach and documents the artifacts contained in the IG, while the implementation documentation provides developer-level documentation on how to use the artifacts.
+ 
+-3. Implementing CDS Hooks and PlanDefinition to receive CDS requests medication-request or medication-prescribe and return the cards with actions
+
+-4. Implementing the CDS Service - including how to load the Library, PlanDefinition, and where value sets reside....
++## Warfarin + NSAIDs 
+ 
+-5. Fine tuning the CDS service for performance -- pre-loading data to reduce calls to the EHR e.g., for all patients who will be seen on a day. Other kinds of caching.....
++### Decision Points
 
 {:.no_toc}
 This section contains documentation for implementers from both the clinical and technical perspectives. The process documentation describes the assumptions and decisions made, as well as a functional description of the recommendations. The integration documentation describes the overall approach and documents the artifacts contained in the IG, while the implementation documentation provides developer-level documentation on how to use the artifacts.
 
 ## Warfarin + NSAIDs 
 
+> *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server query. All data required by the CDS artifacts is delineated in the prefetch templates. 
+
 ### Decision Points
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Warfarin + NSAID medication-select logic </strong></figcaption>
-  <img src="assets/images/Warfarin_NSAID_select.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.png" />
+  <a href = "assets/images/Warfarin_NSAID_select.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
 </figure>
 
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Parse and Pre-process medication-select request </strong></figcaption>
-  <img src="assets/images/Parse_pre-process_select.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_select.png" />
-</figure>
+
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Warfarin + NSAID medication-prescribe logic </strong></figcaption>
-  <img src="assets/images/Warfarin_NSAID_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.png" />
+<figcaption class="figure-caption"><strong>Figure 2: Warfarin + NSAID medication-prescribe logic </strong></figcaption>
+  <a href = "assets/images/Warfarin_NSAID_prescribe.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
 </figure>
 
 
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 4: Parse and Pre-process medication-prescribe request </strong></figcaption>
-  <img src="assets/images/Parse_pre-process_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.png" />
-</figure>
+
 
 #### Minimal Information Model 
 
@@ -74,6 +85,25 @@ This section contains documentation for implementers from both the clinical and 
 > *Comment:* Frequency of exposure and frequency of harm information is rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available.
 
 
+### Digoxin + Cyclosporin
+
+### Definitions 
+* **Incident Order** – `context` medication is *not* in `prefetch` medications and, thus, is presumably the first occurrence. 
+* **Prevelant Order** – `context` medication is in in `prefetch` medications and, thus, is presumably a medication order that is continued or repeated.
+* **Normal** – observation that is within a specified time period, and the measure is within a therapeutic window or below/above a certain threshold.
+* **Abnormal** – observation that is *not* within a specified time period, *or* the measure is *not* within a therapeutic window or below/above a certain threshold.
+
+#### Decision Points
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 3: Digoxin + Cyclosporine medication-select logic </strong></figcaption>
+  <a href = "assets/images/Digoxin_Cyclosporine_select.svg" target ="_blank" > <img src="assets/images/Digoxin_Cyclosporine_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Digoxin_Cyclosporine_select.svg" /></a>
+</figure>
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 4: Digoxin + Cyclosporine medication-prescribe logic </strong></figcaption>
+  <a href = "assets/images/Digoxin_Cyclosporine_prescribe.svg" target ="_blank" > <img src="assets/images/Digoxin_Cyclosporine_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Digoxin_Cyclosporine_prescribe.svg" /></a>
+</figure>
 
 #### Content
 The following artifacts formalize the description of the logic and behavior defined by this recommendation.
@@ -87,7 +117,3 @@ The following artifacts formalize the description of the logic and behavior defi
 | [Warfarin NSAIDs Recommendation Workflow](documentation.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
 | [Warfarin NSAIDs Recommendation](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Warfarin NSAIDs recommendation |
 | [Warfarin NSAIDs Recommendation](documentation.html) | CQL Source | For reference, the complete CQL source for Warfarin NSAIDs recommendation |
-
-### Digoxin + Cyclosporin
-
-#### Decision Points

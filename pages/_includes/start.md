@@ -5,8 +5,30 @@
 * **TODO** add example of CDS Hook response and possibly a mockup of the cards Cards
 * **TODO** Phi to work on CQL Library section
 * **TODO** work on tables for specification 
+* **TODO** add quick link table on right side
 
 # Getting Started with PDDI CDS
+
+
+### What You Will Need
+
+* CQL Evaluation Engine to enable the translation and execution of CQL libraries
+* FHIR Server 
+    * [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
+    * Local (preferred)
+        * [HAPI RESTful Server](http://hapifhir.io/doc_rest_server.html)
+        * [HAPI JPA Server](http://hapifhir.io/doc_jpa.html)
+        * [HAPI JAX-RS Server](http://hapifhir.io/doc_rest_server_jaxrs.html)
+        * [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
+* CDS Hooks API
+* JSON Parser
+
+### What Is Recommended 
+
+* [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring)
+
+The Clinical Decision Support Authoring Tool is a componenet of the CDS Connect project funded by the [Agency for Healthcare Research and Quality](https://www.ahrq.gov/). The Documentation section has the decision points described at a semi-structured level. The authoring tool can then be used to translated this knowledge into a structured formate using CQL.
+
 
 # Status
 There are two PDDI CDS artifacts available in this Implementation Guide:
@@ -97,19 +119,13 @@ This implementation guide specifies the use of up to two CDS Hooks (i.e., `medic
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-<mark>`patientId`</mark> | REQUIRED | Yes | *string* | <mark>Describe the context value</mark>
-<mark>`encounterId`</mark> | OPTIONAL | Yes | *string* | <mark>Describe the context value</mark>
-<mark>`medication`</mark> | REQUIRED | No | *object* | <mark>STU3 - FHIR `MedicationRequest` resource</mark>
+`patientId` | REQUIRED | Yes | *string* | Describe the context value
+`encounterId` | OPTIONAL | Yes | *string* | Describe the context value
+`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
 
 ##### **`medication-prescribe` 1.1**
  
  The version for the `medication-prescribe` hook is 1.0. The PDDI CDS implementation requires an additional context field for `DetectedIssue.`This modification is considered Minor but will change the version to 1.1.
-
-Field | Optionality | Prefetch Token | Type | Description
------ | -------- | ---- | ---- | ----
-<mark>`patientId`</mark> | REQUIRED | Yes | *string* | <mark>Describe the context value</mark>
-<mark>`encounterId`</mark> | OPTIONAL | Yes | *string* | <mark>Describe the context value</mark>
-
 
 
 | Field       | Optionality        |  Prefetch Token     |Type  | Description |
@@ -191,13 +207,13 @@ A `Bundle` is a FHIR resource that is used to group resources into a single inst
 In the event the EHR does NOT provide prefetch data, the PDDI CDS Services MUST request the data from the FHIR server via network call. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hook request. 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Parse and Pre-process medication-select Request </strong></figcaption>
-  <img src="assets/images/Parse_and_pre-process_select.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_select.png" />
+<figcaption class="figure-caption"><strong>Figure 2: Parse and Pre-process medication-select request </strong></figcaption>
+  <img src="assets/images/Parse_pre-process_select.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_select.png" />
 </figure>
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 4: Parse and Pre-process medication-prescribe Request </strong></figcaption>
-  <img src="assets/images/Parse_and_pre-process_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_and_pre-process_prescribe.png" />
+<figcaption class="figure-caption"><strong>Figure 4: Parse and Pre-process medication-prescribe request </strong></figcaption>
+  <img src="assets/images/Parse_pre-process_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.png" />
 </figure>
 
 ## Clinical Reasoning
@@ -273,7 +289,7 @@ The DynamicValue enables customization of the statically defined resources. Sinc
 FHIR resource workflow categorizes the `RequestGroup` as a Request, which expresses the intention for something to occur. For the PDDI CDS instance this could involve initiating another medication, substituting a medication order, or discontinuing the current order. The `RequestGroup` resource is created by the CDS service and subsequently transformed into a CDS Hooks response. 
 
 ### DetectedIssue 
-The `DetectedIssue` resource is created by the Medication Select Service and is subsequently passed to the EHR with the CDS Hooks response. Mitigating actions corresponding to CDS Card suggestions are documented by the EHR in the `DetectedIssue` resource. The `status` element of the `DetectedIssue` determines if the resource is passed to the Medication Prescribe Service with the `medication-prescribe` Hook request. For example, a "preliminary" status may indicate that the `DetecedIssue` resource will be passed to the Medication Prescribe Service.
+The `DetectedIssue` resource is created by the Medication Select Service and is subsequently passed to the EHR with the CDS Hooks response as an extension. Mitigating actions corresponding to CDS Card suggestions are documented by the EHR in the `DetectedIssue` resource. The `DetectedIssue` `status` element, instantiated by the Medication Select Service, specifies to the EHR if the prefetch template for the Medication Prescribe Service needs to be fulfilled. The `DetectedIssue` resource is passed to the Medication Prescribe Service with the the `medication-prescribe` Hook request for further processing. For example, a `DetecedIssue`  "final" status may indicate to the EHR that prefetch data for the `medication-prescribe` hook is not needed.
 
 ````
   {
@@ -286,11 +302,6 @@ The `DetectedIssue` resource is created by the Medication Select Service and is 
   }]
 }
 ````
-The detected issue accomplishes several things:
-* flexibility in Discover and fulfilling prefetch data
-* captures mitigating responses (card.suggestions.actions) for refined processing by the CDS logic 
-* indicates to the user if there is more informaiton to come
-* indicates to the EHR when to fulfill prefetch and for what specifically (implicated element)
 
 ### PDDI CDS CQL Library
 
@@ -301,20 +312,6 @@ This library contains the logic used by the PlanDefinition to establish the cond
 
 ## CDS Hook Response and Card Display Examples
 
-
-
-### What You Will Need
-
-* CQL Evaluation Engine to enable the translation and execution of CQL libraries
-* FHIR Server 
-    * [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
-    * Local (preferred)
-        * [HAPI RESTful Server](http://hapifhir.io/doc_rest_server.html)
-        * [HAPI JPA Server](http://hapifhir.io/doc_jpa.html)
-        * [HAPI JAX-RS Server](http://hapifhir.io/doc_rest_server_jaxrs.html)
-        * [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
-* CDS Hooks API
-* JSON Parser
 
 
 

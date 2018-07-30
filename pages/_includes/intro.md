@@ -4,20 +4,23 @@
 
 **TODO: write this last sort of like an abstract**
 
-**TODO: This content mostly is about collabarators and can be moved to that sub**
-This implementation guide was developed for potential drug-drug interaction (PDDI) clinical decision support (CDS). It was developed by the Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health. The project focused on developing standardized and shareable artifacts to contextualize PDDIs.
-
 
 ## Scope
 
-This implementation guide is for PDDI CDS. The guide specifies both a knowledge representation format for PDDI logic and CDS services. Specifically, the implementation guide includes specifications for:
-
-* How to represent PDDI logic in Clinical Quality Language **TODO: CITATION** CQL and evidence in computational format using the **TODO: spell out and link** FHIR Clinical Reasoning module.
-* How to use CDS Hooks **TODO: link** as a mechanism for electronic health records (EHRs) to request PDDI CDS from CDS web services.
- 
+This implementation guide:
+* Describes knowledge and decision points for two PDDI CDS artifacts: 
+    * [Warfarin + NSAIDs](documentation.html)
+    * [and Digoxin + Cyclosporine](documentation.html)
+* Provides structured code for CDS artifacts using released technology specifications:
+    * Health Level 7 (HL7), Fast Health Interoperability Resources ([FHIR](http://www.fhir.org/))
+    * [CDS Hooks](http://cds-hooks.org/)
+    * Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language)
+* Proposes methodology to improve the acceptance of PDDI alerts and provides technology modification guidance to accommodate this methodology   
 
 
 ## A Project Rationale
+
+Clinical decision support has the potential to reduce adverse outcomes associated with pharmacotherapy. Specifically, computerized drug-drug interaction checking is an efficient mechanism to bring conflicting therapies to clinicians' attention. While Meaningful Use incentives have supported the widespread dissemination of PDDI checking, the acceptance rate of the alerts is abysmal. Researchers have found that nearly all PDDI alerts in computerized provider order entry (CPOE) systems are ignored. The reason for overriding these alerts appears to be multi-factorial. For example, simple pair-wise drug comparisons can lead to overly sensitive alerts, and patient-specific factors are not expressed in CDS logic. Moreover, medication alerts are typically   
 
 
 * Motivate the need for PDDI decision support at the various places in med therapy workflow -- esp at drug selection and signing.
@@ -66,24 +69,9 @@ New information regarding PDDIs is published every day in primary sources such a
    * Recommended actions
    * Seriousness rating
    
-   **TODO: probably delete this**
- These core information elements are consistent with the results of a separate international Delphi study on how to
-     improve the delivery of medication alerts within computerized physician order entry systems (Riedmann et al. 2011).
-     This suggested list of core information elements includes some that are present in one or more of the 15 PDDI conceptual models
-     analyzed in a recent comprehensive review by Herrero-Zazo, Segura-Bedmar, and Martínez (Herrero-Zazo et al. 2016). However, there
-     is little commonality across the conceptual models on those elements that are included and no single conceptual model covers all 9
-     of the information elements. Moreover, the creation and maintenance of PDDI decision support generally requires considerable time
-     and energy from highly trained domain experts. An additional need is to standardize the EHR context that is sent to CDS services.
-     This includes context parameters that are currently not available but that, if present, would be useful for increasing the specificity
-     of the CDS alerts. This is important to ensure that PDDI decision support can be implemented across a variety of systems.
     
 
 ### Collaborators
 
-The Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, Wolters Kluwer Health, and ~~a volunteer-based W3C task force~~ <a href="https://www.w3.org/wiki/HCLSIG/DDI">https://www.w3.org/wiki/HCLSIG/DDI>W3C Healthcare and Lifesciences Working Group</a>
-    ~~was formed in January 2016 within the Health Care and Life Sciences Interest Group that operates publicly through
-    the World Wide Web Consortium ( W3C). The goal of the task force was to develop a minimal information model for drug
-    interaction evidence and knowledge as part of an HIT standard like HL7. The workgroup’s results will serve as requirements
-    and business knowledge for the current project. The task force is in the process of finalizing a draft Interest Group Note
-    that provides use cases, user stories, definitions, and exemplar potential drug-drug interaction descriptions for a minimal
-    information model for drug interaction evidence and knowledge.~~
+This implementation guide was developed for potential drug-drug interaction (PDDI) clinical decision support (CDS). It was developed by the Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health. The project focused on developing standardized and shareable artifacts to contextualize PDDIs.
+

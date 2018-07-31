@@ -20,10 +20,7 @@ This implementation guide:
 
 ## A Project Rationale
 
-Clinical decision support has the potential to reduce adverse outcomes associated with pharmacotherapy. Specifically, computerized drug-drug interaction checking is an efficient mechanism to bring conflicting therapies to clinicians' attention. While Meaningful Use incentives have supported the widespread dissemination of PDDI checking, the acceptance rate of the alerts is abysmal. Researchers have found that nearly all PDDI alerts in computerized provider order entry (CPOE) systems are ignored. The reason for overriding these alerts appears to be multi-factorial. For example, simple pair-wise drug comparisons can lead to overly sensitive alerts, and patient-specific factors are not expressed in CDS logic. Moreover, medication alerts are typically   
-
-
-* Motivate the need for PDDI decision support at the various places in med therapy workflow -- esp at drug selection and signing.
+Clinical decision support has the potential to reduce adverse outcomes associated with pharmacotherapy. Specifically, computerized drug-drug interaction checking is an efficient mechanism to bring conflicting therapies to clinicians' attention. While Meaningful Use incentives have supported the widespread dissemination of PDDI checking, the acceptance rate of the alerts is abysmal. Researchers have found that nearly all PDDI alerts in computerized provider order entry (CPOE) systems are ignored. The reason for overriding these alerts appears to be multi-factorial. For example, simple pair-wise drug comparisons can lead to overly sensitive alerts and desensitized clinicians. Moreover, medication alerts are typically presented the end of the order entry task – after the decision has been made to prescribe the medication. The motivation of this Implementation Guide is, in part, to explore a process of providing information at two separate instances in the order entry process.      
 
 * Motivate the need for this CDS to be available as a service
 

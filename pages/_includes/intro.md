@@ -17,6 +17,8 @@ This implementation guide:
     * Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language)
 * Proposes methodology to improve the acceptance of PDDI alerts and provides technology modification guidance to accommodate this methodology
 
+> *Note:* This Implementation Guide provides a Basic and Advanced version. The Basic version relates to current technology specifications and artifacts that are provided. The Advanced version is a goal for the creators of this Implementation Guide to obtain in future iterations.
+
 ## A Project Rationale
 
 Clinical decision support has the potential to reduce adverse outcomes associated with pharmacotherapy. Specifically, computerized drug-drug interaction checking is an efficient mechanism to bring conflicting therapies to clinicians' attention. While Meaningful Use incentives have supported the widespread dissemination of PDDI checking,(cite) the acceptance rate of the alerts is abysmal. Researchers have found that nearly all PDDI alerts in computerized provider order entry (CPOE) systems are ignored.(cite Van Der Sijis or other) The reason for overriding PDDI alerts appears to be multi-factorial. For example, simple pair-wise drug comparisons can lead to overly sensitive alerts and desensitized clinicians. Moreover, medication alerts are typically presented the end of the order entry task – after the decision has been made to prescribe the medication. The motivation of this Implementation Guide is, in part, to explore a process of providing information earlier in the order entry process.      

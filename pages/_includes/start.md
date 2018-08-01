@@ -79,42 +79,21 @@ These specific PDDIs were chosen based on complexity, decision points, and conte
 
 
 # Process 
-This section provides an overview of the processes and components that were used to develop the PDDI CDS. It is delineated by a Basic and Advanced sections. The Basic section describes the current technology specifications, and what structured knowledge is available in this Implementation Guide. The Advanced section is a target for the authors of this Implementation Guide to reach in future iterations to optimize the CDS artifacts. Details regarding the individual artifacts can be found in the [Documentation](documentation.html) section.  
+This section provides an overview of the processes and components that were used to develop the PDDI CDS. It is delineated by Basic and Advanced sections. The Basic section describes the current technology specifications, and what structured knowledge is available in this Implementation Guide. The Advanced section is a target for the authors of this Implementation Guide to reach in future iterations to optimize the CDS artifacts. Details regarding the individual artifacts can be found in the [Documentation](documentation.html) section.  
 
 
 # Basic
 
 ### Summary of Operations
-
+The CDS Discovery is the initial process that occurs...
 #### Medication Prescribe Service
+{:.no_toc}
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Basic – Medication Prescribe Service Summary </strong></figcaption>
   <img src="assets/images/Basic_Medication_prescribe_service.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Medication_prescribe_service.png" />
 </figure>
 
-
-### CDS Hooks
-
-The PDDI CDS artifacts use the HL7 [CDS Hooks specification](http://cds-hooks.org/specification/1.0/). 
-The CDS Hooks standard defines the data structure to facilitate communication between the electronic health record and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. The `context` and `prefetch` are two key elements of the CDS Hook request. The `context` element contains data that is task and Hook-specific. For this use case where two separate Hooks can be used for a specific medication order task, the `context` contains the current `MedicationRequest` resource for the `medication-select` request and the `DetectedIssue` resource for the `medication-prescribe` request. The `prefetch` element contains patient specific information that is relevant to the `context` data and the invoked CDS Service. If the EHR vendor decides not to provide `prefetch` data, the CDS Service MUST request needed data via post-hoc FHIR server request at pre-processing. The goal is to improve the performance of the CDS system by supplying data that is needed for most CDS services associated with a specific Hook in the request `prefetch` element. Examples and clarifications for CDS Hooks relevant to this use case are below.
-
-> *Note:* The CDS Service is not necessarily CDS Hooks dependent. For this use case, CDS Hooks provides simplicity and specific orientation to standardized CPOE workflow
-
-
- 
-##### Specification 
-{:.no_toc}
-The available CDS Hook specification for the order entry task is **`medication-prescribe` 1.0.**
-
-
-
-Field | Optionality | Prefetch Token | Type | Description
------ | -------- | ---- | ---- | ----
-`patientId` | REQUIRED | Yes | *string* | Describe the context value
-`encounterId` | OPTIONAL | Yes | *string* | Describe the context value
-`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
-
-### Discovery
+## CDS Discovery
 
 The CDS Service Discovery is invoked to identify CDS Services and obtain associated `prefetch` templates. A `prefetch` template is a dictionary of read and search requests for the needed resources for a particular service. The PDDI CDS Service provides a `prefetch` template for each service, and the EHR SHOULD populate `prefetch` templates with relevant patient data for the anticipated CDS Hook request. CDS Service Discovery and fulfilling `prefetch` queries are performed at the discretion EHR vendor.
 
@@ -149,22 +128,45 @@ GET http://FHIR.org/PDDI-CDS
       }
 
 ````
-#### CDS Hooks Request 
 
+## CDS Hooks
+
+The PDDI CDS artifacts use the HL7 [CDS Hooks specification](http://cds-hooks.org/specification/1.0/). 
+The CDS Hooks standard defines the data structure to facilitate communication between the electronic health record and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. The `context` and `prefetch` are two key elements of the CDS Hook request. The `context` element contains data that is task and Hook-specific. For this use case where two separate Hooks can be used for a specific medication order task, the `context` contains the current `MedicationRequest` resource for the `medication-select` request and the `DetectedIssue` resource for the `medication-prescribe` request. The `prefetch` element contains patient specific information that is relevant to the `context` data and the invoked CDS Service. If the EHR vendor decides not to provide `prefetch` data, the CDS Service MUST request needed data via post-hoc FHIR server request at pre-processing. The goal is to improve the performance of the CDS system by supplying data that is needed for most CDS services associated with a specific Hook in the request `prefetch` element. Examples and clarifications for CDS Hooks relevant to this use case are below.
+
+> *Note:* The CDS Service is not necessarily CDS Hooks dependent. For this use case, CDS Hooks provides simplicity and specific orientation to standardized CPOE workflow
+
+
+ 
+#### Specification 
+{:.no_toc}
+The available CDS Hook context specification for the order entry task is **`medication-prescribe` 1.0.**
+
+
+
+Field | Optionality | Prefetch Token | Type | Description
+----- | -------- | ---- | ---- | ----
+`patientId` | REQUIRED | Yes | *string* | Describe the context value
+`encounterId` | OPTIONAL | Yes | *string* | Describe the context value
+`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
+
+
+### CDS Hooks Request 
+{:.no_toc}
 The EHR calls the PDDI CDS service by `POST` ing a `JSON` file to the service endpoint (e.g.,`http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds`). The JSON file (CDS Hook) contains elements for the hook that was triggered, FHIR server, user, context, and prefetch.
 
-###### Context
+##### Context
 {:.no_toc}
 The `context` element of a CDS Hook request contains hook-specific data and is contextual for the current task. For the order entry task, the `context` needs the medication product (i.e., `medication` element of the `MedicationRequest` resource ) of the order that is in process. 
 
 
-###### Prefetch
+##### Prefetch
 {:.no_toc}
-The `prefetch` element contains patient data that was queried prior to the hook trigger. Typically, the prefetch query will build on the context `patientID` to obtain data that is for the current patient. The CDS Service then performs a pair-wise comparision of the `context` medication to the patient's current medications in the `prefetch` element. The `prefetch` element also contains patient data, other than medications, to individualized the CDS logic and Hook response. 
+The `prefetch` element contains patient data that was provided by the EHR prior to the hook trigger by using the prefetch template. Typically, the prefetch query will build on the context `patientID` to obtain data that is for the current patient. The CDS Service then performs a pair-wise comparision of the `context` medication to the patient's current medications in the `prefetch` element. The `prefetch` element also contains patient data, other than medications, to individualized the CDS logic and Hook response. 
 
 > *Note:* Based on the standard prescription days-supply, a 100-day time period is recommended as a starting point for all medication resources (i.e., `MedicationRequest, MedicationDispense, MedicationStatement, MedicationAdministration).`
 
-###### Bundle 
+##### Bundle 
 {:.no_toc}
 A `Bundle` is a FHIR resource that is used to group resources into a single instance, which is ideal for messaging with CDS Hooks, storing the collection of resources obtained on CDS discovery, and providing flexibility in using the collections as a persistent instance. This implementation uses the `bundle` resource for the key CDS Hook components (i.e., `context` and `prefetch`).  
 
@@ -172,7 +174,8 @@ A `Bundle` is a FHIR resource that is used to group resources into a single inst
 This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning Module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. The Clinical Reasoning Module for the PDDI CDS artifacts encompasses the `PlanDefinition, RequestGroup, DetectedIssue,` and CQL libraries. 
 
 ### PlanDefinition
-In the FHIR resource workflow, the `PlanDefinition` is categorized as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the PlanDefinition that are used for the PDDI CDS instances. These include `TriggerDefinition`, `Condition`, and `Action.` 
+{:.no_toc}
+In the FHIR resource workflow, the `PlanDefinition` is categorized as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the PlanDefinition that are used for the PDDI CDS instances. These elements include `TriggerDefinition`, `Condition`, and `Action.` 
 ##### TriggerDefinition
 {:.no_toc}
 The `TriggerDefinition` uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The TriggerDefinition for the PDDI CDS is based on the CDS Hooks requests `medication-prescribe` and `medication-select.`
@@ -243,11 +246,12 @@ The DynamicValue enables customization of the statically defined resources. Sinc
                         "expression": "Get Card 2 Label"
 ````
 ### CarePlan and RequestGroup 
-The FHIR resource workflow categorizes the `CarePlan` and `RequestGroup` as a Requests, which expresses the intention for something to occur. The CDS Service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card. For example, the warfarin-nsaids-cds service creates four response cards with different information. So, in this instance, the CarePlan would reference four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides information for suggestions and actions of the response card such as initiating another medication, substituting a medication order, or discontinuing the current order. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks responses. 
+{:.no_toc}
+The FHIR resource workflow(link) categorizes the `CarePlan` and `RequestGroup` as a Requests, which expresses the intention for something to occur. The CDS Service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card. For example, the warfarin-nsaids-cds service creates four response cards with different information, so the CarePlan would reference four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides information for suggestions and actions in the response card such as initiating another medication, substituting a medication order, or discontinuing the current order. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks responses. 
 
 #### FHIR Server Request
-{:.no_toc}
-The prefetch element is optional but cannot be partially fulfilled; meaning – the prefetch element is either empty or has all data specified by the prefetch template. In the event the EHR does NOT provide prefetch data, the PDDI CDS service MUST request the data from the FHIR server via network call. This event is performed at the parse and pre-process phase. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hook request. 
+
+A post-hoc FHIR server request by the CDS Service may be necessary depending on the availablity of prefetch data. While the prefetch element is optional, it MUST not be partially fulfilled. The prefetch element is either empty or has all data specified by the prefetch template. In the event the EHR does NOT provide prefetch data, the PDDI CDS service MUST request the data from the FHIR server via network call. This event is performed at the parse and pre-process phase. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hook request. 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
@@ -264,19 +268,23 @@ This library contains the logic used by the PlanDefinition to establish the cond
 
 
 # Advanced
-As previously discussed, the Advanced section is a target implementation for future iterations. Does not provide a comprehensive overview but highlights key deviations from the Basic implementation section.  
+
+* Do not remove this line (it will not be displayed)
+{:toc}
+
+As previously discussed, the Advanced section is a target for future implementations. This section does not provide a comprehensive overview but highlights key deviations from the Basic implementation section above.  
 
 
-The primary differences between the Basic and Advanced version include:
-* Adding `medication-select` CDS Hook
-* Referencing DetectedIssue in addition to RequestGroup in CarePlan
-* Adding extension for DetectedIssue to `medication-select` CDS Hook response
-* Adding detectedIssueId to `context` of `medication-prescribe` CDS Hook request
+The primary differences between the Basic and Advanced sections include:
+* Specifying a `medication-select` CDS Hook
+* Referencing a DetectedIssue resource in the CarePlan
+* Creating a CDS Hooks response extension for DetectedIssue
+* Adding detectedIssueId element to the `context` of `medication-prescribe` CDS Hook request
  
 > *Note:* Examples and explainations for the differences are provided in the sections below
 
 # Advanced – CPOE Workflow
-Different contextual factors are available and needed at different times during the medication order process. To align clinicians' information needs with PDDI information, this implementation guide explores the use of two separate points in the medication therapy workflow:
+Different contextual factors are available and needed at different times during the medication order process. To align clinicians' information needs with PDDI information, the Advanced sections explore the use of two separate points in the medication therapy workflow:
 
 * Signing a medication order (`medication-prescribe`)
 
@@ -292,7 +300,7 @@ We have chosen to delineate a separate CDS Service for each CDS Hook (i.e., Medi
 </figure>
 
 ### Summary of Operations
-Coordinating the `medication-select` with the `medication-prescribe` CDS Hooks request is a crucial aspect of the Advanced implementation. Whether the Medication Prescribe Service is called depends on aspects of the `DetectedIssue` resource. The `DetectedIssue` resource is created by the Medication Select Service and populated by clinician actions in response to `medication-select` response cards. Figures 2-3 depict the process of an EHR sending CDS Hooks request, a CDS service generating and transforming resources, and an EHR receiving the CDS Hooks Card response to display alerts for clinician to initiate actions.
+Coordinating the `medication-select` with the `medication-prescribe` CDS Hooks request is a crucial aspect of the Advanced implementation. Whether the Medication Prescribe Service is called depends on aspects of the `DetectedIssue` resource. The `DetectedIssue` resource is created by the Medication Select Service and populated by clinician actions in response to `medication-select` response cards. Figure X depicts the summary of operations that coordinates the medication-select and medication-prescribe services.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Advanced PDDI CDS Service Summary </strong></figcaption>
@@ -303,7 +311,7 @@ Coordinating the `medication-select` with the `medication-prescribe` CDS Hooks r
 
 #### Advanced CDS Hooks Specification
 {:.no_toc}
-This implementation guide specifies the use of up to two CDS Hooks (i.e., `medication-select` and `medication-prescribe`) during a single medication order task. Currently, `medication-prescribe` is the only CDS Hook specified for this task.  In addition to creating a new hook, coordinating the two hooks requires modifying the context field of the `mediction-prescribe` hook. 
+This implementation guide specifies the use of up to two CDS Hooks (i.e., `medication-select` and `medication-prescribe`) during a single medication order task. In addition to creating a new hook, coordinating the two hooks requires modifying the current specification context of the `mediction-prescribe` hook. 
 
 ##### **`medication-select` 1.0**
 {:.no_toc}
@@ -329,7 +337,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 
 
-#### CDS Service Discovery Response
+#### Example x: Advanced CDS Service Discovery Response
 {:.no_toc}
 ```{
   "services": [
@@ -360,11 +368,11 @@ Field | Optionality | Prefetch Token | Type | Description
 }
 ```
 
-###### Context
+### Context
 {:.no_toc}
 The `context` element of the `medication-select` CDS Hook request is identical to the current `medication-prescribe` specification for used in the Basic section. The `context` element in the Advanced `medication-prescribe` element has a minor modification to include the detectedissueID. The detectedissueID indicates the PDDI that was identified by the Medication Select Service (e.g., `id : "warfarin-NSAID"`). For details on the specification refer to the Advanced CDS Hooks Specification section above.
 
-###### Prefetch
+### Prefetch
 {:.no_toc}
 Since the order entry task is split into two separate CDS Hooks events, the prefetch template for the `medication-select` hook includes only medication resources. The prefetch template for `medication-prescribe` includes any additional resources needed by the CDS service for a specific PDDI.  
 
@@ -386,7 +394,7 @@ Since the order entry task is split into two separate CDS Hooks events, the pref
 }
 ````
 
-#### FHIR Server Request
+### FHIR Server Request
 {:.no_toc}
 The parse and pre-process event for the `medication-select` CDS Hook request is identical to the Basic `medication-prescribe` parse and pre-process event under section X. The Advanced `medication-prescribe` parse and pre-process event, however, is slightly different. During this phase the CDS service checks the medication that was finally ordered against the detectedissueID. This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response the Card suggestions. 
 

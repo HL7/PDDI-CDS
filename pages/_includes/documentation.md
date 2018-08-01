@@ -7,9 +7,7 @@
  
 -2. Translating the KR to CQL  -- after investigation on our part, refering to possibility of using the publicly available CDS Authoring tool -- this will be simple --- libraries to import, specifying the FHIR terminology profile, utility functions, logic 
 
-+This section contains documentation for implementers from both the clinical and technical perspectives. The process documentation describes the assumptions and decisions made, as well as a functional description of the recommendations. The integration documentation describes the overall approach and documents the artifacts contained in the IG, while the implementation documentation provides developer-level documentation on how to use the artifacts.
- 
--3. Implementing CDS Hooks and PlanDefinition to receive CDS requests medication-request or medication-prescribe and return the cards with actions
+-3. Implementing CDS Hooks and PlanDefinition to receive CDS requests medication-request or medication-prescribe and return the cards with actions (since general to both artifacts consider moving to start.md?)
 
 -4. Implementing the CDS Service - including how to load the Library, PlanDefinition, and where value sets reside....
 +## Warfarin + NSAIDs 
@@ -27,17 +25,46 @@
 {:toc}
 
 
+This section contains documentation, on the specific CDS artifacts, for implementers from both the clinical and technical perspectives.
 
-This section contains documentation for implementers from both the clinical and technical perspectives. The process documentation describes the assumptions and decisions made, as well as a functional description of the recommendations. The integration documentation describes the overall approach and documents the artifacts contained in the IG, while the implementation documentation provides developer-level documentation on how to use the artifacts.
+# PDDI CDS - prefetch and performance
+
+This section documents for technical implementers the intended role of prefetch resources in improving the performance of the CDS service. 
+
+## What is the role of prefetch?
+
+The role of prefetch is to minimize calls by the CDS Service to external resources such as an external FHIR server containing clinical data. When a client program subscribes to PDDI CDS service, a prefetch specicification is returned in the response. This specification identifies important resources that the PDDI CDS service SHOULD recieve when the client makes a request for CDS. As is described below, the prefetch requirements are different depending on if CDS is for `medication-select` or `medication-prescribe`. In both cases, there are some parts of the prefetch that are mandatory because they are necessary for CDS to run, and others that are desired because they will improve CDS performance. 
+
+## Prefetch and `medication-select` in the *basic* or *advanced* CDS scenario
+
+The following diagram shows the ideal scenario for prefetch for `medication-select` requests. The scenario is true for both the *basic* or *advanced* CDS scenarios because the prefetch requirements are distinct from the requirements related to the use of `DetectedIssue` resources.
+
+**TODO: develop a figure for this case and finish the section**
+
+## Prefetch and `medication-request` in the *basic* or *advanced* CDS scenario
+
+The following diagram shows the ideal scenario for prefetch for `medication-select` requests. The scenario is true for both the *simple* or *advanced* CDS scenarios because the prefetch requirements are distinct from the requirements related to the use of `DetectedIssue` resources.
+
+**TODO: develop a figure for this case and finish the section**
+
+> *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server query. All data required by the CDS artifacts is delineated in the prefetch templates. 
+
+
+# Warfarin + NSAIDs 
 
 # Basic
 
+### Decision Points
+
+## Context
+
+## Prefetch 
 
 # Advanced
 
-## Warfarin + NSAIDs 
+### Decision Points
 
-> *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server query. All data required by the CDS artifacts is delineated in the prefetch templates. 
+
 
 ### Decision Points
 
@@ -54,7 +81,9 @@ This section contains documentation for implementers from both the clinical and 
   <a href = "assets/images/Warfarin_NSAID_prescribe.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
 </figure>
 
+## Context
 
+## Prefetch 
 
 
 #### Minimal Information Model 
@@ -100,7 +129,7 @@ This section contains documentation for implementers from both the clinical and 
 > *Comment:* Frequency of exposure and frequency of harm information is rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available.
 
 
-### Digoxin + Cyclosporin
+# Digoxin + Cyclosporin
 
 ### Definitions 
 * **Incident Order** – `context` medication is *not* in `prefetch` medications and, thus, is presumably the first occurrence. 
@@ -108,7 +137,25 @@ This section contains documentation for implementers from both the clinical and 
 * **Normal** – observation that is within a specified time period, and the measure is within a therapeutic window or below/above a certain threshold.
 * **Abnormal** – observation that is *not* within a specified time period, *or* the measure is *not* within a therapeutic window or below/above a certain threshold.
 
-#### Decision Points
+# Basic
+
+### Decision Points
+
+## Context
+
+## Prefetch
+
+
+# Advanced
+
+### Decision Points
+
+## Context
+
+## Prefetch
+
+
+### Decision Points
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Digoxin + Cyclosporine medication-select logic </strong></figcaption>

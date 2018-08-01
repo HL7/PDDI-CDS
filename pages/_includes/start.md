@@ -5,7 +5,6 @@
 * **TODO** add example of CDS Hook response and possibly a mockup of the cards Cards
 * **TODO** Phi to work on CQL Library section
 * **TODO** work on tables for specification 
-* **TODO** add quick link table on right side
 
 # Getting Started with PDDI CDS
 {:.no_toc}
@@ -131,6 +130,7 @@ This implementation guide specifies the use of up to two CDS Hooks (i.e., `medic
 
 ##### **`medication-select` 1.0**
 {:.no_toc}
+
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
 `patientId` | REQUIRED | Yes | *string* | Describe the context value
@@ -148,8 +148,6 @@ Field | Optionality | Prefetch Token | Type | Description
 | encounterId     | OPTIONAL    | Yes |   string | The FHIR Encounter.id of the current encounter in context |
 | detectedissueId | REQUIRED     | Yes |    object | STU3 - FHIR `DetectedIssue` resource |
 | medication | REQUIRED     | No |    object | STU3 - FHIR `MedicationRequest` resource |
-| implicated | OPTIONAL     | No |    object | STU3 - FHIR `DetectedIssue` resource |
-| category | OPTIONAL     | No |    object | STU3 - FHIR `DetectedIssue` resource |
 
 
 ### Discovery
@@ -310,7 +308,7 @@ The DynamicValue enables customization of the statically defined resources. Sinc
                         "path": "action.label",
                         "expression": "Get Card 2 Label"
 ````
-### RequestGroup 
+### CarePlan and RequestGroup 
 FHIR resource workflow categorizes the `RequestGroup` as a Request, which expresses the intention for something to occur. For the PDDI CDS instance this could involve initiating another medication, substituting a medication order, or discontinuing the current order. The `RequestGroup` resource is created by the CDS service and subsequently transformed into a CDS Hooks response. 
 
 ### DetectedIssue 

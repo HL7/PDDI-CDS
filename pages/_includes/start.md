@@ -273,8 +273,6 @@ This library contains the logic used by the PlanDefinition to establish the cond
 
 # Advanced
 
-* Do not remove this line (it will not be displayed)
-{:toc}
 
 As previously discussed, the Advanced section is a target for future implementations. This section does not provide a comprehensive overview but highlights key deviations from the Basic implementation section above.  
 
@@ -284,6 +282,8 @@ The primary differences between the Basic and Advanced sections include:
 * Referencing a DetectedIssue resource in the CarePlan
 * Creating a CDS Hooks response extension for DetectedIssue
 * Adding detectedIssueId element to the `context` of `medication-prescribe` CDS Hook request
+ 
+From a technical and clinical perspective, the Advanced Implementation has several features that make it preferable. First, PDDI information is split and moved up further in the order entry workflow. This provides clinicians with actionable information in the middle of their decision making process – before completing the order. Second, by splitting contextual factors into `medication-select` (medication resources) and `medication-prescribe` (other resources specific to PDDI), this may limit the amount of information that needs to be shown to fulfill the Minimum Information Model, and the amount of information the EHR has to provide. For example, if a clinician started an NSAID order and decided to discontinue the order based on the presented cards, the clinician would only need to read and process medication factors, and the EHR would not query for additional patient resources such as age and history of upper gastrointestinal bleed. Finally, by creating a DetectedIssue resource, this stores information on clinician action and enables the Medication Prescribe to present refined information based on these actions. For example, if the clinician decided to continue with the NSAID prescription but added a proton pump inhibitor, the `medication-prescribe` alert would be adjusted from "hard-stop" to "warning."    
  
 > *Note:* Examples and explainations for the differences are provided in the sections below
 

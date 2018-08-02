@@ -6,6 +6,7 @@
 * **TODO** add example of CDS Hook response and possibly a mockup of the cards Cards
 * **TODO** Phi to work on CQL Library section
 * **TODO** work on tables for specification 
+* **TODO** add motivation for Advanced implementation 
 
 # Getting Started with PDDI CDS
 {:.no_toc}
@@ -263,8 +264,11 @@ A post-hoc FHIR server request by the CDS Service may be necessary depending on 
 This library contains the logic used by the PlanDefinition to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
 
 
-## CDS Hook Response and Card Display Examples
+## CDS Hook Response and 
 
+## Basic Card Display Examples
+
+[Documentation](documentation.html)
 
 
 # Advanced
@@ -405,7 +409,14 @@ The parse and pre-process event for the `medication-select` CDS Hook request is 
 </figure>
 
 
+## CDS Hook Request for `medication-select`
 
+## CDS Hook Request for `medication-prescribe`
+
+
+## Advanced Card Display Examples
+
+[Documentation](documentation.html)
 
 
 

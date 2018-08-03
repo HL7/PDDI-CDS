@@ -340,11 +340,11 @@ Field | Optionality | Prefetch Token | Type | Description
 
 | Field       | Optionality        |  Prefetch Token     |Type  | Description |
 | :------------- |:-------------:|:-------: |:-----:| :-----------------|
-| patientId     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
-| encounterId     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context |
-| detectedissueId | REQUIRED     | Yes |    *string* | STU3 - FHIR `DetectedIssue` resource |
-| detectedissueStatus | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
-| medication | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
+| `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
+| `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context |
+| `detectedissueId` | REQUIRED     | Yes |    *string* | STU3 - FHIR `DetectedIssue` resource |
+| `detectedissueStatus` | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
+| `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
 
 
 

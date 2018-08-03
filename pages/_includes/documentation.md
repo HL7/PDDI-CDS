@@ -1,10 +1,7 @@
-* **TODO** add Digoxin + Cyclosporin
 * **TODO: Add language in the form of recommendations e.g.,  MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL (Key words for use in RFCs to Indicate Requirement Levels. S. Bradner. IETF. March 1997. Best Current Practice. URL: https://tools.ietf.org/html/rfc2119)**
-* **TODO** split into Basic and Advanced
-* **TODO** display card example in documentation vs start?
 
 
--1. Knowledge representation for the PDDI CDS (e.g, decision tree) - mapping out the decision paths, pre-fetch requirements.....  
+-1. ~~Knowledge representation for the PDDI CDS (e.g, decision tree) - mapping out the decision paths, pre-fetch requirements~~
  
 -2. Translating the KR to CQL  -- after investigation on our part, refering to possibility of using the publicly available CDS Authoring tool -- this will be simple --- libraries to import, specifying the FHIR terminology profile, utility functions, logic 
 
@@ -67,9 +64,23 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
 
 #### Context
 {:.no_toc}
+* [`medication-prescribe 1.0`](https://cds-hooks.org/hooks/medication-prescribe/) 
 
 #### Prefetch 
 {:.no_toc}
+
+* Rolling 100-day look-back period for medication resources including:
+    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
+    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
+    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
+
+* Age of patient on current date.
+    * [Patient](https://www.hl7.org/fhir/patient.html)
+    
+* Rolling 5-year look-back period for history of upper gastrointestinal bleed.
+    * [Condition](https://www.hl7.org/fhir/condition.html)
+    
 
 #### Example Display Cards
 {:.no_toc}
@@ -101,8 +112,47 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
 #### Context
 {:.no_toc}
 
+##### `medication-select 1.0`
+{:.no_toc}
+
+Field | Optionality | Prefetch Token | Type | Description
+----- | -------- | ---- | ---- | ----
+`patientId` | REQUIRED | Yes | *string* | Describe the context value
+`encounterId` | OPTIONAL | Yes | *string* | Describe the context value
+`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
+
+###### `medication-prescribe 1.1`
+{:.no_toc}
+
+| Field       | Optionality        |  Prefetch Token     |Type  | Description |
+| :------------- |:-------------:|:-------: |:-----:| :-----------------|
+| `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
+| `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context |
+| `detectedissueId` | REQUIRED     | Yes |    *string* | STU3 - FHIR `DetectedIssue` resource |
+| `detectedissueStatus` | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
+| `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
+
 #### Prefetch 
 {:.no_toc}
+
+##### `medication-select`
+{:.no_toc}
+
+* Rolling 100-day look-back period for medication resources including:
+    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
+    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
+    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
+
+##### `medication-prescribe`
+{:.no_toc}
+
+* Age of patient on current date.
+    * [Patient](https://www.hl7.org/fhir/patient.html)
+    
+* Rolling 5-year look-back period for history of upper gastrointestinal bleed.
+    * [Condition](https://www.hl7.org/fhir/condition.html)
+    
 
 #### Example Display Cards
 {:.no_toc}
@@ -134,8 +184,26 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
 #### Context
 {:.no_toc}
 
+* [`medication-prescribe 1.0`](https://cds-hooks.org/hooks/medication-prescribe/) 
+
 #### Prefetch
 {:.no_toc}
+
+* Rolling 100-day look-back period for medication resources including:
+    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
+    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
+    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
+    
+* Rolling 365-day look-back period for digoxin concentration
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+
+* Rolling 365-day look-back period for serum creatinine
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+    
+* Rolling 365-day look-back period for electrolytes including: potassium, magnesium, and calcium
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+        
 
 ### <span style="color:silver"> 5.4.3 </span> Advanced
 
@@ -145,8 +213,49 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
 #### Context
 {:.no_toc}
 
+##### `medication-select 1.0`
+{:.no_toc}
+
+Field | Optionality | Prefetch Token | Type | Description
+----- | -------- | ---- | ---- | ----
+`patientId` | REQUIRED | Yes | *string* | Describe the context value
+`encounterId` | OPTIONAL | Yes | *string* | Describe the context value
+`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
+
+###### `medication-prescribe 1.1`
+{:.no_toc}
+
+| Field       | Optionality        |  Prefetch Token     |Type  | Description |
+| :------------- |:-------------:|:-------: |:-----:| :-----------------|
+| `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
+| `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context |
+| `detectedissueId` | REQUIRED     | Yes |    *string* | STU3 - FHIR `DetectedIssue` resource |
+| `detectedissueStatus` | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
+| `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
+
+
 #### Prefetch
 {:.no_toc}
+
+##### `medication-select`
+{:.no_toc}
+* Rolling 100-day look-back period for medication resources including:
+    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
+    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
+    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
+
+##### `medication-prescribe`
+{:.no_toc}
+
+* Rolling 365-day look-back period for digoxin concentration
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+
+* Rolling 365-day look-back period for serum creatinine
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+    
+* Rolling 365-day look-back period for electrolytes including: potassium, magnesium, and calcium
+    * [Observation](https://www.hl7.org/fhir/observation.html)
 
 
 #### Decision Points

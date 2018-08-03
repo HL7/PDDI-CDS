@@ -14,7 +14,14 @@
 		<package>
 			<name value="base" />
 		</package>
-		<resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/codesystem-PDDI-CDS-indicator"/>
+            </reference>
+            <name value="codesystem-PDDI-CDS-indicator"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
 			<reference>
 				<reference value="ValueSet/valueset-AAS"/>
 			</reference>
@@ -42,6 +49,13 @@
 			<name value="valueset-SCS"/>
 			<exampleBoolean value="false"/>
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-CYCS" />
+            </reference>
+            <name value="valueset-CYCS" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-aldosterone"/>
@@ -84,6 +98,13 @@
 			<name value="valueset-bromfenac-exclude"/>
 			<exampleBoolean value="false"/>
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-calcium-LOINC"/>
+            </reference>
+            <name value="valueset-calcium-LOINC"/>
+            <exampleBoolean value="false"/>
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-celecoxib" />
@@ -112,6 +133,20 @@
 			<name value="valueset-cortivazol" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-cyclosporine" />
+            </reference>
+            <name value="valueset-cyclosporine" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-cyclosporine-exclude" />
+            </reference>
+            <name value="valueset-cyclosporine-exclude" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-deflazacort" />
@@ -168,6 +203,20 @@
 			<name value="valueset-diflunisal" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-digoxin" />
+            </reference>
+            <name value="valueset-digoxin" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-digoxin-LOINC" />
+            </reference>
+            <name value="valueset-digoxin-LOINC" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-eplerenone" />
@@ -308,6 +357,13 @@
 			<name value="valueset-lansoprazole"/>
 			<exampleBoolean value="false"/>
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-magnesium-LOINC"/>
+            </reference>
+            <name value="valueset-lansoprazole-magnesium-LOINC"/>
+            <exampleBoolean value="false"/>
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-mefenamate" />
@@ -420,6 +476,13 @@
 			<name value="valueset-piroxicam-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-potassium-LOINC" />
+            </reference>
+            <name value="valueset-potassium-LOINC" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-prednisolone" />
@@ -457,12 +520,19 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/valueset-rimexolone" />
+				<reference value="ValueSet/valueset-renal-LOINC" />
 			</reference>
-			<name value="valueset-rimexolone" />
+			<name value="valueset-renal-LOINC" />
 			<exampleBoolean value="false" />
 		</resource>
-		<resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-rimexolone" />
+            </reference>
+            <name value="valueset-rimexolone" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
 			<reference>
 				<reference value="ValueSet/valueset-rimexolone-exclude" />
 			</reference>
@@ -525,18 +595,25 @@
 			<name value="valueset-warfarin" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/bundle-warfarin-nsaid-scenario-01" />
+            </reference>
+            <name value="bundle-warfarin-nsaid-scenario-01" />
+            <exampleBoolean value="true" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="Encounter/encounter-warfarin-nsaid-context" />
 			</reference>
-			<name value="valueset-encounter-warfarin-nsaid-context" />
+			<name value="encounter-warfarin-nsaid-context" />
 			<exampleBoolean value="true" />
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Encounter/encounter-warfarin-nsaid-prefetch" />
 			</reference>
-			<name value="valueset-encounter-warfarin-nsaid-prefetch" />
+			<name value="encounter-warfarin-nsaid-prefetch" />
 			<exampleBoolean value="true" />
 		</resource>
 		<resource>

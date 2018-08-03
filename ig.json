@@ -78,6 +78,14 @@
        "base": "ValueSet-valueset-SCS.html",
        "source": "valueset-SCS.xml"
      },
+     "ValueSet/valueset-CYCS": {
+       "base": "ValueSet-valueset-CYCS.html",
+       "source": "valueset-CYCS.xml"
+     },
+     "CodeSystem/codesystem-PDDI-CDS-indicator": {
+       "base": "CodeSystem-codesystem-PDDI-CDS-indicator.html",
+       "source": "codesystem-PDDI-CDS-indicator.xml"
+     },
      "ValueSet/valueset-aldosterone": {
          "base": "ValueSet-valueset-aldosterone.html",
          "source": "valueset-aldosterone.xml"
@@ -102,6 +110,10 @@
        "base": "ValueSet-valueset-bromfenac-exclude.html",
        "source": "valueset-bromfenac-exclude.xml"
      },
+     "ValueSet/valueset-calcium-LOINC": {
+       "base": "ValueSet-valueset-calcium-LOINC.html",
+       "source": "valueset-calcium-LOINC.xml"
+     },
      "ValueSet/valueset-celecoxib": {
        "base": "ValueSet-valueset-celecoxib.html",
        "source": "valueset-celecoxib.xml"
@@ -117,6 +129,14 @@
      "ValueSet/valueset-cortivazol": {
        "base": "ValueSet-valueset-cortivazol.html",
        "source": "valueset-cortivazol.xml"
+     },
+     "ValueSet/valueset-cyclosporine": {
+       "base": "ValueSet-valueset-cyclosporine.html",
+       "source": "valueset-cyclosporine.xml"
+     },
+     "ValueSet/valueset-cyclosporine-exclude": {
+       "base": "ValueSet-valueset-cyclosporine-exclude.html",
+       "source": "valueset-cyclosporine-exclude.xml"
      },
      "ValueSet/valueset-deflazacort": {
        "base": "ValueSet-valueset-deflazacort.html",
@@ -149,6 +169,14 @@
      "ValueSet/valueset-diflunisal": {
        "base": "ValueSet-valueset-diflunisal.html",
        "source": "valueset-diflunisal.xml"
+     },
+     "ValueSet/valueset-digoxin": {
+       "base": "ValueSet-valueset-digoxin.html",
+       "source": "valueset-digoxin.xml"
+     },
+     "ValueSet/valueset-digoxin-LOINC": {
+       "base": "ValueSet-valueset-digoxin-LOINC.html",
+       "source": "valueset-digoxin-LOINC.xml"
      },
      "ValueSet/valueset-eplerenone": {
        "base": "ValueSet-valueset-eplerenone.html",
@@ -229,7 +257,11 @@
      "ValueSet/valueset-lansoprazole": {
        "base": "ValueSet-valueset-lansoprazole.html",
        "source": "valueset-lansoprazole.xml"
-      },
+     },
+     "ValueSet/valueset-magnesium-LOINC": {
+       "base": "ValueSet-valueset-magnesium-LOINC.html",
+       "source": "valueset-magnesium-LOINC.xml"
+     },
      "ValueSet/valueset-mefenamate": {
        "base": "ValueSet-valueset-mefenamate.html",
        "source": "valueset-mefenamate.xml"
@@ -294,6 +326,10 @@
        "base": "ValueSet-valueset-piroxicam-exclude.html",
        "source": "valueset-piroxicam-exclude.xml"
      },
+     "ValueSet/valueset-potassium-LOINC": {
+       "base": "ValueSet-valueset-potassium-LOINC.html",
+       "source": "valueset-potassium-LOINC.xml"
+     },
      "ValueSet/valueset-prednisolone": {
        "base": "ValueSet-valueset-prednisolone.html",
        "source": "valueset-prednisolone.xml"
@@ -313,6 +349,10 @@
      "ValueSet/valueset-rabeprazole": {
        "base": "ValueSet-valueset-rabeprazole.html",
        "source": "valueset-rabeprazole.xml"
+     },
+     "ValueSet/valueset-renal-LOINC": {
+       "base": "ValueSet-valueset-renal-LOINC.html",
+       "source": "valueset-renal-LOINC.xml"
      },
      "ValueSet/valueset-rimexolone": {
        "base": "ValueSet-valueset-rimexolone.html",
@@ -334,6 +374,10 @@
        "base": "ValueSet-valueset-tolmetin.html",
        "source": "valueset-tolmetin.xml"
      },
+     "ValueSet/valueset-topicaldiclofenac": {
+       "base": "ValueSet-valueset-topicaldiclofenac.html",
+       "source": "valueset-topicaldiclofenac.xml"
+     },
      "ValueSet/valueset-triamcinolone": {
        "base": "ValueSet-valueset-triamcinolone.html",
        "source": "valueset-triamcinolone.xml"
@@ -342,10 +386,6 @@
        "base": "ValueSet-valueset-triamcinolone-exclude.html",
        "source": "valueset-triamcinolone-exclude.xml"
      },
-     "ValueSet/valueset-topicaldiclofenac": {
-       "base": "ValueSet-valueset-topicaldiclofenac.html",
-       "source": "valueset-topicaldiclofenac.xml"
-     },
      "ValueSet/valueset-trilostane": {
        "base": "ValueSet-valueset-trilostane.html",
        "source": "valueset-trilostane.xml"
@@ -353,6 +393,10 @@
      "ValueSet/valueset-warfarin": {
        "base": "ValueSet-valueset-warfarin.html",
        "source": "valueset-warfarin.xml"
+     },
+     "Bundle/bundle-warfarin-nsaid-scenario-01": {
+       "base": "Bundle-bundle-warfarin-nsaid-scenario-01.html",
+       "source": "bundle-warfarin-nsaid-scenario-01.xml"
      },
      "Encounter/encounter-warfarin-nsaid-context": {
        "base": "Encounter-encounter-warfarin-nsaid-context.html",

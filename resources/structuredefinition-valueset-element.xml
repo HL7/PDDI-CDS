@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-valueset-element"/>
     <id value="structuredefinition-valueset-element"/>
-    <url value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-inclusion"/>
     <version value="1.0.0"/>
     <name value="structuredefinition-valueset-element"/>
     <title value="Guidance Element Extension"/>
     <status value="draft"/>
     <date value="2018-07-30"/>
+    <description value="Describes the inclusion criteria for Element ValueSets."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14,13 +15,6 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <description value="Describes the inclusion criteria for Element ValueSets."/>
-    <fhirVersion value="3.0.1"/>
-    <mapping>
-        <identity value="rim"/>
-        <uri value="http://hl7.org/v3"/>
-        <name value="RIM Mapping"/>
-    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <contextType value="resource"/>

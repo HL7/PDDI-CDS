@@ -17,8 +17,8 @@
 +### Decision Points
 
 
-# PDDI CDS - Documentation
-{:.no_toc}
+# <span style="color:silver"> 5.0.0 </span> PDDI CDS - Documentation
+
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -28,22 +28,22 @@
 
 This section contains documentation, on the specific CDS artifacts, for implementers from both the clinical and technical perspectives.
 
-# PDDI CDS - prefetch and performance
+## <span style="color:silver"> 5.1.0 </span> Prefetch and Performance
 
 This section documents for technical implementers the intended role of prefetch resources in improving the performance of the CDS service. 
 
-## What is the role of prefetch?
-
+### <span style="color:silver"> 5.2.0 </span> What is the role of prefetch?
+{:.no_toc}
 The role of prefetch is to minimize calls by the CDS Service to external resources such as an external FHIR server containing clinical data. When a client program subscribes to PDDI CDS service, a prefetch specicification is returned in the response. This specification identifies important resources that the PDDI CDS service SHOULD recieve when the client makes a request for CDS. As is described below, the prefetch requirements are different depending on if CDS is for `medication-select` or `medication-prescribe`. In both cases, there are some parts of the prefetch that are mandatory because they are necessary for CDS to run, and others that are desired because they will improve CDS performance. 
 
-## Prefetch and `medication-select` in the *basic* or *advanced* CDS scenario
+### <span style="color:silver"> 5.2.1 </span> Prefetch and `medication-select` in the *basic* or *advanced* CDS scenario
 {:.no_toc}
 
 The following diagram shows the ideal scenario for prefetch for `medication-select` requests. The scenario is true for both the *basic* or *advanced* CDS scenarios because the prefetch requirements are distinct from the requirements related to the use of `DetectedIssue` resources.
 
 **TODO: develop a figure for this case and finish the section**
 
-## Prefetch and `medication-request` in the *basic* or *advanced* CDS scenario
+### <span style="color:silver"> 5.2.2 </span> Prefetch and `medication-request` in the *basic* or *advanced* CDS scenario
 {:.no_toc}
 
 The following diagram shows the ideal scenario for prefetch for `medication-select` requests. The scenario is true for both the *simple* or *advanced* CDS scenarios because the prefetch requirements are distinct from the requirements related to the use of `DetectedIssue` resources.
@@ -53,11 +53,11 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
 > *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server query. All data required by the CDS artifacts is delineated in the prefetch templates. 
 
 
-# Warfarin + NSAIDs 
+## <span style="color:silver"> 5.3.0 </span> Warfarin + NSAIDs 
 
-# Basic
+### <span style="color:silver"> 5.3.1 </span> Basic
 
-### Decision Points
+#### Decision Points
 {:.no_toc}
 
 <figure class="figure">
@@ -65,13 +65,13 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
   <a href = "assets/images/Basic_Warfarin_NSAID.svg" target ="_blank" > <img src= "assets/images/Basic_Warfarin_NSAID.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Warfarin_NSAID.svg" /></a>
 </figure>
 
-## Context
+#### Context
 {:.no_toc}
 
-## Prefetch 
+#### Prefetch 
 {:.no_toc}
 
-## Example Display Cards
+#### Example Display Cards
 {:.no_toc}
 
 <figure class="figure">
@@ -79,10 +79,10 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
   <a href = "assets/images/Basic_W_N_Cards.png" target ="_blank" > <img src="assets/images/Basic_W_N_Cards.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_W_N_Cards.png" /></a>
 </figure>
 
-# Advanced
+### <span style="color:silver"> 5.3.2 </span> Advanced
 
 
-### Decision Points
+#### Decision Points
 {:.no_toc}
 
 <figure class="figure">
@@ -98,13 +98,13 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
   <a href = "assets/images/Warfarin_NSAID_prescribe.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
 </figure>
 
-## Context
+#### Context
 {:.no_toc}
 
-## Prefetch 
+#### Prefetch 
 {:.no_toc}
 
-## Example Display Cards
+#### Example Display Cards
 {:.no_toc}
 
 <figure class="figure">
@@ -112,18 +112,18 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
   <a href = "assets/images/Advanced_W_N_Cards.svg" target ="_blank" > <img src="assets/images/Advanced_W_N_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Advanced_W_N_Cards.svg" /></a>
 </figure>
 
-# Digoxin + Cyclosporin
+## <span style="color:silver"> 5.4.0 </span> Digoxin + Cyclosporin
 
-### Definitions 
+### <span style="color:silver"> 5.4.1 </span>Definitions 
 {:.no_toc}
 * **Incident Order** – `context` medication is *not* in `prefetch` medications and, thus, is presumably the first occurrence. 
 * **Prevelant Order** – `context` medication is in in `prefetch` medications and, thus, is presumably a medication order that is continued or repeated.
 * **Normal** – observation that is within a specified time period, and the measure is within a therapeutic window or below/above a certain threshold.
 * **Abnormal** – observation that is *not* within a specified time period, *or* the measure is *not* within a therapeutic window or below/above a certain threshold.
 
-# Basic
+### <span style="color:silver"> 5.4.2 </span> Basic
 
-### Decision Points
+#### Decision Points
 {:.no_toc}
 
 <figure class="figure">
@@ -131,25 +131,25 @@ The following diagram shows the ideal scenario for prefetch for `medication-sele
   <a href = "assets/images/Basic_Digoxin_Cyclosporine.svg" target ="_blank" > <img src="assets/images/Basic_Digoxin_Cyclosporine.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Digoxin_Cyclosporine.svg" /></a>
 </figure>
 
-## Context
+#### Context
 {:.no_toc}
 
-## Prefetch
+#### Prefetch
 {:.no_toc}
 
-# Advanced
+### <span style="color:silver"> 5.4.3 </span> Advanced
 
-### Decision Points
+#### Decision Points
 {:.no_toc}
 
-## Context
+#### Context
 {:.no_toc}
 
-## Prefetch
+#### Prefetch
 {:.no_toc}
 
 
-### Decision Points
+#### Decision Points
 {:.no_toc}
 
 <figure class="figure">

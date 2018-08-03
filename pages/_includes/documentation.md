@@ -121,7 +121,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `encounterId` | OPTIONAL | Yes | *string* | Describe the context value
 `medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
 
-###### `medication-prescribe 1.1`
+##### `medication-prescribe 1.1`
 {:.no_toc}
 
 | Field       | Optionality        |  Prefetch Token     |Type  | Description |

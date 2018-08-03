@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-calcium-LOINC"/>
+    <id value="valueset-calcium-LOINC"/>
+    <version value="Intl. 1.0"/>
+    <name value="valueset-calcium-LOINC"/>
+    <title value="LOINC Codes for Serum Calcium"/>
+    <status value="draft"/>
+    <date value="2018-08-03"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing serum calcium LOINC identifiers from the Top 2000 Common Lab Results US."/>
+    <jurisdiction>
+        <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <version value="2.64"/>
+            <concept>
+                <code value="17864-0"/>
+                <display value="Calcium.ionized [Mass/​volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"/>
+            </concept>
+            <concept>
+                <code value="17861-6"/>
+                <display value="Calcium [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="1994-3"/>
+                <display value="Calcium.ionized [Moles/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="1995-0"/>
+                <display value="Calcium.ionized [Moles/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="29265-6"/>
+                <display value="Calcium [Moles/volume] corrected for albumin in Serum or Plasma"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

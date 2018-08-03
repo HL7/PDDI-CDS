@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-magnesium-LOINC"/>
+    <id value="valueset-magnesium-LOINC"/>
+    <version value="Intl. 1.0"/>
+    <name value="valueset-magnesium-LOINC"/>
+    <title value="LOINC Codes for Serum Potassium"/>
+    <status value="draft"/>
+    <date value="2018-08-03"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing serum magnesium LOINC identifiers from the Top 2000 Common Lab Results US."/>
+    <jurisdiction>
+        <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <version value="2.64"/>
+            <concept>
+                <code value="19123-9"/>
+                <display value="Magnesium [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="2597-3"/>
+                <display value="Magnesium [Moles/volume] in Red Blood Cells"/>
+            </concept>
+            <concept>
+                <code value="2601-3"/>
+                <display value="Magnesium [Moles/volume] in Serum or Plasma"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

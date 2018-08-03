@@ -9,10 +9,14 @@
 
 ## <span style="color:silver"> 1.1.0 </span> Introduction
 
-**TODO: write this last sort of like an abstract**
+This project is part of a larger effort to improve and standardize patient care regarding pharmacotherapy, and to advance interoperable clinical decision support. This implementation guide is targeted at stakeholders that seek to increase the specificity and clinical relevance of medication alerts in the electronic health record. The approach is service-oriented using Web Technology, a drug interaction Minimum Information Model, and Health Information Technology (HIT) standards.  
+
+## <span style="color:silver"> 1.2.0 </span> Collaborators
+
+This implementation guide was developed by the Health Level 7 (HL7) Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health.
 
 
-## <span style="color:silver"> 1.2.0 </span> Scope
+## <span style="color:silver"> 1.3.0 </span> Scope
 
 This implementation guide:
 * Describes knowledge and decision points for two PDDI CDS artifacts: 
@@ -26,7 +30,7 @@ This implementation guide:
 
 > *Note:* This Implementation Guide provides a Basic and Advanced version. The Basic version relates to current technology specifications and artifacts that are provided. The Advanced version is a goal for the creators of this Implementation Guide to obtain in future iterations.
 
-## <span style="color:silver"> 1.3.0 </span> A Project Rationale
+## <span style="color:silver"> 1.4.0 </span> A Project Rationale
 
 Clinical decision support has the potential to reduce adverse outcomes associated with pharmacotherapy. Specifically, computerized drug-drug interaction checking is an efficient mechanism to bring conflicting therapies to clinicians' attention. While Meaningful Use incentives have supported the widespread dissemination of PDDI checking,(cite) the acceptance rate of the alerts is abysmal. Researchers have found that nearly all PDDI alerts in computerized provider order entry (CPOE) systems are ignored.(cite Van Der Sijis or other) The reason for overriding PDDI alerts appears to be multi-factorial. For example, simple pair-wise drug comparisons can lead to overly sensitive alerts and desensitized clinicians. Moreover, medication alerts are typically presented the end of the order entry task – after the decision has been made to prescribe the medication. The motivation of this Implementation Guide is, in part, to explore a process of providing information earlier in the order entry process.      
 
@@ -36,7 +40,7 @@ Individualizing medication alerts is an overarching goal of PDDI CDS. The curren
 
 Clinical expertise is crucial to developing clinically relevant CDS; however, a barrier exists between expressing clinical knowledge and CDS codebase. In an effort to support the contextual nature of medicine, Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language) was developed as an authoring language standard that is structured for electronic queries but is human readable. This Implementation Guide applies CQL to PDDI CDS, which will lower the barrier for other implementors to use the codebase for their institution's needs. 
 
-### <span style="color:silver"> 1.3.1 </span> W3C Effort
+### <span style="color:silver"> 1.4.1 </span> W3C Effort
 New information regarding PDDIs is published every day in primary sources such as drug product labeling
      and the scientific literature. A PubMed search for publications indexed with the Medical Subject Headings keyword “Drug interactions” shows
      an average of 3,970 publications per year from 2000 through 2016. This suggests that the body of evidence about PDDIs is overwhelming and
@@ -65,8 +69,3 @@ New information regarding PDDIs is published every day in primary sources such a
    * Seriousness rating
    
     
-
-## <span style="color:silver"> 1.4.0 </span> Collaborators
-
-This implementation guide was developed for potential drug-drug interaction (PDDI) clinical decision support (CDS). It was developed by the Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health. The project focused on developing standardized and shareable artifacts to contextualize PDDIs.
-

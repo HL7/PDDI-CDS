@@ -1,11 +1,7 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
-* **TODO** add numbers to sections?
 * **TODO** check `data` backticks to make sure they make sense with the sentence
-* **TODO** add example of CDS Hook response and possibly a mockup of the cards Cards
-* **TODO** Phi to work on CQL Library section
-* **TODO** work on tables for specification 
-* **TODO** add motivation for Advanced implementation 
+* **TODO** Phi to work on CQL Library section 
 
 # <span style="color:silver"> 2.0.0 </span> Getting Started with PDDI CDS
 
@@ -110,7 +106,7 @@ The CDS Service Discovery is invoked to identify CDS Services and obtain associa
 GET http://FHIR.org/PDDI-CDS
 ````
 
-### <span style="color:silver"> 3.2.2 </span> Example 2: Basic – CDS Service Discovery Response
+### <span style="color:silver"> 3.2.2 </span> Example 2: CDS Service Discovery Response
 {:.no_toc}
 ````
 {
@@ -308,7 +304,7 @@ We have chosen to delineate a separate CDS Service for each CDS Hook (i.e., Medi
   <img src="assets/images/CPOE_workflow.png" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow.png" />
 </figure>
 
-## <span style="color:silver"> 4.2.0 </span> Summary of Operations
+## <span style="color:silver"> 4.2.0 </span> Advanced – Summary of Operations
 {:.no_toc}
 Coordinating the `medication-select` with the `medication-prescribe` CDS Hooks request is a crucial aspect of the Advanced implementation. Whether the Medication Prescribe Service is called depends on aspects of the `DetectedIssue` resource. The `DetectedIssue` resource is created by the Medication Select Service and populated by clinician actions in response to `medication-select` response cards. Figure X depicts the summary of operations that coordinates the medication-select and medication-prescribe services.
 
@@ -320,7 +316,7 @@ Coordinating the `medication-select` with the `medication-prescribe` CDS Hooks r
 ## <span style="color:silver"> 4.3.0 </span> CDS Hooks
 {:.no_toc}
 
-### <span style="color:silver"> 4.3.1 </span> Advanced CDS Hooks Specification
+### <span style="color:silver"> 4.3.1 </span> Advanced – CDS Hooks Specification
 {:.no_toc}
 This implementation guide specifies the use of up to two CDS Hooks (i.e., `medication-select` and `medication-prescribe`) during a single medication order task. In addition to creating a new hook, coordinating the two hooks requires modifying the current specification context of the `mediction-prescribe` hook. 
 
@@ -348,10 +344,11 @@ Field | Optionality | Prefetch Token | Type | Description
 
 
 
-### <span style="color:silver"> 4.4.0 </span> Advanced CDS Service Discovery Response
+### <span style="color:silver"> 4.4.0 </span> Advanced – CDS Service Discovery Response
 {:.no_toc}
 
 #### Example
+{:.no_toc}
 ```{
   "services": [
     {
@@ -380,7 +377,7 @@ Field | Optionality | Prefetch Token | Type | Description
   ]
 }
 ```
-### <span style="color:silver"> 4.5.0 </span> Advanced CDS Hooks Request
+### <span style="color:silver"> 4.5.0 </span> Advanced – CDS Hooks Request
 {:.no_toc}
 
 #### Context
@@ -427,7 +424,7 @@ The parse and pre-process event for the `medication-select` CDS Hook request is 
 ## <span style="color:silver"> 4.9.0 </span> CDS Hook Request for `medication-prescribe`
 {:.no_toc}
 
-## <span style="color:silver"> 4.10.0 </span> Advanced Card Display Examples
+## <span style="color:silver"> 4.10.0 </span> Advanced – Card Display Examples
 {:.no_toc}
 
 [Advanced Warfarin + NSAID Cards](documentation.html)

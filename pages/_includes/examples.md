@@ -11,7 +11,7 @@ For the two PDDI examples - specifically how was done:
 5. Fine tuning the CDS service for performance -- pre-loading data to reduce calls to the EHR e.g., for all patients who will be seen on a day. Other kinds of caching.....
 
 
-# <span style="color:silver"> 8.0.0 </span> Examples defined for the PDDI CDS Implementation Guide
+# <span style="color:silver"> 11.0.0 </span> Examples defined for the PDDI CDS Implementation Guide
 
 
 The following are examples for the PDDI CDS implementation guide:

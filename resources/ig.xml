@@ -56,6 +56,13 @@
             <name value="valueset-CYCS" />
             <exampleBoolean value="false" />
         </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-LOOPDIURETIC" />
+            </reference>
+            <name value="valueset-LOOPDIURETIC" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-aldosterone"/>
@@ -98,6 +105,13 @@
 			<name value="valueset-bromfenac-exclude"/>
 			<exampleBoolean value="false"/>
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-bumetanide"/>
+            </reference>
+            <name value="valueset-bumetanide"/>
+            <exampleBoolean value="false"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/valueset-calcium-LOINC"/>
@@ -231,6 +245,13 @@
 			<name value="valueset-esomeprazole"/>
 			<exampleBoolean value="false"/>
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-ethacrynate"/>
+            </reference>
+            <name value="valueset-ethacrynate"/>
+            <exampleBoolean value="false"/>
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-etodolac" />
@@ -280,6 +301,13 @@
 			<name value="valueset-flurbiprofen-exclude" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-furosemide" />
+            </reference>
+            <name value="valueset-furosemide" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-Hx-UGIB-snomed"/>
@@ -567,6 +595,13 @@
 			<name value="valueset-topicaldiclofenac" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-torsemide" />
+            </reference>
+            <name value="valueset-torsemide" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-triamcinolone" />

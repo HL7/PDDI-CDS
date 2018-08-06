@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bumetanide"/>
+    <id value="valueset-bumetanide"/>
+    <version value="US 1.0"/>
+    <name value="valueset-bumetanide"/>
+    <title value="Bumetanide Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-08-06"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for bumetanide."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="06-Aug-2018"/>
+            <concept>
+                <code value="203538"/>
+                <display value="Bumex"/>
+            </concept>
+            <concept>
+                <code value="1808"/>
+                <display value="Bumetanide"/>
+            </concept>
+            <concept>
+                <code value="392534"/>
+                <display value="Bumetanide / Potassium"/>
+            </concept>
+            <concept>
+                <code value="645371"/>
+                <display value="Amiloride / Bumetanide"/>
+            </concept>
+            <concept>
+                <code value="816562"/>
+                <display value="Bumetanide / Potassium Chloride"/>
+            </concept>
+            <concept>
+                <code value="205488"/>
+                <display value="Bumetanide 0.5 MG Oral Tablet [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="205489"/>
+                <display value="Bumetanide 1 MG Oral Tablet [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="205490"/>
+                <display value="Bumetanide 2 MG Oral Tablet [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="566394"/>
+                <display value="Bumetanide 0.5 MG [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="566395"/>
+                <display value="Bumetanide 1 MG [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="566396"/>
+                <display value="Bumetanide 2 MG [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="369375"/>
+                <display value="Bumetanide Oral Tablet [Bumex]"/>
+            </concept>
+            <concept>
+                <code value="104263"/>
+                <display value="Bumetanide 0.5 MG / Potassium 7.7 MMOL Extended Release Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="197417"/>
+                <display value="Bumetanide 0.5 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="197418"/>
+                <display value="Bumetanide 1 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="197419"/>
+                <display value="Bumetanide 2 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="282486"/>
+                <display value="Bumetanide 0.25 MG/ML Injectable Solution"/>
+            </concept>
+            <concept>
+                <code value="977951"/>
+                <display value="Amiloride Hydrochloride 5 MG / Bumetanide 1 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1727569"/>
+                <display value="4 ML Bumetanide 0.25 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="1727572"/>
+                <display value="2 ML Bumetanide 0.25 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="104222"/>
+                <display value="Bumetanide 5 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="250660"/>
+                <display value="Bumetanide 0.2 MG/ML Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="104223"/>
+                <display value="Bumetanide 0.5 MG/ML Injectable Solution"/>
+            </concept>
+            <concept>
+                <code value="315499"/>
+                <display value="Bumetanide 0.25 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="315500"/>
+                <display value="Bumetanide 0.5 MG"/>
+            </concept>
+            <concept>
+                <code value="315501"/>
+                <display value="Bumetanide 1 MG"/>
+            </concept>
+            <concept>
+                <code value="315502"/>
+                <display value="Bumetanide 2 MG"/>
+            </concept>
+            <concept>
+                <code value="332695"/>
+                <display value="Bumetanide 0.2 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="332696"/>
+                <display value="Bumetanide 5 MG"/>
+            </concept>
+            <concept>
+                <code value="360517"/>
+                <display value="Bumetanide 0.5 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="370850"/>
+                <display value="Amiloride / Bumetanide Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="371157"/>
+                <display value="Bumetanide Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="371158"/>
+                <display value="Bumetanide Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="374368"/>
+                <display value="Bumetanide Injectable Solution"/>
+            </concept>
+            <concept>
+                <code value="385501"/>
+                <display value="Bumetanide / Potassium Extended Release Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1727568"/>
+                <display value="Bumetanide Injection"/>
+            </concept>
+            <concept>
+                <code value="1151345"/>
+                <display value="Bumetanide / Potassium Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1151346"/>
+                <display value="Bumetanide / Potassium Pill"/>
+            </concept>
+            <concept>
+                <code value="1151347"/>
+                <display value="Bumetanide Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1151348"/>
+                <display value="Bumetanide Oral Liquid Product"/>
+            </concept>
+            <concept>
+                <code value="1151349"/>
+                <display value="Bumetanide Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1151350"/>
+                <display value="Bumetanide Pill"/>
+            </concept>
+            <concept>
+                <code value="1151594"/>
+                <display value="Amiloride / Bumetanide Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1151595"/>
+                <display value="Amiloride / Bumetanide Pill"/>
+            </concept>
+            <concept>
+                <code value="1168680"/>
+                <display value="Bumex Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1168681"/>
+                <display value="Bumex Pill"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

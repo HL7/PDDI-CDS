@@ -159,7 +159,7 @@ The `prefetch` element contains patient data that was provided by the EHR prior 
 
 ##### Bundle 
 {:.no_toc}
-A `Bundle` is a FHIR resource that is used to group resources into a single instance, which is ideal for messaging with CDS Hooks, storing the collection of resources obtained on CDS discovery, and providing flexibility in using the collections as a persistent instance. This implementation uses the `bundle` resource for the key CDS Hooks request components (i.e., `context` and `prefetch`).  
+A `Bundle` is a FHIR resource that is used to group resources into a single instance, which is ideal for messaging with CDS Hooks, storing the collection of resources obtained on CDS discovery, and providing flexibility in using the collections as a persistent instance. This implementation uses the `bundle` resource for the key CDS Hooks request components (i.e., `context` and `prefetch`). For each prefetch template query, a Bundle is created to group the resources; therefore, a prefetch element may contain several Bundle resources with several other resources grouped within.  
 
 ## <span style="color:silver"> 4.4.0 </span> Clinical Reasoning
 {:.no_toc}

@@ -355,7 +355,7 @@ This implementation guide specifies the use of up to two CDS Hooks (i.e., `medic
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
------ | -------- | ---- | :----: | ----
+----- | -------- | :----: | :----: | ----
 `patientId` | REQUIRED | Yes | *string* | Describe the context value
 `encounterId` | OPTIONAL | Yes | *string* | Describe the context value
 `medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
@@ -383,7 +383,7 @@ Since the order entry task is split into two separate CDS Hooks events (i.e., se
 
 ## <span style="color:silver"> 5.6.0 </span> DetectedIssue 
 {:.no_toc}
-The `DetectedIssue` resource is created by the Medication Select Service and is subsequently passed to the EHR with the CDS Hooks response as an extension. Mitigating actions corresponding to CDS Card suggestions are documented by the EHR in the `DetectedIssue` resource. The `DetectedIssue` `status` element, instantiated by the Medication Select Service, specifies to the EHR if the prefetch template for the Medication Prescribe Service needs to be fulfilled. The `DetectedIssue` resource is passed to the Medication Prescribe Service with the the `medication-prescribe` Hook request for further processing. For example, a `DetecedIssue`  "final" status may indicate to the EHR that prefetch data for the `medication-prescribe` hook is not needed; where as, a status of preliminary will signify additional patient data is needed for the Medication Prescribe service.
+The `DetectedIssue` resource is created by the Medication Select Service and is subsequently passed to the EHR with the CDS Hooks response as an extension. Mitigating actions corresponding to CDS Card suggestions are documented by the EHR in the `DetectedIssue` resource. The `DetectedIssue` `status` element, instantiated by the Medication Select Service, specifies to the EHR if the prefetch template for the Medication Prescribe Service needs to be fulfilled. The `DetectedIssue` resource is passed to the Medication Prescribe Service with the the `medication-prescribe` Hook request for further processing. For example, a `DetecedIssue`  "final" status may indicate to the EHR that prefetch data for the `medication-prescribe` hook is not needed; where as, a status of "preliminary" may signify additional patient data is needed for the Medication Prescribe Service.
 
 ##### Example: DetectedIssue Elements
 {:.no_toc}
@@ -401,7 +401,7 @@ The `DetectedIssue` resource is created by the Medication Select Service and is 
 
 ## <span style="color:silver"> 5.7.0 </span> FHIR Server Request
 {:.no_toc}
-The parse and pre-process event for the Medication Select Service is identical to the Basic parse and pre-process event under section 3.5.0. The Advanced Medication Prescribe Service parse and pre-process event, however, is slightly different. During this phase the CDS service checks the medication that was finally ordered against the detectedissueID. This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the Card suggestions. In addition, the DetectedIssue status indicates to the Medication Prescribe Service if additional prefetch data is needed or available for the specific PDDI.
+The parse and pre-process event for the Medication Select Service is identical to the Basic parse and pre-process event under section 3.5.0. The Advanced Medication Prescribe Service parse and pre-process event, however, is slightly different (Figure 6). During this phase the CDS service checks the medication that was finally ordered against the detectedissueID. This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the Card suggestions. In addition, the DetectedIssue status indicates to the Medication Prescribe Service if additional prefetch data is needed or available for the specific PDDI.
 
 
 <figure class="figure">

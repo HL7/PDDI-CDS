@@ -1,5 +1,7 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
+* **TODO** Citations and linking 
+
 # <span style="color:silver"> 1.0.0 </span> Implementation Guide for PDDI CDS
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->

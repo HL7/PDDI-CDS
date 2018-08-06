@@ -82,6 +82,10 @@
        "base": "ValueSet-valueset-CYCS.html",
        "source": "valueset-CYCS.xml"
      },
+     "ValueSet/valueset-LOOPDIURETIC": {
+       "base": "ValueSet-valueset-LOOPDIURETIC.html",
+       "source": "valueset-LOOPDIURETIC.xml"
+     },
      "CodeSystem/codesystem-PDDI-CDS-indicator": {
        "base": "CodeSystem-codesystem-PDDI-CDS-indicator.html",
        "source": "codesystem-PDDI-CDS-indicator.xml"
@@ -109,6 +113,10 @@
      "ValueSet/valueset-bromfenac-exclude": {
        "base": "ValueSet-valueset-bromfenac-exclude.html",
        "source": "valueset-bromfenac-exclude.xml"
+     },
+     "ValueSet/valueset-bumetanide": {
+       "base": "ValueSet-valueset-bumetanide.html",
+       "source": "valueset-bumetanide.xml"
      },
      "ValueSet/valueset-calcium-LOINC": {
        "base": "ValueSet-valueset-calcium-LOINC.html",
@@ -186,6 +194,10 @@
        "base": "ValueSet-valueset-esomeprazole.html",
        "source": "valueset-esomeprazole.xml"
      },
+     "ValueSet/valueset-ethacrynate": {
+       "base": "ValueSet-valueset-ethacrynate.html",
+       "source": "valueset-ethacrynate.xml"
+     },
      "ValueSet/valueset-etodolac": {
        "base": "ValueSet-valueset-etodolac.html",
        "source": "valueset-etodolac.xml"
@@ -213,6 +225,10 @@
      "ValueSet/valueset-flurbiprofen-exclude": {
        "base": "ValueSet-valueset-flurbiprofen-exclude.html",
        "source": "valueset-flurbiprofen-exclude.xml"
+     },
+     "ValueSet/valueset-furosemide": {
+       "base": "ValueSet-valueset-furosemide.html",
+       "source": "valueset-furosemide.xml"
      },
      "ValueSet/valueset-Hx-UGIB-snomed": {
        "base": "ValueSet-valueset-Hx-UGIB-snomed.html",
@@ -377,6 +393,10 @@
      "ValueSet/valueset-topicaldiclofenac": {
        "base": "ValueSet-valueset-topicaldiclofenac.html",
        "source": "valueset-topicaldiclofenac.xml"
+     },
+     "ValueSet/valueset-torsemide": {
+       "base": "ValueSet-valueset-torsemide.html",
+       "source": "valueset-torsemide.xml"
      },
      "ValueSet/valueset-triamcinolone": {
        "base": "ValueSet-valueset-triamcinolone.html",

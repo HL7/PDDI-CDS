@@ -30,4 +30,8 @@ The following are examples for the PDDI CDS implementation guide:
 
 {% include list-simple-patients.xhtml %} 
 
+#### Condition
+
+{% include list-simple-conditions.xhtml %} 
+
 <p/><p/>

@@ -241,6 +241,72 @@
           }
         ]
       }
+    },
+    "item4" : {
+      "response" : {
+        "status" : "200 OK"
+      },
+      "resource" : "Bundle",
+      "entry" : [
+        {
+          "resourceType" : "Condition",
+          "id" : "condition-warfarin-nsaid-Hx-UGIB-prefetch",
+          "clinicalStatus" : "resolved",
+          "verificationStatus" : "confirmed",
+          "category" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "439401001",
+                  "display" : "diagnosis"
+                }
+              ]
+            }
+          ],
+          "severity" : {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "6736007",
+                "display" : "Moderate"
+              }
+            ]
+          },
+          "code" : {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "89748001",
+                "display" : "Acute gastric ulcer with hemorrhage"
+              }
+            ]
+          },
+          "subject" : {
+            "reference" : "Patient/warfarin-nsaid-over65-prefetch"
+          },
+          "context" : {
+            "reference" : "Encounter/warfarin-nsaid-prefetch"
+          },
+          "onsetDateTime" : "2017-08-05",
+          "abatementDateTime" : "2017-09-01",
+          "evidence" : [
+            {
+              "code" : [
+                {
+                  "coding" : [
+                    {
+                      "system" : "http://snomed.info/sct",
+                      "code" : "3368006",
+                      "display" : "Dull chest pain"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

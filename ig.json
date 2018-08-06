@@ -461,6 +461,10 @@
      "Patient/patient-warfarin-nsaid-under65-prefetch": {
        "base": "Patient-patient-warfarin-nsaid-under65-prefetch.html",
        "source": "patient-warfarin-nsaid-under65-prefetch.xml"
+     },
+     "Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch": {
+       "base": "Condition-condition-warfarin-nsaid-Hx-UGIB-prefetch.html",
+       "source": "condition-warfarin-nsaid-Hx-UGIB-prefetch.xml"
      }
    },
    "extensions":[

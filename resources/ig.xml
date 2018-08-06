@@ -714,6 +714,13 @@
 			<name value="patient-warfarin-nsaid-under65-prefetch" />
 			<exampleBoolean value="true" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch" />
+            </reference>
+            <name value="condition-warfarin-nsaid-Hx-UGIB-prefetch" />
+            <exampleBoolean value="true" />
+        </resource>
 		<page>
 			<nameUrl value="index.html" />
 			<title value="PDDI CDS Homepage" />

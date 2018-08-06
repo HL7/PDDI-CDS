@@ -11,11 +11,11 @@
 
 ## <span style="color:silver"> 1.1.0 </span> Introduction
 
-This project is part of a larger effort to improve and standardize patient care, and to advance interoperable clinical decision support. This implementation guide is targeted at stakeholders that seek to increase the specificity and clinical relevance of medication alerts presented through the electronic health record. The approach is service-oriented using Web Technology, a drug interaction Minimum Information Model, and Health Information Technology (HIT) standards.  
+This project is part of a larger effort to improve and standardize patient care, and to advance interoperable clinical decision support. This implementation guide is targeted at stakeholders that seek to increase the specificity and clinical relevance of medication alerts presented through the electronic health record. The approach is service-oriented using Web Technology, a drug interaction Minimum Information Model, and Health Information Technology standards.  
 
 ## <span style="color:silver"> 1.2.0 </span> Collaborators
 
-This implementation guide was developed by the Health Level 7 (HL7) Clinical Decision Support Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health.
+This implementation guide was developed by the Health Level 7 (HL7) CDS Work Group in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health.
 
 
 ## <span style="color:silver"> 1.3.0 </span> Scope
@@ -24,8 +24,8 @@ This implementation guide:
 1. Describes knowledge and decision points for two PDDI CDS artifacts: 
     * [Warfarin + NSAIDs](documentation.html)
     * [Digoxin + Cyclosporine](documentation.html)
-2. Provides structured code for CDS artifacts using current HIT specifications:
-    * Health Level 7 (HL7), Fast Health Interoperability Resources ([FHIR](http://www.fhir.org/))
+2. Provides structured code for CDS artifacts using current Health Information Technology (HIT) specifications:
+    * HL7 – Fast Health Interoperability Resources ([FHIR](http://www.fhir.org/))
     * [CDS Hooks](http://cds-hooks.org/)
     * Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language)
 3. Proposes and provides guidance to optimize PDDI CDS artifacts

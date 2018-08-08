@@ -2,6 +2,8 @@
 
 * **TODO** Citations and linking 
 
+* **TODO** Be sure to attribute the NLM R01 and Dan's AHRQ R21 and R01 as funding sources
+
 # <span style="color:silver"> 1.0.0 </span> Implementation Guide for PDDI CDS (DRAFT)
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
@@ -15,7 +17,7 @@ This implementation guide (IG) is targeted at stakeholders who seek to increase 
 
 ## <span style="color:silver"> 1.2.0 </span> Collaborators
 
-This implementation guide was developed by the [Clinical Decision Support Work Group](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) of [Health Level 7 (HL7)](http://wiki.hl7.org)  in collaboration with University of Pittsburgh Medical Center, RWTH Aachen University, and Wolters Kluwer Health.
+This implementation guide was developed by the [Clinical Decision Support Work Group](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) of [Health Level 7 (HL7)](http://wiki.hl7.org)  in collaboration with the University of Pittsburgh Medical Center, RWTH Aachen University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health.
 
 
 ## <span style="color:silver"> 1.3.0 </span> Scope

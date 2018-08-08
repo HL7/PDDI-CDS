@@ -1,5 +1,11 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
+* **TODO** standardize the med prescribe and med select to always return a DetectedIssue resource -- state for the Basic CDS that clients don't have any requirement to process the DetectedIssue resource or send in future CDS service calls but in Advanced the clients have to return the DetectedIssue resource and place its id in the context. Clients can ONLY subscribe to Basic or Advanced but not both. Also, Advanced resturns an Array of CDS services -- just make sure obious
+
+* **TODO** PDDI CDS artifacts should have PURLs and that is what will be used in the context to refer to detected issue
+
+* **TODO** Need to review the sections to seperate things that we think all implementers need to do (PlanDefinition needed to make the CDS sharable, and DetectedIssue needed to improve CDS actionability, efficiency, etc.). So, there is some content that is specific to our implementation in CQF ruler that need to get moved or relabled as an Example
+
 * **TODO** check `data` backticks to make sure they make sense with the sentence
 
 * **TODO** Phi to work on CQL Library section 

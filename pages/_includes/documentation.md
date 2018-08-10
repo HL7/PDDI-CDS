@@ -19,11 +19,12 @@
 {:toc}
 
 ## <span style="color:silver"> 6.1.0 </span> Preliminaries 
-
+{:.no_toc}
 
 This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Implementation details are described using two specific knowledge artifacts as examples. The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in RFCs to Indicate Requirement Levels".* S. Bradner. IETF. March 1997. Best Current Practice.](https://tools.ietf.org/html/rfc2119)
 
 ## <span style="color:silver"> 6.2.0 </span> CPOE Workflow Hooks 
+{:.no_toc}
 
 Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The primary difference in the Level 2 Implementation is the additional hook and defining the initial trigger at the top of the CPOE workflow. The Level 1 Implementation follows the [CDS Hooks `medication-prescribe`](https://cds-hooks.org/hooks/medication-prescribe/) specification, which does not necessarily define the triggering event. 
 
@@ -33,10 +34,12 @@ Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The primary di
 </figure>
 
 ## <span style="color:silver"> 6.3.0 </span> Prefetch Role 
+{:.no_toc}
 
 For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing network calls by the CDS service to external resources such as a FHIR server. When a client program subscribes to PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As is described below, the prefetch requirements are different for `medication-select` and `medication-prescribe` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call. 
 
 ## <span style="color:silver"> 6.4.0 </span> Relationships between CQL and PlanDefinition
+{:.no_toc}
 
 **TODO: make some mention of these three key technologies and their relationship to eachother**
 

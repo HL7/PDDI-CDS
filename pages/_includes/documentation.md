@@ -50,7 +50,9 @@ For technical implementers, the intended role of prefetch is to improve the CDS 
 
 The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a PDDI minimum information model. Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. 
 
-**Table 1. Warfarin + NSAIDs Minimum Information Model**
+#### Table 1. Warfarin + NSAIDs Minimum Information Model
+{:.no_toc}
+
 <div>
     <table>
       <tr>
@@ -71,7 +73,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
     </table>
     <table>
       <tr>
-	<td style="background-color: #f4fff2"><a>Seriousness</a>: Bleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
+	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Bleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
       </tr>
       <tr>
 	<td><strong>Comment:</strong> A PDDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
@@ -326,7 +328,105 @@ Field | Optionality | Prefetch Token | Type | Description
 ## <span style="color:silver"> 8.1.0 </span> The Digoxin + Cyclosporine Knowledge Artifact
 {:.no_toc}
 
-**TODO** add
+#### Table 2. Digoxin + Cyclosporine Minimum Information Model
+{:.no_toc}
+
+<div>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Drugs involved</strong>: Digoxin and Cyclosporine</td>
+      </tr>
+      <tr>
+	<td>
+	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td> 
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of digitalis toxicity that may lead to cardiac arrhythmias</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td> 
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Digitalis toxicity is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> A PDDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Severity</strong>: While digitalis toxicity is a serious potential clinical consequence, it can produce a range of cardiac arrhythmias and rhythm disturbances that vary in severity, from manageable bradycardia to life-threatening ventricular fibrillation. </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence MUST be reported if known. The severity of a PDDI clinical consequence MUST be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href='https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ'>Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cyclosporine. P-glycoprotein is a major transporter for digoxin efflux.</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The mechanism of a PDDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Recommended Action</strong>: For patients with a reliable plasma digoxin concentration in normal range, it is reasonable to anticipate an increase in plasma concentrations after the initiation of cyclosporine. Following initiation, close monitoring and adjusting the digoxin dose as needed is recommended.</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a>evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a>contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Contextual information/modifying factors</strong>:
+          <ol>  
+            <li>Relevant digoxin concentration in normal range
+              <ul><strong>Recommended Action:</strong> Assess risk and take action if necessary</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> For patients with a reliable plasma digoxin concentration in normal range, it is reasonable to anticipate an increase in plasma concentrations after the initiation of cyclosporine. Following initiation, close monitoring and adjusting the digoxin dose as needed is recommended. (Dorian et al. Clin Invest Med 1988; 11(2):108-112) (Dorian et al. Transplant Proc. 1987; 19(1):1825-1827). Taken 4-6 hours after the most recent dose, the approximate therapeutic range is 0.8 to 2.0 ng/mL (1 to 2.6 nmol/L); however, toxicity has been observed with concentrations in this range.</ul>
+            </li>
+            <li>Risk factors that may increase digoxin concentration or toxicity independent of cyclosporine include: reduced renal function and electrolyte abnormalities
+              <ul><strong>Recommended Action:</strong> Assess risk and take action if necessary</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> </ul>
+               <ul>50-70% of digoxin is excreted unchanged in the urine. Changing renal function may increase serum concentrations and risk of toxicity, (Digoxin-FDA [prescribing information] NDA 20405/S-004) </ul>
+               <ul>Hypokalemia, hypomagnesemia, and hypercalcemia may potentiate digoxin toxicity. (Lip et al. Postgrad Med J. 1993; 69(811):337)</ul>
+            </li>
+           </ol>
+	</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> <a>Contextual information/modifying factors</a> are necessary for alerts that
+          are both sensitive and specific. Like clinical consequences, each known factor SHOULD be
+          stated as specifically as possible. The factors SHOULD be amenable to implementation as executable
+          logic using value sets from clinical terminologies such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a>, the
+	  <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>, <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a>, and <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. As is used in this
+          example, each factor SHOULD be related to a specific <a>recommended action</a> that is supported by the <a>evidence for a suspected drug-drug interaction</a></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Frequency of Exposure to the PDDI:</strong> Unknown</td>
+      </tr>
+      <tr>		      
+	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
+          rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available. </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Frequency of Harm for persons who have been exposed to the PDDI:</strong> Unknown</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
+          rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available. </td>
+      </tr>
+    </table>
+</div>
+
 
 ## <span style="color:silver"> 8.2.0 </span> Definitions 
 {:.no_toc}

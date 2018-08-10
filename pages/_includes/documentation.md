@@ -4,8 +4,6 @@
 
 * **TODO** Consider adding Card display example to Dig + Cyclo
 
-* **TODO** Is there a figure that would be similar to Figure 2 to display example for Dig + Cyclo e.g., for figure 7?
-
 * **TODO** need to specify clearly if is there information unique to warfarin-NSAIDs or Dig-Cyclo in terms of implementation
 
 * **TODO** Consider adding recommendations to implementors based on the examples shown for Context, Prefetch, and Cards in the basic and advance CDS scenarios. Think of the two PDDI knowledge artifacts as pedagogical examples to explaining to implementors the implementation requirements
@@ -13,58 +11,43 @@
 * **TODO** make PDDI mention format consistent e.g., choose either drug1 - drug2 or drug1 + drug2
 
 
+# <span style="color:silver"> 6.0.0 </span> Documentation 
 
--1. ~~Knowledge representation for the PDDI CDS (e.g, decision tree) - mapping out the decision paths, pre-fetch requirements~~
- 
--2. Translating the KR to CQL  -- after investigation on our part, refering to possibility of using the publicly available CDS Authoring tool -- this will be simple --- libraries to import, specifying the FHIR terminology profile, utility functions, logic 
-
--3. Implementing CDS Hooks and PlanDefinition to receive CDS requests medication-request or medication-prescribe and return the cards with actions (since general to both artifacts consider moving to start.md?)
-
--4. Implementing the CDS Service - including how to load the Library, PlanDefinition, and where value sets reside....
-+## Warfarin + NSAIDs 
- 
--5. Fine tuning the CDS service for performance -- pre-loading data to reduce calls to the EHR e.g., for all patients who will be seen on a day. Other kinds of caching.....
-+### Decision Points
-
-
-# <span style="color:silver"> 6.0.0 </span> Preliminaries 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-This section contains documentation on how to implement PDDI CDS artifacts from both the clinical and technical perspectives. Implementation details are described using two specific knowledge artifacts as examples. The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in RFCs to Indicate Requirement Levels".* S. Bradner. IETF. March 1997. Best Current Practice.](https://tools.ietf.org/html/rfc2119)
+## <span style="color:silver"> 6.1.0 </span> Preliminaries 
 
-## <span style="color:silver"> 6.1.0 </span> CDS Hooks `medication-select` and `medication-prescribe` Resources 
 
-**TODO: Explain briefly the clinical workflow distinction between these hooks, point the IG reader to the location of  `medication-prescribe`, explain the `medication-select` is under development**
+This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Implementation details are described using two specific knowledge artifacts as examples. The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in RFCs to Indicate Requirement Levels".* S. Bradner. IETF. March 1997. Best Current Practice.](https://tools.ietf.org/html/rfc2119)
 
-## <span style="color:silver"> 6.1.0 </span> The Importance of the CDS Hooks `prefetch` Resource 
+## <span style="color:silver"> 6.2.0 </span> CPOE Workflow Hooks 
 
-This section documents for technical implementers the intended role of prefetch resources in improving the performance of the CDS service. The role of prefetch is to minimize calls by the CDS Service to external resources such as an external FHIR server containing clinical data. When a client program subscribes to PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies important resources that the PDDI CDS service SHOULD recieve when the client makes a request for CDS. As is described below, the prefetch requirements are different depending on if CDS is for `medication-select` or `medication-prescribe`. In both cases, there are some parts of the prefetch that are mandatory because they are necessary for CDS to run, and others that are desired because they will improve CDS performance. 
+Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The primary difference in the Level 2 Implementation is the additional hook and defining the initial trigger at the top of the CPOE workflow. The Level 1 Implementation follows the [CDS Hooks `medication-prescribe`](https://cds-hooks.org/hooks/medication-prescribe/) specification, which does not necessarily define the triggering event. 
 
-### <span style="color:silver"> 6.1.2 </span> Prefetch and `medication-select` in the *basic* or *advanced* CDS scenario
-{:.no_toc}
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Level 1 versus Level 2 Implementation Hooks </strong></figcaption>
+  <a href = "assets/images/CPOE_workflow_2.png" target ="_blank" > <img src= "assets/images/Basic_Warfarin_NSAID.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow_2.png" /></a>
+</figure>
 
-The following diagram shows the ideal scenario for prefetch for `medication-select` requests. The scenario is true for both the *basic* or *advanced* CDS scenarios because the prefetch requirements are distinct from the requirements related to the use of `DetectedIssue` resources.
+## <span style="color:silver"> 6.3.0 </span> Prefetch Role 
 
-**TODO: develop a figure for this case and finish the section**
+For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing network calls by the CDS service to external resources such as a FHIR server. When a client program subscribes to PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As is described below, the prefetch requirements are different for `medication-select` and `medication-prescribe` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call. 
 
-### <span style="color:silver"> 6.1.3 </span> Prefetch and `medication-request` in the *basic* or *advanced* CDS scenario
-{:.no_toc}
-
-The following diagram shows the ideal scenario for prefetch for `medication-select` requests. The scenario is true for both the *simple* or *advanced* CDS scenarios because the prefetch requirements are distinct from the requirements related to the use of `DetectedIssue` resources.
-
-**TODO: develop a figure for this case and finish the section**
-
-## Relationships between CQL, `PlanDefinition`, and `CarePlan`
+## <span style="color:silver"> 6.4.0 </span> Relationships between CQL and PlanDefinition
 
 **TODO: make some mention of these three key technologies and their relationship to eachother**
 
-# <span style="color:silver"> 7.0.0 </span> The Warfarin + NSAIDs knowledge artifact - an example of a relatively complex contextualized PDDI CDS algorithm
+# <span style="color:silver"> 7.0.0 </span> Warfarin + NSAIDs
 
-The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knwoledge artifact contains CDS logic that uses both drug and patient contextual factors. The artifact also provide a range of information and actions depending on the CDS context. The original rule developed by clinical experts as part of the W3C Community Group effort to develop a PDDI minimum information model is shown here along with comments:
+## <span style="color:silver"> 7.1.0 </span> The Warfarin + NSAIDs Knowledge Artifact
+{:.no_toc}
 
+The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a PDDI minimum information model. Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. 
+
+**Table 1. Warfarin + NSAIDs Minimum Information Model**
 <div>
     <table>
       <tr>
@@ -192,27 +175,23 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
     </table>
 </div>
 
-## <span style="color:silver"> 7.1.0 </span> How to implement Basic PDDI CDS - an Example Using the Warfarin-NSAIDs PDDI
+## <span style="color:silver"> 7.2.0 </span> Level 1 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured) 
 
-Figure 1 shows how a PDDI CDS implementer would implement the Warfarin-NSAIDs PDDI knowlege artifact using the CDS Hooks `medication-prescribe` hook. The figure shows that the CDS Service would process the PDDI CDS logic after receiving a `medication-prescribe` request. Note that the CDS implementor MUST create *pre-fetch* templates the client programs will use to assemble data for `medication-prescribe` requests.  Data in the request MUST include both the prescribing context required as part of the `medication-prescribe` hook and pre-fetch resources specified by the CDS service. The decision tree shown in the figure indicates warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks *cards* that MAY include *actions* with associated FHIR resources. Figure 2 builds on Figure 1 by depicting a card display example within the order entry workflow. The decision points, `medication-prescribe` request, and card responses are discussed further below.
+Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response using the `medication-prescribe` Hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `medication-prescribe` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Basic Warfarin + NSAID logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 2: Level 1 – Warfarin + NSAID Semi-Structured Knowledge </strong></figcaption>
   <a href = "assets/images/Basic_Warfarin_NSAID.svg" target ="_blank" > <img src= "assets/images/Basic_Warfarin_NSAID.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Warfarin_NSAID.svg" /></a>
 </figure>
 
 
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Basic Warfarin + NSAID Cards </strong></figcaption>
-  <a href = "assets/images/Basic_W_N_Cards.png" target ="_blank" > <img src="assets/images/Basic_W_N_Cards.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_W_N_Cards.png" /></a>
-</figure>
 
 
-### <span style="color:silver"> 7.1.1 </span> Basic PDDI CDS Decision Points
+### <span style="color:silver"> 7.2.1 </span> Decision Points Summary
 {:.no_toc}
 
-Many PDDI CDS scenarios have similar kinds of drug and patient related decision points. Implementers SHOULD develop CQL artifacts that work in conjunction with the the `medication-prescribe` context and pre-fetch to run the CDS logic using data that support the decision points. Using the the Warfarin + NSAIDs PDDI as an example, there are three main decision blocks that incude:
+Many PDDI CDS scenarios have similar drug and patient related decision points. Implementers SHOULD develop CQL artifacts that work in conjunction with the `medication-prescribe` context and prefetch to support the base decision points. The Warfarin + NSAIDs PDDI exemplar as three main decision blocks that include:
 
 * whether the prescribed NSAID is topical diclofenac
 
@@ -221,17 +200,17 @@ Many PDDI CDS scenarios have similar kinds of drug and patient related decision 
 * the presence or absence of risk factors involving age, exacerbating medications, and history of upper gastrointestinal bleed
 
 
-### <span style="color:silver"> 7.1.2 </span> Basic PDDI CDS CDS Hooks Request
+### <span style="color:silver"> 7.2.2 </span> CDS Hooks Request
 {:.no_toc}
 
-The `medication-prescribe` context and pre-fetch for warfarin-NSAIDs includes FHIR resources that enable the CDS Service to run CDS logic using CQL. These are shown below.
+The `medication-prescribe` request includes `context` and `prefetch` elements with FHIR resource attributes or entire resources. The contents of these elements for the Warfarin + NSAIDs CDS artifact are shown below.
 
-#### The Context Resource for the Basic PDDI CDS CDS Hooks Request
+#### `context`
 {:.no_toc}
 
 * [`medication-prescribe 1.0`](https://cds-hooks.org/hooks/medication-prescribe/) 
 
-#### The Prefetch Resources for the Basic PDDI CDS CDS Hooks Request 
+#### `prefetch` 
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -251,21 +230,24 @@ The `medication-prescribe` context and pre-fetch for warfarin-NSAIDs includes FH
     * [Condition](https://www.hl7.org/fhir/condition.html)
     
 
-#### <span style="color:silver"> 7.1.3 </span> Basic PDDI CDS CDS Hooks Display Cards
+#### <span style="color:silver"> 7.2.3 </span> CDS Hooks Cards
 {:.no_toc}
 
 **TODO: refer to the resources and explain to implementors the requirements **
 
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 3: Level 1 – Warfarin + NSAID Response Card Example </strong></figcaption>
+  <a href = "assets/images/Basic_W_N_Cards.png" target ="_blank" > <img src="assets/images/Basic_W_N_Cards.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_W_N_Cards.png" /></a>
+</figure>
 
-## <span style="color:silver"> 7.2.0 </span> Advanced PDDI CDS
 
-The Advanced implementation proposal for the Warfarin + NSAID artifact is split into two separate services. Figures 3 and 4 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., `medication-select` and `medication-prescribe`). Figure 5 provides a card display example for each CDS Hooks instances within the order entry workflow. In the card display example (Figure 5), the clinician decides to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). The blue task boxes highlight the `DetectedIssue` status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the `medication-prescribe` service prefetch template), and `medication-prescribe` service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
+## <span style="color:silver"> 7.3.0 </span> Level 2 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured)
 
-### <span style="color:silver"> 7.2.1 </span> Advanced PDDI CDS Decision Points
-{:.no_toc}
+The Level 2 Implementation for the Warfarin + NSAID artifact is split into two separate Hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `medication-select` and `medication-prescribe`). Figure 5 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). The blue task boxes highlight the DetectedIssue `status` indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the `medication-prescribe` service prefetch template), and `medication-prescribe` service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
+
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Warfarin + NSAID medication-select logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 4: Warfarin + NSAID medication-select logic </strong></figcaption>
   <a href = "assets/images/Warfarin_NSAID_select.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
 </figure>
 
@@ -273,15 +255,16 @@ The Advanced implementation proposal for the Warfarin + NSAID artifact is split 
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 4: Advanced Warfarin + NSAID medication-prescribe logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 5: Advanced Warfarin + NSAID medication-prescribe logic </strong></figcaption>
   <a href = "assets/images/Warfarin_NSAID_prescribe.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
 </figure>
 
-### <span style="color:silver"> 7.2.3 </span> Advanced PDDI CDS CDS Hooks request
+
+### <span style="color:silver"> 7.3.1 </span> CDS Hooks request
 {:.no_toc}
 
 
-#### Advanced PDDI CDS Context
+#### `context`
 {:.no_toc}
 
 ##### `medication-select 1.0`
@@ -304,10 +287,8 @@ Field | Optionality | Prefetch Token | Type | Description
 | `detectedissueStatus` | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
 | `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
 
-#### Advanced PDDI CDS Prefetch 
-{:.no_toc}
 
-##### `medication-select`
+#### `medication-select` `prefetch`
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -316,7 +297,7 @@ Field | Optionality | Prefetch Token | Type | Description
     * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
     * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
 
-##### `medication-prescribe`
+##### `medication-prescribe` `prefetch`
 {:.no_toc}
 
 * Age of patient on current date.
@@ -326,31 +307,42 @@ Field | Optionality | Prefetch Token | Type | Description
     * [Condition](https://www.hl7.org/fhir/condition.html)
     
 
-### <span style="color:silver"> 7.2.4 </span> Advanced PDDI CDS CDS Hooks Display Cards
+### <span style="color:silver"> 7.3.4 </span> CDS Hooks Cards
 {:.no_toc}
+
+*TODO: refer to the resources and explain to implementors the requirements **
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 5: Warfarin + NSAID Cards </strong></figcaption>
   <a href = "assets/images/Advanced_W_N_Cards.svg" target ="_blank" > <img src="assets/images/Advanced_W_N_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Advanced_W_N_Cards.svg" /></a>
 </figure>
 
-# <span style="color:silver"> 8.0.0 </span> The Digoxin + Cyclosporine knowledge artifact - another example of a relatively complex contextualized PDDI CDS algorithm 
+
+# <span style="color:silver"> 8.0.0 </span> Digoxin + Cyclosporine
+
+## <span style="color:silver"> 8.1.0 </span> The Digoxin + Cyclosporine Knowledge Artifact
+{:.no_toc}
+
+**TODO** add
+
+## <span style="color:silver"> 8.2.0 </span> Definitions 
+{:.no_toc}
 
 The Digoxin + Cyclosporine artifact logic depends on the concept that the patient was currently stable on digoxin before the current medication order. To make this clear, the Definitions section (8.1.0) defines terms used in the subsequent flow diagrams. Figure 6 progresses through the decision tree and includes warning indicators (i.e., green, orange, red) and contextual factors that may be passed to the clinician.
 
 
-## <span style="color:silver"> 8.1.0 </span> Definitions 
-{:.no_toc}
-
 * **Incident Order** – `context` medication is *not* in `prefetch` medications and, thus, is presumably the first occurrence. 
 
-* **Prevelant Order** – `context` medication is in `prefetch` medications and, thus, is presumably a medication order that is continued or repeated.
+* **Prevalent Order** – `context` medication is in `prefetch` medications and, thus, is presumably a medication order that is continued or repeated.
 
 * **Normal** – observation that is within a specified time period, and the measure is within a therapeutic window or below/above a certain threshold.
 
 * **Abnormal** – observation that is *not* within a specified time period, *or* the measure is *not* within a therapeutic window or below/above a certain threshold.
 
-## <span style="color:silver"> 8.2.0 </span> How to implement Basic PDDI CDS - an Example Using the Digoxin + Cyclosporine PDDI
+
+
+## <span style="color:silver"> 8.3.0 </span> Level 1 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured) 
+
 
 Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowlege artifact using the CDS Hooks `medication-prescribe` hook. The figure shows that the CDS Service would process the PDDI CDS logic after receiving a `medication-prescribe` request. Note that, like the Warfarin-NSAIDs PDDI, the CDS implementor MUST create *pre-fetch* templates the client programs will use to assemble data for `medication-prescribe` requests.  Data in the request MUST include both the prescribing context required as part of the `medication-prescribe` hook and pre-fetch resources specified by the CDS service. The decision tree shown in the figure indicates warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks *cards* that MAY include *actions* with associated FHIR resources. 
 
@@ -360,20 +352,20 @@ Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclospo
 </figure>
 
 
-### <span style="color:silver"> 8.2.1 </span> Basic PDDI CDS Decision Points
+### <span style="color:silver"> 8.3.1 </span> Decision Points Summary
 {:.no_toc}
 
 
-### <span style="color:silver"> 7.1.2 </span> Basic PDDI CDS CDS Hooks Request
+### <span style="color:silver"> 8.3.2 </span> CDS Hooks Request
 {:.no_toc}
 
 
-#### The Context Resource for the Basic PDDI CDS CDS Hooks Request
+#### `context`
 {:.no_toc}
 
 * [`medication-prescribe 1.0`](https://cds-hooks.org/hooks/medication-prescribe/) 
 
-#### The Prefetch Resources for the Basic PDDI CDS CDS Hooks Request
+#### `prefetch`
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -392,12 +384,10 @@ Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclospo
     * [Observation](https://www.hl7.org/fhir/observation.html)
         
 
-## <span style="color:silver"> 8.3.0 </span> Advanced PDDI CDS
+## <span style="color:silver"> 8.4.0 </span> Level 2 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured)
 
 As described under the Getting Started tab, the Advanced proposal requires several changes to the current standard specifications. Changes to the CDS Hooks context are specified below. The Advanced implementation proposal for the Digoxin + Cyclosporine artifact is split into two separate services. Figures 7 and 8 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., Medication Select and Medication Prescribe). The blue task boxes highlight the DetectedIssue status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the Medication Prescribe Service prefetch template), and Medication Prescribe Service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
 
-### <span style="color:silver"> 8.3.1 </span> Decision Points
-{:.no_toc}
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 7: Digoxin + Cyclosporine medication-select logic </strong></figcaption>
@@ -410,10 +400,11 @@ As described under the Getting Started tab, the Advanced proposal requires sever
 </figure>
 
 
-#### Advanced PDDI CDS Context
+### <span style="color:silver"> 8.4.1 </span> CDS Hooks Request
 {:.no_toc}
 
-##### `medication-select 1.0`
+
+#### `medication-select 1.0` `context`
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
@@ -422,7 +413,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `encounterId` | OPTIONAL | Yes | *string* | Describe the context value
 `medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
 
-###### `medication-prescribe 1.1`
+#### `medication-prescribe 1.1` `context`
 {:.no_toc}
 
 | Field       | Optionality        |  Prefetch Token     |Type  | Description |
@@ -434,10 +425,8 @@ Field | Optionality | Prefetch Token | Type | Description
 | `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
 
 
-#### Advanced PDDI CDS Prefetch
-{:.no_toc}
 
-##### `medication-select`
+#### `medication-select` `prefetch`
 {:.no_toc}
 * Rolling 100-day look-back period for medication resources including:
     * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
@@ -445,7 +434,7 @@ Field | Optionality | Prefetch Token | Type | Description
     * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
     * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
 
-##### `medication-prescribe`
+#### `medication-prescribe` `prefetch`
 {:.no_toc}
 
 * Rolling 365-day look-back period for digoxin concentration
@@ -458,8 +447,8 @@ Field | Optionality | Prefetch Token | Type | Description
     * [Observation](https://www.hl7.org/fhir/observation.html)
 
 
-#### Content
-{:.no_toc}
+# <span style="color:silver"> 9.0.0 </span> Warfarin + NSAIDs and Digoxin + Cyclosporine CDS Artifacts (structured)
+
 The following artifacts formalize the description of the logic and behavior defined by this recommendation.
 
 | Resource | Type | Description |

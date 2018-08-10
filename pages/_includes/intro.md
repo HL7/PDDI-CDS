@@ -1,6 +1,9 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
+* **TODO** position this from the position this from the EHR is doing something but more can be done with the standard, etectedIssue is monitoring what is happen 
+
 * **TODO** Citations and linking 
+
 
 # <span style="color:silver"> 1.0.0 </span> Implementation Guide for PDDI CDS (DRAFT)
 
@@ -22,7 +25,7 @@ This implementation guide was developed by the [Clinical Decision Support Work G
 
 This implementation guide:
 
-1. Describes knowledge and decision points for two potential drug-drug interaction (PDDI) clinical decision support (CDS) artifacts: [Warfarin + NSAIDs](documentation.html) and [Digoxin + Cyclosporine](documentation.html)
+1. Describes knowledge and decision points for two exemplar potential drug-drug interaction (PDDI) clinical decision support (CDS) artifacts: [Warfarin + NSAIDs](documentation.html) and [Digoxin + Cyclosporine](documentation.html)
 
 2. Provides structured code for CDS artifacts using the following Health Information Technology (HIT) specifications:
 
@@ -34,7 +37,7 @@ This implementation guide:
 
 3. Proposes and provides guidance to implement efficient PDDI CDS artifacts
 
-> *Note:* This IG describes _Basic_ and *Advanced* levels of PDDI CDS. At the time of this writing, discussion of Advanced PDDI CDS refers to artifacts and services that are under development while discussion of Basic PDDI CDS refers to artifacts and services that are currently standards or standards for trial use.
+> *Note:* This IG describes two levels of PDDI CDS implementation. Level 1 implementation enables stakeholders to start using PDDI CDS with marked benefits over current PDDI alerting systmes. Level 2 implementation extends and optimizes the PDDI CDS. For specific differences in Level 1 and 2 implementations, see section X under the Getting Started tab.
 
 ## <span style="color:silver"> 1.4.0 </span> A Project Rationale
 

@@ -283,10 +283,233 @@ The DynamicValue enables customization of the statically defined resources. Sinc
 
 The [FHIR resource workflow](https://www.hl7.org/fhir/workflow.html) categorizes the `CarePlan` and `RequestGroup` as requests, thereby expressing the intention for something to occur. The CDS Service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card. As an example, in this implementation guide, the warfarin-nsaids-cds artifact creates four response cards, each containing different information, The `CarePlan` would reference four `RequestGroup` resources under the the `activity` element. The `RequestGroup` `action` element provides information for suggestions and actions in the response card such as initiating another medication, substituting a medication order, or discontinuing the current order. The `CarePlan` and `RequestGroup` resources are subsequently transformed into a CDS Hooks `card` response. 
 
-## <span style="color:silver"> 4.4.3 </span> PDDI CDS CQL Library
+## <span style="color:silver"> 4.4.3 </span> CQL Library
 {:.no_toc}
 
+<!-- 
+* for someone new to CQL would need to know  - point them elsewhere
+* brief overview of the logic
+
+* for the audience familiar with CQL - explain what is specific to the PDDI use case
+* use of FHIR profiles
+* importance of the value sets
+* how to create the specific library resource for PDD CDS
+* connection of CQL to PlanDefinition
+* libraries entail and how to use them, utility functions and other libaries
+* highlight specific instances that are unique to this implementation 
+-->
+
+
+Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language) is designed by HL7 for clinical expertises to express clinical knowledge in an author-friendly and human-readable language.
+
+All artifact logics that clinical domain experts can express using CQL are wrapped in a container called a library. There is a set of declarations documented in [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
+
+### Declarations
+
+##### Library
+{:.no_toc}
+
+The library declaration specifies both the name of the library and an optional version for the library. The library name is used as an identifier to reference the library from other CQL libraries.
+~~~
+library Warfarin_NSAIDs_CDS version '1.0'
+~~~
+
+##### Data Models
+{:.no_toc}
+
+Data models define the structures that can be used within retrieve expressions in the library.
+~~~
+using FHIR version '3.0.0'
+~~~
+
+FHIR data
+
+FHIR Helpers
+System vs FHIR models, e.g. System.Quantity vs FHIR.Quantity
+
+MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense
+
+Observation, Condition
+
+##### Libraries
+{:.no_toc}
+
+Components defined within these included libraries can then be referenced within the library by using the locally assigned name for the library.
+~~~
+include PDDICDSCommon version '1.0' called Common
+~~~
+
+Components defined in the CMS153_Common library, version 2, can now be referenced using the assigned name of Common. For example:
+~~~
+define "NSAID Prescription":
+  ContextPrescriptions P
+    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+~~~
+
+PDDI CDS Data - Drug Ingredients
+
+
+##### Terminology
+{:.no_toc}
+
+A valueset declaration specifies a local identifier that represents a valueset and can be used anywhere within the library that a valueset is expected.
+~~~
+valueset "Warfarins": 'http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin'
+~~~
+
+This definition establishes the local identifier "Female Administrative Sex" as a reference to the external identifier for the valueset.
+
+This valueset definition can then be used within the library wherever a valueset can be used:
+~~~
+define "Warfarin Rx":
+  [MedicationRequest: "Warfarins"] MR
+    where MR.authoredOn.value in Interval[Today() - 100 days, null]
+~~~
+The above examples define the InDemographic expression as true for patients whose gender is a code in the valueset identified by "Female Administrative Sex".
+
+Refer to ... for the valueset used in this implementation guide.
+
+##### Parameters
+{:.no_toc}
+~~~
+parameter ContextPrescriptions List<MedicationRequest>
+~~~
+CDS Hooks standard medications
+~~~
+"context": {
+  ...
+  "medications": {
+    "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            ... // FHIR MedicationRequest
+          }
+        }
+      ]
+    }
+  }
+}
+~~~
+##### Context
+{:.no_toc}
+
+~~~
+context Patient
+~~~
+
+All resources only apply to the specific patient
+
+##### Statements
+{:.no_toc}
+
+Define statements describing named expressions that can be referenced either from other expressions within the same library or by containing quality and decision support artifacts.
+~~~
+define "GI Bleeds Condition":
+  Last(
+    [Condition: "History of GI Bleeds"] C
+      sort by assertedDate.value
+  )
+~~~
+This example defines the InpatientEncounters expression as Encounter events whose code is in the "Inpatient" valueset, whose length is less than or equal to 120 days, and whose period ended (i.e. patient was discharged) during MeasurementPeriod.
+
+### Connection of CQL to PlanDefinition
+{:.no_toc}
+
+
+##### How to
+{:.no_toc}
+
+PlanDefinition -> Library -> encode CQL Library
+
+##### Plan Definition
+{:.no_toc}
+
+~~~
+"library": [
+  {
+    "reference": "Library/warfarin-nsaids-cds"
+  }
+],
+~~~
+
+##### Library
+{:.no_toc}
+
+Library -> Common Library
+~~~
+{
+  "resource": {
+    "resourceType": "Library",
+    "id": "warfarin-nsaids-cds",
+    ...
+    "relatedArtifact": [
+      {
+        "type": "depends-on",
+        "resource": {
+          "reference": "Library/PDDICDSCommon"
+        }
+      }
+    ],
+    "content": [
+      {
+        "contentType": "application/elm+xml",
+        "data": "..."
+      }
+    ]
+  }
+}
+~~~
+
+ELM/XML
+text/cql
+encode in base64 and store in Library resource
+
+translate to elm/xml
+
+~~~
+
+~~~
+
 This library contains the logic used by the `PlanDefinition` to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
+
+~~~
+define "Inclusion Criteria":
+  "Has Warfarin"
+    and "Has NSAID in Context Prescription"
+~~~
+
+~~~
+define "Has Warfarin":
+  exists ("Warfarin Rx")
+
+define "Warfarin Rx":
+  [MedicationRequest: "Warfarins"] MR
+    where MR.authoredOn.value in Interval[Today() - 100 days, null]
+
+define "Has NSAID in Context Prescription":
+  exists ("NSAID Prescription")
+
+define "NSAID Prescription":
+  ContextPrescriptions P
+    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+~~~
+
+
+~~~
+define "Get Base Summary":
+  'Increased risk of bleeding.'
+
+define "Get Base Detail":
+  'Potential Drug-Drug Interaction between warfarin (' 
+    + Common.GetMedicationNames("Warfarin Rx") 
+    + ') and NSAID (' 
+    + Common.GetMedicationNames("NSAID Prescription")
+    + ').'
+
+define "Get Base Indicator":
+  'warning'
+~~~
 
 
 ## <span style="color:silver"> 4.5.0 </span> FHIR Server Request

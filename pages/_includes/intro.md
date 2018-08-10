@@ -4,10 +4,8 @@
 
 * **TODO** Citations and linking 
 
-<<<<<<< HEAD
-=======
 * **TODO** Be sure to attribute the NLM R01 and Dan's AHRQ R21 and R01 as funding sources
->>>>>>> 18d2bba7961104ac4c2db534e37f58583a7559e5
+
 
 # <span style="color:silver"> 1.0.0 </span> Implementation Guide for PDDI CDS (DRAFT)
 

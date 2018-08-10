@@ -4,7 +4,6 @@
 
 <!-- camel case for resources only, capitalize service name (Medication Prescribe Service?) -->
 
-* **TODO** Codeable concepts for mitigating and potentiating
 
 # <span style="color:silver"> 2.0.0 </span> Getting Started with PDDI CDS
 The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in RFCs to Indicate Requirement Levels".* S. Bradner. IETF. March 1997. Best Current Practice.](https://tools.ietf.org/html/rfc2119)
@@ -305,18 +304,14 @@ The DynamicValue enables customization of the statically defined resources. Sinc
 {:.no_toc}
 
 
-<<<<<<< HEAD
 The [FHIR resource workflow](https://www.hl7.org/fhir/workflow.html) categorizes the CarePlan and RequestGroup resources as requests, thereby expressing the intention for something to occur. The CDS Service creates a CarePlan that references a RequestGroup for each CDS Hook response Card. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The CarePlan references four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides the suggestions and actions in the response card. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks Card response. 
 
 ### <span style="color:silver"> 4.4.3 </span> DetectedIssue 
 
 The DetectedIssue resource is needed to document clinician actions associated with identified PDDIs and increasing the specificity of alerts; thus, it is created by the Medication Prescribe Service in the Level 1 Implementation and the Medication Select Service in the Level 2 Implementation. Level 1 and Level 2 Implementations MUST have EHR functionality to receive, process, modify, and store a DetectedIssue resource created by a PDDI CDS service. Use of the DetectedIssue resource with PDDI CDS requires an extension for the `potentiating` element. The `potentiating` element is analogous but antagonistic to the `mitigating` element that exists. These elements refer to relevant actions that have occurred (e.g.,  initiating another medication, substituting a medication order, or discontinuing the current order). For example, substituting naproxen for acetaminophen when a Warfarin-NSAID interaction is detected would be documented as a mitigating action. Conversely, if the same patient was currently taking prednisone, it would be documented as a potentiating action.  
 
-##### Example 3: DetectedIssue Elements
-=======
-## <span style="color:silver"> 4.4.3 </span> CQL Library
->>>>>>> 18d2bba7961104ac4c2db534e37f58583a7559e5
-{:.no_toc}
+**Example 3: DetectedIssue Elements**
+
 ~~~
   {
   "resourceType" : "DetectedIssue",
@@ -330,12 +325,18 @@ The DetectedIssue resource is needed to document clinician actions associated wi
 snipped for brevity
 ~~~
 
-<<<<<<< HEAD
-### <span style="color:silver"> 4.4.4 </span> PDDI CDS CQL Library
+
+## <span style="color:silver"> 4.5.0 </span> CQL Library
+{:.no_toc}
+
+
+
+
+### <span style="color:silver"> 4.5.1 </span> PDDI CDS CQL Library
 {:.no_toc}
 
 This library contains the logic used by the PlanDefinition to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
-=======
+
 <!-- 
 * for someone new to CQL would need to know  - point them elsewhere
 * brief overview of the logic
@@ -354,9 +355,10 @@ Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality
 
 All artifact logics that clinical domain experts can express using CQL are wrapped in a container called a library. There is a set of declarations documented in [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
 
-### Declarations
+### <span style="color:silver"> 4.5.2 </span> Declarations
+{:.no_toc}
 
-##### Library
+#### Library
 {:.no_toc}
 
 The library declaration specifies both the name of the library and an optional version for the library. The library name is used as an identifier to reference the library from other CQL libraries.
@@ -364,7 +366,7 @@ The library declaration specifies both the name of the library and an optional v
 library Warfarin_NSAIDs_CDS version '1.0'
 ~~~
 
-##### Data Models
+#### Data Models
 {:.no_toc}
 
 Data models define the structures that can be used within retrieve expressions in the library.
@@ -381,7 +383,7 @@ MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDisp
 
 Observation, Condition
 
-##### Libraries
+#### Libraries
 {:.no_toc}
 
 Components defined within these included libraries can then be referenced within the library by using the locally assigned name for the library.
@@ -399,7 +401,7 @@ define "NSAID Prescription":
 PDDI CDS Data - Drug Ingredients
 
 
-##### Terminology
+#### Terminology
 {:.no_toc}
 
 A valueset declaration specifies a local identifier that represents a valueset and can be used anywhere within the library that a valueset is expected.
@@ -419,7 +421,7 @@ The above examples define the InDemographic expression as true for patients whos
 
 Refer to ... for the valueset used in this implementation guide.
 
-##### Parameters
+#### Parameters
 {:.no_toc}
 ~~~
 parameter ContextPrescriptions List<MedicationRequest>
@@ -441,7 +443,7 @@ CDS Hooks standard medications
   }
 }
 ~~~
-##### Context
+#### Context
 {:.no_toc}
 
 ~~~
@@ -450,7 +452,7 @@ context Patient
 
 All resources only apply to the specific patient
 
-##### Statements
+#### Statements
 {:.no_toc}
 
 Define statements describing named expressions that can be referenced either from other expressions within the same library or by containing quality and decision support artifacts.
@@ -463,16 +465,16 @@ define "GI Bleeds Condition":
 ~~~
 This example defines the InpatientEncounters expression as Encounter events whose code is in the "Inpatient" valueset, whose length is less than or equal to 120 days, and whose period ended (i.e. patient was discharged) during MeasurementPeriod.
 
-### Connection of CQL to PlanDefinition
+### <span style="color:silver"> 4.5.3 </span> Connection of CQL to PlanDefinition
 {:.no_toc}
 
 
-##### How to
+#### How to
 {:.no_toc}
 
 PlanDefinition -> Library -> encode CQL Library
 
-##### Plan Definition
+#### Plan Definition
 {:.no_toc}
 
 ~~~
@@ -483,7 +485,7 @@ PlanDefinition -> Library -> encode CQL Library
 ],
 ~~~
 
-##### Library
+#### Library
 {:.no_toc}
 
 Library -> Common Library
@@ -522,7 +524,6 @@ translate to elm/xml
 ~~~
 
 This library contains the logic used by the `PlanDefinition` to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
->>>>>>> 18d2bba7961104ac4c2db534e37f58583a7559e5
 
 ~~~
 define "Inclusion Criteria":
@@ -563,7 +564,7 @@ define "Get Base Indicator":
 ~~~
 
 
-## <span style="color:silver"> 4.5.0 </span> FHIR Server Request
+## <span style="color:silver"> 4.6.0 </span> FHIR Server Request
 {:.no_toc}
 
 A FHIR server request by the CDS service after receiving a CDS Hooks request (e.g., `medication-prescribe`) is necessary in the event the `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. In the event the EHR does not provide prefetch data, the PDDI CDS service MUST request the data from the FHIR server via network call. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 3. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
@@ -575,7 +576,7 @@ A FHIR server request by the CDS service after receiving a CDS Hooks request (e.
 
 
 
-## <span style="color:silver"> 4.6.0 </span> CDS Hooks Response and Card Display
+## <span style="color:silver"> 4.7.0 </span> CDS Hooks Response and Card Display
 {:.no_toc}
 
 The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "hard-stop" could be a modal alert).
@@ -621,6 +622,8 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 ~~~
 **Card Display Example**
 * [Level 1 – Warfarin + NSAID Cards](documentation.html)
+
+* [Level 1 – Digoxin + Cyclosporine Cards](documentation.html)
 
 
 # <span style="color:silver"> 5.0.0 </span> Level 2 Implementation
@@ -791,6 +794,7 @@ snipped for brevity
 **Card Display Example**
 * [Level 2 – Warfarin + NSAID Cards](documentation.html)
 
+* [Level 2 – Digoxin + Cyclosporin Cards](documentation.html)
 
 
 

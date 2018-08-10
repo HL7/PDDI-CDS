@@ -1,8 +1,3 @@
-* **TODO** Consider placing tylenol substitution as a response Card example
-
-* **TODO** Consider adding the bulletted logic for the Dig + Cyclo example to follow the warfarin-NSAIDS exampple
-
-* **TODO** Consider adding Card display example to Dig + Cyclo
 
 * **TODO** need to specify clearly if is there information unique to warfarin-NSAIDs or Dig-Cyclo in terms of implementation
 
@@ -450,7 +445,7 @@ The Digoxin + Cyclosporine artifact logic depends on the concept that the patien
 Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowlege artifact using the CDS Hooks `medication-prescribe` hook. The figure shows that the CDS Service would process the PDDI CDS logic after receiving a `medication-prescribe` request. Note that, like the Warfarin-NSAIDs PDDI, the CDS implementor MUST create *pre-fetch* templates the client programs will use to assemble data for `medication-prescribe` requests.  Data in the request MUST include both the prescribing context required as part of the `medication-prescribe` hook and pre-fetch resources specified by the CDS service. The decision tree shown in the figure indicates warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks *cards* that MAY include *actions* with associated FHIR resources. 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 6: Basic Digoxin + Cyclosporine logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 6: Level 1 Digoxin + Cyclosporine logic </strong></figcaption>
   <a href = "assets/images/Basic_Digoxin_Cyclosporine.svg" target ="_blank" > <img src="assets/images/Basic_Digoxin_Cyclosporine.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Digoxin_Cyclosporine.svg" /></a>
 </figure>
 
@@ -486,6 +481,15 @@ Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclospo
 * Rolling 365-day look-back period for electrolytes including: potassium, magnesium, and calcium
     * [Observation](https://www.hl7.org/fhir/observation.html)
         
+
+### <span style="color:silver"> 8.3.3 </span> CDS Hooks Cards Example
+{:.no_toc}
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 7: Level 1 Digoxin + Cyclosporine Cards </strong></figcaption>
+  <a href = "assets/images/Level_1_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_1_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_1_D_C_Cards.svg" /></a>
+</figure>
+
 
 ## <span style="color:silver"> 8.4.0 </span> Level 2 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured)
 
@@ -549,6 +553,14 @@ Field | Optionality | Prefetch Token | Type | Description
 * Rolling 365-day look-back period for electrolytes including: potassium, magnesium, and calcium
     * [Observation](https://www.hl7.org/fhir/observation.html)
 
+
+### <span style="color:silver"> 8.3.3 </span> CDS Hooks Cards Example
+{:.no_toc}
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 9: Level 2 Digoxin + Cyclosporine Cards </strong></figcaption>
+  <a href = "assets/images/Level_2_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_2_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_2_D_C_Cards.svg" /></a>
+</figure>
 
 # <span style="color:silver"> 9.0.0 </span> Warfarin + NSAIDs and Digoxin + Cyclosporine CDS Artifacts (structured)
 

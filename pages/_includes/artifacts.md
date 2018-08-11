@@ -1,4 +1,4 @@
-# <span style="color:silver"> 9.0.0 </span> Terminology defined as part of the PDDI CDS Implementation Guide
+# <span style="color:silver"> 10.0.0 </span> Terminology defined as part of the PDDI CDS Implementation Guide
 
 The following artifacts represent the behavior for implementing PDDI CDS:
 

@@ -6,6 +6,10 @@ The following are examples for the PDDI CDS implementation guide:
 
 ### Examples
 
+#### Condition
+
+{% include list-simple-conditions.xhtml %} 
+
 #### Encounter
 
 {% include list-simple-encounters.xhtml %} 
@@ -26,12 +30,16 @@ The following are examples for the PDDI CDS implementation guide:
 
 {% include list-simple-medicationstatements.xhtml %} 
 
+#### Observations
+
+{% include list-simple-observations.xhtml %}
+
 #### Patient
 
 {% include list-simple-patients.xhtml %} 
 
-#### Condition
+#### Procedure
 
-{% include list-simple-conditions.xhtml %} 
+{% include list-simple-procedures.xhtml %} 
 
 <p/><p/>

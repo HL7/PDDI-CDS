@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
-    <id value="medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
+    <id value="medicationrequest-digoxin-cyclosporine-digoxin-context"/>
     <status value="active"/>
     <intent value="order"/>
     <category>
@@ -11,19 +11,19 @@
     <medicationCodeableConcept>
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <code value="198223"/>
-            <display value="Spironolactone 50 MG Oral Tablet"/>
+            <code value="197606"/>
+            <display value="Digoxin 0.25 MG Oral Tablet"/>
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
     </subject>
     <context>
-        <reference value="Encounter/encounter-warfarin-nsaid-prefetch"/>
+        <reference value="Encounter/encounter-digoxin-cyclosporine-context"/>
     </context>
     <authoredOn>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
-            <valueString value="Today() - 10 days"/>
+            <valueString value="Today()"/>
         </extension>
     </authoredOn>
     <dosageInstruction>
@@ -43,7 +43,7 @@
     <dispenseRequest>
         <validityPeriod>
             <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
-                <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() - 10 days }, end: FHIR.dateTime { value: Today() } }"/>
+                <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
             </extension>
         </validityPeriod>
         <numberOfRepeatsAllowed value="1"/>

@@ -16,10 +16,10 @@
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="Patient/warfarin-nsaid-over65-prefetch"/>
+        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
     </subject>
     <context>
-        <reference value="Encounter/warfarin-nsaid-prefetch"/>
+        <reference value="Encounter/encounter-warfarin-nsaid-prefetch"/>
     </context>
     <authoredOn>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">

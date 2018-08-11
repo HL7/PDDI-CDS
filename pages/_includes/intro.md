@@ -18,9 +18,9 @@
 
 This implementation guide (IG) is targeted at stakeholders who seek to increase the specificity and clinical relevance of drug-drug interaction alerts presented through the electronic health record. The approach is service-oriented and uses Web standards, a minimum information model for potential drug interactions, and emerging Health Information Technology standards including [CDS Hooks](http://cds-hooks.org/), Fast Health Interoperability Resources ([FHIR](http://www.fhir.org/)), and Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language).
 
-## <span style="color:silver"> 1.2.0 </span> Collaborators
+## <span style="color:silver"> 1.2.0 </span> Collaborators and Funding
 
-This implementation guide was developed by the [Clinical Decision Support Work Group](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) of [Health Level 7 (HL7)](http://wiki.hl7.org)  in collaboration with the University of Pittsburgh Medical Center, RWTH Aachen University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health.
+This implementation guide was developed by the [Clinical Decision Support Work Group](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) of [Health Level 7 (HL7)](http://wiki.hl7.org)  in collaboration with the University of Pittsburgh Medical Center, RWTH Aachen University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health. AHRQ grants R21 and R01, and NLM Training Grant T15LM007124
 
 
 ## <span style="color:silver"> 1.3.0 </span> Scope

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationDispense xmlns="http://hl7.org/fhir">
+    <id value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <code value="outpatient"/>
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="197604"/>
+            <display value="Digoxin 0.125 MG Oral Tablet"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
+    </subject>
+    <context>
+        <reference value="Encounter/encounter-digoxin-cyclosporine-prefetch"/>
+    </context>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <frequency value="1"/>
+                <period value="1.0"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="false"/>
+        <doseQuantity>
+            <value value="1.0"/>
+            <unit value="tablet"/>
+        </doseQuantity>
+    </dosageInstruction>
+    <quantity>
+        <value value="90"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="TAB"/>
+    </quantity>
+    <daysSupply>
+        <value value="90"/>
+        <unit value="Day"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+    </daysSupply>
+</MedicationDispense>

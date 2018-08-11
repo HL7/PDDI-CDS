@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Procedure xmlns="http://hl7.org/fhir">
+    <id value="procedure-digoxin-cyclosporine-potassium"/>
+    <status value="preparation"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="271236005"/>
+            <display value="Serum potassium level"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
+    </subject>
+    <occurrenceDateTime value="2018-08-11T09:33:27+07:00"/>
+</Procedure>

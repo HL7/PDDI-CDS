@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Procedure xmlns="http://hl7.org/fhir">
+    <id value="procedure-digoxin-cyclosporine-creatinine"/>
+    <status value="preparation"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value=" 313822004"/>
+            <display value="Corrected serum creatinine "/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
+    </subject>
+    <occurrenceDateTime value="2018-08-11T09:33:27+07:00"/>
+</Procedure>

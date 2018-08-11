@@ -632,9 +632,23 @@
 		</resource>
         <resource>
             <reference>
-                <reference value="ValueSet/bundle-warfarin-nsaid-scenario-01" />
+                <reference value="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch" />
             </reference>
-            <name value="bundle-warfarin-nsaid-scenario-01" />
+            <name value="condition-warfarin-nsaid-Hx-UGIB-prefetch" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-digoxin-cyclosporine-context" />
+            </reference>
+            <name value="encounter-digoxin-cyclosporine-context" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-digoxin-cyclosporine-prefetch" />
+            </reference>
+            <name value="encounter-digoxin-cyclosporine-prefetch" />
             <exampleBoolean value="true" />
         </resource>
 		<resource>
@@ -658,6 +672,20 @@
 			<name value="medicationadministration-warfarin-nsaid-warfarin-prefetch" />
 			<exampleBoolean value="true" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-digoxin-prefetch" />
+            </reference>
+            <name value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-furosemide-prefetch" />
+            </reference>
+            <name value="medicationdispense-digoxin-cyclosporine-furosemide-prefetch" />
+            <exampleBoolean value="true" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch" />
@@ -665,6 +693,27 @@
 			<name value="medicationdispense-warfarin-nsaid-warfarin-prefetch" />
 			<exampleBoolean value="true" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-context" />
+            </reference>
+            <name value="medicationrequest-digoxin-cyclosporine-cyclosporine-context" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch" />
+            </reference>
+            <name value="medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-digoxin-context" />
+            </reference>
+            <name value="medicationrequest-digoxin-cyclosporine-digoxin-context" />
+            <exampleBoolean value="true" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch" />
@@ -735,6 +784,41 @@
 			<name value="medicationstatement-warfarin-nsaid-warfarin-prefetch" />
 			<exampleBoolean value="true" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-digoxin-cyclosporine-calcium" />
+            </reference>
+            <name value="observation-digoxin-cyclosporine-calcium" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-digoxin-cyclosporine-magnesium" />
+            </reference>
+            <name value="observation-digoxin-cyclosporine-magnesium" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-digoxin-cyclosporine-potassium" />
+            </reference>
+            <name value="observation-digoxin-cyclosporine-potassium" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-digoxin-cyclosporine-renal" />
+            </reference>
+            <name value="observation-digoxin-cyclosporine-renal" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-digoxin-cyclosporine-context" />
+            </reference>
+            <name value="patient-digoxin-cyclosporine-context" />
+            <exampleBoolean value="true" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="Patient/patient-warfarin-nsaid-over65-prefetch" />
@@ -751,9 +835,44 @@
 		</resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch" />
+                <reference value="Procedure/procedure-digoxin-cyclosporine-calcium" />
             </reference>
-            <name value="condition-warfarin-nsaid-Hx-UGIB-prefetch" />
+            <name value="procedure-digoxin-cyclosporine-calcium" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-digoxin-cyclosporine-consultation" />
+            </reference>
+            <name value="procedure-digoxin-cyclosporine-consultation" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-digoxin-cyclosporine-creatinine" />
+            </reference>
+            <name value="procedure-digoxin-cyclosporine-creatinine" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-digoxin-cyclosporine-digoxin" />
+            </reference>
+            <name value="procedure-digoxin-cyclosporine-digoxin" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-digoxin-cyclosporine-magnesium" />
+            </reference>
+            <name value="procedure-digoxin-cyclosporine-magnesium" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-digoxin-cyclosporine-potassium" />
+            </reference>
+            <name value="procedure-digoxin-cyclosporine-potassium" />
             <exampleBoolean value="true" />
         </resource>
 		<page>

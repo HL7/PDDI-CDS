@@ -793,6 +793,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-digoxin-cyclosporine-digoxin" />
+            </reference>
+            <name value="observation-digoxin-cyclosporine-digoxin" />
+            <exampleBoolean value="true" />
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-digoxin-cyclosporine-magnesium" />
             </reference>
             <name value="observation-digoxin-cyclosporine-magnesium" />

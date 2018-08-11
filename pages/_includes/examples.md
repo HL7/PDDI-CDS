@@ -2,7 +2,7 @@
 # <span style="color:silver"> 11.0.0 </span> Examples defined for the PDDI CDS Implementation Guide
 
 
-The following are examples for the PDDI CDS implementation guide:
+The following are example resources for the PDDI CDS implementation guide:
 
 ### Examples
 

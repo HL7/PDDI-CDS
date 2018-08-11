@@ -39,6 +39,11 @@ The Element ValueSet-excludes are signified with an identical name to the Elemen
   <img src="assets/images/Value_Sets.png" class="figure-img img-responsive img-rounded center-block" alt="Value_Sets.png" />
 </figure>
 
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 9: Level 2 Digoxin + Cyclosporine Cards </strong></figcaption>
+  <a href = "assets/images/Value_Sets.svg" target ="_blank" > <img src="assets/images/Value_Sets.svg" class="figure-img img-responsive img-rounded center-block" alt="Value-Sets.svg" /></a>
+</figure>
+
 ## <span style="color:silver"> 13.2.0 </span> ValueSet
 
 {% include list-simple-valuesets.xhtml %} 

@@ -1,0 +1,273 @@
+{
+  "hookInstance": "9d02e4d7-2d5b-492f-8f77-ce36dda0647d",
+  "fhirServer": "http://46.101.183.140:8080/baseDstu3",
+  "hook": "medication-prescribe",
+  "user": "Practitioner/example",
+  "applyCql": "true",
+  "context": {
+    "patientId": "Patient/patient-digoxin-cyclosporine-context",
+    "encounterId": "Encounter/encounter-digoxin-cyclosporine-context",
+    "medications": {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resourceType": "MedicationRequest",
+          "id": "medicationrequest-digoxin-cyclosporine-cyclosporine-context",
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "code": "outpatient"
+                }
+              ]
+            }
+          ],
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "835925",
+                "display": "cyclosporine, modified 50 MG Oral Capsule"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/patient-digoxin-cyclosporine-context"
+          },
+          "context": {
+            "reference": "Encounter/encounter-digoxin-cyclosporine-context"
+          },
+          "_authoredOn": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                "valueString": "Today()"
+              }
+            ]
+          },
+          "dosageInstruction": [
+            {
+              "timing": {
+                "repeat": {
+                  "frequency": 1,
+                  "period": 1.0,
+                  "periodUnit": "d"
+                }
+              },
+              "asNeededBoolean": false
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                  "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"
+                }
+              ]
+            },
+            "numberOfRepeatsAllowed": 1,
+            "expectedSupplyDuration": {
+              "value": 90.0,
+              "unit": "d"
+            }
+          }
+        }
+      ]
+    },
+    "prefetch": {
+      "item1": {
+        "response": {
+          "status": "200 OK"
+        },
+        "resource": {
+          "resourceType": "Bundle",
+          "entry": [
+            {
+              "resourceType": "MedicationDispense",
+              "id": "medicationdispense-digoxin-cyclosporine-digoxin-prefetch",
+              "status": "completed",
+              "category": {
+                "coding": [
+                  {
+                    "code": "outpatient"
+                  }
+                ]
+              },
+              "medicationCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "197604",
+                    "display": "Digoxin 0.125 MG Oral Tablet"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/patient-digoxin-cyclosporine-context"
+              },
+              "context": {
+                "reference": "Encounter/encounter-digoxin-cyclosporine-prefetch"
+              },
+              "quantity": {
+                "value": 90,
+                "system": "http://unitsofmeasure.org",
+                "code": "TAB"
+              },
+              "daysSupply": {
+                "value": 90,
+                "unit": "Day",
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              },
+              "dosageInstruction": [
+                {
+                  "timing": {
+                    "repeat": {
+                      "frequency": 1,
+                      "period": 1.0,
+                      "periodUnit": "d"
+                    }
+                  },
+                  "asNeededBoolean": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "item2": {
+        "response": {
+          "status": "200 OK"
+        },
+        "resource": {
+          "resourceType": "Bundle",
+          "entry": [
+            {
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-digoxin-cyclosporine-cyclosporine-context",
+              "status": "active",
+              "intent": "order",
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "code": "outpatient"
+                    }
+                  ]
+                }
+              ],
+              "medicationCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "835925",
+                    "display": "cyclosporine, modified 50 MG Oral Capsule"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/patient-digoxin-cyclosporine-context"
+              },
+              "context": {
+                "reference": "Encounter/encounter-digoxin-cyclosporine-context"
+              },
+              "_authoredOn": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                    "valueString": "Today()"
+                  }
+                ]
+              },
+              "dosageInstruction": [
+                {
+                  "timing": {
+                    "repeat": {
+                      "frequency": 1,
+                      "period": 1.0,
+                      "periodUnit": "d"
+                    }
+                  },
+                  "asNeededBoolean": false
+                }
+              ],
+              "dispenseRequest": {
+                "validityPeriod": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                      "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"
+                    }
+                  ]
+                },
+                "numberOfRepeatsAllowed": 1,
+                "expectedSupplyDuration": {
+                  "value": 90.0,
+                  "unit": "d"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "item3": {
+        "response": {
+          "status": "200 OK"
+        },
+        "resource": {
+          "resourceType": "Bundle",
+          "entry": [
+            {
+              "resourceType" : "Observation",
+              "id" : "observation-digoxin-cyclosporine-potassium",
+              "status" : "final",
+              "code" : {
+                "coding" : [
+                  {
+                    "system" : "http://loinc.org",
+                    "code" : "22760-3",
+                    "display" : "Potassium [Mass/​volume] in Serum or Plasma"
+                  }
+                ]
+              },
+              "subject" : {
+                "reference" : "Patient/patient-digoxin-cyclosporine-context"
+              },
+              "issued" : "2018-08-04T14:34:00+01:00",
+              "valueQuantity" : {
+                "value" : 0.9,
+                "unit" : "mmol/L",
+                "system" : "http://snomed.info/sct",
+                "code" : "258813002"
+              },
+              "referenceRange" : [
+                {
+                  "low" : {
+                    "value" : 3.5
+                  },
+                  "high" : {
+                    "value" : 5.0
+                  },
+                  "type" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/referencerange-meaning",
+                        "code" : "normal",
+                        "display" : "Normal Range"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+

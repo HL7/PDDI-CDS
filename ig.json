@@ -503,6 +503,10 @@
       "base": "Observation-observation-digoxin-cyclosporine-calcium.html",
       "source": "observation-digoxin-cyclosporine-calcium.xml"
     },
+    "Observation/observation-digoxin-cyclosporine-digoxin": {
+      "base": "Observation-observation-digoxin-cyclosporine-digoxin.html",
+      "source": "observation-digoxin-cyclosporine-digoxin.xml"
+    },
     "Observation/observation-digoxin-cyclosporine-magnesium": {
       "base": "Observation-observation-digoxin-cyclosporine-magnesium.html",
       "source": "observation-digoxin-cyclosporine-magnesium.xml"

@@ -25,7 +25,7 @@ Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The primary di
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Level 1 versus Level 2 Implementation Hooks </strong></figcaption>
-  <a href = "assets/images/CPOE_workflow_2.png" target ="_blank" > <img src= "assets/images/Basic_Warfarin_NSAID.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow_2.png" /></a>
+  <a href = "assets/images/CPOE_workflow_2.png" target ="_blank" > <img src= "assets/images/CPOE_workflow_2.png" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow_2.png" /></a>
 </figure>
 
 ## <span style="color:silver"> 6.3.0 </span> Prefetch Role 

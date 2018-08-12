@@ -326,7 +326,7 @@ snipped for brevity
 ~~~
 
 
-## <span style="color:silver"> 4.5.0 </span> CQL Library
+## <span style="color:silver"> 4.4.0 </span> CQL Library
 {:.no_toc}
 
 <!-- 
@@ -346,7 +346,7 @@ Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality
 
 All artifact logics that clinical domain experts can express using CQL are wrapped in a container called a library. There is a set of declarations documented in [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
 
-### <span style="color:silver"> 4.5.1 </span> Declarations
+### <span style="color:silver"> 4.4.1 </span> Declarations
 {:.no_toc}
 
 #### Library
@@ -458,7 +458,7 @@ define "GI Bleeds Condition":
 ~~~
 This example defines the `GI Bleeds Condition` statement which get the most recent condition whose code is in the `History of GI Bleeds` valueset.
 
-### <span style="color:silver"> 4.5.2 </span> Connection of CQL to PlanDefinition
+### <span style="color:silver"> 4.4.2 </span> Connection of CQL to PlanDefinition
 {:.no_toc}
 
 #### Library
@@ -546,7 +546,7 @@ define "Get Base Indicator":
   'warning'
 ~~~
 
-## <span style="color:silver"> 4.6.0 </span> FHIR Server Request
+## <span style="color:silver"> 4.5.0 </span> FHIR Server Request
 {:.no_toc}
 
 A FHIR server request by the CDS service after receiving a CDS Hooks request (e.g., `medication-prescribe`) is necessary in the event the `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. In the event the EHR does not provide prefetch data, the PDDI CDS service MUST request the data from the FHIR server via network call. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 3. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
@@ -558,7 +558,7 @@ A FHIR server request by the CDS service after receiving a CDS Hooks request (e.
 
 
 
-## <span style="color:silver"> 4.7.0 </span> CDS Hooks Response and Card Display
+## <span style="color:silver"> 4.6.0 </span> CDS Hooks Response and Card Display
 {:.no_toc}
 
 The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "hard-stop" could be a modal alert).

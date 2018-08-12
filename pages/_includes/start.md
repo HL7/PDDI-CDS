@@ -374,6 +374,7 @@ Statements defined in specific libraries can be reused in other libraries as a r
 ~~~
 include PDDICDS_Common version '1.0' called Common
 ~~~
+
 As an example below, statements defined in the PDDICDS_Common library, version 1.0, can now be referenced using the assigned name of Common.
 ~~~
 define "NSAID Prescription":
@@ -441,12 +442,13 @@ The context declaration defines the overall context for statements within the li
 ~~~
 context Patient
 ~~~
+
 PDDI-CDS uses the `context Patient` declaration to restrict the information that will be returned from a retrieve to a single patient.
 
 #### Statements
 {:.no_toc}
 
-Define statements describing named expressions that can be referenced either from other expressions within the same library or by containing decision support artifacts.
+`Define` statements describing named expressions that can be referenced either from other expressions within the same library or by containing decision support artifacts.
 ~~~
 define "GI Bleeds Condition":
   Last(

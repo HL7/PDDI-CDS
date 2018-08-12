@@ -1,9 +1,5 @@
 
-* **TODO** need to specify clearly if is there information unique to warfarin-NSAIDs or Dig-Cyclo in terms of implementation
-
 * **TODO** Consider adding recommendations to implementors based on the examples shown for Context, Prefetch, and Cards in the basic and advance CDS scenarios. Think of the two PDDI knowledge artifacts as pedagogical examples to explaining to implementors the implementation requirements
-
-* **TODO** make PDDI mention format consistent e.g., choose either drug1 - drug2 or drug1 + drug2
 
 
 # <span style="color:silver"> 6.0.0 </span> Documentation 
@@ -16,8 +12,7 @@
 ## <span style="color:silver"> 6.1.0 </span> Preliminaries 
 {:.no_toc}
 
-This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Implementation details are described using two specific knowledge artifacts as examples. The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in RFCs to Indicate Requirement Levels".* S. Bradner. IETF. March 1997. Best Current Practice.](https://tools.ietf.org/html/rfc2119)
-
+This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Implementation details are described using two specific knowledge artifacts as examples. 
 ## <span style="color:silver"> 6.2.0 </span> CPOE Workflow Hooks 
 {:.no_toc}
 
@@ -177,7 +172,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 
 ## <span style="color:silver"> 7.2.0 </span> Level 1 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured) 
 
-Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response using the `medication-prescribe` Hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `medication-prescribe` request, and Card(s) response are discussed further in the sections below.
+Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response using the `medication-prescribe` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `medication-prescribe` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -233,7 +228,6 @@ The `medication-prescribe` request includes `context` and `prefetch` elements wi
 #### <span style="color:silver"> 7.2.3 </span> CDS Hooks Cards
 {:.no_toc}
 
-**TODO: refer to the resources and explain to implementors the requirements **
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Level 1 – Warfarin + NSAID Response Card Example </strong></figcaption>
@@ -243,7 +237,7 @@ The `medication-prescribe` request includes `context` and `prefetch` elements wi
 
 ## <span style="color:silver"> 7.3.0 </span> Level 2 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured)
 
-The Level 2 Implementation for the Warfarin + NSAID artifact is split into two separate Hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `medication-select` and `medication-prescribe`). Figure 5 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). The blue task boxes highlight the DetectedIssue `status` indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the `medication-prescribe` service prefetch template), and `medication-prescribe` service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
+The Level 2 Implementation for the Warfarin + NSAID artifact is split into two separate hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `medication-select` and `medication-prescribe`). Figure 6 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). The blue task boxes highlight the DetectedIssue `status` indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the `medication-prescribe` service prefetch template), and `medication-prescribe` service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
 
 
 <figure class="figure">
@@ -313,7 +307,7 @@ Field | Optionality | Prefetch Token | Type | Description
 *TODO: refer to the resources and explain to implementors the requirements **
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 5: Warfarin + NSAID Cards </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 6: Warfarin + NSAID Cards </strong></figcaption>
   <a href = "assets/images/Advanced_W_N_Cards.svg" target ="_blank" > <img src="assets/images/Advanced_W_N_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Advanced_W_N_Cards.svg" /></a>
 </figure>
 
@@ -442,10 +436,10 @@ The Digoxin + Cyclosporine artifact logic depends on the concept that the patien
 ## <span style="color:silver"> 8.3.0 </span> Level 1 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured) 
 
 
-Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowlege artifact using the CDS Hooks `medication-prescribe` hook. The figure shows that the CDS Service would process the PDDI CDS logic after receiving a `medication-prescribe` request. Note that, like the Warfarin-NSAIDs PDDI, the CDS implementor MUST create *pre-fetch* templates the client programs will use to assemble data for `medication-prescribe` requests.  Data in the request MUST include both the prescribing context required as part of the `medication-prescribe` hook and pre-fetch resources specified by the CDS service. The decision tree shown in the figure indicates warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks *cards* that MAY include *actions* with associated FHIR resources. 
+Figure 7 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowlege artifact using the CDS Hooks `medication-prescribe` hook. The figure shows that the CDS Service would process the PDDI CDS logic after receiving a `medication-prescribe` request. Note that, like the Warfarin-NSAIDs PDDI, the CDS implementor MUST create *pre-fetch* templates the client programs will use to assemble data for `medication-prescribe` requests.  Data in the request MUST include both the prescribing context required as part of the `medication-prescribe` hook and pre-fetch resources specified by the CDS service. The decision tree shown in the figure indicates warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks *cards* that MAY include *actions* with associated FHIR resources. 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 6: Level 1 Digoxin + Cyclosporine logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 7: Level 1 Digoxin + Cyclosporine logic </strong></figcaption>
   <a href = "assets/images/Basic_Digoxin_Cyclosporine.svg" target ="_blank" > <img src="assets/images/Basic_Digoxin_Cyclosporine.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Digoxin_Cyclosporine.svg" /></a>
 </figure>
 
@@ -486,23 +480,23 @@ Figure 6 shows how a PDDI CDS implementer would implement the Digoxin + Cyclospo
 {:.no_toc}
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 7: Level 1 Digoxin + Cyclosporine Cards </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 8: Level 1 Digoxin + Cyclosporine Cards </strong></figcaption>
   <a href = "assets/images/Level_1_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_1_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_1_D_C_Cards.svg" /></a>
 </figure>
 
 
 ## <span style="color:silver"> 8.4.0 </span> Level 2 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured)
 
-As described under the Getting Started tab, the Advanced proposal requires several changes to the current standard specifications. Changes to the CDS Hooks context are specified below. The Advanced implementation proposal for the Digoxin + Cyclosporine artifact is split into two separate services. Figures 7 and 8 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., Medication Select and Medication Prescribe). The blue task boxes highlight the DetectedIssue status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the Medication Prescribe Service prefetch template), and Medication Prescribe Service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
+As described under the Getting Started tab, the Advanced proposal requires several changes to the current standard specifications. Changes to the CDS Hooks context are specified below. The Advanced implementation proposal for the Digoxin + Cyclosporine artifact is split into two separate services. Figures 9 and 10 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., Medication Select and Medication Prescribe). The blue task boxes highlight the DetectedIssue status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the Medication Prescribe Service prefetch template), and Medication Prescribe Service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 7: Digoxin + Cyclosporine medication-select logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 9: Digoxin + Cyclosporine medication-select logic </strong></figcaption>
   <a href = "assets/images/Digoxin_Cyclosporine_select.svg" target ="_blank" > <img src="assets/images/Digoxin_Cyclosporine_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Digoxin_Cyclosporine_select.svg" /></a>
 </figure>
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 8: Digoxin + Cyclosporine medication-prescribe logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 10: Digoxin + Cyclosporine medication-prescribe logic </strong></figcaption>
   <a href = "assets/images/Digoxin_Cyclosporine_prescribe.svg" target ="_blank" > <img src="assets/images/Digoxin_Cyclosporine_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Digoxin_Cyclosporine_prescribe.svg" /></a>
 </figure>
 
@@ -558,21 +552,11 @@ Field | Optionality | Prefetch Token | Type | Description
 {:.no_toc}
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 9: Level 2 Digoxin + Cyclosporine Cards </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 11: Level 2 Digoxin + Cyclosporine Cards </strong></figcaption>
   <a href = "assets/images/Level_2_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_2_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_2_D_C_Cards.svg" /></a>
 </figure>
 
 # <span style="color:silver"> 9.0.0 </span> Warfarin + NSAIDs and Digoxin + Cyclosporine CDS Artifacts (structured)
 
-The following artifacts formalize the description of the logic and behavior defined by this recommendation.
+The structured artifacts following the aforementioned logic and behavior are available for the Level 1 Implementation under [Artifacts](artifacts.html).
 
-| Resource | Type | Description |
-| --- | --- | --- |
-| [Common PDDI CDS Logic](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | CQL Library that provides common logic for the recommendations |
-| [Common PDDI CDS Logic](documentation.html) | CQL Source | For reference, the complete CQL source for the common logic. |
-| [Warfarin NSAIDs Recommendation Workflow](documentation.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
-| [Warfarin NSAIDs Recommendation](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Warfarin NSAIDs recommendation |
-| [Warfarin NSAIDs Recommendation](documentation.html) | CQL Source | For reference, the complete CQL source for Warfarin NSAIDs recommendation |
-| [Digoxin Cyclosporine Recommendation Workflow](documentation.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Digoxin Cyclosporine Recommendation |
-| [Digoxin Cyclosporine Recommendation](documentation.html) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Digoxin Cyclosporine recommendation |
-| [Digoxin Cyclosporine Recommendation](documentation.html) | CQL Source | For reference, the complete CQL source for Digoxin Cyclosporine recommendation |

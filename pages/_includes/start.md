@@ -304,7 +304,7 @@ The DynamicValue enables customization of the statically defined resources. Sinc
 {:.no_toc}
 
 
-The [FHIR resource workflow](https://www.hl7.org/fhir/workflow.html) categorizes the CarePlan and RequestGroup resources as requests, thereby expressing the intention for something to occur. The CDS Service creates a CarePlan that references a RequestGroup for each CDS Hook response Card. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The CarePlan references four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides the suggestions and actions in the response card. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks Card response. 
+The [FHIR resource workflow](https://www.hl7.org/fhir/workflow.html) categorizes the CarePlan and RequestGroup resources as requests, thereby expressing the intention for something to occur. The CDS Service creates a CarePlan that references a RequestGroup for each CDS Hook response Card, and a single DetectedIssue resource. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The CarePlan references four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides the suggestions and actions in the response card. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks Card response along with the DetectedIssue resource. 
 
 ### <span style="color:silver"> 4.3.3 </span> DetectedIssue 
 

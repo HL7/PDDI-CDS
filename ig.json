@@ -59,6 +59,10 @@
   "version": "3.4.0",
   "license": "",
   "resources": {
+    "CodeSystem/codesystem-PDDICDS-indicator": {
+      "base" : "CodeSystem-codesystem-PDDICDS-indicator.html",
+      "source" : "codesystem-PDDICDS-indicator.xml"
+    },
     "ValueSet/valueset-AAS": {
       "base": "ValueSet-valueset-AAS.html",
       "source": "valueset-AAS.xml"
@@ -82,10 +86,6 @@
     "ValueSet/valueset-LOOPDIURETIC": {
       "base": "ValueSet-valueset-LOOPDIURETIC.html",
       "source": "valueset-LOOPDIURETIC.xml"
-    },
-    "CodeSystem/codesystem-PDDI-CDS-indicator": {
-      "base": "CodeSystem-codesystem-PDDI-CDS-indicator.html",
-      "source": "codesystem-PDDI-CDS-indicator.xml"
     },
     "ValueSet/valueset-aldosterone": {
       "base": "ValueSet-valueset-aldosterone.html",
@@ -331,6 +331,10 @@
       "base": "ValueSet-valueset-paramethasone.html",
       "source": "valueset-paramethasone.xml"
     },
+    "ValueSet/valueset-PDDICDS-indicator": {
+      "base": "ValueSet-valueset-PDDICDS-indicator.html",
+      "source": "valueset-PDDICDS-indicator.xml"
+    },
     "ValueSet/valueset-piroxicam": {
       "base": "ValueSet-valueset-piroxicam.html",
       "source": "valueset-piroxicam.xml"
@@ -565,8 +569,6 @@
     ],
     "special-urls": [
       "urn:oid:2.16.840.1.113883.6.238"
-    ],
-    "codesystems": [
     ],
     "source": "ig.xml",
     "structuremaps": [

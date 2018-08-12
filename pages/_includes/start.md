@@ -19,7 +19,7 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 * PDDI CDS knowledge artifacts. It is RECOMMENDED that the knowledge artifacts adhere to the [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/hcls-drug-drug-interaction/index.html) proposed by the [W3C Semantic Web in Health Care and Life Sciences Community Group](https://www.w3.org/community/hclscg/)
 
-* A CDS rule execution engine. Its RECOMMENDED that it be able to execute CDS rules written in [Clinical Quality Language (CQL)](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR `Library`](http://hl7.org/fhir/stu3/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
+* A CDS rule execution engine. It is RECOMMENDED that it be able to execute CDS rules written in [Clinical Quality Language (CQL)](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://hl7.org/fhir/stu3/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
 * FHIR server(s) for terminology and patient data
 
@@ -35,12 +35,12 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
 			
-* The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
+> *Note:* The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
 
 
 ## <span style="color:silver"> 2.2.0 </span> Related Projects 
 
-The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring) is a component of the CDS Connect project funded by the [Agency for Healthcare Research and Quality](https://www.ahrq.gov/). The Documentation section of this implementation guide describes CDS artifact decision points at a semi-structured level. Although currently not tested, it should be possible to use the authoring tool to develop CQL from semi-structured descriptions.
+The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring) is a component of the CDS Connect project funded by the Agency for Healthcare Research and Quality [(AHRQ)](https://www.ahrq.gov/). The Documentation section of this implementation guide describes the PDDI CDS artifact knowledge at a narrative and semi-structured level. Although currently not tested, it should be possible to use the authoring tool to develop CQL from similar semi-structured descriptions.
 
 
 ## <span style="color:silver"> 2.3.0 </span> CDS Function
@@ -51,12 +51,12 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 ### <span style="color:silver"> 2.4.1 </span>Clinical
 {:.no_toc}
 
-PDDIs are, to an extent, theoretical due to knowledge gaps in the literature. Thus, alert specificity and individualized information is limited by available knowledge. The goal of contextualizing or individualizing these alerts is not only to reduce the number of alerts, by increasing specificity, but to improve the clinical relevance of the information that is presented. In this regard, PDDI CDS functions as an educational tool to raise awareness of known factors that may mitigate or increase risk associated with PDDIs. Gaps in the literature relating to contextual factors is a known issue of the domain and is a key limitation to this and other PDDI CDS systems. Moreover, with this limitation, unknown medication adherence, and data quality/availability – it is ultimately the clinician's discretion whether to proceed with interacting orders. 
+PDDIs are, to an extent, theoretical due to knowledge gaps in the literature. Thus, alert specificity and individualized information is limited by available knowledge. The goal of contextualizing or individualizing these alerts is not only to reduce the number of alerts, by increasing specificity, but to improve the clinical relevance of the information that is presented. In this respect, PDDI CDS may function as an educational tool to raise awareness of known factors that may mitigate or increase risk associated with PDDIs. Gaps in the literature relating to contextual factors is a known issue of the domain and is a key limitation to this and other PDDI CDS systems. Moreover, with this limitation, unknown medication adherence, and data quality/availability – it is ultimately the clinician's decision whether to proceed with interacting orders. 
 
 ### <span style="color:silver"> 2.4.2 </span> Technical 
 {:.no_toc}
 
-The goal of CDS is to bring clinically relevant information to the clinician at the right time. Therefore, CDS performance is required to meet clinician expectations. Delays in presenting information may lead to unsuccessful CDS adoption and clinician frustration. While the implementor remains in control of fulfilling prefetch queries, this is a key component of the CDS Hooks standard that dictates performance of the CDS system. Depending on the patient and service, prefetch data may encompass a variety resources captured during various time periods, so it is crucial that implementors and clinicians refine prefetch template parameters to obtain only data that is clinically relevant. The EHR may combine several methods to satisfy prefetch templates. For more information see the Documentation section, [CDS Hooks prefetch element](documentation.html).
+The goal of CDS is to bring clinically relevant information to the clinician at the right time. Therefore, CDS performance is required to meet clinician expectations. Delays in presenting information may lead to unsuccessful CDS adoption and clinician frustration. While the implementor remains in control of fulfilling prefetch queries, this is a key component of the CDS Hooks standard that supports the CDS system performance. Depending on the patient and service, prefetch data may encompass a variety resources captured during various time periods, so it is crucial that implementors and clinicians refine prefetch template parameters to obtain only data that is clinically relevant. The EHR may combine several methods to satisfy prefetch templates. For more information see the Documentation section, [Prefetch Role](documentation.html).
 
 Each implementation MAY employ a slightly different approach to ensure successful integration of the CDS system. Here are several general aspects to assess:
 
@@ -85,11 +85,11 @@ Two exemplar PDDI CDS knowledge artifacts are used in this implementation guide:
 
 ## <span style="color:silver"> 2.6.0 </span> Level 1 versus Level 2 Implementations
 
-The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets these PDDI CDS artifact implementations apart from most other PDDI CDS systems. PDDI information is split and moved up further in the order entry workflow. This provides clinicians with actionable information in the middle of their decision making process – before completing the order. By splitting contextual factors into `medication-select` (medication resources) and `medication-prescribe` (other resources specific to PDDI), this MAY limit the amount of information that needs to be shown to cover the minimum information model elements, and it MAY limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician started an NSAID order for a patient that was taking warfarin and decided to discontinue the order based on the presented cards, the clinician would only need to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. Additionally, by creating a DetectedIssue resource that contains clinician responses, this gives control to the clinician on what if any more patient-specific information is presented, and this stores crucial information on clinician action for monitoring PDDIs and improving actionable suggestions. For example, if the clinician decided to continue with the NSAID prescription but added a proton pump inhibitor (risk mitigating action), the Medication Prescribe Service would be adjusted the indicator from "hard-stop" to "warning;" whereby, further increasing alert specificity.    
+The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets the Level 2 Implementation apart from most other PDDI CDS systems. PDDI information is split and moved up further in the order entry workflow. This provides clinicians with actionable information in the middle of their decision making process – before completing the order. By splitting contextual factors into `medication-select` (medication resources) and `medication-prescribe` (other resources specific to PDDI), this MAY limit the amount of information that needs to be shown to cover the minimum information model elements, and it MAY limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. Additionally, by creating a DetectedIssue resource that contains clinician responses, this gives control to the clinician on what, if any, additional patient-specific information is presented. Moreover, the DetectedIssue resource stores crucial information on clinician action for monitoring PDDIs and improving actionable suggestions. For example, if the clinician decides to continue with the NSAID prescription but added a proton pump inhibitor (risk mitigating action), the Medication Prescribe Service would adjust the indicator from "hard-stop" to "warning;" whereby, further increasing alert specificity.    
  
 
 
-#### Table 1: Specification and Feature Comparision between Level 1 and Level Implementations
+#### Table 1: Specification and Feature Comparision between Level 1 and 2 Implementations
 {:.no_toc}
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Base Specifications | Level-1 | Level-2 
@@ -118,10 +118,10 @@ This section provides an overview of the processes and components of the PDDI CD
 ## <span style="color:silver"> 3.1.0 </span> CDS Discovery
 {:.no_toc}
 
-Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Discovery (Figure 1). CDS Discovery is to identify CDS Services and obtain associated prefetch templates. A prefetch template is a dictionary of read and search requests for needed resources of a particular service. The PDDI CDS Service MAY provide a prefetch template for each service, and the EHR SHOULD populate prefetch templates with relevant patient data for the anticipated CDS Hook request.
+Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Discovery (Figure 1). CDS Discovery is to identify CDS services and obtain associated prefetch templates. A prefetch template is a dictionary of read and search requests for needed resources of a particular service. The PDDI CDS service MAY provide a prefetch template for each service, and the EHR SHOULD populate prefetch templates with relevant patient data for the anticipated CDS Hook request.
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: CDS Service Discovery </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 1: CDS Service Discovery </strong></figcaption>
   <img src="assets/images/Discover_CDS_Service.png" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.png" />
 </figure>
 
@@ -160,28 +160,28 @@ Specific CDS Hooks and FHIR standards modifications:
 1. CDS Hooks Card extension for DetectedIssue resource
 2. DetectedIssue resource extension for `potentiation` element 
 
-## <span style="color:silver"> 4.2.0 </span> Summary of Operations
+## <span style="color:silver"> 4.1.0 </span> Summary of Operations
 {:.no_toc}
 
-The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `medication-prescribe`) and ends with the user's action in response to the Card response suggestion(s) (Figure 1). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
+The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `medication-prescribe`) and ends with the user's action in response to the Card response suggestion(s) (Figure 2). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Level 1 – Medication Prescribe Service Summary </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 2: Level 1 – Medication Prescribe Service Summary </strong></figcaption>
   <img src="assets/images/Basic_Medication_prescribe_service.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Medication_prescribe_service.png" />
 </figure>
 
 
 
-## <span style="color:silver"> 4.3.0 </span> CDS Hooks
+## <span style="color:silver"> 4.2.0 </span> CDS Hooks
 {:.no_toc}
 
-The PDDI CDS artifacts use the HL7 [CDS Hooks specification](http://cds-hooks.org/specification/1.0/).  The CDS Hooks standard defines the data structure to facilitate communication between the electronic health record and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. CDS Hooks instances include CDS Discovery, EHR requests and CDS service response. The `context` and `prefetch` are two key elements of the CDS Hook request. The `context` element contains data that is task and Hook-specific. The `prefetch` element contains patient specific information that is relevant to the `context` data and the invoked CDS service. The CDS Hooks response is a set of Cards. The Cards contain general information, suggested actions, and display indicators in a structured format for the EHR to process and display. The CDS Discovery of the CDS Hooks specification delineates information that the CDS service is to provide to the EHR.
+The PDDI CDS artifacts use the HL7 [CDS Hooks specification](http://cds-hooks.org/specification/1.0/).  The CDS Hooks standard defines the data structure to facilitate communication between the electronic health record and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. CDS Hooks instances include CDS Discovery, EHR requests and CDS service response. The `context` and `prefetch` are two key elements of the CDS Hook request. The `context` element contains data that is task and hook-specific. The `prefetch` element contains patient-specific information that is relevant to the `context` data and the invoked CDS service. The CDS Hooks response is a set of Cards. The Cards contain general information, suggested actions, and display indicators in a structured format for the EHR to process and display. The CDS Discovery of the CDS Hooks specification delineates information that the CDS service is to provide to the EHR.
 
-> *Note:* The CDS Service is not necessarily CDS Hooks dependent. For this use case, CDS Hooks standard provides simplicity and specific orientation for integration into the CPOE workflow.
+> *Note:* A CDS service is not necessarily CDS Hooks dependent. For this use case, CDS Hooks provide simplicity and specific orientation for CPOE workflow integration.
 
 
 
-### <span style="color:silver"> 4.3.1 </span> CDS Hooks Request 
+### <span style="color:silver"> 4.2.1 </span> CDS Hooks Request 
 {:.no_toc}
 
 The EHR MUST call the PDDI CDS service by sending an HTTP `POST` containing `JSON` to the service endpoint (e.g.,`http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds`). The JSON (CDS Hooks request) MUST contain specified information for the hook that was triggered, FHIR server, user, context, and prefetch.
@@ -189,7 +189,7 @@ The EHR MUST call the PDDI CDS service by sending an HTTP `POST` containing `JSO
 ##### Context
 {:.no_toc}
 
-The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `medication-prescribe 1.0` specifies the `context` MUST include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process. 
+The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `medication-prescribe` hook specifies the `context` MUST include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process. 
 
 **`medication-prescribe` 1.0.**
 
@@ -203,23 +203,23 @@ Field | Optionality | Prefetch Token | Type | Description
 ##### Prefetch
 {:.no_toc}
 
-The `prefetch` element contains patient data that is provided by the EHR prior to the hook trigger by using the prefetch template. The prefetch query SHOULD build on the context `patientID` to obtain data that is for the current patient. The CDS service SHOULD then perform a pair-wise comparision of the `context` medication to the patient's current medications in the `prefetch` element. If available the `prefetch` element MUST also contain patient data, other than medications, to individualized the CDS logic and response. 
+The `prefetch` element contains patient data that is provided by the EHR prior to the hook trigger by using the prefetch template. The prefetch query SHOULD build on the context `patientID` to obtain data that is for the current patient. The CDS service SHOULD then perform a pair-wise comparision of the `context` medication to the patient's current medications in the `prefetch` element. If available, the `prefetch` element MUST also contain patient data, other than medications, to individualized the CDS logic and response. 
 
-> *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server query. All data required by the CDS artifacts is delineated in the prefetch templates. 
+> *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server request.
 
 ##### Bundle 
 {:.no_toc}
 
-A Bundle is a FHIR resource that groups resources into a single instance, which is ideal for messaging with CDS Hooks, storing the collection of resources obtained on CDS discovery, and providing flexibility in using the collections as a persistent instance. Implementaters of PDDI CDS MUST use the bundle resource for certain `context` elements and all `prefetch` resources. For each prefetch template query, a Bundle MUST be created to group the resources. A prefetch element MAY contain several Bundle resources with several other resources grouped within.
+A Bundle is a FHIR resource that groups resources into a single instance, which is ideal for messaging with CDS Hooks, storing a collection of resources obtained on CDS Discovery, and providing flexibility in using the collections as a persistent instance. Implementaters of PDDI CDS MUST use the bundle resource for certain `context` elements and all `prefetch` resources. For each prefetch template query, a Bundle MUST be created to group the resources. A prefetch element MAY contain several Bundle resources with several other resources grouped within.
 
-## <span style="color:silver"> 4.4.0 </span> Clinical Reasoning
+## <span style="color:silver"> 4.3.0 </span> Clinical Reasoning
 {:.no_toc}
 
 This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition, CarePlan, RequestGroup,` and CQL libraries. 
 
 > *Note:* While resources and CQL are specified for this implementation guide, these are not required for PDDI CDS functionality. The PlanDefinition, however, is RECOMMENDED at minimum to create sharable PDDI knowledge artifacts.
 
-### <span style="color:silver"> 4.4.1 </span> PlanDefinition
+### <span style="color:silver"> 4.3.1 </span> PlanDefinition
 {:.no_toc}
 
 In the [FHIR resource workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the PlanDefinition that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.` 
@@ -300,13 +300,13 @@ The DynamicValue enables customization of the statically defined resources. Sinc
                         "expression": "Get Card 2 Label"
 ~~~
 
-### <span style="color:silver"> 4.4.2 </span> CarePlan and RequestGroup 
+### <span style="color:silver"> 4.3.2 </span> CarePlan and RequestGroup 
 {:.no_toc}
 
 
 The [FHIR resource workflow](https://www.hl7.org/fhir/workflow.html) categorizes the CarePlan and RequestGroup resources as requests, thereby expressing the intention for something to occur. The CDS Service creates a CarePlan that references a RequestGroup for each CDS Hook response Card. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The CarePlan references four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides the suggestions and actions in the response card. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks Card response. 
 
-### <span style="color:silver"> 4.4.3 </span> DetectedIssue 
+### <span style="color:silver"> 4.3.3 </span> DetectedIssue 
 
 The DetectedIssue resource is needed to document clinician actions associated with identified PDDIs and increasing the specificity of alerts; thus, it is created by the Medication Prescribe Service in the Level 1 Implementation and the Medication Select Service in the Level 2 Implementation. Level 1 and Level 2 Implementations MUST have EHR functionality to receive, process, modify, and store a DetectedIssue resource created by a PDDI CDS service. Use of the DetectedIssue resource with PDDI CDS requires an extension for the `potentiating` element. The `potentiating` element is analogous but antagonistic to the `mitigating` element that exists. These elements refer to relevant actions that have occurred (e.g.,  initiating another medication, substituting a medication order, or discontinuing the current order). For example, substituting naproxen for acetaminophen when a Warfarin-NSAID interaction is detected would be documented as a mitigating action. Conversely, if the same patient was currently taking prednisone, it would be documented as a potentiating action.  
 
@@ -326,13 +326,13 @@ snipped for brevity
 ~~~
 
 
-## <span style="color:silver"> 4.5.0 </span> CQL Library
+## <span style="color:silver"> 4.4.0 </span> CQL Library
 {:.no_toc}
 
 
 
 
-### <span style="color:silver"> 4.5.1 </span> PDDI CDS CQL Library
+### <span style="color:silver"> 4.4.1 </span> PDDI CDS CQL Library
 {:.no_toc}
 
 This library contains the logic used by the PlanDefinition to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
@@ -355,7 +355,7 @@ Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality
 
 All artifact logics that clinical domain experts can express using CQL are wrapped in a container called a library. There is a set of declarations documented in [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
 
-### <span style="color:silver"> 4.5.2 </span> Declarations
+### <span style="color:silver"> 4.4.2 </span> Declarations
 {:.no_toc}
 
 #### Library
@@ -465,7 +465,7 @@ define "GI Bleeds Condition":
 ~~~
 This example defines the InpatientEncounters expression as Encounter events whose code is in the "Inpatient" valueset, whose length is less than or equal to 120 days, and whose period ended (i.e. patient was discharged) during MeasurementPeriod.
 
-### <span style="color:silver"> 4.5.3 </span> Connection of CQL to PlanDefinition
+### <span style="color:silver"> 4.4.3 </span> Connection of CQL to PlanDefinition
 {:.no_toc}
 
 
@@ -564,7 +564,7 @@ define "Get Base Indicator":
 ~~~
 
 
-## <span style="color:silver"> 4.6.0 </span> FHIR Server Request
+## <span style="color:silver"> 4.5.0 </span> FHIR Server Request
 {:.no_toc}
 
 A FHIR server request by the CDS service after receiving a CDS Hooks request (e.g., `medication-prescribe`) is necessary in the event the `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. In the event the EHR does not provide prefetch data, the PDDI CDS service MUST request the data from the FHIR server via network call. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 3. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
@@ -576,7 +576,7 @@ A FHIR server request by the CDS service after receiving a CDS Hooks request (e.
 
 
 
-## <span style="color:silver"> 4.7.0 </span> CDS Hooks Response and Card Display
+## <span style="color:silver"> 4.6.0 </span> CDS Hooks Response and Card Display
 {:.no_toc}
 
 The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "hard-stop" could be a modal alert).

@@ -16,9 +16,9 @@
 		</package>
         <resource>
             <reference>
-                <reference value="CodeSystem/codesystem-PDDI-CDS-indicator"/>
+                <reference value="CodeSystem/codesystem-PDDICDS-indicator"/>
             </reference>
-            <name value="codesystem-PDDI-CDS-indicator"/>
+            <name value="codesystem-PDDICDS-indicator"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -490,6 +490,13 @@
 			<name value="valueset-paramethasone" />
 			<exampleBoolean value="false" />
 		</resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-PDDICDS-indicator" />
+            </reference>
+            <name value="valueset-PDDICDS-indicator" />
+            <exampleBoolean value="false" />
+        </resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/valueset-piroxicam" />

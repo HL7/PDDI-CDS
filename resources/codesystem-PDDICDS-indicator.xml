@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="PDDI-CDS-indicator"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/CodeSystem/PDDI-CDS-indicator"/>
-    <name value="PDDI-CDS Indicator"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/CodeSystem/codesystem-PDDICDS-indicator"/>
+    <id value="codesystem-PDDICDS-indicator"/>
+    <name value="codesystem-PDDICDS-indicator"/>
     <status value="draft"/>
     <experimental value="false"/>
     <description value="Indicates the importance RequestGroup action and relates to decision tree recommendations for PDDIs"/>

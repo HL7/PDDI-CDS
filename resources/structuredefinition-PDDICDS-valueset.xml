@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-valueset-element"/>
-    <id value="structuredefinition-valueset-element"/>
-    <version value="1.0.0"/>
-    <name value="structuredefinition-valueset-element"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset"/>
+    <id value="structuredefinition-PDDICDS-valueset"/>
+    <name value="structuredefinition-PDDICDS-valueset"/>
     <title value="Guidance Element Extension"/>
     <status value="draft"/>
-    <date value="2018-07-30"/>
+    <date value="2018-08-12"/>
     <description value="Describes the inclusion criteria for Element ValueSets."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-    </jurisdiction>
     <kind value="complex-type"/>
     <abstract value="false"/>
-    <contextType value="resource"/>
-    <context value="ValueSet"/>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
     <snapshot>
         <element id="Extension:inclusion">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Inclusion Extension"/>
+            <short value="PDDI-CDS Guidance Inclusion Extension"/>
             <definition value="Describes the inclusion criteria for the ValueSet."/>
             <min value="0"/>
             <max value="1"/>
@@ -111,7 +101,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-inclusiont"/>
+            <fixedUri value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset-inclusion"/>
             <mapping>
                 <identity value="rim"/>
                 <map value="N/A"/>
@@ -140,7 +130,7 @@
     <differential>
         <element id="Extension:inclusion">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Inclusion Extension"/>
+            <short value="PDDI-CDS Guidance Inclusion Extension"/>
             <definition value="Describes the inclusion criteria for the ValueSet."/>
             <min value="0"/>
             <max value="1"/>
@@ -148,7 +138,7 @@
         </element>
         <element id="Extension:inclusion.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-inclusion"/>
+            <fixedUri value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset-inclusion"/>
         </element>
         <element id="Extension:inclusion.valueString">
             <path value="Extension.valueString"/>

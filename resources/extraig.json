@@ -24,6 +24,30 @@
 },
 
 
+"StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator" : {
+"base" : "StructureDefinition-structuredefinition-PDDICDS-requestgroup-action-indicator.html",
+"source" : "structuredefinition-PDDICDS-requestgroup-action-indicator.xml"
+},
+"StructureDefinition/structuredefinition-PDDICDS-valueset" : {
+"base" : "StructureDefinition-structuredefinition-PDDICDS-valueset.html",
+"source" : "structuredefinition-PDDICDS-valueset.xml"
+},
+
+<resource>
+<reference>
+<reference value="StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
+</reference>
+<name value="structuredefinition-PDDICDS-requestgroup-action-indicator"/>
+<exampleBoolean value="false"/>
+</resource>
+<resource>
+<reference>
+<reference value="StructureDefinition/structuredefinition-PDDICDS-valueset"/>
+</reference>
+<name value="structuredefinition-PDDICDS-valueset"/>
+<exampleBoolean value="false"/>
+</resource>
+
 <resource>
 <reference>
 <reference value="ProcedureRequest/procedurerequest-digoxin-cyclosporine-calcium" />

@@ -122,7 +122,7 @@ Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Di
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: CDS Service Discovery </strong></figcaption>
-  <img src="assets/images/Discover_CDS_Service.png" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.png" />
+  <img src="assets/images/Discover_CDS_Service.svg" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.svg" />
 </figure>
 
 **Example 1: EHR request for CDS Discovery**
@@ -167,7 +167,7 @@ The process for a unique instance of PDDI CDS begins with the user triggering a 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: Level 1 – Medication Prescribe Service Summary </strong></figcaption>
-  <img src="assets/images/Basic_Medication_prescribe_service.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Medication_prescribe_service.png" />
+  <img src="assets/images/Basic_Medication_prescribe_service.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Medication_prescribe_service.svg" />
 </figure>
 
 
@@ -553,7 +553,7 @@ A FHIR server request by the CDS service after receiving a CDS Hooks request (e.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
-  <img src="assets/images/Basic_Parse_pre-process.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Parse_pre-process.png" />
+  <img src="assets/images/Basic_Parse_pre-process.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Parse_pre-process.svg" />
 </figure>
 
 
@@ -634,7 +634,7 @@ Different contextual factors are available and needed at different times during 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 4: CPOE Workflow Example </strong></figcaption>
-  <img src="assets/images/CPOE_workflow.png" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow.png" />
+  <img src="assets/images/CPOE_workflow.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow.svg" />
 </figure>
 
 ## <span style="color:silver"> 5.2.0 </span> Level 2 – Summary of Operations
@@ -643,7 +643,7 @@ Coordinating the Medication Select Service with the Medication Prescribe Service
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 5: Advanced – PDDI CDS Service Summary </strong></figcaption>
-  <img src="assets/images/Advanced_Summary.png" class="figure-img img-responsive img-rounded center-block" alt="Advanced_Summary.png" />
+  <img src="assets/images/Advanced_Summary.svg" class="figure-img img-responsive img-rounded center-block" alt="Advanced_Summary.svg" />
 </figure>
 
 ## <span style="color:silver"> 5.3.0 </span> CDS Hooks
@@ -741,7 +741,7 @@ The parse and pre-process event for `medication-select` requests in the Level 2 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 6: Level 2 – Parse and Pre-process for Medication Prescribe Service </strong></figcaption>
-  <img src="assets/images/Parse_pre-process_prescribe.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.png" />
+  <img src="assets/images/Parse_pre-process_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.svg" />
 </figure>
 
 

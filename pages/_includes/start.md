@@ -352,7 +352,7 @@ All artifact logics that clinical domain experts can express using CQL are wrapp
 #### Library
 {:.no_toc}
 
-The library declaration defines the library name used as an identifier for other CQL libraries to refererence. The version is an optional declaration.
+The library declaration defines the library name used as an identifier for other CQL libraries to reference. The version is an optional declaration.
 ~~~
 library Warfarin_NSAIDs_CDS version '1.0'
 ~~~
@@ -365,12 +365,12 @@ Data models define the structures that can be used within retrieve expressions i
 using FHIR version '3.0.0'
 ~~~
 
-For the PDDI CDS artifacts, `FHIR` model, version `3.0.0` is used as the main data model within the library. The data model supports all [FHIR STU3](https://www.hl7.org/fhir/index.html) resources including Medication Request, Medication Statement, Medication Administration, Medication Dispense, Observation, Condition, etc.
+For the PDDI CDS artifacts, `FHIR` model, version `3.0.0` is used as the primary data model within the library. The data model supports all [FHIR STU3](https://www.hl7.org/fhir/index.html) resources including Medication Request, Medication Statement, Medication Administration, Medication Dispense, Observation, and Condition.
 
 #### Libraries
 {:.no_toc}
 
-Statements defined in specific libraries can be reused in other library as an reference by an locally assigned name.
+Statements defined in specific libraries can be reused in other libraries as a reference by a locally assigned name.
 ~~~
 include PDDICDS_Common version '1.0' called Common
 ~~~
@@ -491,7 +491,7 @@ In Library resource, the `relatedArtifact` element defines the dependent relatio
 
 When the Clinical Reasoning module processes the data, the library resource is loaded from local FHIR server and then the logic content in base64 format is decoded. If the content is in `CQL` format, it is tranlated into [ELM XML]() format which is a machine-readable canonical representation.
 
-For the best perfomance, the CQL logic in CQL format should be tranlated into ELM XML format before stored in the Library resource and then the Clinical Reasoning module can execute the CQL logic without performing the tranlation.
+For the best performance, the CQL logic in CQL format should be translated into ELM XML format before stored in the Library resource and then the Clinical Reasoning module can execute the CQL logic without performing the translation.
 
 #### Plan Definition
 {:.no_toc}
@@ -507,7 +507,7 @@ In Plan Definition resource, the `library` element defines the reference to the 
 
 This library contains the logic used by the `PlanDefinition` to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
 
-As described in the `condition` element of the section 4.4.1 Plan Definition, the Clinical Reasoning module will load the statement in `condition` element defined in the CQL library and then that statement will be evaluated by the CQL engine. For example, the `Inclusion Criteria` statement in the library below will be loaded and evaluated to determine whether or not the condition is satisfied.
+As described in the `condition` element of the section 4.4.1 Plan Definition, the Clinical Reasoning module will load the statement in `condition` element defined in the CQL library, and then that statement will be evaluated by the CQL engine. For example, the `Inclusion Criteria` statement in the library below will be loaded and evaluated to determine whether or not the condition is satisfied.
 ~~~
 define "Inclusion Criteria":
   "Has Warfarin"
@@ -528,7 +528,7 @@ define "NSAID Prescription":
     where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
 ~~~
 
-Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Detail` statement below specified in `dynamicValue` element will be evaluated and the dynamic content containing medication names will be returned.
+Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Detail` statement below specified in `dynamicValue` element will be evaluated, and the dynamic content containing medication names will be returned.
 ~~~
 define "Get Base Summary":
   'Increased risk of bleeding.'

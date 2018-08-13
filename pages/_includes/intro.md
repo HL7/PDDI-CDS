@@ -12,7 +12,7 @@
 
 ## <span style="color:silver"> 1.1.0 </span> Introduction
 
-This implementation guide is targeted at stakeholders who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record. The approach is service-oriented and uses Web standards, a PDDI minimum information model, and emerging Health Information Technology (HIT) standards including [CDS Hooks](http://cds-hooks.org/), Fast Health Interoperability Resources ([FHIR](http://www.fhir.org/)), and Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language).
+This implementation guide is targeted at stakeholders who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record. The approach is service-oriented and uses Web standards, a PDDI minimum information model, and emerging Health Information Technology (HIT) standards including [CDS Hooks](http://cds-hooks.org/), Fast Health Interoperability Resources [(FHIR)](http://www.fhir.org/), and Clinical Quality Language [(CQL)](https://ecqi.healthit.gov/cql-clinical-quality-language).
 
 ## <span style="color:silver"> 1.2.0 </span> Collaborators and Funding
 

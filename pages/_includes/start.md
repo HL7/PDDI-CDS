@@ -343,9 +343,9 @@ snipped for brevity
 * highlight specific instances that are unique to this implementation 
 -->
 
-[CQL](https://ecqi.healthit.gov/cql-clinical-quality-language) was developed by HL7 for clinical experts to express knowledge in an author-friendly and human-readable language.
+[CQL](https://ecqi.healthit.gov/cql-clinical-quality-language) was developed by HL7 for clinical experts to express knowledge in an author-friendly and human-readable but computable language.
 
-All artifact logics that clinical domain experts can express using CQL are wrapped in a container called a library. There is a set of declarations documented in [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
+All artifact logic using CQL are wrapped in a container called a library. There is a set of declarations documented in the [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
 
 ### <span style="color:silver"> 4.4.1 </span> Declarations
 {:.no_toc}
@@ -366,7 +366,7 @@ Data models define the structures that can be used within retrieve expressions i
 using FHIR version '3.0.0'
 ~~~
 
-For the PDDI CDS artifacts, `FHIR` model, version `3.0.0` is used as the primary data model within the library. The data model supports all [FHIR STU3](https://www.hl7.org/fhir/index.html) resources including Medication Request, Medication Statement, Medication Administration, Medication Dispense, Observation, and Condition.
+For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary data model within the library. The data model supports all [FHIR STU3](https://www.hl7.org/fhir/index.html) resources including MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense, Observation, and Condition.
 
 #### Libraries
 {:.no_toc}
@@ -386,12 +386,12 @@ define "NSAID Prescription":
 #### Terminology
 {:.no_toc}
 
-A valueset declaration specifies a local identifier that represents a valueset and can be used anywhere within the library that a valueset is expected.
+A value set declaration specifies a local identifier that represents a value set and can be used anywhere within the library.
 ~~~
 valueset "Warfarins": 'http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin'
 ~~~
 
-This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the valueset, an uniform resource identifier (URI) in this case is `http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin`. The external identifier should be an ID or an uniform resource identifier (URI).
+This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the value set, an uniform resource identifier (URI) in this case is `http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin`. The external identifier should be an ID or a uniform resource identifier (URI).
 
 This valueset definition can then be used within the library wherever a valueset can be used:
 ~~~
@@ -399,19 +399,19 @@ define "Warfarin Rx":
   [MedicationRequest: "Warfarins"] MR
     where MR.authoredOn.value in Interval[Today() - 100 days, null]
 ~~~
-The above statement collects all medication requests having code in `Warfarins` value set and the date when the clinician authored on within 100-day look back period.
+The above statement collects all MedicationRequest resources with a code in the `Warfarins` value set and the authored date within 100-day look-back period.
 
-For the PDDI-CDS value sets, refer to [Terminology](terminology.html) page for the list of value set used in this implementation guide.
+For the PDDI CDS value sets, refer to [Terminology](terminology.html) page for the list of value sets used by this implementation.
 
 #### Parameters
 {:.no_toc}
 
-The parameters defined in a library may be referenced by name in any expression within the library. 
+The parameters defined in a library MAY be referenced by name in any expression within the library. 
 ~~~
 parameter ContextPrescriptions List<MedicationRequest>
 ~~~
 
-For PDDI-CDS, the `context` element of CDS Hook request contains the list of Medication Request specified in `medications` element as described in the example below. Those data will be parsed and assigned to the `ContextPrescriptions` parameter defined in the library.
+The `context` element of CDS Hook request contains the MedicationRequest resources specified in `medications` element as described in the example below. The data is parsed and assigned to the `ContextPrescriptions` parameter defined in the library.
 ~~~
 "context": {
   ...
@@ -444,7 +444,7 @@ The context declaration defines the overall context for statements within the li
 context Patient
 ~~~
 
-PDDI-CDS uses the `context Patient` declaration to restrict the information that will be returned from a retrieve to a single patient.
+The `context Patient` declaration to restrict the information that will be returned from a retrieve of a single patient.
 
 #### Statements
 {:.no_toc}
@@ -457,7 +457,7 @@ define "GI Bleeds Condition":
       sort by assertedDate.value
   )
 ~~~
-This example defines the `GI Bleeds Condition` statement which get the most recent condition whose code is in the `History of GI Bleeds` valueset.
+This example defines the `GI Bleeds Condition` statement, which retrieves the most recent condition with a code in the `History of GI Bleeds` value set.
 
 ### <span style="color:silver"> 4.4.2 </span> Connection of CQL to PlanDefinition
 {:.no_toc}
@@ -465,9 +465,9 @@ This example defines the `GI Bleeds Condition` statement which get the most rece
 #### Library
 {:.no_toc}
 
-In PDDI CDS, the Library resource contains the CQL library under base64 format. As an example below, the CQL library is encoded to base64 format and stored by using the Library FHIR resource.
+The Library resource contains the CQL library in base64 format. As an example below, the CQL library is encoded to base64 format and stored by using the Library FHIR resource.
 
-In Library resource, the `relatedArtifact` element defines the dependent relationship between libraries. For example, `warfarin-nsaids-cds` library references to the `PDDICDS_Common` library and that relationship is well described in `relatedArtifact` element.
+In Library resource, the `relatedArtifact` element defines the dependent relationship between libraries. For example, `warfarin-nsaids-cds` library references the `PDDICDS_Common` library and that relationship is described in the `relatedArtifact` element.
 ~~~
 {
   "resource": {
@@ -492,14 +492,14 @@ In Library resource, the `relatedArtifact` element defines the dependent relatio
 }
 ~~~
 
-When the Clinical Reasoning module processes the data, the library resource is loaded from local FHIR server and then the logic content in base64 format is decoded. If the content is in `CQL` format, it is tranlated into [ELM XML]() format which is a machine-readable canonical representation.
+When the Clinical Reasoning module processes the data, the library resource is loaded from local FHIR server and then the logic content in base64 format is decoded. If the content is in CQL format, it is tranlated into ELM XML format which is a machine-readable canonical representation.
 
-For the best performance, the CQL logic in CQL format should be translated into ELM XML format before stored in the Library resource and then the Clinical Reasoning module can execute the CQL logic without performing the translation.
+For the best performance, the CQL logic should be translated into ELM XML format before being stored in the Library resource. This will enable the Clinical Reasoning module to execute the CQL logic without performing the translation.
 
-#### Plan Definition
+#### PlanDefinition
 {:.no_toc}
 
-In Plan Definition resource, the `library` element defines the reference to the logic used by the Plan Definition. An example for `warfarin-nsaids-cds` Plan Definition resource is the reference to `Library/warfarin-nsaids-cds` Library resource. 
+In PlanDefinition resource, the `library` element defines the reference to the logic used by the PlanDefinition. An example for `warfarin-nsaids-cds` PlanDefinition resource is the reference to `Library/warfarin-nsaids-cds` Library resource. 
 ~~~
 "library": [
   {
@@ -508,9 +508,9 @@ In Plan Definition resource, the `library` element defines the reference to the 
 ],
 ~~~
 
-This library contains the logic used by the `PlanDefinition` to establish the condition, as well as to dynamically construct the guidance so that it reflects the data for the current patient.
+This library contains the logic used by the PlanDefinition to establish the condition, and to dynamically construct the guidance so that it reflects the data for the current patient.
 
-As described in the `condition` element of the section 4.4.1 Plan Definition, the Clinical Reasoning module will load the statement in `condition` element defined in the CQL library, and then that statement will be evaluated by the CQL engine. For example, the `Inclusion Criteria` statement in the library below will be loaded and evaluated to determine whether or not the condition is satisfied.
+As described in the `condition` element of the PlanDefinition section, the Clinical Reasoning module will load the statement in the `condition` element defined in the CQL library. Then the statement will be evaluated by the CQL engine. For example, the `Inclusion Criteria` statement in the library below will be loaded and evaluated to determine whether or not the condition is satisfied.
 ~~~
 define "Inclusion Criteria":
   "Has Warfarin"

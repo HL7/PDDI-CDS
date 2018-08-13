@@ -23,7 +23,7 @@ Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The primary di
 ## <span style="color:silver"> 6.3.0 </span> Prefetch Role 
 {:.no_toc}
 
-For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing network calls by the CDS service to external resources such as a FHIR server. When a client program subscribes to PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As is described below, the prefetch requirements are different for `medication-select` and `medication-prescribe` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call. 
+For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing CDS service network calls to external resources such as a FHIR server. When a client program subscribes to the PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As described below, the prefetch requirements are different for `medication-select` and `medication-prescribe` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call. 
 
 # <span style="color:silver"> 7.0.0 </span> Warfarin + NSAIDs
 
@@ -164,7 +164,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 
 ## <span style="color:silver"> 7.2.0 </span> Level 1 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured) 
 
-Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response using the `medication-prescribe` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `medication-prescribe` request, and Card(s) response are discussed further in the sections below.
+Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response with the `medication-prescribe` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `medication-prescribe` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -203,7 +203,7 @@ The `medication-prescribe` request includes `context` and `prefetch` elements wi
 	* [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
 	* [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
 
-> *Note:* The use of multiple medication resources is to ensure a comprehensive capture of medications the patient may be taking. In some cases the implementing institution may only have access to MedicationRequest (prescription order), and in other cases they may have access to several resources for the same medication intervention (e.g., prescription order from medical office, prescription product picked up from pharmacy). The 100-day look-back period is a general starting point. Implementors SHOULD refine this based on the available data. For example, MedicationAdministration is typically documented in the inpatient setting when a nurse administers a medication. This data source may be a more reliable proxy for blood concentrations and could be used to refine CDS logic. 
+> *Note:* The use of multiple medication resources is to ensure a comprehensive capture of medications the patient may be taking. In some cases the implementing institution may only have access to MedicationRequest (prescription order), and in other cases they may have access to several resources for a specific medication intervention (e.g., prescription order from medical office, prescription product picked up from pharmacy). The 100-day look-back period is a general starting point. Implementors SHOULD refine this based on the available data. For example, MedicationAdministration is typically documented in the inpatient setting when a nurse administers a medication. This data source may be a more reliable proxy for blood concentrations and could be used to refine CDS logic. 
 
 * Age of patient on current date.
     * [Patient](https://www.hl7.org/fhir/patient.html)
@@ -222,7 +222,7 @@ The `medication-prescribe` request includes `context` and `prefetch` elements wi
 </figure>
 
 
-#### <span style="color:silver"> 7.3.1 </span> Card Actions
+### <span style="color:silver"> 7.3.1 </span> Card Actions
 {:.no_toc}
 
 The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting naproxen for acetaminophen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.  
@@ -274,16 +274,15 @@ Field | Optionality | Prefetch Token | Type | Description
 ##### `medication-prescribe 1.1`
 {:.no_toc}
 
-| Field       | Optionality        |  Prefetch Token     |Type  | Description |
-| :------------- |:-------------:|:-------: |:-----:| :-----------------|
-| `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
-| `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context |
-| `detectedissueId` | REQUIRED     | Yes |    *string* | STU3 - FHIR `DetectedIssue` resource |
-| `detectedissueStatus` | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
-| `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
+Field       | Optionality        |  Prefetch Token     |Type  | Description 
+ :------------- |:-------------:|:-------: |:-----:| :-----------------
+ `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
+ `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
+ `detectedissue` | REQUIRED     | Yes |    *object* | STU3 - FHIR Bundle of DetectedIssue resource for current order entry task
+ `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-#### `medication-select` `prefetch`
+##### `medication-select` `prefetch`
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -420,7 +419,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ## <span style="color:silver"> 8.2.0 </span> Definitions 
 {:.no_toc}
 
-The Digoxin + Cyclosporine artifact logic depends on whether the patient is stable on digoxin or cyclosporine before the current medication order event. This section defines terms used in the subsequent flow diagrams. Certain terms are defined by presumptions that MAY be taken based on the presence of resources in `context` versus `prefetch` elements of the request. Figure 7 progresses through the decision tree and includes warning indicators (i.e., green, orange, red) and contextual factors that may be presented to the clinician. Figure 8 builds on this artifact and provides a display of Cards example.
+The Digoxin + Cyclosporine artifact logic depends on whether the patient is stable on digoxin or cyclosporine before the current medication order event. This section defines terms used in the subsequent flow diagrams. Certain terms are defined by assumptions that may be taken based on the presence of resources in `context` versus `prefetch` elements of the request. 
 
 
 * **Incident Order** – `context` medication is *not* in `prefetch` medications and, thus, is presumably the first occurrence. 
@@ -436,7 +435,7 @@ The Digoxin + Cyclosporine artifact logic depends on whether the patient is stab
 ## <span style="color:silver"> 8.3.0 </span> Level 1 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured) 
 
 
-Figure 7 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowledge artifact using the CDS Hooks `medication-prescribe` hook. The figure shows the CDS Service processes the PDDI CDS logic after receiving a `medication-prescribe` request. The decision tree shown in Figure 7 includes warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `medication-prescribe`, the CDS service MUST return CDS Hooks Cards that MAY include actions with and associated FHIR resources. 
+Figure 7 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowledge artifact using the CDS Hooks `medication-prescribe` hook. The figure shows the CDS Service processes the PDDI CDS logic after receiving a `medication-prescribe` request. Figure 7 progresses through the decision tree and includes warning indicators (i.e., green, orange, red) and contextual factors that may be presented to the clinician. Figure 8 builds on this artifact and provides a display of Cards example. 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 7: Level 1 Digoxin + Cyclosporine logic </strong></figcaption>
@@ -489,7 +488,7 @@ The Digoxin + Cyclosporine exemplar artifact has two main decision blocks:
   <a href = "assets/images/Level_1_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_1_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_1_D_C_Cards.svg" /></a>
 </figure>
 
-#### <span style="color:silver"> 8.3.4 </span> Card Actions
+### <span style="color:silver"> 8.3.4 </span> Card Actions
 {:.no_toc}
 
 The actions, types and associated resources for the Digoxin + Cyclosporine Level 1 Implementation are listed below:  
@@ -507,7 +506,7 @@ The actions, types and associated resources for the Digoxin + Cyclosporine Level
     
 ## <span style="color:silver"> 8.4.0 </span> Level 2 Implementation - Digoxin + Cyclosporine Knowledge Artifact (semi-structured)
 
-As described under the Getting Started tab, the Level 2 Implementation proposal requires several changes to the current standard specifications. Changes to the CDS Hooks context are specified below. The Level 2 Implementation proposal for the Digoxin + Cyclosporine artifact is split into two separate services. Figures 9 and 10 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., Medication Select and Medication Prescribe). The blue task boxes highlight the DetectedIssue status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the Medication Prescribe Service prefetch template), and Medication Prescribe Service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
+As described under the Getting Started tab, the Level 2 Implementation proposal requires several changes to the current standard specifications. Changes to the CDS Hooks context are specified below. The Level 2 Implementation proposal for the Digoxin + Cyclosporine artifact is split into two separate services. Figures 9 and 10 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., Medication Select and Medication Prescribe). The blue task boxes highlight the DetectedIssue status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the Medication Prescribe Service prefetch template), and Medication Prescribe Service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request. Figure 11 depicts a Card display example. In this scenario, the `medication-prescribe` Cards are filtered since the clinician's action indicated that the patient was no longer taking digoxin. 
 
 
 <figure class="figure">
@@ -537,14 +536,12 @@ Field | Optionality | Prefetch Token | Type | Description
 #### `medication-prescribe 1.1` `context`
 {:.no_toc}
 
-| Field       | Optionality        |  Prefetch Token     |Type  | Description |
-| :------------- |:-------------:|:-------: |:-----:| :-----------------|
-| `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context |
-| `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context |
-| `detectedissueId` | REQUIRED     | Yes |    *string* | STU3 - FHIR `DetectedIssue` resource |
-| `detectedissueStatus` | REQUIRED     | No |    *code* | STU3 - FHIR `DetectedIssue` resource |
-| `medication` | REQUIRED     | No |    *object* | STU3 - FHIR `MedicationRequest` resource |
-
+Field       | Optionality        |  Prefetch Token     |Type  | Description 
+ :------------- |:-------------:|:-------: |:-----:| :-----------------
+ `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
+ `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
+ `detectedissue` | REQUIRED     | Yes |    *object* | STU3 - FHIR Bundle of DetectedIssue resource for current order entry task
+ `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
 #### `medication-select` `prefetch`

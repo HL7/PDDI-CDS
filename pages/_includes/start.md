@@ -550,7 +550,7 @@ define "Get Base Indicator":
 ## <span style="color:silver"> 4.5.0 </span> FHIR Server Request
 {:.no_toc}
 
-A FHIR server request by the CDS service after receiving a CDS Hooks request (e.g., `medication-prescribe`) is necessary in the event the `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. In the event the EHR does not provide prefetch data, the PDDI CDS service MUST request the data from the FHIR server via network call. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 3. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
+A FHIR server request by the CDS service is necessary in the event the request `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 3. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
@@ -562,7 +562,7 @@ A FHIR server request by the CDS service after receiving a CDS Hooks request (e.
 ## <span style="color:silver"> 4.6.0 </span> CDS Hooks Response and Card Display
 {:.no_toc}
 
-The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "hard-stop" could be a modal alert).
+The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g.,`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "hard-stop" could be a modal alert).
 
 **Example 4: CDS Hooks Response**
 
@@ -598,11 +598,9 @@ The CDS service response is a Card array. Each Card has specified attributes tha
       "source": {
         "label": "Potential Drug-Drug Interaction CDS"
       }
-    }
-  ]
-}
-
+ snipped for brevity
 ~~~
+
 **Card Display Example**
 * [Level 1 – Warfarin + NSAID Cards](documentation.html)
 
@@ -612,16 +610,16 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 # <span style="color:silver"> 5.0.0 </span> Level 2 Implementation
 
 
-The Level 2 Implementation is a proposed target to optimize PDDI CDS artifacts. It builds on the Level 1 Implementation; however, implementors MUST select either Level 1 or 2 Implementation and NOT both. This section does not provide a comprehensive overview but highlights key deviations from the Level 1 Implementation above. 
+The Level 2 Implementation is a proposed target to optimize PDDI CDS artifacts. It builds on the Level 1 Implementation; however, implementors MUST select either Level 1 or 2 Implementation and *not* both. This section does not provide a comprehensive overview of the implementation but highlights deviations from the Level 1 Implementation above. 
 
 
-Summary of differences between the Level 1 and Level 2 Implementations include:
+Differences between the Level 1 and Level 2 Implementations include:
 1. Defining two CDS Hooks triggers in CPOE workflow (i.e., `medication-select` and `medication-prescribe`)
 2. Creating a `medication-select` specification 
 3. Modify `medication-prescribe` specification
-4. Creating Medication Select and Medication Prescribe Services
+4. Creating separate but coordinated Medication Select and Medication Prescribe Services
 
-> *Note:* The Level 2 Implementation requires two separate, *but coordinated,* services for standards' precision, logic flexibility, and to avoid the need for CDS service state.
+> *Note:* The Level 2 Implementation requires two separate, but *coordinated,* services for standards' precision, logic flexibility, and to avoid the need for CDS service state.
 
 
 ## <span style="color:silver"> 5.1.0 </span> Level 2 – CPOE Workflow
@@ -640,7 +638,7 @@ Different contextual factors are available and needed at different times during 
 
 ## <span style="color:silver"> 5.2.0 </span> Level 2 – Summary of Operations
 {:.no_toc}
-Coordinating the Medication Select Service with the Medication Prescribe Service is a crucial aspect of the Level 2 Implementation. Whether the Medication Prescribe Service is called depends on aspects of the DetectedIssue resource (i.e., `status` element). The DetectedIssue resource is created by the Medication Select Service and populated by clinician actions in response the displayed Cards. Figure 5 depicts the summary of operations that coordinates the Medication Select and Medication Prescribe Services.
+Coordinating the Medication Select Service with the Medication Prescribe Service is a key aspect of the Level 2 Implementation. Whether the Medication Prescribe Service is called depends on aspects of the DetectedIssue resource (i.e., `status` element). The DetectedIssue resource is created by the Medication Select Service and populated by clinician actions in response to the displayed Cards. Figure 5 depicts the summary of operations that coordinates the Medication Select and Medication Prescribe Services.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 5: Advanced – PDDI CDS Service Summary </strong></figcaption>
@@ -688,13 +686,13 @@ Coordinating the Medication Select Service with the Medication Prescribe Service
 ### <span style="color:silver"> 5.3.2 </span> Level 2 – CDS Hooks Request
 {:.no_toc}
 
-The Level 2 Implementation specifies the use of both the `medication-select` and `medication-prescribe` CDS Hooks during a single medication order task. In addition to creating a `medication-select` request (currently not a part of the CDS Hooks standard), the `mediction-prescribe` `context` is modified to include elements of the DetectedIssue resource. 
+The Level 2 Implementation specifies the use of both the `medication-select` and `medication-prescribe` CDS Hooks during a single medication order task. In addition to creating a `medication-select` hook, the `mediction-prescribe` `context` is modified to include the DetectedIssue resource. 
 
 
 #### Context
 {:.no_toc}
 
-The `context` element of the `medication-select` CDS Hooks request is identical to the current `medication-prescribe` specification used in the Level 1 Implementation. The `context` element in the Level 2 Implementation `medication-prescribe` element has a minor modification to include the DetectedIssue resource. The DetectedIssue.id indicates the PDDI that was identified by the Medication Select Service (e.g., `id : "warfarin-NSAID1234"`). For details on the specifications are below.
+The `context` element of the `medication-select` CDS Hooks request is identical to the `medication-prescribe` specification used in the Level 1 Implementation. The `context` element in the Level 2 Implementation `medication-prescribe` element has a minor modification to include the DetectedIssue resource. The DetectedIssue.id indicates the PDDI that was identified by the Medication Select Service (e.g., `id : "warfarin-NSAID1234"`). For details on the specifications are below.
 
 
 #### **`medication-select` 1.0** (new CDS Hook)
@@ -708,7 +706,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### **`medication-prescribe` 1.1** (modification of a current CDS Hook)
  {:.no_toc}
- The version for the `medication-prescribe` hook is 1.0. The Advanced PDDI CDS implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
+ The base version for the `medication-prescribe` hook is 1.0. The Level 2 Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 
@@ -716,12 +714,12 @@ Field | Optionality | Prefetch Token | Type | Description
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
  `detectedissue` | REQUIRED     | Yes |    *object* | STU3 - FHIR Bundle of DetectedIssue resource for current order entry task
- `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of draft MedicationRequest resource for the current order entry task
+ `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
 #### Prefetch
 {:.no_toc}
-Since the order entry task is split into two separate CDS Hooks events (i.e., services), the prefetch template for the Medication Select Service includes only medication resources. The prefetch template for the Medication Prescribe Service includes any additional resources needed for a specific PDDI after accounting for clinician action(s). 
+Since the order entry task is split into two separate CDS Hooks events (i.e., services), the prefetch template for the Medication Select Service includes only medication resources. The prefetch template for the Medication Prescribe Service includes any additional resources needed for a specific PDDI *after* accounting for clinician action(s). 
 
 ##### CDS Hooks Request Example
 {:.no_toc}
@@ -729,15 +727,15 @@ Since the order entry task is split into two separate CDS Hooks events (i.e., se
 * [Request test data](testdata.html)
 
 
-## <span style="color:silver"> 5.4.0 </span> DetectedIssue 
+## <span style="color:silver"> 5.4.0 </span> Level 2 – DetectedIssue 
 {:.no_toc}
 
-As previously discussed, a DetectedIssue resource is created in both implementations. The Level 2 Implementation, however, uses the DetectedIssue to carry clinician-action state through order entry process. The the `context` element of the `medication-prescribe` request contains the DetectedIssue resource. During the parse and pre-process phase, the service determines if the ordered medication is the same as the DetectedIssue medication, and if prefetch is needed for additional processing. The ordered medication is compared to the DetectedIssue medication either by the `DetectedIssue.id,` which is a Persistent Uniform Resource Locator (PURL) or through the `DetectedIssue.implicated` reference to conflicting medications. This is to ensure the clinician action did not eliminate the PDDI (e.g., change naproxen to acetaminophen). The DetectedIssue `status` element is instantiated by the Medication Select Service and indicates to the EHR if prefetch data are available or needed. If the status value is "final", the EHR and the CDS service MUST NOT retrieve prefetch data. If the `status` is "preliminary", the EHR MAY fulfill the prefetch queries or the CDS service MUST retrieve prefetch.
+As previously discussed, a DetectedIssue resource is created in both implementations. The Level 2 Implementation, however, uses the DetectedIssue to carry clinician-action state through order entry process. The the `context` element of the `medication-prescribe` request contains the DetectedIssue resource. During the parse and pre-process phase, the service determines if the ordered medication is the same as the DetectedIssue medication, and if prefetch data is needed for additional processing. The ordered medication is compared to the DetectedIssue medication either by the `DetectedIssue.id,` which is a Persistent Uniform Resource Locator (PURL) or through the `DetectedIssue.implicated` reference to conflicting medications. This is to ensure the clinician action did not eliminate the PDDI (e.g., change naproxen to acetaminophen). The DetectedIssue `status` element is instantiated by the Medication Select Service and indicates to the EHR if prefetch data are available or needed. If the `status` value is "final", the EHR and the CDS service MUST NOT retrieve prefetch data. If the `status` is "preliminary", the EHR MAY fulfill the prefetch queries or the CDS service MUST retrieve prefetch data from the FHIR server.
 
 
 ## <span style="color:silver"> 5.5.0 </span> Level 2 – FHIR Server Request
 {:.no_toc}
-The parse and pre-process event for `medication-select` requests in the Level 2 Implementation is identical to what occurs with `medication-prescribe` for the Level 1 Implementation. Processing of `medication-prescribe` by the Level 2 Implementation service is slightly different (Figure 6). During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the `detectedissueID` field. This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the previously sent CDS Hook `card` suggestions. In addition, the `DetectedIssue` `status` field indicates to the CDS service if additional prefetch data is needed for the specific PDDI.
+The parse and pre-process event for a `medication-select` request in the Level 2 Implementation is identical to what occurs with `medication-prescribe` for the Level 1 Implementation. Processing of `medication-prescribe` for the Level 2 Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the DetectedIssue resource (Figure 6). This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the CDS Hooks Cards. In addition, the DetectedIssue `status` field indicates to the CDS service if additional prefetch data is needed for the specific PDDI.
 
 
 <figure class="figure">
@@ -747,7 +745,7 @@ The parse and pre-process event for `medication-select` requests in the Level 2 
 
 
 
-## <span style="color:silver"> 5.6.0 </span> Level 2 – Hooks Response and Card Display
+## <span style="color:silver"> 5.6.0 </span> Level 2 – CDS Hooks Response and Card Display
 {:.no_toc}
 
 **Example: Level 2 – CDS Hooks Response**

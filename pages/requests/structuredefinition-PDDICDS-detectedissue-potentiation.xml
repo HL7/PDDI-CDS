@@ -1,0 +1,203 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-detectedissue-potentiation"/>
+    <id value="structuredefinition-PDDICDS-detectedissue-potentiation"/>
+    <meta>
+        <lastUpdated value="2018-08-13T09:45:58.249-05:00" />
+    </meta>
+    <version value="1.0"/>
+    <name value="structuredefinition-PDDICDS-detectedissue-potentiation"/>
+    <title value="Potentiation element for DetectedIssue"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2018-08-14"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce boycerd@upmc.edu"/>
+    </contact>
+    <description value="Used for documenting actions that have occurred that may potentiate a PDDI"/>
+    <copyright value="Attribution CC BY"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="DetectedIssue"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <snapshot>
+        <element id="Extension">
+            <path value="Extension"/>
+            <definition value="Opposite of mitigation"/>
+            <min value="0"/>
+            <max value="*"/>
+            <base>
+                <path value="Extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <definition value="Opposite of mitigation"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <base>
+                <path value="Extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extension.extension0">
+            <path value="Extension.extension"/>
+            <definition value="Actions that potentiate the issue"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <base>
+                <path value="Extension.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extensionextension.url0">
+            <path value="Extension.extension.url"/>
+            <definition value="Actions that potentiate the issue"/>
+            <label value="action"/>
+            <representation value="xmlAttr"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="action"/>
+            <base>
+                <path value="Extension.extension.url"/>
+                <min value="1"/>
+                <max value="1"/>
+            </base>
+        </element>
+        <element id="Extension.extension.value[x]0">
+            <path value="Extension.extension.valueCodeableConcept"/>
+            <definition value="Actions that potentiate the issue"/>
+            <label value="action"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <base>
+                <path value="Extension.extension.valueCodeableConcept"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extension.extension1">
+            <path value="Extension.extension"/>
+            <definition value="Indicates when the potentiating action was documented"/>
+            <label value="date"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <base>
+                <path value="Extension.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extension.extension.url1">
+            <path value="Extension.extension.url"/>
+            <definition value="Indicates when the potentiating action was documented"/>
+            <label value="date"/>
+            <representation value="xmlAttr"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="date"/>
+            <base>
+                <path value="Extension.extension.url"/>
+                <min value="1"/>
+                <max value="1"/>
+            </base>
+        </element>
+        <element id="Extension.extension.value[x]1">
+            <path value="Extension.extension.valueDateTime"/>
+            <definition value="Indicates when the potentiating action was documented"/>
+            <label value="date"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <base>
+                <path value="Extension.extension.valueDateTime"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extension.extension2">
+            <path value="Extension.extension"/>
+            <definition value="Identifies the practitioner who added the potentiating action"/>
+            <label value="author"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <base>
+                <path value="Extension.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+        <element id="Extension.extension.url2">
+            <path value="Extension.extension.url"/>
+            <definition value="Identifies the practitioner who added the potentiating action"/>
+            <label value="author"/>
+            <representation value="xmlAttr"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="author"/>
+            <base>
+                <path value="Extension.extension.url"/>
+                <min value="1"/>
+                <max value="1"/>
+            </base>
+        </element>
+        <element id="Extension.extension.value[x]2">
+            <path value="Extension.extension.valueReference"/>
+            <definition value=" Identifies the practitioner who added the potentiating action"/>
+            <label value="author"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <base>
+                <path value="Extension.extension.valueReference"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+        </element>
+    </snapshot>
+</StructureDefinition>

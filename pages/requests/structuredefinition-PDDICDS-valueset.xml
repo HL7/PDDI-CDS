@@ -2,6 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset"/>
     <id value="structuredefinition-PDDICDS-valueset"/>
+    <meta>
+        <lastUpdated value="2018-08-13T09:45:58.249-05:00" />
+    </meta>
     <name value="structuredefinition-PDDICDS-valueset"/>
     <title value="Guidance Element Extension"/>
     <status value="draft"/>
@@ -9,6 +12,10 @@
     <description value="Describes the inclusion criteria for Element ValueSets."/>
     <kind value="complex-type"/>
     <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Endpoint"/>
+    </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>

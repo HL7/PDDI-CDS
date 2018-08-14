@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"> doco
+    <!-- from Resource: id, meta, implicitRules, and language -->
+    <!-- from DomainResource: text, contained, extension, and modifierExtension -->
+    <url value="[uri]"/><!-- 1..1 Logical URI to reference this structure definition (globally unique) -->
+    <identifier><!-- 0..* Identifier Additional identifier for the structure definition --></identifier>
+    <version value="[string]"/><!-- 0..1 Business version of the structure definition -->
+    <name value="[string]"/><!-- 1..1 Name for this structure definition (computer friendly) -->
+    <title value="[string]"/><!-- 0..1 Name for this structure definition (human friendly) -->
+    <status value="[code]"/><!-- 1..1 draft | active | retired | unknown -->
+    <experimental value="[boolean]"/><!-- 0..1 For testing purposes, not real usage -->
+    <date value="[dateTime]"/><!-- 0..1 Date this was last changed -->
+    <publisher value="[string]"/><!-- 0..1 Name of the publisher (organization or individual) -->
+    <contact><!-- 0..* ContactDetail Contact details for the publisher --></contact>
+    <description value="[markdown]"/><!-- 0..1 Natural language description of the structure definition -->
+    <useContext><!-- 0..* UsageContext Context the content is intended to support --></useContext>
+    <jurisdiction><!-- 0..* CodeableConcept Intended jurisdiction for structure definition (if applicable) --></jurisdiction>
+    <purpose value="[markdown]"/><!-- 0..1 Why this structure definition is defined -->
+    <copyright value="[markdown]"/><!-- 0..1 Use and/or publishing restrictions -->
+    <keyword><!-- 0..* Coding Assist with indexing and finding --></keyword>
+    <fhirVersion value="[id]"/><!-- 0..1 FHIR Version this StructureDefinition targets -->
+    <mapping>  <!-- 0..* External specification that the content is mapped to -->
+        <identity value="[id]"/><!-- 1..1 Internal id when this mapping is used -->
+        <uri value="[uri]"/><!-- ?? 0..1 Identifies what this mapping refers to -->
+        <name value="[string]"/><!-- ?? 0..1 Names what this mapping refers to -->
+        <comment value="[string]"/><!-- 0..1 Versions, Issues, Scope limitations etc. -->
+    </mapping>
+    <kind value="[code]"/><!-- 1..1 primitive-type | complex-type | resource | logical -->
+    <abstract value="[boolean]"/><!-- 1..1 Whether the structure is abstract -->
+    <contextType value="[code]"/><!-- ?? 0..1 resource | datatype | extension -->
+    <context value="[string]"/><!-- ?? 0..* Where the extension can be used in instances -->
+    <contextInvariant value="[string]"/><!-- ?? 0..* FHIRPath invariants - when the extension can be used -->
+    <type value="[code]"/><!-- ?? 1..1 Type defined or constrained by this structure -->
+    <baseDefinition value="[uri]"/><!-- ?? 0..1 Definition that this type is constrained/specialized from -->
+    <derivation value="[code]"/><!-- ?? 0..1 specialization | constraint - How relates to base definition -->
+    <snapshot>  <!-- ?? 0..1 Snapshot view of the structure -->
+        <element><!-- ?? 1..* ElementDefinition Definition of elements in the resource (if no StructureDefinition) --></element>
+    </snapshot>
+    <differential>  <!-- ?? 0..1 Differential view of the structure -->
+        <element><!-- 1..* ElementDefinition Definition of elements in the resource (if no StructureDefinition) --></element>
+    </differential>
+</StructureDefinition>

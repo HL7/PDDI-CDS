@@ -3,9 +3,11 @@
 
 The following profiles set the minimum expectations:
 
-* [PDDI DetectedIssue](profiles.html)
+* [PDDI DetectedIssue](requests/structuredefinition-PDDICDS-detectedissue-potentiation.xml)
 
-* [PDDI ValueSet](profiles.html)
+* [PDDI ValueSet](requests/structuredefinition-PDDICDS-valueset.xml)
+
+* [PDDI RequestGroup](requests/structuredefinition-PDDICDS-requestgroup-action-indicator.xml)
 
 * [PDDI CarePlan](profiles.html)
 

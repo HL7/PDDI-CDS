@@ -542,7 +542,7 @@ define "NSAID Prescription":
     where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
 ~~~
 
-Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Detail` statement below specified in `dynamicValue` element will be evaluated, and the dynamic content containing medication names will be returned.
+Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Summary` statement below specified in `dynamicValue` element will be evaluated, and the dynamic content containing medication names will be returned.
 ~~~
 define "Get Base Summary":
   'Potential Drug-Drug Interaction between warfarin (' 

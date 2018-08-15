@@ -513,17 +513,28 @@ This library contains the logic used by the PlanDefinition to establish the cond
 As described in the `condition` element of the PlanDefinition section, the Clinical Reasoning module will load the statement in the `condition` element defined in the CQL library. Then the statement will be evaluated by the CQL engine. For example, the `Inclusion Criteria` statement in the library below will be loaded and evaluated to determine whether or not the condition is satisfied.
 ~~~
 define "Inclusion Criteria":
-  "Has Warfarin"
-    and "Has NSAID in Context Prescription"
+  if "Is context medication topical diclofenac"
+    then "Is warfarin in prefetch"
+  else (
+    "Is context medication systemic NSAID"
+      and "Is warfarin in prefetch"
+  )
 
-define "Has Warfarin":
+define "Is context medication topical diclofenac":
+  exists ("Topical Diclofenac Prescription")
+
+define "Topical Diclofenac Prescription":
+  ContextPrescriptions P
+    where Common.ToCode(P.medication.coding[0]) in "Topical Diclofenac"
+
+define "Is warfarin in prefetch":
   exists ("Warfarin Rx")
 
 define "Warfarin Rx":
   [MedicationRequest: "Warfarins"] MR
     where MR.authoredOn.value in Interval[Today() - 100 days, null]
 
-define "Has NSAID in Context Prescription":
+define "Is context medication systemic NSAID":
   exists ("NSAID Prescription")
 
 define "NSAID Prescription":
@@ -534,17 +545,19 @@ define "NSAID Prescription":
 Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Detail` statement below specified in `dynamicValue` element will be evaluated, and the dynamic content containing medication names will be returned.
 ~~~
 define "Get Base Summary":
-  'Increased risk of bleeding.'
-
-define "Get Base Detail":
   'Potential Drug-Drug Interaction between warfarin (' 
     + Common.GetMedicationNames("Warfarin Rx") 
     + ') and NSAID (' 
     + Common.GetMedicationNames("NSAID Prescription")
     + ').'
 
+define "Get Base Detail":
+  'Increased risk of bleeding.'
+
 define "Get Base Indicator":
-  'warning'
+  if "Is context medication topical diclofenac"
+    then 'info'
+  else 'warning'
 ~~~
 
 ## <span style="color:silver"> 4.5.0 </span> FHIR Server Request

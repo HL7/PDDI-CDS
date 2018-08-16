@@ -1,1 +1,0 @@
-{"resourceType":"Procedure","id":"procedure-digoxin-cyclosporine-potassium","status":"preparation","code":{"coding":[{"system":"http://snomed.info/sct","code":"271236005","display":"Serum potassium level"}]},"subject":{"reference":"Patient/patient-digoxin-cyclosporine-context"}}

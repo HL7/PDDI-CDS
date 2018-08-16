@@ -22,7 +22,7 @@ c:\temp\json.json
 *.dmg
 *.gz
 *.iso
-*.jar
+
 *.rar
 *.tar
 *.zip

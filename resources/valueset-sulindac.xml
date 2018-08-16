@@ -24,46 +24,46 @@
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
-            <output>
+            <concept>
                 <code value="10237"/>
                 <display value="Sulindac"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="198238"/>
                 <display value="Sulindac 150 MG Oral Tablet"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="198239"/>
                 <display value="Sulindac 200 MG Oral Tablet"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="199279"/>
                 <display value="Sulindac 100 MG Oral Tablet"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="316755"/>
                 <display value="Sulindac 150 MG"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="316756"/>
                 <display value="Sulindac 200 MG"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="333359"/>
                 <display value="Sulindac 100 MG"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="374003"/>
                 <display value="Sulindac Oral Tablet"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="1163018"/>
                 <display value="Sulindac Oral Product"/>
-            </output>
-            <output>
+            </concept>
+            <concept>
                 <code value="1163019"/>
                 <display value="Sulindac Pill"/>
-            </output>
+            </concept>
         </include>
     </compose>
 </ValueSet>

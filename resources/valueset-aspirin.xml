@@ -2100,7 +2100,6 @@
                 <code value="1673788"/>
                 <display value="Acetaminophen 200 MG / Aspirin 220 MG / Caffeine 27 MG Oral Tablet"/>
             </concept>
-            <output_type>SCDC</output_type>
             <concept>
                 <code value="315413"/>
                 <display value="Aspirin 150 MG"/>

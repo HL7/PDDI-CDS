@@ -25,22 +25,22 @@
     <copyright value="Attribution CC BY"/>
     <compose>
         <include>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexlansoprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexlansoprazole"/>
         </include>
         <include>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-esomeprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-esomeprazole"/>
         </include>
         <include>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole"/>
         </include>
         <include>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-omeprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-omeprazole"/>
         </include>
         <include>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole"/>
         </include>
         <include>
-            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole.xml"/>
+            <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole"/>
         </include>
     </compose>
 </ValueSet>

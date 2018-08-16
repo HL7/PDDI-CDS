@@ -12,6 +12,7 @@ c:\temp\json.json
 *.so
 *.sh
 *.py
+*.sln
 
 # Packages #
 ############
@@ -71,4 +72,4 @@ Log-FHIR.xlsx
 ~*.docx
 ~*.xlsx
 c\:\\temp\\json.json
-
+C:\temp\json.json

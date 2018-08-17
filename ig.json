@@ -33,6 +33,8 @@
   "publisher": "HL7 Clinical Decision Support Committee",
   "status": "draft",
   "sct-edition": "http://snomed.info/sct/731000124108",
+  "npm-name": "hl7.fhir.us.pddi",
+  "license": "CC0-1.0",
   "paths": {
     "txCache": "txCache",
     "resources": [
@@ -57,7 +59,6 @@
   "searches": [
   ],
   "version": "3.4.0",
-  "license": "",
   "resources": {
     "CodeSystem/codesystem-PDDICDS-indicator": {
       "base" : "CodeSystem-codesystem-PDDICDS-indicator.html",

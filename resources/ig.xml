@@ -893,21 +893,21 @@
 			<nameUrl value="index.html" />
 			<title value="PDDI CDS Homepage" />
 			<generation value="html" />
-		</page>
-		<page>
-			<nameUrl value="assets/images/diagram1.jpg" />
-			<title value="diagram 1" />
-			<generation value="html" />
-		</page>
-		<page>
-			<nameUrl value="assets/images/diagram2.jpg" />
-			<title value="diagram 2" />
-			<generation value="html" />
-		</page>
-		<page>
-			<nameUrl value="assets/images/diagram3.jpg" />
-			<title value="diagram 3" />
-			<generation value="html" />
+  		<page>
+  			<nameUrl value="assets/images/diagram1.jpg" />
+  			<title value="diagram 1" />
+  			<generation value="html" />
+  		</page>
+  		<page>
+  			<nameUrl value="assets/images/diagram2.jpg" />
+  			<title value="diagram 2" />
+  			<generation value="html" />
+  		</page>
+  		<page>
+  			<nameUrl value="assets/images/diagram3.jpg" />
+  			<title value="diagram 3" />
+  			<generation value="html" />
+  		</page>
 		</page>
 	</definition>
 </ImplementationGuide>

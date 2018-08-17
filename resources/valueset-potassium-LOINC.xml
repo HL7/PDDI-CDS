@@ -29,7 +29,7 @@
                 <display value="Potassium [Mass/​volume] in Blood"/>
             </concept>
             <concept>
-                <code value="12812-4 "/>
+                <code value="12812-4"/>
                 <display value="Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"/>
             </concept>
             <concept>

@@ -15,11 +15,8 @@
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="Patient/warfarin-nsaid-over65-prefetch"/>
+        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
     </subject>
-    <context>
-        <reference value="Encounter/warfarin-nsaid-prefetch"/>
-    </context>
     <quantity>
         <value value="90"/>
         <system value="http://unitsofmeasure.org"/>

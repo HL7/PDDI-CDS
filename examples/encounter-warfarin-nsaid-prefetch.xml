@@ -3,9 +3,6 @@
     <id value="encounter-warfarin-nsaid-prefetch"/>
     <status value="finished"/>
     <class><code value="AMB"/></class>
-    <subject>
-        <reference value="patient-warfarin-nsaid-over65-prefetch"/>
-    </subject>
     <period>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
             <valueExpression>

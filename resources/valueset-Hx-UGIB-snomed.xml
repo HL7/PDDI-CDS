@@ -22,7 +22,7 @@
     <copyright value="HL7 - TBD"/>
     <compose>
         <include>
-            <system value=" http://snomed.info/sct"/>
+            <system value="http://snomed.info/sct"/>
             <concept>
                 <code value="12847006"/>
                 <display value="Acute duodenal ulcer with hemorrhage"/>

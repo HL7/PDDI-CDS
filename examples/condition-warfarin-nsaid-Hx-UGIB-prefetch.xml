@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Condition xmlns="http://hl7.org/fhir">
     <id value="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
-    <clinicalStatus><coding><code value="resolved"/></coding></clinicalStatus>
-    <verificationStatus><coding><code value="confirmed"/></coding></verificationStatus>
+    <clinicalStatus>
+        <coding>
+            <code value="resolved"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <code value="confirmed"/>
+        </coding>
+    </verificationStatus>
     <category>
         <coding>
             <system value="http://snomed.info/sct"/>
@@ -24,12 +32,6 @@
             <display value="Acute gastric ulcer with hemorrhage"/>
         </coding>
     </code>
-    <subject>
-        <reference value="Patient/warfarin-nsaid-over65-prefetch"/>
-    </subject>
-    <context>
-        <reference value="Encounter/warfarin-nsaid-prefetch"/>
-    </context>
     <onsetDateTime value="2017-08-05"/>
     <abatementDateTime value="2017-09-01"/>
     <evidence>

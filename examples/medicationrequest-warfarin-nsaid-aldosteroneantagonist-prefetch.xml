@@ -18,9 +18,6 @@
     <subject>
         <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
     </subject>
-    <context>
-        <reference value="Encounter/encounter-warfarin-nsaid-prefetch"/>
-    </context>
     <authoredOn>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
             <valueExpression>

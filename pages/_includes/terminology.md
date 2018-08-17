@@ -36,7 +36,7 @@ The Element ValueSet-excludes are signified with an identical name to the Elemen
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: ValueSet Framework </strong></figcaption>
-  <a href = "assets/images/Value_Sets.svg" target ="_blank" > <img src="assets/images/Value_Sets.svg" class="figure-img img-responsive img-rounded center-block" alt="Value-Sets.svg" /></a>
+  <a href = "assets/images/Value_sets.svg" target ="_blank" > <img src="assets/images/Value_sets.svg" class="figure-img img-responsive img-rounded center-block" alt="Value_sets.svg" /></a>
 </figure>
 
 ## <span style="color:silver"> 14.2.0 </span> ValueSet

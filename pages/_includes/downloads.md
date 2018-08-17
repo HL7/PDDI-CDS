@@ -23,10 +23,10 @@ These files should be the first choice whenever generating any implementation ar
 Schematrons are also available below:
 
 <ul>
-    <li><a href="cdc-careplan.sch">CarePlan</a></li>
-    <li><a href="cdc-medicationrequest.sch">MedicationRequest</a></li>
-    <li><a href="cdc-plandefinition.sch">PlanDefinition</a></li>
-    <li><a href="cdc-requestgroup.sch">RequestGroup</a></li>
+    <li><a href="careplan.sch">CarePlan</a></li>
+    <li><a href="medicationrequest.sch">MedicationRequest</a></li>
+    <li><a href="plandefinition.sch">PlanDefinition</a></li>
+    <li><a href="requestgroup.sch">RequestGroup</a></li>
 </ul>
 
 ## Examples

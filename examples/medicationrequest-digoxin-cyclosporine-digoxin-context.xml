@@ -21,11 +21,6 @@
     <context>
         <reference value="Encounter/encounter-digoxin-cyclosporine-context"/>
     </context>
-    <authoredOn>
-        <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
-            <valueString value="Today()"/>
-        </extension>
-    </authoredOn>
     <dosageInstruction>
         <timing>
             <repeat>

@@ -3,9 +3,6 @@
     <id value="encounter-digoxin-cyclosporine-context"/>
     <status value="in-progress"/>
     <class><code value="AMB"/></class>
-    <subject>
-        <reference value="patient-digoxin-cyclosporine-context"/>
-    </subject>
     <period>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
             <valueExpression>

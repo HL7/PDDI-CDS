@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-calcium-LOINC"/>
     <id value="valueset-calcium-LOINC"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-calcium-LOINC"/>
     <version value="Intl. 1.0"/>
     <name value="valueset-calcium-LOINC"/>
     <title value="LOINC Codes for Serum Calcium"/>

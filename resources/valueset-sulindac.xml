@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-sulindac"/>
     <id value="valueset-sulindac"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-sulindac"/>
     <version value="US 1.1"/>
     <name value="valueset-sulindac"/>
     <title value="Sulindac Medications Value Set"/>

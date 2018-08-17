@@ -35,10 +35,17 @@
             </repeat>
         </timing>
         <asNeededBoolean value="false"/>
-        <doseQuantity>
-            <value value="1.0"/>
-            <unit value="tablet"/>
-        </doseQuantity>
+        <doseAndRate>
+            <type>
+              <coding>
+                <code value="calculated"/>
+              </coding>
+            </type>
+			<doseQuantity>
+				<value value="1.0"/>
+				<unit value="tablet"/>
+			</doseQuantity>
+		</doseAndRate>
     </dosageInstruction>
     <dispenseRequest>
         <validityPeriod>

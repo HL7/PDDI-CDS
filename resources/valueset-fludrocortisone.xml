@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fludrocortisone"/>
     <id value="valueset-fludrocortisone"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fludrocortisone"/>
     <version value="US 1.1"/>
     <name value="valueset-fludrocortisone"/>
     <title value="Fludrocortisone Medications Value Set"/>

@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-Hx-UGIB-snomed"/>
     <id value="valueset-Hx-UGIB-snomed"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-Hx-UGIB-snomed"/>
     <version value="1.0"/>
     <name value="valueset-Hx-UGIB-snomed"/>
     <title value="Upper gastrointestinal bleed Value Set"/>

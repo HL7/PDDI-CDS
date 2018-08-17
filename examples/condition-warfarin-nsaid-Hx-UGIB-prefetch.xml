@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Condition xmlns="http://hl7.org/fhir">
     <id value="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
-    <clinicalStatus value="resolved"/>
-    <verificationStatus value="confirmed"/>
+    <clinicalStatus><coding><code value="resolved"/></coding></clinicalStatus>
+    <verificationStatus><coding><code value="confirmed"/></coding></verificationStatus>
     <category>
         <coding>
             <system value="http://snomed.info/sct"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone"/>
     <id value="valueset-cortisone"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone"/>
     <version value="US 1.1"/>
     <name value="valueset-cortisone"/>
     <title value="Cortisone Medications Value Set"/>

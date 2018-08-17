@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PDDICDS-indicator"/>
     <id value="valueset-PDDICDS-indicator"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PDDICDS-indicator"/>
     <name value="valueset-PDDICDS-indicator"/>
     <status value="active"/>
     <compose>

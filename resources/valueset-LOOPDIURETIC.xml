@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-LOOPDIURETIC"/>
     <id value="valueset-LOOPDIURETIC"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-LOOPDIURETIC"/>
     <version value="US 1.0"/>
     <name value="valueset-LOOPDIURETIC"/>
     <title value="Loop Diuretic Drug Value Set"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-magnesium-LOINC"/>
     <id value="valueset-magnesium-LOINC"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-magnesium-LOINC"/>
     <version value="Intl. 1.0"/>
     <name value="valueset-magnesium-LOINC"/>
     <title value="LOINC Codes for Serum Potassium"/>

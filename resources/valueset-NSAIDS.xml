@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-NSAIDS"/>
     <id value="valueset-NSAIDS"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-NSAIDS"/>
     <version value="US 1.0"/>
     <name value="valueset-NSAIDS"/>
     <title value="Nonsteroidal Anti-inflammatory Drugs Value Set"/>

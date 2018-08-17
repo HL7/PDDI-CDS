@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole"/>
     <id value="valueset-lansoprazole"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole"/>
     <version value="US 1.1"/>
     <name value="valueset-lansoprazole"/>
     <title value="Lansoprazole Medications Value Set"/>

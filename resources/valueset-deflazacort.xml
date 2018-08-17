@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-deflazacort"/>
     <id value="valueset-deflazacort"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-deflazacort"/>
     <version value="US 1.1"/>
     <name value="valueset-deflazacort"/>
     <title value="Deflazacort Medications Value Set"/>

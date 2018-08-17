@@ -2,6 +2,7 @@
 <Encounter xmlns="http://hl7.org/fhir">
     <id value="encounter-digoxin-cyclosporine-prefetch"/>
     <status value="in-progress"/>
+    <class><code value="AMB"/></class>
     <subject>
         <reference value="patient-digoxin-cyclosporine-context"/>
     </subject>

@@ -20,5 +20,4 @@
     <context>
         <reference value="Encounter/warfarin-nsaid-prefetch"/>
     </context>
-    <taken value="y"/>
 </MedicationStatement>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aspirin"/>
     <id value="valueset-aspirin"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aspirin"/>
     <version value="US 1.1"/>
     <name value="valueset-aspirin"/>
     <title value="Aspirin Medications Value Set"/>
@@ -2500,7 +2500,7 @@
                 <code value="1856538"/>
                 <display value="Aspirin / Dipyridamole Extended Release Oral Capsule"/>
             </concept>
-            <output_type>SCDG</output_type>
+            <!--output_type>SCDG</output_type-->
             <concept>
                 <code value="1872083"/>
                 <display value="Aspirin / Citric Acid / Sodium Bicarbonate Granule Product"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone"/>
     <id value="valueset-spironolactone"/>
+    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone"/>
     <version value="US 1.1"/>
     <name value="valueset-spironolactone"/>
     <title value="Spironolactone Medications Value Set"/>

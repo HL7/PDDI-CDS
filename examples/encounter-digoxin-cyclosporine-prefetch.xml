@@ -7,8 +7,11 @@
         <reference value="patient-digoxin-cyclosporine-context"/>
     </subject>
     <period>
-        <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
-            <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
+            <valueExpression>
+              <language value="text/cql"/>
+			  <expression value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
+		    </valueExpression>
         </extension>
     </period>
 </Encounter>

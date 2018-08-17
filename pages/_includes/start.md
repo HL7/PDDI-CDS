@@ -21,6 +21,8 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 * A CDS rule execution engine. It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://hl7.org/fhir/stu3/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
+* A web service that processes CDS requests using a CDS rule execution engine. The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
+
 * FHIR server(s) for terminology and patient data
 
 	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
@@ -35,8 +37,6 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
 			
-> *Note:* The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
-
 
 ## <span style="color:silver"> 2.2.0 </span> Related Projects 
 
@@ -48,6 +48,7 @@ The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/a
 To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a pre-specified step the workflow process. The CDS service then parses and processes the request to determine if the prescribed medication conflicts with a medication the patient is presumably taking. If this condition is satisfied, the CDS service provides individualized information based on the PDDI knowledge base. 
 
 ## <span style="color:silver"> 2.4.0 </span> Assumptions
+
 ### <span style="color:silver"> 2.4.1 </span>Clinical
 {:.no_toc}
 
@@ -60,13 +61,13 @@ The goal of CDS is to bring clinically relevant information to the clinician at 
 
 Each implementation MAY employ a slightly different approach to ensure successful integration of the CDS system. Here are several general aspects to assess:
 
-* Technical framework for the EHR to interact with CDS Hooks
+* A technical framework for the EHR to interact with the CDS service by
 
-    * EHR creating and sending CDS Hooks requests
+    * creating and sending CDS Hooks requests
 
-    * EHR capturing and presenting CDS Hooks responses
+    * capturing and presenting CDS Hooks responses
     
-    * EHR capturing, processing, modifying, and storing a DetectedIssue resource
+    * capturing, processing, modifying, and storing a `DetectedIssue` resource
 
 * Terminology mapping (e.g., RxNorm, LOINC)
 
@@ -75,13 +76,13 @@ Each implementation MAY employ a slightly different approach to ensure successfu
 * SMART authentication and FHIR server requests
 
 ## <span style="color:silver"> 2.5.0 </span> Status
-Two exemplar PDDI CDS artifacts are available in this implementation guide (i.e., Warfarin + NSAIDs and Digoxin + Cyclosporine). The provided PDDI knowledge is narrative to structured for the Level 1 Implementation and narrative to semi-structured for the Level 2 Implementation.
+Two exemplar PDDI CDS artifacts are available in this implementation guide (i.e., Warfarin + NSAIDs and Digoxin + Cyclosporine). The status of the exemplar PDDI knowledge artifacts for Level 1 Implementation is structured, and semi-structured for the Level 2 Implementation.
 
 > *Note:* The PDDIs were chosen for level of complexity, decision points, and contextual factors. These examples serve as reference for the methodology and procedures that may be adopted when developing and implementing PDDI CDS using CQL, FHIR, and CDS Hooks.
 
 ## <span style="color:silver"> 2.6.0 </span> Level 1 versus Level 2 Implementations
 
-The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets the Level 2 Implementation apart from most conventional PDDI CDS systems. PDDI information is split and moved up further in the order entry workflow. This provides clinicians with actionable information in the middle of their decision making process – before completing the order. By splitting contextual factors into `medication-select` (medication resources) and `medication-prescribe` (other resources specific to PDDI), this MAY limit the amount of information that needs to be shown to cover the minimum information model elements, and it MAY limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. The DetectedIssue resource stores crucial information on clinician action that facilitates monitoring PDDIs and improving actionable suggestions. Moreover, by creating a DetectedIssue resource that contains clinician responses, this gives control to the clinician on what, if any, additional patient-specific information is presented. For example, if a clinician decides to continue with the NSAID prescription but adds a proton pump inhibitor (risk mitigating action), the Medication Prescribe Service would adjust the indicator from "hard-stop" to "warning" (e.g., passive); whereby, further increasing alert specificity. Table 1 provides a summary of the specification and feature differences between the levels of implementation.   
+The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets the Level 2 Implementation apart from most conventional CDS systems that trigger PDDI CDS at the time of order signing. In Level 2, PDDI CDS is moved up to earlier in the order entry workflow, providing clinicians with actionable information in the middle of their decision making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective PDDI CDS. In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending order entry workflow step the clinician is engaged in.  At the time of medication selection, a `medication-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `medication-prescribe` CDS Hook sends other contextual resources specific to a PDDI identified from processing `medication-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. In Level 2, the `DetectedIssue` resource stores crucial information on clinician action that facilitates monitoring PDDIs and improving actionable suggestions. Moreover, by creating a DetectedIssue resource that contains clinician responses. This gives control to the clinician on what, if any, additional patient-specific information is presented. For example, if a clinician decides to continue with the NSAID prescription but adds a proton pump inhibitor (risk mitigating action), the CDS Service for `medication-prescribe` would adjust the indicator from "hard-stop" (interruptive) to "warning" (passive). Table 1 provides a summary of the specification and feature differences between the levels of implementation.
  
 
 
@@ -94,10 +95,10 @@ The primary difference between Level 1 and Level 2 Implementations is the additi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`medication-prescribe 1.0` | **X** | **X** |  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`medication-prescribe 1.1`|  |  | **X** 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`medication-select 1.0`|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DetectedIssue resource | **X** | **X** | **X** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `DetectedIssue` resource | **X** | **X** | **X** 
 **Features** |  |  | 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DetectedIssue potentiation element |  | **X** | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Card response extension for DetectedIssue|  | **X** | **X** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`DetectedIssue` potentiation element |  | **X** | **X** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Card response extension for `DetectedIssue`|  | **X** | **X** 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clinician action documentation|  | **X** | **X** 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sequential clinician action documentation|  |  | **X** 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clinician response alert filtering|  |  | **X** 
@@ -152,9 +153,11 @@ GET http://FHIR.org/PDDI-CDS
 
 The Level 1 Implementation uses the `medication-prescribe 1.0` specification but does not declare the triggering event. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.  
 
-Specific CDS Hooks and FHIR standards modifications required for Level 1 Implementation:
-1. CDS Hooks Card extension for DetectedIssue resource
-2. DetectedIssue resource extension for `potentiation` element 
+Specific CDS Hooks and FHIR standards modifications REQUIRED for Level 1 Implementation:
+
+1. A CDS Hooks Card extension so that a `DetectedIssue` resource can be included in a Card response
+
+2. A `DetectedIssue` resource extension to add the `potentiation` element 
 
 ## <span style="color:silver"> 4.1.0 </span> Summary of Operations
 {:.no_toc}
@@ -173,7 +176,7 @@ The process for a unique instance of PDDI CDS begins with the user triggering a 
 
 The PDDI CDS artifacts use the HL7 CDS Hooks specification [1.0](http://cds-hooks.org/specification/1.0/).  The CDS Hooks standard defines the data structure to facilitate communication between the EHR and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. CDS Hooks instances include CDS Discovery, EHR requests and CDS service response. The `context` and `prefetch` are two key elements of the CDS Hook request that contain patient information. The `context` element contains data that is task and hook-specific. The `prefetch` element contains patient-specific information that is relevant to the `context` data and the invoked CDS service. The CDS Hooks response is a set of Cards. The Cards contain general information, suggested actions, and display indicators in a structured format for the EHR to process and display. The CDS Discovery of the CDS Hooks specification delineates information that the CDS service is to provide to the EHR.
 
-> *Note:* A CDS service is not necessarily CDS Hooks dependent. For this use case, CDS Hooks provide simplicity and specific orientation for CPOE workflow integration.
+> *Note:* The [HL7 specification for decision support](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=334) does not require that the CDS service process CDS Hooks. This implementation guide requires their use because CDS Hooks should provide simplicity and specific orientation for CPOE workflow integration.
 
 
 
@@ -199,7 +202,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ##### Prefetch
 {:.no_toc}
 
-The `prefetch` element contains patient data that is provided by the EHR, prior to the hook trigger, by using a prefetch template. The prefetch query SHOULD build on the context `patientID` to obtain data that is for the current patient. The CDS service SHOULD then compare the `context` medication to the patient's current medications in the `prefetch` element. If available, the `prefetch` element MUST also contain patient data, other than medications, to individualized the CDS logic and response. 
+The `prefetch` element contains patient data that is provided by the EHR upon submission of the CDS Hook to the CDS service. The CDS service MUST provide the EHR with a prefetch template at the time of service discovery. The `prefetch` element MAY specify patient data other than medications for the purpose of individualizing the CDS logic and response. The prefetch query MUST be designed to obtain data for the patient indicated by the context `patientID`. The CDS service SHOULD then compare the `context` medication to the patient's current medications in the `prefetch` element. 
 
 > *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server request.
 
@@ -211,19 +214,19 @@ The `prefetch` element contains patient data that is provided by the EHR, prior 
 ##### Bundle 
 {:.no_toc}
 
-A Bundle is a FHIR resource that groups resources into a single instance, which is ideal for messaging with CDS Hooks, storing a collection of resources obtained on CDS Discovery, and providing flexibility in using the collections as a persistent instance. PDDI CDS implementors MUST use the bundle resource for certain `context` elements and all `prefetch` resources. For each prefetch template query, a Bundle MUST be created to group the resources. A prefetch element MAY contain several Bundle resources with several other resources grouped within.
+A `Bundle` is a FHIR resource that groups resources into a single instance, which is ideal for messaging with CDS Hooks, storing a collection of resources obtained on CDS Discovery, and providing flexibility in using the collections as a persistent instance. PDDI CDS implementors MUST use the bundle resource for certain `context` elements and all `prefetch` resources. For each prefetch template query, a `Bundle` MUST be created to group the resources. A prefetch element MAY contain several `Bundle` resources with several other resources grouped within.
 
 ## <span style="color:silver"> 4.3.0 </span> Clinical Reasoning
 {:.no_toc}
 
-This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the PlanDefinition, CarePlan, RequestGroup, DetectedIssue, and CQL libraries. 
+This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition`, `CarePlan`, `RequestGroup`, `DetectedIssue`, and CQL libraries. 
 
-> *Note:* While resources and CQL libraries are specified for this implementation guide, these are not required for PDDI CDS functionality. The PlanDefinition, however, is RECOMMENDED at minimum to create sharable PDDI knowledge artifacts.
+> *Note:* While resources and CQL libraries are specified for this implementation guide, these are not required for PDDI CDS functionality. The `PlanDefinition`, however, is RECOMMENDED to create sharable PDDI knowledge artifacts.
 
 ### <span style="color:silver"> 4.3.1 </span> PlanDefinition
 {:.no_toc}
 
-In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the PlanDefinition that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.` 
+In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.` 
 
 ##### TriggerDefinition
 {:.no_toc}
@@ -258,6 +261,7 @@ The `condition` element is used to determine whether or not the CDS logic is to 
 {:.no_toc}
 
 The `Action` element provides the specific action(s) and associated information. Only one action can be taken for each group, which is reflected by the Card actions where the user can only select one action per suggestion. 
+
 ~~~
 "condition": [
               {
@@ -287,10 +291,12 @@ The `Action` element provides the specific action(s) and associated information.
                 "action": [
                 snipped for brevity
 ~~~                
+
 ##### DynamicValue
 {:.no_toc}
 
-The DynamicValue enables customization of the statically defined resources. Since each decision block for PDDIs have one or more individualized information components, integrating patient-specific and product-specific data into Card elements is facilitated by the `DynamicValue` element.
+The `DynamicValue` enables customization of the statically defined resources. Since each decision block for PDDIs have one or more individualized information components, integrating patient-specific and product-specific data into Card elements is facilitated by the `DynamicValue` element.
+
 ~~~
 "action": [
                   {
@@ -301,15 +307,16 @@ The DynamicValue enables customization of the statically defined resources. Sinc
                         "expression": "Get Card 2 Label"
 ~~~
 
+
 ### <span style="color:silver"> 4.3.2 </span> CarePlan and RequestGroup 
 {:.no_toc}
 
 
-The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes the CarePlan and RequestGroup resources as requests, thereby expressing the intention for something to occur. The CDS service creates a CarePlan that references a RequestGroup for each CDS Hook response Card, and a single DetectedIssue resource for the identified PDDI. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The CarePlan references four RequestGroup resources under the the `activity` element. The RequestGroup `action` element provides the suggestions and actions in the response card. The CarePlan and RequestGroup resources are subsequently transformed into a CDS Hooks Card response and sent to the EHR along with the DetectedIssue resource. 
+The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes the `CarePlan` and `RequestGroup` resources as requests, thereby expressing the intention for something to occur. The CDS service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card, and a single DetectedIssue resource for the identified PDDI. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The `CarePlan` references four `RequestGroup` resources under the the `activity` element. The `RequestGroup` `action` element provides the suggestions and actions in the response card. The `CarePlan` and `RequestGroup` resources are subsequently transformed into a CDS Hooks Card response and sent to the EHR along with the DetectedIssue resource. 
 
 ### <span style="color:silver"> 4.3.3 </span> DetectedIssue 
 
-The DetectedIssue resource is needed to document clinician actions associated with identified PDDIs and increase the specificity of alerts; thus, it is created by all PDDI CDS services. Level 1 and Level 2 Implementations MUST have EHR functionality to receive, process, modify, and store a DetectedIssue resource created by a PDDI CDS service(s). Use of the DetectedIssue resource with PDDI CDS requires an extension for the `potentiating` element. The `potentiating` element is analogous but antagonistic to the `mitigating` element that currently exists. These elements refer to relevant actions that have occurred (e.g.,  initiating another medication, substituting a medication order, or discontinuing the current order). For example, substituting naproxen for acetaminophen when a Warfarin-NSAID interaction is detected would be documented as a mitigating action. Conversely, if the same patient was currently taking prednisone, it would be documented as a potentiating action.  
+The `DetectedIssue` resource is needed to document clinician actions associated with identified PDDIs and increase the specificity of alerts; thus, it is created by all PDDI CDS services. Level 1 and Level 2 Implementations MUST have EHR functionality to receive, process, modify, and store a `DetectedIssue` resource created by a PDDI CDS service(s). Use of the `DetectedIssue` resource with PDDI CDS requires an extension for the `potentiating` element. The `potentiating` element is analogous but antagonistic to the `mitigating` element that currently exists. These elements refer to relevant actions that have occurred (e.g.,  initiating another medication, substituting a medication order, or discontinuing the current order). For example, substituting naproxen for acetaminophen when a Warfarin-NSAID interaction is detected would be documented as a mitigating action. Conversely, if the same patient was currently taking prednisone, it would be documented as a potentiating action.  
 
 **Example 3: DetectedIssue Elements**
 
@@ -343,7 +350,7 @@ snipped for brevity
 * highlight specific instances that are unique to this implementation 
 -->
 
-[CQL](https://ecqi.healthit.gov/cql-clinical-quality-language) was developed by HL7 for clinical experts to express knowledge in an author-friendly and human-readable but computable language.
+It is RECOMMENDED that a CDS rule execution engine for PDDI CDS be able to execute CDS rules written in [CQL](https://ecqi.healthit.gov/cql-clinical-quality-language). CQL was developed by HL7 for clinical experts to express knowledge in an author-friendly and human-readable but computable language.
 
 All artifact logic using CQL are wrapped in a container called a library. There is a set of declarations documented in the [CQL Specification](http://cql.hl7.org) that need to be defined to provide information about the library. Those declarations are Library, Data Models, Libraries, Terminology, Parameters, Context and Statements.
 
@@ -354,16 +361,18 @@ All artifact logic using CQL are wrapped in a container called a library. There 
 {:.no_toc}
 
 The library declaration defines the library name used as an identifier for other CQL libraries to reference. The version is an optional declaration.
+
 ~~~
-library Warfarin_NSAIDs_CDS version '1.0'
+   library Warfarin_NSAIDs_CDS version '1.0'
 ~~~
 
 #### Data Models
 {:.no_toc}
 
 Data models define the structures that can be used within retrieve expressions in the library.
+
 ~~~
-using FHIR version '3.0.0'
+   using FHIR version '3.0.0'
 ~~~
 
 For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary data model within the library. The data model supports all [FHIR STU3](https://www.hl7.org/fhir/index.html) resources including MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense, Observation, and Condition.
@@ -372,33 +381,38 @@ For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary dat
 {:.no_toc}
 
 Statements defined in specific libraries can be reused in other libraries as a reference by a locally assigned name.
+
 ~~~
-include PDDICDS_Common version '1.0' called Common
+   include PDDICDS_Common version '1.0' called Common
 ~~~
 
 As an example below, statements defined in the PDDICDS_Common library, version 1.0, can now be referenced using the assigned name of Common.
+
 ~~~
-define "NSAID Prescription":
-  ContextPrescriptions P
-    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+  define "NSAID Prescription":
+    ContextPrescriptions P
+      where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
 ~~~
 
 #### Terminology
 {:.no_toc}
 
 A value set declaration specifies a local identifier that represents a value set and can be used anywhere within the library.
+
 ~~~
-valueset "Warfarins": 'http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin'
+  valueset "Warfarins": 'http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin'
 ~~~
 
 This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the value set, an uniform resource identifier (URI) in this case is `http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin`. The external identifier should be an ID or a uniform resource identifier (URI).
 
 This valueset definition can then be used within the library wherever a valueset can be used:
+
 ~~~
-define "Warfarin Rx":
-  [MedicationRequest: "Warfarins"] MR
-    where MR.authoredOn.value in Interval[Today() - 100 days, null]
+  define "Warfarin Rx":
+    [MedicationRequest: "Warfarins"] MR
+      where MR.authoredOn.value in Interval[Today() - 100 days, null]
 ~~~
+
 The above statement collects all MedicationRequest resources with a code in the `Warfarins` value set and the authored date within 100-day look-back period.
 
 For the PDDI CDS value sets, refer to [Terminology](terminology.html) page for the list of value sets used by this implementation.
@@ -407,11 +421,13 @@ For the PDDI CDS value sets, refer to [Terminology](terminology.html) page for t
 {:.no_toc}
 
 The parameters defined in a library MAY be referenced by name in any expression within the library. 
+
 ~~~
 parameter ContextPrescriptions List<MedicationRequest>
 ~~~
 
 The `context` element of CDS Hook request contains the MedicationRequest resources specified in `medications` element as described in the example below. The data is parsed and assigned to the `ContextPrescriptions` parameter defined in the library.
+
 ~~~
 "context": {
   ...
@@ -430,6 +446,7 @@ The `context` element of CDS Hook request contains the MedicationRequest resourc
 ~~~
 
 This parameter definition can now be referenced anywhere within the CQL library:
+
 ~~~
 define "NSAID Prescription":
   ContextPrescriptions P
@@ -440,6 +457,7 @@ define "NSAID Prescription":
 {:.no_toc}
 
 The context declaration defines the overall context for statements within the library.
+
 ~~~
 context Patient
 ~~~
@@ -450,6 +468,7 @@ The `context Patient` declaration to restrict the information that will be retur
 {:.no_toc}
 
 `Define` statements describing named expressions that can be referenced either from other expressions within the same library or by containing decision support artifacts.
+
 ~~~
 define "GI Bleeds Condition":
   Last(
@@ -457,6 +476,7 @@ define "GI Bleeds Condition":
       sort by assertedDate.value
   )
 ~~~
+
 This example defines the `GI Bleeds Condition` statement, which retrieves the most recent condition with a code in the `History of GI Bleeds` value set.
 
 ### <span style="color:silver"> 4.4.2 </span> Connection of CQL to PlanDefinition
@@ -468,6 +488,7 @@ This example defines the `GI Bleeds Condition` statement, which retrieves the mo
 The Library resource contains the CQL library in base64 format. As an example below, the CQL library is encoded to base64 format and stored by using the Library FHIR resource.
 
 In Library resource, the `relatedArtifact` element defines the dependent relationship between libraries. For example, `warfarin-nsaids-cds` library references the `PDDICDS_Common` library and that relationship is described in the `relatedArtifact` element.
+
 ~~~
 {
   "resource": {
@@ -500,6 +521,7 @@ For the best performance, the CQL logic should be translated into ELM XML format
 {:.no_toc}
 
 In PlanDefinition resource, the `library` element defines the reference to the logic used by the PlanDefinition. An example for `warfarin-nsaids-cds` PlanDefinition resource is the reference to `Library/warfarin-nsaids-cds` Library resource. 
+
 ~~~
 "library": [
   {
@@ -511,6 +533,7 @@ In PlanDefinition resource, the `library` element defines the reference to the l
 This library contains the logic used by the PlanDefinition to establish the condition, and to dynamically construct the guidance so that it reflects the data for the current patient.
 
 As described in the `condition` element of the PlanDefinition section, the Clinical Reasoning module will load the statement in the `condition` element defined in the CQL library. Then the statement will be evaluated by the CQL engine. For example, the `Inclusion Criteria` statement in the library below will be loaded and evaluated to determine whether or not the condition is satisfied.
+
 ~~~
 define "Inclusion Criteria":
   if "Is context medication topical diclofenac"
@@ -543,6 +566,7 @@ define "NSAID Prescription":
 ~~~
 
 Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Summary` statement below specified in `dynamicValue` element will be evaluated, and the dynamic content containing medication names will be returned.
+
 ~~~
 define "Get Base Summary":
   'Potential Drug-Drug Interaction between warfarin (' 
@@ -615,6 +639,7 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 ~~~
 
 **Card Display Example**
+
 * [Level 1 – Warfarin + NSAID Cards](documentation.html)
 
 * [Level 1 – Digoxin + Cyclosporine Cards](documentation.html)
@@ -627,9 +652,13 @@ The Level 2 Implementation is a proposed target to optimize PDDI CDS artifacts. 
 
 
 Differences between the Level 1 and Level 2 Implementations include:
+
 1. Defining two CDS Hooks triggers in CPOE workflow (i.e., `medication-select` and `medication-prescribe`)
+
 2. Creating a `medication-select` specification 
+
 3. Modify `medication-prescribe` specification
+
 4. Creating separate but coordinated Medication Select and Medication Prescribe Services
 
 > *Note:* The Level 2 Implementation requires two separate, but *coordinated,* services for standards' precision, logic flexibility, and to avoid the need for CDS service state.
@@ -637,6 +666,7 @@ Differences between the Level 1 and Level 2 Implementations include:
 
 ## <span style="color:silver"> 5.1.0 </span> Level 2 – CPOE Workflow
 {:.no_toc}
+
 Different contextual factors are available and needed at different times during the medication order process (Figure 4). To align clinicians' information needs with PDDI information, the Level 2 Implementation *defines* two separate hook trigger events in the medication order workflow:
 
 1. Selecting a drug product to include in medication order (`medication-select`)
@@ -651,6 +681,7 @@ Different contextual factors are available and needed at different times during 
 
 ## <span style="color:silver"> 5.2.0 </span> Level 2 – Summary of Operations
 {:.no_toc}
+
 Coordinating the Medication Select Service with the Medication Prescribe Service is a key aspect of the Level 2 Implementation. Whether the Medication Prescribe Service is called depends on aspects of the DetectedIssue resource (i.e., `status` element). The DetectedIssue resource is created by the Medication Select Service and populated by clinician actions in response to the displayed Cards. Figure 5 depicts the summary of operations that coordinates the Medication Select and Medication Prescribe Services.
 
 <figure class="figure">
@@ -732,6 +763,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### Prefetch
 {:.no_toc}
+
 Since the order entry task is split into two separate CDS Hooks events (i.e., services), the prefetch template for the Medication Select Service includes only medication resources. The prefetch template for the Medication Prescribe Service includes any additional resources needed for a specific PDDI *after* accounting for clinician action(s). 
 
 ##### CDS Hooks Request Example
@@ -748,6 +780,7 @@ As previously discussed, a DetectedIssue resource is created in both implementat
 
 ## <span style="color:silver"> 5.5.0 </span> Level 2 – FHIR Server Request
 {:.no_toc}
+
 The parse and pre-process event for a `medication-select` request in the Level 2 Implementation is identical to what occurs with `medication-prescribe` for the Level 1 Implementation. Processing of `medication-prescribe` for the Level 2 Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the DetectedIssue resource (Figure 6). This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the CDS Hooks Cards. In addition, the DetectedIssue `status` field indicates to the CDS service if additional prefetch data is needed for the specific PDDI.
 
 
@@ -762,6 +795,7 @@ The parse and pre-process event for a `medication-select` request in the Level 2
 {:.no_toc}
 
 **Example: Level 2 – CDS Hooks Response**
+
 ~~~
 {
   "cards": [
@@ -786,6 +820,7 @@ snipped for brevity
 ~~~
 
 **Card Display Example**
+
 * [Level 2 – Warfarin + NSAID Cards](documentation.html)
 
 * [Level 2 – Digoxin + Cyclosporin Cards](documentation.html)

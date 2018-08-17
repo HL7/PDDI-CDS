@@ -33,7 +33,7 @@
   "publisher": "HL7 Clinical Decision Support Committee",
   "status": "draft",
   "sct-edition": "http://snomed.info/sct/731000124108",
-  "npm-name": "hl7.fhir.us.pddi",
+  "npm-name": "hl7.fhir.pddi",
   "license": "CC0-1.0",
   "paths": {
     "txCache": "txCache",

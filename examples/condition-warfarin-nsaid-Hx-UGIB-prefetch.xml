@@ -3,11 +3,13 @@
     <id value="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
     <clinicalStatus>
         <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="resolved"/>
         </coding>
     </clinicalStatus>
     <verificationStatus>
         <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
             <code value="confirmed"/>
         </coding>
     </verificationStatus>

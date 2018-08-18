@@ -18,6 +18,7 @@ These files should be the first choice whenever generating any implementation ar
     Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.
     See the overview on <a href="http://hl7.org/fhir/validation.html">validating FHIR profiles and resources</a> for more information about validating profiles and how to use these artifacts.
 
+<!---
 ## Schematrons
 
 Schematrons are also available below:
@@ -28,6 +29,7 @@ Schematrons are also available below:
     <li><a href="plandefinition.sch">PlanDefinition</a></li>
     <li><a href="requestgroup.sch">RequestGroup</a></li>
 </ul>
+--->
 
 ## Examples
 

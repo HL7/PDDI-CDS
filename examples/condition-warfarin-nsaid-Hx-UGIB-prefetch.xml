@@ -34,6 +34,9 @@
             <display value="Acute gastric ulcer with hemorrhage"/>
         </coding>
     </code>
+    <subject>
+        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
+    </subject>
     <onsetDateTime value="2017-08-05"/>
     <abatementDateTime value="2017-09-01"/>
     <evidence>

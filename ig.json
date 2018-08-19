@@ -58,7 +58,7 @@
   ],
   "searches": [
   ],
-  "version": "3.4.0",
+  "version": "3.5.0",
   "resources": {
     "CodeSystem/codesystem-PDDICDS-indicator": {
       "base" : "CodeSystem-codesystem-PDDICDS-indicator.html",

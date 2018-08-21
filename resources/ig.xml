@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2017-09-06T09:37:27.622+10:00" />
 	</meta>
-	<url value="http://hl7.org/fhir/ig/PDDI-CDS/ImplementationGuide/ig" />
+	<url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig" />
 	<name value="PDDI CDS" />
 	<status value="draft" />
 	<experimental value="true" />

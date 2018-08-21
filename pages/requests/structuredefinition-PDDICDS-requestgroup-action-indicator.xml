@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
+    <url value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
     <id value="structuredefinition-PDDICDS-requestgroup-action-indicator"/>
     <name value="structuredefinition-PDDICDS-requestgroup-action-indicator"/>
     <status value="draft"/>
@@ -77,7 +77,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
             <mapping>
                 <identity value="rim"/>
                 <map value="N/A"/>
@@ -100,7 +100,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="List of codes that indicate the urgency/importance of the action"/>
-                <valueSetUri value= "http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PDDICDS-indicator"/>
+                <valueSetUri value= "http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PDDICDS-indicator"/>
             </binding>
             <mapping>
                 <identity value="rim"/>
@@ -126,7 +126,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-requestgroup-action-indicator"/>
         </element>
         <element id="Extension:indicator.valueCode">
             <path value="Extension.valueCode"/>
@@ -138,7 +138,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="List of codes that indicate the urgency/importance of the action"/>
-                <valueSetUri value= "http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PDDICDS-indicator"/>
+                <valueSetUri value= "http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PDDICDS-indicator"/>
             </binding>
         </element>
     </differential>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="valueset-cortivazol"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortivazol"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cortivazol"/>
     <version value="US 1.1"/>
     <name value="valueset-cortivazol"/>
     <title value="Cortivazol Medications Value Set"/>

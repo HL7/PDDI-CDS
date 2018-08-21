@@ -53,7 +53,7 @@
   "spreadsheets": [
   ],
   "do-transforms": "false",
-  "canonicalBase": "http://hl7.org/fhir/ig/PDDI-CDS",
+  "canonicalBase": "http://hl7.org/fhir/uv/pddi",
   "valuesets": [
   ],
   "searches": [

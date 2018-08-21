@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset"/>
+    <url value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-valueset"/>
     <id value="structuredefinition-PDDICDS-valueset"/>
     <meta>
         <lastUpdated value="2018-08-13T09:45:58.249-05:00" />
@@ -108,7 +108,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset-inclusion"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-valueset-inclusion"/>
             <mapping>
                 <identity value="rim"/>
                 <map value="N/A"/>
@@ -145,7 +145,7 @@
         </element>
         <element id="Extension:inclusion.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-valueset-inclusion"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-valueset-inclusion"/>
         </element>
         <element id="Extension:inclusion.valueString">
             <path value="Extension.valueString"/>

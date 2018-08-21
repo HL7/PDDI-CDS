@@ -576,5 +576,6 @@
     ],
     "no-inactive-codes": "false",
     "working-dir": "/git/onc-pd-ig/",
-    "gen-examples": "false"
+    "gen-examples": "false",
+    "fixed-business-version" : "0.1.0"
   }

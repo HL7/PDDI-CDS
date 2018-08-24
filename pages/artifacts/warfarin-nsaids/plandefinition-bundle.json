@@ -1,0 +1,259 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "warfarin-nsaids-cds",
+        "version": "1.0",
+        "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
+        "title": "Warfarin NSAIDs Recommendation",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/plan-definition-type",
+              "code": "eca-rule",
+              "display": "ECA Rule"
+            }
+          ]
+        },
+        "status": "draft",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/warfarin-nsaids-cds",
+        "topic": [
+          {
+            "text": "Warfarin NSAIDs Prescribing"
+          }
+        ],
+        "library": [
+          {
+            "reference": "Library/warfarin-nsaids-cds"
+          }
+        ],
+        "relatedArtifact": [
+          {
+            "type": "documentation",
+            "display": "Potential Drug-Drug Interaction Clinical Decision Support",
+            "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+          }
+        ],
+        "action": [
+          {
+            "triggerDefinition": {
+              "type": "named-event",
+              "eventName": "medication-prescribe"
+            },
+            "condition": [
+              {
+                "kind": "applicability",
+                "language": "text/cql",
+                "expression": "Inclusion Criteria"
+              }
+            ],
+            "action": [
+              {
+                "title": "Potential Drug-Drug Interaction between warfarin (product) and NSAID (product)",
+                "description": "Topical diclofenac has relatively low systemic absorption; in one study a topical gel (16 g/day) produced about 6% of the absorption seen with systemic administration of 150 mg/day. A higher than recommended dose of topical gel (48 g/day) produced 20% of a systemic dose of diclofenac.",
+                "condition": [
+                  {
+                    "kind": "applicability",
+                    "language": "text/cql",
+                    "expression": "Is context medication topical diclofenac"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Base Summary"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Base Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "No special precautions"
+                  }
+                ]
+              },
+              {
+                "title": "Potential Drug-Drug Interaction between warfarin (product) and NSAID (product)",
+                "description": "Increased risk of bleeding. \nBleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. \nNon-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin. The antiplatelet effect of NSAIDs lasts only as long as the NSAID is present in the circulation, unlike aspirin’s antiplatelet effect, which lasts for up to 2 weeks after aspirin is discontinued. NSAIDs also can cause peptic ulcers and most of the evidence for increased bleeding risk with NSAIDs plus warfarin is due to upper gastrointestinal bleeding (UGIB). \nunknown. \n unknown.",
+                "condition": [
+                  {
+                    "kind": "applicability",
+                    "language": "text/cql",
+                    "expression": "Is not context medication topical diclofenac"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Base Summary"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Base Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Assess risk and take action if necessary.",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "remove"
+                    },
+                    "description": "If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID."
+                  },
+                  {
+                    "label": "Substitute NSAID (product) with APAP (product).",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
+                    "definition": {
+                      "reference": "ActivityDefinition/ad101"
+                    },
+                    "dynamicValue": [
+                      {
+                        "path": "action.label",
+                        "expression": "Get Base Label 1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Substitute NSAID (product) with APAP (product).",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
+                    "definition": {
+                      "reference": "ActivityDefinition/ad102"
+                    },
+                    "dynamicValue": [
+                      {
+                        "path": "action.label",
+                        "expression": "Get Base Label 2"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Patient is (not) taking a proton pump inhibitor (product) or misoprostol (product).",
+                "description": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
+                "condition": [
+                  {
+                    "kind": "applicability",
+                    "language": "text/cql",
+                    "expression": "Is not context medication topical diclofenac"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Card 2 Summary"
+                  },
+                  {
+                    "path": "action.description",
+                    "expression": "Get Card 2 Detail"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Card 2 Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Assess risk and take action if necessary.",
+                    "dynamicValue": [
+                      {
+                        "path": "action.label",
+                        "expression": "Get Card 2 Label"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Patient is (not) 65 y/o and/or does (not) have a history of upper gastrointestinal bleed",
+                "description": "Patients with a history of UGIB or peptic ulcer may have an increased risk of UGIB from this interaction. The extent to which older age is an independent risk factor for UGIB due to these interactions is not firmly established, but UGIB in general is known to increase with age",
+                "condition": [
+                  {
+                    "kind": "applicability",
+                    "language": "text/cql",
+                    "expression": "Is not context medication topical diclofenac"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Card 3 Summary"
+                  },
+                  {
+                    "path": "action.description",
+                    "expression": "Get Card 3 Detail"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Card 3 Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Assess risk and take action if necessary.",
+                    "dynamicValue": [
+                      {
+                        "path": "action.label",
+                        "expression": "Get Card 3 Label"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Patient is (not) concomitantly taking systemic corticosteroids, aldosterone antagonist, or high dose or multiple NSAIDs",
+                "description": "Both corticosteroids and aldosterone antagonists have been shown to subsetantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology 2014; 147:784-92.)",
+                "condition": [
+                  {
+                    "kind": "applicability",
+                    "language": "text/cql",
+                    "expression": "Is not context medication topical diclofenac"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Card 4 Summary"
+                  },
+                  {
+                    "path": "action.description",
+                    "expression": "Get Card 4 Detail"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Card 4 Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Assess risk and take action if necessary.",
+                    "dynamicValue": [
+                      {
+                        "path": "action.label",
+                        "expression": "Get Card 4 Label"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

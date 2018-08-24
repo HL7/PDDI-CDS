@@ -1,0 +1,148 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "ad201",
+        "kind": "ProcedureRequest",
+        "code": {
+          "coding": [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "11429006",
+              "display" : "Consultation"
+            }
+          ],
+          "text": "Consultation"
+        },
+        "participant": [
+          {
+            "type": "practitioner"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "ad202",
+        "kind": "ProcedureRequest",
+        "code": {
+          "coding": [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "11429006",
+              "display" : "Consultation"
+            }
+          ],
+          "text": "Consultation"
+        },
+        "participant": [
+          {
+            "type": "practitioner"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "ad203",
+        "kind": "ProcedureRequest",
+        "code": {
+          "coding": [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "269872007",
+              "display" : "Serum digoxin measurement"
+            }
+          ],
+          "text": "Serum digoxin measurement"
+        },
+        "participant": [
+          {
+            "type": "practitioner"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "ad204",
+        "kind": "MedicationRequest",
+        "productCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "315819",
+              "display": "Digoxin 0.125 MG"
+            }
+          ],
+          "text": "Digoxin 0.125 MG"
+        },
+        "participant": [
+          {
+            "type": "practitioner"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "ad205",
+        "kind": "ProcedureRequest",
+        "code": {
+          "coding": [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : " 313822004",
+              "display" : "Corrected serum creatinine"
+            }
+          ],
+          "text": "Serum Creatinine"
+        },
+        "participant": [
+          {
+            "type": "practitioner"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "ad206",
+        "kind": "ProcedureRequest",
+        "code": {
+          "coding": [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "271236005",
+              "display" : "Serum potassium level"
+            },
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "312475002",
+              "display" : "Plasma magnesium level"
+            },
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "390963002",
+              "display" : "Plasma calcium level"
+            }
+          ],
+          "text": "Electrolyte Panel"
+        },
+        "participant": [
+          {
+            "type": "practitioner"
+          }
+        ]
+      }
+    }
+  ]
+}

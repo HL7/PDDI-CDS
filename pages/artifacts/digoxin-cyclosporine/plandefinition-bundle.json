@@ -1,0 +1,286 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "digoxin-cyclosporine-cds",
+        "version": "1.0",
+        "name": "PlanDefinition - Digoxin Cyclosporine Recommendation Workflow",
+        "title": "Digoxin Cyclosporine Recommendation",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/plan-definition-type",
+              "code": "eca-rule",
+              "display": "ECA Rule"
+            }
+          ]
+        },
+        "status": "draft",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/digoxin-cyclosporine-cds",
+        "topic": [
+          {
+            "text": "Digoxin Cyclosporine Prescribing"
+          }
+        ],
+        "library": [
+          {
+            "reference": "Library/digoxin-cyclosporine-cds"
+          }
+        ],
+        "relatedArtifact": [{
+          "type": "documentation",
+          "display": "Potential Drug-Drug Interaction Clinical Decision Support",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+        }],
+        "action": [
+          {
+            "triggerDefinition": {
+              "type": "named-event",
+              "eventName": "medication-prescribe"
+            },
+            "condition": [
+              {
+                "kind": "applicability",
+                "language": "text/cql",
+                "expression": "Inclusion Criteria"
+              }
+            ],
+            "action": [
+              {
+                "title": "Potential Drug-Drug Interaction between digoxin (product) and cyclosporine (product)",
+                "description": "Increased risk of digoxin toxicity. Assess risk and take action if necessary. \nDigoxin toxicity is potentially serious. The clinical consequences may include anorexia, nausea, vomiting, visual changes, and cardiac arrhythmias. \nThe mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cyclosporine. P-glycoprotein is a major transporter for digoxin efflux. \nunknown. \nunknown.",
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Base Summary"
+                  },
+                  {
+                    "path": "action.description",
+                    "expression": "Get Base Detail"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Base Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Consultation",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Request communication with digoxin prescriber",
+                    "condition": [
+                      {
+                        "kind": "applicability",
+                        "language": "text/cql",
+                        "expression": "Is Context medication digoxin"
+                      }
+                    ],
+                    "definition": {
+                      "reference": "ActivityDefinition/ad201"
+                    }
+                  },
+                  {
+                    "label": "Consultation",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Request communication with cyclosporine prescriber",
+                    "condition": [
+                      {
+                        "kind": "applicability",
+                        "language": "text/cql",
+                        "expression": "Is Context medication cyclosporine"
+                      }
+                    ],
+                    "definition": {
+                      "reference": "ActivityDefinition/ad202"
+                    }
+                  },
+                  {
+                    "label": "Cancel digoxin",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "remove"
+                    },
+                    "description": "Discontinue digoxin order",
+                    "condition": [
+                      {
+                        "kind": "applicability",
+                        "language": "text/cql",
+                        "expression": "Is Context medication digoxin"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Cancel cyclosporine",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "remove"
+                    },
+                    "description": "Discontinue cyclosporine order",
+                    "condition": [
+                      {
+                        "kind": "applicability",
+                        "language": "text/cql",
+                        "expression": "Is Context medication cyclosporine"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Digoxin Level",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Order digoxin trough within 24 hours from initiation",
+                    "condition": [
+                      {
+                        "kind": "applicability",
+                        "language": "text/cql",
+                        "expression": "Is new order for digoxin"
+                      }
+                    ],
+                    "definition": {
+                      "reference": "ActivityDefinition/ad203"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Patient does (not) have digoxin level within 30 days that is below 0.9 ng/mL (SI: 1.2 nmol/L)",
+                "description": "(Digoxin: level and date). \nFor patients with a reliable plasma digoxin concentration in normal range, it is reasonable to anticipate an increase in plasma concentrations after the initiation of cyclosporine. Following initiation, close monitoring and adjusting the digoxin dose as needed is recommended",
+                "description": "Initiating cyclosporine is expected to increase digoxin levels. For patients without a reliable plasma digoxin concentration in normal range, use only if benefits outweight risks. Extreme caution and close monitoring is necessary.",
+                "documentation": [
+                  {
+                    "type": "documentation",
+                    "display": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
+                    "url": "http://hl7.org/fhir/ig/PDDI-CDS/testingURL"
+                  },
+                  {
+                    "type": "documentation",
+                    "display": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
+                    "url": "http://hl7.org/fhir/ig/PDDI-CDS/testingURL"
+                  }
+                ],
+                "condition": [
+                  {
+                    "kind": "applicability",
+                    "language": "text/cql",
+                    "expression": "Is digoxin in prefetch"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Card 2 Summary"
+                  },
+                  {
+                    "path": "action.description",
+                    "expression": "Get Card 2 Detail"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Card 2 Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Digoxin Level",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Order digoxin trough within 24 hours from the initiation of cyclosporine",
+                    "definition": {
+                      "reference": "ActivityDefinition/ad203"
+                    }
+                  },
+                  {
+                    "label": "New Digoxin",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Preemptively reduce digoxin dose with new order ",
+                    "condition": [
+                      {
+                        "kind": "applicability",
+                        "language": "text/cql",
+                        "expression": "Need to reduce Digoxin dose"
+                      }
+                    ],
+                    "definition": {
+                      "reference": "ActivityDefinition/ad204"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Within 100 days, the patient has had electrolyte and serum creatinine levels checked, and they are not on a potassium sparing or loop diuretic.",
+                "description": "(Potassium: level and date)\n (Magnesium: level and date)\n (Calcium: level and date)\n (Serum creatinine: level and date)\n Hypokalemia, hypomagnesemia, and hypercalcemia may potentiate digoxin toxicity. 50-70% of digoxin is excreted unchanged in the urine. Changing renal function may increase serum concentrations and risk of toxicity.",
+                "description": "(Serum creatinine: level and date)\n Hypokalemia, hypomagnesemia, and hypercalcemia may potentiate digoxin toxicity. 50-70% of digoxin is excreted unchanged in the urine. Changing renal function may increase serum concentrations and risk of toxicity.",
+                "documentation": [
+                  {
+                    "type": "documentation",
+                    "display": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
+                    "url": "http://hl7.org/fhir/ig/PDDI-CDS/testingURL"
+                  },
+                  {
+                    "type": "documentation",
+                    "display": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
+                    "url": "http://hl7.org/fhir/ig/PDDI-CDS/testingURL"
+                  }
+                ],
+                "dynamicValue": [
+                  {
+                    "path": "action.title",
+                    "expression": "Get Card 3 Summary"
+                  },
+                  {
+                    "path": "action.description",
+                    "expression": "Get Card 3 Detail"
+                  },
+                  {
+                    "path": "activity.extension",
+                    "expression": "Get Card 3 Indicator"
+                  }
+                ],
+                "action": [
+                  {
+                    "label": "Serum Creatinine",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Order for serum creatinine",
+                    "definition": {
+                      "reference": "ActivityDefinition/ad205"
+                    }
+                  },
+                  {
+                    "label": "Electrolyte Panel",
+                    "type": {
+                      "system": "http://hl7.org/fhir/ValueSet/action-type",
+                      "code": "create"
+                    },
+                    "description": "Order for electrolyte panel",
+                    "definition": {
+                      "reference": "ActivityDefinition/ad206"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@ library Warfarin_NSAIDs_CDS version '1.0'
 
 using FHIR version '3.0.0'
 
-// include PDDICDSCommon version '1.0' called Common
+include PDDICDSCommon version '1.0' called Common
 
 codesystem "RXNORM": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 
@@ -17,49 +17,6 @@ valueset "Aldosterone Antagonists": 'http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/va
 parameter ContextPrescriptions List<MedicationRequest>
 
 context Patient
-
-// NOTE: These functions have been moved here from the Commmon library to boost performance
-define function GetConditionName(condition Condition):
-  if condition is not null
-    then condition.code.coding[0].display.value
-  else 'NA'
-
-define function GetAssertedDate(condition Condition):
-  if condition is not null
-    then ToString(condition.assertedDate.value)
-  else 'NA'
-
-define function GetLevelAndDate(observation Observation):
-  if observation is not null
-    then ToString(ToQuantity(observation.value as Quantity))
-      + ' and ' 
-      + ToString(observation.effective.value)
-  else 'NA'
-
-define function GetMedicationNames(medications List<MedicationRequest>):
-  medications M
-    return ToCode(M.medication.coding[0]).display
-
-define function GetDrugNames(codings List<FHIR.Coding>):
-  Combine(
-    flatten (
-      codings coding
-          return ToCode(coding).display
-    ), ', ')
-
-define function ToCode(coding FHIR.Coding):
-  System.Code {
-    code: coding.code.value,
-    system: coding.system.value,
-    version: coding.version.value,
-    display: coding.display.value
-  }
-
-define function ToQuantity(quantity FHIR.Quantity):
-  System.Quantity { value: quantity.value.value, unit: quantity.unit.value }
-
-define function ToString(value FHIR.Coding): value.display.value
-define function ToString(value Code): value.display
 
 /*
 **
@@ -84,7 +41,7 @@ define "Is not context medication topical diclofenac":
 
 define "Topical Diclofenac Prescription":
   ContextPrescriptions P
-    where ToCode(P.medication.coding[0]) in "Topical Diclofenac"
+    where Common.ToCode(P.medication.coding[0]) in "Topical Diclofenac"
     return P.medication.coding[0]
 
 
@@ -120,7 +77,7 @@ define "Is context medication systemic NSAID":
 
 define "NSAID Prescription":
   ContextPrescriptions P
-    where ToCode(P.medication.coding[0]) in "NSAIDs"
+    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
     return P.medication.coding[0]
 
 
@@ -129,9 +86,9 @@ define "NSAID Prescription":
 // Card 1: Base
 define "Get Base Summary":
   'Potential Drug-Drug Interaction between warfarin (' 
-    + GetDrugNames("Warfarin Rx") 
+    + Common.GetDrugNames("Warfarin Rx") 
     + ') and NSAID (' 
-    + GetDrugNames("NSAID Prescription")
+    + Common.GetDrugNames("NSAID Prescription")
     + ').'
 
 define "Get Base Indicator":
@@ -145,16 +102,16 @@ define "Acetaminophen 500 MG": Code '198440' from "RXNORM" display 'Acetaminophe
 
 define "Get Base Label 1":
   'Substitute NSAID (' 
-  + GetDrugNames("NSAID Prescription")
+  + Common.GetDrugNames("NSAID Prescription")
   + ') with APAP (' 
-  + ToString("Acetaminophen 325 MG")
+  + Common.ToString("Acetaminophen 325 MG")
   + ').'
 
 define "Get Base Label 2":
   'Substitute NSAID (' 
-  + GetDrugNames("NSAID Prescription")
+  + Common.GetDrugNames("NSAID Prescription")
   + ') with APAP (' 
-  + ToString("Acetaminophen 500 MG")
+  + Common.ToString("Acetaminophen 500 MG")
   + ').'
 
 
@@ -168,7 +125,7 @@ define "Get Card 2 Indicator":
 define "Get Card 2 Summary":
   if "Taking PPI or misoprostol"
     then 'Patient is taking a proton pump inhibitor (' 
-      + GetDrugNames("PPIs and Misoprostols Rx")
+      + Common.GetDrugNames("PPIs and Misoprostols Rx")
       + ').'
   else 'Patient is not taking a proton pump inhibitor or misoprostol.'
 
@@ -219,9 +176,9 @@ define "Get Card 3 Indicator":
 define "Get Card 3 Summary":
   if "Age > 65 years or Hx UGIB"
     then 'Patient is 65 y/o or does have a history of upper gastrointestinal bleed ("' 
-      + GetConditionName("GI Bleeds Condition") 
+      + Common.GetConditionName("GI Bleeds Condition") 
       + '" and ' 
-      + GetAssertedDate("GI Bleeds Condition")
+      + Common.GetAssertedDate("GI Bleeds Condition")
       + ').'
   else 'Patient is not 65 y/o and does not have a history of upper gastrointestinal bleed.'
 
@@ -257,11 +214,11 @@ define "Get Card 4 Indicator":
 define "Get Card 4 Summary":
   if "Taking CS, MCRA, or NSAID"
     then 'Patient is concomitantly taking systemic corticosteroids (' 
-      + GetDrugNames("Systemic Corticosteroids Rx")
+      + Common.GetDrugNames("Systemic Corticosteroids Rx")
       + '), aldosterone antagonist (' 
-      + GetDrugNames("Aldosterone Antagonists Rx")
+      + Common.GetDrugNames("Aldosterone Antagonists Rx")
       + '), or high dose or multiple NSAIDs (' 
-      + GetDrugNames("NSAID Rx")
+      + Common.GetDrugNames("NSAID Rx")
       + ').'
   else 'Patient is not concomitantly taking systemic corticosteroids, aldosterone antagonist, or high dose or multiple NSAIDs.'
 

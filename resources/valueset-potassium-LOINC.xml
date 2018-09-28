@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="valueset-potassium-LOINC"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-potassium-LOINC"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-potassium-LOINC"/>
     <version value="Intl. 1.0"/>
     <name value="valueset-potassium-LOINC"/>
     <title value="LOINC Codes for Serum Potassium"/>

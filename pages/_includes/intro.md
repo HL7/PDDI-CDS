@@ -1,7 +1,5 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
-* **TODO** Citations in Vancouver please
-
 
 # <span style="color:silver"> 1.0.0 </span> Implementation Guide for PDDI CDS (DRAFT)
 
@@ -72,12 +70,12 @@ This Community Group Note provides motivation and a detailed domain analysis for
 #### References
 {:.no_toc}
    
-1. (cite https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/2013DefinitionEP_2_Drug_Interaction_Checks.pdf)
-2. and 3. (cite https://www.ncbi.nlm.nih.gov/pubmed/25298818 and refer to Van Der Sijis to show the stubborness of this statistic)
-3.
-4. and 5. (cite McEvoy 27570216 and Fung  28339701)
-5.
-6. (cite https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5064943/)
-7. (cite W3C)
-8. (cite http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400)
+1. Centers for Medicare and Medicated Services. Eligible Professional Meaningful Use Core Measures Measure 2 of 14. 2013 April (cited 2018 August). Available from: https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/2013DefinitionEP_2_Drug_Interaction_Checks.pdf. 
+2. Bryant AD, Fletcher GS, Payne TH. Drug Interaction Alert Override Rates in the Meaningful Use Era: No Evidence of Progress. Applied Clinical Informatics. 2014;5(3):802-813. doi:10.4338/ACI-2013-12-RA-0103.
+3. Van der Sijs H, Aarts J, Vulto A, Berg M. Overriding of Drug Safety Alerts in Computerized Physician Order Entry. Journal of the American Medical Informatics Association : JAMIA. 2006;13(2):138-147. doi:10.1197/jamia.M1809.
+4. McEvoy DS, Sittig DF, Hickman T-T, et al. Variation in high-priority drug-drug interaction alerts across institutions and electronic health records. Journal of the American Medical Informatics Association : JAMIA. 2017;24(2):331-338. doi:10.1093/jamia/ocw114.and 5.
+5. Fung KW, Kapusnik-Uner J, Cunningham J, Higby-Baker S, Bodenreider O. Comparison of three commercial knowledge bases for detection of drug-drug interactions in clinical decision support. Journal of the American Medical Informatics Association : JAMIA. 2017;24(4):806-812. doi:10.1093/jamia/ocx010.
+6. Tilson H, Hines LE, McEvoy G, et al. Recommendations for Selecting Drug-Drug Interactions for Clinical Decision Support. American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists. 2016;73(8):576-585. doi:10.2146/ajhp150565.
+7. World Wide Web Consortium (W3C). Community Group Note, A Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence - Technical and User-centered Foundation.
+8. Health Level Seven International. HL7 Cross-Paradigm Specification: Clinical Quality Language, Release 1. 2017 May (cited 2018 August). Available from: http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400.
     

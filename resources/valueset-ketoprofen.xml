@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="valueset-ketoprofen"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketoprofen"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ketoprofen"/>
     <version value="US 1.1"/>
     <name value="valueset-ketoprofen"/>
     <title value="Ketoprofen Medications Value Set"/>

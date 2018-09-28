@@ -1,0 +1,28 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e101",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2018-06-12T21:58:21.826+00:00"
+        },
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/f101"
+        },
+        "period": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+              "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() - 4 months }, end: FHIR.dateTime { value: Today() - 4 months } }"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

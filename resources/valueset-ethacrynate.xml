@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="valueset-ethacrynate"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ethacrynate"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ethacrynate"/>
     <version value="US 1.0"/>
     <name value="valueset-ethacrynate"/>
     <title value="Ethacrynate Medications Value Set"/>

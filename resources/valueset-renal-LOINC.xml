@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="valueset-renal-LOINC"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-renal-LOINC"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-renal-LOINC"/>
     <version value="Intl. 1.0"/>
     <name value="valueset-renal-LOINC"/>
     <title value="LOINC Codes for Renal Function"/>

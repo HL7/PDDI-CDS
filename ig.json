@@ -33,7 +33,7 @@
   "publisher": "HL7 Clinical Decision Support Committee",
   "status": "draft",
   "sct-edition": "http://snomed.info/sct/731000124108",
-  "npm-name": "hl7.fhir.pddi",
+  "npm-name": "hl7.fhir.uv.pddi",
   "license": "CC0-1.0",
   "paths": {
     "txCache": "txCache",
@@ -53,12 +53,12 @@
   "spreadsheets": [
   ],
   "do-transforms": "false",
-  "canonicalBase": "http://hl7.org/fhir/ig/PDDI-CDS",
+  "canonicalBase": "http://hl7.org/fhir/uv/pddi",
   "valuesets": [
   ],
   "searches": [
   ],
-  "version": "3.4.0",
+  "version": "3.5.0",
   "resources": {
     "CodeSystem/codesystem-PDDICDS-indicator": {
       "base" : "CodeSystem-codesystem-PDDICDS-indicator.html",
@@ -576,5 +576,6 @@
     ],
     "no-inactive-codes": "false",
     "working-dir": "/git/onc-pd-ig/",
-    "gen-examples": "false"
+    "gen-examples": "false",
+    "fixed-business-version" : "0.1.0"
   }

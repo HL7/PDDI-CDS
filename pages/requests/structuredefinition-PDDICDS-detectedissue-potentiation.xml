@@ -1,5 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/StructureDefinition/structuredefinition-PDDICDS-detectedissue-potentiation"/>
+    <url value="http://hl7.org/fhir/uv/pddi/StructureDefinition/structuredefinition-PDDICDS-detectedissue-potentiation"/>
     <id value="structuredefinition-PDDICDS-detectedissue-potentiation"/>
     <meta>
         <lastUpdated value="2018-08-13T09:45:58.249-05:00" />

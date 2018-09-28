@@ -400,10 +400,10 @@ As an example below, statements defined in the PDDICDS_Common library, version 1
 A value set declaration specifies a local identifier that represents a value set and can be used anywhere within the library.
 
 ~~~
-  valueset "Warfarins": 'http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin'
+  valueset "Warfarins": 'http://hl7.org/fhir/uv/pddi/ValueSet/valueset-warfarin'
 ~~~
 
-This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the value set, an uniform resource identifier (URI) in this case is `http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin`. The external identifier should be an ID or a uniform resource identifier (URI).
+This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the value set, an uniform resource identifier (URI) in this case is `http://hl7.org/fhir/uv/pddi/ValueSet/valueset-warfarin`. The external identifier should be an ID or a uniform resource identifier (URI).
 
 This valueset definition can then be used within the library wherever a valueset can be used:
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="valueset-misoprostol"/>
-    <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-misoprostol"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-misoprostol"/>
     <version value="US 1.1"/>
     <name value="valueset-misoprostol"/>
     <title value="Misoprostol Medications Value Set"/>

@@ -1,0 +1,36 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "rxnorm",
+        "url": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "name": "CodeSystem RxNorm",
+        "status": "draft",
+        "concept": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "loinc",
+        "url": "http://loinc.org",
+        "name": "CodeSystem LOINC",
+        "status": "draft",
+        "concept": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "snomed-ct",
+        "url": "http://snomed.info/sct",
+        "name": "CodeSystem SNOMED-CT",
+        "status": "draft",
+        "concept": []
+      }
+    }
+  ]
+}

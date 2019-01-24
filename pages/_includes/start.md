@@ -226,7 +226,7 @@ This section describes the components and processes of the Clinical Reasoning mo
 ### <span style="color:silver"> 4.3.1 </span> PlanDefinition
 {:.no_toc}
 
-In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are three main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.` 
+In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are four main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.` 
 
 ##### TriggerDefinition
 {:.no_toc}

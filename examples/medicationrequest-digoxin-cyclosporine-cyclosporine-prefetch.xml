@@ -18,9 +18,6 @@
     <subject>
         <reference value="Patient/patient-digoxin-cyclosporine-context"/>
     </subject>
-    <context>
-        <reference value="Encounter/encounter-digoxin-cyclosporine-context"/>
-    </context>
     <authoredOn>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
             <valueExpression>

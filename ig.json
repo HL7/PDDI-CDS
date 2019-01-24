@@ -46,8 +46,7 @@
     ],
     "temp": "temp",
     "qa": "qa",
-    "output": "output",
-    "specification": "http://hl7.org/fhir/STU3"
+    "output": "output"
   },
   "tool": "jekyll",
   "spreadsheets": [
@@ -58,7 +57,6 @@
   ],
   "searches": [
   ],
-  "version": "3.5.0",
   "resources": {
     "CodeSystem/codesystem-PDDICDS-indicator": {
       "base" : "CodeSystem-codesystem-PDDICDS-indicator.html",
@@ -572,6 +570,8 @@
       "urn:oid:2.16.840.1.113883.6.238"
     ],
     "source": "ig.xml",
+    "logging": ["init","progress","context","html","tx"],
+    "broken-links" : "warning",
     "structuremaps": [
     ],
     "no-inactive-codes": "false",

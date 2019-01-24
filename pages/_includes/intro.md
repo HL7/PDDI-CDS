@@ -21,7 +21,7 @@ This implementation guide was developed by the Health Level 7 [(HL7)](http://wik
 
 This implementation guide:
 
-1. Describes two exemplar potential PDDI CDS artifacts: [Warfarin + NSAIDs](documentation.html) and [Digoxin + Cyclosporine.](documentation.html)
+1. Describes two potential PDDI CDS artifacts: [Warfarin + NSAIDs](documentation.html) and [Digoxin + Cyclosporine.](documentation.html)
 
 2. Provides structured code for artifacts using the following HIT specifications:
 

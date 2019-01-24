@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
 	<id value="ig" />
-	<meta>
-		<lastUpdated value="2019-01-24" />
-	</meta>
 	<url value="http://hl7.org/fhir/uv/pddi" /> <!-- might need to be changed to http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig or similar  per http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Canonical_URL-->
 	<name value="PDDI CDS" />
 	<status value="draft" />

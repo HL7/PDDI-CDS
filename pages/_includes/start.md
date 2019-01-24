@@ -19,7 +19,7 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 * PDDI CDS knowledge artifacts. It is RECOMMENDED that the knowledge artifacts adhere to the [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/hcls-drug-drug-interaction/index.html) proposed by the [W3C](https://www.w3.org/community/hclscg/) Semantic Web in Health Care and Life Sciences Community Group
 
-* A CDS rule execution engine. It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://hl7.org/fhir/stu3/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
+* A CDS rule execution engine. It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
 * A web service that processes CDS requests using a CDS rule execution engine. The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
 
@@ -197,7 +197,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | ---- | ----
 `patientId` | REQUIRED | Yes | *string* | Describe the context value
 `encounterId` | OPTIONAL | Yes | *string* | Describe the context value
-`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
+`medication`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
 
 ##### Prefetch
 {:.no_toc}
@@ -375,7 +375,7 @@ Data models define the structures that can be used within retrieve expressions i
    using FHIR version '3.0.0'
 ~~~
 
-For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary data model within the library. The data model supports all [FHIR STU3](https://www.hl7.org/fhir/index.html) resources including MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense, Observation, and Condition.
+For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary data model within the library. The data model supports all [FHIR R4](https://www.hl7.org/fhir/index.html) resources including MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense, Observation, and Condition.
 
 #### Libraries
 {:.no_toc}
@@ -746,7 +746,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | :----: | ----
 `patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
-`medication`| REQUIRED | No | *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+`medication`| REQUIRED | No | *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 #### **`medication-prescribe` 1.1** (modification of a current CDS Hook)
  {:.no_toc}
@@ -757,8 +757,8 @@ Field | Optionality | Prefetch Token | Type | Description
  :------------- |:-------------:|:-------: |:-----:| :-----------------
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
- `detectedissue` | REQUIRED     | Yes |    *object* | STU3 - FHIR Bundle of DetectedIssue resource for current order entry task
- `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+ `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
+ `medication` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
 #### Prefetch

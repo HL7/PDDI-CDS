@@ -66,7 +66,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 	<td style="background-color: #f4fff2"><strong>Severity</strong>: While bleeding is a serious potential clinical consequence, severity can vary from easily tolerated to incapacitating </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence MUST be reported if known. The severity of a PDDI clinical consequence MUST be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href='https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ'>Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
+	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence MUST be reported if known. The severity of a PDDI clinical consequence MUST be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href="https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ">Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
       </tr>
     </table>
     <table>
@@ -90,7 +90,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
           over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a>evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a>contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href="http://purl.obolibrary.org/obo/MPIO_0000004" target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a href="http://purl.obolibrary.org/obo/MPIO_0000000" target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
       </tr>
     </table>
     <table>
@@ -134,12 +134,12 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 	</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> <a>Contextual information/modifying factors</a> are necessary for alerts that
+	<td><strong>Comment:</strong> <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">Contextual information/modifying factors</a> are necessary for alerts that
           are both sensitive and specific. Like clinical consequences, each known factor SHOULD be
           stated as specifically as possible. The factors SHOULD be amenable to implementation as executable
           logic using value sets from clinical terminologies such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a>, the
 	  <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>, <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a>, and <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. As is used in this
-          example, each factor SHOULD be related to a specific <a>recommended action</a> that is supported by the <a>evidence for a suspected drug-drug interaction</a></td>
+          example, each factor SHOULD be related to a specific <a href='http://purl.obolibrary.org/obo/MPIO_0000008' target="new">recommended action</a> that is supported by the <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a></td>
       </tr>
     </table>
     <table>
@@ -269,7 +269,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | ---- | ----
 `patientId` | REQUIRED | Yes | *string* | Describe the context value
 `encounterId` | OPTIONAL | Yes | *string* | Describe the context value
-`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
+`medication`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
 
 ##### `medication-prescribe 1.1`
 {:.no_toc}
@@ -278,8 +278,8 @@ Field       | Optionality        |  Prefetch Token     |Type  | Description
  :------------- |:-------------:|:-------: |:-----:| :-----------------
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
- `detectedissue` | REQUIRED     | Yes |    *object* | STU3 - FHIR Bundle of DetectedIssue resource for current order entry task
- `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+ `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
+ `medication` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
 ##### `medication-select` `prefetch`
@@ -366,7 +366,7 @@ Field       | Optionality        |  Prefetch Token     |Type  | Description
 	<td style="background-color: #f4fff2"><strong>Recommended Action</strong>: For patients with a reliable plasma digoxin concentration in normal range, it is reasonable to anticipate an increase in plasma concentrations after the initiation of cyclosporine. Following initiation, close monitoring and adjusting the digoxin dose as needed is recommended.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a>evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a>contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
       </tr>
     </table>
     <table>
@@ -387,12 +387,12 @@ Field       | Optionality        |  Prefetch Token     |Type  | Description
 	</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> <a>Contextual information/modifying factors</a> are necessary for alerts that
+	<td><strong>Comment:</strong> <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">Contextual information/modifying factors</a> are necessary for alerts that
           are both sensitive and specific. Like clinical consequences, each known factor SHOULD be
           stated as specifically as possible. The factors SHOULD be amenable to implementation as executable
           logic using value sets from clinical terminologies such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a>, the
 	  <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>, <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a>, and <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. As is used in this
-          example, each factor SHOULD be related to a specific <a>recommended action</a> that is supported by the <a>evidence for a suspected drug-drug interaction</a></td>
+          example, each factor SHOULD be related to a specific <a href='http://purl.obolibrary.org/obo/MPIO_0000008' target="new">recommended action</a> that is supported by the <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a></td>
       </tr>
     </table>
     <table>
@@ -531,7 +531,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | ---- | ----
 `patientId` | REQUIRED | Yes | *string* | Describe the context value
 `encounterId` | OPTIONAL | Yes | *string* | Describe the context value
-`medication`| REQUIRED | No | *object* | STU3 - FHIR `MedicationRequest` resource
+`medication`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
 
 #### `medication-prescribe 1.1` `context`
 {:.no_toc}
@@ -540,8 +540,8 @@ Field       | Optionality        |  Prefetch Token     |Type  | Description
  :------------- |:-------------:|:-------: |:-----:| :-----------------
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
- `detectedissue` | REQUIRED     | Yes |    *object* | STU3 - FHIR Bundle of DetectedIssue resource for current order entry task
- `medication` | REQUIRED     | No |    *object* | STU3 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+ `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
+ `medication` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
 #### `medication-select` `prefetch`

@@ -2,7 +2,7 @@
 
 <!-- backticks refer to elements and hooks only -->
 
-<!-- camel case for resources only, capitalize service name (Medication Prescribe Service?) -->
+<!-- camel case for resources only, capitalize service name (e.g., Order Select Service or Order Sign Service) -->
 
 
 # <span style="color:silver"> 2.0.0 </span> Getting Started with PDDI CDS
@@ -15,15 +15,19 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 ---
 
-## <span style="color:silver"> 2.1.0 </span> What You Will Need
+## <span style="color:silver"> 2.1.0 </span> What You Will Need and Summary of Normative Recommendations
 
-* PDDI CDS knowledge artifacts. It is RECOMMENDED that the knowledge artifacts adhere to the [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/hcls-drug-drug-interaction/index.html) proposed by the [W3C](https://www.w3.org/community/hclscg/) Semantic Web in Health Care and Life Sciences Community Group
+* PDDI CDS knowledge artifacts. It is RECOMMENDED that the knowledge artifacts adhere to the 8 detailed best practice recommendations related to the 10 core information items discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/hcls-drug-drug-interaction/index.html).
 
 * A CDS rule execution engine. It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
 * A web service that processes CDS requests using a CDS rule execution engine. The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
 
-* FHIR server(s) for terminology and patient data
+* A web service that processes CDS requests MUST be able to process FHIR data including clinical and terminology resources. 
+
+* The EHR system that sends requests to the service MAY provide access to the service to relevant patient data in the EHR via a FHIR server. EHR systems that do not provide access to addition patient data will potentially receive more limited CDS because the service will only work with data in the `context` and `prefetch` fields of CDS Hooks requests.
+
+* Here is a list of FHIR tools that might be of interest to implementers:
 
 	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
     
@@ -38,9 +42,14 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
 			
 
+### <span style="color:silver"> 2.1.1 </span>Summary of Normative Recommendations
+{:.no_toc}
+
+TODO:
+
 ## <span style="color:silver"> 2.2.0 </span> Related Projects 
 
-The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring) is a component of the CDS Connect project funded by the Agency for Healthcare Research and Quality [(AHRQ)](https://www.ahrq.gov/). The Documentation section of this implementation guide describes the PDDI CDS artifact knowledge at a narrative and semi-structured level. Although currently not tested, it should be possible to use the authoring tool to develop CQL from similar semi-structured knowledge representations.
+The Documentation section of this implementation guide describes example PDDI CDS artifacts at a narrative and semi-structured level. The example CDS services shown in this implementation guide were written without the use of a specific authoring tool. The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring) is a component of the CDS Connect project funded by the Agency for Healthcare Research and Quality [(AHRQ)](https://www.ahrq.gov/). Although currently not tested, it should be possible to use the authoring tool to develop CQL from similar semi-structured knowledge representations. 
 
 
 ## <span style="color:silver"> 2.3.0 </span> CDS Function
@@ -52,12 +61,12 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 ### <span style="color:silver"> 2.4.1 </span>Clinical
 {:.no_toc}
 
-PDDIs are, to an extent, theoretical due to knowledge gaps in the literature. Thus, alert specificity and individualized information is limited by available knowledge. The goal of contextualizing or individualizing these alerts is not only to reduce the number of alerts, by increasing specificity, but to improve the clinical relevance of the information that is presented. In this respect, PDDI CDS may function as an educational tool to raise awareness of known factors that may mitigate or potentiate the risk associated with PDDIs. Gaps in the literature relating to contextual factors is a known issue of the domain and is a key limitation to this and other PDDI CDS systems. Moreover, with this limitation, unknown medication adherence, and data quality/availability – it is ultimately the clinician's decision whether to proceed with interacting orders. 
+PDDIs are, to an extent, theoretical due to knowledge gaps in the literature. Thus, alert specificity and individualized information is limited by available knowledge. The goal of contextualizing or individualizing these alerts is not only to reduce the number of alerts by increasing specificity, but also to improve the clinical relevance of the information that is presented. In this respect, PDDI CDS may function as an educational tool to raise awareness of known factors that may mitigate or potentiate the risk associated with PDDIs. Gaps in the literature relating to contextual factors is a known issue of the domain and is a key limitation to this and other PDDI CDS systems. Moreover, with this limitation, unknown medication adherence, and data quality/availability – it is ultimately the clinician's decision whether to proceed with potentially interacting drug orders. 
 
 ### <span style="color:silver"> 2.4.2 </span> Technical 
 {:.no_toc}
 
-The goal of CDS is to bring clinically relevant information to the clinician at the right time; therefore, CDS performance is required to meet clinician expectations. Delays in presenting information may lead to unsuccessful CDS adoption and clinician frustration. While the implementor remains in control of fulfilling prefetch queries, this is a key component of the CDS Hooks standard and supports the CDS system performance. Depending on the patient and service, prefetch data may encompass a variety resources captured during various time periods, so it is crucial that implementors and clinicians refine prefetch template parameters to obtain only data that is clinically relevant. The EHR may combine several methods to satisfy prefetch templates. For more information see the Documentation section, [Prefetch Role](documentation.html).
+The goal of CDS is to bring clinically relevant information to the clinician at the right time. Therefore, the CDS service must run efficiently to meet clinician expectations and not distract from the clinical workflow. Delays in presenting CDS information may lead to unsuccessful CDS adoption and clinician frustration. "Prefetch" queries are a key component of the CDS Hooks standard that supports the CDS system performance. These queries assemble relevant data from the EHR prior to submitting a request to the CDS service. Depending on the patient and service, prefetch data may encompass a variety resources captured during various time periods, so it is crucial that implementors and clinicians refine prefetch template parameters to obtain only data that is clinically relevant. The EHR MAY combine several methods to satisfy prefetch templates. For more information see the Documentation section, [Prefetch Role](documentation.html).
 
 Each implementation MAY employ a slightly different approach to ensure successful integration of the CDS system. Here are several general aspects to assess:
 
@@ -82,7 +91,9 @@ Two exemplar PDDI CDS artifacts are available in this implementation guide (i.e.
 
 ## <span style="color:silver"> 2.6.0 </span> Level 1 versus Level 2 Implementations
 
-The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets the Level 2 Implementation apart from most conventional CDS systems that trigger PDDI CDS at the time of order signing. In Level 2, PDDI CDS is moved up to earlier in the order entry workflow, providing clinicians with actionable information in the middle of their decision making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective PDDI CDS. In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending order entry workflow step the clinician is engaged in.  At the time of medication selection, a `medication-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `medication-prescribe` CDS Hook sends other contextual resources specific to a PDDI identified from processing `medication-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. In Level 2, the `DetectedIssue` resource stores crucial information on clinician action that facilitates monitoring PDDIs and improving actionable suggestions. Moreover, by creating a DetectedIssue resource that contains clinician responses. This gives control to the clinician on what, if any, additional patient-specific information is presented. For example, if a clinician decides to continue with the NSAID prescription but adds a proton pump inhibitor (risk mitigating action), the CDS Service for `medication-prescribe` would adjust the indicator from "hard-stop" (interruptive) to "warning" (passive). Table 1 provides a summary of the specification and feature differences between the levels of implementation.
+The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets the Level 2 Implementation apart from most conventional CDS systems that trigger PDDI CDS at the time of order signing. In Level 2, PDDI CDS is moved up to earlier in the order entry workflow, providing clinicians with actionable information in the middle of their decision making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective PDDI CDS. 
+
+In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending order entry workflow step the clinician is engaged in.  At the time of medication selection, a `order-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `order-sign` CDS Hook sends other contextual resources specific to a PDDI identified from processing `order-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. In Level 2, the `DetectedIssue` resource stores crucial information on clinician action that facilitates monitoring PDDIs and improving actionable suggestions. Moreover, creating a `DetectedIssue` resource that contains clinician responses gives control to the clinician on what, if any, additional patient-specific information is presented. For example, if a clinician decides to continue with the NSAID prescription but adds a proton pump inhibitor (risk mitigating action), the CDS Service for `order-sign` would adjust the indicator from "hard-stop" (interruptive) to "warning" (passive). Table 1 provides a summary of the specification and feature differences between the levels of implementation.
  
 
 
@@ -92,10 +103,9 @@ The primary difference between Level 1 and Level 2 Implementations is the additi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Base Specifications | Level-1 | Level-2 
 ----- | :--------: | :----: | :----: 
 **Specifications** | |  |   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`medication-prescribe 1.0` | **X** | **X** |  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`medication-prescribe 1.1`|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`medication-select 1.0`|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `DetectedIssue` resource | **X** | **X** | **X** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`order-sign 1.0` | **X** | **X** |  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`order-select 1.0`|  |  | **X** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`DetectedIssue` resource | **X** | **X** | **X** 
 **Features** |  |  | 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`DetectedIssue` potentiation element |  | **X** | **X** 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Card response extension for `DetectedIssue`|  | **X** | **X** 
@@ -134,7 +144,7 @@ GET http://FHIR.org/PDDI-CDS
 {
   "services": [
     {
-      "hook": "medication-prescribe",
+      "hook": "order-sign",
       "title": "PDDI CDS Service",
       "description": "CDS Service for drug-drug interactions",
       "id": "PDDI-CDS",
@@ -151,7 +161,7 @@ GET http://FHIR.org/PDDI-CDS
 
 # <span style="color:silver"> 4.0.0 </span> Level 1 Implementation
 
-The Level 1 Implementation uses the `medication-prescribe 1.0` specification but does not declare the triggering event. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.  
+The Level 1 Implementation uses the `order-sign 1.0`. The CDS Hooks specification states that `order-sign 1.0` fires when a clinician is ready to sign one or more orders for a patient, (including orders for medications, procedures, labs and other orders). This hook is among the last workflow events before an order is promoted out of a draft status. The context contains all order details, such as dose, quantity, route, etc, although the order has not yet been signed and therefore still exists in a draft status. Use this hook when your service requires all order details, and the clinician will accept recommended changes. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.  
 
 Specific CDS Hooks and FHIR standards modifications REQUIRED for Level 1 Implementation:
 
@@ -162,11 +172,11 @@ Specific CDS Hooks and FHIR standards modifications REQUIRED for Level 1 Impleme
 ## <span style="color:silver"> 4.1.0 </span> Summary of Operations
 {:.no_toc}
 
-The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `medication-prescribe`) and ends with the user's action in response to the Card response suggestion(s) (Figure 2). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
+The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `order-sign`) and ends with the user's action in response to the Card response suggestion(s) (Figure 2). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Level 1 – Medication Prescribe Service Summary </strong></figcaption>
-  <img src="assets/images/Basic_Medication_prescribe_service.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Medication_prescribe_service.svg" />
+<figcaption class="figure-caption"><strong>Figure 2: Level 1 – Order Sign Service Summary </strong></figcaption>
+  <img src="assets/images/Basic_Order_Sign_service.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Order_Sign_service.svg" />
 </figure>
 
 
@@ -188,16 +198,17 @@ The EHR MUST call the PDDI CDS service by sending an HTTP `POST` containing `JSO
 ##### Context
 {:.no_toc}
 
-The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `medication-prescribe` hook specifies the `context` MUST include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process. 
+The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `order-sign` hook specifies the `context` MUST include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process. 
 
-**`medication-prescribe` 1.0.**
+**`order-sign` 1.0.**
 
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | ---- | ----
-`patientId` | REQUIRED | Yes | *string* | Describe the context value
-`encounterId` | OPTIONAL | Yes | *string* | Describe the context value
-`medication`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
+`userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
+`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient in context
+`encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter in context
+`draftOrders`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
 
 ##### Prefetch
 {:.no_toc}
@@ -231,17 +242,17 @@ In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the Pla
 ##### TriggerDefinition
 {:.no_toc}
 
-The `TriggerDefinition` uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The `TriggerDefinition` for a `PlanDefinition` written for PDDI CDS MUST be based on one of the CDS Hooks requests `medication-prescribe` and `medication-select.`
+The `TriggerDefinition` uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The `TriggerDefinition` for a `PlanDefinition` written for PDDI CDS MUST be based on one of the CDS Hooks requests `order-sign` and `order-select.`
 
 ~~~
 "triggerDefinition": {
               "type": "named-event",
-              "eventName": "medication-prescribe"
+              "eventName": "order-sign"
 ~~~
 ~~~
 "triggerDefinition": {
               "type": "named-event",
-              "eventName": "medication-select"
+              "eventName": "order-select"
 ~~~              
 
 ##### Condition 
@@ -653,13 +664,13 @@ The Level 2 Implementation is a proposed target to optimize PDDI CDS artifacts. 
 
 Differences between the Level 1 and Level 2 Implementations include:
 
-1. Defining two CDS Hooks triggers in CPOE workflow (i.e., `medication-select` and `medication-prescribe`)
+1. Defining two CDS Hooks triggers in CPOE workflow (i.e., `order-select` and `order-sign`)
 
-2. Creating a `medication-select` specification 
+2. Creating a `order-select` specification 
 
-3. Modify `medication-prescribe` specification
+3. Modify `order-sign` specification
 
-4. Creating separate but coordinated Medication Select and Medication Prescribe Services
+4. Creating separate but coordinated Order Select and Order Sign Services
 
 > *Note:* The Level 2 Implementation requires two separate, but *coordinated,* services for standards' precision, logic flexibility, and to avoid the need for CDS service state.
 
@@ -669,9 +680,9 @@ Differences between the Level 1 and Level 2 Implementations include:
 
 Different contextual factors are available and needed at different times during the medication order process (Figure 4). To align clinicians' information needs with PDDI information, the Level 2 Implementation *defines* two separate hook trigger events in the medication order workflow:
 
-1. Selecting a drug product to include in medication order (`medication-select`)
+1. Selecting a drug product to include in medication order (`order-select`)
 
-2. Accepting or signing a single medication order (`medication-prescribe`)
+2. Accepting or signing a single medication order (`order-sign`)
 
 
 <figure class="figure">
@@ -682,7 +693,7 @@ Different contextual factors are available and needed at different times during 
 ## <span style="color:silver"> 5.2.0 </span> Level 2 – Summary of Operations
 {:.no_toc}
 
-Coordinating the Medication Select Service with the Medication Prescribe Service is a key aspect of the Level 2 Implementation. Whether the Medication Prescribe Service is called depends on aspects of the DetectedIssue resource (i.e., `status` element). The DetectedIssue resource is created by the Medication Select Service and populated by clinician actions in response to the displayed Cards. Figure 5 depicts the summary of operations that coordinates the Medication Select and Medication Prescribe Services.
+Coordinating the Order Select Service with the Order Sign Service is a key aspect of the Level 2 Implementation. Whether the Order Sign Service is called depends on aspects of the DetectedIssue resource (i.e., `status` element). The DetectedIssue resource is created by the Order Select Service and populated by clinician actions in response to the displayed Cards. Figure 5 depicts the summary of operations that coordinates the Order Select and Order Sign Services.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 5: Advanced – PDDI CDS Service Summary </strong></figcaption>
@@ -701,10 +712,10 @@ Coordinating the Medication Select Service with the Medication Prescribe Service
 {
 "services": [
   {
-    "hook": "medication-select",
+    "hook": "order-select",
     "title": "PDDI CDS Service",
     "description": "CDS Service for drug-drug interactions",
-    "id": "PDDI-CDS-medication-select",
+    "id": "PDDI-CDS-order-select",
     "prefetch": {
       "medications_stated": "MedicationStatement?patient/{{context.patientId}}/query parameters"
       "medications_dispensed" : "MedicationDispense?patient/{{context.patientId}}/query parameters"
@@ -713,10 +724,10 @@ Coordinating the Medication Select Service with the Medication Prescribe Service
     }
   },
   {
-    "hook": "medication-prescribe",
+    "hook": "order-sign",
     "title": "PDDI CDS Service",
     "description": "CDS Service for drug-drug interactions",
-    "id": "PDDI-CDS-medication-prescribe",
+    "id": "PDDI-CDS-order-sign",
     "prefetch": {
       "drug_drug_interaction": "DetectedIssue/{{context.detectedissueId}}/query parameters"
       "observations": "Observation?detectedissue/{{context.detectedissueId}}/query parameters"
@@ -730,41 +741,45 @@ Coordinating the Medication Select Service with the Medication Prescribe Service
 ### <span style="color:silver"> 5.3.2 </span> Level 2 – CDS Hooks Request
 {:.no_toc}
 
-The Level 2 Implementation specifies the use of both the `medication-select` and `medication-prescribe` CDS Hooks during a single medication order task. In addition to creating a `medication-select` hook, the `mediction-prescribe` `context` is modified to include the DetectedIssue resource. 
+The Level 2 Implementation specifies the use of both the `order-select` and `order-sign` CDS Hooks during a single medication order task. In addition to creating a `order-select` hook, the `mediction-prescribe` `context` is modified to include the DetectedIssue resource. 
 
 
 #### Context
 {:.no_toc}
 
-The `context` element of the `medication-select` CDS Hooks request is identical to the `medication-prescribe` specification used in the Level 1 Implementation. The `context` element in the Level 2 Implementation `medication-prescribe` element has a minor modification to include the DetectedIssue resource. The DetectedIssue.id indicates the PDDI that was identified by the Medication Select Service (e.g., `id : "warfarin-NSAID1234"`). For details on the specifications are below.
+The `context` element of the `order-select` CDS Hooks request is identical to the `order-sign` specification used in the Level 1 Implementation. The `context` element in the Level 2 Implementation `order-sign` element has a minor modification to include the DetectedIssue resource. The DetectedIssue.id indicates the PDDI that was identified by the Order Select Service (e.g., `id : "warfarin-NSAID1234"`). For details on the specifications are below.
 
 
-#### **`medication-select` 1.0** (new CDS Hook)
+#### **`order-select` 1.0** 
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | :----: | ----
+`userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
 `patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
-`medication`| REQUIRED | No | *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+`selections`  | REQUIRED | No | *array* | The FHIR id of the newly selected order(s). The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
+`draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
-#### **`medication-prescribe` 1.1** (modification of a current CDS Hook)
+
+#### **`order-sign` 1.1** (modification of a current CDS Hook)
  {:.no_toc}
- The base version for the `medication-prescribe` hook is 1.0. The Level 2 Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
+ The base version for the `order-sign` hook is 1.0. The Level 2 Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 
  :------------- |:-------------:|:-------: |:-----:| :-----------------
+ `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
  `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
- `medication` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+ `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
 #### Prefetch
 {:.no_toc}
 
-Since the order entry task is split into two separate CDS Hooks events (i.e., services), the prefetch template for the Medication Select Service includes only medication resources. The prefetch template for the Medication Prescribe Service includes any additional resources needed for a specific PDDI *after* accounting for clinician action(s). 
+Since the order entry task is split into two separate CDS Hooks events (i.e., services), the prefetch template for the Order Select Service includes only medication resources. The prefetch template for the Order Sign Service includes any additional resources needed for a specific PDDI *after* accounting for clinician action(s). 
 
 ##### CDS Hooks Request Example
 {:.no_toc}
@@ -775,17 +790,17 @@ Since the order entry task is split into two separate CDS Hooks events (i.e., se
 ## <span style="color:silver"> 5.4.0 </span> Level 2 – DetectedIssue 
 {:.no_toc}
 
-As previously discussed, a DetectedIssue resource is created in both implementations. The Level 2 Implementation, however, uses the DetectedIssue to carry clinician-action state through order entry process. The the `context` element of the `medication-prescribe` request contains the DetectedIssue resource. During the parse and pre-process phase, the service determines if the ordered medication is the same as the DetectedIssue medication, and if prefetch data is needed for additional processing. The ordered medication is compared to the DetectedIssue medication either by the `DetectedIssue.id,` which is a Persistent Uniform Resource Locator (PURL) or through the `DetectedIssue.implicated` reference to conflicting medications. This is to ensure the clinician action did not eliminate the PDDI (e.g., change naproxen to acetaminophen). The DetectedIssue `status` element is instantiated by the Medication Select Service and indicates to the EHR if prefetch data are available or needed. If the `status` value is "final", the EHR and the CDS service MUST NOT retrieve prefetch data. If the `status` is "preliminary", the EHR MAY fulfill the prefetch queries or the CDS service MUST retrieve prefetch data from the FHIR server.
+As previously discussed, a DetectedIssue resource is created in both implementations. The Level 2 Implementation, however, uses the DetectedIssue to carry clinician-action state through order entry process. The the `context` element of the `order-sign` request contains the DetectedIssue resource. During the parse and pre-process phase, the service determines if the ordered medication is the same as the DetectedIssue medication, and if prefetch data is needed for additional processing. The ordered medication is compared to the DetectedIssue medication either by the `DetectedIssue.id,` which is a Persistent Uniform Resource Locator (PURL) or through the `DetectedIssue.implicated` reference to conflicting medications. This is to ensure the clinician action did not eliminate the PDDI (e.g., change naproxen to acetaminophen). The DetectedIssue `status` element is instantiated by the Order Select Service and indicates to the EHR if prefetch data are available or needed. If the `status` value is "final", the EHR and the CDS service MUST NOT retrieve prefetch data. If the `status` is "preliminary", the EHR MAY fulfill the prefetch queries or the CDS service MUST retrieve prefetch data from the FHIR server.
 
 
 ## <span style="color:silver"> 5.5.0 </span> Level 2 – FHIR Server Request
 {:.no_toc}
 
-The parse and pre-process event for a `medication-select` request in the Level 2 Implementation is identical to what occurs with `medication-prescribe` for the Level 1 Implementation. Processing of `medication-prescribe` for the Level 2 Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the DetectedIssue resource (Figure 6). This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the CDS Hooks Cards. In addition, the DetectedIssue `status` field indicates to the CDS service if additional prefetch data is needed for the specific PDDI.
+The parse and pre-process event for a `order-select` request in the Level 2 Implementation is identical to what occurs with `order-sign` for the Level 1 Implementation. Processing of `order-sign` for the Level 2 Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the DetectedIssue resource (Figure 6). This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the CDS Hooks Cards. In addition, the DetectedIssue `status` field indicates to the CDS service if additional prefetch data is needed for the specific PDDI.
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 6: Level 2 – Parse and Pre-process for Medication Prescribe Service </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 6: Level 2 – Parse and Pre-process for Order Sign Service </strong></figcaption>
   <img src="assets/images/Parse_pre-process_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.svg" />
 </figure>
 

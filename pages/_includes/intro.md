@@ -16,7 +16,6 @@ This implementation guide is targeted at stakeholders who seek to increase the s
 
 This implementation guide was developed by the Health Level 7 [(HL7)](http://wiki.hl7.org) [Clinical Decision Support Work Group (CDS WG)](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) in collaboration with the University of Pittsburgh Medical Center (UPMC), RWTH Aachen University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health. It was funded in part by by AHRQ grants: R01 LM011838, R21 HS023826 and R01 HS025984, and NLM grant T15 LM007124.
 
-
 ## <span style="color:silver"> 1.3.0 </span> Scope
 
 This implementation guide:

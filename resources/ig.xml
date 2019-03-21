@@ -675,13 +675,13 @@
       <name value="encounter-warfarin-nsaid-prefetch" />
       <exampleBoolean value="true" />
     </resource>
-    <!-- <resource> -->
-    <!--   <reference> -->
-    <!-- 	<reference value="MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch" /> -->
-    <!--   </reference> -->
-    <!--   <name value="medicationadministration-warfarin-nsaid-warfarin-prefetch" /> -->
-    <!--   <exampleBoolean value="true" /> -->
-    <!-- </resource> -->
+    <resource>
+      <reference>
+    	<reference value="MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch" />
+      </reference>
+      <name value="medicationadministration-warfarin-nsaid-warfarin-prefetch" />
+      <exampleBoolean value="true" />
+    </resource>
     <resource>
       <reference>
         <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-digoxin-prefetch" />

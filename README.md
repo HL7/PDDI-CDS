@@ -20,8 +20,7 @@ Guilherme Del Fiol guilherme.delfiol@utah.edu
 
 ## Local Build
     java -jar "org.hl7.fhir.igpublisher.jar" -ig ig.json
-   
-    
+       
 ## ig publisher GUI
 
 Please read more about the implementation guide publishing process here: http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation 

@@ -35,7 +35,8 @@
   "sct-edition": "http://snomed.info/sct/731000124108",
   "npm-name": "hl7.fhir.uv.pddi",
   "license": "CC0-1.0",
-  "paths": {
+    "paths": {
+    "history":"http://hl7.org/fhir/uv/pddi/history.html",
     "txCache": "txCache",
     "resources": [
       "resources",

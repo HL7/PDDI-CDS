@@ -12,7 +12,7 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="197606"/>
-            <display value="Digoxin 0.25 MG Oral Tablet"/>
+            <display value="digoxin 250 MCG Oral Tablet"/>
         </coding>
     </medicationCodeableConcept>
     <subject>

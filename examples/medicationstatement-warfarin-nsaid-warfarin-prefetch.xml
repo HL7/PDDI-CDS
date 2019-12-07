@@ -3,9 +3,10 @@
     <id value="medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
     <status value="active"/>
     <category>
-        <coding>
-            <code value="outpatient"/>
-        </coding>
+      <coding>
+	<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+        <code value="outpatient"/>
+      </coding>
     </category>
     <medicationCodeableConcept>
         <coding>

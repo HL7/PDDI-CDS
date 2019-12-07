@@ -1,0 +1,22 @@
+{
+ "package-id" : "hl7.fhir.uv.pddi",
+ "title" : "Potential Drug-Drug Interaction (PDDI) Clinical Decision Support (CDS) (FHIR IG)", 
+ "canonical" : "http://hl7.org/fhir/uv/pddi", 
+ "introduction" : "This implementation guide is targeted at drug-drug interaction CDS implementers who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record.",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://build.fhir.org/ig/HL7/PDDI-CDS",
+  "status" : "ci-build",
+  "current" : true
+ },{
+  "version" : "0.1.0",  
+  "date" : "2018-09-01", 
+  "desc" : "First ballot for comment",   
+  "changes" : "link",
+  "path" : "http://hl7.org/fhir/uv/pddi/2018Sep/",   
+  "status" : "draft",   
+  "fhirversion" : "4.0.1",
+  "sequence" : "1"
+ }]
+}

@@ -29,7 +29,7 @@
       "template-base": "op.html"
     }
   },
-  "jurisdiction": "International",
+  "jurisdiction": "001",
   "publisher": "HL7 Clinical Decision Support Committee",
   "status": "draft",
   "sct-edition": "http://snomed.info/sct/731000124108",
@@ -571,7 +571,7 @@
       "urn:oid:2.16.840.1.113883.6.238"
     ],
     "source": "ig.xml",
-    "version":"4.0.0",
+    "version":"4.0.1",
     "specification": "http://hl7.org/fhir/R4",
     "logging": ["init","progress","context","html","tx"],
     "broken-links" : "warning",

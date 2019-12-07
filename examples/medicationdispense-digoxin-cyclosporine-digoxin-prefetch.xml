@@ -3,15 +3,16 @@
     <id value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
     <status value="completed"/>
     <category>
-        <coding>
-            <code value="outpatient"/>
-        </coding>
+      <coding>
+	<system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"/>
+        <code value="outpatient"/>
+      </coding>
     </category>
     <medicationCodeableConcept>
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="197604"/>
-            <display value="Digoxin 0.125 MG Oral Tablet"/>
+            <display value="digoxin 125 MCG Oral Tablet"/>
         </coding>
     </medicationCodeableConcept>
     <subject>

@@ -57,7 +57,7 @@ The Documentation section of this implementation guide describes example PDDI CD
 
 This implementation guide:
 
-1. Describes two potential PDDI CDS use cases ([Warfarin + NSAIDs](documentation.html) and [Digoxin + Cyclosporine.](documentation.html)) for two complementary PDDI CDS scenarios:
+1. Describes two potential PDDI CDS use cases (Warfarin + NSAIDs (TODO) and Digoxin + Cyclosporine (TODO). for two complementary PDDI CDS scenarios:
 
 	* CDS at the time that an ordering clinician selects a drug to add to an order ("order-select"), and 
 	* CDS at the time an ordering clinician signs a drug order ("order-sign")

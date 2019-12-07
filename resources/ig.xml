@@ -2,11 +2,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig" />
   <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig" /> <!-- see http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Canonical_URL-->
-  <name value="PDDI CDS" />
+  <name value="PDDI_CDS" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2019-01-23" />
-  <fhirVersion value="4.0.0"/> <!--in principle it seems you would put ig.json put "specification": "http://build.fhir.org" for current build or "specification": "http://hl7.org/fhir/R4" for FHIR R4 Home but that seems to trigger a bunch of errors like The link '...' for "FHIR Version: 4.0.0" cannot be resolved. 'specification' is optional in ig.json and removing it avoids these errors -->
+  <fhirVersion value="4.0.1"/> <!--in principle it seems you would put ig.json put "specification": "http://build.fhir.org" for current build or "specification": "http://hl7.org/fhir/R4" for FHIR R4 Home but that seems to trigger a bunch of errors like The link '...' for "FHIR Version: 4.0.0" cannot be resolved. 'specification' is optional in ig.json and removing it avoids these errors -->
   <packageId value="hl7.fhir.uv.pddi"/>
   <publisher value="HL7 Clinical Decision Support Workgroup" />
   <contact> 

@@ -3,9 +3,10 @@
     <id value="medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
     <status value="completed"/>
     <category>
-        <coding>
-            <code value="inpatient"/>
-        </coding>
+      <coding>
+	<system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+        <code value="inpatient"/>
+      </coding>
     </category>
     <medicationCodeableConcept>
         <coding>
@@ -44,7 +45,7 @@
         <dose>
             <value value="1"/>
             <unit value="TAB"/>
-            <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
             <code value="TAB"/>
         </dose>
     </dosage>

@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="codesystem-PDDICDS-indicator"/>
     <url value="http://hl7.org/fhir/uv/pddi/CodeSystem/codesystem-PDDICDS-indicator"/>
-    <name value="codesystem-PDDICDS-indicator"/>
+    <name value="Codesystem_PDDICDS_indicator"/>
     <status value="draft"/>
     <experimental value="false"/>
     <description value="Indicates the importance RequestGroup action and relates to decision tree recommendations for PDDIs"/>

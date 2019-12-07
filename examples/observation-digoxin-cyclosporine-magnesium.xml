@@ -5,7 +5,7 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="17861-6"/>
+            <code value="2601-3"/>
             <display value="Magnesium [Moles/volume] in Serum or Plasma"/>
         </coding>
     </code>

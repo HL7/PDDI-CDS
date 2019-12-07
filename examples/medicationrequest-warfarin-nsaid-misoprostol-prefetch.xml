@@ -12,7 +12,7 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="317128"/>
-            <display value="Misoprostol 0.2 MG Oral Tablet"/>
+            <display value="misoprostol 200 MCG Oral Tablet"/>
         </coding>
     </medicationCodeableConcept>
     <subject>

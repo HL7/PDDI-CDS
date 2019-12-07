@@ -3,9 +3,10 @@
     <id value="medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
     <status value="completed"/>
     <category>
-        <coding>
-            <code value="outpatient"/>
-        </coding>
+      <coding>
+	<system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"/>
+        <code value="outpatient"/>
+      </coding>
     </category>
     <medicationCodeableConcept>
         <coding>

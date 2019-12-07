@@ -6,7 +6,7 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="313822004"/>
-            <display value="Corrected serum creatinine "/>
+            <display value="Corrected serum creatinine measurement"/>
         </coding>
     </code>
     <subject>

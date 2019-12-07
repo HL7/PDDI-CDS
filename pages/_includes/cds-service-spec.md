@@ -52,7 +52,7 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a pre-specified step the workflow process. The CDS service then parses and processes the request to determine if the prescribed medication conflicts with a medication the patient is presumably taking. If this condition is satisfied, the CDS service provides individualized information based on the PDDI knowledge base. 
 
-The EHR MAY combine several methods to satisfy prefetch templates. For more information see the Documentation section, [Prefetch Role](documentation.html).
+The EHR MAY combine several methods to satisfy prefetch templates. For more information see the Documentation section, Prefetch Role (TODO).
 
 Each implementation may employ a slightly different approach to ensure successful integration of the CDS system. Here are several general aspects to assess:
 
@@ -115,7 +115,7 @@ In order for PDDI CDS to be both sensitive and specific, different contextual fa
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scalable framework for contextual factors |  |  | **X** 
 
 # <span style="color:silver"> 3.1.7 </span> Process 
-This section provides an overview of the processes and components of the PDDI CDS. It is delineated by Level 1 and Level 2 Implementation sections. The Level 1 Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Level 2 Implementation is a target for future iterations to optimize the CDS artifacts. Details regarding the knowledge artifacts and decision points for the individual artifacts can be found in the [Documentation](documentation.html) section.
+This section provides an overview of the processes and components of the PDDI CDS. It is delineated by Level 1 and Level 2 Implementation sections. The Level 1 Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Level 2 Implementation is a target for future iterations to optimize the CDS artifacts. Details regarding the knowledge artifacts and decision points for the individual artifacts can be found in the TODO section.
 
 ## <span style="color:silver"> 3.1.8 </span> CDS Discovery
 {:.no_toc}
@@ -281,9 +281,9 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 
 **Card Display Example**
 
-* [Level 1 – Warfarin + NSAID Cards](documentation.html)
+* Level 1 – Warfarin + NSAID Cards  (TODO)
 
-* [Level 1 – Digoxin + Cyclosporine Cards](documentation.html)
+* Level 1 – Digoxin + Cyclosporine Cards (TODO)
 
 
 # <span style="color:silver"> 3.1.16 </span> Level 2 Implementation
@@ -466,9 +466,9 @@ snipped for brevity
 
 **Card Display Example**
 
-* [Level 2 – Warfarin + NSAID Cards](documentation.html)
+* Level 2 – Warfarin + NSAID Cards (TODO)
 
-* [Level 2 – Digoxin + Cyclosporin Cards](documentation.html)
+* Level 2 – Digoxin + Cyclosporin Cards (TODO)
 
 
 

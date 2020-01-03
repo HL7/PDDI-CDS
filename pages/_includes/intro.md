@@ -1,7 +1,7 @@
 [//]: # -*- --from markdown_strict+footnotes+backtick_code_blocks -*-
 
 
-# <span style="color:silver"> 1.0 </span> Implementation Guide for PDDI CDS (DRAFT)
+# <span style="color:silver"> 1 </span> Implementation Guide for PDDI CDS (DRAFT)
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -11,19 +11,19 @@
 ## <span style="color:silver"> 1.1 </span> Introduction
 
 
-## <span style="color:silver"> 1.2 </span> Intended Audience
+## <span style="color:silver"> 1.2 </span> Intended Audiences
 
-This implementation guide is targeted at drug-drug interaction CDS implementers who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record. 
+The primary intended audience includes individuals seeking guidance on how to implement drug-drug interaction clinical decision support using modern health information technology standards. This implementation guide is written with the intention of showing how highly specific potential drug-drug interaction (PDDI) alerts could be presented through the electronic health record using modern standards. It is also written for a more general audience of individuals creating medication safety knowledge artifacts that they intend to  disseminate to healthcare organizations. 
 
 ## <span style="color:silver"> 1.3 </span> Collaborators and Funding
 
-This implementation guide was developed by the Health Level 7 [(HL7)](http://wiki.hl7.org) [Clinical Decision Support Work Group (CDS WG)](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) in collaboration with the University of Pittsburgh Medical Center (UPMC), RWTH Aachen University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health. It was funded in part by by AHRQ grants: R01 LM011838, R21 HS023826 and R01 HS025984, and NLM grant T15 LM007124.
+This implementation guide was developed by the Health Level 7 [(HL7)](http://wiki.hl7.org) [Clinical Decision Support Work Group (CDS WG)](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) in collaboration with the University of Pittsburgh Medical Center (UPMC), RWTH Aachen University, Clemson University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health. It was funded in part by by AHRQ grants: R01 LM011838, R21 HS023826 and R01 HS025984, and NLM grant T15 LM007124, R15 LM012941.
 
 ## <span style="color:silver"> 1.4 </span> Context
 
 ## <span style="color:silver"> 1.4.1 </span> Rationale
 
-Clinical decision support has the potential to reduce adverse outcomes associated with pharmacotherapy. Specifically, computerized PDDI checking at medication order entry is an efficient mechanism to bring conflicting therapies to clinicians' attention. In the United States, Meaningful Use incentives have supported the widespread dissemination of PDDI checking;<sup>[1](#references)</sup> however, researchers have found that nearly all PDDI alerts in computerized provider order entry (CPOE) systems are ignored.<sup>[2,3](#references)</sup> The reason for overriding PDDI alerts appears to be multi-factorial. Simple pair-wise drug comparisons can lead to overly sensitive alerts and desensitized clinicians. Moreover, medication alerts are typically presented at the end of the order entry task – after the decision has been made to prescribe a medication. A primary motivation for this implementation guide is to expand PDDI CDS to provide *actionable* information to clinicians earlier in the order entry process.
+Clinical decision support has the potential to reduce adverse events associated with pharmacotherapy. Specifically, computerized PDDI checking at medication order entry is an efficient mechanism to bring conflicting therapies to clinicians' attention. In the United States, Meaningful Use incentives have supported the widespread dissemination of PDDI checking;<sup>[1](#references)</sup> however, researchers have found that a hight percentage (~90%) of PDDI alerts in computerized provider order entry (CPOE) systems are ignored.<sup>[2,3](#references)</sup> The reason for overriding PDDI alerts appears to be multi-factorial. The current widely-used approach of alerting based on simple pair-wise drug comparisons with no further consideration of patient context can lead to overly sensitive alerts and desensitized clinicians. This implementation guide provides guidance on how to use information in the electronic health record to make alerts more specifically relevant to a given patient. Moreover, medication alerts are typically presented at the end of the order entry task – after the decision has been made to prescribe a medication. A primary motivation for this implementation guide is to expand PDDI CDS to provide *actionable* information to clinicians earlier in the order entry process.
 
 The burden of PDDI CDS governance falls to specific institutions, which may contribute to the broad discord of PDDI alerts among institutions.<sup>[4,5](#references)</sup> While the majority of health systems use third-party commercial knowledge bases that are integrated into the EHR alerting framework, each institution has the ability to customize the alert types and thresholds in relation to the knowledge base. A sharable service that coordinates drug knowledge and CDS alerts may reduce the variability and set a standard-of-care for PDDI CDS across institutions. Supporting this approach, both EHR vendors and drug knowledge vendors are beginning to adopt service-oriented data standards such as FHIR and CDS Hooks. In addition to standardizing care, a sharable service-based approach to PDDI CDS might help disperse the burden of optimizing alerts and maintaining drug knowledge.<sup>[6](#references)</sup>    
 

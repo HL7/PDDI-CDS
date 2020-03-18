@@ -9,6 +9,4 @@ The following profiles set the minimum expectations:
 
 * [PDDI RequestGroup](requests/structuredefinition-PDDICDS-requestgroup-action-indicator.xml)
 
-* [PDDI CarePlan](profiles.html)
-
 

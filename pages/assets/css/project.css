@@ -374,7 +374,7 @@ a.to-top {
 }
 
 #markdown-toc::before {
-  content: 'Contents';
+  content: 'Page Contents';
 }
 
 

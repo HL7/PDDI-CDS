@@ -19,7 +19,7 @@ Richard Boyce boycerd@upmc.edu
 Guilherme Del Fiol guilherme.delfiol@utah.edu
 
 ## Local Build
-    java -jar "org.hl7.fhir.igpublisher.jar" -ig ig.json
+    java -jar "org.hl7.fhir.publisher.jar" -ig ig.json
        
 ## ig publisher GUI
 
@@ -27,7 +27,7 @@ Please read more about the implementation guide publishing process here: http://
 
 Running the publisher"
 ```
-    java -jar org.hl7.fhir.igpublisher.jar
+    java -jar org.hl7.fhir.publisher.jar
 ```     
 
 Then, execute ig.json from the GUI. This will render webpages with html files in output folder (e.g., index.html).

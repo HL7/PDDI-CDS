@@ -10,14 +10,16 @@
 ### <span style="color:silver"> 3.0.1 </span>Summary of Normative Recommendations
 {:.no_toc}
 
-* PDDI CDS knowledge artifacts. It is RECOMMENDED that the knowledge artifacts adhere to the 8 detailed best practice recommendations related to the 10 core information items discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/hcls-drug-drug-interaction/index.html).
+PDDI CDS knowledge artifacts. 
+* It is RECOMMENDED that the knowledge artifacts adhere to the 8 detailed best practice recommendations related to the 10 core information items discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/hcls-drug-drug-interaction/index.html).
 
-* A CDS rule execution engine. It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
+A CDS rule execution engine. 
+* It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
 
 ## <span style="color:silver"> 3.1.0 </span> Preliminaries 
 
-This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Later sections describe implementation details using two specific knowledge artifacts as examples. Structured artifacts that implement the logic and behavior described below are available under [Artifacts](artifacts.html).
+This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Later sections describe implementation details using a specific knowledge artifact example. Structured artifacts that implement the logic and behavior described below are available under [Artifacts](artifacts.html).
 
 
 # <span style="color:silver"> 3.1.1 </span> Getting Started with PDDI CDS
@@ -61,8 +63,6 @@ Each implementation may employ a slightly different approach to ensure successfu
     * creating and sending CDS Hooks requests
 
     * capturing and presenting CDS Hooks responses
-    
-    * capturing, processing, modifying, and storing a `DetectedIssue` resource
 
 * Terminology mapping (e.g., RxNorm, LOINC)
 
@@ -74,10 +74,10 @@ Each implementation may employ a slightly different approach to ensure successfu
 ## <span style="color:silver"> 3.1.4 </span> CPOE Workflow Hooks 
 {:.no_toc}
 
-Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The Level 1 Implementation follows the [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specification that defines the triggering event as when a clinician is ready to sign one or more medication orders for a patient. This hook is among the last workflow events before an order is promoted out of a draft status. The primary difference in the Level 2 Implementation is the additional `order-select` hook defining the initial trigger at the start of the CPOE workflow. 
+Figure 1 depicts hook triggers for a medication prescribing example. The implementation follows the [CDS Hooks `order-select`](https://cds-hooks.org/hooks/order-select/) and [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specifications that define trigger events when a clinician enters a medication and is ready to sign one or more medication orders for a patient. The `order-select` hook defines the initial trigger at the start of the CPOE workflow. The `order-sign` hook is among the last workflow events before an order is promoted out of a draft status. From a clinical and technical perspective, triggering the CDS service at two events in the workflow sets PDDI CDS apart from most conventional CDS systems that trigger CDS at the time of order signing. By moving CDS triggers earlier in the order entry workflow (i.e., `order-select`), clinicians will have actionable information in the middle of their decision making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective CDS.
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Level 1 versus Level 2 Implementation Hooks </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 1: Workflow and CDS Hooks for medication prescription </strong></figcaption>
   <a href = "assets/images/CPOE_workflow_2.svg" target ="_blank" > <img src= "assets/images/CPOE_workflow_2.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow_2.svg" /></a>
 </figure>
 
@@ -87,33 +87,12 @@ Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The Level 1 Im
 For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing CDS service network calls to external resources such as a FHIR server. When a client program subscribes to the PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As described below, the prefetch requirements are different for `order-select` and `order-sign` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call. 
 
 
-## <span style="color:silver"> 3.1.6 </span> Level 1 versus Level 2 Implementations
+## <span style="color:silver"> 3.1.6 </span> Filtering CDS Hooks response cards at `order-sign`: CDS Service versus EHR Client
 
-The primary difference between Level 1 and Level 2 Implementations is the addition of a second hook during the order entry task. From a clinical and technical perspective, this sets the Level 2 Implementation apart from most conventional CDS systems that trigger PDDI CDS at the time of order signing. In Level 2, PDDI CDS is moved up to earlier in the order entry workflow, providing clinicians with actionable information in the middle of their decision making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective PDDI CDS. 
+The preferred implementation is to configure the CDS service to filter duplicative response cards previously shown to the prescriber at `order-select`.  
 
 In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending order entry workflow step the clinician is engaged in.  At the time of medication selection, a `order-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `order-sign` CDS Hook sends other contextual resources specific to a PDDI identified from processing `order-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. In Level 2, the `DetectedIssue` resource stores crucial information on clinician action that facilitates monitoring PDDIs and improving actionable suggestions. Moreover, creating a `DetectedIssue` resource that contains clinician responses gives control to the clinician on what, if any, additional patient-specific information is presented. For example, if a clinician decides to continue with the NSAID prescription but adds a proton pump inhibitor (risk mitigating action), the CDS Service for `order-sign` would adjust the indicator from "hard-stop" (interruptive) to "warning" (passive). Table 1 provides a summary of the specification and feature differences between the levels of implementation.
  
-
-
-#### Table 1: Specification and Feature Comparision between Level 1 and 2 Implementations
-{:.no_toc}
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Base Specifications | Level-1 | Level-2 
------ | :--------: | :----: | :----: 
-**Specifications** | |  |   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`order-sign 1.0` | **X** | **X** |  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`order-select 1.0`|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`DetectedIssue` resource | **X** | **X** | **X** 
-**Features** |  |  | 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`DetectedIssue` potentiation element |  | **X** | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Card response extension for `DetectedIssue`|  | **X** | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clinician action documentation|  | **X** | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sequential clinician action documentation|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clinician response alert filtering|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimized alert presentation|  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimized data query |  |  | **X** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scalable framework for contextual factors |  |  | **X** 
-
 # <span style="color:silver"> 3.1.7 </span> Process 
 This section provides an overview of the processes and components of the PDDI CDS. It is delineated by Level 1 and Level 2 Implementation sections. The Level 1 Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Level 2 Implementation is a target for future iterations to optimize the CDS artifacts. Details regarding the knowledge artifacts and decision points for the individual artifacts can be found in the TODO section.
 
@@ -136,21 +115,82 @@ GET http://FHIR.org/PDDI-CDS
 **Example 2: CDS Discovery response**
 
 ~~~
-{
+ {
   "services": [
     {
-      "hook": "order-sign",
-      "title": "PDDI CDS Service",
-      "description": "CDS Service for drug-drug interactions",
-      "id": "PDDI-CDS",
+      "hook": "order-select",
+      "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
+      "title": "Warfarin NSAIDs Recommendation",
+      "extension": {
+        "pddi-configuration-items": [
+          {
+            "code": "cache-for-order-sign-filtering",
+            "type": "boolean",
+            "name": "Cache Info for Order Sign Filtering",
+            "description": "Cache information about this CDS call so that additional filtering of card responses can be done when the service is called using an order-sign CDS Hook request. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician and patient identifiers match between the order-select and order-sign requests. Filtering will happen if both this configuration option is set to 'true' and  order-sign requests set filter-out-repeated-alerts to 'true'."
+          },
+          {
+            "code": "alert-non-serious",
+            "type": "boolean",
+            "name": "Alert for non-serious potential drug-drug interactions",
+            "description": "Serious potential drug-drug interactions could result in death; requires hospitalization or extension of hospital stay; results in persistent or significant disability or incapacity; is life-threatening (see https://www.w3.org/2019/05/pddi/index.html). If set to True, this configuration option tells the CDS service to alerts for potential drug-drug interactions that do not meet this criterion."
+          },
+          {
+            "code": "show-evidence-support",
+            "type": "boolean",
+            "name": "Show evidence support",
+            "description": "If this options is set to True, CDS response cards will provide more complete information about the evidence that supports the potential drug-drug interaction alert."
+          }
+        ]
+      },
+      "id": "warfarin-nsaids-cds-select",
       "prefetch": {
-        "medications_stated": "MedicationStatement?patient/{{context.patientId}}/query parameters"
-        "medications_dispensed" : "MedicationDispense?patient/{{context.patientId}}/query parameters"
-        "medications_administered" : "MedicationAdminister?patient/{{context.patientId}}/query parameters"
-        "medications_prescribed" : "MedicationRequest?patient/{{context.patientId}}/query parameters"
-        "age" : "Request?patient/{{context.patientId}}/query parameters"
-        "UGIB" : "Condition?patient/{{context.patientId}}/query parameters"
+        "item1": "Patient?_id={{context.patientId}}",
+        "item2": "MedicationRequest?patient={{context.patientId}}&authoredon=ge2019-12-11",
+        "item3": "MedicationAdministration?patient={{context.patientId}}&effective-time=ge2019-12-11",
+        "item4": "MedicationDispense?patient={{context.patientId}}&whenhandedover=ge2019-12-11",
+        "item5": "MedicationStatement?patient={{context.patientId}}&effective=ge2019-12-11",
+        "item6": "Condition?patient={{context.patientId}}"
       }
+    },
+    {
+      "hook": "order-sign",
+      "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
+      "title": "Warfarin NSAIDs Recommendation",
+      "extension": {
+        "pddi-configuration-items": [
+          {
+            "code": "filter-out-repeated-alerts",
+            "type": "boolean",
+            "name": "Filter out repeated alerts",
+            "description": "Only works if both this configuration option is set to 'true' and  cache-for-order-sign-filtering was set to 'true' in an order-select request. Uses information about this CDS call to filter aparently repititious card. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician and patient identifiers match between the order-select and order-sign requests."
+          },
+          {
+            "code": "alert-non-serious",
+            "type": "boolean",
+            "name": "Alert for non-serious potential drug-drug interactions",
+            "description": "Serious potential drug-drug interactions could result in death; requires hospitalization or extension of hospital stay; results in persistent or significant disability or incapacity; is life-threatening (see https://www.w3.org/2019/05/pddi/index.html). If set to True, this configuration option tells the CDS service to alerts for potential drug-drug interactions that do not meet this criterion."
+          },
+          {
+            "code": "show-evidence-support",
+            "type": "boolean",
+            "name": "Show evidence support",
+            "description": "If this options is set to True, CDS response cards will provide more complete information about the evidence that supports the potential drug-drug interaction alert."
+          }
+        ]
+      },
+      "id": "warfarin-nsaids-cds-sign",
+      "prefetch": {
+        "item1": "Patient?_id={{context.patientId}}",
+        "item2": "MedicationRequest?patient={{context.patientId}}&authoredon=ge2019-12-11",
+        "item3": "MedicationAdministration?patient={{context.patientId}}&effective-time=ge2019-12-11",
+        "item4": "MedicationDispense?patient={{context.patientId}}&whenhandedover=ge2019-12-11",
+        "item5": "MedicationStatement?patient={{context.patientId}}&effective=ge2019-12-11",
+        "item6": "Condition?patient={{context.patientId}}"
+      }
+    }
+  ]
+}
 
 ~~~
 

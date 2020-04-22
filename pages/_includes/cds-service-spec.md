@@ -792,4 +792,101 @@ Field | Optionality | Prefetch Token | Type | Description
 </figure>
 
 
+# <span style="color:silver"> 3.6.0 </span> CDS Message Filtering
+
+The following tables have been created to better conceptualize the various scenarios where message filtering may occur 
+for the clinician during `order-sign`. The assumptions used when creating these tables are that `cache-for-order-sign-filtering` 
+and `filter-out-repeated-alerts` for both `order-select` and `order-sign` are set to TRUE. During `order-select` the 
+following items are cached in order to properly handle message filtering.
+
+* Ordering Clinician
+* Patient
+* Encounter
+* Knowledge Artifact URL
+* Base 64 encoded medication resource specified in `selections`
+* An ID created by concatenating the system and code from the “medicationCodeableConcept” of the medication resource (used for retrieving a medication resource during `order-sign`)
+
+### <span style="color:silver"> 3.6.1 </span> Scenario - Order-select with 1 medication that triggers a branch
+Clinician A calls order-select with 1 medication in `draftOrders` that triggers a branch of the rules then calls order-sign.
+> *Note:* CDS hooks do not couple `indicators` with `suggestions`.
+
+| Indicator for the branch triggered | Service suggested action | Clinician accepts suggested action | Will alert be filtered | Description                                                                                        |
+| ---------------------------------- | ------------------------ | ---------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------- |
+| Info                               | Create/Update/Delete     | FALSE                              | TRUE                   | Only message received is non-serious, no action is taken and alert will be filtered on order-sign  |
+| Info                               | Create                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Info                               | Update                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Info                               | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Warning                            | Create/Update/Delete     | FALSE                              | TRUE                   | Warning message received, no additional action taken, alert will be filtered on order-sign         |
+| Warning                            | Create                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Warning                            | Update                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Warning                            | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Hard-stop                          | Create/Update/Delete     | FALSE                              | TRUE                   | Hard-stop message received, no additional action taken, alert will be filtered on order-sign       |
+| Hard-stop                          | Create                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Hard-stop                          | Update                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Hard-stop                          | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+
+
+### <span style="color:silver"> 3.6.2 </span> Scenario - Order-select with more than 1 medication that triggers a branch
+Each medication request specified in `selections` will be cached for message filtering on `order-sign`, this scenario will operate just as above.
+
+
+### <span style="color:silver"> 3.6.3 </span> Scenario - Order-select is called by 2 different clinicians before order-sign
+Clinician A goes through an `order-select` process, for some reason is not able to start the `order-sign` process immediately. Clinician B then goes through the `order-select` and `order-sign` process for the same patient.
+
+| Branch triggered for clinician A | Branch triggered for clinician B | Will alert be filtered | Description                                                                           |
+| -------------------------------- | -------------------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
+| Info                             | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Warning                          | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Hard-stop                        | Hard-stop                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Info                             | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Info                             | Hard-stop                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Warning                          | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Warning                          | Hard-stop                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Hard-stop                        | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Hard-stop                        | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+
+### <span style="color:silver"> 3.6.4 </span> Scenario - Order-select is called more than once before order-sign by same the same clinician
+Clinician A starts the `order-select` process, gets interrupted and prevented from beginning the `order-sign` processes (potential network issues or other problems arise). Clinician A then goes through the `order-select` process again before completing `order-sign`.
+
+| Branch triggered for both order-selects | Will alert be filtered | Description                                                                                                                                            |
+| --------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Info                                    | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
+| Warning                                 | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
+| Hard-stop                               | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
+
+
+### <span style="color:silver"> 3.6.5 </span> Scenario - Order-select is called with a long gap of time before order-sign
+Clinician A completes the `order-select` process, something prevents them from starting `order-sign` for a long period of time.
+
+> *Note:* There is currently no time-out period or expiration for cached medications to reset `order-sign` message filtering
+
+| Branch triggered | Time-out set | Will alert be filtered | Description                                                                                                                   |
+| ---------------- | ------------ | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Info             | FALSE        | TRUE                   | Message filtering will be performed as normal                                                                                 |
+| Info             | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
+| Warning          | FALSE        | TRUE                   | Message filtering will be performed as normal                                                                                 |
+| Warning          | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
+| Hard-stop        | FALSE        | TRUE                   | Message filtering will be performed as normal                                                                                 |
+| Hard-stop        | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
+
+
+### <span style="color:silver"> 3.6.6 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
+Since the patient ID is used to create a unique cached medication statement, if a clinician completes the `order-select` with patient 
+A but does an `order-select`/`order-sign` with patient B before completing `order-sign` for patient A, the message filtering
+ will not be affected. This may be another situation where a time-out could be beneficial for the clinician so that messages will not be filtered.
+Another solution would be to track if a clinician completes `order-select` for a new patient before completing `order-sign` for their initial patient.
+
+### <span style="color:silver"> 3.6.7 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
+Clinician A completes the `order-select` process and clinician B completes `order-sign`.
+
+| Branch triggered for both order-select and order-sign | Will alert be filtered | Description                                                                     |
+| ----------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------- |
+| Info                                                  | FALSE                  | Since the clinicians are different there will be no message filtering performed |
+| Warning                                               | FALSE                  | Since the clinicians are different there will be no message filtering performed |
+| Hard-stop                                             | FALSE                  | Since the clinicians are different there will be no message filtering performed |
+
+
+### <span style="color:silver"> 3.6.8 </span> Scenario - Order-select with no medications that trigger rule
+
+No cards to be filtered are returned.
 

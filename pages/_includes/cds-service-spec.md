@@ -866,7 +866,7 @@ The Advanced Implementation for the Warfarin + NSAID artifact is split into two 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 4: Warfarin + NSAID order-select logic </strong></figcaption>
-  <a href = "assets/images/warfarin-nsaid-select.png" target ="_blank" > <img src="assets/images/Warfarin_NSAID_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
+  <a href = "assets/images/warfarin-nsaid-select.png" target ="_blank" > <img src="assets/images/warfarin-nsaid-select.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
 </figure>
 
 

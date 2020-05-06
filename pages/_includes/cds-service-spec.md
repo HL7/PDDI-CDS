@@ -91,10 +91,10 @@ For technical implementers, the intended role of prefetch is to improve the CDS 
 
 The preferred implementation is to configure the CDS service to filter duplicative response cards previously shown to the prescriber at `order-select`.  
 
-In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending order entry workflow step the clinician is engaged in.  At the time of medication selection, a `order-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `order-sign` CDS Hook sends other contextual resources specific to a PDDI identified from processing `order-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. In Level 2, the `DetectedIssue` resource stores crucial information on clinician action that facilitates monitoring PDDIs and improving actionable suggestions. Moreover, creating a `DetectedIssue` resource that contains clinician responses gives control to the clinician on what, if any, additional patient-specific information is presented. For example, if a clinician decides to continue with the NSAID prescription but adds a proton pump inhibitor (risk mitigating action), the CDS Service for `order-sign` would adjust the indicator from "hard-stop" (interruptive) to "warning" (passive). Table 1 provides a summary of the specification and feature differences between the levels of implementation.
+In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending upon the order entry workflow step the clinician is engaged in.  At the time of medication selection, a `order-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `order-sign` CDS Hook sends other contextual resources specific to a PDDI identified from processing `order-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed. Table 1 provides a summary of the specification and feature differences between the levels of implementation.
  
 # <span style="color:silver"> 3.1.7 </span> Process 
-This section provides an overview of the processes and components of the PDDI CDS. It is delineated by Level 1 and Level 2 Implementation sections. The Level 1 Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Level 2 Implementation is a target for future iterations to optimize the CDS artifacts. Details regarding the knowledge artifacts and decision points for the individual artifacts can be found in the TODO section.
+This section provides an overview of the processes and components of the PDDI CDS. It is delineated by Basic and Advanced Implementation sections. The Basic Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Advanced Implementation is a target for future iterations to optimize the CDS artifacts. Details regarding the knowledge artifacts and decision points for the individual artifacts can be found in the TODO section.
 
 ## <span style="color:silver"> 3.1.8 </span> CDS Discovery
 {:.no_toc}
@@ -103,7 +103,7 @@ Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Di
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: CDS Service Discovery </strong></figcaption>
-  <img src="assets/images/Discover_CDS_Service.svg" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.svg" />
+  <img src="assets/images/cds-service-discovery.png" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.svg" />
 </figure>
 
 **Example 1: EHR request for CDS Discovery**
@@ -124,23 +124,13 @@ GET http://FHIR.org/PDDI-CDS
       "extension": {
         "pddi-configuration-items": [
           {
-            "code": "cache-for-order-sign-filtering",
-            "type": "boolean",
-            "name": "Cache Info for Order Sign Filtering",
-            "description": "Cache information about this CDS call so that additional filtering of card responses can be done when the service is called using an order-sign CDS Hook request. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician and patient identifiers match between the order-select and order-sign requests. Filtering will happen if both this configuration option is set to 'true' and  order-sign requests set filter-out-repeated-alerts to 'true'."
+            "code": <an identifier for the configuration option>,
+            "type": <data type of the configuration option, e.g. boolean>,
+            "name": <human readable name of the configuration option>,
+            "description": <human readable description of the configuration option>
           },
-          {
-            "code": "alert-non-serious",
-            "type": "boolean",
-            "name": "Alert for non-serious potential drug-drug interactions",
-            "description": "Serious potential drug-drug interactions could result in death; requires hospitalization or extension of hospital stay; results in persistent or significant disability or incapacity; is life-threatening (see https://www.w3.org/2019/05/pddi/index.html). If set to True, this configuration option tells the CDS service to alerts for potential drug-drug interactions that do not meet this criterion."
-          },
-          {
-            "code": "show-evidence-support",
-            "type": "boolean",
-            "name": "Show evidence support",
-            "description": "If this options is set to True, CDS response cards will provide more complete information about the evidence that supports the potential drug-drug interaction alert."
-          }
+
+          ... other configuration options ...
         ]
       },
       "id": "warfarin-nsaids-cds-select",
@@ -160,23 +150,13 @@ GET http://FHIR.org/PDDI-CDS
       "extension": {
         "pddi-configuration-items": [
           {
-            "code": "filter-out-repeated-alerts",
-            "type": "boolean",
-            "name": "Filter out repeated alerts",
-            "description": "Only works if both this configuration option is set to 'true' and  cache-for-order-sign-filtering was set to 'true' in an order-select request. Uses information about this CDS call to filter aparently repititious card. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician and patient identifiers match between the order-select and order-sign requests."
+            "code": <an identifier for the configuration option>,
+            "type": <data type of the configuration option, e.g. boolean>,
+            "name": <human readable name of the configuration option>,
+            "description": <human readable description of the configuration option>
           },
-          {
-            "code": "alert-non-serious",
-            "type": "boolean",
-            "name": "Alert for non-serious potential drug-drug interactions",
-            "description": "Serious potential drug-drug interactions could result in death; requires hospitalization or extension of hospital stay; results in persistent or significant disability or incapacity; is life-threatening (see https://www.w3.org/2019/05/pddi/index.html). If set to True, this configuration option tells the CDS service to alerts for potential drug-drug interactions that do not meet this criterion."
-          },
-          {
-            "code": "show-evidence-support",
-            "type": "boolean",
-            "name": "Show evidence support",
-            "description": "If this options is set to True, CDS response cards will provide more complete information about the evidence that supports the potential drug-drug interaction alert."
-          }
+
+          ... other configuration options ...
         ]
       },
       "id": "warfarin-nsaids-cds-sign",
@@ -195,16 +175,14 @@ GET http://FHIR.org/PDDI-CDS
 ~~~
 
 
+## <span style="color:silver"> 3.1.9 </span> Implementation in the CDS Service
+{:.no_toc}
 
-# <span style="color:silver"> 3.1.10 </span> Level 1 Implementation
+TODO: Richard will complete this section
 
-The Level 1 Implementation uses the `order-sign 1.0`. The CDS Hooks specification states that `order-sign 1.0` fires when a clinician is ready to sign one or more orders for a patient, (including orders for medications, procedures, labs and other orders). This hook is among the last workflow events before an order is promoted out of a draft status. The context contains all order details, such as dose, quantity, route, etc, although the order has not yet been signed and therefore still exists in a draft status. Use this hook when your service requires all order details, and the clinician will accept recommended changes. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.  
+# <span style="color:silver"> 3.1.10 </span> Basic Implementation
 
-Specific CDS Hooks and FHIR standards modifications REQUIRED for Level 1 Implementation:
-
-1. A CDS Hooks Card extension so that a `DetectedIssue` resource can be included in a Card response
-
-2. A `DetectedIssue` resource extension to add the `potentiation` element 
+The Basic Implementation uses the `order-sign 1.0`. The CDS Hooks specification states that `order-sign 1.0` fires when a clinician is ready to sign one or more orders for a patient, (including orders for medications, procedures, labs and other orders). This hook is among the last workflow events before an order is promoted out of a draft status. The context contains all order details, such as dose, quantity, route, etc, although the order has not yet been signed and therefore still exists in a draft status. Use this hook when your service requires all order details, and the clinician will accept recommended changes. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.  
 
 ## <span style="color:silver"> 3.1.11 </span> Summary of Operations
 {:.no_toc}
@@ -212,8 +190,8 @@ Specific CDS Hooks and FHIR standards modifications REQUIRED for Level 1 Impleme
 The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `order-sign`) and ends with the user's action in response to the Card response suggestion(s) (Figure 2). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Level 1 – Order Sign Service Summary </strong></figcaption>
-  <img src="assets/images/Basic_Order_Sign_service.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Order_Sign_service.svg" />
+<figcaption class="figure-caption"><strong>Figure 2: Basic Implementation – Order Sign Service Summary </strong></figcaption>
+  <img src="assets/images/basic-order-sign-service.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Order_Sign_service.svg" />
 </figure>
 
 
@@ -237,7 +215,7 @@ The EHR MUST call the PDDI CDS service by sending an HTTP `POST` containing `JSO
 
 The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `order-sign` hook specifies the `context` MUST include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process. 
 
-**`order-sign` 1.0.**
+##### order-sign 1.0.
 
 
 Field | Optionality | Prefetch Token | Type | Description
@@ -246,6 +224,21 @@ Field | Optionality | Prefetch Token | Type | Description
 `patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter in context
 `draftOrders`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
+
+##### Extension
+{:.no_toc}
+
+###### PDDI Configuration Items
+{:.no_toc}
+The extension  `pddi-configuration-items` allows for 4 different configurations options: `cache-for-order-sign-filtering` 
+(only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`), `show-evidence-support`, and 
+`alert-non-serious`. All of these configuration options accept Boolean values and are not required for the basic implementation.
+ The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. 
+ The `show-evidence-support` option is used to provide more complete information about the evidence that supports the potential 
+ drug-drug interaction in the response cards. The `alert-non-serious` option is used to tell the CDS service to alert for
+ potential drug-drug interactions that are not life-threatening.
+					    			    			    
+
 
 ##### Prefetch
 {:.no_toc}
@@ -272,7 +265,7 @@ A FHIR server request by the CDS service is necessary in the event the request `
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
-  <img src="assets/images/Basic_Parse_pre-process.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Parse_pre-process.svg" />
+  <img src="assets/images/basic-parse-pre-process.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Parse_pre-process.svg" />
 </figure>
 
 
@@ -315,24 +308,145 @@ The CDS service response is a Card array. Each Card has specified attributes tha
       "detail": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
       "source": {
         "label": "Potential Drug-Drug Interaction CDS"
-      }
+    } ...
  snipped for brevity
 ~~~
 
 **Card Display Example**
 
-* Level 1 – Warfarin + NSAID Cards  (TODO)
+* Basic – Warfarin + NSAID Cards (Without `filter-out-repeated-alerts`)
+~~~
+{
+  "cards": [
+    {
+      "summary": "Potential Drug-Drug Interaction between warfarin (Warfarin Sodium 0.5 MG Oral Tablet) and NSAID (Ketorolac Tromethamine 10 MG Oral Tablet).",
+      "indicator": "warning",
+      "detail": "Increased risk of bleeding. \nBleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. \nNon-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin. The antiplatelet effect of NSAIDs lasts only as long as the NSAID is present in the circulation, unlike aspirin’s antiplatelet effect, which lasts for up to 2 weeks after aspirin is discontinued. NSAIDs also can cause peptic ulcers and most of the evidence for increased bleeding risk with NSAIDs plus warfarin is due to upper gastrointestinal bleeding (UGIB). \nunknown. \n unknown.",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Assess risk and take action if necessary.",
+          "actions": [
+            {
+              "type": "delete",
+              "description": "If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID."
+            }
+          ]
+        },
+        {
+          "label": "Substitute NSAID (Ketorolac Tromethamine 10 MG Oral Tablet) with APAP (Acetaminophen 325 MG Oral Tablet).",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
+              "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "3f6b9b43-9354-4512-9883-a915417e2936",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "313782",
+                      "display": "Acetaminophen 325 MG Oral Tablet"
+                    }
+                  ],
+                  "text": "Acetaminophen 325 MG Oral Tablet"
+                },
+                "subject": {
+                  "reference": "f101"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Substitute NSAID (Ketorolac Tromethamine 10 MG Oral Tablet) with APAP (Acetaminophen 500 MG Oral Tablet).",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
+              "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "d54e75a7-90ce-4ee7-90b6-63333c052648",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "198440",
+                      "display": "Acetaminophen 500 MG Oral Tablet"
+                    }
+                  ],
+                  "text": "Acetaminophen 500 MG Oral Tablet"
+                },
+                "subject": {
+                  "reference": "f101"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": "Patient is not taking a proton pump inhibitor or misoprostol.",
+      "indicator": "hard-stop",
+      "detail": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Use only if benefit outweighs risk."
+        }
+      ]
+    },
+    {
+      "summary": "Patient is 65 y/o or does have a history of upper gastrointestinal bleed (\"Acute duodenal ulcer with hemorrhage\" and 2020-03-01).",
+      "indicator": "warning",
+      "detail": "Patients with a history of UGIB or peptic ulcer may have an increased risk of UGIB from this interaction. The extent to which older age is an independent risk factor for UGIB due to these interactions is not firmly established, but UGIB in general is known to increase with age.",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Use only if benefit outweighs risk."
+        }
+      ]
+    },
+    {
+      "summary": "Patient is not concomitantly taking systemic corticosteroids, aldosterone antagonist, or high dose or multiple NSAIDs.",
+      "indicator": "info",
+      "detail": "Both corticosteroids and aldosterone antagonists have been shown to subsetantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology 2014; 147:784-92.)",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Assess risk and take action if necessary."
+        }
+      ]
+    }
+  ]
+}
+~~~
 
-* Level 1 – Digoxin + Cyclosporine Cards (TODO)
 
 
-# <span style="color:silver"> 3.1.16 </span> Level 2 Implementation
+# <span style="color:silver"> 3.1.16 </span> Advanced Implementation
 
 
-The Level 2 Implementation is a proposed target to optimize PDDI CDS artifacts. It builds on the Level 1 Implementation; however, implementors MUST select either Level 1 or 2 Implementation and *not* both. This section does not provide a comprehensive overview of the implementation but highlights deviations from the Level 1 Implementation above. 
+The Advanced Implementation is a proposed target to optimize PDDI CDS artifacts. It builds on the Basic Implementation; however, implementors MUST select either Basic or 2 Implementation and *not* both. This section does not provide a comprehensive overview of the implementation but highlights deviations from the Basic Implementation above. 
 
 
-Differences between the Level 1 and Level 2 Implementations include:
+Differences between the Basic and Advanced Implementations include:
 
 1. Defining two CDS Hooks triggers in CPOE workflow (i.e., `order-select` and `order-sign`)
 
@@ -342,13 +456,13 @@ Differences between the Level 1 and Level 2 Implementations include:
 
 4. Creating separate but coordinated Order Select and Order Sign Services
 
-> *Note:* The Level 2 Implementation requires two separate, but *coordinated,* services for standards' precision, logic flexibility, and to avoid the need for CDS service state.
+> *Note:* The Advanced Implementation requires two separate, but *coordinated,* services for standards' precision, logic flexibility, and to avoid the need for CDS service state.
 
 
-## <span style="color:silver"> 3.1.17 </span> Level 2 – CPOE Workflow
+## <span style="color:silver"> 3.1.17 </span> Advanced – CPOE Workflow
 {:.no_toc}
 
-Different contextual factors are available and needed at different times during the medication order process (Figure 4). To align clinicians' information needs with PDDI information, the Level 2 Implementation *defines* two separate hook trigger events in the medication order workflow:
+Different contextual factors are available and needed at different times during the medication order process (Figure 4). To align clinicians' information needs with PDDI information, the Advanced Implementation *defines* two separate hook trigger events in the medication order workflow:
 
 1. Selecting a drug product to include in medication order (`order-select`)
 
@@ -360,64 +474,93 @@ Different contextual factors are available and needed at different times during 
   <img src="assets/images/CPOE_workflow.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow.svg" />
 </figure>
 
-## <span style="color:silver"> 3.1.18 </span> Level 2 – Summary of Operations
+## <span style="color:silver"> 3.1.18 </span> Advanced – Summary of Operations
 {:.no_toc}
 
-Coordinating the Order Select Service with the Order Sign Service is a key aspect of the Level 2 Implementation. Whether the Order Sign Service is called depends on aspects of the DetectedIssue resource (i.e., `status` element). The DetectedIssue resource is created by the Order Select Service and populated by clinician actions in response to the displayed Cards. Figure 5 depicts the summary of operations that coordinates the Order Select and Order Sign Services.
+Coordinating the Order Select Service with the Order Sign Service is a key aspect of the Advanced Implementation. Figure 5 depicts the summary of operations that coordinates the Order Select and Order Sign Services.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 5: Advanced – PDDI CDS Service Summary </strong></figcaption>
-  <img src="assets/images/Advanced_Summary.svg" class="figure-img img-responsive img-rounded center-block" alt="Advanced_Summary.svg" />
+  <img src="assets/images/advanced-pddi-cds-service.png" class="figure-img img-responsive img-rounded center-block" alt="Advanced_Summary.svg" />
 </figure>
 
 ## <span style="color:silver"> 3.1.19 </span> CDS Hooks
 {:.no_toc}
 
 
-
-### <span style="color:silver"> 3.1.20 </span> Level 2 – CDS Service Discovery response example
+### <span style="color:silver"> 3.1.20 </span> Advanced – CDS Service Discovery response example
 {:.no_toc}
 
 ~~~
-{
-"services": [
-  {
-    "hook": "order-select",
-    "title": "PDDI CDS Service",
-    "description": "CDS Service for drug-drug interactions",
-    "id": "PDDI-CDS-order-select",
-    "prefetch": {
-      "medications_stated": "MedicationStatement?patient/{{context.patientId}}/query parameters"
-      "medications_dispensed" : "MedicationDispense?patient/{{context.patientId}}/query parameters"
-      "medications_administered" : "MedicationAdminister?patient/{{context.patientId}}/query parameters"
-      "medications_prescribed" : "MedicationRequest?patient/{{context.patientId}}/query parameters"
+ {
+  "services": [
+    {
+      "hook": "order-select",
+      "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
+      "title": "Warfarin NSAIDs Recommendation",
+      "extension": {
+        "pddi-configuration-items": [
+          {
+            "code": <an identifier for the configuration option>,
+            "type": <data type of the configuration option, e.g. boolean>,
+            "name": <human readable name of the configuration option>,
+            "description": <human readable description of the configuration option>
+          },
+
+          ... other configuration options ...
+        ]
+      },
+      "id": "warfarin-nsaids-cds-select",
+      "prefetch": {
+        "item1": "Patient?_id={{context.patientId}}",
+        "item2": "MedicationRequest?patient={{context.patientId}}&authoredon=ge2019-12-11",
+        "item3": "MedicationAdministration?patient={{context.patientId}}&effective-time=ge2019-12-11",
+        "item4": "MedicationDispense?patient={{context.patientId}}&whenhandedover=ge2019-12-11",
+        "item5": "MedicationStatement?patient={{context.patientId}}&effective=ge2019-12-11",
+        "item6": "Condition?patient={{context.patientId}}"
+      }
+    },
+    {
+      "hook": "order-sign",
+      "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
+      "title": "Warfarin NSAIDs Recommendation",
+      "extension": {
+        "pddi-configuration-items": [
+          {
+            "code": <an identifier for the configuration option>,
+            "type": <data type of the configuration option, e.g. boolean>,
+            "name": <human readable name of the configuration option>,
+            "description": <human readable description of the configuration option>
+          },
+
+          ... other configuration options ...
+        ]
+      },
+      "id": "warfarin-nsaids-cds-sign",
+      "prefetch": {
+        "item1": "Patient?_id={{context.patientId}}",
+        "item2": "MedicationRequest?patient={{context.patientId}}&authoredon=ge2019-12-11",
+        "item3": "MedicationAdministration?patient={{context.patientId}}&effective-time=ge2019-12-11",
+        "item4": "MedicationDispense?patient={{context.patientId}}&whenhandedover=ge2019-12-11",
+        "item5": "MedicationStatement?patient={{context.patientId}}&effective=ge2019-12-11",
+        "item6": "Condition?patient={{context.patientId}}"
+      }
     }
-  },
-  {
-    "hook": "order-sign",
-    "title": "PDDI CDS Service",
-    "description": "CDS Service for drug-drug interactions",
-    "id": "PDDI-CDS-order-sign",
-    "prefetch": {
-      "drug_drug_interaction": "DetectedIssue/{{context.detectedissueId}}/query parameters"
-      "observations": "Observation?detectedissue/{{context.detectedissueId}}/query parameters"
-      "conditions": "Condition?detectedissue/{{context.detectedissueId}}/query parameters"
-    }
-  }
- ]
+  ]
 }
+
 ~~~
 
-### <span style="color:silver"> 3.1.22 </span> Level 2 – CDS Hooks Request
+### <span style="color:silver"> 3.1.21 </span> Advanced – CDS Hooks Request
 {:.no_toc}
 
-The Level 2 Implementation specifies the use of both the `order-select` and `order-sign` CDS Hooks during a single medication order task. In addition to creating a `order-select` hook, the `mediction-prescribe` `context` is modified to include the DetectedIssue resource. 
+The Advanced Implementation specifies the use of both the `order-select` and `order-sign` CDS Hooks during a single medication order task.
 
 
 #### Context
 {:.no_toc}
 
-The `context` element of the `order-select` CDS Hooks request is identical to the `order-sign` specification used in the Level 1 Implementation. The `context` element in the Level 2 Implementation `order-sign` element has a minor modification to include the DetectedIssue resource. The DetectedIssue.id indicates the PDDI that was identified by the Order Select Service (e.g., `id : "warfarin-NSAID1234"`). For details on the specifications are below.
+The `context` element of the `order-select` CDS Hooks request is identical to the `order-sign` specification used in the Basic Implementation. For details on the specifications are below.
 
 
 #### **`order-select` 1.0** 
@@ -434,7 +577,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### **`order-sign` 1.1** (modification of a current CDS Hook)
  {:.no_toc}
- The base version for the `order-sign` hook is 1.0. The Level 2 Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
+ The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 
@@ -442,8 +585,22 @@ Field | Optionality | Prefetch Token | Type | Description
  `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
- `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
  `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+
+##### Extension
+{:.no_toc}
+
+###### PDDI Configuration Items
+{:.no_toc}
+The extension  `pddi-configuration-items` allows for 4 different configurations options: `cache-for-order-sign-filtering` 
+(only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`), `show-evidence-support`, and 
+`alert-non-serious`. All of these configuration options accept Boolean values and are required for the advanced implementation.
+ The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. 
+ The `show-evidence-support` option is used to provide more complete information about the evidence that supports the potential 
+ drug-drug interaction in the response cards. The `alert-non-serious` option is used to tell the CDS service to alert for
+ potential drug-drug interactions that are not life-threatening.
+					    			    			    
+
 
 
 #### Prefetch
@@ -457,29 +614,23 @@ Since the order entry task is split into two separate CDS Hooks events (i.e., se
 * [Request test data](testdata.html)
 
 
-## <span style="color:silver"> 3.1.23 </span> Level 2 – DetectedIssue 
+## <span style="color:silver"> 3.1.22 </span> Advanced – FHIR Server Request
 {:.no_toc}
 
-As previously discussed, a DetectedIssue resource is created in both implementations. The Level 2 Implementation, however, uses the DetectedIssue to carry clinician-action state through order entry process. The the `context` element of the `order-sign` request contains the DetectedIssue resource. During the parse and pre-process phase, the service determines if the ordered medication is the same as the DetectedIssue medication, and if prefetch data is needed for additional processing. The ordered medication is compared to the DetectedIssue medication either by the `DetectedIssue.id,` which is a Persistent Uniform Resource Locator (PURL) or through the `DetectedIssue.implicated` reference to conflicting medications. This is to ensure the clinician action did not eliminate the PDDI (e.g., change naproxen to acetaminophen). The DetectedIssue `status` element is instantiated by the Order Select Service and indicates to the EHR if prefetch data are available or needed. If the `status` value is "final", the EHR and the CDS service MUST NOT retrieve prefetch data. If the `status` is "preliminary", the EHR MAY fulfill the prefetch queries or the CDS service MUST retrieve prefetch data from the FHIR server.
-
-
-## <span style="color:silver"> 3.1.24 </span> Level 2 – FHIR Server Request
-{:.no_toc}
-
-The parse and pre-process event for a `order-select` request in the Level 2 Implementation is identical to what occurs with `order-sign` for the Level 1 Implementation. Processing of `order-sign` for the Level 2 Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the DetectedIssue resource (Figure 6). This is to confirm that the prescriber continued with the conflicting order after having the option to change the medication in response to the CDS Hooks Cards. In addition, the DetectedIssue `status` field indicates to the CDS service if additional prefetch data is needed for the specific PDDI.
+The parse and pre-process event for a `order-select` request in the Advanced Implementation is identical to what occurs with `order-sign` for the Basic Implementation. Processing of `order-sign` for the Advanced Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the medication that was cached during `order-select` if `cache-for-order-sign-filtering` was set to TRUE. If `filter-out-repeated-alerts` is also set to TRUE during `order-sign` then repeated alert cards will not be returned. 
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 6: Level 2 – Parse and Pre-process for Order Sign Service </strong></figcaption>
-  <img src="assets/images/Parse_pre-process_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.svg" />
+<figcaption class="figure-caption"><strong>Figure 6: Advanced – Parse and Pre-process for Order Sign Service </strong></figcaption>
+  <img src="assets/images/advanced-parse-pre-process.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.svg" />
 </figure>
 
 
 
-## <span style="color:silver"> 3.1.25 </span> Level 2 – CDS Hooks Response and Card Display
+## <span style="color:silver"> 3.1.23 </span> Advanced – CDS Hooks Response and Card Display
 {:.no_toc}
 
-**Example: Level 2 – CDS Hooks Response**
+**Example: Advanced – CDS Hooks Response**
 
 ~~~
 {
@@ -488,37 +639,160 @@ The parse and pre-process event for a `order-select` request in the Level 2 Impl
       "summary": "Potential drug-drug interaction between naproxen 500mg tablet and warfarin 5mg tablet",
       "indicator": "hard-stop",
       "detail": "Non-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin.",
-      "detectedIssue" : {
-        "resourceType": "DetectedIssue",
-        "id": "Warfarin-NSAID-1234",
-        "status": "preliminary",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/v3/ActCode",
-              "code": "DRG",
-              "display": "Drug Interaction Alert"
-            }
-          ]
-        },
+      
 snipped for brevity        
 ~~~
 
 **Card Display Example**
 
-* Level 2 – Warfarin + NSAID Cards (TODO)
+* Advanced – Warfarin + NSAID Cards (Without `filter-out-repeated-alerts`)
+~~~
+{
+  "cards": [
+    {
+      "summary": "Potential Drug-Drug Interaction between warfarin (Warfarin Sodium 0.5 MG Oral Tablet) and NSAID (Ketorolac Tromethamine 10 MG Oral Tablet).",
+      "indicator": "warning",
+      "detail": "Increased risk of bleeding. \nBleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. \nNon-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin. The antiplatelet effect of NSAIDs lasts only as long as the NSAID is present in the circulation, unlike aspirin’s antiplatelet effect, which lasts for up to 2 weeks after aspirin is discontinued. NSAIDs also can cause peptic ulcers and most of the evidence for increased bleeding risk with NSAIDs plus warfarin is due to upper gastrointestinal bleeding (UGIB). \nunknown. \n unknown.",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Assess risk and take action if necessary.",
+          "actions": [
+            {
+              "type": "delete",
+              "description": "If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID."
+            }
+          ]
+        },
+        {
+          "label": "Substitute NSAID (Ketorolac Tromethamine 10 MG Oral Tablet) with APAP (Acetaminophen 325 MG Oral Tablet).",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
+              "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "3f6b9b43-9354-4512-9883-a915417e2936",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "313782",
+                      "display": "Acetaminophen 325 MG Oral Tablet"
+                    }
+                  ],
+                  "text": "Acetaminophen 325 MG Oral Tablet"
+                },
+                "subject": {
+                  "reference": "f101"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Substitute NSAID (Ketorolac Tromethamine 10 MG Oral Tablet) with APAP (Acetaminophen 500 MG Oral Tablet).",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
+              "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "d54e75a7-90ce-4ee7-90b6-63333c052648",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "198440",
+                      "display": "Acetaminophen 500 MG Oral Tablet"
+                    }
+                  ],
+                  "text": "Acetaminophen 500 MG Oral Tablet"
+                },
+                "subject": {
+                  "reference": "f101"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": "Patient is not taking a proton pump inhibitor or misoprostol.",
+      "indicator": "hard-stop",
+      "detail": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Use only if benefit outweighs risk."
+        }
+      ]
+    },
+    {
+      "summary": "Patient is 65 y/o or does have a history of upper gastrointestinal bleed (\"Acute duodenal ulcer with hemorrhage\" and 2020-03-01).",
+      "indicator": "warning",
+      "detail": "Patients with a history of UGIB or peptic ulcer may have an increased risk of UGIB from this interaction. The extent to which older age is an independent risk factor for UGIB due to these interactions is not firmly established, but UGIB in general is known to increase with age.",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Use only if benefit outweighs risk."
+        }
+      ]
+    },
+    {
+      "summary": "Patient is not concomitantly taking systemic corticosteroids, aldosterone antagonist, or high dose or multiple NSAIDs.",
+      "indicator": "info",
+      "detail": "Both corticosteroids and aldosterone antagonists have been shown to subsetantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology 2014; 147:784-92.)",
+      "source": {
+        "label": "Warfarin-NSAIDs clinical decision support algorithm",
+        "url": "https://ddi-cds.org/warfarin-nsaids/"
+      },
+      "suggestions": [
+        {
+          "label": "Assess risk and take action if necessary."
+        }
+      ]
+    }
+  ]
+}
+~~~
 
-* Level 2 – Digoxin + Cyclosporin Cards (TODO)
+* Advanced – Warfarin + NSAID Cards (With `filter-out-repeated-alerts`)
+
+~~~
+{
+  "cards": [
+    {
+      "summary": "An alert was filtered because this request is configured to filter alerts if they were presented previously in response to a prior CDS Hook request.",
+      "indicator": "info",
+      "detail": "Since filter-out-repeated-alerts was set to true in this CDS Hook request, the service is filtering out cards that were triggered by the same knowledge artifact when the physician reference display, encounter id, and patient id match between the order-select and order-sign requests.",
+      "source": {}
+    }
+  ]
+}
+~~~
 
 
 
-## <span style="color:silver"> 3.2.0 </span> Level 1 Implementation for the Warfarin + NSAIDs Knowledge Artifact
+## <span style="color:silver"> 3.2.0 </span> Basic Implementation for the Warfarin + NSAIDs Knowledge Artifact
 
-Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Level 1 – Warfarin + NSAID Semi-Structured Knowledge </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 2: Basic – Warfarin + NSAID Semi-Structured Knowledge </strong></figcaption>
   <a href = "assets/images/Basic_Warfarin_NSAID.svg" target ="_blank" > <img src= "assets/images/Basic_Warfarin_NSAID.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Warfarin_NSAID.svg" /></a>
 </figure>
 
@@ -539,12 +813,12 @@ Many PDDI CDS scenarios have similar drug and patient related decision points. I
 
 The `order-sign` request includes `context` and `prefetch` elements with FHIR resource attributes or entire resources. The contents of these elements for the Warfarin + NSAIDs CDS artifact are shown below.
 
-#### `context`
+##### Context
 {:.no_toc}
 
 * [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/) 
 
-#### `prefetch` 
+##### Context
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -567,7 +841,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Level 1 – Warfarin + NSAID Response Card Example </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 3: Basic – Warfarin + NSAID Response Card Example </strong></figcaption>
   <a href = "assets/images/Basic_W_N_Cards.svg" target ="_blank" > <img src="assets/images/Basic_W_N_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_W_N_Cards.svg" /></a>
 </figure>
 
@@ -586,14 +860,13 @@ The CDS Hooks service response supports providing actionable information to clin
 
 > *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities. 
 
-## <span style="color:silver"> 3.3.0 </span> Level 2 Implementation - Warfarin + NSAIDs Knowledge Artifact
+## <span style="color:silver"> 3.3.0 </span> Advanced Implementation - Warfarin + NSAIDs Knowledge Artifact
 
-The Level 2 Implementation for the Warfarin + NSAID artifact is split into two separate hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 6 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). The blue task boxes highlight the DetectedIssue `status` indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the `order-sign` service prefetch template), and `order-sign` service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request.
-
+The Advanced Implementation for the Warfarin + NSAID artifact is split into two separate hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 6 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 4: Warfarin + NSAID order-select logic </strong></figcaption>
-  <a href = "assets/images/Warfarin_NSAID_select.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
+  <a href = "assets/images/warfarin-nsaid-select.png" target ="_blank" > <img src="assets/images/Warfarin_NSAID_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
 </figure>
 
 
@@ -609,10 +882,10 @@ The Level 2 Implementation for the Warfarin + NSAID artifact is split into two s
 {:.no_toc}
 
 
-#### `context`
+##### Context
 {:.no_toc}
 
-#### **`order-select` 1.0** 
+##### order-sign 1.0.
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
@@ -624,9 +897,9 @@ Field | Optionality | Prefetch Token | Type | Description
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-#### **`order-sign` 1.1** (modification of a current CDS Hook)
+##### order-sign 1.1 (modification of a current CDS Hook)
  {:.no_toc}
- The base version for the `order-sign` hook is 1.0. The Level 2 Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
+ The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 
@@ -634,11 +907,10 @@ Field | Optionality | Prefetch Token | Type | Description
  `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
  `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
  `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
- `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
  `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-##### `order-select` `prefetch`
+##### order-select prefetch
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -647,7 +919,7 @@ Field | Optionality | Prefetch Token | Type | Description
     * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
     * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
 
-##### `order-sign` `prefetch`
+##### order-sign prefetch
 {:.no_toc}
 
 * Age of patient on current date.
@@ -667,172 +939,7 @@ Field | Optionality | Prefetch Token | Type | Description
 </figure>
 
 
-## <span style="color:silver"> 3.4.0 </span> Level 1 Implementation - Digoxin + Cyclosporine Knowledge Artifact
-
-
-The Digoxin + Cyclosporine artifact logic depends on whether the patient is stable on digoxin or cyclosporine before the current medication order event. This section defines terms used in the subsequent flow diagrams. Certain terms are defined by assumptions that may be taken based on the presence of resources in `context` versus `prefetch` elements of the request. 
-
-
-* **Incident Order** – `context` medication is *not* in `prefetch` medications and, thus, is presumably the first occurrence. 
-
-* **Prevalent Order** – `context` medication is in `prefetch` medications and, thus, is presumably a medication order that is continued or repeated.
-
-* **Normal** – observation that is within a specified time period, and the measure is within a therapeutic window or below/above a certain acceptable threshold.
-
-* **Abnormal** – observation that is *not* within a specified time period, *or* the measure is *not* within a therapeutic window or below/above a certain threshold.
-
-> *Note:* Parameters for "normal" and "abnormal" observations SHOULD be modified by the implementor. The provided artifacts use a simplistic approach of querying for the most recent measure in a specific time frame. This approach SHOULD be modified to capture and present the most clinically relevant information. For example, clinicians may want a look-back period that captures several measures for serum creatinine to determine the status *and* prognosis for renal insufficiency. 
-
-
-Figure 7 shows how a PDDI CDS implementer would implement the Digoxin + Cyclosporine PDDI knowledge artifact using the CDS Hooks `order-sign` hook. The figure shows the CDS Service processes the PDDI CDS logic after receiving a `order-sign` request. Figure 7 progresses through the decision tree and includes warning indicators (i.e., green, orange, red) and contextual factors that may be presented to the clinician. Figure 8 builds on this artifact and provides a display of Cards example. 
-
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 7: Level 1 Digoxin + Cyclosporine logic </strong></figcaption>
-  <a href = "assets/images/Basic_Digoxin_Cyclosporine.svg" target ="_blank" > <img src="assets/images/Basic_Digoxin_Cyclosporine.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Digoxin_Cyclosporine.svg" /></a>
-</figure>
-
-
-### <span style="color:silver"> 3.4.1 </span> Decision Points Summary
-{:.no_toc}
-
-The Digoxin + Cyclosporine exemplar artifact has two main decision blocks:
-
-1. whether the patient is taking digoxin and/or cyclosporine at the time of the current order for digoxin or cyclosporine, and
-
-2. whether the patient has risk factors that may potentiate the risk of digitalis toxicity. 
-
-### <span style="color:silver"> 3.4.2 </span> CDS Hooks Request
-{:.no_toc}
-
-
-#### `context`
-{:.no_toc}
-
-* [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/) 
-
-#### `prefetch`
-{:.no_toc}
-
-* Rolling 100-day look-back period for medication resources including:
-    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
-    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
-    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
-    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
-    
-* Rolling 100-day look-back period for digoxin concentration
-    * [Observation](https://www.hl7.org/fhir/observation.html)
-
-* Rolling 100-day look-back period for serum creatinine
-    * [Observation](https://www.hl7.org/fhir/observation.html)
-    
-* Rolling 100-day look-back period for electrolytes including: potassium, magnesium, and calcium
-    * [Observation](https://www.hl7.org/fhir/observation.html)
-        
-
-### <span style="color:silver"> 3.4.3 </span> CDS Hooks Cards
-{:.no_toc}
-
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 8: Level 1 Digoxin + Cyclosporine Cards </strong></figcaption>
-  <a href = "assets/images/Level_1_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_1_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_1_D_C_Cards.svg" /></a>
-</figure>
-
-### <span style="color:silver"> 3.4.4 </span> Card Actions
-{:.no_toc}
-
-The actions, types and associated resources for the Digoxin + Cyclosporine Level 1 Implementation are listed below:  
-
-* `create` 
-    * Adding order for digoxin level measure – ProcedureRequest for serum digoxin trough within 24 hours 
-    * Add consultation for either prescriber of digoxin or cyclosporine depending on which the patient is currently taking – ProcedureRequest consultation
-    * Add order for electrolyte panel(s) (i.e., calcium, magnesium, potassium) and renal function (e.g., eGRF and serum creatinine) – ProcedureRequest for labs to be drawn
-* `update` 
-    * Reduce digoxin order currenlty on the patient's profile – MedicationRequest for low-dose digoxin
-* `delete`
-    * Remove current order for digoxin or cyclosporine 
-    
-> *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities.     
-    
-## <span style="color:silver"> 3.5.0 </span> Level 2 Implementation - Digoxin + Cyclosporine Knowledge Artifact
-
-As described under the Getting Started tab, the Level 2 Implementation proposal requires several changes to the current standard specifications. Changes to the CDS Hooks context are specified below. The Level 2 Implementation proposal for the Digoxin + Cyclosporine artifact is split into two separate services. Figures 9 and 10 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both services (i.e., Order Select and Order Sign). The blue task boxes highlight the DetectedIssue status indicator, which informs the EHR  of additional needed resources (whether or not to fulfill the Order Sign Service prefetch template), and Order Sign Service if it needs to perform a FHIR server request in the event prefetch data are not provided in the request. Figure 11 depicts a Card display example. In this scenario, the `order-sign` Cards are filtered since the clinician's action indicated that the patient was no longer taking digoxin. 
-
-
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 9: Digoxin + Cyclosporine order-select logic </strong></figcaption>
-  <a href = "assets/images/Digoxin_Cyclosporine_select.svg" target ="_blank" > <img src="assets/images/Digoxin_Cyclosporine_select.svg" class="figure-img img-responsive img-rounded center-block" alt="Digoxin_Cyclosporine_select.svg" /></a>
-</figure>
-
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 10: Digoxin + Cyclosporine order-sign logic </strong></figcaption>
-  <a href = "assets/images/Digoxin_Cyclosporine_prescribe.svg" target ="_blank" > <img src="assets/images/Digoxin_Cyclosporine_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Digoxin_Cyclosporine_prescribe.svg" /></a>
-</figure>
-
-
-### <span style="color:silver"> 3.5.1 </span> CDS Hooks Request
-{:.no_toc}
-
-
-
-
-##### `order-select 1.0`
-{:.no_toc}
-
-
-Field | Optionality | Prefetch Token | Type | Description
------ | -------- | :----: | :----: | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
-`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
-`encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
-`selections`  | REQUIRED | No | *array* | The FHIR id of the newly selected order(s). The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
-`draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
-
-
-#### **`order-sign` 1.1** (modification of a current CDS Hook)
- {:.no_toc}
- The base version for the `order-sign` hook is 1.0. The Level 2 Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
-
-
- Field       | Optionality        |  Prefetch Token     |Type  | Description 
- :------------- |:-------------:|:-------: |:-----:| :-----------------
- `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
- `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
- `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
- `detectedissue` | REQUIRED     | Yes |    *object* | R4 - FHIR Bundle of DetectedIssue resource for current order entry task
- `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
-
-
-#### `order-select` `prefetch`
-{:.no_toc}
-* Rolling 100-day look-back period for medication resources including:
-    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
-    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
-    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
-    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
-
-#### `order-sign` `prefetch`
-{:.no_toc}
-
-* Rolling 100-day look-back period for digoxin concentration
-    * [Observation](https://www.hl7.org/fhir/observation.html)
-
-* Rolling 100-day look-back period for serum creatinine
-    * [Observation](https://www.hl7.org/fhir/observation.html)
-    
-* Rolling 100-day look-back period for electrolytes including: potassium, magnesium, and calcium
-    * [Observation](https://www.hl7.org/fhir/observation.html)
-
-
-### <span style="color:silver"> 3.5.2 </span> CDS Hooks Cards
-{:.no_toc}
-
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 11: Level 2 Digoxin + Cyclosporine Cards </strong></figcaption>
-  <a href = "assets/images/Level_2_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_2_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_2_D_C_Cards.svg" /></a>
-</figure>
-
-
-# <span style="color:silver"> 3.6.0 </span> CDS Message Filtering
+# <span style="color:silver"> 3.4.0 </span> CDS Message Filtering
 
 The following tables have been created to better conceptualize the various scenarios where message filtering may occur 
 for the clinician during `order-sign`. The assumptions used when creating these tables are that `cache-for-order-sign-filtering` 
@@ -846,7 +953,7 @@ following items are cached in order to properly handle message filtering.
 * Base 64 encoded medication resource specified in `selections`
 * An ID created by concatenating the system and code from the “medicationCodeableConcept” of the medication resource (used for retrieving a medication resource during `order-sign`)
 
-### <span style="color:silver"> 3.6.1 </span> Scenario - Order-select with 1 medication that triggers a branch
+### <span style="color:silver"> 3.4.1 </span> Scenario - Order-select with 1 medication that triggers a branch
 Clinician A calls order-select with 1 medication in `draftOrders` that triggers a branch of the rules then calls order-sign.
 > *Note:* CDS hooks do not couple `indicators` with `suggestions`.
 
@@ -866,11 +973,11 @@ Clinician A calls order-select with 1 medication in `draftOrders` that triggers 
 | Hard-stop                          | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
 
 
-### <span style="color:silver"> 3.6.2 </span> Scenario - Order-select with more than 1 medication that triggers a branch
+### <span style="color:silver"> 3.4.2 </span> Scenario - Order-select with more than 1 medication that triggers a branch
 Each medication request specified in `selections` will be cached for message filtering on `order-sign`, this scenario will operate just as above.
 
 
-### <span style="color:silver"> 3.6.3 </span> Scenario - Order-select is called by 2 different clinicians before order-sign
+### <span style="color:silver"> 3.4.3 </span> Scenario - Order-select is called by 2 different clinicians before order-sign
 Clinician A goes through an `order-select` process, for some reason is not able to start the `order-sign` process immediately. Clinician B then goes through the `order-select` and `order-sign` process for the same patient.
 
 | Branch triggered for clinician A | Branch triggered for clinician B | Will alert be filtered | Description                                                                           |
@@ -885,7 +992,7 @@ Clinician A goes through an `order-select` process, for some reason is not able 
 | Hard-stop                        | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 | Hard-stop                        | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 
-### <span style="color:silver"> 3.6.4 </span> Scenario - Order-select is called more than once before order-sign by same the same clinician
+### <span style="color:silver"> 3.4.4 </span> Scenario - Order-select is called more than once before order-sign by same the same clinician
 Clinician A starts the `order-select` process, gets interrupted and prevented from beginning the `order-sign` processes (potential network issues or other problems arise). Clinician A then goes through the `order-select` process again before completing `order-sign`.
 
 | Branch triggered for both order-selects | Will alert be filtered | Description                                                                                                                                            |
@@ -895,7 +1002,7 @@ Clinician A starts the `order-select` process, gets interrupted and prevented fr
 | Hard-stop                               | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
 
 
-### <span style="color:silver"> 3.6.5 </span> Scenario - Order-select is called with a long gap of time before order-sign
+### <span style="color:silver"> 3.4.5 </span> Scenario - Order-select is called with a long gap of time before order-sign
 Clinician A completes the `order-select` process, something prevents them from starting `order-sign` for a long period of time.
 
 > *Note:* There is currently no time-out period or expiration for cached medications to reset `order-sign` message filtering
@@ -910,13 +1017,13 @@ Clinician A completes the `order-select` process, something prevents them from s
 | Hard-stop        | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
 
 
-### <span style="color:silver"> 3.6.6 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
+### <span style="color:silver"> 3.4.6 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
 Since the patient ID is used to create a unique cached medication statement, if a clinician completes the `order-select` with patient 
 A but does an `order-select`/`order-sign` with patient B before completing `order-sign` for patient A, the message filtering
  will not be affected. This may be another situation where a time-out could be beneficial for the clinician so that messages will not be filtered.
 Another solution would be to track if a clinician completes `order-select` for a new patient before completing `order-sign` for their initial patient.
 
-### <span style="color:silver"> 3.6.7 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
+### <span style="color:silver"> 3.4.7 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
 Clinician A completes the `order-select` process and clinician B completes `order-sign`.
 
 | Branch triggered for both order-select and order-sign | Will alert be filtered | Description                                                                     |
@@ -926,7 +1033,7 @@ Clinician A completes the `order-select` process and clinician B completes `orde
 | Hard-stop                                             | FALSE                  | Since the clinicians are different there will be no message filtering performed |
 
 
-### <span style="color:silver"> 3.6.8 </span> Scenario - Order-select with no medications that trigger rule
+### <span style="color:silver"> 3.4.8 </span> Scenario - Order-select with no medications that trigger rule
 
 No cards to be filtered are returned.
 

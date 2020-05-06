@@ -17,7 +17,7 @@ The primary intended audience includes individuals seeking guidance on how to im
 
 ## <span style="color:silver"> 1.3 </span> Collaborators and Funding
 
-This implementation guide was developed by the Health Level 7 [(HL7)](http://wiki.hl7.org) [Clinical Decision Support Work Group (CDS WG)](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) in collaboration with the University of Pittsburgh Medical Center (UPMC), RWTH Aachen University, Clemson University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health. It was funded in part by by AHRQ grants: R01 LM011838, R21 HS023826 and R01 HS025984, and NLM grant T15 LM007124, R15 LM012941.
+This implementation guide was developed by the Health Level 7 [(HL7)](http://wiki.hl7.org) [Clinical Decision Support Work Group (CDS WG)](http://wiki.hl7.org/index.php?title=Clinical_Decision_Support_Workgroup) in collaboration with the University of Pittsburgh Medical Center (UPMC), RWTH Aachen University, Clemson University, the Open Source Electronic Health Alliance (OSEHRA), the University of Arizona, and Wolters Kluwer Health. It was funded in part by by AHRQ grants: U18 HS027099, R01 LM011838, R21 HS023826 and R01 HS025984, and NLM grant T15 LM007124, R15 LM012941.
 
 ## <span style="color:silver"> 1.4 </span> Context
 
@@ -50,7 +50,7 @@ In this guide, we assume that the service implementation complies with the [CDS 
 
 ## <span style="color:silver"> 1.4.3 </span> Related Projects 
 
-The [Use Cases](./use-cases.html) section of this implementation guide describes example PDDI CDS artifacts at a narrative and semi-structured level. The artifacts comply with the a minimum information model for potential drug-drug interaction knowledge and evidence described in a W3C Community Interest Group Note.<sup>[7](#references)</sup>
+The [Use Case](./use-cases.html) section of this implementation guide describes example PDDI CDS artifacts at a narrative and semi-structured level. The artifacts comply with the a minimum information model for potential drug-drug interaction knowledge and evidence described in a W3C Community Interest Group Note.<sup>[7](#references)</sup>
 
 The example CDS services shown in this implementation guide were written without the use of a specific authoring tool. The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring) is a component of the CDS Connect project funded by the Agency for Healthcare Research and Quality [(AHRQ)](https://www.ahrq.gov/). It is possible to use the authoring tool to develop PDDI CDS logic using CQL. Interested persons can access [a test version of the tool with these features on GitHub](https://github.com/dbmi-pitt/AHRQ-CDS-Connect-Authoring-Tool). However, the authoring tool was not used to assist with PDDI CDS that usese CDS Hooks as specified in this implementation guide. 
 

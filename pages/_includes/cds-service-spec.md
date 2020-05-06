@@ -16,6 +16,7 @@ PDDI CDS knowledge artifacts.
 A CDS rule execution engine. 
 * It is RECOMMENDED that it be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
+* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it MUST support processing of the required configuration options described in Extension subsection of Section 3.1.21. 
 
 ## <span style="color:silver"> 3.1.0 </span> Preliminaries 
 
@@ -175,10 +176,10 @@ GET http://FHIR.org/PDDI-CDS
 ~~~
 
 
-## <span style="color:silver"> 3.1.9 </span> Implementation in the CDS Service
+## <span style="color:silver"> 3.1.9 </span> Implementation of Configuration Options in the CDS Service
 {:.no_toc}
 
-TODO: Richard will complete this section
+TODO: Richard will complete this section discussing how the structuredefinition resource looks and suggesting this as an option
 
 # <span style="color:silver"> 3.1.10 </span> Basic Implementation
 
@@ -230,15 +231,8 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ###### PDDI Configuration Items
 {:.no_toc}
-The extension  `pddi-configuration-items` allows for 4 different configurations options: `cache-for-order-sign-filtering` 
-(only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`), `show-evidence-support`, and 
-`alert-non-serious`. All of these configuration options accept Boolean values and are not required for the basic implementation.
- The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. 
- The `show-evidence-support` option is used to provide more complete information about the evidence that supports the potential 
- drug-drug interaction in the response cards. The `alert-non-serious` option is used to tell the CDS service to alert for
- potential drug-drug interactions that are not life-threatening.
-					    			    			    
-
+The CDS Service MAY process configuration options sent as within an extension resource with the CDS Hooks request in the field `pddi-configuration-items`. At the present time, there are no standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
+			    			    			    
 
 ##### Prefetch
 {:.no_toc}
@@ -488,7 +482,7 @@ Coordinating the Order Select Service with the Order Sign Service is a key aspec
 {:.no_toc}
 
 
-### <span style="color:silver"> 3.1.20 </span> Advanced – CDS Service Discovery response example
+### <span style="color:silver"> 3.1.20 </span> Advanced – order-select CDS Service Discovery response example
 {:.no_toc}
 
 ~~~
@@ -507,7 +501,7 @@ Coordinating the Order Select Service with the Order Sign Service is a key aspec
             "description": <human readable description of the configuration option>
           },
 
-          ... other configuration options ...
+          ... other optional configuration options ...
         ]
       },
       "id": "warfarin-nsaids-cds-select",
@@ -592,15 +586,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ###### PDDI Configuration Items
 {:.no_toc}
-The extension  `pddi-configuration-items` allows for 4 different configurations options: `cache-for-order-sign-filtering` 
-(only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`), `show-evidence-support`, and 
-`alert-non-serious`. All of these configuration options accept Boolean values and are required for the advanced implementation.
- The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. 
- The `show-evidence-support` option is used to provide more complete information about the evidence that supports the potential 
- drug-drug interaction in the response cards. The `alert-non-serious` option is used to tell the CDS service to alert for
- potential drug-drug interactions that are not life-threatening.
-					    			    			    
-
+The CDS Service MUST process configuration options sent as within an extension resource with the CDS Hooks request in the field `pddi-configuration-items`. There are two standart configuration options:  `cache-for-order-sign-filtering` (only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`). All of these configuration options accept Boolean values and are required for the advanced implementation. The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. At the present time, there are no other standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
 
 
 #### Prefetch

@@ -3,20 +3,20 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/tom-reese/PDDI-CDS/resources"/>
+    <valueString value="/home/rdb20/DI_DIR/PDDI-CDS/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/tom-reese/PDDI-CDS/examples"/>
+    <valueString value="/home/rdb20/DI_DIR/PDDI-CDS/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/tom-reese/PDDI-CDS/pages"/>
+    <valueString value="/home/rdb20/DI_DIR/PDDI-CDS/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
   <name value="PDDI_CDS"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2019-01-23T00:00:00-07:00"/>
+  <date value="2019-01-23T00:00:00-05:00"/>
   <publisher value="HL7 Clinical Decision Support Workgroup"/>
   <contact>
     <name value="HL7"/>

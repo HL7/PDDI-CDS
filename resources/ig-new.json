@@ -3,22 +3,22 @@
   "id" : "ig",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/tom-reese/PDDI-CDS/resources"
+    "valueString" : "/home/rdb20/DI_DIR/PDDI-CDS/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/tom-reese/PDDI-CDS/examples"
+    "valueString" : "/home/rdb20/DI_DIR/PDDI-CDS/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/tom-reese/PDDI-CDS/pages"
+    "valueString" : "/home/rdb20/DI_DIR/PDDI-CDS/pages"
   }],
   "url" : "http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig",
   "version" : "0.1.0",
   "name" : "PDDI_CDS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2019-01-23T00:00:00-07:00",
+  "date" : "2019-01-23T00:00:00-05:00",
   "publisher" : "HL7 Clinical Decision Support Workgroup",
   "contact" : [{
     "name" : "HL7",

@@ -563,7 +563,7 @@ The Advanced Implementation specifies the use of both the `order-select` and `or
 The `context` element of the `order-select` CDS Hooks request is identical to the `order-sign` specification used in the Basic Implementation. For details on the specifications are below.
 
 
-#### **`order-select` 1.0** 
+#### order-select 1.0
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
@@ -575,7 +575,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-#### **`order-sign` 1.1** (modification of a current CDS Hook)
+#### order-sign 1.1 (modification of a current CDS Hook)
  {:.no_toc}
  The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
@@ -874,7 +874,7 @@ The Advanced Implementation for the Warfarin + NSAID artifact is split into two 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 5: Warfarin + NSAID order-sign logic </strong></figcaption>
-  <a href = "assets/images/Warfarin_NSAID_prescribe.svg" target ="_blank" > <img src="assets/images/Warfarin_NSAID_prescribe.svg" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
+  <a href = "assets/images/warfarin-nsaid-sign.png" target ="_blank" > <img src="assets/images/warfarin-nsaid-sign.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
 </figure>
 
 

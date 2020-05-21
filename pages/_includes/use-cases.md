@@ -1,14 +1,7 @@
 
-# <span style="color:silver"> 2.0.0 </span> Use Case
+# <span style="color:silver"> 2.0.0 </span> Use Case - a potential interaction between warfarin and non-steroidal anti-inflammatory drugs (NSAIDs)
 
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-# <span style="color:silver"> 2.1.0 </span> Warfarin + NSAIDs
-
-The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a PDDI minimum information model. Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. 
+The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimum information model for representing clinically actionable knowedge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. 
 
 #### Warfarin + NSAIDs Logic Table 
 {:.no_toc}

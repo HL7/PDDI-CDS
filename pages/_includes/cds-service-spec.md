@@ -292,7 +292,7 @@ A FHIR server request by the CDS service is necessary in the event the request `
 ### <span style="color:silver"> 3.2.5 </span> CDS Hooks Response and Card Display
 {:.no_toc}
 
-The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g.,`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "hard-stop" could be a modal alert).
+The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g.,`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
 
 **Example 4: CDS Hooks Response**
 
@@ -301,7 +301,7 @@ The CDS service response is a Card array. Each Card has specified attributes tha
   "cards": [
     {
       "summary": "Potential drug-drug interaction between naproxen 500mg tablet and warfarin 5mg tablet",
-      "indicator": "hard-stop",
+      "indicator": "critical",
       "detail": "Non-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin.",
       "source": {
         "label": "Potential Drug-Drug Interaction CDS",
@@ -413,7 +413,7 @@ The CDS service response is a Card array. Each Card has specified attributes tha
     },
     {
       "summary": "Patient is not taking a proton pump inhibitor or misoprostol.",
-      "indicator": "hard-stop",
+      "indicator": "critical",
       "detail": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
       "source": {
         "label": "Warfarin-NSAIDs clinical decision support algorithm",
@@ -648,7 +648,7 @@ The parse and pre-process event for a `order-select` request in the Advanced Imp
   "cards": [
     {
       "summary": "Potential drug-drug interaction between naproxen 500mg tablet and warfarin 5mg tablet",
-      "indicator": "hard-stop",
+      "indicator": "critical",
       "detail": "Non-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin.",
       
 snipped for brevity        
@@ -736,7 +736,7 @@ snipped for brevity
     },
     {
       "summary": "Patient is not taking a proton pump inhibitor or misoprostol.",
-      "indicator": "hard-stop",
+      "indicator": "critical",
       "detail": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
       "source": {
         "label": "Warfarin-NSAIDs clinical decision support algorithm",
@@ -873,7 +873,7 @@ The CDS Hooks service response supports providing actionable information to clin
 
 # <span style="color:silver"> 3.5.0 </span> Advanced Implementation - Warfarin + NSAIDs Knowledge Artifact
 
-The Advanced Implementation for the Warfarin + NSAID artifact is split into two separate hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 6 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "hard-stop" – red to "warning" – orange). 
+The Advanced Implementation for the Warfarin + NSAID artifact is split into two separate hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 6 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "critical" – red to "warning" – orange). 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 4: Warfarin + NSAID order-select logic </strong></figcaption>
@@ -980,10 +980,10 @@ Clinician A calls order-select with 1 medication in `draftOrders` that triggers 
 | Warning                            | Create                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
 | Warning                            | Update                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
 | Warning                            | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
-| Hard-stop                          | Create/Update/Delete     | FALSE                              | TRUE                   | Hard-stop message received, no additional action taken, alert will be filtered on order-sign       |
-| Hard-stop                          | Create                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
-| Hard-stop                          | Update                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
-| Hard-stop                          | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Critical                          | Create/Update/Delete     | FALSE                              | TRUE                   | Critical message received, no additional action taken, alert will be filtered on order-sign       |
+| Critical                          | Create                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Critical                          | Update                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
+| Critical                          | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
 
 
 ### <span style="color:silver"> 3.6.2 </span> Scenario - Order-select with more than 1 medication that triggers a branch
@@ -1001,13 +1001,13 @@ Clinician A goes through an `order-select` process, for some reason is not able 
 | -------------------------------- | -------------------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
 | Info                             | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 | Warning                          | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
-| Hard-stop                        | Hard-stop                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Critical                        | Critical                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 | Info                             | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
-| Info                             | Hard-stop                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Info                             | Critical                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 | Warning                          | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
-| Warning                          | Hard-stop                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
-| Hard-stop                        | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
-| Hard-stop                        | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Warning                          | Critical                        | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Critical                        | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
+| Critical                        | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 
 ### <span style="color:silver"> 3.6.4 </span> Scenario - Order-select is called more than once before order-sign by same the same clinician
 {:.no_toc}
@@ -1018,10 +1018,12 @@ Clinician A starts the `order-select` process, gets interrupted and prevented fr
 | --------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Info                                    | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
 | Warning                                 | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
-| Hard-stop                               | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
+| Critical                               | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
 
 
-### <span style="color:silver"> 3.6.5 </span> Scenario - Order-select is called with a long gap of time before order-sign
+### <span style="color:silver"> 3.6.5 </span> Scenario - Order-select is called multiple times with updates to the draft orders
+
+### <span style="color:silver"> 3.6.6 </span> Scenario - Order-select is called with a long gap of time before order-sign
 {:.no_toc}
 
 Clinician A completes the `order-select` process, something prevents them from starting `order-sign` for a long period of time.
@@ -1034,11 +1036,11 @@ Clinician A completes the `order-select` process, something prevents them from s
 | Info             | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
 | Warning          | FALSE        | TRUE                   | Message filtering will be performed as normal                                                                                 |
 | Warning          | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
-| Hard-stop        | FALSE        | TRUE                   | Message filtering will be performed as normal                                                                                 |
-| Hard-stop        | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
+| Critical        | FALSE        | TRUE                   | Message filtering will be performed as normal                                                                                 |
+| Critical        | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
 
 
-### <span style="color:silver"> 3.6.6 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
+### <span style="color:silver"> 3.6.7 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
 {:.no_toc}
 
 Since the patient ID is used to create a unique cached medication statement, if a clinician completes the `order-select` with patient 
@@ -1046,7 +1048,7 @@ A but does an `order-select`/`order-sign` with patient B before completing `orde
  will not be affected. This may be another situation where a time-out could be beneficial for the clinician so that messages will not be filtered.
 Another solution would be to track if a clinician completes `order-select` for a new patient before completing `order-sign` for their initial patient.
 
-### <span style="color:silver"> 3.6.7 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
+### <span style="color:silver"> 3.6.8 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
 {:.no_toc}
 
 Clinician A completes the `order-select` process and clinician B completes `order-sign`.
@@ -1055,10 +1057,10 @@ Clinician A completes the `order-select` process and clinician B completes `orde
 | ----------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------- |
 | Info                                                  | FALSE                  | Since the clinicians are different there will be no message filtering performed |
 | Warning                                               | FALSE                  | Since the clinicians are different there will be no message filtering performed |
-| Hard-stop                                             | FALSE                  | Since the clinicians are different there will be no message filtering performed |
+| Critical                                             | FALSE                  | Since the clinicians are different there will be no message filtering performed |
 
 
-### <span style="color:silver"> 3.6.8 </span> Scenario - Order-select with no medications that trigger rule
+### <span style="color:silver"> 3.6.9 </span> Scenario - Order-select with no medications that trigger rule
 {:.no_toc}
 
 No cards to be filtered are returned.

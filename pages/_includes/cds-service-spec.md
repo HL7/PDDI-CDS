@@ -963,6 +963,7 @@ following items are cached in order to properly handle message filtering.
 * Knowledge Artifact URL
 * Base 64 encoded medication resource specified in `selections`
 * An ID created by concatenating the system and code from the “medicationCodeableConcept” of the medication resource (used for retrieving a medication resource during `order-sign`)
+* Base 64 encoded summary, detail, and indicator from the CDS cards returned
 
 ### <span style="color:silver"> 3.6.1 </span> Scenario - Order-select with 1 medication that triggers a branch
 {:.no_toc}
@@ -1022,6 +1023,22 @@ Clinician A starts the `order-select` process, gets interrupted and prevented fr
 
 
 ### <span style="color:silver"> 3.6.5 </span> Scenario - Order-select is called multiple times with updates to the draft orders
+{:.no_toc}
+Clinician A starts the `order-select` process with 1 medication in the draft orders that triggers a rule set. Clinician A
+ then add a second medication to draft orders which triggers a different rule set. Clinician A then begins the `order-sign` 
+ process with both medications in the draft orders. 
+
+| Indicator for the branch triggered (medication 1) | Indicator for the branch triggered (medication 2) | Will alerts be filtered | Description                                                                                                                                                                                                                                                                |
+|---------------------------------------------------|---------------------------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Info                                              | Info                                              | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Info                                              | Warning                                           | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Info                                              | Critical                                          | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Warning                                           | Info                                              | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Warning                                           | Warning                                           | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Warning                                           | Critical                                          | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Critical                                          | Info                                              | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Critical                                          | Warning                                           | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
+| Critical                                          | Critical                                          | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
 
 ### <span style="color:silver"> 3.6.6 </span> Scenario - Order-select is called with a long gap of time before order-sign
 {:.no_toc}

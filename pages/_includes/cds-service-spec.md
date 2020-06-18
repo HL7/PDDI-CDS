@@ -130,10 +130,10 @@ This section provides an overview of the processes and components of the PDDI CD
 ### <span style="color:silver"> 3.1.9 </span> CDS Discovery
 {:.no_toc}
 
-Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Discovery (Figure 1). CDS Discovery is to identify CDS services and obtain associated prefetch templates. A prefetch template is a dictionary of read and search requests for needed resources of a particular service. The PDDI CDS service MAY provide a prefetch template for each service, and the EHR SHOULD populate prefetch templates with relevant patient data for the anticipated CDS Hook request.
+Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Discovery (Figure 2). CDS Discovery is to identify CDS services and obtain associated prefetch templates. A prefetch template is a dictionary of read and search requests for needed resources of a particular service. The PDDI CDS service MAY provide a prefetch template for each service, and the EHR SHOULD populate prefetch templates with relevant patient data for the anticipated CDS Hook request.
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: CDS Service Discovery </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 2: CDS Service Discovery </strong></figcaption>
   <img src="assets/images/cds-service-discovery.png" class="figure-img img-responsive img-rounded center-block" alt="Discover_CDS_Service.svg" />
 </figure>
 
@@ -213,10 +213,10 @@ The Basic Implementation uses the `order-sign 1.0` and is a more simplistic appr
 ## <span style="color:silver"> 3.2.1 </span> Summary of Operations
 {:.no_toc}
 
-The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `order-sign`) and ends with the user's action in response to the Card response suggestion(s) (Figure 2). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
+The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `order-sign`) and ends with the user's action in response to the Card response suggestion(s) (Figure 3). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Basic Implementation – Order Sign Service Summary </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 3: Basic Implementation – Order Sign Service Summary </strong></figcaption>
   <img src="assets/images/basic-order-sign-service.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Order_Sign_service.svg" />
 </figure>
 
@@ -280,10 +280,10 @@ A `Bundle` is a FHIR resource that groups resources into a single instance, whic
 ### <span style="color:silver"> 3.2.4 </span> FHIR Server Request
 {:.no_toc}
 
-A FHIR server request by the CDS service is necessary in the event the request `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 3. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
+A FHIR server request by the CDS service is necessary in the event the request `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 4. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 4: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
   <img src="assets/images/basic-parse-pre-process.png" class="figure-img img-responsive img-rounded center-block" alt="Basic_Parse_pre-process.svg" />
 </figure>
 
@@ -294,7 +294,7 @@ A FHIR server request by the CDS service is necessary in the event the request `
 
 The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g.,`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
 
-**Example 4: CDS Hooks Response**
+**Example 3: CDS Hooks Response**
 
 ~~~
 {
@@ -333,7 +333,7 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 
 **Card Display Example**
 
-* Basic – Warfarin + NSAID Cards (Without `filter-out-repeated-alerts`)
+* Basic – Warfarin + NSAIDs Cards (Without `filter-out-repeated-alerts`)
 ~~~
 {
   "cards": [
@@ -457,7 +457,232 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 }
 ~~~
 
-
+* Basic - Digoxin + Cyclosporine Cards (Without `filter-out-repeated-alerts`)
+~~~
+{
+  "cards": [
+    {
+      "summary": "Potential Drug-Drug Interaction between digoxin (Digoxin 0.2 MG Oral Capsule) and cyclosporine (Cyclosporine 100 MG)",
+      "indicator": "warning",
+      "detail": "Increased risk of digoxin toxicity. Assess risk and take action if necessary. \nDigoxin toxicity is potentially serious. The clinical consequences may include anorexia, nausea, vomiting, visual changes, and cardiac arrhythmias. \nThe mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cyclosporine. P-glycoprotein is a major transporter for digoxin efflux. \nunknown. \nunknown.",
+      "source": {
+        "label": "Potential Drug-Drug Interaction Clinical Decision Support",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+      },
+      "suggestions": [
+        {
+          "label": "Consultation",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Request communication with digoxin prescriber",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "70ef559c-a02d-463d-8505-9beb9c2629c3",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "11429006",
+                      "display": "Consultation"
+                    }
+                  ],
+                  "text": "Consultation"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Cancel digoxin",
+          "actions": [
+            {
+              "type": "delete",
+              "description": "Discontinue digoxin order"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": "Patient does not have digoxin level on record within the last 30 days. ",
+      "indicator": "warning",
+      "detail": "Initiating cyclosporine is expected to increase digoxin levels. For patients without a reliable plasma digoxin concentration in normal range, use only if benefits outweight risks. Extreme caution and close monitoring is necessary.",
+      "source": {
+        "label": "Potential Drug-Drug Interaction Clinical Decision Support",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+      },
+      "suggestions": [
+        {
+          "label": "Digoxin Level",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order digoxin trough within 24 hours from the initiation of cyclosporine",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "79d64211-25f6-4e8c-babe-856816127d1b",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "269872007",
+                      "display": "Serum digoxin measurement"
+                    }
+                  ],
+                  "text": "Serum digoxin measurement"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "New Digoxin",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Preemptively reduce digoxin dose with new order ",
+              "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "3c428362-5646-4131-9f96-937a7df5dbf4",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "315819",
+                      "display": "Digoxin 0.125 MG"
+                    }
+                  ],
+                  "text": "Digoxin 0.125 MG"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "digoxin-cyclosporine PDDI knowledge artifact",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+        },
+        {
+          "label": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian1988"
+        },
+        {
+          "label": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian#1987"
+        }
+      ]
+    },
+    {
+      "summary": "Within 100 days, the patient has had electrolyte and serum creatinine levels checked, and they are not on a potassium sparing or loop diuretic.",
+      "indicator": "info",
+      "detail": "(Potassium: 3.6mEq/L and 2020-04-28)\n (Magnesium: 0.8mmol/L and 2020-04-28)\n (Calcium: 8.6mg/dL and 2020-04-28)\n",
+      "source": {
+        "label": "Potential Drug-Drug Interaction Clinical Decision Support",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+      },
+      "suggestions": [
+        {
+          "label": "Serum Creatinine",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for serum creatinine",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "85d53af2-22ec-4441-8ecf-f71879779f2a",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": " 313822004",
+                      "display": "Corrected serum creatinine"
+                    }
+                  ],
+                  "text": "Serum Creatinine"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Electrolyte Panel",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for electrolyte panel",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "8c6514e3-1d47-47b6-87b3-fc53ce8f6eb2",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "271236005",
+                      "display": "Serum potassium level"
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "312475002",
+                      "display": "Plasma magnesium level"
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "390963002",
+                      "display": "Plasma calcium level"
+                    }
+                  ],
+                  "text": "Electrolyte Panel"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "digoxin-cyclosporine PDDI knowledge artifact",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+        },
+        {
+          "label": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#lip1993"
+        },
+        {
+          "label": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#nda20405"
+        }
+      ]
+    }
+  ]
+}
+~~~
 
 # <span style="color:silver"> 3.3.0 </span> Advanced Implementation
 
@@ -481,7 +706,7 @@ Differences between the Basic and Advanced Implementations include:
 ### <span style="color:silver"> 3.3.1 </span> Advanced – CPOE Workflow
 {:.no_toc}
 
-Different contextual factors are available and needed at different times during the medication order process (Figure 4). To align clinicians' information needs with PDDI information, the Advanced Implementation *defines* two separate hook trigger events in the medication order workflow:
+Different contextual factors are available and needed at different times during the medication order process (Figure 5). To align clinicians' information needs with PDDI information, the Advanced Implementation *defines* two separate hook trigger events in the medication order workflow:
 
 1. Selecting a drug product to include in medication order (`order-select`)
 
@@ -489,17 +714,17 @@ Different contextual factors are available and needed at different times during 
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 4: CPOE Workflow Example </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 5: CPOE Workflow Example </strong></figcaption>
   <img src="assets/images/CPOE_workflow.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow.svg" />
 </figure>
 
 ### <span style="color:silver"> 3.3.2 </span> Advanced – Summary of Operations
 {:.no_toc}
 
-Coordinating the Order Select Service with the Order Sign Service is a key aspect of the Advanced Implementation. Figure 5 depicts the summary of operations that coordinates the Order Select and Order Sign Services.
+Coordinating the Order Select Service with the Order Sign Service is a key aspect of the Advanced Implementation. Figure 6 depicts the summary of operations that coordinates the Order Select and Order Sign Services.
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 5: Advanced – PDDI CDS Service Summary </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 6: Advanced – PDDI CDS Service Summary </strong></figcaption>
   <img src="assets/images/advanced-pddi-cds-service.png" class="figure-img img-responsive img-rounded center-block" alt="Advanced_Summary.svg" />
 </figure>
 
@@ -632,7 +857,7 @@ The parse and pre-process event for a `order-select` request in the Advanced Imp
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 6: Advanced – Parse and Pre-process for Order Select/Order Sign Service </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 7: Advanced – Parse and Pre-process for Order Select/Order Sign Service </strong></figcaption>
   <img src="assets/images/advanced-parse-pre-process.png" class="figure-img img-responsive img-rounded center-block" alt="Parse_pre-process_prescribe.svg" />
 </figure>
 
@@ -656,7 +881,8 @@ snipped for brevity
 
 **Card Display Example**
 
-* Advanced – Warfarin + NSAID Cards (Without `filter-out-repeated-alerts`)
+* Advanced – Warfarin + NSAIDs Cards (Without `filter-out-repeated-alerts`)
+
 ~~~
 {
   "cards": [
@@ -780,7 +1006,250 @@ snipped for brevity
 }
 ~~~
 
-* Advanced – Warfarin + NSAID Cards (With `filter-out-repeated-alerts`)
+* Advanced – Warfarin + NSAIDs Cards (With `filter-out-repeated-alerts`)
+
+~~~
+{
+  "cards": [
+    {
+      "summary": "An alert was filtered because this request is configured to filter alerts if they were presented previously in response to a prior CDS Hook request.",
+      "indicator": "info",
+      "detail": "Since filter-out-repeated-alerts was set to true in this CDS Hook request, the service is filtering out cards that were triggered by the same knowledge artifact when the physician reference display, encounter id, and patient id match between the order-select and order-sign requests.",
+      "source": {}
+    }
+  ]
+}
+~~~
+
+* Advanced - Digoxin + Cyclosporine Cards (Without `filter-out-repeated-alerts`)
+
+~~~
+{
+  "cards": [
+    {
+      "summary": "Potential Drug-Drug Interaction between digoxin (Digoxin 0.2 MG Oral Capsule) and cyclosporine (Cyclosporine 100 MG)",
+      "indicator": "warning",
+      "detail": "Increased risk of digoxin toxicity. Assess risk and take action if necessary. \nDigoxin toxicity is potentially serious. The clinical consequences may include anorexia, nausea, vomiting, visual changes, and cardiac arrhythmias. \nThe mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cyclosporine. P-glycoprotein is a major transporter for digoxin efflux. \nunknown. \nunknown.",
+      "source": {
+        "label": "Potential Drug-Drug Interaction Clinical Decision Support",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+      },
+      "suggestions": [
+        {
+          "label": "Consultation",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Request communication with digoxin prescriber",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "70ef559c-a02d-463d-8505-9beb9c2629c3",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "11429006",
+                      "display": "Consultation"
+                    }
+                  ],
+                  "text": "Consultation"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Cancel digoxin",
+          "actions": [
+            {
+              "type": "delete",
+              "description": "Discontinue digoxin order"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": "Patient does not have digoxin level on record within the last 30 days. ",
+      "indicator": "warning",
+      "detail": "Initiating cyclosporine is expected to increase digoxin levels. For patients without a reliable plasma digoxin concentration in normal range, use only if benefits outweight risks. Extreme caution and close monitoring is necessary.",
+      "source": {
+        "label": "Potential Drug-Drug Interaction Clinical Decision Support",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+      },
+      "suggestions": [
+        {
+          "label": "Digoxin Level",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order digoxin trough within 24 hours from the initiation of cyclosporine",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "79d64211-25f6-4e8c-babe-856816127d1b",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "269872007",
+                      "display": "Serum digoxin measurement"
+                    }
+                  ],
+                  "text": "Serum digoxin measurement"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "New Digoxin",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Preemptively reduce digoxin dose with new order ",
+              "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "3c428362-5646-4131-9f96-937a7df5dbf4",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "315819",
+                      "display": "Digoxin 0.125 MG"
+                    }
+                  ],
+                  "text": "Digoxin 0.125 MG"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "digoxin-cyclosporine PDDI knowledge artifact",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+        },
+        {
+          "label": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian1988"
+        },
+        {
+          "label": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian#1987"
+        }
+      ]
+    },
+    {
+      "summary": "Within 100 days, the patient has had electrolyte and serum creatinine levels checked, and they are not on a potassium sparing or loop diuretic.",
+      "indicator": "info",
+      "detail": "(Potassium: 3.6mEq/L and 2020-04-28)\n (Magnesium: 0.8mmol/L and 2020-04-28)\n (Calcium: 8.6mg/dL and 2020-04-28)\n",
+      "source": {
+        "label": "Potential Drug-Drug Interaction Clinical Decision Support",
+        "url": "http://hl7.org/fhir/ig/PDDI-CDS"
+      },
+      "suggestions": [
+        {
+          "label": "Serum Creatinine",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for serum creatinine",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "85d53af2-22ec-4441-8ecf-f71879779f2a",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": " 313822004",
+                      "display": "Corrected serum creatinine"
+                    }
+                  ],
+                  "text": "Serum Creatinine"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Electrolyte Panel",
+          "actions": [
+            {
+              "type": "create",
+              "description": "Order for electrolyte panel",
+              "resource": {
+                "resourceType": "ProcedureRequest",
+                "id": "8c6514e3-1d47-47b6-87b3-fc53ce8f6eb2",
+                "status": "draft",
+                "intent": "order",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "271236005",
+                      "display": "Serum potassium level"
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "312475002",
+                      "display": "Plasma magnesium level"
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "390963002",
+                      "display": "Plasma calcium level"
+                    }
+                  ],
+                  "text": "Electrolyte Panel"
+                },
+                "subject": {
+                  "reference": "f001"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "digoxin-cyclosporine PDDI knowledge artifact",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+        },
+        {
+          "label": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#lip1993"
+        },
+        {
+          "label": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
+          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#nda20405"
+        }
+      ]
+    }
+  ]
+}
+~~~
+
+* Advanced – Digoxin + Cyclosporine Cards (With `filter-out-repeated-alerts`)
 
 ~~~
 {
@@ -796,14 +1265,13 @@ snipped for brevity
 ~~~
 
 
-
 # <span style="color:silver"> 3.4.0 </span> Basic Implementation for the Warfarin + NSAIDs Knowledge Artifact
 
-Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 8 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 9 builds on Figure 8 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2: Basic – Warfarin + NSAID Semi-Structured Knowledge </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 8: Basic – Warfarin + NSAIDs Semi-Structured Knowledge </strong></figcaption>
   <a href = "assets/images/Basic_Warfarin_NSAID.svg" target ="_blank" > <img src= "assets/images/Basic_Warfarin_NSAID.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Warfarin_NSAID.svg" /></a>
 </figure>
 
@@ -829,7 +1297,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 
 * [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/) 
 
-##### Context
+##### Prefetch
 {:.no_toc}
 
 * Rolling 100-day look-back period for medication resources including:
@@ -852,7 +1320,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3: Basic – Warfarin + NSAID Response Card Example </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 9: Basic – Warfarin + NSAIDs Response Card Example </strong></figcaption>
   <a href = "assets/images/Basic_W_N_Cards.svg" target ="_blank" > <img src="assets/images/Basic_W_N_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_W_N_Cards.svg" /></a>
 </figure>
 
@@ -873,10 +1341,10 @@ The CDS Hooks service response supports providing actionable information to clin
 
 # <span style="color:silver"> 3.5.0 </span> Advanced Implementation - Warfarin + NSAIDs Knowledge Artifact
 
-The Advanced Implementation for the Warfarin + NSAID artifact is split into two separate hooks and services. Figures 4 and 5 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 6 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "critical" – red to "warning" – orange). 
+The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two separate hooks and services. Figures 10 and 11 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "critical" – red to "warning" – orange). 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 4: Warfarin + NSAID order-select logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 10: Warfarin + NSAIDs order-select logic </strong></figcaption>
   <a href = "assets/images/warfarin-nsaid-select.png" target ="_blank" > <img src="assets/images/warfarin-nsaid-select.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_select.svg" /></a>
 </figure>
 
@@ -884,7 +1352,7 @@ The Advanced Implementation for the Warfarin + NSAID artifact is split into two 
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 5: Warfarin + NSAID order-sign logic </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 11: Warfarin + NSAIDs order-sign logic </strong></figcaption>
   <a href = "assets/images/warfarin-nsaid-sign.png" target ="_blank" > <img src="assets/images/warfarin-nsaid-sign.png" class="figure-img img-responsive img-rounded center-block" alt="Warfarin_NSAID_prescribe.svg" /></a>
 </figure>
 
@@ -945,12 +1413,164 @@ Field | Optionality | Prefetch Token | Type | Description
 
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 6: Warfarin + NSAID Cards </strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 12: Warfarin + NSAIDs Cards </strong></figcaption>
   <a href = "assets/images/Advanced_W_N_Cards.svg" target ="_blank" > <img src="assets/images/Advanced_W_N_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Advanced_W_N_Cards.svg" /></a>
 </figure>
 
+# <span style="color:silver"> 3.6.0 </span> Basic Implementation for the Digoxin + Cyclosporine Knowledge Artifact
 
-# <span style="color:silver"> 3.6.0 </span> CDS Message Filtering
+Figure 13 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 14 builds on Figure 13 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 13: Basic – Digoxin + Cyclosporine Semi-Structured Knowledge </strong></figcaption>
+  <a href = "assets/images/Basic_Digoxin_Cyclosporine.svg" target ="_blank" > <img src= "assets/images/Basic_Digoxin_Cyclosporine.svg" class="figure-img img-responsive img-rounded center-block" alt="Basic_Digoxin_Cyclosporine.svg" /></a>
+</figure>
+
+### <span style="color:silver"> 3.6.1 </span> Decision Points Summary
+{:.no_toc}
+
+The Digoxin + Cyclosporine exemplar artifact has two main decision blocks:
+
+1. whether the patient is taking digoxin and/or cyclosporine at the time of the current order for digoxin or cyclosporine, and
+
+2. whether the patient has risk factors that may potentiate the risk of digitalis toxicity. 
+
+
+### <span style="color:silver"> 3.6.2 </span> CDS Hooks Request
+{:.no_toc}
+
+The `order-sign` request includes `context` and `prefetch` elements with FHIR resource attributes or entire resources. The contents of these elements for the Digoxing + Cyclosporine CDS artifact are shown below.
+
+##### Context
+{:.no_toc}
+
+* [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/) 
+
+##### Prefetch
+{:.no_toc}
+
+* Rolling 100-day look-back period for medication resources including:
+    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
+    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
+    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
+    
+* Rolling 100-day look-back period for digoxin concentration
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+
+* Rolling 100-day look-back period for serum creatinine
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+    
+* Rolling 100-day look-back period for electrolytes including: potassium, magnesium, and calcium
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+        
+
+### <span style="color:silver"> 3.6.3 </span> CDS Hooks Cards
+{:.no_toc}
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 14: Basic – Digoxin + Cyclosporine Response Card Example </strong></figcaption>
+  <a href = "assets/images/Level_1_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_1_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_1_D_C_Cards.svg" /></a>
+</figure>
+
+### <span style="color:silver"> 3.6.4 </span> Card Actions
+{:.no_toc}
+
+The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting naproxen for acetaminophen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.  
+
+* `create` 
+    * Adding order for digoxin level measure – ProcedureRequest for serum digoxin trough within 24 hours 
+    * Add consultation for either prescriber of digoxin or cyclosporine depending on which the patient is currently taking – ProcedureRequest consultation
+    * Add order for electrolyte panel(s) (i.e., calcium, magnesium, potassium) and renal function (e.g., eGRF and serum creatinine) – ProcedureRequest for labs to be drawn
+* `update` 
+    * Reduce digoxin order currenlty on the patient's profile – MedicationRequest for low-dose digoxin
+* `delete`
+    * Remove current order for digoxin or cyclosporine 
+
+> *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities. 
+
+# <span style="color:silver"> 3.7.0 </span> Advanced Implementation - Digoxin + Cyclosporine Knowledge Artifact
+
+The Advanced Implementation for the Digoxin + Cyclosporine artifact is split into two separate hooks and services. Figures 15 and 16 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "critical" – red to "warning" – orange). 
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 15: Digoxin + Cyclosporine order-select logic </strong></figcaption>
+</figure>
+
+
+
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 16: Digoxin + Cyclosporine order-sign logic </strong></figcaption>
+  <a href = "assets/images/digoxin-cylcosporine-sign.png" target ="_blank" > <img src="assets/images/digoxin-cylcosporine-sign.png" class="figure-img img-responsive img-rounded center-block" alt="digoxin-cylcosporine-sign.png" /></a>
+</figure>
+
+
+### <span style="color:silver"> 3.7.1 </span> CDS Hooks request
+{:.no_toc}
+
+
+##### Context
+{:.no_toc}
+
+##### order-sign 1.0.
+{:.no_toc}
+
+Field | Optionality | Prefetch Token | Type | Description
+----- | -------- | :----: | :----: | ----
+`userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
+`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
+`encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
+`selections`  | REQUIRED | No | *array* | The FHIR id of the newly selected order(s). The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
+`draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+
+
+##### order-sign 1.1 (modification of a current CDS Hook)
+ {:.no_toc}
+ The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
+
+
+ Field       | Optionality        |  Prefetch Token     |Type  | Description 
+ :------------- |:-------------:|:-------: |:-----:| :-----------------
+ `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
+ `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
+ `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
+ `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
+
+
+##### order-select prefetch
+{:.no_toc}
+
+* Rolling 100-day look-back period for medication resources including:
+    * [MedicationRequest](https://www.hl7.org/fhir/medicationrequest.html)
+    * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
+    * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+    * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
+
+##### order-sign prefetch
+{:.no_toc}
+
+* Rolling 100-day look-back period for digoxin concentration
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+
+* Rolling 100-day look-back period for serum creatinine
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+    
+* Rolling 100-day look-back period for electrolytes including: potassium, magnesium, and calcium
+    * [Observation](https://www.hl7.org/fhir/observation.html)
+
+
+### <span style="color:silver"> 3.7.2 </span> CDS Hooks Cards
+{:.no_toc}
+
+
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 17: Digoxin + Cyclosporine Cards </strong></figcaption>
+  <a href = "assets/images/Level_2_D_C_Cards.svg" target ="_blank" > <img src="assets/images/Level_2_D_C_Cards.svg" class="figure-img img-responsive img-rounded center-block" alt="Level_2_D_C_Cards.svg" /></a>
+</figure>
+
+# <span style="color:silver"> 3.8.0 </span> CDS Message Filtering
 
 The following tables have been created to better conceptualize the various scenarios where message filtering may occur 
 for the clinician during `order-sign`. The assumptions used when creating these tables are that `cache-for-order-sign-filtering` 
@@ -965,7 +1585,7 @@ following items are cached in order to properly handle message filtering.
 * An ID created by concatenating the system and code from the “medicationCodeableConcept” of the medication resource (used for retrieving a medication resource during `order-sign`)
 * Base 64 encoded summary, detail, and indicator from the CDS cards returned
 
-### <span style="color:silver"> 3.6.1 </span> Scenario - Order-select with 1 medication that triggers a branch
+### <span style="color:silver"> 3.8.1 </span> Scenario - Order-select with 1 medication that triggers a branch
 {:.no_toc}
 
 Clinician A calls order-select with 1 medication in `draftOrders` that triggers a branch of the rules then calls order-sign.
@@ -987,13 +1607,13 @@ Clinician A calls order-select with 1 medication in `draftOrders` that triggers 
 | Critical                          | Delete                   | TRUE                               | FALSE                  | If action taken does not trigger a new order-select call, alert will not be filtered on order-sign |
 
 
-### <span style="color:silver"> 3.6.2 </span> Scenario - Order-select with more than 1 medication that triggers a branch
+### <span style="color:silver"> 3.8.2 </span> Scenario - Order-select with more than 1 medication that triggers a branch
 {:.no_toc}
 
 Each medication request specified in `selections` will be cached for message filtering on `order-sign`, this scenario will operate just as above.
 
 
-### <span style="color:silver"> 3.6.3 </span> Scenario - Order-select is called by 2 different clinicians before order-sign
+### <span style="color:silver"> 3.8.3 </span> Scenario - Order-select is called by 2 different clinicians before order-sign
 {:.no_toc}
 
 Clinician A goes through an `order-select` process, for some reason is not able to start the `order-sign` process immediately. Clinician B then goes through the `order-select` and `order-sign` process for the same patient.
@@ -1010,7 +1630,7 @@ Clinician A goes through an `order-select` process, for some reason is not able 
 | Critical                        | Info                             | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 | Critical                        | Warning                          | FALSE                  | Because the clinician IDs are different the alerts will not be filtered on order-sign |
 
-### <span style="color:silver"> 3.6.4 </span> Scenario - Order-select is called more than once before order-sign by same the same clinician
+### <span style="color:silver"> 3.8.4 </span> Scenario - Order-select is called more than once before order-sign by same the same clinician
 {:.no_toc}
 
 Clinician A starts the `order-select` process, gets interrupted and prevented from beginning the `order-sign` processes (potential network issues or other problems arise). Clinician A then goes through the `order-select` process again before completing `order-sign`.
@@ -1022,7 +1642,7 @@ Clinician A starts the `order-select` process, gets interrupted and prevented fr
 | Critical                               | TRUE                   | Message filtering is never performed on the messages returned from an order-select call. All messages will be filtered normally on the order-sign call |
 
 
-### <span style="color:silver"> 3.6.5 </span> Scenario - Order-select is called multiple times with updates to the draft orders
+### <span style="color:silver"> 3.8.5 </span> Scenario - Order-select is called multiple times with updates to the draft orders
 {:.no_toc}
 Clinician A starts the `order-select` process with 1 medication in the draft orders that triggers a rule set. Clinician A
  then add a second medication to draft orders which triggers a different rule set. Clinician A then begins the `order-sign` 
@@ -1040,7 +1660,7 @@ Clinician A starts the `order-select` process with 1 medication in the draft ord
 | Critical                                          | Warning                                           | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
 | Critical                                          | Critical                                          | TRUE                    | Message filtering will be performed. No change in the ordering clinician, patient, encounter, and knowledge artifact URL. The CDS card is cached as well to ensure repeated messages are not shown even if the rule set that is triggered by each medication is different. |
 
-### <span style="color:silver"> 3.6.6 </span> Scenario - Order-select is called with a long gap of time before order-sign
+### <span style="color:silver"> 3.8.6 </span> Scenario - Order-select is called with a long gap of time before order-sign
 {:.no_toc}
 
 Clinician A completes the `order-select` process, something prevents them from starting `order-sign` for a long period of time.
@@ -1057,7 +1677,7 @@ Clinician A completes the `order-select` process, something prevents them from s
 | Critical        | TRUE         | FALSE                  | If a time-out is set and the time between order-select and order-sign exceeds that period, there will be no message filtering |
 
 
-### <span style="color:silver"> 3.6.7 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
+### <span style="color:silver"> 3.8.7 </span> Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
 {:.no_toc}
 
 Since the patient ID is used to create a unique cached medication statement, if a clinician completes the `order-select` with patient 
@@ -1065,7 +1685,7 @@ A but does an `order-select`/`order-sign` with patient B before completing `orde
  will not be affected. This may be another situation where a time-out could be beneficial for the clinician so that messages will not be filtered.
 Another solution would be to track if a clinician completes `order-select` for a new patient before completing `order-sign` for their initial patient.
 
-### <span style="color:silver"> 3.6.8 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
+### <span style="color:silver"> 3.8.8 </span> Scenario - Order-select and order-sign are completed by 2 different clinicians
 {:.no_toc}
 
 Clinician A completes the `order-select` process and clinician B completes `order-sign`.
@@ -1077,7 +1697,7 @@ Clinician A completes the `order-select` process and clinician B completes `orde
 | Critical                                             | FALSE                  | Since the clinicians are different there will be no message filtering performed |
 
 
-### <span style="color:silver"> 3.6.9 </span> Scenario - Order-select with no medications that trigger rule
+### <span style="color:silver"> 3.8.9 </span> Scenario - Order-select with no medications that trigger rule
 {:.no_toc}
 
 No cards to be filtered are returned.

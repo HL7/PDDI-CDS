@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "warfarin-nsaids-cds-select",
+  "id": "warfarin-nsaids-cds-sign",
   "version": "1.0",
   "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
   "title": "Warfarin NSAIDs Recommendation",
@@ -14,7 +14,7 @@
     ]
   },
   "status": "draft",
-  "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/warfarin-nsaids-cds-select",
+  "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/warfarin-nsaids-cds-sign",
   "topic": [
     {
       "text": "Warfarin NSAIDs Prescribing"
@@ -22,7 +22,7 @@
   ],
   "library": [
     {
-      "reference": "Library/warfarin-nsaids-cds-select"
+      "reference": "Library/warfarin-nsaids-cds-sign"
     }
   ],
   "extension": [
@@ -31,7 +31,7 @@
       "extension": [
         {
           "url": "code",
-          "valueString": "cache-for-order-sign-filtering"
+          "valueString": "filter-out-repeated-alerts"
         },
         {
           "url": "type",
@@ -39,11 +39,11 @@
         },
         {
           "url": "name",
-          "valueString": "Cache Info for Order Sign Filtering"
+          "valueString": "Filter out repeated alerts"
         },
         {
           "url": "description",
-          "valueString": "Cache information about this CDS call so that additional filtering of card responses can be done when the service is called using an order-sign CDS Hook request. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician reference display, encounter id, and patient id match between the order-select and order-sign requests. Filtering will happen if both this configuration option is set to 'true' and  order-sign requests set filter-out-repeated-alerts to 'true'."
+          "valueString": "Only works if both this configuration option is set to 'true' and  cache-for-order-sign-filtering was set to 'true' in an order-select request. Uses information about this CDS call to filter aparently repititious card. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician reference display, encounter id, and patient id match between the order-select and order-sign requests."
         }
       ]
     },
@@ -102,7 +102,7 @@
       "triggerDefinition": [
         {
           "type": "named-event",
-          "eventName": "order-select"
+          "eventName": "order-sign"
         }
       ],
       "condition": [
@@ -116,13 +116,6 @@
         {
           "title": "Potential Drug-Drug Interaction between warfarin (product) and NSAID (product)",
           "description": "Topical diclofenac has relatively low systemic absorption; in one study a topical gel (16 g/day) produced about 6% of the absorption seen with systemic administration of 150 mg/day. A higher than recommended dose of topical gel (48 g/day) produced 20% of a systemic dose of diclofenac.",
-          "documentation": [
-            {
-              "type": "derived-from",
-              "display": "Warfarin-NSAIDs clinical decision support algorithm",
-              "url": "https://ddi-cds.org/warfarin-nsaids/"
-            }
-          ],
           "condition": [
             {
               "kind": "applicability",
@@ -149,13 +142,6 @@
         {
           "title": "Potential Drug-Drug Interaction between warfarin (product) and NSAID (product)",
           "description": "Increased risk of bleeding. \nBleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. \nNon-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin. The antiplatelet effect of NSAIDs lasts only as long as the NSAID is present in the circulation, unlike aspirin’s antiplatelet effect, which lasts for up to 2 weeks after aspirin is discontinued. NSAIDs also can cause peptic ulcers and most of the evidence for increased bleeding risk with NSAIDs plus warfarin is due to upper gastrointestinal bleeding (UGIB). \nunknown. \n unknown.",
-          "documentation": [
-            {
-              "type": "derived-from",
-              "display": "Warfarin-NSAIDs clinical decision support algorithm",
-              "url": "https://ddi-cds.org/warfarin-nsaids/"
-            }
-          ],
           "condition": [
             {
               "kind": "applicability",
@@ -180,14 +166,7 @@
                 "system": "http://hl7.org/fhir/ValueSet/action-type",
                 "code": "remove"
               },
-              "description": "If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.",
-              "documentation": [
-                {
-                  "type": "derived-from",
-                  "display": "Warfarin-NSAIDs clinical decision support algorithm",
-                  "url": "https://ddi-cds.org/warfarin-nsaids/"
-                }
-              ]
+              "description": "If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID."
             },
             {
               "label": "Substitute NSAID (product) with APAP (product).",
@@ -196,13 +175,6 @@
                 "code": "create"
               },
               "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
-              "documentation": [
-                {
-                  "type": "derived-from",
-                  "display": "Warfarin-NSAIDs clinical decision support algorithm",
-                  "url": "https://ddi-cds.org/warfarin-nsaids/"
-                }
-              ],
               "definition": {
                 "reference": "ActivityDefinition/ad101"
               },
@@ -220,13 +192,6 @@
                 "code": "create"
               },
               "description": "Order for APAP <2g per day (APAP 500 mg every 4-6 hours prn).",
-              "documentation": [
-                {
-                  "type": "derived-from",
-                  "display": "Warfarin-NSAIDs clinical decision support algorithm",
-                  "url": "https://ddi-cds.org/warfarin-nsaids/"
-                }
-              ],
               "definition": {
                 "reference": "ActivityDefinition/ad102"
               },
@@ -242,13 +207,6 @@
         {
           "title": "Patient is (not) taking a proton pump inhibitor (product) or misoprostol (product).",
           "description": "Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.",
-          "documentation": [
-            {
-              "type": "derived-from",
-              "display": "Warfarin-NSAIDs clinical decision support algorithm",
-              "url": "https://ddi-cds.org/warfarin-nsaids/"
-            }
-          ],
           "condition": [
             {
               "kind": "applicability",
@@ -285,13 +243,6 @@
         {
           "title": "Patient is (not) 65 y/o and/or does (not) have a history of upper gastrointestinal bleed",
           "description": "Patients with a history of UGIB or peptic ulcer may have an increased risk of UGIB from this interaction. The extent to which older age is an independent risk factor for UGIB due to these interactions is not firmly established, but UGIB in general is known to increase with age",
-          "documentation": [
-            {
-              "type": "derived-from",
-              "display": "Warfarin-NSAIDs clinical decision support algorithm",
-              "url": "https://ddi-cds.org/warfarin-nsaids/"
-            }
-          ],
           "condition": [
             {
               "kind": "applicability",
@@ -328,13 +279,6 @@
         {
           "title": "Patient is (not) concomitantly taking systemic corticosteroids, aldosterone antagonist, or high dose or multiple NSAIDs",
           "description": "Both corticosteroids and aldosterone antagonists have been shown to subsetantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology 2014; 147:784-92.)",
-          "documentation": [
-            {
-              "type": "derived-from",
-              "display": "Warfarin-NSAIDs clinical decision support algorithm",
-              "url": "https://ddi-cds.org/warfarin-nsaids/"
-            }
-          ],
           "condition": [
             {
               "kind": "applicability",

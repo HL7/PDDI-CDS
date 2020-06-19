@@ -1,9 +1,9 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "digoxin-cyclosporine-cds-select",
+  "id": "digoxin-cyclosporine-cds-sign",
   "version": "1.0",
   "name": "PlanDefinition - Digoxin Cyclosporine Recommendation Workflow",
-  "title": "Digoxin Cyclosporine Order Selection Recommendation",
+  "title": "Digoxin Cyclosporine Recommendation",
   "type": {
     "coding": [
       {
@@ -14,15 +14,15 @@
     ]
   },
   "status": "draft",
-  "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/digoxin-cyclosporine-cds-select",
+  "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/digoxin-cyclosporine-cds-sign",
   "topic": [
     {
-      "text": "Digoxin Cyclosporine Order Selection"
+      "text": "Digoxin Cyclosporine Prescribing"
     }
   ],
   "library": [
     {
-      "reference": "Library/digoxin-cyclosporine-cds-select"
+      "reference": "Library/digoxin-cyclosporine-cds-sign"
     }
   ],
   "extension": [
@@ -31,7 +31,7 @@
       "extension": [
         {
           "url": "code",
-          "valueString": "cache-for-order-sign-filtering"
+          "valueString": "filter-out-repeated-alerts"
         },
         {
           "url": "type",
@@ -39,11 +39,11 @@
         },
         {
           "url": "name",
-          "valueString": "Cache Info for Order Sign Filtering"
+          "valueString": "Filter out repeated alerts"
         },
         {
           "url": "description",
-          "valueString": "Cache information about this CDS call so that additional filtering of card responses can be done when the service is called using an order-sign CDS Hook request. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician reference display, encounter id, and patient id match between the order-select and order-sign requests. Filtering will happen if both this configuration option is set to 'true' and  order-sign requests set filter-out-repeated-alerts to 'true'."
+          "valueString": "Only works if both this configuration option is set to 'true' and  cache-for-order-sign-filtering was set to 'true' in an order-select request. Uses information about this CDS call to filter aparently repititious card. Currently, this only supports filtering out cards that were triggered by the same knowledge artifact when the physician reference display, encounter id, and patient id match between the order-select and order-sign requests."
         }
       ]
     },
@@ -102,7 +102,7 @@
       "triggerDefinition": [
         {
           "type": "named-event",
-          "eventName": "order-select"
+          "eventName": "order-sign"
         }
       ],
       "condition": [
@@ -223,19 +223,14 @@
           "description": "Initiating cyclosporine is expected to increase digoxin levels. For patients without a reliable plasma digoxin concentration in normal range, use only if benefits outweight risks. Extreme caution and close monitoring is necessary.",
           "documentation": [
             {
-              "type": "derived-from",
-              "display": "digoxin-cyclosporine PDDI knowledge artifact",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
-            },
-            {
-              "type": "documentation",
+              "type": "citation",
               "display": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian1988"
+              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#dorian1998"
             },
             {
-              "type": "documentation",
+              "type": "citation",
               "display": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian#1987"
+              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#dorian1987"
             }
           ],
           "condition": [
@@ -297,19 +292,14 @@
           "description": "(Serum creatinine: level and date)\n Hypokalemia, hypomagnesemia, and hypercalcemia may potentiate digoxin toxicity. 50-70% of digoxin is excreted unchanged in the urine. Changing renal function may increase serum concentrations and risk of toxicity.",
           "documentation": [
             {
-              "type": "derived-from",
-              "display": "digoxin-cyclosporine PDDI knowledge artifact",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
-            },
-            {
-              "type": "documentation",
+              "type": "citation",
               "display": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#lip1993"
+              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#lip1993"
             },
             {
-              "type": "documentation",
+              "type": "citation",
               "display": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#nda20405"
+              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#nda20405"
             }
           ],
           "dynamicValue": [

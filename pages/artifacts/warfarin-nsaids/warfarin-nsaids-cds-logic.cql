@@ -2,7 +2,7 @@ library Warfarin_NSAIDs_CDS version '1.0'
 
 using FHIR version '3.0.0'
 
-include PDDICDSCommon version '1.0' called Common
+// include PDDICDSCommon version '1.0' called Common
 
 codesystem "RXNORM": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 
@@ -18,6 +18,49 @@ parameter ContextPrescriptions List<MedicationRequest>
 
 context Patient
 
+// NOTE: These functions have been moved here from the Commmon library to boost performance
+define function GetConditionName(condition Condition):
+  if condition is not null
+    then condition.code.coding[0].display.value
+  else 'NA'
+
+define function GetAssertedDate(condition Condition):
+  if condition is not null
+    then ToString(condition.assertedDate.value)
+  else 'NA'
+
+define function GetLevelAndDate(observation Observation):
+  if observation is not null
+    then ToString(ToQuantity(observation.value as Quantity))
+      + ' and '
+      + ToString(observation.effective.value)
+  else 'NA'
+
+define function GetMedicationNames(medications List<MedicationRequest>):
+  medications M
+    return ToCode(M.medication.coding[0]).display
+
+define function GetDrugNames(codings List<FHIR.Coding>):
+  Combine(
+    flatten (
+      codings coding
+          return ToCode(coding).display
+    ), ', ')
+
+define function ToCode(coding FHIR.Coding):
+  System.Code {
+    code: coding.code.value,
+    system: coding.system.value,
+    version: coding.version.value,
+    display: coding.display.value
+  }
+
+define function ToQuantity(quantity FHIR.Quantity):
+  System.Quantity { value: quantity.value.value, unit: quantity.unit.value }
+
+define function ToString(value FHIR.Coding): value.display.value
+define function ToString(value Code): value.display
+
 /*
 **
 ** Warfarin NSAID CDS Recommendation
@@ -31,23 +74,23 @@ define "Inclusion Criteria":
     "Is context medication systemic NSAID"
       and "Is warfarin in prefetch"
   )
-  
+
 
 define "Is context medication topical diclofenac":
   exists ("Topical Diclofenac Prescription")
-  
+
 define "Is not context medication topical diclofenac":
   not exists ("Topical Diclofenac Prescription")
 
 define "Topical Diclofenac Prescription":
   ContextPrescriptions P
-    where Common.ToCode(P.medication.coding[0]) in "Topical Diclofenac"
+    where ToCode(P.medication.coding[0]) in "Topical Diclofenac"
     return P.medication.coding[0]
 
 
 define "Is warfarin in prefetch":
   exists ("Warfarin Rx")
-    
+
 define "Warfarin Rx":
   flatten (
     (
@@ -77,7 +120,7 @@ define "Is context medication systemic NSAID":
 
 define "NSAID Prescription":
   ContextPrescriptions P
-    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+    where ToCode(P.medication.coding[0]) in "NSAIDs"
     return P.medication.coding[0]
 
 
@@ -85,10 +128,10 @@ define "NSAID Prescription":
 
 // Card 1: Base
 define "Get Base Summary":
-  'Potential Drug-Drug Interaction between warfarin (' 
-    + Common.GetDrugNames("Warfarin Rx") 
-    + ') and NSAID (' 
-    + Common.GetDrugNames("NSAID Prescription")
+  'Potential Drug-Drug Interaction between warfarin ('
+    + GetDrugNames("Warfarin Rx")
+    + ') and NSAID ('
+    + GetDrugNames("NSAID Prescription")
     + ').'
 
 define "Get Base Indicator":
@@ -101,17 +144,17 @@ define "Acetaminophen 325 MG": Code '313782' from "RXNORM" display 'Acetaminophe
 define "Acetaminophen 500 MG": Code '198440' from "RXNORM" display 'Acetaminophen 500 MG Oral Tablet'
 
 define "Get Base Label 1":
-  'Substitute NSAID (' 
-  + Common.GetDrugNames("NSAID Prescription")
-  + ') with APAP (' 
-  + Common.ToString("Acetaminophen 325 MG")
+  'Substitute NSAID ('
+  + GetDrugNames("NSAID Prescription")
+  + ') with APAP ('
+  + ToString("Acetaminophen 325 MG")
   + ').'
 
 define "Get Base Label 2":
-  'Substitute NSAID (' 
-  + Common.GetDrugNames("NSAID Prescription")
-  + ') with APAP (' 
-  + Common.ToString("Acetaminophen 500 MG")
+  'Substitute NSAID ('
+  + GetDrugNames("NSAID Prescription")
+  + ') with APAP ('
+  + ToString("Acetaminophen 500 MG")
   + ').'
 
 
@@ -120,12 +163,12 @@ define "Get Base Label 2":
 define "Get Card 2 Indicator":
   if "Taking PPI or misoprostol"
     then 'info'
-  else 'hard-stop'
+  else 'critical'
 
 define "Get Card 2 Summary":
   if "Taking PPI or misoprostol"
-    then 'Patient is taking a proton pump inhibitor (' 
-      + Common.GetDrugNames("PPIs and Misoprostols Rx")
+    then 'Patient is taking a proton pump inhibitor ('
+      + GetDrugNames("PPIs and Misoprostols Rx")
       + ').'
   else 'Patient is not taking a proton pump inhibitor or misoprostol.'
 
@@ -175,10 +218,10 @@ define "Get Card 3 Indicator":
 
 define "Get Card 3 Summary":
   if "Age > 65 years or Hx UGIB"
-    then 'Patient is 65 y/o or does have a history of upper gastrointestinal bleed ("' 
-      + Common.GetConditionName("GI Bleeds Condition") 
-      + '" and ' 
-      + Common.GetAssertedDate("GI Bleeds Condition")
+    then 'Patient is 65 y/o or does have a history of upper gastrointestinal bleed ("'
+      + GetConditionName("GI Bleeds Condition")
+      + '" and '
+      + GetAssertedDate("GI Bleeds Condition")
       + ').'
   else 'Patient is not 65 y/o and does not have a history of upper gastrointestinal bleed.'
 
@@ -213,12 +256,12 @@ define "Get Card 4 Indicator":
 
 define "Get Card 4 Summary":
   if "Taking CS, MCRA, or NSAID"
-    then 'Patient is concomitantly taking systemic corticosteroids (' 
-      + Common.GetDrugNames("Systemic Corticosteroids Rx")
-      + '), aldosterone antagonist (' 
-      + Common.GetDrugNames("Aldosterone Antagonists Rx")
-      + '), or high dose or multiple NSAIDs (' 
-      + Common.GetDrugNames("NSAID Rx")
+    then 'Patient is concomitantly taking systemic corticosteroids ('
+      + GetDrugNames("Systemic Corticosteroids Rx")
+      + '), aldosterone antagonist ('
+      + GetDrugNames("Aldosterone Antagonists Rx")
+      + '), or high dose or multiple NSAIDs ('
+      + GetDrugNames("NSAID Rx")
       + ').'
   else 'Patient is not concomitantly taking systemic corticosteroids, aldosterone antagonist, or high dose or multiple NSAIDs.'
 

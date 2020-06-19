@@ -4,7 +4,7 @@
 ## <span style="color:silver"> 4.3.0 </span> Clinical Reasoning
 {:.no_toc}
 
-This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition`, `CarePlan`, `RequestGroup`, `DetectedIssue`, and CQL libraries. 
+This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition`, `CarePlan`, `RequestGroup`, and CQL libraries. 
 
 > *Note:* While resources and CQL libraries are specified for this implementation guide, these are not required for PDDI CDS functionality. The `PlanDefinition`, however, is RECOMMENDED to create sharable PDDI knowledge artifacts.
 
@@ -97,26 +97,7 @@ The `DynamicValue` enables customization of the statically defined resources. Si
 {:.no_toc}
 
 
-The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes the `CarePlan` and `RequestGroup` resources as requests, thereby expressing the intention for something to occur. The CDS service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card, and a single DetectedIssue resource for the identified PDDI. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The `CarePlan` references four `RequestGroup` resources under the the `activity` element. The `RequestGroup` `action` element provides the suggestions and actions in the response card. The `CarePlan` and `RequestGroup` resources are subsequently transformed into a CDS Hooks Card response and sent to the EHR along with the DetectedIssue resource. 
-
-### <span style="color:silver"> 4.3.3 </span> DetectedIssue 
-
-The `DetectedIssue` resource is needed to document clinician actions associated with identified PDDIs and increase the specificity of alerts; thus, it is created by all PDDI CDS services. Level 1 and Level 2 Implementations MUST have EHR functionality to receive, process, modify, and store a `DetectedIssue` resource created by a PDDI CDS service(s). Use of the `DetectedIssue` resource with PDDI CDS requires an extension for the `potentiating` element. The `potentiating` element is analogous but antagonistic to the `mitigating` element that currently exists. These elements refer to relevant actions that have occurred (e.g.,  initiating another medication, substituting a medication order, or discontinuing the current order). For example, substituting naproxen for acetaminophen when a Warfarin-NSAID interaction is detected would be documented as a mitigating action. Conversely, if the same patient was currently taking prednisone, it would be documented as a potentiating action.  
-
-**Example 3: DetectedIssue Elements**
-
-~~~
-  {
-  "resourceType" : "DetectedIssue",
-  "status" : "preliminary"
-  "implicated" : [{ Reference(Any) }], e.g., Interacting drugs
-  "mitigation" : [{  e.g., Step taken to address and patient risk mitigating factors
-    "action" : { CodeableConcept }, e.g., Discontinued interacting drug
-    }]
-  "potentiating" : [{  e.g., overriden suggested actions and patient risk potentiating factors
-    "action" : { CodeableConcept}, e.g., Overrode discontinuing interacting drug
-snipped for brevity
-~~~
+The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes the `CarePlan` and `RequestGroup` resources as requests, thereby expressing the intention for something to occur. The CDS service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimum information model elements and associated actions. The `CarePlan` references four `RequestGroup` resources under the the `activity` element. The `RequestGroup` `action` element provides the suggestions and actions in the response card. The `CarePlan` and `RequestGroup` resources are subsequently transformed into a CDS Hooks Card response and sent to the EHR. 
 
 
 ## <span style="color:silver"> 4.4.0 </span> CQL Library
@@ -380,11 +361,15 @@ The following artifacts represent the behavior for implementing PDDI CDS:
 | [FHIRHelpers v3.0.0 CQL](artifacts/FhirHelpers_v3.0.0.cql) | CQL Source |  |
 | [Common PDDI-CDS Library](artifacts/pddi-cds-common-library.json) | [Library](https://www.hl7.org/fhir/library.html) | CQL Library that provides common logic for the recommendations |
 | [Common PDDI-CDS CQL](artifacts/pddi-cds-common-logic.cql) | CQL Source | For reference, the complete CQL source for the common logic. |
-| [Warfarin NSAIDs PlanDefinition](artifacts/warfarin-nsaids/warfarin-nsaids-cds-plandefinition.json)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
-| [Warfarin NSAIDs Library](artifacts/warfarin-nsaids/warfarin-nsaids-cds-library.json) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Warfarin NSAIDs recommendation |
+| [Warfarin NSAIDs Select PlanDefinition](artifacts/warfarin-nsaids/warfarin-nsaids-cds-plandefinition.json)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
+| [Warfarin NSAIDs Sign PlanDefinition](artifacts/warfarin-nsaids/warfarin-nsaids-cds-plandefinition-sign.json)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
+| [Warfarin NSAIDs Select Library](artifacts/warfarin-nsaids/warfarin-nsaids-cds-library.json) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Warfarin NSAIDs recommendation |
+| [Warfarin NSAIDs Sign Library](artifacts/warfarin-nsaids/warfarin-nsaids-cds-library-sign.json) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Warfarin NSAIDs recommendation |
 | [Warfarin NSAIDs CQL](artifacts/warfarin-nsaids/warfarin-nsaids-cds-logic.cql) | CQL Source | For reference, the complete CQL source for Warfarin NSAIDs recommendation |
 | [Warfarin NSAIDs ActivityDefinition](artifacts/warfarin-nsaids/activitydefinition-bundle.json) | Example Activity Definition Bundle |  |
-| [Digoxin Cyclosporine PlanDefinition](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-plandefinition.json)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Digoxin Cyclosporine Recommendation |
-| [Digoxin Cyclosporine Library](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-library.json) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Digoxin Cyclosporine recommendation |
+| [Digoxin Cyclosporine Select PlanDefinition](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-plandefinition.json)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Digoxin Cyclosporine Recommendation |
+| [Digoxin Cyclosporine Sign PlanDefinition](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-plandefinition-sign.json)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Digoxin Cyclosporine Recommendation |
+| [Digoxin Cyclosporine Select Library](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-library.json) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Digoxin Cyclosporine recommendation |
+| [Digoxin Cyclosporine Sign Library](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-library-sign.json) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Digoxin Cyclosporine recommendation |
 | [Digoxin Cyclosporine CQL](artifacts/digoxin-cyclosporine/digoxin-cyclosporine-cds-logic.cql) | CQL Source | For reference, the complete CQL source for Digoxin Cyclosporine recommendation |
 | [Digoxin Cyclosporine ActivityDefinition](artifacts/digoxin-cyclosporine/activitydefinition-bundle.json) | Example Activity Definition Bundle |  |

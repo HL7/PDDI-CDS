@@ -1,9 +1,9 @@
 {
   "resourceType": "Library",
-  "id": "digoxin-cyclosporine-cds-select",
+  "id": "digoxin-cyclosporine-cds-sign",
   "version": "1.0",
   "status": "draft",
-  "url": "http://hl7.org/fhir/ig/PDDI-CDS/Library/digoxin-cyclosporine-cds-select",
+  "url": "http://hl7.org/fhir/ig/PDDI-CDS/Library/digoxin-cyclosporine-cds-sign",
   "type": {
     "coding": [
       {

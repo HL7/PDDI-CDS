@@ -7,6 +7,26 @@ To facilitate testing and verification, this guide includes test requests for a 
 
 All scenarios invoke the CDS service – so `prefetch` warfarin resources overlap a new NSAID order in each scenario below. 
 
+##### order-select without coordination
+* [order-select NSAID + Warfarin no coordination](requests/warfarin-nsaids-order-select-no-coordination.json)
+
+##### order-sign without coordination
+* [order-sign NSAID + Warfarin no coordination](requests/warfarin-nsaids-order-sign-no-coordination.json)
+
+##### order-select with coordination
+* [order-select NSAID + Warfarin with coordination](requests/warfarin-nsaids-order-select-coordination.json)
+
+##### order-sign with coordination
+* [order-sign NSAID + Warfarin with coordination](requests/warfarin-nsaids-order-sign-coordination.json)
+
+##### Multiple updates to the draft orders
+* [order-select NSAID + Warfarin](requests/multi-update-draft-orders-1.json)
+* [order-select Digoxin + Cyclosporine](requests/multi-update-draft-orders-2.json)
+* [order-sign NSAID + Warfarin](requests/multi-update-draft-orders-3.json)
+* [order-sign Digoxin + Cyclosporine](requests/multi-update-draft-orders-4.json)
+
+
+
 ##### Scenario 1: `context:` topical diclofenac – MedicationRequest; `prefetch:` warfarin – MedicationRequest 
 * [Request NSAID + Warfarin scenario 01](requests/request-warfarin-nsaid-scenario-01.json)
 
@@ -24,6 +44,19 @@ All scenarios invoke the CDS service – so `prefetch` warfarin resources overla
 
 
 ## <span style="color:silver"> 15.2.0 </span> Digoxin + Cyclosporine
+
+##### order-select without coordination
+* [order-select Digoxin + Cyclosporine no coordination](requests/digoxin-cyclosporine-order-select-no-coordination.json)
+
+##### order-sign without coordination
+* [order-sign Digoxin + Cyclosporine no coordination](requests/digoxin-cyclosporine-order-sign-no-coordination.json)
+
+##### order-select with coordination
+* [order-select Digoxin + Cyclosporine with coordination](requests/digoxin-cyclosporine-order-select-coordination.json)
+
+##### order-sign with coordination
+* [order-sign Digoxin + Cyclosporine with coordination](requests/digoxin-cyclosporine-order-sign-coordination.json)
+
 
 ##### Scenario 1: `context:` cyclosporine – MedicationRequest; `prefetch:` digoxin – MedicationDispense, digoxin level – Observation, furosemide – MedicationDispense
 * [Request Digoxin + Cyclosporine scenario 01](requests/request-digoxin-cyclosporine-scenario-01.json)

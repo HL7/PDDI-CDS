@@ -155,7 +155,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
     </table>
 </div>
 
-# <span style="color:silver"> 2.2.0 </span> Digoxin + Cyclosporine
+# <span style="color:silver"> 2.1.0 </span> Digoxin + Cyclosporine
 
 
 #### Digoxin + Cyclosporine Logic Table 
@@ -182,6 +182,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 
 
 #### Digoxin + Cyclosporine PDDI Minimum Information Model Elements
+{:.no_toc}
 
 <div>
     <table>

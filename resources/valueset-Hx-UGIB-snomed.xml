@@ -2,13 +2,13 @@
     <id value="valueset-Hx-UGIB-snomed"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-Hx-UGIB-snomed"/>
     <version value="1.0"/>
-    <name value="valueset-Hx-UGIB-snomed"/>
+    <name value="Valueset_Hx_UGIB_snomed"/>
     <title value="Upper gastrointestinal bleed Value Set"/>
     <status value="draft"/>
     <date value="2018-06-20"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing SNOMED-CT codes for upper gastrointestinal bleed."/>
     <jurisdiction>

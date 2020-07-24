@@ -3,13 +3,13 @@
     <id value="valueset-PPIS"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PPIS"/>
     <version value="US 1.1"/>
-    <name value="valueset-PPIS"/>
+    <name value="Valueset_PPIS"/>
     <title value="Proton Pump Inhibitor Drug Value Set"/>
     <status value="draft"/>
     <date value="2018-06-27"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the
     Established Pharmacologic Class (EPC) Proton Pump Inhibitor drug class (id: N0000175525).

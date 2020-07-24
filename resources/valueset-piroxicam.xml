@@ -3,13 +3,13 @@
     <id value="valueset-piroxicam"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-piroxicam"/>
     <version value="US 1.1"/>
-    <name value="valueset-piroxicam"/>
+    <name value="Valueset_piroxicam"/>
     <title value="Piroxicam Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for piroxicam."/>
     <jurisdiction>

@@ -3,13 +3,13 @@
     <id value="valueset-digoxin-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin-LOINC"/>
     <version value="Intl. 1.0"/>
-    <name value="valueset-digoxin-LOINC"/>
+    <name value="Valueset_digoxin_LOINC"/>
     <title value="LOINC Codes for Digoxin Concentration"/>
     <status value="draft"/>
     <date value="2018-08-03"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing digoxin LOINC identifiers from the HEDIS 2018 Value Set – Digoxin Level."/>
     <jurisdiction>

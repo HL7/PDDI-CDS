@@ -3,13 +3,13 @@
     <id value="valueset-renal-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-renal-LOINC"/>
     <version value="Intl. 1.0"/>
-    <name value="valueset-renal-LOINC"/>
+    <name value="Valueset_renal_LOINC"/>
     <title value="LOINC Codes for Renal Function"/>
     <status value="draft"/>
     <date value="2018-08-03"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing creatinine-based renal function LOINC identifiers from the Renal Function 2000 panel."/>
     <jurisdiction>

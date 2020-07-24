@@ -3,13 +3,13 @@
     <id value="valueset-furosemide"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-furosemide"/>
     <version value="US 1.0"/>
-    <name value="valueset-furosemide"/>
+    <name value="Valueset_furosemide"/>
     <title value="Furosemide Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-08-06"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for furosemide."/>
     <jurisdiction>

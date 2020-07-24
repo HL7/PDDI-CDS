@@ -3,13 +3,13 @@
     <id value="valueset-meprednisone"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-meprednisone"/>
     <version value="US 1.1"/>
-    <name value="valueset-meprednisone"/>
+    <name value="Valueset_meprednisone"/>
     <title value="Meprednisone Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for meprednisone."/>
     <jurisdiction>

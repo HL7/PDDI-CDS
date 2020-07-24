@@ -15,7 +15,7 @@
     <issued value="2018-07-04T14:34:00+01:00"/>
     <method>
         <coding>
-            <system value="http://snomed.info/id"/>
+            <system value="http://snomed.info/sct"/>
             <code value="702668005"/>
             <display value="MDRD"/>
         </coding>

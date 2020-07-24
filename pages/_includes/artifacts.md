@@ -279,7 +279,7 @@ In Library resource, the `relatedArtifact` element defines the dependent relatio
 }
 ~~~
 
-When the Clinical Reasoning module processes the data, the library resource is loaded from local FHIR server and then the logic content in base64 format is decoded. If the content is in CQL format, it is tranlated into ELM XML format which is a machine-readable canonical representation.
+When the Clinical Reasoning module processes the data, the library resource is loaded from local FHIR server and then the logic content in base64 format is decoded. If the content is in CQL format, it is translated into ELM XML format which is a machine-readable canonical representation.
 
 For the best performance, the CQL logic should be translated into ELM XML format before being stored in the Library resource. This will enable the Clinical Reasoning module to execute the CQL logic without performing the translation.
 

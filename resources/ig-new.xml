@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/home/rdb20/DI_DIR/PDDI-CDS/resources"/>
+    <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/home/rdb20/DI_DIR/PDDI-CDS/examples"/>
+    <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/home/rdb20/DI_DIR/PDDI-CDS/pages"/>
+    <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
@@ -397,7 +397,7 @@
       <reference>
         <reference value="ValueSet/valueset-ketorolac-exclude"/>
       </reference>
-      <name value="valueset-ketorolac-exclude"/>
+      <name value="valueset-ketorolac_exclude"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -446,7 +446,7 @@
       <reference>
         <reference value="ValueSet/valueset-methylprednisolone-exclude"/>
       </reference>
-      <name value="valueset-methylprednisolone-exclude"/>
+      <name value="valueset-methylprednisolone_exclude"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

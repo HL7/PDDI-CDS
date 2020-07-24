@@ -3,13 +3,13 @@
     <id value="valueset-mefenamate"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-mefenamate"/>
     <version value="US 1.1"/>
-    <name value="valueset-mefenamate"/>
+    <name value="Valueset_mefenamate"/>
     <title value="Mefenamate Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for mefenamate."/>
     <jurisdiction>

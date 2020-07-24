@@ -3,13 +3,13 @@
     <id value="valueset-potassium-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-potassium-LOINC"/>
     <version value="Intl. 1.0"/>
-    <name value="valueset-potassium-LOINC"/>
+    <name value="Valueset_potassium_LOINC"/>
     <title value="LOINC Codes for Serum Potassium"/>
     <status value="draft"/>
     <date value="2018-08-03"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing serum potassium LOINC identifiers from the HEDIS Serum Potassium Value Set."/>
     <jurisdiction>

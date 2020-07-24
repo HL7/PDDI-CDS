@@ -3,13 +3,13 @@
     <id value="valueset-AAS"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-AAS"/>
     <version value="US 1.1"/>
-    <name value="valueset-AAS"/>
+    <name value="Valueset_AAS"/>
     <title value="Aldosterone Antagonists Drug Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet of ValueSets containing drug identifiers for each member in the
     Established Pharmacologic Class (EPC) Aldosterone Antagonist drug class (id: N0000175557).

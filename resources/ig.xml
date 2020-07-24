@@ -378,7 +378,7 @@
       <reference>
 	<reference value="ValueSet/valueset-ketorolac-exclude" />
       </reference>
-      <name value="valueset-ketorolac-exclude" />
+      <name value="valueset-ketorolac_exclude" />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -427,7 +427,7 @@
       <reference>
 	<reference value="ValueSet/valueset-methylprednisolone-exclude" />
       </reference>
-      <name value="valueset-methylprednisolone-exclude" />
+      <name value="valueset-methylprednisolone_exclude" />
       <exampleBoolean value="false" />
     </resource>
     <resource>

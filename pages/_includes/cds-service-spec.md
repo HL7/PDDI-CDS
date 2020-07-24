@@ -10,7 +10,7 @@
 ### <span style="color:silver"> 3.0.1 </span>Summary of Normative Recommendations
 {:.no_toc}
 
-**PDDI CDS knowledge artifacts.**
+**PDDI CDS knowledge artifacts.**valueset-warfarin.xml
 
 * It is RECOMMENDED that knowledge artifacts for PDDI CDS are written so that clinician-focused response information adheres to the 8 detailed best practice recommendations discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://w3id.org/hclscg/pddi).
 
@@ -59,6 +59,7 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
     
 	* Local (preferred)
 
+           <b> The HAPI links DO NOT work </b>
 	    * [HAPI RESTful Server](http://hapifhir.io/doc_rest_server.html)
 
 		* [HAPI JPA Server](http://hapifhir.io/doc_jpa.html)
@@ -108,7 +109,7 @@ The primary motivation for configuration options is to support the advanced func
 
 Another role for configuration options would be to enable greater specificity of PDDI CDS to a given clinical environment. This is because clinicians and/or groups of clinicians often have specialized knowledge that might lead them to prioritize information about certain PDDIs over others. One of the advantages of PDDI CDS as a service over the conventional approach of triggering alerts using of a general drug interaction knowledge base is an EHR can be more specific about the interactions provided within a specific clinical environment.  For example, clinicians working at a psychiatric hospital might be well versed in psychiatric PDDIs and so only interested in PDDI CDS for drugs they know less about. However, there is another level of specificity that might be beneficial beyond the selection of specific drug combinations. For example, a particular clinician or clinical group might desire to only view PDDIs that are regarded as serious. Also, there might be a preference for the amount of detail in the response narrative. These could be handled using configuration options passed from the EHR client to the CDS service. This would likely be a preferred approach to allow for PDDI CDS to be more customized across many different clinical environments using EHR.
 
-This implementation guide discusses a mechanism for providing the CDS service configuration from CDS Hooks requests. The use of this mechanism is required for the advanced functionality of coordinating between order-select and order-sign. There is no requirement to use additional configuration options at this time. Other possibly useful configurtion options, such as to filter out non-serious alerts, might be the focus of a future project.
+This implementation guide discusses a mechanism for providing the CDS service configuration from CDS Hooks requests. The use of this mechanism is required for the advanced functionality of coordinating between order-select and order-sign. There is no requirement to use additional configuration options at this time. Other possibly useful configuration options, such as to filter out non-serious alerts, might be the focus of a future project.
 
 ### <span style="color:silver"> 3.1.6 </span> The CDS Hooks Feedback Endpoint and the CDS Service
 {:.no_toc}
@@ -292,7 +293,7 @@ A FHIR server request by the CDS service is necessary in the event the request `
 ### <span style="color:silver"> 3.2.5 </span> CDS Hooks Response and Card Display
 {:.no_toc}
 
-The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g.,`summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
+The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g., `summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
 
 **Example 3: CDS Hooks Response**
 
@@ -1341,7 +1342,7 @@ The CDS Hooks service response supports providing actionable information to clin
 
 # <span style="color:silver"> 3.5.0 </span> Advanced Implementation - Warfarin + NSAIDs Knowledge Artifact
 
-The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two separate hooks and services. Figures 10 and 11 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "critical" – red to "warning" – orange). 
+The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two separate hooks and services. Figures 10 and 11 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-prescribe` response card (i.e., "critical" – red to "warning" – orange). 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 10: Warfarin + NSAIDs order-select logic </strong></figcaption>
@@ -1492,7 +1493,7 @@ The CDS Hooks service response supports providing actionable information to clin
 
 # <span style="color:silver"> 3.7.0 </span> Advanced Implementation - Digoxin + Cyclosporine Knowledge Artifact
 
-The Advanced Implementation for the Digoxin + Cyclosporine artifact is split into two separate hooks and services. Figures 15 and 16 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-presecribe` response card (i.e., "critical" – red to "warning" – orange). 
+The Advanced Implementation for the Digoxin + Cyclosporine artifact is split into two separate hooks and services. Figures 15 and 16 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the `medication-prescribe` response card (i.e., "critical" – red to "warning" – orange). 
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 15: Digoxin + Cyclosporine order-select logic </strong></figcaption>

@@ -3,13 +3,13 @@
     <id value="valueset-flurbiprofen"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-flurbiprofen"/>
     <version value="US 1.1"/>
-    <name value="valueset-flurbiprofen"/>
+    <name value="Valueset_flurbiprofen"/>
     <title value="Flurbiprofen Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for flurbiprofen."/>
     <jurisdiction>

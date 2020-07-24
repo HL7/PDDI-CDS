@@ -3,13 +3,13 @@
     <id value="valueset-calcium-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-calcium-LOINC"/>
     <version value="Intl. 1.0"/>
-    <name value="valueset-calcium-LOINC"/>
+    <name value="Valueset_calcium_LOINC"/>
     <title value="LOINC Codes for Serum Calcium"/>
     <status value="draft"/>
     <date value="2018-08-03"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing serum calcium LOINC identifiers from the Top 2000 Common Lab Results US."/>
     <jurisdiction>

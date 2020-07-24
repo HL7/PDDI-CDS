@@ -3,13 +3,13 @@
     <id value="valueset-ethacrynate"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ethacrynate"/>
     <version value="US 1.0"/>
-    <name value="valueset-ethacrynate"/>
+    <name value="Valueset_ethacrynate"/>
     <title value="Ethacrynate Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-08-06"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for ethacrynate."/>
     <jurisdiction>

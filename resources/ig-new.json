@@ -3,15 +3,15 @@
   "id" : "ig",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/home/rdb20/DI_DIR/PDDI-CDS/resources"
+    "valueString" : "/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/home/rdb20/DI_DIR/PDDI-CDS/examples"
+    "valueString" : "/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/home/rdb20/DI_DIR/PDDI-CDS/pages"
+    "valueString" : "/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/pages"
   }],
   "url" : "http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig",
   "version" : "0.1.0",
@@ -399,7 +399,7 @@
       "reference" : {
         "reference" : "ValueSet/valueset-ketorolac-exclude"
       },
-      "name" : "valueset-ketorolac-exclude",
+      "name" : "valueset-ketorolac_exclude",
       "exampleBoolean" : false
     },
     {
@@ -448,7 +448,7 @@
       "reference" : {
         "reference" : "ValueSet/valueset-methylprednisolone-exclude"
       },
-      "name" : "valueset-methylprednisolone-exclude",
+      "name" : "valueset-methylprednisolone_exclude",
       "exampleBoolean" : false
     },
     {

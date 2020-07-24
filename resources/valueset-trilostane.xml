@@ -3,13 +3,13 @@
     <id value="valueset-trilostane"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-trilostane"/>
     <version value="US 1.1"/>
-    <name value="valueset-trilostane"/>
+    <name value="Valueset_trilostane"/>
     <title value="Trilostane Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-02"/>
     <publisher value="PDDI CDS"/>
     <contact>
-        <name value="Richard Boyce boycerd@upmc.edu"/>
+        <name value="Richard Boyce"/>
     </contact>
     <description value="ValueSet containing drug identifiers for trilostane."/>
     <jurisdiction>

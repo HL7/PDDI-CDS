@@ -111,11 +111,10 @@ Another role for configuration options would be to enable greater specificity of
 
 This implementation guide discusses a mechanism for providing the CDS service configuration from CDS Hooks requests. The use of this mechanism is required for the advanced functionality of coordinating between order-select and order-sign. There is no requirement to use additional configuration options at this time. Other possibly useful configuration options, such as to filter out non-serious alerts, might be the focus of a future project.
 
-### <span style="color:silver"> 3.1.6 </span> The CDS Hooks Feedback Endpoint and the CDS Service
+### <span style="color:silver"> 3.1.6.1 </span> The CDS Hooks Feedback Endpoint and the CDS Service
 {:.no_toc}
 
-The feedback service...TODO: discuss https://github.com/cds-hooks/docs/wiki/Feedback-endpoint-for-CDS-Hooks-1.1 
-
+The [CDS Hooks feedback service](https://github.com/cds-hooks/docs/wiki/Feedback-endpoint-for-CDS-Hooks-1.1) provides a mechanism for the CDS Service to receive an update from the client on the acceptance or rejection of a suggestion. This is valuable information to enable a service to improve its behavior towards the goal of the end-user having a positive and meaningful experience with the CDS. There are four distinct, possible outcomes for an end user's single interaction with a CDS Hooks suggestion card: suggestion accepted, card ignored, card dismissed without reason, card dismissed with reason. While the feedback mechanism could potentially provide the CDS Service with greater context for coordination between `order-select` and `order-sign` card responses, the coordination mechanism described in this IG does not require its use. EHR clients that implement the hook coordination mechanism (see [advanced implementation](#-330--advanced-implementation)) MAY integrate feedback to inform how the service filters cards. However, this is not a requirement.  
 
 
 ### <span style="color:silver"> 3.1.7 </span> Filtering CDS Hooks response cards at `order-sign`: CDS Service versus EHR Client
@@ -126,7 +125,7 @@ The preferred implementation is to configure the CDS service to filter duplicati
 ### <span style="color:silver"> 3.1.8 </span> Process 
 {:.no_toc}
 
-This section provides an overview of the processes and components of the PDDI CDS. It is delineated by [Basic](#-320--basic-implementation) and [Advanced](#-330--advanced-implementation) Implementation sections. The Basic Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Advanced Implementation is a target for future iterations to optimize the CDS artifacts. Details regarding the knowledge artifacts and decision points for the individual artifacts can be found in the TODO section.
+This section provides an overview of the processes and components of the PDDI CDS. It is delineated by [Basic](#-320--basic-implementation) and [Advanced](#-330--advanced-implementation) Implementation sections. The Basic Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Advanced Implementation is a target for future iterations to optimize the CDS artifacts. 
 
 ### <span style="color:silver"> 3.1.9 </span> CDS Discovery
 {:.no_toc}
@@ -154,7 +153,7 @@ GET http://FHIR.org/PDDI-CDS
       "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
       "title": "Warfarin NSAIDs Recommendation",
       "extension": {
-        "pddi-configuration-items": [
+        "configuration-items": [
           {
             "code": <an identifier for the configuration option>,
             "type": <data type of the configuration option, e.g. boolean>,
@@ -180,7 +179,7 @@ GET http://FHIR.org/PDDI-CDS
       "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
       "title": "Warfarin NSAIDs Recommendation",
       "extension": {
-        "pddi-configuration-items": [
+        "configuration-items": [
           {
             "code": <an identifier for the configuration option>,
             "type": <data type of the configuration option, e.g. boolean>,
@@ -226,7 +225,7 @@ The process for a unique instance of PDDI CDS begins with the user triggering a 
 ## <span style="color:silver"> 3.2.2 </span> CDS Hooks
 {:.no_toc}
 
-The PDDI CDS artifacts use the HL7 CDS Hooks specification [1.0](http://cds-hooks.org/specification/1.0/).  The CDS Hooks standard defines the data structure to facilitate communication between the EHR and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. CDS Hooks instances include CDS Discovery, EHR requests and CDS service response. The `context` and `prefetch` are two key elements of the CDS Hook request that contain patient information. The `context` element contains data that is task and hook-specific. The `prefetch` element contains patient-specific information that is relevant to the `context` data and the invoked CDS service. The CDS Hooks response is a set of Cards. The Cards contain general information, suggested actions, and display indicators in a structured format for the EHR to process and display. The CDS Discovery of the CDS Hooks specification delineates information that the CDS service is to provide to the EHR.
+The PDDI CDS artifacts use the [current HL7 CDS Hooks specification](https://cds-hooks.org/specification/current/).  The CDS Hooks standard defines the data structure to facilitate communication between the EHR and the CDS service through a RESTful API request and response. This allows patient data to be sent and received by the EHR at intervals that better align with clinical workflows – further leveraging FHIR and SMART applications at the point of care. CDS Hooks instances include CDS Discovery, EHR requests and CDS service response. The `context` and `prefetch` are two key elements of the CDS Hook request that contain patient information. The `context` element contains data that is task and hook-specific. The `prefetch` element contains patient-specific information that is relevant to the `context` data and the invoked CDS service. The CDS Hooks response is a set of Cards. The Cards contain general information, suggested actions, and display indicators in a structured format for the EHR to process and display. The CDS Discovery of the CDS Hooks specification delineates information that the CDS service is to provide to the EHR.
 
 > *Note:* The [HL7 specification for decision support](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=334) does not require that the CDS service process CDS Hooks. This implementation guide requires their use because CDS Hooks should provide simplicity and specific orientation for CPOE workflow integration.
 
@@ -257,7 +256,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ###### PDDI Configuration Items
 {:.no_toc}
-The CDS Service MAY process configuration options sent as within an extension resource with the CDS Hooks request in the field `pddi-configuration-items`. At the present time, there are no standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
+The CDS Service MAY process configuration options sent as within an extension resource with the CDS Hooks request in the field `configuration-items`. At the present time, there are no standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
 			    			    			    
 
 ##### Prefetch
@@ -744,7 +743,7 @@ Coordinating the Order Select Service with the Order Sign Service is a key aspec
       "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
       "title": "Warfarin NSAIDs Recommendation",
       "extension": {
-        "pddi-configuration-items": [
+        "configuration-items": [
           {
             "code": <an identifier for the configuration option>,
             "type": <data type of the configuration option, e.g. boolean>,
@@ -770,7 +769,7 @@ Coordinating the Order Select Service with the Order Sign Service is a key aspec
       "name": "PlanDefinition - Warfarin NSAIDs Recommendation Workflow",
       "title": "Warfarin NSAIDs Recommendation",
       "extension": {
-        "pddi-configuration-items": [
+        "configuration-items": [
           {
             "code": <an identifier for the configuration option>,
             "type": <data type of the configuration option, e.g. boolean>,
@@ -837,7 +836,9 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ###### PDDI Configuration Items
 {:.no_toc}
-The CDS Service MUST process configuration options sent as within an extension resource with the CDS Hooks request in the field `pddi-configuration-items`. There are two standard configuration options:  `cache-for-order-sign-filtering` (only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`). All of these configuration options accept Boolean values and are required for the advanced implementation. The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. At the present time, there are no other standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
+The CDS Service MUST process configuration options sent as within an extension resource with the CDS Hooks request in the field `configuration-items` (see a description of this on [CDS Hooks current](https://cds-hooks.org//specification/current/#coordination)). There are two standard configuration options that the service and client MUST use for coordination during PDDI CDS:  `cache-for-order-sign-filtering` (only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`). All of these configuration options accept Boolean values and are required for the advanced implementation. The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. 
+
+At the present time, there are no other standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
 
 
 #### Prefetch

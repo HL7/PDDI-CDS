@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-fluocortolone-exclude"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fluocortolone-exclude"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_fluocortolone_exclude"/>
+    <title value="Exclude Fluocortolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="103461"/>
+                <display value="Fluocortolone Caproate 2.5 MG/ML / Fluocortolone Pivalate
+                    2.5 MG/ML Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="103462"/>
+                <display value="Fluocortolone Caproate 0.0025 MG/MG / Fluocortolone Pivalate
+                    0.0025 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="392955"/>
+                <display value="Fluocortolone Topical Cream"/>
+            </concept>
+            <concept>
+                <code value="392957"/>
+                <display value="Fluocortolone Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1160822"/>
+                <display value="Fluocortolone Topical Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

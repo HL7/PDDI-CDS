@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-rimexolone"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rimexolone"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_rimexolone"/>
+    <title value="Rimexolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for rimexolone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="220785"/>
+                <display value="Vexol"/>
+            </concept>
+            <concept>
+                <code value="55681"/>
+                <display value="rimexolone"/>
+            </concept>
+            <concept>
+                <code value="207446"/>
+                <display value="rimexolone 10 MG/ML Ophthalmic Suspension [Vexol]"/>
+            </concept>
+            <concept>
+                <code value="568209"/>
+                <display value="rimexolone 10 MG/ML [Vexol]"/>
+            </concept>
+            <concept>
+                <code value="365826"/>
+                <display value="rimexolone Ophthalmic Suspension [Vexol]"/>
+            </concept>
+            <concept>
+                <code value="199115"/>
+                <display value="rimexolone 10 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="328510"/>
+                <display value="rimexolone 10 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="379299"/>
+                <display value="rimexolone Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1157440"/>
+                <display value="rimexolone Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1188083"/>
+                <display value="Vexol Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

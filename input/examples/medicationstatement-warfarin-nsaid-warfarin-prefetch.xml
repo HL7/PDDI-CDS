@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
+    <status value="active"/>
+    <category>
+      <coding>
+	<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+        <code value="outpatient"/>
+      </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="855295"/>
+            <display value="Warfarin Sodium 10 MG"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
+    </subject>
+</MedicationStatement>

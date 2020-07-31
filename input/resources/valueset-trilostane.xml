@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-trilostane"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-trilostane"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_trilostane"/>
+    <title value="Trilostane Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for trilostane."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="861978"/>
+                <display value="Vetoryl"/>
+            </concept>
+            <concept>
+                <code value="38668"/>
+                <display value="trilostane"/>
+            </concept>
+            <concept>
+                <code value="861981"/>
+                <display value="trilostane 10 MG Oral Capsule [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="861983"/>
+                <display value="trilostane 30 MG Oral Capsule [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="861985"/>
+                <display value="trilostane 60 MG Oral Capsule [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="1667272"/>
+                <display value="trilostane 5 MG Oral Capsule [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="1242944"/>
+                <display value="trilostane 120 MG Oral Capsule [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="861979"/>
+                <display value="trilostane 10 MG [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="861982"/>
+                <display value="trilostane 30 MG [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="861984"/>
+                <display value="trilostane 60 MG [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="1667271"/>
+                <display value="trilostane 5 MG [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="1242943"/>
+                <display value="trilostane 120 MG [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="861980"/>
+                <display value="trilostane Oral Capsule [Vetoryl]"/>
+            </concept>
+            <concept>
+                <code value="313483"/>
+                <display value="trilostane 60 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="313482"/>
+                <display value="trilostane 30 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="105455"/>
+                <display value="trilostane 120 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="861977"/>
+                <display value="trilostane 10 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="1667270"/>
+                <display value="trilostane 5 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="316860"/>
+                <display value="trilostane 60 MG"/>
+            </concept>
+            <concept>
+                <code value="317526"/>
+                <display value="trilostane 30 MG"/>
+            </concept>
+            <concept>
+                <code value="335777"/>
+                <display value="trilostane 120 MG"/>
+            </concept>
+            <concept>
+                <code value="861976"/>
+                <display value="trilostane 10 MG"/>
+            </concept>
+            <concept>
+                <code value="1667269"/>
+                <display value="trilostane 5 MG"/>
+            </concept>
+            <concept>
+                <code value="374215"/>
+                <display value="trilostane Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="1163375"/>
+                <display value="trilostane Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1163376"/>
+                <display value="trilostane Pill"/>
+            </concept>
+            <concept>
+                <code value="1188066"/>
+                <display value="Vetoryl Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1188067"/>
+                <display value="Vetoryl Pill"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-diclofenac-exclude"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-diclofenac-exclude"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_diclofenac_exclude"/>
+    <title value="Exclude Diclofenac Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="854803"/>
+                <display value="Diclofenac Sodium 1 MG/ML Ophthalmic Solution [Voltaren]"/>
+            </concept>
+            <concept>
+                <code value="790412"/>
+                <display value="Diclofenac Ophthalmic Solution [Voltaren]"/>
+            </concept>
+            <concept>
+                <code value="854801"/>
+                <display value="Diclofenac Sodium 1 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="378986"/>
+                <display value="Diclofenac Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="1187416"/>
+                <display value="Voltaren Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Patient xmlns="http://hl7.org/fhir">
-    <id value="patient-warfarin-nsaid-over65-prefetch"/>
-    <gender value="male"/>
-    <birthDate value="1948-05-10"/>
-</Patient>

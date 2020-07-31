@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-methylprednisolone"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-methylprednisolone"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_methylprednisolone"/>
+    <title value="Methylprednisolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for methylprednisolone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1100388"/>
+                <display value="HybriSil"/>
+            </concept>
+            <concept>
+                <code value="202702"/>
+                <display value="Medrol"/>
+            </concept>
+            <concept>
+                <code value="203856"/>
+                <display value="Solu-Medrol"/>
+            </concept>
+            <concept>
+                <code value="203857"/>
+                <display value="A-MethaPred"/>
+            </concept>
+            <concept>
+                <code value="22584"/>
+                <display value="Depo-Medrol"/>
+            </concept>
+            <concept>
+                <code value="834023"/>
+                <display value="{21 (Methylprednisolone 4 MG Oral Tablet [Medrol]) } Pack
+                    [Medrol Dosepak]"/>
+            </concept>
+            <concept>
+                <code value="762675"/>
+                <display value="{21 (Methylprednisolone 4 MG Oral Tablet) } Pack"/>
+            </concept>
+            <concept>
+                <code value="6902"/>
+                <display value="Methylprednisolone"/>
+            </concept>
+            <concept>
+                <code value="1008080"/>
+                <display value="Aspirin / Methylprednisolone"/>
+            </concept>
+            <concept>
+                <code value="106991"/>
+                <display value="Lidocaine / Methylprednisolone"/>
+            </concept>
+            <concept>
+                <code value="107005"/>
+                <display value="Methylprednisolone / Neomycin"/>
+            </concept>
+            <concept>
+                <code value="155323"/>
+                <display value="methylprednisolone acetate"/>
+            </concept>
+            <concept>
+                <code value="203189"/>
+                <display value="Methylprednisolone Sodium Succinate"/>
+            </concept>
+            <concept>
+                <code value="29917"/>
+                <display value="methylprednisolone sodium phosphate"/>
+            </concept>
+            <concept>
+                <code value="62136"/>
+                <display value="methylprednisolone aceponate"/>
+            </concept>
+            <concept>
+                <code value="1100391"/>
+                <display value="methylprednisolone acetate 0.01 MG/MG Topical Gel [HybriSil]"/>
+            </concept>
+            <concept>
+                <code value="207136"/>
+                <display value="Methylprednisolone 2 MG Oral Tablet [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="207137"/>
+                <display value="Methylprednisolone 8 MG Oral Tablet [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="207138"/>
+                <display value="Methylprednisolone 16 MG Oral Tablet [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="207141"/>
+                <display value="Methylprednisolone 32 MG Oral Tablet [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="260330"/>
+                <display value="Methylprednisolone 4 MG Oral Tablet [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="207190"/>
+                <display value="Methylprednisolone 40 MG Injection [A-MethaPred]"/>
+            </concept>
+            <concept>
+                <code value="207191"/>
+                <display value="Methylprednisolone 40 MG Injection [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="207192"/>
+                <display value="Methylprednisolone 125 MG Injection [A-MethaPred]"/>
+            </concept>
+            <concept>
+                <code value="207193"/>
+                <display value="Methylprednisolone 62.5 MG/ML Injectable Solution [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1357888"/>
+                <display value="Methylprednisolone 2000 MG Injection [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743707"/>
+                <display value="Methylprednisolone 125 MG Injection [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743722"/>
+                <display value="Methylprednisolone 500 MG Injection [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743729"/>
+                <display value="Methylprednisolone 1000 MG Injection [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1358512"/>
+                <display value="methylprednisolone acetate 20 MG/ML Injectable Suspension [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1358612"/>
+                <display value="methylprednisolone acetate 40 MG/ML Injectable Suspension [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1358619"/>
+                <display value="methylprednisolone acetate 80 MG/ML Injectable Suspension [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743781"/>
+                <display value="1 ML methylprednisolone acetate 40 MG/ML Injection [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743856"/>
+                <display value="1 ML methylprednisolone acetate 80 MG/ML Injection [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1100389"/>
+                <display value="methylprednisolone acetate 0.01 MG/MG [HybriSil]"/>
+            </concept>
+            <concept>
+                <code value="567927"/>
+                <display value="Methylprednisolone 2 MG [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="567928"/>
+                <display value="Methylprednisolone 8 MG [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="567929"/>
+                <display value="Methylprednisolone 16 MG [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="567932"/>
+                <display value="Methylprednisolone 32 MG [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="574125"/>
+                <display value="Methylprednisolone 4 MG [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="567984"/>
+                <display value="Methylprednisolone 62.5 MG/ML [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743705"/>
+                <display value="Methylprednisolone 125 MG [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743721"/>
+                <display value="Methylprednisolone 500 MG [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743727"/>
+                <display value="Methylprednisolone 1000 MG [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1744015"/>
+                <display value="Methylprednisolone 2000 MG [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1744018"/>
+                <display value="Methylprednisolone 40 MG [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1744020"/>
+                <display value="Methylprednisolone 40 MG [A-MethaPred]"/>
+            </concept>
+            <concept>
+                <code value="1744024"/>
+                <display value="Methylprednisolone 125 MG [A-MethaPred]"/>
+            </concept>
+            <concept>
+                <code value="1358511"/>
+                <display value="methylprednisolone acetate 20 MG/ML [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1358611"/>
+                <display value="methylprednisolone acetate 40 MG/ML [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1358618"/>
+                <display value="methylprednisolone acetate 80 MG/ML [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1100390"/>
+                <display value="Methylprednisolone Topical Gel [HybriSil]"/>
+            </concept>
+            <concept>
+                <code value="368772"/>
+                <display value="Methylprednisolone Oral Tablet [Medrol]"/>
+            </concept>
+            <concept>
+                <code value="362772"/>
+                <display value="Methylprednisolone Injectable Solution [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="365570"/>
+                <display value="Methylprednisolone Injectable Suspension [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1743706"/>
+                <display value="Methylprednisolone Injection [Solu-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1744021"/>
+                <display value="Methylprednisolone Injection [A-MethaPred]"/>
+            </concept>
+            <concept>
+                <code value="1743780"/>
+                <display value="Methylprednisolone Injection [Depo-Medrol]"/>
+            </concept>
+            <concept>
+                <code value="1358506"/>
+                <display value="methylprednisolone acetate 0.0025 MG/MG Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1100387"/>
+                <display value="methylprednisolone acetate 0.01 MG/MG Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="197969"/>
+                <display value="Methylprednisolone 2 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="197971"/>
+                <display value="Methylprednisolone 32 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="197973"/>
+                <display value="Methylprednisolone 8 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="259966"/>
+                <display value="Methylprednisolone 4 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="328161"/>
+                <display value="Methylprednisolone 16 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="311659"/>
+                <display value="Methylprednisolone 40 MG Injection"/>
+            </concept>
+            <concept>
+                <code value="199771"/>
+                <display value="Methylprednisolone 100 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="314099"/>
+                <display value="Methylprednisolone 62.5 MG/ML Injectable Solution"/>
+            </concept>
+            <concept>
+                <code value="105404"/>
+                <display value="Methylprednisolone 50 MG/ML Injectable Solution"/>
+            </concept>
+            <concept>
+                <code value="1358498"/>
+                <display value="Lidocaine Hydrochloride 10 MG/ML / methylprednisolone
+                    acetate 40 MG/ML Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1358510"/>
+                <display value="methylprednisolone acetate 20 MG/ML Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1358610"/>
+                <display value="methylprednisolone acetate 40 MG/ML Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1358617"/>
+                <display value="methylprednisolone acetate 80 MG/ML Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1743779"/>
+                <display value="1 ML methylprednisolone acetate 40 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="1743855"/>
+                <display value="1 ML methylprednisolone acetate 80 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="1357886"/>
+                <display value="Methylprednisolone 2000 MG Injection"/>
+            </concept>
+            <concept>
+                <code value="1743704"/>
+                <display value="Methylprednisolone 125 MG Injection"/>
+            </concept>
+            <concept>
+                <code value="1743720"/>
+                <display value="Methylprednisolone 500 MG Injection"/>
+            </concept>
+            <concept>
+                <code value="1743726"/>
+                <display value="Methylprednisolone 1000 MG Injection"/>
+            </concept>
+            <concept>
+                <code value="1358499"/>
+                <display value="methylprednisolone acetate 0.0025 MG/MG"/>
+            </concept>
+            <concept>
+                <code value="1100385"/>
+                <display value="methylprednisolone acetate 0.01 MG/MG"/>
+            </concept>
+            <concept>
+                <code value="316285"/>
+                <display value="Methylprednisolone 2 MG"/>
+            </concept>
+            <concept>
+                <code value="316287"/>
+                <display value="Methylprednisolone 32 MG"/>
+            </concept>
+            <concept>
+                <code value="316288"/>
+                <display value="Methylprednisolone 8 MG"/>
+            </concept>
+            <concept>
+                <code value="317426"/>
+                <display value="Methylprednisolone 16 MG"/>
+            </concept>
+            <concept>
+                <code value="317427"/>
+                <display value="Methylprednisolone 4 MG"/>
+            </concept>
+            <concept>
+                <code value="330037"/>
+                <display value="Methylprednisolone 40 MG"/>
+            </concept>
+            <concept>
+                <code value="332216"/>
+                <display value="Methylprednisolone 100 MG"/>
+            </concept>
+            <concept>
+                <code value="346173"/>
+                <display value="Methylprednisolone 62.5 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="360536"/>
+                <display value="Methylprednisolone 50 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="1358496"/>
+                <display value="methylprednisolone acetate 40 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="1358509"/>
+                <display value="methylprednisolone acetate 20 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="1358616"/>
+                <display value="methylprednisolone acetate 80 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="1743702"/>
+                <display value="Methylprednisolone 125 MG"/>
+            </concept>
+            <concept>
+                <code value="1743719"/>
+                <display value="Methylprednisolone 500 MG"/>
+            </concept>
+            <concept>
+                <code value="1743725"/>
+                <display value="Methylprednisolone 1000 MG"/>
+            </concept>
+            <concept>
+                <code value="1744013"/>
+                <display value="Methylprednisolone 2000 MG"/>
+            </concept>
+            <concept>
+                <code value="1100386"/>
+                <display value="Methylprednisolone Topical Gel"/>
+            </concept>
+            <concept>
+                <code value="372866"/>
+                <display value="Methylprednisolone Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="372868"/>
+                <display value="Methylprednisolone Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="376656"/>
+                <display value="Methylprednisolone Injectable Solution"/>
+            </concept>
+            <concept>
+                <code value="1358497"/>
+                <display value="Lidocaine / Methylprednisolone Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1743703"/>
+                <display value="Methylprednisolone Injection"/>
+            </concept>
+            <concept>
+                <code value="372863"/>
+                <display value="Methylprednisolone Topical Ointment"/>
+            </concept>
+            <concept>
+                <code value="1163486"/>
+                <display value="Methylprednisolone Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1163488"/>
+                <display value="Methylprednisolone Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1163489"/>
+                <display value="Methylprednisolone Pill"/>
+            </concept>
+            <concept>
+                <code value="1163491"/>
+                <display value="Methylprednisolone Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1164046"/>
+                <display value="Lidocaine / Methylprednisolone Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1165881"/>
+                <display value="A-MethaPred Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1172713"/>
+                <display value="HybriSil Topical Product"/>
+            </concept>
+            <concept>
+                <code value="1173110"/>
+                <display value="Depo-Medrol Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1183796"/>
+                <display value="Medrol Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1183797"/>
+                <display value="Medrol Pill"/>
+            </concept>
+            <concept>
+                <code value="1184840"/>
+                <display value="Solu-Medrol Injectable Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

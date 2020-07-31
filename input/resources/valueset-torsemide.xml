@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-torsemide"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-torsemide"/>
+    <version value="US 1.0"/>
+    <name value="Valueset_torsemide"/>
+    <title value="Torsemide Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-08-06"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for torsemide."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="06-Aug-2018"/>
+            <concept>
+                <code value="71974"/>
+                <display value="Demadex"/>
+            </concept>
+            <concept>
+                <code value="38413"/>
+                <display value="torsemide"/>
+            </concept>
+            <concept>
+                <code value="208076"/>
+                <display value="torsemide 10 MG Oral Tablet [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="208080"/>
+                <display value="torsemide 100 MG Oral Tablet [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="208081"/>
+                <display value="torsemide 20 MG Oral Tablet [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="208082"/>
+                <display value="torsemide 5 MG Oral Tablet [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="1729523"/>
+                <display value="2 ML torsemide 10 MG/ML Injection [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="1729528"/>
+                <display value="5 ML torsemide 10 MG/ML Injection [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="568804"/>
+                <display value="torsemide 10 MG [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="568808"/>
+                <display value="torsemide 100 MG [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="568809"/>
+                <display value="torsemide 20 MG [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="568810"/>
+                <display value="torsemide 5 MG [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="876420"/>
+                <display value="torsemide 10 MG/ML [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="369285"/>
+                <display value="torsemide Oral Tablet [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="1729522"/>
+                <display value="torsemide Injection [Demadex]"/>
+            </concept>
+            <concept>
+                <code value="198369"/>
+                <display value="torsemide 10 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="198370"/>
+                <display value="torsemide 100 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="198372"/>
+                <display value="torsemide 5 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1729521"/>
+                <display value="2 ML torsemide 10 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="1729527"/>
+                <display value="5 ML torsemide 10 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="198371"/>
+                <display value="torsemide 20 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="250044"/>
+                <display value="torsemide 2.5 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="316842"/>
+                <display value="torsemide 10 MG"/>
+            </concept>
+            <concept>
+                <code value="316843"/>
+                <display value="torsemide 10 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="316844"/>
+                <display value="torsemide 100 MG"/>
+            </concept>
+            <concept>
+                <code value="316845"/>
+                <display value="torsemide 5 MG"/>
+            </concept>
+            <concept>
+                <code value="317521"/>
+                <display value="torsemide 20 MG"/>
+            </concept>
+            <concept>
+                <code value="335760"/>
+                <display value="torsemide 2.5 MG"/>
+            </concept>
+            <concept>
+                <code value="374168"/>
+                <display value="torsemide Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1729520"/>
+                <display value="torsemide Injection"/>
+            </concept>
+            <concept>
+                <code value="1162751"/>
+                <display value="torsemide Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1162752"/>
+                <display value="torsemide Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1162753"/>
+                <display value="torsemide Pill"/>
+            </concept>
+            <concept>
+                <code value="1172415"/>
+                <display value="Demadex Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1172416"/>
+                <display value="Demadex Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1172417"/>
+                <display value="Demadex Pill"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

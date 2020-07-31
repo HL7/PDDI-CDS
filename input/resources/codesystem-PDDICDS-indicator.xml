@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="codesystem-PDDICDS-indicator"/>
+    <url value="http://hl7.org/fhir/uv/pddi/CodeSystem/codesystem-PDDICDS-indicator"/>
+    <name value="Codesystem_PDDICDS_indicator"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <description value="Indicates the importance RequestGroup action and relates to decision tree recommendations for PDDIs"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="info"/>
+        <display value="Information"/>
+        <definition value="Indicates that the workflow result is informational"/>
+    </concept>
+    <concept>
+        <code value="warning"/>
+        <display value="Warning"/>
+        <definition value="Indicates that the workflow result is a warning"/>
+    </concept>
+    <concept>
+        <code value="hard-stop"/>
+        <display value="Hard Stop"/>
+        <definition value="Indicates that the workflow should not be allowed to proceed"/>
+    </concept>
+</CodeSystem>

@@ -1,0 +1,2516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <type value="transaction" />
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-digoxin" />
+            <id value="valueset-digoxin" />
+            <version value="US 1.1" />
+            <name value="valueset-digoxin" />
+            <title value="Digoxin Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-07-28" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for digoxin." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="02-Jul-2018" />
+                  <concept>
+                     <code value="202988" />
+                     <display value="Lanoxin" />
+                  </concept>
+                  <concept>
+                     <code value="261504" />
+                     <display value="Digitek" />
+                  </concept>
+                  <concept>
+                     <code value="1245368" />
+                     <display value="Digox" />
+                  </concept>
+                  <concept>
+                     <code value="3407" />
+                     <display value="Digoxin" />
+                  </concept>
+                  <concept>
+                     <code value="104206" />
+                     <display value="Digoxin 0.0625 MG Oral Tablet [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="208135" />
+                     <display value="1 ML Digoxin 0.1 MG/ML Injection [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="208137" />
+                     <display value="2 ML Digoxin 0.25 MG/ML Injection [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="309888" />
+                     <display value="Digoxin 0.125 MG Oral Tablet [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="309889" />
+                     <display value="Digoxin 0.25 MG Oral Tablet [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="1441567" />
+                     <display value="Digoxin 0.1875 MG Oral Tablet [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="260350" />
+                     <display value="Digoxin 0.125 MG Oral Tablet [Digitek]" />
+                  </concept>
+                  <concept>
+                     <code value="260351" />
+                     <display value="Digoxin 0.25 MG Oral Tablet [Digitek]" />
+                  </concept>
+                  <concept>
+                     <code value="1245373" />
+                     <display value="Digoxin 0.25 MG Oral Tablet [Digox]" />
+                  </concept>
+                  <concept>
+                     <code value="1245443" />
+                     <display value="Digoxin 0.125 MG Oral Tablet [Digox]" />
+                  </concept>
+                  <concept>
+                     <code value="563545" />
+                     <display value="Digoxin 0.0625 MG [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="568861" />
+                     <display value="Digoxin 0.1 MG/ML [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="568863" />
+                     <display value="Digoxin 0.25 MG/ML [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="575108" />
+                     <display value="Digoxin 0.125 MG [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="575109" />
+                     <display value="Digoxin 0.25 MG [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="1490916" />
+                     <display value="Digoxin 0.1875 MG [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="574141" />
+                     <display value="Digoxin 0.125 MG [Digitek]" />
+                  </concept>
+                  <concept>
+                     <code value="574142" />
+                     <display value="Digoxin 0.25 MG [Digitek]" />
+                  </concept>
+                  <concept>
+                     <code value="1245369" />
+                     <display value="Digoxin 0.25 MG [Digox]" />
+                  </concept>
+                  <concept>
+                     <code value="1245442" />
+                     <display value="Digoxin 0.125 MG [Digox]" />
+                  </concept>
+                  <concept>
+                     <code value="367682" />
+                     <display value="Digoxin Oral Tablet [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="368237" />
+                     <display value="Digoxin Oral Tablet [Digitek]" />
+                  </concept>
+                  <concept>
+                     <code value="1743560" />
+                     <display value="Digoxin Injection [Lanoxin]" />
+                  </concept>
+                  <concept>
+                     <code value="1245370" />
+                     <display value="Digoxin Oral Tablet [Digox]" />
+                  </concept>
+                  <concept>
+                     <code value="104208" />
+                     <display value="2 ML Digoxin 0.25 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="197604" />
+                     <display value="Digoxin 0.125 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="197605" />
+                     <display value="Digoxin 0.2 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="197606" />
+                     <display value="Digoxin 0.25 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="237165" />
+                     <display value="Digoxin 0.05 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="237166" />
+                     <display value="Digoxin 0.1 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="393245" />
+                     <display value="Digoxin 0.05 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="204504" />
+                     <display value="1 ML Digoxin 0.1 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="245273" />
+                     <display value="Digoxin 0.0625 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1441565" />
+                     <display value="Digoxin 0.1875 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="315816" />
+                     <display value="Digoxin 0.05 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315817" />
+                     <display value="Digoxin 0.05 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="315818" />
+                     <display value="Digoxin 0.1 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315819" />
+                     <display value="Digoxin 0.125 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315820" />
+                     <display value="Digoxin 0.2 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315821" />
+                     <display value="Digoxin 0.25 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315822" />
+                     <display value="Digoxin 0.25 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="317356" />
+                     <display value="Digoxin 0.1 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="333033" />
+                     <display value="Digoxin 0.0625 MG" />
+                  </concept>
+                  <concept>
+                     <code value="1490914" />
+                     <display value="Digoxin 0.1875 MG" />
+                  </concept>
+                  <concept>
+                     <code value="371830" />
+                     <display value="Digoxin Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="371833" />
+                     <display value="Digoxin Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="371834" />
+                     <display value="Digoxin Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1743558" />
+                     <display value="Digoxin Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1151519" />
+                     <display value="Digoxin Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151520" />
+                     <display value="Digoxin Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151521" />
+                     <display value="Digoxin Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151522" />
+                     <display value="Digoxin Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1168850" />
+                     <display value="Digitek Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1168851" />
+                     <display value="Digitek Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1175613" />
+                     <display value="Lanoxin Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1175615" />
+                     <display value="Lanoxin Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1175618" />
+                     <display value="Lanoxin Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1245371" />
+                     <display value="Digox Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1245372" />
+                     <display value="Digox Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-digoxin" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-digoxin-LOINC" />
+            <id value="valueset-digoxin-LOINC" />
+            <version value="Intl. 1.0" />
+            <name value="valueset-digoxin-LOINC" />
+            <title value="LOINC Codes for Digoxin Concentration" />
+            <status value="draft" />
+            <date value="2018-08-03" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing digoxin LOINC identifiers from the HEDIS 2018 Value Set – Digoxin Level." />
+            <jurisdiction>
+               <coding>
+                  <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+                  <code value="001" />
+                  <display value="World" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://loinc.org" />
+                  <version value="2.64" />
+                  <concept>
+                     <code value="10535-3" />
+                     <display value="Digoxin [Mass/​volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="3563-4" />
+                     <display value="Digoxin&gt;12 hours post dose [Mass/​volume] in Serum or Plasma" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-digoxin-LOINC" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine" />
+            <id value="valueset-cyclosporine" />
+            <version value="US 1.1" />
+            <name value="valueset-cyclosporine" />
+            <title value="Cyclosporine Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-07-02" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for cyclosporine." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="02-Jul-2018" />
+                  <concept>
+                     <code value="1093175" />
+                     <display value="Optimmune" />
+                  </concept>
+                  <concept>
+                     <code value="202816" />
+                     <display value="Sandimmune" />
+                  </concept>
+                  <concept>
+                     <code value="202817" />
+                     <display value="Neoral" />
+                  </concept>
+                  <concept>
+                     <code value="261530" />
+                     <display value="Gengraf" />
+                  </concept>
+                  <concept>
+                     <code value="352951" />
+                     <display value="Restasis" />
+                  </concept>
+                  <concept>
+                     <code value="539497" />
+                     <display value="Atopica" />
+                  </concept>
+                  <concept>
+                     <code value="3008" />
+                     <display value="Cyclosporine" />
+                  </concept>
+                  <concept>
+                     <code value="236077" />
+                     <display value="cyclosporine, modified" />
+                  </concept>
+                  <concept>
+                     <code value="484788" />
+                     <display value="cyclosporine microemulsion" />
+                  </concept>
+                  <concept>
+                     <code value="1093178" />
+                     <display value="Cyclosporine 0.002 MG/MG Ophthalmic Ointment [Optimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="197552" />
+                     <display value="Cyclosporine 100 MG Oral Capsule [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="212810" />
+                     <display value="Cyclosporine 25 MG Oral Capsule [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="212844" />
+                     <display value="5 ML Cyclosporine 50 MG/ML Injection [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="212957" />
+                     <display value="Cyclosporine 100 MG/ML Oral Solution [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="835899" />
+                     <display value="cyclosporine, modified 100 MG/ML Oral Solution [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="835909" />
+                     <display value="cyclosporine, modified 25 MG Oral Capsule [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="835911" />
+                     <display value="cyclosporine, modified 100 MG Oral Capsule [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="835835" />
+                     <display value="cyclosporine, modified 100 MG Oral Capsule [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="835892" />
+                     <display value="cyclosporine, modified 100 MG/ML Oral Solution [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="835896" />
+                     <display value="cyclosporine, modified 25 MG Oral Capsule [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="1797521" />
+                     <display value="cyclosporine, modified 50 MG Oral Capsule [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="402092" />
+                     <display value="Cyclosporine 0.5 MG/ML Ophthalmic Suspension [Restasis]" />
+                  </concept>
+                  <concept>
+                     <code value="835917" />
+                     <display value="cyclosporine, modified 100 MG Oral Capsule [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="835921" />
+                     <display value="cyclosporine, modified 10 MG Oral Capsule [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="835923" />
+                     <display value="cyclosporine, modified 25 MG Oral Capsule [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="835927" />
+                     <display value="cyclosporine, modified 50 MG Oral Capsule [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="1233908" />
+                     <display value="cyclosporine, modified 100 MG/ML Oral Solution [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="1093176" />
+                     <display value="Cyclosporine 0.002 MG/MG [Optimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="486331" />
+                     <display value="Cyclosporine 100 MG/ML [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="565430" />
+                     <display value="Cyclosporine 100 MG [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="572889" />
+                     <display value="Cyclosporine 25 MG [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="572915" />
+                     <display value="Cyclosporine 50 MG/ML [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="835897" />
+                     <display value="cyclosporine, modified 100 MG/ML [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="835900" />
+                     <display value="cyclosporine, modified 100 MG [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="835901" />
+                     <display value="cyclosporine, modified 25 MG [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="835787" />
+                     <display value="cyclosporine, modified 100 MG [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="835887" />
+                     <display value="cyclosporine, modified 100 MG/ML [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="835895" />
+                     <display value="cyclosporine, modified 25 MG [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="1797520" />
+                     <display value="cyclosporine, modified 50 MG [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="576100" />
+                     <display value="Cyclosporine 0.5 MG/ML [Restasis]" />
+                  </concept>
+                  <concept>
+                     <code value="835916" />
+                     <display value="cyclosporine, modified 100 MG [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="835920" />
+                     <display value="cyclosporine, modified 10 MG [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="835922" />
+                     <display value="cyclosporine, modified 25 MG [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="835926" />
+                     <display value="cyclosporine, modified 50 MG [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="1233905" />
+                     <display value="cyclosporine, modified 100 MG/ML [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="1093177" />
+                     <display value="Cyclosporine Ophthalmic Ointment [Optimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="366488" />
+                     <display value="Cyclosporine Oral Capsule [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="363942" />
+                     <display value="Cyclosporine Oral Solution [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="366479" />
+                     <display value="Cyclosporine Oral Capsule [Neoral]" />
+                  </concept>
+                  <concept>
+                     <code value="366173" />
+                     <display value="Cyclosporine Oral Capsule [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="363914" />
+                     <display value="Cyclosporine Oral Solution [Gengraf]" />
+                  </concept>
+                  <concept>
+                     <code value="402330" />
+                     <display value="Cyclosporine Ophthalmic Suspension [Restasis]" />
+                  </concept>
+                  <concept>
+                     <code value="539499" />
+                     <display value="Cyclosporine Oral Capsule [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="94035" />
+                     <display value="Cyclosporine Oral Solution [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="1732366" />
+                     <display value="Cyclosporine Injection [Sandimmune]" />
+                  </concept>
+                  <concept>
+                     <code value="1233906" />
+                     <display value="Cyclosporine Oral Solution [Atopica]" />
+                  </concept>
+                  <concept>
+                     <code value="1093174" />
+                     <display value="Cyclosporine 0.002 MG/MG Ophthalmic Ointment" />
+                  </concept>
+                  <concept>
+                     <code value="197553" />
+                     <display value="Cyclosporine 25 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="205168" />
+                     <display value="Cyclosporine 50 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="205175" />
+                     <display value="5 ML Cyclosporine 50 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="309632" />
+                     <display value="Cyclosporine 100 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="328160" />
+                     <display value="Cyclosporine 100 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="241834" />
+                     <display value="cyclosporine, modified 100 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="351291" />
+                     <display value="Cyclosporine 0.5 MG/ML Ophthalmic Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="835886" />
+                     <display value="cyclosporine, modified 100 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="835894" />
+                     <display value="cyclosporine, modified 25 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="835919" />
+                     <display value="cyclosporine, modified 10 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="835925" />
+                     <display value="cyclosporine, modified 50 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="1093172" />
+                     <display value="Cyclosporine 0.002 MG/MG" />
+                  </concept>
+                  <concept>
+                     <code value="315749" />
+                     <display value="Cyclosporine 100 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315750" />
+                     <display value="Cyclosporine 100 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="315751" />
+                     <display value="Cyclosporine 25 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315752" />
+                     <display value="Cyclosporine 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315753" />
+                     <display value="Cyclosporine 50 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="334294" />
+                     <display value="cyclosporine, modified 100 MG" />
+                  </concept>
+                  <concept>
+                     <code value="353400" />
+                     <display value="Cyclosporine 0.5 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="835885" />
+                     <display value="cyclosporine, modified 100 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="835893" />
+                     <display value="cyclosporine, modified 25 MG" />
+                  </concept>
+                  <concept>
+                     <code value="835918" />
+                     <display value="cyclosporine, modified 10 MG" />
+                  </concept>
+                  <concept>
+                     <code value="835924" />
+                     <display value="cyclosporine, modified 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="1093173" />
+                     <display value="Cyclosporine Ophthalmic Ointment" />
+                  </concept>
+                  <concept>
+                     <code value="371666" />
+                     <display value="Cyclosporine Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="371667" />
+                     <display value="Cyclosporine Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="378766" />
+                     <display value="Cyclosporine Ophthalmic Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="1732364" />
+                     <display value="Cyclosporine Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1156186" />
+                     <display value="Cyclosporine Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1156187" />
+                     <display value="Cyclosporine Ophthalmic Product" />
+                  </concept>
+                  <concept>
+                     <code value="1156188" />
+                     <display value="Cyclosporine Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1156189" />
+                     <display value="Cyclosporine Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1156190" />
+                     <display value="Cyclosporine Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1169824" />
+                     <display value="Gengraf Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1169825" />
+                     <display value="Gengraf Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1169826" />
+                     <display value="Gengraf Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1172882" />
+                     <display value="Atopica Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1172883" />
+                     <display value="Atopica Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1181672" />
+                     <display value="Neoral Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1181673" />
+                     <display value="Neoral Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1181674" />
+                     <display value="Neoral Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1182342" />
+                     <display value="Optimmune Ophthalmic Product" />
+                  </concept>
+                  <concept>
+                     <code value="1182527" />
+                     <display value="Restasis Ophthalmic Product" />
+                  </concept>
+                  <concept>
+                     <code value="1185408" />
+                     <display value="Sandimmune Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1185409" />
+                     <display value="Sandimmune Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1185410" />
+                     <display value="Sandimmune Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1185411" />
+                     <display value="Sandimmune Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1233907" />
+                     <display value="Atopica Oral Liquid Product" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-cyclosporine" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone" />
+            <id value="valueset-eplerenone" />
+            <version value="US 1.1" />
+            <name value="valueset-eplerenone" />
+            <title value="Eplerenone Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-07-02" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for eplerenone." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="02-Jul-2018" />
+                  <concept>
+                     <code value="342280" />
+                     <display value="Inspra" />
+                  </concept>
+                  <concept>
+                     <code value="298869" />
+                     <display value="eplerenone" />
+                  </concept>
+                  <concept>
+                     <code value="402105" />
+                     <display value="eplerenone 50 MG Oral Tablet [Inspra]" />
+                  </concept>
+                  <concept>
+                     <code value="402106" />
+                     <display value="eplerenone 25 MG Oral Tablet [Inspra]" />
+                  </concept>
+                  <concept>
+                     <code value="576107" />
+                     <display value="eplerenone 50 MG [Inspra]" />
+                  </concept>
+                  <concept>
+                     <code value="576108" />
+                     <display value="eplerenone 25 MG [Inspra]" />
+                  </concept>
+                  <concept>
+                     <code value="402363" />
+                     <display value="eplerenone Oral Tablet [Inspra]" />
+                  </concept>
+                  <concept>
+                     <code value="351256" />
+                     <display value="eplerenone 25 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="351257" />
+                     <display value="eplerenone 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="351258" />
+                     <display value="eplerenone 100 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="353386" />
+                     <display value="eplerenone 25 MG" />
+                  </concept>
+                  <concept>
+                     <code value="353387" />
+                     <display value="eplerenone 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="353388" />
+                     <display value="eplerenone 100 MG" />
+                  </concept>
+                  <concept>
+                     <code value="378726" />
+                     <display value="eplerenone Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1161909" />
+                     <display value="eplerenone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1161910" />
+                     <display value="eplerenone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1173417" />
+                     <display value="Inspra Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1173418" />
+                     <display value="Inspra Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-eplerenone" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone" />
+            <id value="valueset-spironolactone" />
+            <version value="US 1.1" />
+            <name value="valueset-spironolactone" />
+            <title value="Spironolactone Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-07-02" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for spironolactone." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="02-Jul-2018" />
+                  <concept>
+                     <code value="1943340" />
+                     <display value="Carospir" />
+                  </concept>
+                  <concept>
+                     <code value="151317" />
+                     <display value="Aldactone" />
+                  </concept>
+                  <concept>
+                     <code value="17276" />
+                     <display value="Aldactazide" />
+                  </concept>
+                  <concept>
+                     <code value="9997" />
+                     <display value="Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="1008908" />
+                     <display value="althiazide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="1008922" />
+                     <display value="Bendroflumethiazide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="151194" />
+                     <display value="Hydroflumethiazide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="324042" />
+                     <display value="Hydrochlorothiazide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="392462" />
+                     <display value="Furosemide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="814684" />
+                     <display value="buthiazide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="1943345" />
+                     <display value="Spironolactone 5 MG/ML Oral Suspension [Carospir]" />
+                  </concept>
+                  <concept>
+                     <code value="200817" />
+                     <display value="Spironolactone 50 MG Oral Tablet [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="200820" />
+                     <display value="Spironolactone 25 MG Oral Tablet [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="200825" />
+                     <display value="Spironolactone 100 MG Oral Tablet [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="208112" />
+                     <display value="Hydrochlorothiazide 25 MG / Spironolactone 25 MG Oral Tablet [Aldactazide]" />
+                  </concept>
+                  <concept>
+                     <code value="208116" />
+                     <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG Oral Tablet [Aldactazide]" />
+                  </concept>
+                  <concept>
+                     <code value="1943341" />
+                     <display value="Spironolactone 5 MG/ML [Carospir]" />
+                  </concept>
+                  <concept>
+                     <code value="565465" />
+                     <display value="Spironolactone 50 MG [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="565468" />
+                     <display value="Spironolactone 25 MG [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="565473" />
+                     <display value="Spironolactone 100 MG [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="568840" />
+                     <display value="Hydrochlorothiazide 25 MG / Spironolactone 25 MG [Aldactazide]" />
+                  </concept>
+                  <concept>
+                     <code value="568844" />
+                     <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG [Aldactazide]" />
+                  </concept>
+                  <concept>
+                     <code value="1943342" />
+                     <display value="Spironolactone Oral Suspension [Carospir]" />
+                  </concept>
+                  <concept>
+                     <code value="368071" />
+                     <display value="Spironolactone Oral Tablet [Aldactone]" />
+                  </concept>
+                  <concept>
+                     <code value="369279" />
+                     <display value="Hydrochlorothiazide / Spironolactone Oral Tablet [Aldactazide]" />
+                  </concept>
+                  <concept>
+                     <code value="198222" />
+                     <display value="Spironolactone 100 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="198224" />
+                     <display value="Hydrochlorothiazide 25 MG / Spironolactone 25 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="250376" />
+                     <display value="Hydroflumethiazide 25 MG / Spironolactone 25 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="313096" />
+                     <display value="Spironolactone 25 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="198223" />
+                     <display value="Spironolactone 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="198225" />
+                     <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="246399" />
+                     <display value="Furosemide 20 MG / Spironolactone 50 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="250377" />
+                     <display value="Hydroflumethiazide 50 MG / Spironolactone 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="104230" />
+                     <display value="Spironolactone 1 MG/ML Oral Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="104231" />
+                     <display value="Spironolactone 2 MG/ML Oral Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="104232" />
+                     <display value="Spironolactone 5 MG/ML Oral Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="104233" />
+                     <display value="Spironolactone 10 MG/ML Oral Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="316727" />
+                     <display value="Spironolactone 100 MG" />
+                  </concept>
+                  <concept>
+                     <code value="316728" />
+                     <display value="Spironolactone 25 MG" />
+                  </concept>
+                  <concept>
+                     <code value="317508" />
+                     <display value="Spironolactone 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="360518" />
+                     <display value="Spironolactone 1 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="360519" />
+                     <display value="Spironolactone 2 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="360520" />
+                     <display value="Spironolactone 5 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="360521" />
+                     <display value="Spironolactone 10 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="370639" />
+                     <display value="Hydrochlorothiazide / Spironolactone Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="373944" />
+                     <display value="Furosemide / Spironolactone Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="373946" />
+                     <display value="Spironolactone Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="373948" />
+                     <display value="Hydroflumethiazide / Spironolactone Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="379251" />
+                     <display value="Spironolactone Oral Suspension" />
+                  </concept>
+                  <concept>
+                     <code value="1161121" />
+                     <display value="Spironolactone Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1161122" />
+                     <display value="Spironolactone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1161123" />
+                     <display value="Spironolactone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1162146" />
+                     <display value="Hydrochlorothiazide / Spironolactone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162147" />
+                     <display value="Hydrochlorothiazide / Spironolactone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1162708" />
+                     <display value="Furosemide / Spironolactone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162709" />
+                     <display value="Furosemide / Spironolactone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1164019" />
+                     <display value="Hydroflumethiazide / Spironolactone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1164020" />
+                     <display value="Hydroflumethiazide / Spironolactone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1943343" />
+                     <display value="Carospir Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1943344" />
+                     <display value="Carospir Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1174848" />
+                     <display value="Aldactone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1174849" />
+                     <display value="Aldactone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1174846" />
+                     <display value="Aldactazide Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1174847" />
+                     <display value="Aldactazide Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-spironolactone" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-AAS" />
+            <id value="valueset-AAS" />
+            <version value="US 1.1" />
+            <name value="valueset-AAS" />
+            <title value="Aldosterone Antagonists Drug Value Set" />
+            <status value="draft" />
+            <date value="2018-07-02" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet of ValueSets containing drug identifiers for each member in the       Established Pharmacologic Class (EPC) Aldosterone Antagonist drug class (id: N0000175557).       Member by RxNorm: getRelatedByType (BN,BPCK,GPCK,IN,MIN,PIN,SBD,SBDC,SBDF,SBDG,SCD,SCDC,SCDF,SCDG)" />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <purpose value="Provide Aldosterone Antagonist drug class terminology for PDDI CDS FHIR resources" />
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone" />
+               </include>
+               <include>
+                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone" />
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-AAS" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-potassium-LOINC" />
+            <id value="valueset-potassium-LOINC" />
+            <version value="Intl. 1.0" />
+            <name value="valueset-potassium-LOINC" />
+            <title value="LOINC Codes for Serum Potassium" />
+            <status value="draft" />
+            <date value="2018-08-03" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing serum potassium LOINC identifiers from the HEDIS Serum Potassium Value Set." />
+            <jurisdiction>
+               <coding>
+                  <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+                  <code value="001" />
+                  <display value="World" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://loinc.org" />
+                  <version value="2.64" />
+                  <concept>
+                     <code value="75940-7" />
+                     <display value="Potassium [Mass/​volume] in Blood" />
+                  </concept>
+                  <concept>
+                     <code value="12812-4 " />
+                     <display value=" Potassium [Moles/​volume] in Serum or Plasma --2nd specimen" />
+                  </concept>
+                  <concept>
+                     <code value="12813-2" />
+                     <display value="Potassium [Moles/​volume] in Serum or Plasma --3rd specimen" />
+                  </concept>
+                  <concept>
+                     <code value="22760-3" />
+                     <display value="Potassium [Mass/​volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="2823-3" />
+                     <display value="Potassium [Moles/​volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="2824-1" />
+                     <display value="Potassium [Moles/​volume] in Red Blood Cells" />
+                  </concept>
+                  <concept>
+                     <code value="29349-8" />
+                     <display value="Potassium [Moles/​volume] in Serum or Plasma --post dialysis" />
+                  </concept>
+                  <concept>
+                     <code value="32713-0" />
+                     <display value="Potassium [Moles/​volume] in Arterial blood" />
+                  </concept>
+                  <concept>
+                     <code value="39789-3" />
+                     <display value="Potassium [Moles/​volume] in Venous blood" />
+                  </concept>
+                  <concept>
+                     <code value="39790-1" />
+                     <display value="Potassium [Moles/​volume] in Capillary blood" />
+                  </concept>
+                  <concept>
+                     <code value="41656-0" />
+                     <display value="Potassium [Moles/​volume] in Mixed venous blood" />
+                  </concept>
+                  <concept>
+                     <code value="51618-7" />
+                     <display value="Potassium [Moles/​volume] in Serum or Plasma --pre dialysis" />
+                  </concept>
+                  <concept>
+                     <code value="6298-4" />
+                     <display value="Potassium [Moles/​volume] in Blood" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-potassium-LOINC" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-magnesium-LOINC" />
+            <id value="valueset-magnesium-LOINC" />
+            <version value="Intl. 1.0" />
+            <name value="valueset-magnesium-LOINC" />
+            <title value="LOINC Codes for Serum Potassium" />
+            <status value="draft" />
+            <date value="2018-08-03" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing serum magnesium LOINC identifiers from the Top 2000 Common Lab Results US." />
+            <jurisdiction>
+               <coding>
+                  <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+                  <code value="001" />
+                  <display value="World" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://loinc.org" />
+                  <version value="2.64" />
+                  <concept>
+                     <code value="19123-9" />
+                     <display value="Magnesium [Mass/volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="2597-3" />
+                     <display value="Magnesium [Moles/volume] in Red Blood Cells" />
+                  </concept>
+                  <concept>
+                     <code value="2601-3" />
+                     <display value="Magnesium [Moles/volume] in Serum or Plasma" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-magnesium-LOINC" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-calcium-LOINC" />
+            <id value="valueset-calcium-LOINC" />
+            <version value="Intl. 1.0" />
+            <name value="valueset-calcium-LOINC" />
+            <title value="LOINC Codes for Serum Calcium" />
+            <status value="draft" />
+            <date value="2018-08-03" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing serum calcium LOINC identifiers from the Top 2000 Common Lab Results US." />
+            <jurisdiction>
+               <coding>
+                  <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+                  <code value="001" />
+                  <display value="World" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://loinc.org" />
+                  <version value="2.64" />
+                  <concept>
+                     <code value="17864-0" />
+                     <display value="Calcium.ionized [Mass/​volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)" />
+                  </concept>
+                  <concept>
+                     <code value="17861-6" />
+                     <display value="Calcium [Mass/volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="1994-3" />
+                     <display value="Calcium.ionized [Moles/volume] in Blood" />
+                  </concept>
+                  <concept>
+                     <code value="1995-0" />
+                     <display value="Calcium.ionized [Moles/volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="29265-6" />
+                     <display value="Calcium [Moles/volume] corrected for albumin in Serum or Plasma" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-calcium-LOINC" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-renal-LOINC" />
+            <id value="valueset-renal-LOINC" />
+            <version value="Intl. 1.0" />
+            <name value="valueset-renal-LOINC" />
+            <title value="LOINC Codes for Renal Function" />
+            <status value="draft" />
+            <date value="2018-08-03" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing creatinine-based renal function LOINC identifiers from the Renal Function 2000 panel." />
+            <jurisdiction>
+               <coding>
+                  <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+                  <code value="001" />
+                  <display value="World" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://loinc.org" />
+                  <version value="2.64" />
+                  <concept>
+                     <code value="2160-0" />
+                     <display value="Creatinine [Mass/​volume] in Serum or Plasma" />
+                  </concept>
+                  <concept>
+                     <code value="33914-3" />
+                     <display value="Glomerular filtration rate/​1.73 sq M.predicted [Volume Rate/​Area] in Serum or Plasma by Creatinine-based formula (MDRD)" />
+                  </concept>
+                  <concept>
+                     <code value="50044-7" />
+                     <display value="Glomerular filtration rate/​1.73 sq M predicted among females [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" />
+                  </concept>
+                  <concept>
+                     <code value="48642-3" />
+                     <display value="Glomerular filtration rate/​1.73 sq M predicted among non-blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" />
+                  </concept>
+                  <concept>
+                     <code value="48643-1" />
+                     <display value="Glomerular filtration rate/​1.73 sq M predicted among blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-renal-LOINC" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bumetanide" />
+            <id value="valueset-bumetanide" />
+            <version value="US 1.0" />
+            <name value="valueset-bumetanide" />
+            <title value="Bumetanide Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-08-06" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for bumetanide." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="06-Aug-2018" />
+                  <concept>
+                     <code value="203538" />
+                     <display value="Bumex" />
+                  </concept>
+                  <concept>
+                     <code value="1808" />
+                     <display value="Bumetanide" />
+                  </concept>
+                  <concept>
+                     <code value="392534" />
+                     <display value="Bumetanide / Potassium" />
+                  </concept>
+                  <concept>
+                     <code value="645371" />
+                     <display value="Amiloride / Bumetanide" />
+                  </concept>
+                  <concept>
+                     <code value="816562" />
+                     <display value="Bumetanide / Potassium Chloride" />
+                  </concept>
+                  <concept>
+                     <code value="205488" />
+                     <display value="Bumetanide 0.5 MG Oral Tablet [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="205489" />
+                     <display value="Bumetanide 1 MG Oral Tablet [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="205490" />
+                     <display value="Bumetanide 2 MG Oral Tablet [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="566394" />
+                     <display value="Bumetanide 0.5 MG [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="566395" />
+                     <display value="Bumetanide 1 MG [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="566396" />
+                     <display value="Bumetanide 2 MG [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="369375" />
+                     <display value="Bumetanide Oral Tablet [Bumex]" />
+                  </concept>
+                  <concept>
+                     <code value="104263" />
+                     <display value="Bumetanide 0.5 MG / Potassium 7.7 MMOL Extended Release Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="197417" />
+                     <display value="Bumetanide 0.5 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="197418" />
+                     <display value="Bumetanide 1 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="197419" />
+                     <display value="Bumetanide 2 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="282486" />
+                     <display value="Bumetanide 0.25 MG/ML Injectable Solution" />
+                  </concept>
+                  <concept>
+                     <code value="977951" />
+                     <display value="Amiloride Hydrochloride 5 MG / Bumetanide 1 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1727569" />
+                     <display value="4 ML Bumetanide 0.25 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1727572" />
+                     <display value="2 ML Bumetanide 0.25 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="104222" />
+                     <display value="Bumetanide 5 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="250660" />
+                     <display value="Bumetanide 0.2 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="104223" />
+                     <display value="Bumetanide 0.5 MG/ML Injectable Solution" />
+                  </concept>
+                  <concept>
+                     <code value="315499" />
+                     <display value="Bumetanide 0.25 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="315500" />
+                     <display value="Bumetanide 0.5 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315501" />
+                     <display value="Bumetanide 1 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315502" />
+                     <display value="Bumetanide 2 MG" />
+                  </concept>
+                  <concept>
+                     <code value="332695" />
+                     <display value="Bumetanide 0.2 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="332696" />
+                     <display value="Bumetanide 5 MG" />
+                  </concept>
+                  <concept>
+                     <code value="360517" />
+                     <display value="Bumetanide 0.5 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="370850" />
+                     <display value="Amiloride / Bumetanide Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="371157" />
+                     <display value="Bumetanide Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="371158" />
+                     <display value="Bumetanide Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="374368" />
+                     <display value="Bumetanide Injectable Solution" />
+                  </concept>
+                  <concept>
+                     <code value="385501" />
+                     <display value="Bumetanide / Potassium Extended Release Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1727568" />
+                     <display value="Bumetanide Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1151345" />
+                     <display value="Bumetanide / Potassium Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151346" />
+                     <display value="Bumetanide / Potassium Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1151347" />
+                     <display value="Bumetanide Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151348" />
+                     <display value="Bumetanide Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151349" />
+                     <display value="Bumetanide Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151350" />
+                     <display value="Bumetanide Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1151594" />
+                     <display value="Amiloride / Bumetanide Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151595" />
+                     <display value="Amiloride / Bumetanide Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1168680" />
+                     <display value="Bumex Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1168681" />
+                     <display value="Bumex Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-bumetanide" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ethacrynate" />
+            <id value="valueset-ethacrynate" />
+            <version value="US 1.0" />
+            <name value="valueset-ethacrynate" />
+            <title value="Ethacrynate Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-08-06" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for ethacrynate." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="06-Aug-2018" />
+                  <concept>
+                     <code value="151689" />
+                     <display value="Edecrin" />
+                  </concept>
+                  <concept>
+                     <code value="62349" />
+                     <display value="Ethacrynate" />
+                  </concept>
+                  <concept>
+                     <code value="4108" />
+                     <display value="Ethacrynate Sodium" />
+                  </concept>
+                  <concept>
+                     <code value="4109" />
+                     <display value="Ethacrynic Acid" />
+                  </concept>
+                  <concept>
+                     <code value="211509" />
+                     <display value="Ethacrynate Sodium 50 MG Injection [Edecrin]" />
+                  </concept>
+                  <concept>
+                     <code value="1251905" />
+                     <display value="Ethacrynic Acid 25 MG Oral Tablet [Edecrin]" />
+                  </concept>
+                  <concept>
+                     <code value="1729080" />
+                     <display value="Ethacrynate Sodium 50 MG [Edecrin]" />
+                  </concept>
+                  <concept>
+                     <code value="1251904" />
+                     <display value="Ethacrynic Acid 25 MG [Edecrin]" />
+                  </concept>
+                  <concept>
+                     <code value="619260" />
+                     <display value="Ethacrynate Oral Tablet [Edecrin]" />
+                  </concept>
+                  <concept>
+                     <code value="1729081" />
+                     <display value="Ethacrynate Injection [Edecrin]" />
+                  </concept>
+                  <concept>
+                     <code value="617325" />
+                     <display value="Ethacrynate Sodium 50 MG Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1251903" />
+                     <display value="Ethacrynic Acid 25 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1251907" />
+                     <display value="Ethacrynic Acid 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1729077" />
+                     <display value="Ethacrynate Sodium 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="1251902" />
+                     <display value="Ethacrynic Acid 25 MG" />
+                  </concept>
+                  <concept>
+                     <code value="1251906" />
+                     <display value="Ethacrynic Acid 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="617327" />
+                     <display value="Ethacrynate Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1729078" />
+                     <display value="Ethacrynate Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1156815" />
+                     <display value="Ethacrynate Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1156816" />
+                     <display value="Ethacrynate Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1156817" />
+                     <display value="Ethacrynate Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1729082" />
+                     <display value="Edecrin Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1173193" />
+                     <display value="Edecrin Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1173194" />
+                     <display value="Edecrin Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-ethacrynate" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-furosemide" />
+            <id value="valueset-furosemide" />
+            <version value="US 1.0" />
+            <name value="valueset-furosemide" />
+            <title value="Furosemide Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-08-06" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for furosemide." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="06-Aug-2018" />
+                  <concept>
+                     <code value="1112198" />
+                     <display value="Disal" />
+                  </concept>
+                  <concept>
+                     <code value="202991" />
+                     <display value="Lasix" />
+                  </concept>
+                  <concept>
+                     <code value="545038" />
+                     <display value="Salix - substance" />
+                  </concept>
+                  <concept>
+                     <code value="1488532" />
+                     <display value="Furoquid" />
+                  </concept>
+                  <concept>
+                     <code value="4603" />
+                     <display value="Furosemide" />
+                  </concept>
+                  <concept>
+                     <code value="1008347" />
+                     <display value="Furosemide / Penbutolol" />
+                  </concept>
+                  <concept>
+                     <code value="1009094" />
+                     <display value="Amiloride / Furosemide / Indapamide" />
+                  </concept>
+                  <concept>
+                     <code value="392462" />
+                     <display value="Furosemide / Spironolactone" />
+                  </concept>
+                  <concept>
+                     <code value="392464" />
+                     <display value="Furosemide / Potassium" />
+                  </concept>
+                  <concept>
+                     <code value="392570" />
+                     <display value="Furosemide / Triamterene" />
+                  </concept>
+                  <concept>
+                     <code value="608054" />
+                     <display value="Furosemide / Potassium Chloride" />
+                  </concept>
+                  <concept>
+                     <code value="818351" />
+                     <display value="Amiloride / Furosemide" />
+                  </concept>
+                  <concept>
+                     <code value="1112201" />
+                     <display value="Furosemide 50 MG/ML Injectable Solution [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="1546054" />
+                     <display value="Furosemide 12.5 MG Oral Tablet [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="1546056" />
+                     <display value="Furosemide 50 MG Oral Tablet [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="200801" />
+                     <display value="Furosemide 20 MG Oral Tablet [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="200809" />
+                     <display value="Furosemide 40 MG Oral Tablet [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="205732" />
+                     <display value="Furosemide 80 MG Oral Tablet [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="545041" />
+                     <display value="Furosemide 50 MG/ML Injectable Solution [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="630035" />
+                     <display value="Furosemide 12.5 MG Oral Tablet [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="645036" />
+                     <display value="Furosemide 50 MG Oral Tablet [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="1488537" />
+                     <display value="Furosemide 10 MG/ML Oral Solution [Furoquid]" />
+                  </concept>
+                  <concept>
+                     <code value="1112199" />
+                     <display value="Furosemide 50 MG/ML [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="1546050" />
+                     <display value="Furosemide 12.5 MG [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="1546055" />
+                     <display value="Furosemide 50 MG [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="565450" />
+                     <display value="Furosemide 20 MG [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="565458" />
+                     <display value="Furosemide 40 MG [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="566621" />
+                     <display value="Furosemide 80 MG [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="545039" />
+                     <display value="Furosemide 50 MG/ML [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="630033" />
+                     <display value="Furosemide 12.5 MG [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="645035" />
+                     <display value="Furosemide 50 MG [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="1488533" />
+                     <display value="Furosemide 10 MG/ML [Furoquid]" />
+                  </concept>
+                  <concept>
+                     <code value="1112200" />
+                     <display value="Furosemide Injectable Solution [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="368487" />
+                     <display value="Furosemide Oral Tablet [Lasix]" />
+                  </concept>
+                  <concept>
+                     <code value="630034" />
+                     <display value="Furosemide Oral Tablet [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="545040" />
+                     <display value="Furosemide Injectable Solution [Salix - substance]" />
+                  </concept>
+                  <concept>
+                     <code value="1488534" />
+                     <display value="Furosemide Oral Solution [Furoquid]" />
+                  </concept>
+                  <concept>
+                     <code value="1546051" />
+                     <display value="Furosemide Oral Tablet [Disal]" />
+                  </concept>
+                  <concept>
+                     <code value="104265" />
+                     <display value="Furosemide 40 MG / Potassium 8 MMOL Extended Release Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="104266" />
+                     <display value="Furosemide 20 MG / Potassium 10 MMOL Extended Release Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="197731" />
+                     <display value="Furosemide 8 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="246399" />
+                     <display value="Furosemide 20 MG / Spironolactone 50 MG Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="250708" />
+                     <display value="Furosemide 40 MG / Triamterene 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="310429" />
+                     <display value="Furosemide 20 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="313988" />
+                     <display value="Furosemide 40 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="977945" />
+                     <display value="Amiloride Hydrochloride 2.5 MG / Furosemide 20 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="977959" />
+                     <display value="Amiloride Hydrochloride 5 MG / Furosemide 40 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="197730" />
+                     <display value="Furosemide 10 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="197732" />
+                     <display value="Furosemide 80 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="727574" />
+                     <display value="10 ML Furosemide 10 MG/ML Prefilled Syringe" />
+                  </concept>
+                  <concept>
+                     <code value="727575" />
+                     <display value="4 ML Furosemide 10 MG/ML Prefilled Syringe" />
+                  </concept>
+                  <concept>
+                     <code value="727845" />
+                     <display value="8 ML Furosemide 10 MG/ML Prefilled Syringe" />
+                  </concept>
+                  <concept>
+                     <code value="977890" />
+                     <display value="Amiloride Hydrochloride 10 MG / Furosemide 80 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1719286" />
+                     <display value="10 ML Furosemide 10 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1719290" />
+                     <display value="2 ML Furosemide 10 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1719291" />
+                     <display value="4 ML Furosemide 10 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="199610" />
+                     <display value="Furosemide 500 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="248657" />
+                     <display value="Furosemide 50 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="251308" />
+                     <display value="Furosemide 1 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="104220" />
+                     <display value="Furosemide 4 MG/ML Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="204154" />
+                     <display value="Furosemide 50 MG/ML Injectable Solution" />
+                  </concept>
+                  <concept>
+                     <code value="630032" />
+                     <display value="Furosemide 12.5 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="252484" />
+                     <display value="Furosemide 20 MG/ML Injectable Solution" />
+                  </concept>
+                  <concept>
+                     <code value="315970" />
+                     <display value="Furosemide 20 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315971" />
+                     <display value="Furosemide 40 MG" />
+                  </concept>
+                  <concept>
+                     <code value="315972" />
+                     <display value="Furosemide 8 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="317376" />
+                     <display value="Furosemide 10 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="317377" />
+                     <display value="Furosemide 80 MG" />
+                  </concept>
+                  <concept>
+                     <code value="331965" />
+                     <display value="Furosemide 500 MG" />
+                  </concept>
+                  <concept>
+                     <code value="334835" />
+                     <display value="Furosemide 50 MG" />
+                  </concept>
+                  <concept>
+                     <code value="336694" />
+                     <display value="Furosemide 1 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="360516" />
+                     <display value="Furosemide 4 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="361776" />
+                     <display value="Furosemide 50 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="630031" />
+                     <display value="Furosemide 12.5 MG" />
+                  </concept>
+                  <concept>
+                     <code value="331966" />
+                     <display value="Furosemide 20 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="370847" />
+                     <display value="Amiloride / Furosemide Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="372280" />
+                     <display value="Furosemide Oral Solution" />
+                  </concept>
+                  <concept>
+                     <code value="372281" />
+                     <display value="Furosemide Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="373944" />
+                     <display value="Furosemide / Spironolactone Oral Capsule" />
+                  </concept>
+                  <concept>
+                     <code value="374196" />
+                     <display value="Furosemide / Triamterene Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="385504" />
+                     <display value="Furosemide / Potassium Extended Release Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="727573" />
+                     <display value="Furosemide Prefilled Syringe" />
+                  </concept>
+                  <concept>
+                     <code value="95600" />
+                     <display value="Furosemide Injectable Solution" />
+                  </concept>
+                  <concept>
+                     <code value="1719285" />
+                     <display value="Furosemide Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1151600" />
+                     <display value="Amiloride / Furosemide Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1151601" />
+                     <display value="Amiloride / Furosemide Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1162706" />
+                     <display value="Furosemide / Potassium Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162707" />
+                     <display value="Furosemide / Potassium Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1162708" />
+                     <display value="Furosemide / Spironolactone Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162709" />
+                     <display value="Furosemide / Spironolactone Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1162710" />
+                     <display value="Furosemide / Triamterene Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162711" />
+                     <display value="Furosemide / Triamterene Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1162712" />
+                     <display value="Furosemide Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162713" />
+                     <display value="Furosemide Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162714" />
+                     <display value="Furosemide Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162715" />
+                     <display value="Furosemide Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1488535" />
+                     <display value="Furoquid Oral Liquid Product" />
+                  </concept>
+                  <concept>
+                     <code value="1488536" />
+                     <display value="Furoquid Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1546052" />
+                     <display value="Disal Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1546053" />
+                     <display value="Disal Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1172485" />
+                     <display value="Disal Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1175647" />
+                     <display value="Lasix Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1175648" />
+                     <display value="Lasix Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1185373" />
+                     <display value="Salix - substance Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1185374" />
+                     <display value="Salix - substance Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1185375" />
+                     <display value="Salix - substance Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-furosemide" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-torsemide" />
+            <id value="valueset-torsemide" />
+            <version value="US 1.0" />
+            <name value="valueset-torsemide" />
+            <title value="Torsemide Medications Value Set" />
+            <status value="draft" />
+            <date value="2018-08-06" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet containing drug identifiers for torsemide." />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+                  <version value="06-Aug-2018" />
+                  <concept>
+                     <code value="71974" />
+                     <display value="Demadex" />
+                  </concept>
+                  <concept>
+                     <code value="38413" />
+                     <display value="torsemide" />
+                  </concept>
+                  <concept>
+                     <code value="208076" />
+                     <display value="torsemide 10 MG Oral Tablet [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="208080" />
+                     <display value="torsemide 100 MG Oral Tablet [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="208081" />
+                     <display value="torsemide 20 MG Oral Tablet [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="208082" />
+                     <display value="torsemide 5 MG Oral Tablet [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="1729523" />
+                     <display value="2 ML torsemide 10 MG/ML Injection [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="1729528" />
+                     <display value="5 ML torsemide 10 MG/ML Injection [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="568804" />
+                     <display value="torsemide 10 MG [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="568808" />
+                     <display value="torsemide 100 MG [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="568809" />
+                     <display value="torsemide 20 MG [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="568810" />
+                     <display value="torsemide 5 MG [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="876420" />
+                     <display value="torsemide 10 MG/ML [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="369285" />
+                     <display value="torsemide Oral Tablet [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="1729522" />
+                     <display value="torsemide Injection [Demadex]" />
+                  </concept>
+                  <concept>
+                     <code value="198369" />
+                     <display value="torsemide 10 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="198370" />
+                     <display value="torsemide 100 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="198372" />
+                     <display value="torsemide 5 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1729521" />
+                     <display value="2 ML torsemide 10 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1729527" />
+                     <display value="5 ML torsemide 10 MG/ML Injection" />
+                  </concept>
+                  <concept>
+                     <code value="198371" />
+                     <display value="torsemide 20 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="250044" />
+                     <display value="torsemide 2.5 MG Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="316842" />
+                     <display value="torsemide 10 MG" />
+                  </concept>
+                  <concept>
+                     <code value="316843" />
+                     <display value="torsemide 10 MG/ML" />
+                  </concept>
+                  <concept>
+                     <code value="316844" />
+                     <display value="torsemide 100 MG" />
+                  </concept>
+                  <concept>
+                     <code value="316845" />
+                     <display value="torsemide 5 MG" />
+                  </concept>
+                  <concept>
+                     <code value="317521" />
+                     <display value="torsemide 20 MG" />
+                  </concept>
+                  <concept>
+                     <code value="335760" />
+                     <display value="torsemide 2.5 MG" />
+                  </concept>
+                  <concept>
+                     <code value="374168" />
+                     <display value="torsemide Oral Tablet" />
+                  </concept>
+                  <concept>
+                     <code value="1729520" />
+                     <display value="torsemide Injection" />
+                  </concept>
+                  <concept>
+                     <code value="1162751" />
+                     <display value="torsemide Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162752" />
+                     <display value="torsemide Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1162753" />
+                     <display value="torsemide Pill" />
+                  </concept>
+                  <concept>
+                     <code value="1172415" />
+                     <display value="Demadex Injectable Product" />
+                  </concept>
+                  <concept>
+                     <code value="1172416" />
+                     <display value="Demadex Oral Product" />
+                  </concept>
+                  <concept>
+                     <code value="1172417" />
+                     <display value="Demadex Pill" />
+                  </concept>
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-torsemide" />
+      </request>
+   </entry>
+   <entry>
+      <resource>
+         <ValueSet>
+            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-LOOPDIURETIC" />
+            <id value="valueset-LOOPDIURETIC" />
+            <version value="US 1.0" />
+            <name value="valueset-LOOPDIURETIC" />
+            <title value="Loop Diuretic Drug Value Set" />
+            <status value="draft" />
+            <date value="2018-08-06" />
+            <publisher value="PDDI CDS" />
+            <contact>
+               <name value="Richard Boyce boycerd@upmc.edu" />
+            </contact>
+            <description value="ValueSet of ValueSets containing drug identifiers for each member in the       Established Pharmacologic Class (EPC) Loop Diuretic drug class (id: N0000175590).       Member by RxNorm: getRelatedByType (BN,BPCK,GPCK,IN,MIN,PIN,SBD,SBDC,SBDF,SBDG,SCD,SCDC,SCDF,SCDG)" />
+            <jurisdiction>
+               <coding>
+                  <system value="urn:iso:std:iso:3166" />
+                  <code value="US" />
+                  <display value="United States of America" />
+               </coding>
+            </jurisdiction>
+            <purpose value="Provide Loop Diuretic drug class terminology for PDDI CDS FHIR resources" />
+            <copyright value="Attribution CC BY" />
+            <compose>
+               <include>
+                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bumetanide" />
+               </include>
+               <include>
+                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ethacrynate" />
+               </include>
+               <include>
+                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-furosemide" />
+               </include>
+               <include>
+                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-torsemide" />
+               </include>
+            </compose>
+         </ValueSet>
+      </resource>
+      <request>
+         <method value="PUT" />
+         <url value="http://localhost:8080/baseDstu3/ValueSet/valueset-LOOPDIURETIC" />
+      </request>
+   </entry>
+</Bundle>

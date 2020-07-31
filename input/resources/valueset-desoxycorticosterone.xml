@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-desoxycorticosterone"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-desoxycorticosterone"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_desoxycorticosterone"/>
+    <title value="Desoxycorticosterone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for desoxycorticosterone."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="584593"/>
+                <display value="Percorten V"/>
+            </concept>
+            <concept>
+                <code value="1789685"/>
+                <display value="Zycortal"/>
+            </concept>
+            <concept>
+                <code value="3256"/>
+                <display value="desoxycorticosterone"/>
+            </concept>
+            <concept>
+                <code value="22537"/>
+                <display value="desoxycorticosterone pivalate"/>
+            </concept>
+            <concept>
+                <code value="258333"/>
+                <display value="Desoxycorticosterone acetate"/>
+            </concept>
+            <concept>
+                <code value="584596"/>
+                <display value="desoxycorticosterone 25 MG/ML Injectable Suspension
+                    [Percorten V]"/>
+            </concept>
+            <concept>
+                <code value="1789689"/>
+                <display value="desoxycorticosterone pivalate 25 MG/ML Injectable Suspension [Zycortal]"/>
+            </concept>
+            <concept>
+                <code value="584594"/>
+                <display value="desoxycorticosterone 25 MG/ML [Percorten V]"/>
+            </concept>
+            <concept>
+                <code value="1789686"/>
+                <display value="desoxycorticosterone pivalate 25 MG/ML [Zycortal]"/>
+            </concept>
+            <concept>
+                <code value="584595"/>
+                <display value="desoxycorticosterone Injectable Suspension [Percorten V]"/>
+            </concept>
+            <concept>
+                <code value="1789687"/>
+                <display value="desoxycorticosterone Injectable Suspension [Zycortal]"/>
+            </concept>
+            <concept>
+                <code value="309675"/>
+                <display value="desoxycorticosterone 25 MG/ML Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1789684"/>
+                <display value="desoxycorticosterone pivalate 25 MG/ML Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="329676"/>
+                <display value="desoxycorticosterone 25 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="1789683"/>
+                <display value="desoxycorticosterone pivalate 25 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="371719"/>
+                <display value="desoxycorticosterone Injectable Suspension"/>
+            </concept>
+            <concept>
+                <code value="1152180"/>
+                <display value="desoxycorticosterone Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1789688"/>
+                <display value="Zycortal Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1185801"/>
+                <display value="Percorten V Injectable Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

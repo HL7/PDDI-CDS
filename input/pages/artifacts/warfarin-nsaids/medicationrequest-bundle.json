@@ -1,0 +1,218 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "r301",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Spironolactone 100 MG Oral Tablet",
+              "code": 198222
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f101"
+        },
+        "context": {
+          "reference": "Encounter/e101"
+        },
+        "effectiveDateTime": "2018-08-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "r101",
+        "status": "active",
+        "intent": "order",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medication-request-category",
+              "code": "outpatient"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "855350",
+              "display": "Warfarin Sodium 0.5 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f101"
+        },
+        "context": {
+          "reference": "Encounter/e101"
+        },
+        "authoredOn": "2018-08-02",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "doseQuantity": {
+              "value": 1.0,
+              "unit": "patch"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() - 4 months }, end: FHIR.dateTime { value: Today() + 3 months } }"
+              }
+            ]
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "d"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "r102",
+        "status": "active",
+        "intent": "order",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medication-request-category",
+              "code": "outpatient"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "351256",
+              "display": "eplerenone 25 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f101"
+        },
+        "context": {
+          "reference": "Encounter/e101"
+        },
+        "authoredOn": "2018-08-02",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "doseQuantity": {
+              "value": 1.0,
+              "unit": "patch"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() - 4 months }, end: FHIR.dateTime { value: Today() + 3 months } }"
+              }
+            ]
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "d"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "r103",
+        "status": "active",
+        "intent": "order",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medication-request-category",
+              "code": "outpatient"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197684",
+              "display": "Etodolac 200 MG Oral Capsule"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f101"
+        },
+        "context": {
+          "reference": "Encounter/e101"
+        },
+        "authoredOn": "2018-08-02",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "doseQuantity": {
+              "value": 1.0,
+              "unit": "patch"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() - 4 months }, end: FHIR.dateTime { value: Today() + 3 months } }"
+              }
+            ]
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "d"
+          }
+        }
+      }
+    }
+  ]
+}

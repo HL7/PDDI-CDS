@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-potassium-LOINC"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-potassium-LOINC"/>
+    <version value="Intl. 1.0"/>
+    <name value="Valueset_potassium_LOINC"/>
+    <title value="LOINC Codes for Serum Potassium"/>
+    <status value="draft"/>
+    <date value="2018-08-03"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing serum potassium LOINC identifiers from the HEDIS Serum Potassium Value Set."/>
+    <jurisdiction>
+        <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <version value="2.64"/>
+            <concept>
+                <code value="75940-7"/>
+                <display value="Potassium [Mass/​volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="12812-4"/>
+                <display value="Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"/>
+            </concept>
+            <concept>
+                <code value="12813-2"/>
+                <display value="Potassium [Moles/​volume] in Serum or Plasma --3rd specimen"/>
+            </concept>
+            <concept>
+                <code value="22760-3"/>
+                <display value="Potassium [Mass/​volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="2823-3"/>
+                <display value="Potassium [Moles/​volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="2824-1"/>
+                <display value="Potassium [Moles/​volume] in Red Blood Cells"/>
+            </concept>
+            <concept>
+                <code value="29349-8"/>
+                <display value="Potassium [Moles/​volume] in Serum or Plasma --post dialysis"/>
+            </concept>
+            <concept>
+                <code value="32713-0"/>
+                <display value="Potassium [Moles/​volume] in Arterial blood"/>
+            </concept>
+            <concept>
+                <code value="39789-3"/>
+                <display value="Potassium [Moles/​volume] in Venous blood"/>
+            </concept>
+            <concept>
+                <code value="39790-1"/>
+                <display value="Potassium [Moles/​volume] in Capillary blood"/>
+            </concept>
+            <concept>
+                <code value="41656-0"/>
+                <display value="Potassium [Moles/​volume] in Mixed venous blood"/>
+            </concept>
+            <concept>
+                <code value="51618-7"/>
+                <display value="Potassium [Moles/​volume] in Serum or Plasma --pre dialysis"/>
+            </concept>
+            <concept>
+                <code value="6298-4"/>
+                <display value="Potassium [Moles/​volume] in Blood"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

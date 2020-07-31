@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-digoxin-cyclosporine-potassium"/>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="22760-3"/>
+            <display value="Potassium [Mass/volume] in Serum or Plasma"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
+    </subject>
+    <issued value="2018-08-04T14:34:00+01:00"/>
+    <valueQuantity>
+        <value value="0.9"/>
+        <unit value="mmol/L"/>
+        <system value="http://snomed.info/sct"/>
+        <code value="258813002"/>
+    </valueQuantity>
+    <referenceRange>
+        <low>
+            <value value="3.5"/>
+        </low>
+        <high>
+            <value value="5.0"/>
+        </high>
+    </referenceRange>
+</Observation>

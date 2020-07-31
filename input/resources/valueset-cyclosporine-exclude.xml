@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-cyclosporine-exclude"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cyclosporine-exclude"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_cyclosporine_exclude"/>
+    <title value="Exclude cyclosporine Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Digoxin + Cyclosporine PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1093178"/>
+                <display value="Cyclosporine 0.002 MG/MG Ophthalmic Ointment [Optimmune]"/>
+            </concept>
+            <concept>
+                <code value="402092"/>
+                <display value="Cyclosporine 0.5 MG/ML Ophthalmic Suspension [Restasis]"/>
+            </concept>
+            <concept>
+                <code value="1093177"/>
+                <display value="Cyclosporine Ophthalmic Ointment [Optimmune]"/>
+            </concept>
+            <concept>
+                <code value="402330"/>
+                <display value="Cyclosporine Ophthalmic Suspension [Restasis]"/>
+            </concept>
+            <concept>
+                <code value="1093174"/>
+                <display value="Cyclosporine 0.002 MG/MG Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="351291"/>
+                <display value="Cyclosporine 0.5 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1093173"/>
+                <display value="Cyclosporine Ophthalmic Ointment"/>
+            </concept>
+            <concept>
+                <code value="378766"/>
+                <display value="Cyclosporine Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1156187"/>
+                <display value="Cyclosporine Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1182342"/>
+                <display value="Optimmune Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1182527"/>
+                <display value="Restasis Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

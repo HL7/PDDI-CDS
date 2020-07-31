@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-mefenamate"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-mefenamate"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_mefenamate"/>
+    <title value="Mefenamate Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for mefenamate."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="202494"/>
+                <display value="Ponstel"/>
+            </concept>
+            <concept>
+                <code value="257844"/>
+                <display value="Mefenamate"/>
+            </concept>
+            <concept>
+                <code value="6693"/>
+                <display value="Mefenamic Acid"/>
+            </concept>
+            <concept>
+                <code value="829502"/>
+                <display value="Mefenamic Acid 250 MG Oral Capsule [Ponstel]"/>
+            </concept>
+            <concept>
+                <code value="829501"/>
+                <display value="Mefenamic Acid 250 MG [Ponstel]"/>
+            </concept>
+            <concept>
+                <code value="632274"/>
+                <display value="Mefenamate Oral Capsule [Ponstel]"/>
+            </concept>
+            <concept>
+                <code value="829500"/>
+                <display value="Mefenamic Acid 250 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="829613"/>
+                <display value="Mefenamic Acid 500 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="829499"/>
+                <display value="Mefenamic Acid 250 MG"/>
+            </concept>
+            <concept>
+                <code value="829612"/>
+                <display value="Mefenamic Acid 500 MG"/>
+            </concept>
+            <concept>
+                <code value="618249"/>
+                <display value="Mefenamate Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="618388"/>
+                <display value="Mefenamate Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="1159197"/>
+                <display value="Mefenamate Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1159198"/>
+                <display value="Mefenamate Pill"/>
+            </concept>
+            <concept>
+                <code value="1184067"/>
+                <display value="Ponstel Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1184068"/>
+                <display value="Ponstel Pill"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

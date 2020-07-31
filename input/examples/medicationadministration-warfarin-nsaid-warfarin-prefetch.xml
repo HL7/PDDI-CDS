@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+    <id value="medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
+    <status value="completed"/>
+    <category>
+      <coding>
+	<system value="http://terminology.hl7.org/CodeSystem/medication-admin-category"/>
+        <code value="inpatient"/>
+      </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="855295"/>
+            <display value="Warfarin Sodium 10 MG"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
+    </subject>
+    <effectivePeriod>
+        <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
+            <valueExpression>
+              <language value="text/cql"/>
+              <expression value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
+		    </valueExpression>
+        </extension>
+    </effectivePeriod>
+    <dosage>
+        <text value="1 tablet"/>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="26643006"/>
+                <display value="Oral Route"/>
+            </coding>
+        </route>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="421521009"/>
+                <display value="Swallow"/>
+            </coding>
+        </method>
+        <dose>
+            <value value="1"/>
+            <unit value="TAB"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+            <code value="TAB"/>
+        </dose>
+    </dosage>
+</MedicationAdministration>

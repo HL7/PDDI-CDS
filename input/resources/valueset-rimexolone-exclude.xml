@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-rimexolone-exclude"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rimexolone-exclude"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_rimexolone_exclude"/>
+    <title value="Exclude Rimexolone Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="207446"/>
+                <display value="rimexolone 10 MG/ML Ophthalmic Suspension [Vexol]"/>
+            </concept>
+            <concept>
+                <code value="365826"/>
+                <display value="rimexolone Ophthalmic Suspension [Vexol]"/>
+            </concept>
+            <concept>
+                <code value="199115"/>
+                <display value="rimexolone 10 MG/ML Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="379299"/>
+                <display value="rimexolone Ophthalmic Suspension"/>
+            </concept>
+            <concept>
+                <code value="1157440"/>
+                <display value="rimexolone Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1188083"/>
+                <display value="Vexol Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

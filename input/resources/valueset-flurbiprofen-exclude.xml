@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-flurbiprofen-exclude"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-flurbiprofen-exclude"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_flurbiprofen_exclude"/>
+    <title value="Exclude Flurbiprofen Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers to exclude. Criteria is explicitly stating topical, gel, cream, ointment, otic, or ophthalmic formulations."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="1243587"/>
+                <display value="Flurbiprofen sodium 0.3 MG/ML Ophthalmic Solution [Ocufen]"/>
+            </concept>
+            <concept>
+                <code value="363680"/>
+                <display value="Flurbiprofen Ophthalmic Solution [Ocufen]"/>
+            </concept>
+            <concept>
+                <code value="1243585"/>
+                <display value="Flurbiprofen sodium 0.3 MG/ML Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="372246"/>
+                <display value="Flurbiprofen Ophthalmic Solution"/>
+            </concept>
+            <concept>
+                <code value="1161452"/>
+                <display value="Flurbiprofen Ophthalmic Product"/>
+            </concept>
+            <concept>
+                <code value="1180561"/>
+                <display value="Ocufen Ophthalmic Product"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

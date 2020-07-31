@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-digoxin"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_digoxin"/>
+    <title value="Digoxin Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-28"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for digoxin."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="202988"/>
+                <display value="Lanoxin"/>
+            </concept>
+            <concept>
+                <code value="261504"/>
+                <display value="Digitek"/>
+            </concept>
+            <concept>
+                <code value="1245368"/>
+                <display value="Digox"/>
+            </concept>
+            <concept>
+                <code value="3407"/>
+                <display value="Digoxin"/>
+            </concept>
+            <concept>
+                <code value="104206"/>
+                <display value="Digoxin 0.0625 MG Oral Tablet [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="208135"/>
+                <display value="1 ML Digoxin 0.1 MG/ML Injection [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="208137"/>
+                <display value="2 ML Digoxin 0.25 MG/ML Injection [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="309888"/>
+                <display value="Digoxin 0.125 MG Oral Tablet [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="309889"/>
+                <display value="Digoxin 0.25 MG Oral Tablet [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="1441567"/>
+                <display value="Digoxin 0.1875 MG Oral Tablet [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="260350"/>
+                <display value="Digoxin 0.125 MG Oral Tablet [Digitek]"/>
+            </concept>
+            <concept>
+                <code value="260351"/>
+                <display value="Digoxin 0.25 MG Oral Tablet [Digitek]"/>
+            </concept>
+            <concept>
+                <code value="1245373"/>
+                <display value="Digoxin 0.25 MG Oral Tablet [Digox]"/>
+            </concept>
+            <concept>
+                <code value="1245443"/>
+                <display value="Digoxin 0.125 MG Oral Tablet [Digox]"/>
+            </concept>
+            <concept>
+                <code value="563545"/>
+                <display value="Digoxin 0.0625 MG [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="568861"/>
+                <display value="Digoxin 0.1 MG/ML [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="568863"/>
+                <display value="Digoxin 0.25 MG/ML [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="575108"/>
+                <display value="Digoxin 0.125 MG [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="575109"/>
+                <display value="Digoxin 0.25 MG [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="1490916"/>
+                <display value="Digoxin 0.1875 MG [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="574141"/>
+                <display value="Digoxin 0.125 MG [Digitek]"/>
+            </concept>
+            <concept>
+                <code value="574142"/>
+                <display value="Digoxin 0.25 MG [Digitek]"/>
+            </concept>
+            <concept>
+                <code value="1245369"/>
+                <display value="Digoxin 0.25 MG [Digox]"/>
+            </concept>
+            <concept>
+                <code value="1245442"/>
+                <display value="Digoxin 0.125 MG [Digox]"/>
+            </concept>
+            <concept>
+                <code value="367682"/>
+                <display value="Digoxin Oral Tablet [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="368237"/>
+                <display value="Digoxin Oral Tablet [Digitek]"/>
+            </concept>
+            <concept>
+                <code value="1743560"/>
+                <display value="Digoxin Injection [Lanoxin]"/>
+            </concept>
+            <concept>
+                <code value="1245370"/>
+                <display value="Digoxin Oral Tablet [Digox]"/>
+            </concept>
+            <concept>
+                <code value="104208"/>
+                <display value="2 ML Digoxin 0.25 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="197604"/>
+                <display value="Digoxin 0.125 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="197605"/>
+                <display value="Digoxin 0.2 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="197606"/>
+                <display value="Digoxin 0.25 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="237165"/>
+                <display value="Digoxin 0.05 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="237166"/>
+                <display value="Digoxin 0.1 MG Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="393245"/>
+                <display value="Digoxin 0.05 MG/ML Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="204504"/>
+                <display value="1 ML Digoxin 0.1 MG/ML Injection"/>
+            </concept>
+            <concept>
+                <code value="245273"/>
+                <display value="Digoxin 0.0625 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1441565"/>
+                <display value="Digoxin 0.1875 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="315816"/>
+                <display value="Digoxin 0.05 MG"/>
+            </concept>
+            <concept>
+                <code value="315817"/>
+                <display value="Digoxin 0.05 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="315818"/>
+                <display value="Digoxin 0.1 MG"/>
+            </concept>
+            <concept>
+                <code value="315819"/>
+                <display value="Digoxin 0.125 MG"/>
+            </concept>
+            <concept>
+                <code value="315820"/>
+                <display value="Digoxin 0.2 MG"/>
+            </concept>
+            <concept>
+                <code value="315821"/>
+                <display value="Digoxin 0.25 MG"/>
+            </concept>
+            <concept>
+                <code value="315822"/>
+                <display value="Digoxin 0.25 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="317356"/>
+                <display value="Digoxin 0.1 MG/ML"/>
+            </concept>
+            <concept>
+                <code value="333033"/>
+                <display value="Digoxin 0.0625 MG"/>
+            </concept>
+            <concept>
+                <code value="1490914"/>
+                <display value="Digoxin 0.1875 MG"/>
+            </concept>
+            <concept>
+                <code value="371830"/>
+                <display value="Digoxin Oral Capsule"/>
+            </concept>
+            <concept>
+                <code value="371833"/>
+                <display value="Digoxin Oral Solution"/>
+            </concept>
+            <concept>
+                <code value="371834"/>
+                <display value="Digoxin Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1743558"/>
+                <display value="Digoxin Injection"/>
+            </concept>
+            <concept>
+                <code value="1151519"/>
+                <display value="Digoxin Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1151520"/>
+                <display value="Digoxin Oral Liquid Product"/>
+            </concept>
+            <concept>
+                <code value="1151521"/>
+                <display value="Digoxin Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1151522"/>
+                <display value="Digoxin Pill"/>
+            </concept>
+            <concept>
+                <code value="1168850"/>
+                <display value="Digitek Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1168851"/>
+                <display value="Digitek Pill"/>
+            </concept>
+            <concept>
+                <code value="1175613"/>
+                <display value="Lanoxin Injectable Product"/>
+            </concept>
+            <concept>
+                <code value="1175615"/>
+                <display value="Lanoxin Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1175618"/>
+                <display value="Lanoxin Pill"/>
+            </concept>
+            <concept>
+                <code value="1245371"/>
+                <display value="Digox Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1245372"/>
+                <display value="Digox Pill"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

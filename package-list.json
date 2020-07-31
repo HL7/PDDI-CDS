@@ -10,7 +10,7 @@
   "status" : "ci-build",
   "current" : true
  },{
-  "version" : "0.1.0",  
+  "version" : "0.2.0",
   "date" : "2018-09-01", 
   "desc" : "First ballot for comment",   
   "changes" : "link",

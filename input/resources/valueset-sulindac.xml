@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-sulindac"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-sulindac"/>
+    <version value="US 1.1"/>
+    <name value="Valueset_sulindac"/>
+    <title value="Sulindac Medications Value Set"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="ValueSet containing drug identifiers for sulindac."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Attribution CC BY"/>
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <version value="02-Jul-2018"/>
+            <concept>
+                <code value="10237"/>
+                <display value="Sulindac"/>
+            </concept>
+            <concept>
+                <code value="198238"/>
+                <display value="Sulindac 150 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="198239"/>
+                <display value="Sulindac 200 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="199279"/>
+                <display value="Sulindac 100 MG Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="316755"/>
+                <display value="Sulindac 150 MG"/>
+            </concept>
+            <concept>
+                <code value="316756"/>
+                <display value="Sulindac 200 MG"/>
+            </concept>
+            <concept>
+                <code value="333359"/>
+                <display value="Sulindac 100 MG"/>
+            </concept>
+            <concept>
+                <code value="374003"/>
+                <display value="Sulindac Oral Tablet"/>
+            </concept>
+            <concept>
+                <code value="1163018"/>
+                <display value="Sulindac Oral Product"/>
+            </concept>
+            <concept>
+                <code value="1163019"/>
+                <display value="Sulindac Pill"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

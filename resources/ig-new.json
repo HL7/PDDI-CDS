@@ -1,24 +1,25 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ig",
+  "id" : "uv-pddi-0.2.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/resources"
+    "valueString" : "C:\\Users\\Bryn\\Documents\\Src\\HL7\\Specifications\\PDDI-CDS\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/examples"
+    "valueString" : "C:\\Users\\Bryn\\Documents\\Src\\HL7\\Specifications\\PDDI-CDS\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/pages"
+    "valueString" : "C:\\Users\\Bryn\\Documents\\Src\\HL7\\Specifications\\PDDI-CDS\\pages"
   }],
-  "url" : "http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig",
-  "version" : "0.1.0",
-  "name" : "PDDI_CDS",
+  "url" : "http://hl7.org/fhir/uv/pddi/ImplementationGuide/uv-pddi-0.2.0",
+  "version" : "0.2.0",
+  "name" : "PDDI",
+  "title" : "Potential Drug-drug Interaction (PDDI) CDS IG",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2019-01-23T00:00:00-05:00",
+  "date" : "2019-01-23",
   "publisher" : "HL7 Clinical Decision Support Workgroup",
   "contact" : [{
     "name" : "HL7",
@@ -27,6 +28,7 @@
       "value" : "http://hl7.org/fhir"
     }]
   }],
+  "description" : "This implementation guide provides conformance requirements and guidance for the representation, distribution, and evaluation of potential drug-drug interactions.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -934,6 +936,10 @@
       }]
     },
     "parameter" : [{
+      "code" : "version-comparison",
+      "value" : "n/a"
+    },
+    {
       "code" : "apply",
       "value" : "jurisdiction"
     },

@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="uv-pddi-0.2.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/resources"/>
+    <valueString value="C:\Users\Bryn\Documents\Src\HL7\Specifications\PDDI-CDS\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/examples"/>
+    <valueString value="C:\Users\Bryn\Documents\Src\HL7\Specifications\PDDI-CDS\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/pages"/>
+    <valueString value="C:\Users\Bryn\Documents\Src\HL7\Specifications\PDDI-CDS\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/uv-pddi-0.2.0"/>
   <version value="0.2.0"/>

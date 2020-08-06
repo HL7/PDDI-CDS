@@ -12,12 +12,17 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      PDDI Version: {{ site.data.fhir.ig.version }} &reg;&copy;  {{site.data.info.copyrightyear}} <a style="color: #81BEF7" href="{{ site.data.fhir.path }}">FHIR Version: {{ site.data.fhir.version }}</a> generated on {{site.data.fhir.genDate}}. 
-     <!-- | <a style="color: #81BEF7" href="history.html">History</a> -->
-      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="{{site.data.fhir.path}}license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-        </span>
-        </p>
+      &copy; HL7.org {{site.data.info.copyrightyear}} (<a href="{{site.data.fhir.ig.contact[0].telecom[0]}}">{{site.data.fhir.ig.publisher}}</a>). {{site.data.fhir.packageId}}#{{site.data.fhir.igVer}} based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4">FHIR v4.0.1</a>. Generated <span title="{{site.data.fhir.genDate}}">{{site.data.fhir.genDate | date: "%Y-%m-%d"}}</span>.
+      <br/>
+      <span>
+      Links: <a style="color: #81BEF7" href="index.html">Home</a>
+      | <a href="qa.html">QA Report</a>
+      | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/pddi/history.html">Version History</a>
+      | <a style="color: #81BEF7" rel="license" href="{{ site.data.fhir.path }}license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+      | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change <img style="text-align: baseline" src="external.png"/></a>
+      </span>
+      <br/>
+    </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
  </div>  <!-- /segment-footer -->
@@ -43,7 +48,7 @@
 <!-- Analytics Below
 ================================================== -->
 
-<script>  
+<script>
 (function() {
   function strikethrough(){
     document.body.innerHTML = document.body.innerHTML.replace(/\~\~(.+?)\~\~/gim,'<del>$1</del>'

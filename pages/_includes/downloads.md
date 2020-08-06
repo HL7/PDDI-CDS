@@ -1,9 +1,11 @@
 # <span style="color:silver"> 11.0.0 </span>PDDI CDS – Downloads
 
-## Validator Pack
-The following file contains all needed files for this Implementation Guide
+## Full Implementation Guide
+{: #full-ig}
 
-<ul><li><a href="validator.pack">Validator Pack</a></li></ul>
+The following file contains the complete, downloadable implementation guide:
+
+- [Full IG](full-ig.zip)
 
 ## Definitions
 

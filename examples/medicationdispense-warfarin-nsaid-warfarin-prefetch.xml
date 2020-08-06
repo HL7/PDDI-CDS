@@ -5,7 +5,7 @@
     <category>
       <coding>
 	<system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"/>
-        <code value="outpatient"/>
+            <code value="outpatient"/>
       </coding>
     </category>
     <medicationCodeableConcept>
@@ -20,8 +20,8 @@
     </subject>
     <quantity>
         <value value="90"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="TAB"/>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1151133"/>
     </quantity>
     <daysSupply>
         <value value="90"/>
@@ -41,7 +41,8 @@
         <doseAndRate>
             <type>
               <coding>
-                <code value="calculated"/>
+                <system value="http://snomed.info/sct"/>
+<code value="258090004"/>
               </coding>
             </type>
 			<doseQuantity>

@@ -2,7 +2,8 @@
 <Encounter xmlns="http://hl7.org/fhir">
     <id value="encounter-digoxin-cyclosporine-prefetch"/>
     <status value="in-progress"/>
-    <class><code value="AMB"/></class>
+    <class><system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/></class>
     <period>
         <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
             <valueExpression>

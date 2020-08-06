@@ -32,10 +32,7 @@
                 <code value="1799318"/>
                 <display value="Fenortho"/>
             </concept>
-            <concept>
-                <code value="1945845"/>
-                <display value="Profeno"/>
-            </concept>
+
             <concept>
                 <code value="4331"/>
                 <display value="Fenoprofen"/>
@@ -61,10 +58,6 @@
                 <display value="Fenoprofen 200 MG Oral Capsule [Fenortho]"/>
             </concept>
             <concept>
-                <code value="1945850"/>
-                <display value="Fenoprofen 600 MG Oral Tablet [Profeno]"/>
-            </concept>
-            <concept>
                 <code value="574119"/>
                 <display value="Fenoprofen 200 MG [Nalfon]"/>
             </concept>
@@ -80,10 +73,7 @@
                 <code value="1799324"/>
                 <display value="Fenoprofen 200 MG [Fenortho]"/>
             </concept>
-            <concept>
-                <code value="1945846"/>
-                <display value="Fenoprofen 600 MG [Profeno]"/>
-            </concept>
+
             <concept>
                 <code value="366226"/>
                 <display value="Fenoprofen Oral Capsule [Nalfon]"/>
@@ -92,10 +82,7 @@
                 <code value="1799320"/>
                 <display value="Fenoprofen Oral Capsule [Fenortho]"/>
             </concept>
-            <concept>
-                <code value="1945847"/>
-                <display value="Fenoprofen Oral Tablet [Profeno]"/>
-            </concept>
+
             <concept>
                 <code value="197694"/>
                 <display value="Fenoprofen 200 MG Oral Capsule"/>
@@ -164,14 +151,7 @@
                 <code value="1178733"/>
                 <display value="Nalfon Pill"/>
             </concept>
-            <concept>
-                <code value="1945848"/>
-                <display value="Profeno Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1945849"/>
-                <display value="Profeno Pill"/>
-            </concept>
+
         </include>
     </compose>
 </ValueSet>

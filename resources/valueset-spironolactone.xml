@@ -24,10 +24,7 @@
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
-            <concept>
-                <code value="1943340"/>
-                <display value="Carospir"/>
-            </concept>
+
             <concept>
                 <code value="151317"/>
                 <display value="Aldactone"/>
@@ -64,10 +61,7 @@
                 <code value="814684"/>
                 <display value="buthiazide / Spironolactone"/>
             </concept>
-            <concept>
-                <code value="1943345"/>
-                <display value="Spironolactone 5 MG/ML Oral Suspension [Carospir]"/>
-            </concept>
+
             <concept>
                 <code value="200817"/>
                 <display value="Spironolactone 50 MG Oral Tablet [Aldactone]"/>
@@ -88,10 +82,7 @@
                 <code value="208116"/>
                 <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG Oral Tablet [Aldactazide]"/>
             </concept>
-            <concept>
-                <code value="1943341"/>
-                <display value="Spironolactone 5 MG/ML [Carospir]"/>
-            </concept>
+
             <concept>
                 <code value="565465"/>
                 <display value="Spironolactone 50 MG [Aldactone]"/>
@@ -112,10 +103,7 @@
                 <code value="568844"/>
                 <display value="Hydrochlorothiazide 50 MG / Spironolactone 50 MG [Aldactazide]"/>
             </concept>
-            <concept>
-                <code value="1943342"/>
-                <display value="Spironolactone Oral Suspension [Carospir]"/>
-            </concept>
+
             <concept>
                 <code value="368071"/>
                 <display value="Spironolactone Oral Tablet [Aldactone]"/>
@@ -256,14 +244,7 @@
                 <code value="1164020"/>
                 <display value="Hydroflumethiazide / Spironolactone Pill"/>
             </concept>
-            <concept>
-                <code value="1943343"/>
-                <display value="Carospir Oral Liquid Product"/>
-            </concept>
-            <concept>
-                <code value="1943344"/>
-                <display value="Carospir Oral Product"/>
-            </concept>
+
             <concept>
                 <code value="1174848"/>
                 <display value="Aldactone Oral Product"/>

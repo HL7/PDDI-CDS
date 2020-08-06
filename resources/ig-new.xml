@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ig"/>
+  <id value="uv-pddi-0.2.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/resources"/>
   </extension>
@@ -11,12 +11,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/maxsibilla/Documents/Dev/HL7/PDDI-CDS/pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig"/>
-  <version value="0.1.0"/>
-  <name value="PDDI_CDS"/>
+  <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/uv-pddi-0.2.0"/>
+  <version value="0.2.0"/>
+  <name value="PDDI"/>
+  <title value="Potential Drug-drug Interaction (PDDI) CDS IG"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2019-01-23T00:00:00-05:00"/>
+  <date value="2019-01-23"/>
   <publisher value="HL7 Clinical Decision Support Workgroup"/>
   <contact>
     <name value="HL7"/>
@@ -25,6 +26,7 @@
       <value value="http://hl7.org/fhir"/>
     </telecom>
   </contact>
+  <description value="This implementation guide provides conformance requirements and guidance for the representation, distribution, and evaluation of potential drug-drug interactions."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -931,6 +933,10 @@
         <generation value="html"/>
       </page>
     </page>
+    <parameter>
+      <code value="version-comparison"/>
+      <value value="n/a"/>
+    </parameter>
     <parameter>
       <code value="apply"/>
       <value value="jurisdiction"/>

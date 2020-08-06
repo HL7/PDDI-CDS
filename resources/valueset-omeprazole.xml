@@ -256,10 +256,7 @@
                 <code value="1811913"/>
                 <display value="Aspirin / Omeprazole Delayed Release Oral Tablet [Yosprala]"/>
             </concept>
-            <concept>
-                <code value="2003656"/>
-                <display value="Omeprazole 20 MG Disintegrating Oral Tablet"/>
-            </concept>
+
             <concept>
                 <code value="198051"/>
                 <display value="Omeprazole 20 MG Delayed Release Oral Capsule"/>
@@ -376,10 +373,7 @@
                 <code value="1855326"/>
                 <display value="Omeprazole 2.5 MG"/>
             </concept>
-            <concept>
-                <code value="2003655"/>
-                <display value="Omeprazole Disintegrating Oral Tablet"/>
-            </concept>
+
             <concept>
                 <code value="375193"/>
                 <display value="Omeprazole Injectable Solution"/>
@@ -425,10 +419,7 @@
                 <code value="1855340"/>
                 <display value="Omeprazole / Sodium Bicarbonate Powder for Oral Suspension"/>
             </concept>
-            <concept>
-                <code value="2003654"/>
-                <display value="Omeprazole Disintegrating Oral Product"/>
-            </concept>
+
             <concept>
                 <code value="1157482"/>
                 <display value="Magnesium Hydroxide / Omeprazole / Sodium Bicarbonate Oral Product"/>

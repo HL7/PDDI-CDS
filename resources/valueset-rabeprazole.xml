@@ -61,10 +61,6 @@
                 <display value="Rabeprazole sodium 5 MG [Aciphex]"/>
             </concept>
             <concept>
-                <code value="1944641"/>
-                <display value="rabeprazole Oral Granules [Aciphex]"/>
-            </concept>
-            <concept>
                 <code value="854869"/>
                 <display value="rabeprazole Delayed Release Oral Tablet [Aciphex]"/>
             </concept>
@@ -96,18 +92,12 @@
                 <code value="1437487"/>
                 <display value="Rabeprazole sodium 5 MG"/>
             </concept>
-            <concept>
-                <code value="1944639"/>
-                <display value="rabeprazole Oral Granules"/>
-            </concept>
+
             <concept>
                 <code value="375256"/>
                 <display value="rabeprazole Delayed Release Oral Tablet"/>
             </concept>
-            <concept>
-                <code value="1944638"/>
-                <display value="rabeprazole Granule Product"/>
-            </concept>
+
             <concept>
                 <code value="1157892"/>
                 <display value="rabeprazole Oral Product"/>
@@ -116,10 +106,7 @@
                 <code value="1157893"/>
                 <display value="rabeprazole Pill"/>
             </concept>
-            <concept>
-                <code value="1944642"/>
-                <display value="Aciphex Granule Product"/>
-            </concept>
+
             <concept>
                 <code value="1168435"/>
                 <display value="Aciphex Oral Product"/>

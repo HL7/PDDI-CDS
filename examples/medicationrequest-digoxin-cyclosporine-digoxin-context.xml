@@ -5,6 +5,7 @@
     <intent value="order"/>
     <category>
         <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
             <code value="outpatient"/>
         </coding>
     </category>
@@ -30,7 +31,8 @@
         <doseAndRate>
             <type>
               <coding>
-                <code value="calculated"/>
+                <system value="http://snomed.info/sct"/>
+<code value="258090004"/>
               </coding>
             </type>
 			<doseQuantity>

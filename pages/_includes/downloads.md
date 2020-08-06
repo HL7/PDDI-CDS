@@ -1,9 +1,5 @@
 # <span style="color:silver"> 11.0.0 </span>PDDI CDS – Downloads
 
-## Validator Pack
-The following file contains all needed files for this Implementation Guide
-
-<ul><li><a href="validator.pack">Validator Pack</a></li></ul>
 
 ## Definitions
 

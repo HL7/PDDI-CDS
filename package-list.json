@@ -1,7 +1,7 @@
 {
  "package-id" : "hl7.fhir.uv.pddi",
- "title" : "Potential Drug-Drug Interaction (PDDI) Clinical Decision Support (CDS) (FHIR IG)", 
- "canonical" : "http://hl7.org/fhir/uv/pddi", 
+ "title" : "Potential Drug-Drug Interaction (PDDI) Clinical Decision Support (CDS) (FHIR IG)",
+ "canonical" : "http://hl7.org/fhir/uv/pddi",
  "introduction" : "This implementation guide is targeted at drug-drug interaction CDS implementers who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record.",
  "list" : [{
   "version" : "current",
@@ -9,14 +9,24 @@
   "path" : "http://build.fhir.org/ig/HL7/PDDI-CDS",
   "status" : "ci-build",
   "current" : true
- },{
-  "version" : "0.1.0",  
-  "date" : "2018-09-01", 
-  "desc" : "First ballot for comment",   
-  "changes" : "link",
-  "path" : "http://hl7.org/fhir/uv/pddi/2018Sep/",   
-  "status" : "draft",   
-  "fhirversion" : "4.0.1",
-  "sequence" : "1"
+ },
+ {
+   "version": "0.2.0",
+   "date": "TBD",
+   "desc": "Release 0.2.0 STU1 Ballot 2",
+   "descmd": "#### Substantive\r\n* Introduced a new method for coordinating order-select and order-sign hooks to avoid duplicate card responses that no longer uses  DetectedIssue in the CDS Service response. [FHIR-18804](https:\/\/jira.hl7.org\/browse\/FHIR-18804)\r\n* Brief description of the relationship between of the CDS Hooks Feedback Endpoint and how a PDDI CDS Service would conduct duplicate card filtering.\r\n* Made conformance criteria more visible [FHIR-18078](https:\/\/jira.hl7.org\/browse\/FHIR-18078)\r\n\r\n#### Non-substantive\r\n* Fixed bad links [FHIR-18805](https:\/\/jira.hl7.org\/browse\/FHIR-18805), [FHIR-18806](https:\/\/jira.hl7.org\/browse\/FHIR-18806), [FHIR-18807](https:\/\/jira.hl7.org\/browse\/FHIR-18807)\r\n* Editorial changes to ensure consistency, correct references, and better navigation  [FHIR-18073](https:\/\/jira.hl7.org\/browse\/FHIR-18073), [FHIR-18074](https:\/\/jira.hl7.org\/browse\/FHIR-18057), [FHIR-18074](https:\/\/jira.hl7.org\/browse\/FHIR-18074), [FHIR-18056](https:\/\/jira.hl7.org\/browse\/FHIR-18056)",
+   "path": "http://hl7.org/fhir/uv/pddi/2020Sep",
+   "status": "ballot",
+   "sequence": "STU 1",
+   "fhirversion": "4.0.1"
+ },
+ {
+  "version" : "0.1.0",
+  "date" : "2018-09-01",
+  "desc" : "Release 0.1.0 STU1 Ballot 1",
+  "path" : "http://hl7.org/fhir/uv/pddi/2018Sep/",
+  "status" : "ballot",
+  "sequence" : "STU 1",
+  "fhirversion" : "3.5.0"
  }]
 }

@@ -6,9 +6,13 @@ Commits to this repository will automatically trigger a build which is pushed to
 
 http://build.fhir.org/ig/HL7/PDDI-CDS/index.html
 
+## Balloted version Fall 2020
+
+http://hl7.org/fhir/uv/pddi/2020SEP/index.html
+
 ### Project Wiki Page ###
 
-http://wiki.hl7.org/index.php?title=PDDI_CDS
+https://confluence.hl7.org/display/CDS/PDDI+CDS
 
 ### Who do I talk to? ###
 

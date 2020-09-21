@@ -41,7 +41,7 @@ This section contains documentation on how to implement PDDI CDS artifacts from 
 ### <span style="color:silver"> 3.1.1 </span> Getting Started with PDDI CDS
 {:.no_toc}
 
-The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in RFCs to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
+The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
 
 
 ### <span style="color:silver"> 3.1.2 </span> What You Will Need
@@ -89,7 +89,7 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 ### <span style="color:silver"> 3.1.4 </span> CPOE Workflow Hooks 
 {:.no_toc}
 
-Figure 1 depicts hook triggers for a medication prescribing example. The implementation follows the [CDS Hooks `order-select`](https://cds-hooks.org/hooks/order-select/) and [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specifications that define trigger events when a clinician enters a medication and is ready to sign one or more medication orders for a patient. The `order-select` hook defines the initial trigger at the start of the CPOE workflow. The `order-sign` hook is among the last workflow events before an order is promoted out of a draft status. From a clinical and technical perspective, triggering the CDS service at two events in the workflow sets PDDI CDS apart from most conventional CDS systems that trigger CDS at the time of order signing. By moving CDS triggers earlier in the order entry workflow (i.e., `order-select`), clinicians will have actionable information in the middle of their decision making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective CDS.
+Figure 1 depicts hook triggers for a medication prescribing example. The implementation follows the [CDS Hooks `order-select`](https://cds-hooks.org/hooks/order-select/) and [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specifications that define trigger events when a clinician enters a medication and is ready to sign one or more medication orders for a patient. The `order-select` hook defines the initial trigger at the start of the CPOE workflow. The `order-sign` hook is among the last workflow events before an order is promoted out of a draft status. From a clinical and technical perspective, triggering the CDS service at two events in the workflow sets PDDI CDS apart from most conventional CDS systems that trigger CDS at the time of order signing. By moving CDS triggers earlier in the order entry workflow (i.e., `order-select`), clinicians will have actionable information in the middle of their decision-making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective CDS.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 1: Workflow and CDS Hooks for medication prescription </strong></figcaption>
@@ -1442,7 +1442,7 @@ The Digoxin + Cyclosporine exemplar artifact has two main decision blocks:
 ### <span style="color:silver"> 3.6.2 </span> CDS Hooks Request
 {:.no_toc}
 
-The `order-sign` request includes `context` and `prefetch` elements with FHIR resource attributes or entire resources. The contents of these elements for the Digoxing + Cyclosporine CDS artifact are shown below.
+The `order-sign` request includes `context` and `prefetch` elements with FHIR resource attributes or entire resources. The contents of these elements for the Digoxin + Cyclosporine CDS artifact are shown below.
 
 ##### Context
 {:.no_toc}

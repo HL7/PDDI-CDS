@@ -47,9 +47,11 @@ Thumbs.db
 
 # FHIR IG Publisher local build directories #
 #############################################
-
+publisher.jar
 qa
 temp
+template
+input-cache
 output
 archive
 sandbox

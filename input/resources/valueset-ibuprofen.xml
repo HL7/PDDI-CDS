@@ -145,14 +145,6 @@
                 <display value="Samson 8"/>
             </concept>
             <concept>
-                <code value="2045472"/>
-                <display value="Dragon Tabs"/>
-            </concept>
-            <concept>
-                <code value="1940582"/>
-                <display value="Wal-Profen Congestion Relief and Pain"/>
-            </concept>
-            <concept>
                 <code value="851212"/>
                 <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
                     Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
@@ -509,15 +501,7 @@
                 <code value="541713"/>
                 <display value="Ibuprofen 800 MG Oral Tablet [Samson 8]"/>
             </concept>
-            <concept>
-                <code value="2045477"/>
-                <display value="Ibuprofen 200 MG Oral Tablet [Dragon Tabs]"/>
-            </concept>
-            <concept>
-                <code value="1940587"/>
-                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral
-                    Tablet [Wal-Profen Congestion Relief and Pain]"/>
-            </concept>
+
             <concept>
                 <code value="1299088"/>
                 <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG
@@ -696,15 +680,8 @@
                 <code value="541711"/>
                 <display value="Ibuprofen 800 MG [Samson 8]"/>
             </concept>
-            <concept>
-                <code value="2045473"/>
-                <display value="Ibuprofen 200 MG [Dragon Tabs]"/>
-            </concept>
-            <concept>
-                <code value="1940583"/>
-                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG
-                    [Wal-Profen Congestion Relief and Pain]"/>
-            </concept>
+
+
             <concept>
                 <code value="1090449"/>
                 <display value="Ibuprofen / Pseudoephedrine Oral Tablet [Wal-Profen Cold and Sinus]"/>
@@ -863,15 +840,7 @@
                 <code value="541712"/>
                 <display value="Ibuprofen Oral Tablet [Samson 8]"/>
             </concept>
-            <concept>
-                <code value="2045474"/>
-                <display value="Ibuprofen Oral Tablet [Dragon Tabs]"/>
-            </concept>
-            <concept>
-                <code value="1940584"/>
-                <display value="Ibuprofen / Phenylephrine Oral Tablet [Wal-Profen Congestion
-                    Relief and Pain]"/>
-            </concept>
+
             <concept>
                 <code value="1100066"/>
                 <display value="Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet"/>
@@ -1495,14 +1464,6 @@
                 <display value="Proprinal Pill"/>
             </concept>
             <concept>
-                <code value="2045475"/>
-                <display value="Dragon Tabs Oral Product"/>
-            </concept>
-            <concept>
-                <code value="2045476"/>
-                <display value="Dragon Tabs Pill"/>
-            </concept>
-            <concept>
                 <code value="1166407"/>
                 <display value="Duexis Oral Product"/>
             </concept>
@@ -1573,14 +1534,6 @@
             <concept>
                 <code value="1187793"/>
                 <display value="Wal-Profen Cold and Sinus Pill"/>
-            </concept>
-            <concept>
-                <code value="1940585"/>
-                <display value="Wal-Profen Congestion Relief and Pain Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1940586"/>
-                <display value="Wal-Profen Congestion Relief and Pain Pill"/>
             </concept>
             <concept>
                 <code value="1296120"/>

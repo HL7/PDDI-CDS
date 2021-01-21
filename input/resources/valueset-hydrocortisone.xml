@@ -25,14 +25,6 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <code value="1987140"/>
-                <display value="Cortizone"/>
-            </concept>
-            <concept>
-                <code value="2003646"/>
-                <display value="Malacetic"/>
-            </concept>
-            <concept>
                 <code value="1012324"/>
                 <display value="Ana-Lex"/>
             </concept>
@@ -847,11 +839,7 @@
                 <code value="41277"/>
                 <display value="hydrocortisone aceponate"/>
             </concept>
-            <concept>
-                <code value="2003650"/>
-                <display value="Hydrocortisone 10 MG/ML / Ketoconazole 1.5 MG/ML Medicated
-                    Shampoo [Malacetic]"/>
-            </concept>
+
             <concept>
                 <code value="1012327"/>
                 <display value="hydrocortisone acetate 20 MG/ML / Lidocaine Hydrochloride 20
@@ -1502,26 +1490,7 @@
                 <code value="1291383"/>
                 <display value="hydrocortisone acetate 25 MG Rectal Suppository [Proctosol]"/>
             </concept>
-            <concept>
-                <code value="1987141"/>
-                <display value="Hydrocortisone 0.005 MG/MG [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987145"/>
-                <display value="Hydrocortisone 5 MG/ML [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987151"/>
-                <display value="Hydrocortisone 0.01 MG/MG [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987155"/>
-                <display value="Hydrocortisone 10 MG/ML [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="2003647"/>
-                <display value="Hydrocortisone 10 MG/ML / Ketoconazole 1.5 MG/ML [Malacetic]"/>
-            </concept>
+
             <concept>
                 <code value="1012325"/>
                 <display value="hydrocortisone acetate 20 MG/ML / Lidocaine Hydrochloride 20
@@ -2058,30 +2027,7 @@
                 <code value="1291381"/>
                 <display value="hydrocortisone acetate 25 MG [Proctosol]"/>
             </concept>
-            <concept>
-                <code value="1987146"/>
-                <display value="Hydrocortisone Topical Cream [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987157"/>
-                <display value="Hydrocortisone Topical Lotion [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987159"/>
-                <display value="Hydrocortisone Topical Solution [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987142"/>
-                <display value="Hydrocortisone Topical Ointment [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987152"/>
-                <display value="Hydrocortisone Topical Gel [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="2003648"/>
-                <display value="Hydrocortisone / Ketoconazole Medicated Shampoo [Malacetic]"/>
-            </concept>
+
             <concept>
                 <code value="1012326"/>
                 <display value="Hydrocortisone / Lidocaine Rectal Cream [Ana-Lex]"/>
@@ -2727,10 +2673,7 @@
                 <display value="hydrocortisone acetate 18.5 MG/ML / Pramoxine hydrochloride
                     11.5 MG/ML Topical Cream"/>
             </concept>
-            <concept>
-                <code value="2003645"/>
-                <display value="Hydrocortisone 10 MG/ML / Ketoconazole 1.5 MG/ML Medicated Shampoo"/>
-            </concept>
+
             <concept>
                 <code value="103403"/>
                 <display value="Hydrocortisone 10 MG/ML Topical Lotion"/>
@@ -2874,10 +2817,7 @@
                 <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
                     hydrochloride 10 MG/ML Otic Solution"/>
             </concept>
-            <concept>
-                <code value="1926571"/>
-                <display value="Hydrocortisone 10 MG/ML Medicated Shampoo"/>
-            </concept>
+
             <concept>
                 <code value="748294"/>
                 <display value="Hydrocortisone 10 MG/ML / Lidocaine 30 MG/ML Topical Cream"/>
@@ -3189,11 +3129,7 @@
                 <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
                     MG/ML Topical Spray"/>
             </concept>
-            <concept>
-                <code value="2044886"/>
-                <display value="hydrocortisone acetate 10 MG/ML / Lidocaine Hydrochloride 10
-                    MG/ML Topical Cream"/>
-            </concept>
+
             <concept>
                 <code value="1370746"/>
                 <display value="hydrocortisone probutate 1 MG/ML Topical Cream"/>
@@ -3525,10 +3461,7 @@
                 <code value="376468"/>
                 <display value="Chloramphenicol / Hydrocortisone Ophthalmic Ointment"/>
             </concept>
-            <concept>
-                <code value="2003644"/>
-                <display value="Hydrocortisone / Ketoconazole Medicated Shampoo"/>
-            </concept>
+
             <concept>
                 <code value="1039348"/>
                 <display value="Hydrocortisone Vaginal Cream"/>
@@ -3890,10 +3823,7 @@
                 <code value="1153044"/>
                 <display value="Chloramphenicol / Hydrocortisone Ophthalmic Product"/>
             </concept>
-            <concept>
-                <code value="2003643"/>
-                <display value="Hydrocortisone / Ketoconazole Shampoo Product"/>
-            </concept>
+
             <concept>
                 <code value="1152114"/>
                 <display value="Ciprofloxacin / Hydrocortisone Otic Product"/>
@@ -4135,10 +4065,7 @@
                 <code value="1870712"/>
                 <display value="Gentamicin / Hydrocortisone Otic Product"/>
             </concept>
-            <concept>
-                <code value="2003649"/>
-                <display value="Malacetic Shampoo Product"/>
-            </concept>
+
             <concept>
                 <code value="1170896"/>
                 <display value="Cipro HC Otic Product"/>
@@ -4251,10 +4178,7 @@
                 <code value="1182659"/>
                 <display value="Terra-Cortril Ophthalmic Product"/>
             </concept>
-            <concept>
-                <code value="1987143"/>
-                <display value="Cortizone Topical Product"/>
-            </concept>
+
             <concept>
                 <code value="1180028"/>
                 <display value="Proctocort Topical Product"/>

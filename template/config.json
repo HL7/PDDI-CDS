@@ -1,5 +1,4 @@
 {
-  "script": "scripts/ant.xml",
   "targets": {
     "onLoad": "onLoad",
     "onGenerate": "onGenerate"
@@ -42,12 +41,21 @@
       "relativePath": "_includes"
     },
     {
+      "folder": "fsh-generated/includes",
+      "relativePath": "_includes"
+    },
+    {
       "folder": "input/data",
       "relativePath": "_data"
     },
     {
       "folder": "input/resourcedocs",
       "relativePath": "_data"
+    },
+    {
+      "folder": "input/intro-notes",
+      "relativePath": "_includes",
+      "transform": "template/scripts/processPages.xslt"
     },
     {
       "folder": "input/pagecontent",
@@ -84,7 +92,7 @@
     "ImplementationGuide": {
       "template-base": "",
       "template-format": "",
-      "template-change-history":""
+      "template-change-history": ""
     },
     "StructureDefinition:extension": {
       "template-base": "template/layouts/layout-ext.html",
@@ -120,6 +128,7 @@
       "defns": "{{[type]}}-{{[id]}}-definitions.html",
       "mappings": "{{[type]}}-{{[id]}}-mappings.html",
       "examples": "{{[type]}}-{{[id]}}-examples.html",
+      "format": "{{[type]}}-{{[id]}}.profile.xml.html",
       "profile-xml": "{{[type]}}-{{[id]}}.profile.xml.html",
       "profile-json": "{{[type]}}-{{[id]}}.profile.json.html",
       "profile-ttl": "{{[type]}}-{{[id]}}.profile.ttl.html",
@@ -151,6 +160,6 @@
       "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html",
       "change-history": "{{[type]}}-{{[id]}}.change.history.html"
     }
-  }
+  },
+  "script": "scripts/ant-hl7.xml"
 }
-

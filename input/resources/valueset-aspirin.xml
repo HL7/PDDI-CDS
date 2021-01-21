@@ -25,10 +25,6 @@
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <version value="02-Jul-2018"/>
             <concept>
-                <code value="1944108"/>
-                <display value="Arthriten Max"/>
-            </concept>
-            <concept>
                 <code value="1001473"/>
                 <display value="Ecpirin"/>
             </concept>
@@ -253,14 +249,6 @@
                 <display value="Bromo Seltzer Antacid Pain Reliever"/>
             </concept>
             <concept>
-                <code value="2047428"/>
-                <display value="{100 (Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG
-                    Oral Tablet [Excedrin]) / 24 (Acetaminophen 250 MG / Aspirin 250
-                    MG / Diphenhydramine Citrate 38 MG Oral Tablet [Excedrin PM
-                    Triple Action]) } Pack [Excedrin PM Triple Action Caplets and
-                    Excedrin Extra Strength Pain Reliever]"/>
-            </concept>
-            <concept>
                 <code value="904668"/>
                 <display value="{30 (Aspirin 81 MG Oral Tablet) / 30 (Pravastatin Sodium 40
                     MG Oral Tablet) } Pack"/>
@@ -277,12 +265,6 @@
                     (Aspirin 500 MG / Dextromethorphan Hydrobromide 10 MG /
                     doxylamine succinate 6.25 MG / Phenylephrine bitartrate 7.8 MG
                     Effervescent Oral Tablet) } Pack"/>
-            </concept>
-            <concept>
-                <code value="2047427"/>
-                <display value="{100 (Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG
-                    Oral Tablet) / 24 (Acetaminophen 250 MG / Aspirin 250 MG /
-                    Diphenhydramine Citrate 38 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
                 <code value="1191"/>
@@ -631,11 +613,6 @@
             <concept>
                 <code value="314293"/>
                 <display value="ACETYLSALICYLATE SODIUM"/>
-            </concept>
-            <concept>
-                <code value="1944113"/>
-                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
-                    Tablet [Arthriten Max]"/>
             </concept>
             <concept>
                 <code value="1001476"/>
@@ -994,11 +971,6 @@
                     Tablet [Arthriten Inflammatory Pain]"/>
             </concept>
             <concept>
-                <code value="1944109"/>
-                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG
-                    [Arthriten Max]"/>
-            </concept>
-            <concept>
                 <code value="1001474"/>
                 <display value="Aspirin 325 MG [Ecpirin]"/>
             </concept>
@@ -1311,10 +1283,6 @@
                 <code value="1303155"/>
                 <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG
                     [Arthriten Inflammatory Pain]"/>
-            </concept>
-            <concept>
-                <code value="1944110"/>
-                <display value="Acetaminophen / Aspirin / Caffeine Oral Tablet [Arthriten Max]"/>
             </concept>
             <concept>
                 <code value="1001475"/>
@@ -2030,12 +1998,6 @@
                 <code value="1593110"/>
                 <display value="Acetaminophen 250 MG / Aspirin 250 MG / Diphenhydramine
                     Citrate 38 MG Oral Tablet"/>
-            </concept>
-            <concept>
-                <code value="1927026"/>
-                <display value="Aspirin 250 MG / Chlorpheniramine Maleate 2 MG /
-                    Dextromethorphan Hydrobromide 10 MG / Phenylephrine
-                    Hydrochloride 5 MG Effervescent Oral Tablet"/>
             </concept>
             <concept>
                 <code value="243694"/>
@@ -3083,14 +3045,6 @@
             <concept>
                 <code value="1293664"/>
                 <display value="Aspir-Low Pill"/>
-            </concept>
-            <concept>
-                <code value="1944111"/>
-                <display value="Arthriten Max Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1944112"/>
-                <display value="Arthriten Max Pill"/>
             </concept>
             <concept>
                 <code value="1359081"/>

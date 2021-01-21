@@ -293,10 +293,65 @@ v: {
 {"code" : {
   "system" : "http://loinc.org",
   "version" : "2.64",
+  "code" : "17861-6"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Calcium [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "1994-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Calcium.ionized [Moles/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "1995-0"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Calcium.ionized [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "29265-6"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Calcium [Moles/volume] corrected for albumin in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
   "code" : "10535-3"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Digoxin [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "3563-4"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Digoxin>12 hours post dose [Mass/volume] in Serum or Plasma",
   "severity" : null,
   "error" : ""
 }
@@ -315,10 +370,164 @@ v: {
 {"code" : {
   "system" : "http://loinc.org",
   "version" : "2.64",
+  "code" : "2597-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Magnesium [Moles/volume] in Red Blood Cells",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "2601-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Magnesium [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
   "code" : "75940-7"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Potassium [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "12812-4"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma --2nd specimen",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "12813-2"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma --3rd specimen",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "22760-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "2823-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "2824-1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Red Blood Cells",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "29349-8"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma --post dialysis",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "32713-0"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Arterial blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "39789-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Venous blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "39790-1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Capillary blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "41656-0"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Mixed venous blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "51618-7"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Serum or Plasma --pre dialysis",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "6298-4"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Blood",
   "severity" : null,
   "error" : ""
 }
@@ -331,6 +540,941 @@ v: {
 v: {
   "display" : "Creatinine [Mass/volume] in Serum or Plasma",
   "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "33914-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "50044-7"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among females [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "48642-3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "version" : "2.64",
+  "code" : "48643-1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "17864-0",
+        "display" : "Calcium.ionized [Mass/​volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+      },
+      {
+        "code" : "17861-6",
+        "display" : "Calcium [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "1994-3",
+        "display" : "Calcium.ionized [Moles/volume] in Blood"
+      },
+      {
+        "code" : "1995-0",
+        "display" : "Calcium.ionized [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "29265-6",
+        "display" : "Calcium [Moles/volume] corrected for albumin in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:ddb44e20-5036-4f22-837e-569583aa69da",
+    "timestamp" : "2021-01-20T21:14:12.914Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "17864-0",
+      "display" : "Calcium.ionized [Mass/​volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "17861-6",
+      "display" : "Calcium [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "1994-3",
+      "display" : "Calcium.ionized [Moles/volume] in Blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "1995-0",
+      "display" : "Calcium.ionized [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29265-6",
+      "display" : "Calcium [Moles/volume] corrected for albumin in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "10535-3",
+        "display" : "Digoxin [Mass/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "3563-4",
+        "display" : "Digoxin>12 hours post dose [Mass/​volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:2426d71d-a019-4fda-a393-c651c2b35beb",
+    "timestamp" : "2021-01-20T21:14:13.836Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "10535-3",
+      "display" : "Digoxin [Mass/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "3563-4",
+      "display" : "Digoxin>12 hours post dose [Mass/​volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "19123-9",
+        "display" : "Magnesium [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2597-3",
+        "display" : "Magnesium [Moles/volume] in Red Blood Cells"
+      },
+      {
+        "code" : "2601-3",
+        "display" : "Magnesium [Moles/volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:90db8477-3d08-4503-89a3-a705d752112c",
+    "timestamp" : "2021-01-20T21:14:16.930Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "19123-9",
+      "display" : "Magnesium [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2597-3",
+      "display" : "Magnesium [Moles/volume] in Red Blood Cells"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2601-3",
+      "display" : "Magnesium [Moles/volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "75940-7",
+        "display" : "Potassium [Mass/​volume] in Blood"
+      },
+      {
+        "code" : "12812-4",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"
+      },
+      {
+        "code" : "12813-2",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --3rd specimen"
+      },
+      {
+        "code" : "22760-3",
+        "display" : "Potassium [Mass/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2823-3",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2824-1",
+        "display" : "Potassium [Moles/​volume] in Red Blood Cells"
+      },
+      {
+        "code" : "29349-8",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --post dialysis"
+      },
+      {
+        "code" : "32713-0",
+        "display" : "Potassium [Moles/​volume] in Arterial blood"
+      },
+      {
+        "code" : "39789-3",
+        "display" : "Potassium [Moles/​volume] in Venous blood"
+      },
+      {
+        "code" : "39790-1",
+        "display" : "Potassium [Moles/​volume] in Capillary blood"
+      },
+      {
+        "code" : "41656-0",
+        "display" : "Potassium [Moles/​volume] in Mixed venous blood"
+      },
+      {
+        "code" : "51618-7",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --pre dialysis"
+      },
+      {
+        "code" : "6298-4",
+        "display" : "Potassium [Moles/​volume] in Blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:c5c50f07-68d2-4c23-8ab6-ad24068e7d7d",
+    "timestamp" : "2021-01-20T21:14:18.024Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "75940-7",
+      "display" : "Potassium [Mass/​volume] in Blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12812-4",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12813-2",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --3rd specimen"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22760-3",
+      "display" : "Potassium [Mass/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2823-3",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2824-1",
+      "display" : "Potassium [Moles/​volume] in Red Blood Cells"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29349-8",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --post dialysis"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32713-0",
+      "display" : "Potassium [Moles/​volume] in Arterial blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "39789-3",
+      "display" : "Potassium [Moles/​volume] in Venous blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "39790-1",
+      "display" : "Potassium [Moles/​volume] in Capillary blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "41656-0",
+      "display" : "Potassium [Moles/​volume] in Mixed venous blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "51618-7",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --pre dialysis"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6298-4",
+      "display" : "Potassium [Moles/​volume] in Blood"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "2160-0",
+        "display" : "Creatinine [Mass/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "33914-3",
+        "display" : "Glomerular filtration rate/​1.73 sq M.predicted [Volume Rate/​Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+      },
+      {
+        "code" : "50044-7",
+        "display" : "Glomerular filtration rate/​1.73 sq M predicted among females [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+      },
+      {
+        "code" : "48642-3",
+        "display" : "Glomerular filtration rate/​1.73 sq M predicted among non-blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+      },
+      {
+        "code" : "48643-1",
+        "display" : "Glomerular filtration rate/​1.73 sq M predicted among blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:b9ac0b27-d0c2-4f89-967d-83229170b545",
+    "timestamp" : "2021-01-20T21:14:18.492Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "2160-0",
+      "display" : "Creatinine [Mass/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "33914-3",
+      "display" : "Glomerular filtration rate/​1.73 sq M.predicted [Volume Rate/​Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "50044-7",
+      "display" : "Glomerular filtration rate/​1.73 sq M predicted among females [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "48642-3",
+      "display" : "Glomerular filtration rate/​1.73 sq M predicted among non-blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "48643-1",
+      "display" : "Glomerular filtration rate/​1.73 sq M predicted among blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "17861-6",
+  "display" : "Calcium [Mass/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Calcium [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "10535-3",
+  "display" : "Digoxin [Mass/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Digoxin [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2601-3",
+  "display" : "Magnesium [Moles/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Magnesium [Moles/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "22760-3",
+  "display" : "Potassium [Mass/volume] in Serum or Plasma"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Potassium [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "33914-3",
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48643-1",
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48642-3",
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "17864-0",
+        "display" : "Calcium.ionized [Mass/​volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+      },
+      {
+        "code" : "17861-6",
+        "display" : "Calcium [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "1994-3",
+        "display" : "Calcium.ionized [Moles/volume] in Blood"
+      },
+      {
+        "code" : "1995-0",
+        "display" : "Calcium.ionized [Moles/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "29265-6",
+        "display" : "Calcium [Moles/volume] corrected for albumin in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:a5fa1078-06b5-46c8-a7fd-5cccc4e6fc83",
+    "timestamp" : "2021-01-20T22:32:37.892Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "17864-0",
+      "display" : "Calcium.ionized [Mass/​volume] in Serum or Plasma by Ion-selective membrane electrode (ISE)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "17861-6",
+      "display" : "Calcium [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "1994-3",
+      "display" : "Calcium.ionized [Moles/volume] in Blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "1995-0",
+      "display" : "Calcium.ionized [Moles/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29265-6",
+      "display" : "Calcium [Moles/volume] corrected for albumin in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "10535-3",
+        "display" : "Digoxin [Mass/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "3563-4",
+        "display" : "Digoxin>12 hours post dose [Mass/​volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:1e2ad043-e6d3-43d1-b1d5-e6c5352a7a95",
+    "timestamp" : "2021-01-20T22:32:39.111Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "10535-3",
+      "display" : "Digoxin [Mass/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "3563-4",
+      "display" : "Digoxin>12 hours post dose [Mass/​volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "19123-9",
+        "display" : "Magnesium [Mass/volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2597-3",
+        "display" : "Magnesium [Moles/volume] in Red Blood Cells"
+      },
+      {
+        "code" : "2601-3",
+        "display" : "Magnesium [Moles/volume] in Serum or Plasma"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:4a147656-c073-4df5-839a-edfd10c6633f",
+    "timestamp" : "2021-01-20T22:32:41.579Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "19123-9",
+      "display" : "Magnesium [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2597-3",
+      "display" : "Magnesium [Moles/volume] in Red Blood Cells"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2601-3",
+      "display" : "Magnesium [Moles/volume] in Serum or Plasma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "75940-7",
+        "display" : "Potassium [Mass/​volume] in Blood"
+      },
+      {
+        "code" : "12812-4",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"
+      },
+      {
+        "code" : "12813-2",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --3rd specimen"
+      },
+      {
+        "code" : "22760-3",
+        "display" : "Potassium [Mass/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2823-3",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "2824-1",
+        "display" : "Potassium [Moles/​volume] in Red Blood Cells"
+      },
+      {
+        "code" : "29349-8",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --post dialysis"
+      },
+      {
+        "code" : "32713-0",
+        "display" : "Potassium [Moles/​volume] in Arterial blood"
+      },
+      {
+        "code" : "39789-3",
+        "display" : "Potassium [Moles/​volume] in Venous blood"
+      },
+      {
+        "code" : "39790-1",
+        "display" : "Potassium [Moles/​volume] in Capillary blood"
+      },
+      {
+        "code" : "41656-0",
+        "display" : "Potassium [Moles/​volume] in Mixed venous blood"
+      },
+      {
+        "code" : "51618-7",
+        "display" : "Potassium [Moles/​volume] in Serum or Plasma --pre dialysis"
+      },
+      {
+        "code" : "6298-4",
+        "display" : "Potassium [Moles/​volume] in Blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:0a99495f-f591-4d6c-b913-75affc28f30a",
+    "timestamp" : "2021-01-20T22:32:42.767Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "75940-7",
+      "display" : "Potassium [Mass/​volume] in Blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12812-4",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12813-2",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --3rd specimen"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "22760-3",
+      "display" : "Potassium [Mass/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2823-3",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2824-1",
+      "display" : "Potassium [Moles/​volume] in Red Blood Cells"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29349-8",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --post dialysis"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32713-0",
+      "display" : "Potassium [Moles/​volume] in Arterial blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "39789-3",
+      "display" : "Potassium [Moles/​volume] in Venous blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "39790-1",
+      "display" : "Potassium [Moles/​volume] in Capillary blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "41656-0",
+      "display" : "Potassium [Moles/​volume] in Mixed venous blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "51618-7",
+      "display" : "Potassium [Moles/​volume] in Serum or Plasma --pre dialysis"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6298-4",
+      "display" : "Potassium [Moles/​volume] in Blood"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "concept" : [{
+        "code" : "2160-0",
+        "display" : "Creatinine [Mass/​volume] in Serum or Plasma"
+      },
+      {
+        "code" : "33914-3",
+        "display" : "Glomerular filtration rate/​1.73 sq M.predicted [Volume Rate/​Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+      },
+      {
+        "code" : "50044-7",
+        "display" : "Glomerular filtration rate/​1.73 sq M predicted among females [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+      },
+      {
+        "code" : "48642-3",
+        "display" : "Glomerular filtration rate/​1.73 sq M predicted among non-blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+      },
+      {
+        "code" : "48643-1",
+        "display" : "Glomerular filtration rate/​1.73 sq M predicted among blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:4caa3cdf-5ce6-402e-b32d-0d07010ef658",
+    "timestamp" : "2021-01-20T22:32:43.267Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "2160-0",
+      "display" : "Creatinine [Mass/​volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "33914-3",
+      "display" : "Glomerular filtration rate/​1.73 sq M.predicted [Volume Rate/​Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "50044-7",
+      "display" : "Glomerular filtration rate/​1.73 sq M predicted among females [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "48642-3",
+      "display" : "Glomerular filtration rate/​1.73 sq M predicted among non-blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "48643-1",
+      "display" : "Glomerular filtration rate/​1.73 sq M predicted among blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------

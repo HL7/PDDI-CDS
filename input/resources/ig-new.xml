@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="uv-pddi-0.2.0"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\Bryn\Documents\Src\HL7\Specifications\PDDI-CDS\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\Bryn\Documents\Src\HL7\Specifications\PDDI-CDS\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\Bryn\Documents\Src\HL7\Specifications\PDDI-CDS\pages"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/uv-pddi-0.2.0"/>
+  <version value="0.2.0"/>
+  <name value="PDDI"/>
+  <title value="Potential Drug-drug Interaction (PDDI) CDS IG"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-01-23"/>
+  <publisher value="HL7 Clinical Decision Support Workgroup"/>
+  <contact>
+    <name value="HL7"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="This implementation guide provides conformance requirements and guidance for the representation, distribution, and evaluation of potential drug-drug interactions."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.uv.pddi"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/codesystem-PDDICDS-indicator"/>
+      </reference>
+      <name value="codesystem-PDDICDS-indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-AAS"/>
+      </reference>
+      <name value="valueset-AAS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-NSAIDS"/>
+      </reference>
+      <name value="valueset-NSAIDS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-PPIS"/>
+      </reference>
+      <name value="valueset-PPIS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-SCS"/>
+      </reference>
+      <name value="valueset-SCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-CYCS"/>
+      </reference>
+      <name value="valueset-CYCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-LOOPDIURETIC"/>
+      </reference>
+      <name value="valueset-LOOPDIURETIC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-aldosterone"/>
+      </reference>
+      <name value="valueset-aldosterone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-aspirin"/>
+      </reference>
+      <name value="valueset-aspirin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-betamethasone"/>
+      </reference>
+      <name value="valueset-betamethasone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-betamethasone-exclude"/>
+      </reference>
+      <name value="valueset-betamethasone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-bromfenac"/>
+      </reference>
+      <name value="valueset-bromfenac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-bromfenac-exclude"/>
+      </reference>
+      <name value="valueset-bromfenac-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-bumetanide"/>
+      </reference>
+      <name value="valueset-bumetanide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-calcium-LOINC"/>
+      </reference>
+      <name value="valueset-calcium-LOINC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-celecoxib"/>
+      </reference>
+      <name value="valueset-celecoxib"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-cloprednol"/>
+      </reference>
+      <name value="valueset-cloprednol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-cortisone"/>
+      </reference>
+      <name value="valueset-cortisone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-cortivazol"/>
+      </reference>
+      <name value="valueset-cortivazol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-cyclosporine"/>
+      </reference>
+      <name value="valueset-cyclosporine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-cyclosporine-exclude"/>
+      </reference>
+      <name value="valueset-cyclosporine-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-deflazacort"/>
+      </reference>
+      <name value="valueset-deflazacort"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-desoxycorticosterone"/>
+      </reference>
+      <name value="valueset-desoxycorticosterone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-dexamethasone"/>
+      </reference>
+      <name value="valueset-dexamethasone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-dexamethasone-exclude"/>
+      </reference>
+      <name value="valueset-dexamethasone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-dexlansoprazole"/>
+      </reference>
+      <name value="valueset-dexlansoprazole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-diclofenac"/>
+      </reference>
+      <name value="valueset-diclofenac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-diclofenac-exclude"/>
+      </reference>
+      <name value="valueset-diclofenac-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-diflunisal"/>
+      </reference>
+      <name value="valueset-diflunisal"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-digoxin"/>
+      </reference>
+      <name value="valueset-digoxin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-digoxin-LOINC"/>
+      </reference>
+      <name value="valueset-digoxin-LOINC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-eplerenone"/>
+      </reference>
+      <name value="valueset-eplerenone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-esomeprazole"/>
+      </reference>
+      <name value="valueset-esomeprazole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ethacrynate"/>
+      </reference>
+      <name value="valueset-ethacrynate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-etodolac"/>
+      </reference>
+      <name value="valueset-etodolac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-fenoprofen"/>
+      </reference>
+      <name value="valueset-fenoprofen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-fludrocortisone"/>
+      </reference>
+      <name value="valueset-fludrocortisone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-fluocortolone"/>
+      </reference>
+      <name value="valueset-fluocortolone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-fluocortolone-exclude"/>
+      </reference>
+      <name value="valueset-fluocortolone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-flurbiprofen"/>
+      </reference>
+      <name value="valueset-flurbiprofen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-flurbiprofen-exclude"/>
+      </reference>
+      <name value="valueset-flurbiprofen-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-furosemide"/>
+      </reference>
+      <name value="valueset-furosemide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-Hx-UGIB-snomed"/>
+      </reference>
+      <name value="valueset-Hx-UGIB-snomed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-hydrocortisone"/>
+      </reference>
+      <name value="valueset-hydrocortisone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-hydrocortisone-exclude"/>
+      </reference>
+      <name value="valueset-hydrocortisone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ibuprofen"/>
+      </reference>
+      <name value="valueset-ibuprofen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ibuprofen-exclude"/>
+      </reference>
+      <name value="valueset-ibuprofen-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-indomethacin"/>
+      </reference>
+      <name value="valueset-indomethacin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ketoprofen"/>
+      </reference>
+      <name value="valueset-ketoprofen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ketoprofen-exclude"/>
+      </reference>
+      <name value="valueset-ketoprofen-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ketorolac"/>
+      </reference>
+      <name value="valueset-ketorolac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-ketorolac-exclude"/>
+      </reference>
+      <name value="valueset-ketorolac_exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-lansoprazole"/>
+      </reference>
+      <name value="valueset-lansoprazole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-magnesium-LOINC"/>
+      </reference>
+      <name value="valueset-lansoprazole-magnesium-LOINC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-mefenamate"/>
+      </reference>
+      <name value="valueset-mefenamate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-meloxicam"/>
+      </reference>
+      <name value="valueset-meloxicam"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-meprednisone"/>
+      </reference>
+      <name value="valueset-meprednisone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-methylprednisolone"/>
+      </reference>
+      <name value="valueset-methylprednisolone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-methylprednisolone-exclude"/>
+      </reference>
+      <name value="valueset-methylprednisolone_exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-misoprostol"/>
+      </reference>
+      <name value="valueset-misoprostol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-nabumetone"/>
+      </reference>
+      <name value="valueset-nabumetone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-naproxen"/>
+      </reference>
+      <name value="valueset-naproxen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-nepafenac"/>
+      </reference>
+      <name value="valueset-nepafenac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-nepafenac-exclude"/>
+      </reference>
+      <name value="valueset-nepafenac-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-omeprazole"/>
+      </reference>
+      <name value="valueset-omeprazole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-oxaprozin"/>
+      </reference>
+      <name value="valueset-oxaprozin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-pantoprazole"/>
+      </reference>
+      <name value="valueset-pantoprazole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-paramethasone"/>
+      </reference>
+      <name value="valueset-paramethasone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-PDDICDS-indicator"/>
+      </reference>
+      <name value="valueset-PDDICDS-indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-piroxicam"/>
+      </reference>
+      <name value="valueset-piroxicam"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-piroxicam-exclude"/>
+      </reference>
+      <name value="valueset-piroxicam-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-potassium-LOINC"/>
+      </reference>
+      <name value="valueset-potassium-LOINC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-prednisolone"/>
+      </reference>
+      <name value="valueset-prednisolone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-prednisolone-exclude"/>
+      </reference>
+      <name value="valueset-prednisolone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-prednisone"/>
+      </reference>
+      <name value="valueset-prednisone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-prednylidene"/>
+      </reference>
+      <name value="valueset-prednylidene"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-rabeprazole"/>
+      </reference>
+      <name value="valueset-rabeprazole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-renal-LOINC"/>
+      </reference>
+      <name value="valueset-renal-LOINC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-rimexolone"/>
+      </reference>
+      <name value="valueset-rimexolone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-rimexolone-exclude"/>
+      </reference>
+      <name value="valueset-rimexolone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-spironolactone"/>
+      </reference>
+      <name value="valueset-spironolactone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-sulindac"/>
+      </reference>
+      <name value="valueset-sulindac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-tolmetin"/>
+      </reference>
+      <name value="valueset-tolmetin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-topicaldiclofenac"/>
+      </reference>
+      <name value="valueset-topicaldiclofenac"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-torsemide"/>
+      </reference>
+      <name value="valueset-torsemide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-triamcinolone"/>
+      </reference>
+      <name value="valueset-triamcinolone"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-triamcinolone-exclude"/>
+      </reference>
+      <name value="valueset-triamcinolone-exclude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-trilostane"/>
+      </reference>
+      <name value="valueset-trilostane"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/valueset-warfarin"/>
+      </reference>
+      <name value="valueset-warfarin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
+      </reference>
+      <name value="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/encounter-digoxin-cyclosporine-context"/>
+      </reference>
+      <name value="encounter-digoxin-cyclosporine-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/encounter-digoxin-cyclosporine-prefetch"/>
+      </reference>
+      <name value="encounter-digoxin-cyclosporine-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/encounter-warfarin-nsaid-context"/>
+      </reference>
+      <name value="encounter-warfarin-nsaid-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/encounter-warfarin-nsaid-prefetch"/>
+      </reference>
+      <name value="encounter-warfarin-nsaid-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
+      </reference>
+      <name value="medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
+      </reference>
+      <name value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-furosemide-prefetch"/>
+      </reference>
+      <name value="medicationdispense-digoxin-cyclosporine-furosemide-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
+      </reference>
+      <name value="medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-context"/>
+      </reference>
+      <name value="medicationrequest-digoxin-cyclosporine-cyclosporine-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch"/>
+      </reference>
+      <name value="medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-digoxin-context"/>
+      </reference>
+      <name value="medicationrequest-digoxin-cyclosporine-digoxin-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-corticosteroid-prefetch"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-corticosteroid-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-misoprostol-prefetch"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-misoprostol-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-context"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-nsaid-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-prefetch"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-nsaid-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-ppi-prefetch"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-ppi-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-topicaldiclofenac-context"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-topicaldiclofenac-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-context"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-warfarin-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-prefetch"/>
+      </reference>
+      <name value="medicationrequest-warfarin-nsaid-warfarin-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
+      </reference>
+      <name value="medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-digoxin-cyclosporine-calcium"/>
+      </reference>
+      <name value="observation-digoxin-cyclosporine-calcium"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-digoxin-cyclosporine-digoxin"/>
+      </reference>
+      <name value="observation-digoxin-cyclosporine-digoxin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-digoxin-cyclosporine-magnesium"/>
+      </reference>
+      <name value="observation-digoxin-cyclosporine-magnesium"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-digoxin-cyclosporine-potassium"/>
+      </reference>
+      <name value="observation-digoxin-cyclosporine-potassium"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-digoxin-cyclosporine-renal"/>
+      </reference>
+      <name value="observation-digoxin-cyclosporine-renal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
+      </reference>
+      <name value="patient-digoxin-cyclosporine-context"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
+      </reference>
+      <name value="patient-warfarin-nsaid-over65-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/patient-warfarin-nsaid-under65-prefetch"/>
+      </reference>
+      <name value="patient-warfarin-nsaid-under65-prefetch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/procedure-digoxin-cyclosporine-calcium"/>
+      </reference>
+      <name value="procedure-digoxin-cyclosporine-calcium"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/procedure-digoxin-cyclosporine-consultation"/>
+      </reference>
+      <name value="procedure-digoxin-cyclosporine-consultation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/procedure-digoxin-cyclosporine-creatinine"/>
+      </reference>
+      <name value="procedure-digoxin-cyclosporine-creatinine"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/procedure-digoxin-cyclosporine-digoxin"/>
+      </reference>
+      <name value="procedure-digoxin-cyclosporine-digoxin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/procedure-digoxin-cyclosporine-magnesium"/>
+      </reference>
+      <name value="procedure-digoxin-cyclosporine-magnesium"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/procedure-digoxin-cyclosporine-potassium"/>
+      </reference>
+      <name value="procedure-digoxin-cyclosporine-potassium"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="PDDI CDS Homepage"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="assets/images/diagram1.jpg"/>
+        <title value="diagram 1"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="assets/images/diagram2.jpg"/>
+        <title value="diagram 2"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="assets/images/diagram3.jpg"/>
+        <title value="diagram 3"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="version-comparison"/>
+      <value value="n/a"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="jurisdiction"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

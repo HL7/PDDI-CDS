@@ -81,10 +81,6 @@
                 <display value="Genesis"/>
             </concept>
             <concept>
-                <code value="1947125"/>
-                <display value="Zilretta"/>
-            </concept>
-            <concept>
                 <code value="1720617"/>
                 <display value="{1 (118 ML) (dimethicone 20 MG/ML Topical Cream) / 1 (80000
                     MG) (Triamcinolone Acetonide 1 MG/ML Topical Cream) } Pack"/>
@@ -241,10 +237,6 @@
                 <display value="Triamcinolone Acetonide 0.15 MG/ML Topical Spray [Genesis]"/>
             </concept>
             <concept>
-                <code value="1947133"/>
-                <display value="Triamcinolone Acetonide 32 MG Injection [Zilretta]"/>
-            </concept>
-            <concept>
                 <code value="1014316"/>
                 <display value="Triamcinolone Acetonide 1 MG/ML [Pediaderm TA]"/>
             </concept>
@@ -326,10 +318,6 @@
                 <display value="Triamcinolone Acetonide 0.15 MG/ML [Genesis]"/>
             </concept>
             <concept>
-                <code value="1947132"/>
-                <display value="Triamcinolone Acetonide 32 MG [Zilretta]"/>
-            </concept>
-            <concept>
                 <code value="1014317"/>
                 <display value="Triamcinolone Topical Cream [Pediaderm TA]"/>
             </concept>
@@ -389,10 +377,6 @@
             <concept>
                 <code value="1805712"/>
                 <display value="Triamcinolone Topical Spray [Genesis]"/>
-            </concept>
-            <concept>
-                <code value="1947127"/>
-                <display value="Triamcinolone Injection [Zilretta]"/>
             </concept>
             <concept>
                 <code value="1085633"/>
@@ -547,10 +531,6 @@
                 <display value="Triamcinolone Acetonide 0.15 MG/ML Topical Spray"/>
             </concept>
             <concept>
-                <code value="1947131"/>
-                <display value="Triamcinolone Acetonide 32 MG Injection"/>
-            </concept>
-            <concept>
                 <code value="1085632"/>
                 <display value="Triamcinolone Acetonide 0.00025 MG/MG"/>
             </concept>
@@ -653,10 +633,6 @@
             <concept>
                 <code value="1805708"/>
                 <display value="Triamcinolone Acetonide 0.15 MG/ML"/>
-            </concept>
-            <concept>
-                <code value="1947130"/>
-                <display value="Triamcinolone Acetonide 32 MG"/>
             </concept>
             <concept>
                 <code value="10760"/>
@@ -841,10 +817,6 @@
             <concept>
                 <code value="1183995"/>
                 <display value="Pediaderm TA Topical Product"/>
-            </concept>
-            <concept>
-                <code value="1947128"/>
-                <display value="Zilretta Injectable Product"/>
             </concept>
             <concept>
                 <code value="1295793"/>

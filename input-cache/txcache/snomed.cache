@@ -239,3 +239,720 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "12847006",
+        "display" : "Acute duodenal ulcer with hemorrhage"
+      },
+      {
+        "code" : "86895006",
+        "display" : "Acute duodenal ulcer with hemorrhage AND perforation"
+      },
+      {
+        "code" : "89748001",
+        "display" : "Acute gastric ulcer with hemorrhage"
+      },
+      {
+        "code" : "48974009",
+        "display" : "Acute gastric ulcer with hemorrhage AND perforation"
+      },
+      {
+        "code" : "63954007",
+        "display" : "Acute gastrojejunal ulcer with hemorrhage"
+      },
+      {
+        "code" : "81387001",
+        "display" : "Acute gastrojejunal ulcer with hemorrhage AND perforation"
+      },
+      {
+        "code" : "2367005",
+        "display" : "Acute hemorrhagic gastritis"
+      },
+      {
+        "code" : "12274003",
+        "display" : "Acute peptic ulcer with hemorrhage"
+      },
+      {
+        "code" : "47064007",
+        "display" : "Acute peptic ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "235853006",
+        "display" : "Angiodysplasia of intestine"
+      },
+      {
+        "code" : "84568007",
+        "display" : "Atrophic gastritis"
+      },
+      {
+        "code" : "81142005",
+        "display" : "Chronic duodenal ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "62341002",
+        "display" : "Chronic duodenal ulcer with hemorrhage but without obstruction"
+      },
+      {
+        "code" : "74341002",
+        "display" : "Chronic gastric ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "76078009",
+        "display" : "Chronic gastric ulcer with hemorrhage but without obstruction"
+      },
+      {
+        "code" : "62838000",
+        "display" : "Chronic gastrojejunal ulcer with hemorrhage"
+      },
+      {
+        "code" : "46523000",
+        "display" : "Chronic gastrojejunal ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "55746001",
+        "display" : "Chronic peptic ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "81518000",
+        "display" : "Chronic peptic ulcer with hemorrhage but without obstruction"
+      },
+      {
+        "code" : "109558001",
+        "display" : "Dieulafoy's vascular malformation"
+      },
+      {
+        "code" : "61401005",
+        "display" : "Gastric hemorrhage"
+      },
+      {
+        "code" : "196731005",
+        "display" : "Gastroduodenitis"
+      },
+      {
+        "code" : "74474003",
+        "display" : "Gastrointestinal hemorrhage"
+      },
+      {
+        "code" : "95531001",
+        "display" : "Hemorrhagic duodenitis"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:1d88e781-d39f-4d20-82ed-bb7c697c256c",
+    "timestamp" : "2021-01-21T17:56:03.228Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "12847006",
+      "display" : "Acute duodenal ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "86895006",
+      "display" : "Acute duodenal ulcer with hemorrhage AND perforation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "89748001",
+      "display" : "Acute gastric ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "48974009",
+      "display" : "Acute gastric ulcer with hemorrhage AND perforation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "63954007",
+      "display" : "Acute gastrojejunal ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "81387001",
+      "display" : "Acute gastrojejunal ulcer with hemorrhage AND perforation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2367005",
+      "display" : "Acute hemorrhagic gastritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "12274003",
+      "display" : "Acute peptic ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "47064007",
+      "display" : "Acute peptic ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "235853006",
+      "display" : "Angiodysplasia of intestine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "84568007",
+      "display" : "Atrophic gastritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "81142005",
+      "display" : "Chronic duodenal ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62341002",
+      "display" : "Chronic duodenal ulcer with hemorrhage but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74341002",
+      "display" : "Chronic gastric ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76078009",
+      "display" : "Chronic gastric ulcer with hemorrhage but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62838000",
+      "display" : "Chronic gastrojejunal ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "46523000",
+      "display" : "Chronic gastrojejunal ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55746001",
+      "display" : "Chronic peptic ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "81518000",
+      "display" : "Chronic peptic ulcer with hemorrhage but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "109558001",
+      "display" : "Dieulafoy's vascular malformation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "61401005",
+      "display" : "Gastric hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "196731005",
+      "display" : "Gastroduodenitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74474003",
+      "display" : "Gastrointestinal hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "95531001",
+      "display" : "Hemorrhagic duodenitis"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "439401001",
+  "display" : "diagnosis"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Diagnosis (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6736007"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "24484000"
+      },
+      {
+        "code" : "6736007"
+      },
+      {
+        "code" : "255604002"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Moderate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6736007",
+  "display" : "Moderate"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "24484000"
+      },
+      {
+        "code" : "6736007"
+      },
+      {
+        "code" : "255604002"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Moderate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6736007"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Moderate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "89748001",
+  "display" : "Acute gastric ulcer with hemorrhage"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Acute gastric ulcer with hemorrhage",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "3368006",
+  "display" : "Dull chest pain"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Dull chest pain",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "26643006",
+  "display" : "Oral Route"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Oral route",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "421521009",
+  "display" : "Swallow"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Swallow - dosing instruction imperative (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "258797006"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "mg/dL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "258806002"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "ng/mL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "258813002"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "mM",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "702668005",
+  "display" : "MDRD"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Modification of diet in renal disease formula",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "390963002",
+  "display" : "Plasma calcium level"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Plasma calcium level (procedure)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "11429006",
+  "display" : "Consultation"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Consultation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "313822004",
+  "display" : "Corrected serum creatinine measurement"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Corrected serum creatinine measurement",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "269872007",
+  "display" : "Serum digoxin measurement"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Serum digoxin measurement",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "312475002",
+  "display" : "Plasma magnesium level"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Plasma magnesium level",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "271236005",
+  "display" : "Serum potassium level"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Serum potassium level",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "12847006",
+        "display" : "Acute duodenal ulcer with hemorrhage"
+      },
+      {
+        "code" : "86895006",
+        "display" : "Acute duodenal ulcer with hemorrhage AND perforation"
+      },
+      {
+        "code" : "89748001",
+        "display" : "Acute gastric ulcer with hemorrhage"
+      },
+      {
+        "code" : "48974009",
+        "display" : "Acute gastric ulcer with hemorrhage AND perforation"
+      },
+      {
+        "code" : "63954007",
+        "display" : "Acute gastrojejunal ulcer with hemorrhage"
+      },
+      {
+        "code" : "81387001",
+        "display" : "Acute gastrojejunal ulcer with hemorrhage AND perforation"
+      },
+      {
+        "code" : "2367005",
+        "display" : "Acute hemorrhagic gastritis"
+      },
+      {
+        "code" : "12274003",
+        "display" : "Acute peptic ulcer with hemorrhage"
+      },
+      {
+        "code" : "47064007",
+        "display" : "Acute peptic ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "235853006",
+        "display" : "Angiodysplasia of intestine"
+      },
+      {
+        "code" : "84568007",
+        "display" : "Atrophic gastritis"
+      },
+      {
+        "code" : "81142005",
+        "display" : "Chronic duodenal ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "62341002",
+        "display" : "Chronic duodenal ulcer with hemorrhage but without obstruction"
+      },
+      {
+        "code" : "74341002",
+        "display" : "Chronic gastric ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "76078009",
+        "display" : "Chronic gastric ulcer with hemorrhage but without obstruction"
+      },
+      {
+        "code" : "62838000",
+        "display" : "Chronic gastrojejunal ulcer with hemorrhage"
+      },
+      {
+        "code" : "46523000",
+        "display" : "Chronic gastrojejunal ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "55746001",
+        "display" : "Chronic peptic ulcer with hemorrhage AND with perforation but without obstruction"
+      },
+      {
+        "code" : "81518000",
+        "display" : "Chronic peptic ulcer with hemorrhage but without obstruction"
+      },
+      {
+        "code" : "109558001",
+        "display" : "Dieulafoy's vascular malformation"
+      },
+      {
+        "code" : "61401005",
+        "display" : "Gastric hemorrhage"
+      },
+      {
+        "code" : "196731005",
+        "display" : "Gastroduodenitis"
+      },
+      {
+        "code" : "74474003",
+        "display" : "Gastrointestinal hemorrhage"
+      },
+      {
+        "code" : "95531001",
+        "display" : "Hemorrhagic duodenitis"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:3156d5b3-2676-44a7-bf2c-2f5d843ee0ce",
+    "timestamp" : "2021-01-21T15:56:58.386Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "12847006",
+      "display" : "Acute duodenal ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "86895006",
+      "display" : "Acute duodenal ulcer with hemorrhage AND perforation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "89748001",
+      "display" : "Acute gastric ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "48974009",
+      "display" : "Acute gastric ulcer with hemorrhage AND perforation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "63954007",
+      "display" : "Acute gastrojejunal ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "81387001",
+      "display" : "Acute gastrojejunal ulcer with hemorrhage AND perforation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2367005",
+      "display" : "Acute hemorrhagic gastritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "12274003",
+      "display" : "Acute peptic ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "47064007",
+      "display" : "Acute peptic ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "235853006",
+      "display" : "Angiodysplasia of intestine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "84568007",
+      "display" : "Atrophic gastritis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "81142005",
+      "display" : "Chronic duodenal ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62341002",
+      "display" : "Chronic duodenal ulcer with hemorrhage but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74341002",
+      "display" : "Chronic gastric ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76078009",
+      "display" : "Chronic gastric ulcer with hemorrhage but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62838000",
+      "display" : "Chronic gastrojejunal ulcer with hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "46523000",
+      "display" : "Chronic gastrojejunal ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55746001",
+      "display" : "Chronic peptic ulcer with hemorrhage AND with perforation but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "81518000",
+      "display" : "Chronic peptic ulcer with hemorrhage but without obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "109558001",
+      "display" : "Dieulafoy's vascular malformation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "61401005",
+      "display" : "Gastric hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "196731005",
+      "display" : "Gastroduodenitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74474003",
+      "display" : "Gastrointestinal hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "95531001",
+      "display" : "Hemorrhagic duodenitis"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

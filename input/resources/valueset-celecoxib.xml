@@ -33,10 +33,6 @@
                 <display value="celecoxib"/>
             </concept>
             <concept>
-                <code value="2047714"/>
-                <display value="Amlodipine / celecoxib"/>
-            </concept>
-            <concept>
                 <code value="213468"/>
                 <display value="celecoxib 100 MG Oral Capsule [Celebrex]"/>
             </concept>
@@ -81,18 +77,6 @@
                 <display value="celecoxib 200 MG Oral Capsule"/>
             </concept>
             <concept>
-                <code value="2047715"/>
-                <display value="Amlodipine 2.5 MG / celecoxib 200 MG Oral Tablet"/>
-            </concept>
-            <concept>
-                <code value="2047716"/>
-                <display value="Amlodipine 5 MG / celecoxib 200 MG Oral Tablet"/>
-            </concept>
-            <concept>
-                <code value="2047717"/>
-                <display value="Amlodipine 10 MG / celecoxib 200 MG Oral Tablet"/>
-            </concept>
-            <concept>
                 <code value="349514"/>
                 <display value="celecoxib 400 MG Oral Capsule"/>
             </concept>
@@ -121,24 +105,12 @@
                 <display value="celecoxib Oral Capsule"/>
             </concept>
             <concept>
-                <code value="2047713"/>
-                <display value="Amlodipine / celecoxib Oral Tablet"/>
-            </concept>
-            <concept>
                 <code value="1161223"/>
                 <display value="celecoxib Oral Product"/>
             </concept>
             <concept>
                 <code value="1161224"/>
                 <display value="celecoxib Pill"/>
-            </concept>
-            <concept>
-                <code value="2047711"/>
-                <display value="Amlodipine / celecoxib Oral Product"/>
-            </concept>
-            <concept>
-                <code value="2047712"/>
-                <display value="Amlodipine / celecoxib Pill"/>
             </concept>
             <concept>
                 <code value="1166198"/>

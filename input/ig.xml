@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="ig"/>
-    <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig"/> <!-- see http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Canonical_URL-->
+    <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig"/>
+    <!-- see http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Canonical_URL-->
     <version value="0.2.0"/>
     <name value="PDDI_CDS"/>
     <status value="draft"/>
+    <title value="(DRAFT) Potential Drug-Drug Interaction (PDDI) CDS IG : Ballot for Comment 2"/>
     <experimental value="true"/>
     <date value="2019-01-23"/>
     <fhirVersion value="4.0.1"/>
     <packageId value="hl7.fhir.uv.pddi"/>
     <publisher value="HL7 Clinical Decision Support Workgroup"/>
     <contact>
-        <name value="HL7"/>
         <telecom>
             <system value="url"/>
-            <value value="http://hl7.org/fhir"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
         </telecom>
     </contact>
     <definition>
@@ -894,9 +895,49 @@
             <exampleBoolean value="true"/>
         </resource>
         <page>
-            <nameUrl value="index.html"/>
-            <title value="PDDI CDS Homepage"/>
+            <nameUrl value="toc.html"/>
+            <title value="Table of Contents"/>
             <generation value="html"/>
+            <page>
+                <nameUrl value="index.html"/>
+                <title value="Implementation Guide for PDDI CDS (DRAFT)"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="use-cases.html"/>
+                <title value="Use Case - a potential interaction between warfarin and non-steroidal anti-inflammatory drugs (NSAIDs)"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="cds-service-spec.html"/>
+                <title value="CDS Service Specification "/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="terminology.html"/>
+                <title value="Terminology defined for the PDDI CDS Implementation Guide"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="artifacts.html"/>
+                <title value="Knowledge Representation for PDDI CDS "/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="downloads.html"/>
+                <title value="PDDI CDS – Downloads"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="profiles.html"/>
+                <title value="Profiles defined as part of the PDDI CDS Implementation Guide"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="testdata.html"/>
+                <title value="Test data defined as part of the PDDI CDS Implementation Guide"/>
+                <generation value="markdown"/>
+            </page>
             <page>
                 <nameUrl value="assets/images/diagram1.jpg"/>
                 <title value="diagram 1"/>
@@ -913,5 +954,13 @@
                 <generation value="html"/>
             </page>
         </page>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2019+"/>
+        </parameter>
     </definition>
 </ImplementationGuide>

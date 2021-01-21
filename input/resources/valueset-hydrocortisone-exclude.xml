@@ -707,26 +707,8 @@
                 <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
                     hydrochloride 10 MG/ML [Oticin HC Ear Drops]"/>
             </concept>
-            <concept>
-                <code value="1987146"/>
-                <display value="Hydrocortisone Topical Cream [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987157"/>
-                <display value="Hydrocortisone Topical Lotion [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987159"/>
-                <display value="Hydrocortisone Topical Solution [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987142"/>
-                <display value="Hydrocortisone Topical Ointment [Cortizone]"/>
-            </concept>
-            <concept>
-                <code value="1987152"/>
-                <display value="Hydrocortisone Topical Gel [Cortizone]"/>
-            </concept>
+
+
             <concept>
                 <code value="1039272"/>
                 <display value="Hydrocortisone Topical Solution [Scalpicin Itch Relief]"/>
@@ -1704,11 +1686,7 @@
                 <display value="hydrocortisone acetate 10 MG/ML / Pramoxine hydrochloride 10
                     MG/ML Topical Spray"/>
             </concept>
-            <concept>
-                <code value="2044886"/>
-                <display value="hydrocortisone acetate 10 MG/ML / Lidocaine Hydrochloride 10
-                    MG/ML Topical Cream"/>
-            </concept>
+
             <concept>
                 <code value="1370746"/>
                 <display value="hydrocortisone probutate 1 MG/ML Topical Cream"/>
@@ -2402,10 +2380,7 @@
                 <code value="1182659"/>
                 <display value="Terra-Cortril Ophthalmic Product"/>
             </concept>
-            <concept>
-                <code value="1987143"/>
-                <display value="Cortizone Topical Product"/>
-            </concept>
+
             <concept>
                 <code value="1180028"/>
                 <display value="Proctocort Topical Product"/>

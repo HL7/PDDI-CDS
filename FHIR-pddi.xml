@@ -134,10 +134,11 @@
 <artifact id="ValueSet/valueset-warfarin" key="ValueSet-valueset-warfarin" name="valueset-warfarin"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
 <page key="cds-service-spec" name="CDS Service Specification "/>
 <page deprecated="true" key="home" name="Home" url="index"/>
 <page key="index" name="Implementation Guide for PDDI CDS (DRAFT)"/>
-<page key="artifacts" name="Knowledge Representation for PDDI CDS "/>
+<page key="knowledge-artifacts" name="Knowledge Representation for PDDI CDS "/>
 <page key="downloads" name="PDDI CDS – Downloads"/>
 <page key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
 <page key="toc" name="Table of Contents"/>

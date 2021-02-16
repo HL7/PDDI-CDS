@@ -37,6 +37,16 @@ An important requirement of CDS is that it provide clinically relevant informati
 
 To address workflow considerations, this implementation guide describes two complementary PDDI CDS scenarios: 1) CDS at the time that an ordering clinician selects a drug to add to an order (“order-select”), and 2) CDS at the time an ordering clinician signs a drug order (“order-sign”). It is possible for a stakeholder to implement both scenarios. In such case, the CDS service might trigger highly similar alerts at both order-select and order-sign. For example, if a clinician decides to ignore/over-ride a CDS suggestion presented at order-select, the CDS service might detect the same PDDI issue upon order-sign. This implementation guide defines a stateful approach where various resources returned from the order-select service are used to determine if an alert has been seen before while simultaneously allowing client EHRs to choose how to handle apparently repeat CDS suggestions.
 
+TODO: PATIENT-VIEW
+
+This implementation guide also describes a stand alone CDS scenario, CDS at the time a clinician opens a patient-record ("patient-view"). 
+
+Reasons for patient-view inclusion:
+* broad adoption of patient-view by other organizations
+* In shared decision-making this is an ideal time to bring up current potential interactions and perform risk calculations
+	* Can be used to trigger SMART App
+	* Need to include link to DDInteract App somewhere in this section
+
 In this guide, we assume that the service implementation complies with the [CDS Hooks Specification](http://cds-hooks.org/). CDS-Hooks is a standard that has gained considerable interest among EHR vendors. It is a “hook” based pattern designed to provide a simple way to initiate requests for CDS, from any point in a clinical workflow. It specifies the basic actions of registering for CDS services, calling those services, and then receiving the CDS service response in form of simple structured messages called "cards" that provide appropriate information and suggested actions within the context of the EHR. In CDS Hooks, "Prefetch" queries are a key component that supports the CDS system performance. These queries assemble relevant data from the EHR prior to submitting a request to the CDS service. Depending on the patient and service, prefetch data may encompass a variety resources captured during various time periods, so it is crucial that implementors and clinicians refine prefetch template parameters to obtain only data that is clinically relevant. See this implementation guide's discussion of the [CDS Service specification applied to PDDI CDS](./cds-service-spec.html) for more information.
 
 

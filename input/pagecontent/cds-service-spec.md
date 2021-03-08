@@ -78,6 +78,8 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 * SMART authentication during FHIR server requests
 
 
+**NEED TO ADD SECTION REGARDING EVIDENCE RESOURCE AND EBM ON FHIR**
+
 #### CPOE Workflow Hooks 
 {:.no_toc}
 

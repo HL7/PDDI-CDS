@@ -23,7 +23,9 @@ Richard Boyce boycerd@upmc.edu
 Guilherme Del Fiol guilherme.delfiol@utah.edu
 
 ## Local Build
-    java -jar "org.hl7.fhir.publisher.jar" -ig ig.json
+Download jar from https://github.com/HL7/fhir-ig-publisher/releases
+
+    java -jar "org.hl7.fhir.publisher.jar" -ig ig.ini
        
 ## ig publisher GUI
 

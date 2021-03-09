@@ -1,0 +1,42 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f101",
+        "name": [
+          {
+            "use": "official",
+            "family": "Shaw",
+            "given": [
+              "Amy",
+              "V"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1982-01-07"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f201",
+        "name": [
+          {
+            "use": "official",
+            "family": "Ross",
+            "given": [
+              "Joseph",
+              "I"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1950-01-07"
+      }
+    }
+  ]
+}

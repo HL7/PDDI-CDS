@@ -1,0 +1,448 @@
+{
+  "hookInstance": "226b8876-8786-439c-8056-42d98bd33bee",
+  "hook": "order-sign",
+  "fhirServer": "http://localhost:2020/baseDstu3",
+  "userId": "Practitioner/COREPRACTITIONER1",
+  "patient": "f301",
+  "extension": {
+    "pddi-configuration-items": {
+      "filter-out-repeated-alerts": true,
+      "show-evidence-support": true,
+      "alert-non-serious": true
+    }
+  },
+  "context": {
+    "patientId": "f301",
+    "encounterId": "e301",
+    "draftOrders": {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "MedicationRequest",
+            "authoredOn": "2020-03-05",
+            "status": "draft",
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "dosageInstruction": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{pill}"
+                },
+                "timing": {
+                  "repeat": {
+                    "frequency": 1,
+                    "period": 1,
+                    "periodUnit": "d"
+                  }
+                }
+              }
+            ],
+            "medicationCodeableConcept": {
+              "text": "Digoxin 0.2 MG Oral Capsule",
+              "coding": [
+                {
+                  "display": "Digoxin 0.2 MG Oral Capsule",
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "197605"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "prefetch": {
+    "item1": {
+      "resourceType": "Bundle",
+      "id": "7504db52-9088-4d0f-a7c5-f5219840c9db",
+      "meta": {
+        "lastUpdated": "2020-03-19T09:35:03.790+00:00"
+      },
+      "type": "searchset",
+      "total": 1,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost:2020/baseDstu3/Patient?_id=f301"
+        }
+      ],
+      "entry": [
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/Patient/f301",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "f301",
+            "meta": {
+              "versionId": "1",
+              "lastUpdated": "2020-03-19T09:04:31.028+00:00"
+            },
+            "name": [
+              {
+                "use": "official",
+                "family": "Shaw",
+                "given": [
+                  "Amy",
+                  "V"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1982-01-07"
+          },
+          "search": {
+            "mode": "match"
+          }
+        }
+      ]
+    },
+    "item3": {
+      "resourceType": "Bundle",
+      "id": "52066817-9f3b-4632-beb4-ab5fbae2244e",
+      "meta": {
+        "lastUpdated": "2020-03-19T09:35:03.809+00:00"
+      },
+      "type": "searchset",
+      "total": 0,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost:2020/baseDstu3/MedicationAdministration?effective-time=ge2020-03-30&patient=f301"
+        }
+      ]
+    },
+    "item5": {
+      "resourceType": "Bundle",
+      "id": "713f91ee-3774-478b-8496-21e88b17ad27",
+      "meta": {
+        "lastUpdated": "2020-03-19T09:35:03.812+00:00"
+      },
+      "type": "searchset",
+      "total": 0,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost:2020/baseDstu3/MedicationStatement?effective=ge2020-03-30&patient=f301"
+        }
+      ]
+    },
+    "item2": {
+      "resourceType": "Bundle",
+      "id": "4abf9c87-d626-4f7c-ba0e-fb6403070382",
+      "meta": {
+        "lastUpdated": "2020-03-19T09:35:03.803+00:00"
+      },
+      "type": "searchset",
+      "total": 2,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost:2020/baseDstu3/MedicationRequest?authoredon=ge2020-03-30&patient=f301"
+        }
+      ],
+      "entry": [
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/MedicationRequest/r301",
+          "resource": {
+            "resourceType": "MedicationRequest",
+            "id": "r301",
+            "meta": {
+              "versionId": "1",
+              "lastUpdated": "2020-03-19T09:04:30.432+00:00"
+            },
+            "status": "active",
+            "intent": "order",
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-request-category",
+                  "code": "outpatient"
+                }
+              ]
+            },
+            "medicationCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "315749",
+                  "display": "Cyclosporine 100 MG"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "authoredOn": "2020-03-02"
+          },
+          "search": {
+            "mode": "match"
+          }
+        },
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/MedicationRequest/r302",
+          "resource": {
+            "resourceType": "MedicationRequest",
+            "id": "r302",
+            "meta": {
+              "versionId": "2",
+              "lastUpdated": "2020-03-19T09:04:30.418+00:00"
+            },
+            "status": "active",
+            "intent": "order",
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-request-category",
+                  "code": "outpatient"
+                }
+              ]
+            },
+            "medicationCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "code": "197606",
+                  "display": "Digoxin 0.25 MG Oral Tablet"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "authoredOn": "2020-03-02"
+          },
+          "search": {
+            "mode": "match"
+          }
+        }
+      ]
+    },
+    "item6": {
+      "resourceType": "Bundle",
+      "id": "2a08cdae-97e4-4e16-a4df-6986b5e875d9",
+      "meta": {
+        "lastUpdated": "2020-03-19T09:35:03.838+00:00"
+      },
+      "type": "searchset",
+      "total": 5,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost:2020/baseDstu3/Observation?date=ge2020-03-20&patient=f301"
+        }
+      ],
+      "entry": [
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/Observation/o301",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "o301",
+            "meta": {
+              "versionId": "2",
+              "lastUpdated": "2020-03-19T09:04:30.811+00:00"
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10535-3",
+                  "display": "Digoxin [Mass/​volume] in Serum or Plasma"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "effectiveDateTime": "2020-03-28",
+            "valueQuantity": {
+              "value": 0.7,
+              "unit": "ng/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "ng/mL"
+            }
+          },
+          "search": {
+            "mode": "match"
+          }
+        },
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/Observation/o302",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "o302",
+            "meta": {
+              "versionId": "2",
+              "lastUpdated": "2020-03-19T09:04:30.783+00:00"
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "75940-7",
+                  "display": "Potassium [Mass/​volume] in Blood"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "effectiveDateTime": "2020-03-28",
+            "valueQuantity": {
+              "value": 3.6,
+              "unit": "mEq/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mEq/L"
+            }
+          },
+          "search": {
+            "mode": "match"
+          }
+        },
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/Observation/o303",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "o303",
+            "meta": {
+              "versionId": "2",
+              "lastUpdated": "2020-03-19T09:04:30.750+00:00"
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "19123-9",
+                  "display": "Magnesium [Mass/volume] in Serum or Plasma"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "effectiveDateTime": "2020-03-28",
+            "valueQuantity": {
+              "value": 0.8,
+              "unit": "mmol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mmol/L"
+            }
+          },
+          "search": {
+            "mode": "match"
+          }
+        },
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/Observation/o304",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "o304",
+            "meta": {
+              "versionId": "2",
+              "lastUpdated": "2020-03-19T09:04:30.861+00:00"
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "17861-6",
+                  "display": "Calcium [Mass/volume] in Serum or Plasma"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "effectiveDateTime": "2020-03-28",
+            "valueQuantity": {
+              "value": 8.6,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          },
+          "search": {
+            "mode": "match"
+          }
+        },
+        {
+          "fullUrl": "http://localhost:2020/baseDstu3/Observation/o305",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "o305",
+            "meta": {
+              "versionId": "2",
+              "lastUpdated": "2020-03-19T09:04:30.834+00:00"
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2160-0",
+                  "display": "Creatinine [Mass/​volume] in Serum or Plasma"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/f301"
+            },
+            "context": {
+              "reference": "Encounter/e301"
+            },
+            "effectiveDateTime": "2020-03-28",
+            "valueQuantity": {
+              "value": 0.7,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          },
+          "search": {
+            "mode": "match"
+          }
+        }
+      ]
+    },
+    "item4": {
+      "resourceType": "Bundle",
+      "id": "cb4a3a00-c109-4899-9239-4f70b90ea3ab",
+      "meta": {
+        "lastUpdated": "2020-03-19T09:35:03.812+00:00"
+      },
+      "type": "searchset",
+      "total": 0,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost:2020/baseDstu3/MedicationDispense?patient=f301&whenhandedover=ge2020-03-30"
+        }
+      ]
+    }
+  }
+}

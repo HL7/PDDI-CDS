@@ -11,6 +11,12 @@
     <date value="2019-01-23"/>
     <fhirVersion value="4.0.1"/>
     <packageId value="hl7.fhir.uv.pddi"/>
+    <jurisdiction>
+        <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+        </coding>
+    </jurisdiction>
     <publisher value="HL7 Clinical Decision Support Workgroup"/>
     <contact>
         <telecom>
@@ -646,6 +652,7 @@
             <reference>
                 <reference value="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
             </reference>
+            <description value="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
             <name value="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -653,6 +660,7 @@
             <reference>
                 <reference value="Encounter/encounter-digoxin-cyclosporine-context"/>
             </reference>
+            <description value="encounter-digoxin-cyclosporine-context"/>
             <name value="encounter-digoxin-cyclosporine-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -660,6 +668,7 @@
             <reference>
                 <reference value="Encounter/encounter-digoxin-cyclosporine-prefetch"/>
             </reference>
+            <description value="encounter-digoxin-cyclosporine-prefetch"/>
             <name value="encounter-digoxin-cyclosporine-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -667,6 +676,7 @@
             <reference>
                 <reference value="Encounter/encounter-warfarin-nsaid-context"/>
             </reference>
+            <description value="encounter-warfarin-nsaid-context"/>
             <name value="encounter-warfarin-nsaid-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -674,6 +684,7 @@
             <reference>
                 <reference value="Encounter/encounter-warfarin-nsaid-prefetch"/>
             </reference>
+            <description value="encounter-warfarin-nsaid-prefetch"/>
             <name value="encounter-warfarin-nsaid-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -681,6 +692,7 @@
             <reference>
                 <reference value="MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
             </reference>
+            <description value="medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
             <name value="medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -688,6 +700,7 @@
             <reference>
                 <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
             </reference>
+            <description value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
             <name value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -695,6 +708,7 @@
             <reference>
                 <reference value="MedicationDispense/medicationdispense-digoxin-cyclosporine-furosemide-prefetch"/>
             </reference>
+            <description value="medicationdispense-digoxin-cyclosporine-furosemide-prefetch"/>
             <name value="medicationdispense-digoxin-cyclosporine-furosemide-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -702,6 +716,7 @@
             <reference>
                 <reference value="MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
             </reference>
+            <description value="medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
             <name value="medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -709,6 +724,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-context"/>
             </reference>
+            <description value="medicationrequest-digoxin-cyclosporine-cyclosporine-context"/>
             <name value="medicationrequest-digoxin-cyclosporine-cyclosporine-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -716,6 +732,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch"/>
             </reference>
+            <description value="medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch"/>
             <name value="medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -723,6 +740,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-digoxin-cyclosporine-digoxin-context"/>
             </reference>
+            <description value="medicationrequest-digoxin-cyclosporine-digoxin-context"/>
             <name value="medicationrequest-digoxin-cyclosporine-digoxin-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -730,6 +748,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
             <name value="medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -737,6 +756,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-corticosteroid-prefetch"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-corticosteroid-prefetch"/>
             <name value="medicationrequest-warfarin-nsaid-corticosteroid-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -744,6 +764,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-misoprostol-prefetch"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-misoprostol-prefetch"/>
             <name value="medicationrequest-warfarin-nsaid-misoprostol-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -751,6 +772,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-context"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-nsaid-context"/>
             <name value="medicationrequest-warfarin-nsaid-nsaid-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -758,6 +780,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-prefetch"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-nsaid-prefetch"/>
             <name value="medicationrequest-warfarin-nsaid-nsaid-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -765,6 +788,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-ppi-prefetch"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-ppi-prefetch"/>
             <name value="medicationrequest-warfarin-nsaid-ppi-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -772,6 +796,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-topicaldiclofenac-context"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-topicaldiclofenac-context"/>
             <name value="medicationrequest-warfarin-nsaid-topicaldiclofenac-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -779,6 +804,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-context"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-warfarin-context"/>
             <name value="medicationrequest-warfarin-nsaid-warfarin-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -786,6 +812,7 @@
             <reference>
                 <reference value="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-prefetch"/>
             </reference>
+            <description value="medicationrequest-warfarin-nsaid-warfarin-prefetch"/>
             <name value="medicationrequest-warfarin-nsaid-warfarin-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -793,6 +820,7 @@
             <reference>
                 <reference value="MedicationStatement/medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
             </reference>
+            <description value="medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
             <name value="medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -800,6 +828,7 @@
             <reference>
                 <reference value="Observation/observation-digoxin-cyclosporine-calcium"/>
             </reference>
+            <description value="observation-digoxin-cyclosporine-calcium"/>
             <name value="observation-digoxin-cyclosporine-calcium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -807,6 +836,7 @@
             <reference>
                 <reference value="Observation/observation-digoxin-cyclosporine-digoxin"/>
             </reference>
+            <description value="observation-digoxin-cyclosporine-digoxin"/>
             <name value="observation-digoxin-cyclosporine-digoxin"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -814,6 +844,7 @@
             <reference>
                 <reference value="Observation/observation-digoxin-cyclosporine-magnesium"/>
             </reference>
+            <description value="observation-digoxin-cyclosporine-magnesium"/>
             <name value="observation-digoxin-cyclosporine-magnesium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -821,6 +852,7 @@
             <reference>
                 <reference value="Observation/observation-digoxin-cyclosporine-potassium"/>
             </reference>
+            <description value="observation-digoxin-cyclosporine-potassium"/>
             <name value="observation-digoxin-cyclosporine-potassium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -828,6 +860,7 @@
             <reference>
                 <reference value="Observation/observation-digoxin-cyclosporine-renal"/>
             </reference>
+            <description value="observation-digoxin-cyclosporine-renal"/>
             <name value="observation-digoxin-cyclosporine-renal"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -835,6 +868,7 @@
             <reference>
                 <reference value="Patient/patient-digoxin-cyclosporine-context"/>
             </reference>
+            <description value="patient-digoxin-cyclosporine-context"/>
             <name value="patient-digoxin-cyclosporine-context"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -842,6 +876,7 @@
             <reference>
                 <reference value="Patient/patient-warfarin-nsaid-over65-prefetch"/>
             </reference>
+            <description value="patient-warfarin-nsaid-over65-prefetch"/>
             <name value="patient-warfarin-nsaid-over65-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -849,6 +884,7 @@
             <reference>
                 <reference value="Patient/patient-warfarin-nsaid-under65-prefetch"/>
             </reference>
+            <description value="patient-warfarin-nsaid-under65-prefetch"/>
             <name value="patient-warfarin-nsaid-under65-prefetch"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -856,6 +892,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-calcium"/>
             </reference>
+            <description value="procedure-digoxin-cyclosporine-calcium"/>
             <name value="procedure-digoxin-cyclosporine-calcium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -863,6 +900,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-consultation"/>
             </reference>
+            <description value="procedure-digoxin-cyclosporine-consultation"/>
             <name value="procedure-digoxin-cyclosporine-consultation"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -870,6 +908,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-creatinine"/>
             </reference>
+            <description value="procedure-digoxin-cyclosporine-creatinine"/>
             <name value="procedure-digoxin-cyclosporine-creatinine"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -877,6 +916,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-digoxin"/>
             </reference>
+            <description value="procedure-digoxin-cyclosporine-digoxin"/>
             <name value="procedure-digoxin-cyclosporine-digoxin"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -884,6 +924,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-magnesium"/>
             </reference>
+            <description value=""/>
             <name value="procedure-digoxin-cyclosporine-magnesium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -891,6 +932,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-potassium"/>
             </reference>
+            <description value=""/>
             <name value="procedure-digoxin-cyclosporine-potassium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -910,7 +952,7 @@
             </page>
             <page>
                 <nameUrl value="cds-service-spec.html"/>
-                <title value="CDS Service Specification "/>
+                <title value="CDS Service Specification"/>
                 <generation value="markdown"/>
             </page>
             <page>
@@ -920,7 +962,7 @@
             </page>
             <page>
                 <nameUrl value="knowledge-artifacts.html"/>
-                <title value="Knowledge Representation for PDDI CDS "/>
+                <title value="Knowledge Representation for PDDI CDS"/>
                 <generation value="markdown"/>
             </page>
             <page>
@@ -938,21 +980,6 @@
                 <title value="Test data defined as part of the PDDI CDS Implementation Guide"/>
                 <generation value="markdown"/>
             </page>
-            <page>
-                <nameUrl value="assets/images/diagram1.jpg"/>
-                <title value="diagram 1"/>
-                <generation value="html"/>
-            </page>
-            <page>
-                <nameUrl value="assets/images/diagram2.jpg"/>
-                <title value="diagram 2"/>
-                <generation value="html"/>
-            </page>
-            <page>
-                <nameUrl value="assets/images/diagram3.jpg"/>
-                <title value="diagram 3"/>
-                <generation value="html"/>
-            </page>
         </page>
         <parameter>
             <code value="releaselabel"/>
@@ -960,7 +987,7 @@
         </parameter>
         <parameter>
             <code value="copyrightyear"/>
-            <value value="2019+"/>
+            <value value="2021+"/>
         </parameter>
     </definition>
 </ImplementationGuide>

@@ -14,7 +14,7 @@
 
 * It is RECOMMENDED that the rule engine be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
-* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it MUST support processing of the configuration options described in [Extension subsection](#extension). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses. 
+* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it MUST support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses. 
 
 **An electronic health record (EHR) CDS client.**
 
@@ -23,7 +23,7 @@
 
 * The EHR MUST call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) MUST contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
 
-* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#extension). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses. 
+* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses. 
 
 ### Preliminaries 
 

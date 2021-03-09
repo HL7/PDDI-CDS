@@ -1,0 +1,27 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c101",
+        "clinicalStatus": "active",
+        "verificationStatus": "differential",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "12847006",
+              "display": "Acute duodenal ulcer with hemorrhage"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f101"
+        },
+        "assertedDate": "2013-04-04"
+      }
+    }
+  ]
+}

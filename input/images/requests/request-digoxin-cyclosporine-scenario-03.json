@@ -1,0 +1,274 @@
+{
+  "hookInstance": "9d02e4d7-2d5b-492f-8f77-ce36dda0647d",
+  "fhirServer": "http://46.101.183.140:8080/baseDstu3",
+  "hook": "medication-prescribe",
+  "user": "Practitioner/example",
+  "applyCql": "true",
+  "context": {
+    "patientId": "Patient/patient-digoxin-cyclosporine-context",
+    "encounterId": "Encounter/encounter-digoxin-cyclosporine-context",
+    "medications": {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resourceType": "MedicationRequest",
+          "id": "medicationrequest-digoxin-cyclosporine-digoxin-context",
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "code": "outpatient"
+                }
+              ]
+            }
+          ],
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "197606",
+                "display": "Digoxin 0.25 MG Oral Tablet"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/patient-digoxin-cyclosporine-context"
+          },
+          "context": {
+            "reference": "Encounter/encounter-digoxin-cyclosporine-context"
+          },
+          "_authoredOn": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                "valueString": "Today()"
+              }
+            ]
+          },
+          "dosageInstruction": [
+            {
+              "timing": {
+                "repeat": {
+                  "frequency": 1,
+                  "period": 1.0,
+                  "periodUnit": "d"
+                }
+              },
+              "asNeededBoolean": false
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                  "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"
+                }
+              ]
+            },
+            "numberOfRepeatsAllowed": 1,
+            "expectedSupplyDuration": {
+              "value": 90.0,
+              "unit": "d"
+            }
+          }
+        }
+      ]
+    },
+    "prefetch": {
+      "item1": {
+        "response": {
+          "status": "200 OK"
+        },
+        "resource": {
+          "resourceType": "Bundle",
+          "entry": [
+            {
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch",
+              "status": "active",
+              "intent": "order",
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "code": "outpatient"
+                    }
+                  ]
+                }
+              ],
+              "medicationCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "835894",
+                    "display": "cyclosporine, modified 25 MG Oral Capsule"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/patient-digoxin-cyclosporine-context"
+              },
+              "context": {
+                "reference": "Encounter/encounter-digoxin-cyclosporine-context"
+              },
+              "_authoredOn": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                    "valueString": "Today() - 10 days"
+                  }
+                ]
+              },
+              "dosageInstruction": [
+                {
+                  "timing": {
+                    "repeat": {
+                      "frequency": 1,
+                      "period": 1.0,
+                      "periodUnit": "d"
+                    }
+                  },
+                  "asNeededBoolean": false
+                }
+              ],
+              "dispenseRequest": {
+                "validityPeriod": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                      "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() - 10 days }, end: FHIR.dateTime { value: Today() } }"
+                    }
+                  ]
+                },
+                "numberOfRepeatsAllowed": 1,
+                "expectedSupplyDuration": {
+                  "value": 90.0,
+                  "unit": "d"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "item2": {
+        "response": {
+          "status": "200 OK"
+        },
+        "resource": {
+          "resourceType": "Bundle",
+          "entry": [
+            {
+              "resourceType": "Observation",
+              "id": "observation-digoxin-cyclosporine-renal",
+              "status": "final",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "33914-3",
+                    "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by        Creatinine-based formula (MDRD)"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/patient-digoxin-cyclosporine-context"
+              },
+              "issued": "2018-07-04T14:34:00+01:00",
+              "method": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/id",
+                    "code": "702668005",
+                    "display": "MDRD"
+                  }
+                ]
+              },
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "48643-1",
+                        "display": "Glomerular filtration rate/1.73 sq M predicted among blacks [Volume Rate/?Area] in Serum          or Plasma by Creatinine-based formula (MDRD)"
+                      }
+                    ]
+                  },
+                  "valueQuantity": {
+                    "value": 60,
+                    "comparator": ">",
+                    "unit": "mL/min/1.73m2",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mL/min/{1.73_m2}"
+                  },
+                  "referenceRange": [
+                    {
+                      "low": {
+                        "value": 60,
+                        "unit": "mL/min/1.73m2",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/min/{1.73_m2}"
+                      },
+                      "appliesTo": [
+                        {
+                          "text": "non-black/african-american"
+                        }
+                      ],
+                      "age": {
+                        "low": {
+                          "value": 18,
+                          "unit": "yrs",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "a"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "48642-3",
+                        "display": "Glomerular filtration rate/1.73 sq M predicted among non-blacks [Volume Rate/Area] in          Serum or Plasma by Creatinine-based formula (MDRD)"
+                      }
+                    ]
+                  },
+                  "valueQuantity": {
+                    "value": 60,
+                    "unit": "mL/min/1.73m2",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mL/min/{1.73_m2}"
+                  },
+                  "referenceRange": [
+                    {
+                      "low": {
+                        "value": 60,
+                        "unit": "mL/min/1.73m2",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/min/{1.73_m2}"
+                      },
+                      "age": {
+                        "low": {
+                          "value": 18,
+                          "unit": "yrs",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "a"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+

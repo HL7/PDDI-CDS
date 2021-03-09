@@ -135,10 +135,10 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="cds-service-spec" name="CDS Service Specification "/>
+<page key="cds-service-spec" name="CDS Service Specification"/>
 <page deprecated="true" key="home" name="Home" url="index"/>
 <page key="index" name="Implementation Guide for PDDI CDS (DRAFT)"/>
-<page key="knowledge-artifacts" name="Knowledge Representation for PDDI CDS "/>
+<page key="knowledge-artifacts" name="Knowledge Representation for PDDI CDS"/>
 <page key="downloads" name="PDDI CDS – Downloads"/>
 <page key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
 <page key="toc" name="Table of Contents"/>
@@ -147,7 +147,4 @@
 <page key="testdata" name="Test data defined as part of the PDDI CDS Implementation Guide"/>
 <page deprecated="true" key="use-case" name="Use Case" url="use-cases"/>
 <page key="use-cases" name="Use Case - a potential interaction between warfarin and non-steroidal anti-inflammatory drugs (NSAIDs)"/>
-<page key="" name="diagram 1"/>
-<page key="" name="diagram 2"/>
-<page key="" name="diagram 3"/>
 </specification>

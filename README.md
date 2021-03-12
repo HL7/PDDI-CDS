@@ -23,7 +23,15 @@ Richard Boyce boycerd@upmc.edu
 Guilherme Del Fiol guilherme.delfiol@utah.edu
 
 ## Local Build
-    java -jar "org.hl7.fhir.publisher.jar" -ig ig.json
+Download jar from https://github.com/HL7/fhir-ig-publisher/releases
+
+    java -jar "org.hl7.fhir.publisher.jar" -ig ig.ini
+    
+You can then access it locally by using Python for example:
+    
+    python3 -m http.server
+    
+Then access it at http://localhost:8000/output/
        
 ## ig publisher GUI
 

@@ -1,0 +1,12 @@
+<ul class="nav navbar-nav">
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="{{site.data.info.assets}}use-cases.html">Use Case</a></li>
+    <li><a href="cds-service-spec.html">CDS Service Specification</a></li>
+    <li><a href="terminology.html">Terminology</a></li>
+    <li><a href="knowledge-artifacts.html">Knowledge Artifacts</a></li>
+    <li><a href="downloads.html">Downloads</a></li>
+    <li><a href="profiles.html">Profiles</a></li>
+    <li><a href="testdata.html">Test Data</a></li>
+</ul>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="medicationrequest-digoxin-cyclosporine-digoxin-context"/>
+    <status value="active"/>
+    <intent value="order"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="outpatient"/>
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="197606"/>
+            <display value="digoxin 250 MCG Oral Tablet"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-digoxin-cyclosporine-context"/>
+    </subject>
+    <dosageInstruction>
+        <timing>
+            <repeat>
+                <frequency value="1"/>
+                <period value="1.0"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="false"/>
+        <doseAndRate>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="calculated"/>
+                </coding>
+            </type>
+            <doseQuantity>
+                <value value="1.0"/>
+                <unit value="tablet"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <dispenseRequest>
+        <validityPeriod>
+            <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
+                <valueExpression>
+                    <language value="text/cql"/>
+                    <expression
+                            value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
+                </valueExpression>
+            </extension>
+        </validityPeriod>
+        <numberOfRepeatsAllowed value="1"/>
+        <expectedSupplyDuration>
+            <value value="90.0"/>
+            <unit value="d"/>
+        </expectedSupplyDuration>
+    </dispenseRequest>
+</MedicationRequest>

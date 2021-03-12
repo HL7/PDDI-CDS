@@ -40,10 +40,7 @@
                 <code value="153010"/>
                 <display value="Advil"/>
             </concept>
-            <concept>
-                <code value="165786"/>
-                <display value="MIdol Cramps and Bodyaches"/>
-            </concept>
+
             <concept>
                 <code value="202488"/>
                 <display value="Motrin"/>
@@ -64,10 +61,7 @@
                 <code value="217693"/>
                 <display value="Ibu"/>
             </concept>
-            <concept>
-                <code value="219128"/>
-                <display value="Pediacare Fever"/>
-            </concept>
+
             <concept>
                 <code value="220826"/>
                 <display value="Vicoprofen"/>
@@ -124,10 +118,7 @@
                 <code value="1372755"/>
                 <display value="Ibudone"/>
             </concept>
-            <concept>
-                <code value="1429982"/>
-                <display value="PediaCare Children's Pain and Fever w/ Ibuprofen"/>
-            </concept>
+
             <concept>
                 <code value="1542983"/>
                 <display value="Xylon"/>
@@ -144,24 +135,14 @@
                 <code value="541710"/>
                 <display value="Samson 8"/>
             </concept>
-            <concept>
-                <code value="851212"/>
-                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
-                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
-                    (Ibuprofen 800 MG Oral Tablet) } Pack [IC 800 Kit]"/>
-            </concept>
+
             <concept>
                 <code value="851210"/>
                 <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
                     Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
                     (Ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]"/>
             </concept>
-            <concept>
-                <code value="851211"/>
-                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
-                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
-                    (Ibuprofen 800 MG Oral Tablet) } Pack"/>
-            </concept>
+
             <concept>
                 <code value="851209"/>
                 <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
@@ -260,10 +241,7 @@
                 <code value="814985"/>
                 <display value="Ibuprofen / Tolperisone"/>
             </concept>
-            <concept>
-                <code value="817356"/>
-                <display value="Acetaminophen / Codeine / Ibuprofen"/>
-            </concept>
+
             <concept>
                 <code value="818102"/>
                 <display value="Acetaminophen / Ibuprofen"/>
@@ -357,18 +335,12 @@
                 <code value="806013"/>
                 <display value="Ibuprofen 100 MG Oral Tablet [Motrin]"/>
             </concept>
-            <concept>
-                <code value="854760"/>
-                <display value="Ibuprofen 200 MG Oral Tablet [MIdol Cramps and Bodyaches]"/>
-            </concept>
+
             <concept>
                 <code value="854762"/>
                 <display value="Ibuprofen 40 MG/ML Oral Suspension [Motrin]"/>
             </concept>
-            <concept>
-                <code value="1190622"/>
-                <display value="Ibuprofen 200 MG Oral Capsule [MIdol Cramps and Bodyaches]"/>
-            </concept>
+
             <concept>
                 <code value="202098"/>
                 <display value="Ibuprofen 800 MG Oral Tablet [Motrin]"/>
@@ -399,10 +371,7 @@
                 <code value="206917"/>
                 <display value="Ibuprofen 800 MG Oral Tablet [Ibu]"/>
             </concept>
-            <concept>
-                <code value="206876"/>
-                <display value="Ibuprofen 40 MG/ML Oral Suspension [Pediacare Fever]"/>
-            </concept>
+
             <concept>
                 <code value="858838"/>
                 <display value="Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG Oral Tablet [Vicoprofen]"/>
@@ -479,11 +448,7 @@
                 <code value="859317"/>
                 <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Ibudone]"/>
             </concept>
-            <concept>
-                <code value="1429987"/>
-                <display value="Ibuprofen 20 MG/ML Oral Suspension [PediaCare
-                    Children's Pain and Fever w/ Ibuprofen]"/>
-            </concept>
+
             <concept>
                 <code value="1542988"/>
                 <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Xylon]"/>
@@ -551,10 +516,7 @@
                 <code value="792240"/>
                 <display value="Ibuprofen 100 MG [Motrin]"/>
             </concept>
-            <concept>
-                <code value="854758"/>
-                <display value="Ibuprofen 200 MG [MIdol Cramps and Bodyaches]"/>
-            </concept>
+
             <concept>
                 <code value="854761"/>
                 <display value="Ibuprofen 40 MG/ML [Motrin]"/>
@@ -584,10 +546,7 @@
                 <code value="567719"/>
                 <display value="Ibuprofen 800 MG [Ibu]"/>
             </concept>
-            <concept>
-                <code value="567678"/>
-                <display value="Ibuprofen 40 MG/ML [Pediacare Fever]"/>
-            </concept>
+
             <concept>
                 <code value="858837"/>
                 <display value="Hydrocodone Bitartrate 7.5 MG / Ibuprofen 200 MG [Vicoprofen]"/>
@@ -658,11 +617,7 @@
                 <code value="859316"/>
                 <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG [Ibudone]"/>
             </concept>
-            <concept>
-                <code value="1429983"/>
-                <display value="Ibuprofen 20 MG/ML [PediaCare Children's Pain and
-                    Fever w/ Ibuprofen]"/>
-            </concept>
+
             <concept>
                 <code value="1542984"/>
                 <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG [Xylon]"/>
@@ -702,10 +657,7 @@
                 <code value="367939"/>
                 <display value="Ibuprofen / Pseudoephedrine Oral Tablet [Advil Cold and Sinus]"/>
             </concept>
-            <concept>
-                <code value="365862"/>
-                <display value="Ibuprofen Oral Suspension [Pediacare Fever]"/>
-            </concept>
+
             <concept>
                 <code value="368308"/>
                 <display value="Hydrocodone / Ibuprofen Oral Tablet [Vicoprofen]"/>
@@ -746,10 +698,7 @@
                 <code value="731532"/>
                 <display value="Ibuprofen Oral Capsule [Advil]"/>
             </concept>
-            <concept>
-                <code value="854759"/>
-                <display value="Ibuprofen Oral Tablet [MIdol Cramps and Bodyaches]"/>
-            </concept>
+
             <concept>
                 <code value="792241"/>
                 <display value="Ibuprofen Chewable Tablet [Motrin]"/>
@@ -806,11 +755,7 @@
                 <code value="1359094"/>
                 <display value="Ibuprofen Oral Tablet [Ibutab]"/>
             </concept>
-            <concept>
-                <code value="1429984"/>
-                <display value="Ibuprofen Oral Suspension [PediaCare Children's Pain
-                    and Fever w/ Ibuprofen]"/>
-            </concept>
+
             <concept>
                 <code value="1542985"/>
                 <display value="Hydrocodone / Ibuprofen Oral Tablet [Xylon]"/>
@@ -820,10 +765,7 @@
                 <display value="Ibuprofen / Phenylephrine Oral Tablet [Advil Sinus
                     Congestion and Pain]"/>
             </concept>
-            <concept>
-                <code value="1190621"/>
-                <display value="Ibuprofen Oral Capsule [MIdol Cramps and Bodyaches]"/>
-            </concept>
+
             <concept>
                 <code value="1791366"/>
                 <display value="Ibuprofen Injection [Neoprofen]"/>
@@ -1334,15 +1276,8 @@
                 <code value="1359096"/>
                 <display value="Ibutab Pill"/>
             </concept>
-            <concept>
-                <code value="1429985"/>
-                <display value="PediaCare Children's Pain and Fever w/ Ibuprofen Oral
-                    Liquid Product"/>
-            </concept>
-            <concept>
-                <code value="1429986"/>
-                <display value="PediaCare Children's Pain and Fever w/ Ibuprofen Oral Product"/>
-            </concept>
+
+
             <concept>
                 <code value="1166575"/>
                 <display value="Ibu Oral Product"/>
@@ -1423,22 +1358,10 @@
                 <code value="1182821"/>
                 <display value="Motrin Pill"/>
             </concept>
-            <concept>
-                <code value="1183472"/>
-                <display value="Pediacare Fever Oral Liquid Product"/>
-            </concept>
-            <concept>
-                <code value="1183473"/>
-                <display value="Pediacare Fever Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1184939"/>
-                <display value="MIdol Cramps and Bodyaches Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1184940"/>
-                <display value="MIdol Cramps and Bodyaches Pill"/>
-            </concept>
+
+
+
+
             <concept>
                 <code value="1187718"/>
                 <display value="Ultraprin Oral Product"/>

@@ -213,10 +213,7 @@
                 <code value="822000"/>
                 <display value="Carisoprodol / Dexamethasone / tenoxicam"/>
             </concept>
-            <concept>
-                <code value="823322"/>
-                <display value="Chlorpheniramine / Dexamethasone"/>
-            </concept>
+
             <concept>
                 <code value="883815"/>
                 <display value="Dexamethasone / Tobramycin"/>
@@ -378,10 +375,7 @@
                 <code value="566561"/>
                 <display value="Dexamethasone 1 MG/ML [Maxidex]"/>
             </concept>
-            <concept>
-                <code value="688243"/>
-                <display value="Dexamethasone 0.0005 MG/MG [Maxidex]"/>
-            </concept>
+
             <concept>
                 <code value="1534398"/>
                 <display value="dexamethasone acetate 8 MG/ML [De-Sone LA]"/>

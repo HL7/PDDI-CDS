@@ -164,14 +164,8 @@
                 <code value="690419"/>
                 <display value="Betamethasone / calcipotriene"/>
             </concept>
-            <concept>
-                <code value="812242"/>
-                <display value="Betamethasone / Chlorpheniramine"/>
-            </concept>
-            <concept>
-                <code value="813869"/>
-                <display value="Betamethasone / dexchlorpheniramine"/>
-            </concept>
+
+
             <concept>
                 <code value="814034"/>
                 <display value="Betamethasone / Terfenadine"/>

@@ -3,10 +3,10 @@
     <id value="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
     <status value="completed"/>
     <category>
-      <coding>
-	<system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"/>
-        <code value="outpatient"/>
-      </coding>
+        <coding>
+            <system value="http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"/>
+            <code value="outpatient"/>
+        </coding>
     </category>
     <medicationCodeableConcept>
         <coding>
@@ -43,14 +43,15 @@
         <asNeededBoolean value="false"/>
         <doseAndRate>
             <type>
-              <coding>
-                <code value="calculated"/>
-              </coding>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="calculated"/>
+                </coding>
             </type>
-			<doseQuantity>
-				<value value="1.0"/>
-				<unit value="tablet"/>
-			</doseQuantity>
-		</doseAndRate>
+            <doseQuantity>
+                <value value="1.0"/>
+                <unit value="tablet"/>
+            </doseQuantity>
+        </doseAndRate>
     </dosageInstruction>
 </MedicationDispense>

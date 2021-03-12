@@ -128,14 +128,8 @@
                 <code value="25027"/>
                 <display value="Fiorinal"/>
             </concept>
-            <concept>
-                <code value="353447"/>
-                <display value="Alka-Seltzer Morning Relief"/>
-            </concept>
-            <concept>
-                <code value="701317"/>
-                <display value="Alka-Seltzer PM"/>
-            </concept>
+
+
             <concept>
                 <code value="702317"/>
                 <display value="Bayer Back and Body Pain"/>
@@ -156,14 +150,8 @@
                 <code value="747233"/>
                 <display value="Fasprin"/>
             </concept>
-            <concept>
-                <code value="763112"/>
-                <display value="Goody's Body Pain"/>
-            </concept>
-            <concept>
-                <code value="763117"/>
-                <display value="Goody's Extra Strength"/>
-            </concept>
+
+
             <concept>
                 <code value="796658"/>
                 <display value="Stanback Headache Powder"/>
@@ -358,10 +346,7 @@
                 <code value="135095"/>
                 <display value="Aspirin / Codeine"/>
             </concept>
-            <concept>
-                <code value="214159"/>
-                <display value="Aspirin / butalbital / Caffeine"/>
-            </concept>
+
             <concept>
                 <code value="214160"/>
                 <display value="Aspirin / butalbital / Caffeine / Codeine"/>
@@ -594,10 +579,7 @@
                 <code value="820701"/>
                 <display value="Acetaminophen / Aspirin / salicylamide"/>
             </concept>
-            <concept>
-                <code value="821601"/>
-                <display value="Acetaminophen / Aspirin / Caffeine / Codeine"/>
-            </concept>
+
             <concept>
                 <code value="1534422"/>
                 <display value="Aspirin / Carbidopa"/>
@@ -809,21 +791,13 @@
                 <display value="12 HR Aspirin 25 MG / Dipyridamole 200 MG Extended Release
                     Oral Capsule [Aggrenox]"/>
             </concept>
-            <concept>
-                <code value="1536818"/>
-                <display value="Aspirin 500 MG / Caffeine 65 MG Effervescent Oral Tablet
-                    [Alka-Seltzer Morning Relief]"/>
-            </concept>
+
             <concept>
                 <code value="702320"/>
                 <display value="Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet [Bayer Back
                     and Body Pain]"/>
             </concept>
-            <concept>
-                <code value="1536673"/>
-                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG Effervescent
-                    Oral Tablet [Alka-Seltzer PM]"/>
-            </concept>
+
             <concept>
                 <code value="723530"/>
                 <display value="Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet [Excedrin
@@ -838,35 +812,19 @@
                 <code value="724444"/>
                 <display value="Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]"/>
             </concept>
-            <concept>
-                <code value="209470"/>
-                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral
-                    Tablet [Goody's Extra Strength]"/>
-            </concept>
+
             <concept>
                 <code value="747236"/>
                 <display value="Aspirin 81 MG Disintegrating Oral Tablet [Fasprin]"/>
             </concept>
-            <concept>
-                <code value="763115"/>
-                <display value="Acetaminophen 325 MG / Aspirin 500 MG Oral Powder
-                    [Goody's Body Pain]"/>
-            </concept>
+
             <concept>
                 <code value="797053"/>
                 <display value="Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG Oral
                     Powder [Stanback Headache Powder]"/>
             </concept>
-            <concept>
-                <code value="1188388"/>
-                <display value="Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG
-                    Oral Powder [Goody's Extra Strength]"/>
-            </concept>
-            <concept>
-                <code value="1188440"/>
-                <display value="Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG Oral
-                    Powder [Goody's Extra Strength]"/>
-            </concept>
+
+
             <concept>
                 <code value="1052678"/>
                 <display value="Aspirin 81 MG Delayed Release Oral Tablet [Miniprin]"/>
@@ -1131,18 +1089,12 @@
                 <code value="574548"/>
                 <display value="Aspirin 25 MG / Dipyridamole 200 MG [Aggrenox]"/>
             </concept>
-            <concept>
-                <code value="1536816"/>
-                <display value="Aspirin 500 MG / Caffeine 65 MG [Alka-Seltzer Morning Relief]"/>
-            </concept>
+
             <concept>
                 <code value="702318"/>
                 <display value="Aspirin 500 MG / Caffeine 32.5 MG [Bayer Back and Body Pain]"/>
             </concept>
-            <concept>
-                <code value="1536671"/>
-                <display value="Aspirin 325 MG / Diphenhydramine Citrate 38 MG [Alka-Seltzer PM]"/>
-            </concept>
+
             <concept>
                 <code value="723528"/>
                 <display value="Acetaminophen 250 MG / Aspirin 250 MG [Excedrin Back and Body]"/>
@@ -1156,34 +1108,19 @@
                 <code value="724442"/>
                 <display value="Aspirin 81 MG [Anacin Aspirin Regimen]"/>
             </concept>
-            <concept>
-                <code value="570081"/>
-                <display value="Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG
-                    [Goody's Extra Strength]"/>
-            </concept>
+
             <concept>
                 <code value="747234"/>
                 <display value="Aspirin 81 MG [Fasprin]"/>
             </concept>
-            <concept>
-                <code value="763113"/>
-                <display value="Acetaminophen 325 MG / Aspirin 500 MG [Goody's Body Pain]"/>
-            </concept>
+
             <concept>
                 <code value="797051"/>
                 <display value="Aspirin 650 MG / Caffeine 32 MG / salicylamide 200 MG
                     [Stanback Headache Powder]"/>
             </concept>
-            <concept>
-                <code value="1188385"/>
-                <display value="Acetaminophen 260 MG / Aspirin 520 MG / Caffeine 32.5 MG
-                    [Goody's Extra Strength]"/>
-            </concept>
-            <concept>
-                <code value="1188438"/>
-                <display value="Acetaminophen 325 MG / Aspirin 500 MG / Caffeine 65 MG
-                    [Goody's Extra Strength]"/>
-            </concept>
+
+
             <concept>
                 <code value="847089"/>
                 <display value="Aspirin 81 MG [Miniprin]"/>
@@ -1384,11 +1321,7 @@
                 <code value="702319"/>
                 <display value="Aspirin / Caffeine Oral Tablet [Bayer Back and Body Pain]"/>
             </concept>
-            <concept>
-                <code value="369061"/>
-                <display value="Acetaminophen / Aspirin / Caffeine Oral Tablet [Goody's
-                    Extra Strength]"/>
-            </concept>
+
             <concept>
                 <code value="700585"/>
                 <display value="Aspirin / butalbital / Caffeine / Codeine Oral Capsule [Ascomp]"/>
@@ -1426,10 +1359,7 @@
                 <code value="747235"/>
                 <display value="Aspirin Disintegrating Oral Tablet [Fasprin]"/>
             </concept>
-            <concept>
-                <code value="763114"/>
-                <display value="Acetaminophen / Aspirin Oral Powder [Goody's Body Pain]"/>
-            </concept>
+
             <concept>
                 <code value="797052"/>
                 <display value="Aspirin / Caffeine / salicylamide Oral Powder [Stanback
@@ -1461,16 +1391,8 @@
                 <display value="Aspirin / Carisoprodol / Codeine Oral Tablet [Soma Compound
                     with Codeine]"/>
             </concept>
-            <concept>
-                <code value="1536817"/>
-                <display value="Aspirin / Caffeine Effervescent Oral Tablet [Alka-Seltzer
-                    Morning Relief]"/>
-            </concept>
-            <concept>
-                <code value="1536672"/>
-                <display value="Aspirin / Diphenhydramine Effervescent Oral Tablet
-                    [Alka-Seltzer PM]"/>
-            </concept>
+
+
             <concept>
                 <code value="1358850"/>
                 <display value="Acetaminophen / Aspirin / Caffeine / salicylamide Oral
@@ -1527,11 +1449,7 @@
                 <code value="1856540"/>
                 <display value="Aspirin / Dipyridamole Extended Release Oral Capsule [Aggrenox]"/>
             </concept>
-            <concept>
-                <code value="1188439"/>
-                <display value="Acetaminophen / Aspirin / Caffeine Oral Powder [Goody's
-                    Extra Strength]"/>
-            </concept>
+
             <concept>
                 <code value="1811913"/>
                 <display value="Aspirin / Omeprazole Delayed Release Oral Tablet [Yosprala]"/>
@@ -1639,10 +1557,7 @@
                 <code value="308409"/>
                 <display value="Aspirin 500 MG Delayed Release Oral Tablet"/>
             </concept>
-            <concept>
-                <code value="308410"/>
-                <display value="Aspirin 500 MG / phenyltoloxamine 15 MG Oral Tablet"/>
-            </concept>
+
             <concept>
                 <code value="308411"/>
                 <display value="Aspirin 650 MG Delayed Release Oral Tablet"/>
@@ -2407,10 +2322,7 @@
                 <code value="900527"/>
                 <display value="Aspirin / Caffeine Oral Powder"/>
             </concept>
-            <concept>
-                <code value="1535483"/>
-                <display value="Aspirin Oral Strip"/>
-            </concept>
+
             <concept>
                 <code value="1536466"/>
                 <display value="Aspirin / Citric Acid / Sodium Bicarbonate Effervescent Oral Tablet"/>
@@ -2694,10 +2606,7 @@
                 <code value="1154266"/>
                 <display value="Acetaminophen / Aspirin Pill"/>
             </concept>
-            <concept>
-                <code value="1535482"/>
-                <display value="Aspirin Oral Strip Product"/>
-            </concept>
+
             <concept>
                 <code value="1593106"/>
                 <display value="Acetaminophen / Aspirin / Diphenhydramine Oral Product"/>
@@ -2810,18 +2719,12 @@
                 <code value="1174233"/>
                 <display value="Anacin Pill"/>
             </concept>
-            <concept>
-                <code value="1175545"/>
-                <display value="Alka-Seltzer Morning Relief Oral Product"/>
-            </concept>
+
             <concept>
                 <code value="1175547"/>
                 <display value="Alka-Seltzer Oral Product"/>
             </concept>
-            <concept>
-                <code value="1175549"/>
-                <display value="Alka-Seltzer PM Oral Product"/>
-            </concept>
+
             <concept>
                 <code value="1176591"/>
                 <display value="Endodan Reformulated May 2009 Oral Product"/>
@@ -3086,18 +2989,9 @@
                 <code value="1172562"/>
                 <display value="Excedrin Pill"/>
             </concept>
-            <concept>
-                <code value="1172642"/>
-                <display value="Goody's Body Pain Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1172644"/>
-                <display value="Goody's Extra Strength Pill"/>
-            </concept>
-            <concept>
-                <code value="1172645"/>
-                <display value="Goody's Extra Strength Oral Product"/>
-            </concept>
+
+
+
             <concept>
                 <code value="1174226"/>
                 <display value="Anacin Advanced Headache Formula Oral Product"/>
@@ -3190,14 +3084,8 @@
                 <code value="1296562"/>
                 <display value="Stanback Headache Powder Oral Powder Product"/>
             </concept>
-            <concept>
-                <code value="1296942"/>
-                <display value="Goody's Body Pain Oral Powder Product"/>
-            </concept>
-            <concept>
-                <code value="1296997"/>
-                <display value="Goody's Extra Strength Oral Powder Product"/>
-            </concept>
+
+
             <concept>
                 <code value="1297128"/>
                 <display value="Stanback Headache Powder Reformulated Jan 2011 Oral Powder Product"/>

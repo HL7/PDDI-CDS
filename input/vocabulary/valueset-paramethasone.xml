@@ -28,10 +28,7 @@
                 <code value="7910"/>
                 <display value="Paramethasone"/>
             </concept>
-            <concept>
-                <code value="1008557"/>
-                <display value="Chlorpheniramine / Paramethasone"/>
-            </concept>
+
             <concept>
                 <code value="32895"/>
                 <display value="paramethasone acetate"/>

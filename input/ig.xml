@@ -505,6 +505,7 @@
             <reference>
                 <reference value="ValueSet/valueset-PDDICDS-indicator"/>
             </reference>
+            <description value="valueset-PDDICDS-indicator"/>
             <name value="valueset-PDDICDS-indicator"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -924,7 +925,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-magnesium"/>
             </reference>
-            <description value=""/>
+            <description value="procedure-digoxin-cyclosporine-magnesium"/>
             <name value="procedure-digoxin-cyclosporine-magnesium"/>
             <exampleBoolean value="true"/>
         </resource>
@@ -932,7 +933,7 @@
             <reference>
                 <reference value="Procedure/procedure-digoxin-cyclosporine-potassium"/>
             </reference>
-            <description value=""/>
+            <description value="procedure-digoxin-cyclosporine-potassium"/>
             <name value="procedure-digoxin-cyclosporine-potassium"/>
             <exampleBoolean value="true"/>
         </resource>

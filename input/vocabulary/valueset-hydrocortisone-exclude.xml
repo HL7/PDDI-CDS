@@ -37,18 +37,8 @@
                 <code value="999597"/>
                 <display value="Oticin HC Ear Drops"/>
             </concept>
-            <concept>
-                <code value="762583"/>
-                <display value="{2 (Hydrocortisone 10 MG/ML Topical Cream [Dermarest
-                    Dricort]) } Pack [Dermarest DriCort Creme Pack]"/>
-            </concept>
-            <concept>
-                <code value="1193311"/>
-                <display value="{1 (42000 MG) (Colloidal oatmeal 10 MG/ML Topical Cream
-                    [Neosporin Moisturizing]) / 1 (8500 MG) (Hydrocortisone 10 MG/ML
-                    Topical Cream [Neosporin Eczema]) } Pack [Neosporin Essentials
-                    Trial Pack]"/>
-            </concept>
+
+
             <concept>
                 <code value="763548"/>
                 <display value="{1 (30 ML) (Hydrocortisone 20 MG/ML Topical Lotion [Coraz])
@@ -280,10 +270,7 @@
                 <code value="206349"/>
                 <display value="Hydrocortisone 10 MG/ML Topical Cream [Cortaid]"/>
             </concept>
-            <concept>
-                <code value="206355"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Cream [Dermarest Dricort]"/>
-            </concept>
+
             <concept>
                 <code value="206511"/>
                 <display value="Hydrocortisone 10 MG/ML / Neomycin 3.5 MG/ML / Polymyxin B
@@ -495,18 +482,9 @@
                 <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
                     hydrochloride 10 MG/ML Topical Lotion [Cortane-B]"/>
             </concept>
-            <concept>
-                <code value="702428"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Lotion [Dermarest Eczema]"/>
-            </concept>
-            <concept>
-                <code value="1250441"/>
-                <display value="Hydrocortisone 10 MG/ML Medicated Pad [Dermarest Eczema]"/>
-            </concept>
-            <concept>
-                <code value="1250461"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Spray [Dermarest Eczema]"/>
-            </concept>
+
+
+
             <concept>
                 <code value="707793"/>
                 <display value="Hydrocortisone 10 MG/ML Topical Cream [Gynecort]"/>
@@ -613,10 +591,7 @@
                 <display value="chloroxylenol 1 MG/ML / Hydrocortisone 10 MG/ML / Pramoxine
                     hydrochloride 10 MG/ML Otic Solution [Oticin HC Ear Drops]"/>
             </concept>
-            <concept>
-                <code value="1314864"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Cream [Aveeno Hydrocortisone Anti-Itch]"/>
-            </concept>
+
             <concept>
                 <code value="1314932"/>
                 <display value="Hydrocortisone 10 MG/ML Topical Cream [Kera-HC]"/>
@@ -672,10 +647,7 @@
                 <code value="1790684"/>
                 <display value="Hydrocortisone 25 MG/ML Topical Cream [Procto-Med]"/>
             </concept>
-            <concept>
-                <code value="1189206"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Cream [Neosporin Eczema]"/>
-            </concept>
+
             <concept>
                 <code value="1191394"/>
                 <display value="Aloe Polysaccharide 0.01 MG/MG / hydrocortisone acetate 0.02
@@ -812,10 +784,7 @@
                 <code value="362300"/>
                 <display value="Hydrocortisone Topical Cream [Cortaid]"/>
             </concept>
-            <concept>
-                <code value="362294"/>
-                <display value="Hydrocortisone Topical Cream [Dermarest Dricort]"/>
-            </concept>
+
             <concept>
                 <code value="362309"/>
                 <display value="Hydrocortisone Topical Cream [Dermtex HC]"/>
@@ -944,10 +913,7 @@
                 <code value="606793"/>
                 <display value="Hydrocortisone Topical Gel [Nuzon]"/>
             </concept>
-            <concept>
-                <code value="702427"/>
-                <display value="Hydrocortisone Topical Lotion [Dermarest Eczema]"/>
-            </concept>
+
             <concept>
                 <code value="707792"/>
                 <display value="Hydrocortisone Topical Cream [Gynecort]"/>
@@ -1043,10 +1009,7 @@
                 <display value="chloroxylenol / Hydrocortisone / pramoxine Otic Solution
                     [Oticin HC Ear Drops]"/>
             </concept>
-            <concept>
-                <code value="1314862"/>
-                <display value="Hydrocortisone Topical Cream [Aveeno Hydrocortisone Anti-Itch]"/>
-            </concept>
+
             <concept>
                 <code value="1314930"/>
                 <display value="Hydrocortisone Topical Cream [Kera-HC]"/>
@@ -1140,18 +1103,12 @@
                 <code value="1191413"/>
                 <display value="Hydrocortisone / Iodoquinol Topical Gel [Alcortin]"/>
             </concept>
-            <concept>
-                <code value="1250460"/>
-                <display value="Hydrocortisone Topical Spray [Dermarest Eczema]"/>
-            </concept>
+
             <concept>
                 <code value="1293832"/>
                 <display value="Hydrocortisone / pramoxine Rectal Cream [ZyPram]"/>
             </concept>
-            <concept>
-                <code value="1189204"/>
-                <display value="Hydrocortisone Topical Cream [Neosporin Eczema]"/>
-            </concept>
+
             <concept>
                 <code value="1191378"/>
                 <display value="Aloe Polysaccharide / Hydrocortisone / Iodoquinol Topical
@@ -2385,10 +2342,7 @@
                 <code value="1180028"/>
                 <display value="Proctocort Topical Product"/>
             </concept>
-            <concept>
-                <code value="1314863"/>
-                <display value="Aveeno Hydrocortisone Anti-Itch Topical Product"/>
-            </concept>
+
             <concept>
                 <code value="1314931"/>
                 <display value="Kera-HC Topical Product"/>
@@ -2505,14 +2459,8 @@
                 <code value="1173768"/>
                 <display value="Dermacort Topical Product"/>
             </concept>
-            <concept>
-                <code value="1173776"/>
-                <display value="Dermarest Dricort Topical Product"/>
-            </concept>
-            <concept>
-                <code value="1173778"/>
-                <display value="Dermarest Eczema Topical Product"/>
-            </concept>
+
+
             <concept>
                 <code value="1174502"/>
                 <display value="Dermtex HC Topical Product"/>
@@ -2593,10 +2541,7 @@
                 <code value="1187962"/>
                 <display value="Westcort Topical Product"/>
             </concept>
-            <concept>
-                <code value="1189205"/>
-                <display value="Neosporin Eczema Topical Product"/>
-            </concept>
+
             <concept>
                 <code value="1234321"/>
                 <display value="Pramosone Topical Product"/>

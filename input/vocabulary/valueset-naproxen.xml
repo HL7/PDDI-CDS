@@ -40,10 +40,7 @@
                 <code value="218599"/>
                 <display value="Naprelan"/>
             </concept>
-            <concept>
-                <code value="603347"/>
-                <display value="Midol Extended Relief"/>
-            </concept>
+
             <concept>
                 <code value="643130"/>
                 <display value="Wal-Proxen"/>
@@ -174,10 +171,7 @@
                 <code value="1116351"/>
                 <display value="24 HR Naproxen 750 MG Extended Release Oral Tablet [Naprelan]"/>
             </concept>
-            <concept>
-                <code value="849752"/>
-                <display value="Naproxen sodium 220 MG Oral Tablet [Midol Extended Relief]"/>
-            </concept>
+
             <concept>
                 <code value="849737"/>
                 <display value="Naproxen sodium 220 MG Oral Tablet [Wal-Proxen]"/>
@@ -259,10 +253,7 @@
                 <code value="1116350"/>
                 <display value="Naproxen 750 MG [Naprelan]"/>
             </concept>
-            <concept>
-                <code value="849751"/>
-                <display value="Naproxen sodium 220 MG [Midol Extended Relief]"/>
-            </concept>
+
             <concept>
                 <code value="849736"/>
                 <display value="Naproxen sodium 220 MG [Wal-Proxen]"/>
@@ -318,10 +309,7 @@
                 <code value="369974"/>
                 <display value="Naproxen Extended Release Oral Tablet [Naprelan]"/>
             </concept>
-            <concept>
-                <code value="603349"/>
-                <display value="Naproxen Oral Tablet [Midol Extended Relief]"/>
-            </concept>
+
             <concept>
                 <code value="643132"/>
                 <display value="Naproxen Oral Tablet [Wal-Proxen]"/>
@@ -645,14 +633,8 @@
                 <code value="1175503"/>
                 <display value="Aleve Pill"/>
             </concept>
-            <concept>
-                <code value="1178096"/>
-                <display value="Midol Extended Relief Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1178097"/>
-                <display value="Midol Extended Relief Pill"/>
-            </concept>
+
+
             <concept>
                 <code value="1178761"/>
                 <display value="Naprelan Oral Product"/>

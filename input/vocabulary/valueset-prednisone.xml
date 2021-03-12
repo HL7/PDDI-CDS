@@ -48,10 +48,7 @@
                 <code value="763185"/>
                 <display value="{21 (Prednisone 10 MG Oral Tablet) } Pack"/>
             </concept>
-            <concept>
-                <code value="795858"/>
-                <display value="{10 (Prednisone 10 MG Oral Tablet) } Pack"/>
-            </concept>
+
             <concept>
                 <code value="8640"/>
                 <display value="Prednisone"/>

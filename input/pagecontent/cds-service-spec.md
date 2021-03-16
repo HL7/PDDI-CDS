@@ -243,7 +243,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
 `patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter in context
-`draftOrders`| REQUIRED | No | *object* | R4 - FHIR `MedicationRequest` resource
+`draftOrders`| REQUIRED | No | *object* | 	object	R4 - FHIR Bundle of draft MedicationRequest resource for the current order entry task
 
 **Extension**
 {:.no_toc}
@@ -813,9 +813,8 @@ Field | Optionality | Prefetch Token | Type | Description
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-**order-sign 1.1 (modification of a current CDS Hook)**
+**order-sign 1.0**
  {:.no_toc}
- The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 
@@ -1360,7 +1359,7 @@ The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two
 **Context**
 {:.no_toc}
 
-**order-sign 1.0.**
+**order-select 1.0.**
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
@@ -1372,9 +1371,8 @@ Field | Optionality | Prefetch Token | Type | Description
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-**order-sign 1.1 (modification of a current CDS Hook)**
+**order-sign 1.0**
  {:.no_toc}
- The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 
@@ -1510,7 +1508,7 @@ The Advanced Implementation for the Digoxin + Cyclosporine artifact is split int
 **Context**
 {:.no_toc}
 
-**order-sign 1.0.**
+**order-select 1.0.**
 {:.no_toc}
 
 Field | Optionality | Prefetch Token | Type | Description
@@ -1522,9 +1520,8 @@ Field | Optionality | Prefetch Token | Type | Description
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
-**order-sign 1.1 (modification of a current CDS Hook)**
+**order-sign 1.0**
  {:.no_toc}
- The base version for the `order-sign` hook is 1.0. The Advanced Implementation requires an additional context field. This modification is considered Minor but will change the version to 1.1.
 
 
  Field       | Optionality        |  Prefetch Token     |Type  | Description 

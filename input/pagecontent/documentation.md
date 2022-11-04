@@ -30,9 +30,9 @@ For technical implementers, the intended role of prefetch is to improve the CDS 
 ## <span style="color:silver"> 7.1.0 </span> The Warfarin + NSAIDs Knowledge Artifact
 {:.no_toc}
 
-The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a PDDI minimum information model. Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. 
+The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a PDDI minimal information model. Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimal information model. 
 
-#### Table 1. Warfarin + NSAIDs Minimum Information Model
+#### Table 1. Warfarin + NSAIDs Minimal Information Model
 {:.no_toc}
 
 <div>
@@ -164,7 +164,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 
 ## <span style="color:silver"> 7.2.0 </span> Level 1 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured) 
 
-Figure 2 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 2 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -322,7 +322,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ## <span style="color:silver"> 8.1.0 </span> The Digoxin + Cyclosporine Knowledge Artifact
 {:.no_toc}
 
-#### Table 2. Digoxin + Cyclosporine Minimum Information Model
+#### Table 2. Digoxin + Cyclosporine Minimal Information Model
 {:.no_toc}
 
 <div>

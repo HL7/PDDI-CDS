@@ -51,21 +51,6 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 * A web service that processes CDS requests MUST be able to process FHIR data including clinical and terminology resources. 
 
 * The EHR system that sends requests to the service MAY provide access to the service to relevant patient data in the EHR via a FHIR server. EHR systems that do not provide access to addition patient data will potentially receive more limited CDS because the service will only work with data in the `context` and `prefetch` fields of CDS Hooks requests.
-
-* Here is a list of FHIR tools that might be of interest to implementers:
-
-	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
-    
-	* Local (preferred)
-
-           <b> The HAPI links DO NOT work </b>
-	    * [HAPI RESTful Server](http://hapifhir.io/doc_rest_server.html)
-
-		* [HAPI JPA Server](http://hapifhir.io/doc_jpa.html)
-
-		* [HAPI JAX-RS Server](http://hapifhir.io/doc_rest_server_jaxrs.html)
-
-		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
 			
 
 
@@ -396,7 +381,7 @@ A FHIR server request by the CDS service is necessary in the event the request `
 #### CDS Hooks Response and Card Display
 {:.no_toc}
 
-The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimum information model (e.g., `summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
+The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimal information model (e.g., `summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
 
 **Example 3: CDS Hooks Response**
 
@@ -1373,7 +1358,7 @@ snipped for brevity
 
 ### Basic Implementation for the Warfarin + NSAIDs Knowledge Artifact
 
-Figure 8 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 9 builds on Figure 8 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 8 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 9 builds on Figure 8 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -1524,7 +1509,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ### Basic Implementation for the Digoxin + Cyclosporine Knowledge Artifact
 
-Figure 13 depicts how a PDDI CDS implementer would translate a minimum information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 14 builds on Figure 13 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 13 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 14 builds on Figure 13 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">

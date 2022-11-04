@@ -5,7 +5,7 @@ Note that assumption of the use cases presented on this page is that the drugs i
 ### Warfarin + NSAIDs
 
 
-The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimum information model for representing clinically actionable knowledge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. The IG use case shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
+The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimal information model for representing clinically actionable knowledge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimal information model. The IG use case shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
 
 #### Warfarin + NSAIDs Logic Table 
 {:.no_toc}
@@ -32,7 +32,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
 </p>
 
 
-#### Warfarin-NSAIDS PDDI PDDI Minimum Information Model Elements
+#### Warfarin-NSAIDS PDDI PDDI Minimal Information Model Elements
 {:.no_toc}
 
 <div>
@@ -182,7 +182,7 @@ This is another IG use case that  shows that the potential interactions often ne
 </p>
 
 
-#### Digoxin + Cyclosporine PDDI Minimum Information Model Elements
+#### Digoxin + Cyclosporine PDDI Minimal Information Model Elements
 {:.no_toc}
 
 <div>

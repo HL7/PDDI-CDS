@@ -1,7 +1,13 @@
+### Introduction
 
-The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimum information model for representing clinically actionable knowledge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. 
+Note that assumption of the use cases presented on this page is that the drugs involved in the potential drug-drug interaction (PDDI) CDS service logic include only sets of terminology codes for specific semantic clinical/branded drugs that have a formulation indicative of the route of administration. This is very typical for electronic health record systems. It is left to developers of CDS rules to consider how to handle situations where an EHR system triggers the CDS service using a selected ingredient rather than a semantic clinical drug.
 
-### Warfarin + NSAIDs Logic Table 
+### Warfarin + NSAIDs
+
+
+The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimum information model for representing clinically actionable knowledge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimum information model. The IG use case shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
+
+#### Warfarin + NSAIDs Logic Table 
 {:.no_toc}
 
 <figure class="figure">
@@ -19,14 +25,14 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 <ol type="1">
   <li style="text-align: left">Topical diclofenac has relatively low systemic absorption; in one study a topical gel (16 g/day) produced about 6% of the absorption seen with systemic administration of 150 mg/day. A higher than recommended dose of topical gel (48 g/day) produced 20% of a systemic dose of diclofenac. The UK Summary of Product Characteristics for Voltarol Ophtha Multidose Eye Drops states, "No measurable levels of diclofenac could be found in humans after ocular application of diclofenac sodium eye drops". The FDA-approved SPL for Diclofenac Sodium Ophthalmic Solution 0.1% states, "Results from a bioavailability study established that plasma levels of diclofenac following ocular instillation of two drops of Diclofenac sodium ophthalmic solution, 0.1% to each eye were below the limit of quantification (10 ng/mL) over a 4-hour period. This study suggests that limited, if any, systemic absorption occurs with Diclofenac sodium ophthalmic solution". </li>
   <li style="text-align: left">If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.</li>
-  <li style="text-align: left">Proton pump inhibitors and misoprostol may reduce the risk of UGIB in patients receiving NSAIDs and warfarin.</li>
+  <li style="text-align: left">Proton pump inhibitors and misoprostol may reduce the risk of upper gastrointestinal bleeding (UGIB) in patients receiving NSAIDs and warfarin.</li>
   <li style="text-align: left">Patients with a history of UGIB or peptic ulcer may have an increased risk of UGIB from this interaction. The extent to which older age is an independent risk factor for UGIB due to these interactions is not firmly established, but UGIB in general is known to increase with age.</li>
   <li style="text-align: left">Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone [[masclee-2014]]</li>
 </ol>
 </p>
 
 
-### Warfarin-NSAIDS PDDI PDDI Minimum Information Model Elements
+#### Warfarin-NSAIDS PDDI PDDI Minimum Information Model Elements
 {:.no_toc}
 
 <div>
@@ -149,7 +155,9 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 </div>
 
 ### Digoxin + Cyclosporine
-{:.no_toc}
+
+
+This is another IG use case that  shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
 
 #### Digoxin + Cyclosporine Logic Table 
 {:.no_toc}

@@ -1,6 +1,5 @@
 
 ### Clinical Reasoning
-{:.no_toc}
 
 This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition`, `CarePlan`, `RequestGroup`, and CQL libraries. 
 
@@ -349,7 +348,6 @@ define "Get Base Indicator":
 ~~~
 
 ### Knowledge Artifacts 
-{:.no_toc}
 
 The following artifacts represent the behavior for implementing PDDI CDS:
 

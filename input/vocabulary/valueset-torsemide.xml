@@ -3,6 +3,7 @@
     <id value="valueset-torsemide"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-torsemide"/>
     <version value="US 1.0"/>
+    <experimental value="true"/>
     <name value="Valueset_torsemide"/>
     <title value="Torsemide Medications Value Set"/>
     <status value="draft"/>

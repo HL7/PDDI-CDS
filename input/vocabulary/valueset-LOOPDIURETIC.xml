@@ -3,6 +3,7 @@
     <id value="valueset-LOOPDIURETIC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-LOOPDIURETIC"/>
     <version value="US 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_LOOPDIURETIC"/>
     <title value="Loop Diuretic Drug Value Set"/>
     <status value="draft"/>

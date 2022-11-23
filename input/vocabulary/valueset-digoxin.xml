@@ -3,6 +3,7 @@
     <id value="valueset-digoxin"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_digoxin"/>
     <title value="Digoxin Medications Value Set"/>
     <status value="draft"/>

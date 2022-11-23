@@ -3,6 +3,7 @@
     <id value="valueset-NSAIDS"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-NSAIDS"/>
     <version value="US 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_NSAIDS"/>
     <title value="Nonsteroidal Anti-inflammatory Drugs Value Set"/>
     <status value="draft"/>

@@ -3,6 +3,7 @@
     <id value="valueset-trilostane"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-trilostane"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_trilostane"/>
     <title value="Trilostane Medications Value Set"/>
     <status value="draft"/>

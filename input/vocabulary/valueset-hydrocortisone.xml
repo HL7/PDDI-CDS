@@ -3,6 +3,7 @@
     <id value="valueset-hydrocortisone"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-hydrocortisone"/>
     <version value="US 1.1"/>
+    <experimental value="true" />
     <name value="Valueset_hydrocortisone"/>
     <title value="Hydrocortisone Medications Value Set"/>
     <status value="draft"/>

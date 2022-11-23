@@ -3,6 +3,7 @@
     <id value="valueset-calcium-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-calcium-LOINC"/>
     <version value="Intl. 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_calcium_LOINC"/>
     <title value="LOINC Codes for Serum Calcium"/>
     <status value="draft"/>

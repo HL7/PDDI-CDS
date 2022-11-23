@@ -3,6 +3,7 @@
     <id value="valueset-digoxin-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin-LOINC"/>
     <version value="Intl. 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_digoxin_LOINC"/>
     <title value="LOINC Codes for Digoxin Concentration"/>
     <status value="draft"/>

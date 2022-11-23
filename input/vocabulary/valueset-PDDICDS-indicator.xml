@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="valueset-PDDICDS-indicator"/>
+  <id value="valueset-PDDICDS-indicator"/>
+    <title value="PDDI CDS indicator" />
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PDDICDS-indicator"/>
     <name value="Valueset_PDDICDS_indicator"/>
+    <description value="ValueSet of indicator values for PDDI CDS"/>
+    <experimental value="true" />
     <status value="active"/>
     <compose>
         <include>

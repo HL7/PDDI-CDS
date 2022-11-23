@@ -3,6 +3,7 @@
     <id value="valueset-renal-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-renal-LOINC"/>
     <version value="Intl. 1.0"/>
+    <experimental value="true"/>
     <name value="Valueset_renal_LOINC"/>
     <title value="LOINC Codes for Renal Function"/>
     <status value="draft"/>

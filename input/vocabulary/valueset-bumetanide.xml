@@ -3,6 +3,7 @@
     <id value="valueset-bumetanide"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-bumetanide"/>
     <version value="US 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_bumetanide"/>
     <title value="Bumetanide Medications Value Set"/>
     <status value="draft"/>

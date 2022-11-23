@@ -3,6 +3,7 @@
     <id value="valueset-ibuprofen-exclude"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ibuprofen-exclude"/>
     <version value="US 1.1"/>
+    <experimental value="true" />
     <name value="Valueset_ibuprofen_exclude"/>
     <title value="Exclude Ibuprofen Medications Value Set"/>
     <status value="draft"/>

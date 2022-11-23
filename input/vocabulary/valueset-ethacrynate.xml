@@ -3,6 +3,7 @@
     <id value="valueset-ethacrynate"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ethacrynate"/>
     <version value="US 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_ethacrynate"/>
     <title value="Ethacrynate Medications Value Set"/>
     <status value="draft"/>

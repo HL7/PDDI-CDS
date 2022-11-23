@@ -3,6 +3,7 @@
     <id value="valueset-furosemide"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-furosemide"/>
     <version value="US 1.0"/>
+    <experimental value="true" />
     <name value="Valueset_furosemide"/>
     <title value="Furosemide Medications Value Set"/>
     <status value="draft"/>

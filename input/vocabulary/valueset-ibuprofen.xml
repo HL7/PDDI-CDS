@@ -3,6 +3,7 @@
     <id value="valueset-ibuprofen"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ibuprofen"/>
     <version value="US 1.1"/>
+    <experimental value="true" />
     <name value="Valueset_ibuprofen"/>
     <title value="Ibuprofen Medications Value Set"/>
     <status value="draft"/>

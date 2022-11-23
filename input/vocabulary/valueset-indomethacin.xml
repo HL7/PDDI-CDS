@@ -3,6 +3,7 @@
     <id value="valueset-indomethacin"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-indomethacin"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_indomethacin"/>
     <title value="Indomethacin Medications Value Set"/>
     <status value="draft"/>

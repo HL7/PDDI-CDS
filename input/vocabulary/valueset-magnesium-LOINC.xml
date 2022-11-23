@@ -3,6 +3,7 @@
     <id value="valueset-magnesium-LOINC"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-magnesium-LOINC"/>
     <version value="Intl. 1.0"/>
+    <experimental value="true"/>
     <name value="Valueset_magnesium_LOINC"/>
     <title value="LOINC Codes for Serum Potassium"/>
     <status value="draft"/>

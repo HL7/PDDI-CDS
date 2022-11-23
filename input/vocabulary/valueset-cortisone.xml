@@ -3,6 +3,7 @@
     <id value="valueset-cortisone"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cortisone"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_cortisone"/>
     <title value="Cortisone Medications Value Set"/>
     <status value="draft"/>

@@ -3,6 +3,7 @@
     <id value="valueset-etodolac"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-etodolac"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_etodolac"/>
     <title value="Etodolac Medications Value Set"/>
     <status value="draft"/>

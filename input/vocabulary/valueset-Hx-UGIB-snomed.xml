@@ -6,6 +6,7 @@
     <title value="Upper gastrointestinal bleed Value Set"/>
     <status value="draft"/>
     <date value="2018-06-20"/>
+    <experimental value="true" />
     <publisher value="PDDI CDS"/>
     <contact>
         <name value="Richard Boyce"/>

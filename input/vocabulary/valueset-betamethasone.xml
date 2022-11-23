@@ -3,6 +3,7 @@
     <id value="valueset-betamethasone"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-betamethasone"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_betamethasone"/>
     <title value="Betamethasone Medications Value Set"/>
     <status value="draft"/>

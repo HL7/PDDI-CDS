@@ -3,6 +3,7 @@
     <id value="valueset-mefenamate"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-mefenamate"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_mefenamate"/>
     <title value="Mefenamate Medications Value Set"/>
     <status value="draft"/>

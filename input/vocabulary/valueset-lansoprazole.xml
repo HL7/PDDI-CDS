@@ -3,6 +3,7 @@
     <id value="valueset-lansoprazole"/>
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-lansoprazole"/>
     <version value="US 1.1"/>
+     <experimental value="true" />
     <name value="Valueset_lansoprazole"/>
     <title value="Lansoprazole Medications Value Set"/>
     <status value="draft"/>

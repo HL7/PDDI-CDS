@@ -24,6 +24,7 @@
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+<version value="??"/>
             <version value="06-Aug-2018"/>
             <concept>
                 <code value="203538"/>

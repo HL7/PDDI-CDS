@@ -1,7 +1,6 @@
 
 ### Introduction
 
-
 ### Intended Audiences
 
 The primary intended audience includes individuals seeking guidance on how to implement drug-drug interaction clinical decision support using modern health information technology standards. This implementation guide is written with the intention of showing how potential drug-drug interaction (PDDI) alerts more specifically tailored to patient context could be presented through the electronic health record during computerized provider order entry using modern standards. It is also written for a more general audience of individuals creating medication safety knowledge artifacts that they intend to  disseminate to healthcare organizations. This implementation guide is focused on drug therapy ordering conducted with an inpatient or outpatient electronic health record. If the system can send medication orders present in the National Council for Prescription Drug Programs (NCPDP) e-prescribing medication history for outpatient drugs as FHIR resources to the CDS service then, these resources could be included in CDS logic. This implementation guide solely focuses on drug to drug interactions. It is true that vitamins, herbals, and food also have interactions with therapeutic drugs and cause adverse events. However, the representation of these entities with EHR systems is not as standardized as therapeutic drugs. Future versions of the implementation guide might add additional use cases and clarification on how to handle these entities.
@@ -81,3 +80,19 @@ This implementation guide:
 9. Hochheiser, H., Jing, Xia., Garcia, E., Ayvaz, S., Sahay, R., Dumontier, M., Banda, JM.,  Beyan, O., Brochhausen, M., Draper, E.,  Habiel, S., Hassanzadeh, O., Herrero-Zazo, M., Hocum, B., Horn, J., Lebaron, B., Malone, DC., Nytrø, Ø., Reese, T., Romagnoli, K., Schneider, J., Zhang, LY, Boyce, RD. A minimal information model for potential drug-drug interactions. Frontiers in Pharmacology. Research Topic: Drug Interactions in the Real World.  2020. vol. 11. 10.3389/fphar.2020.608068. PubMed ID: in process. PubMedCentral ID: In process.
 10. Health Level Seven International. HL7 Cross-Paradigm Specification: Clinical Quality Language, Release 1. 2017 May (cited 2018 August). Available from: http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400.
     
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### IP Statements
+
+{% include ip-statements.xhtml %}
+http://www.nlm.nih.gov/research/umls/rxnorm

@@ -24,7 +24,8 @@
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <version value="02-Jul-2018"/>
+<version value="??"/>
+            
             <concept>
                 <code value="202421"/>
                 <display value="Coumadin"/>

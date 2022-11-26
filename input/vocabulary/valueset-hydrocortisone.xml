@@ -200,10 +200,6 @@
                 <display value="Westcort"/>
             </concept>
             <concept>
-                <code value="261618"/>
-                <display value="Preparation H Hydrocortisone"/>
-            </concept>
-            <concept>
                 <code value="284702"/>
                 <display value="Colocort"/>
             </concept>
@@ -388,10 +384,6 @@
             <concept>
                 <code value="1650984"/>
                 <display value="Selsun Blue Scalp Itch"/>
-            </concept>
-            <concept>
-                <code value="1664355"/>
-                <display value="Blue-Emu Anti-Itch"/>
             </concept>
             <concept>
                 <code value="1674193"/>
@@ -1144,10 +1136,6 @@
                     Topical Cream [Vytone]"/>
             </concept>
             <concept>
-                <code value="260309"/>
-                <display value="Hydrocortisone 10 MG/ML Rectal Cream [Preparation H Hydrocortisone]"/>
-            </concept>
-            <concept>
                 <code value="802059"/>
                 <display value="Hydrocortisone 1.67 MG/ML Enema [Colocort]"/>
             </concept>
@@ -1387,10 +1375,6 @@
             <concept>
                 <code value="1650988"/>
                 <display value="Hydrocortisone 10 MG/ML Topical Solution [Selsun Blue Scalp Itch]"/>
-            </concept>
-            <concept>
-                <code value="1664359"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Cream [Blue-Emu Anti-Itch]"/>
             </concept>
             <concept>
                 <code value="1674197"/>
@@ -1701,10 +1685,6 @@
                 <display value="hydrocortisone acetate 19 MG/ML / Iodoquinol 10 MG/ML [Vytone]"/>
             </concept>
             <concept>
-                <code value="574110"/>
-                <display value="Hydrocortisone 10 MG/ML [Preparation H Hydrocortisone]"/>
-            </concept>
-            <concept>
                 <code value="574908"/>
                 <display value="Hydrocortisone 1.67 MG/ML [Colocort]"/>
             </concept>
@@ -1916,10 +1896,6 @@
             <concept>
                 <code value="1650985"/>
                 <display value="Hydrocortisone 10 MG/ML [Selsun Blue Scalp Itch]"/>
-            </concept>
-            <concept>
-                <code value="1664356"/>
-                <display value="Hydrocortisone 10 MG/ML [Blue-Emu Anti-Itch]"/>
             </concept>
             <concept>
                 <code value="1674194"/>
@@ -2147,10 +2123,6 @@
                 <display value="Hydrocortisone Topical Ointment [Westcort]"/>
             </concept>
             <concept>
-                <code value="362067"/>
-                <display value="Hydrocortisone Rectal Cream [Preparation H Hydrocortisone]"/>
-            </concept>
-            <concept>
                 <code value="362450"/>
                 <display value="Hydrocortisone / pramoxine Rectal Foam [Proctofoam-HC]"/>
             </concept>
@@ -2213,10 +2185,6 @@
             <concept>
                 <code value="385399"/>
                 <display value="Hydrocortisone Topical Lotion [Locoid]"/>
-            </concept>
-            <concept>
-                <code value="543491"/>
-                <display value="Hydrocortisone Rectal Cream [Procto-Pak]"/>
             </concept>
             <concept>
                 <code value="544127"/>
@@ -2403,10 +2371,6 @@
             <concept>
                 <code value="1650986"/>
                 <display value="Hydrocortisone Topical Solution [Selsun Blue Scalp Itch]"/>
-            </concept>
-            <concept>
-                <code value="1664357"/>
-                <display value="Hydrocortisone Topical Cream [Blue-Emu Anti-Itch]"/>
             </concept>
             <concept>
                 <code value="1674195"/>
@@ -4164,10 +4128,6 @@
                 <display value="Anusol HC Topical Product"/>
             </concept>
             <concept>
-                <code value="1664358"/>
-                <display value="Blue-Emu Anti-Itch Topical Product"/>
-            </concept>
-            <concept>
                 <code value="1674196"/>
                 <display value="Hemmorex Rectal Product"/>
             </concept>
@@ -4330,10 +4290,6 @@
                 <display value="Procto-Kit Rectal Product"/>
             </concept>
             <concept>
-                <code value="1180024"/>
-                <display value="Procto-Pak Rectal Product"/>
-            </concept>
-            <concept>
                 <code value="1180027"/>
                 <display value="Proctocort Rectal Product"/>
             </concept>
@@ -4364,10 +4320,6 @@
             <concept>
                 <code value="1184926"/>
                 <display value="Texacort Topical Product"/>
-            </concept>
-            <concept>
-                <code value="1185861"/>
-                <display value="Preparation H Hydrocortisone Rectal Product"/>
             </concept>
             <concept>
                 <code value="1186000"/>

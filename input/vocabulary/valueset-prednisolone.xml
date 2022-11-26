@@ -572,14 +572,6 @@
                 <display value="prednisolone 3 MG/ML Ophthalmic Solution"/>
             </concept>
             <concept>
-                <code value="198143"/>
-                <display value="prednisolone 80 MG/ML Injectable Solution"/>
-            </concept>
-            <concept>
-                <code value="260126"/>
-                <display value="prednisolone 40 MG/ML Injectable Solution"/>
-            </concept>
-            <concept>
                 <code value="283077"/>
                 <display value="prednisolone 3 MG/ML Oral Solution"/>
             </concept>

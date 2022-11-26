@@ -43,10 +43,6 @@
                 <display value="Fludrocortisone 0.1 MG Oral Tablet"/>
             </concept>
             <concept>
-                <code value="328433"/>
-                <display value="Fludrocortisone 0.1 MG"/>
-            </concept>
-            <concept>
                 <code value="372213"/>
                 <display value="Fludrocortisone Oral Tablet"/>
             </concept>

@@ -52,14 +52,6 @@
                 <display value="Treximet"/>
             </concept>
             <concept>
-                <code value="849730"/>
-                <display value="Aleve-D"/>
-            </concept>
-            <concept>
-                <code value="880900"/>
-                <display value="Sudafed Sinus and Pain"/>
-            </concept>
-            <concept>
                 <code value="1372705"/>
                 <display value="Vimovo"/>
             </concept>
@@ -187,16 +179,6 @@
                 <display value="Naproxen sodium 60 MG / Sumatriptan 10 MG Oral Tablet [Treximet]"/>
             </concept>
             <concept>
-                <code value="1367428"/>
-                <display value="12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride
-                    120 MG Extended Release Oral Tablet [Aleve-D]"/>
-            </concept>
-            <concept>
-                <code value="1373034"/>
-                <display value="12 HR Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride
-                    120 MG Extended Release Oral Tablet [Sudafed Sinus and Pain]"/>
-            </concept>
-            <concept>
                 <code value="994007"/>
                 <display value="Esomeprazole 20 MG / Naproxen 375 MG Delayed Release Oral
                     Tablet [Vimovo]"/>
@@ -269,16 +251,6 @@
                 <display value="Naproxen sodium 60 MG / Sumatriptan 10 MG [Treximet]"/>
             </concept>
             <concept>
-                <code value="1367427"/>
-                <display value="Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120
-                    MG [Aleve-D]"/>
-            </concept>
-            <concept>
-                <code value="1373033"/>
-                <display value="Naproxen sodium 220 MG / Pseudoephedrine Hydrochloride 120
-                    MG [Sudafed Sinus and Pain]"/>
-            </concept>
-            <concept>
                 <code value="994006"/>
                 <display value="Esomeprazole 20 MG / Naproxen 375 MG [Vimovo]"/>
             </concept>
@@ -319,15 +291,6 @@
             <concept>
                 <code value="794767"/>
                 <display value="Naproxen / Sumatriptan Oral Tablet [Treximet]"/>
-            </concept>
-            <concept>
-                <code value="849732"/>
-                <display value="Naproxen / Pseudoephedrine Extended Release Oral Tablet [Aleve-D]"/>
-            </concept>
-            <concept>
-                <code value="880902"/>
-                <display value="Naproxen / Pseudoephedrine Extended Release Oral Tablet
-                    [Sudafed Sinus and Pain]"/>
             </concept>
             <concept>
                 <code value="91796"/>
@@ -592,24 +555,8 @@
                 <display value="Esomeprazole / Naproxen Pill"/>
             </concept>
             <concept>
-                <code value="1175504"/>
-                <display value="Aleve-D Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1175505"/>
-                <display value="Aleve-D Pill"/>
-            </concept>
-            <concept>
                 <code value="1179685"/>
                 <display value="Treximet Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1181400"/>
-                <display value="Sudafed Sinus and Pain Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1181401"/>
-                <display value="Sudafed Sinus and Pain Pill"/>
             </concept>
             <concept>
                 <code value="1593658"/>

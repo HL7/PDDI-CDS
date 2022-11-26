@@ -24,7 +24,7 @@
     <compose>
         <include>
             <system value="http://loinc.org"/>
-            <version value="2.64"/>
+            <version value="2.73"/>
             <concept>
                 <code value="75940-7"/>
                 <display value="Potassium [Mass/​volume] in Blood"/>

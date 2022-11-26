@@ -397,7 +397,7 @@
                     Topical Cream [Vytone]"/>
             </concept>
             <concept>
-                <code value="260309"/>
+                <code value="310868"/>
                 <display value="Hydrocortisone 10 MG/ML Rectal Cream [Preparation H Hydrocortisone]"/>
             </concept>
             <concept>
@@ -638,10 +638,6 @@
                 <display value="Hydrocortisone 10 MG/ML Topical Solution [Selsun Blue Scalp Itch]"/>
             </concept>
             <concept>
-                <code value="1664359"/>
-                <display value="Hydrocortisone 10 MG/ML Topical Cream [Blue-Emu Anti-Itch]"/>
-            </concept>
-            <concept>
                 <code value="1739871"/>
                 <display value="Hydrocortisone 10 MG/ML Topical Cream [Psoriasin Itch]"/>
             </concept>
@@ -836,10 +832,6 @@
                 <display value="Hydrocortisone Topical Ointment [Westcort]"/>
             </concept>
             <concept>
-                <code value="362067"/>
-                <display value="Hydrocortisone Rectal Cream [Preparation H Hydrocortisone]"/>
-            </concept>
-            <concept>
                 <code value="362450"/>
                 <display value="Hydrocortisone / pramoxine Rectal Foam [Proctofoam-HC]"/>
             </concept>
@@ -898,10 +890,6 @@
             <concept>
                 <code value="385399"/>
                 <display value="Hydrocortisone Topical Lotion [Locoid]"/>
-            </concept>
-            <concept>
-                <code value="543491"/>
-                <display value="Hydrocortisone Rectal Cream [Procto-Pak]"/>
             </concept>
             <concept>
                 <code value="544127"/>
@@ -1064,10 +1052,6 @@
             <concept>
                 <code value="1650986"/>
                 <display value="Hydrocortisone Topical Solution [Selsun Blue Scalp Itch]"/>
-            </concept>
-            <concept>
-                <code value="1664357"/>
-                <display value="Hydrocortisone Topical Cream [Blue-Emu Anti-Itch]"/>
             </concept>
             <concept>
                 <code value="1674195"/>
@@ -2384,10 +2368,6 @@
             <concept>
                 <code value="1659444"/>
                 <display value="Anusol HC Topical Product"/>
-            </concept>
-            <concept>
-                <code value="1664358"/>
-                <display value="Blue-Emu Anti-Itch Topical Product"/>
             </concept>
             <concept>
                 <code value="1674196"/>

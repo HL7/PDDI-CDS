@@ -24,12 +24,7 @@
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-<version value="??"/>
-            
-            <concept>
-                <code value="1090447"/>
-                <display value="Wal-Profen Cold and Sinus"/>
-            </concept>
+	    <version value="??"/>            
             <concept>
                 <code value="1100067"/>
                 <display value="Duexis"/>
@@ -52,10 +47,6 @@
                 <display value="Nuprin"/>
             </concept>
             <concept>
-                <code value="215041"/>
-                <display value="Advil Cold and Sinus"/>
-            </concept>
-            <concept>
                 <code value="217324"/>
                 <display value="Genpril"/>
             </concept>
@@ -75,10 +66,6 @@
             <concept>
                 <code value="637194"/>
                 <display value="Neoprofen"/>
-            </concept>
-            <concept>
-                <code value="643061"/>
-                <display value="Advil PM"/>
             </concept>
             <concept>
                 <code value="643099"/>
@@ -105,14 +92,6 @@
                 <display value="Ultraprin"/>
             </concept>
             <concept>
-                <code value="902630"/>
-                <display value="Advil PM Liqui Gels"/>
-            </concept>
-            <concept>
-                <code value="993800"/>
-                <display value="Advil Congestion Relief"/>
-            </concept>
-            <concept>
                 <code value="1359092"/>
                 <display value="Ibutab"/>
             </concept>
@@ -124,10 +103,6 @@
             <concept>
                 <code value="1542983"/>
                 <display value="Xylon"/>
-            </concept>
-            <concept>
-                <code value="1722328"/>
-                <display value="Advil Sinus Congestion and Pain"/>
             </concept>
             <concept>
                 <code value="1300262"/>
@@ -273,11 +248,6 @@
                 <display value="Ibuprofen, Sodium Salt"/>
             </concept>
             <concept>
-                <code value="1299089"/>
-                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
-                    Tablet [Wal-Profen Cold and Sinus]"/>
-            </concept>
-            <concept>
                 <code value="1100070"/>
                 <display value="Famotidine 26.6 MG / Ibuprofen 800 MG Oral Tablet [Duexis]"/>
             </concept>
@@ -348,16 +318,6 @@
                 <display value="Ibuprofen 800 MG Oral Tablet [Motrin]"/>
             </concept>
             <concept>
-                <code value="1299020"/>
-                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
-                    Capsule [Advil Cold and Sinus]"/>
-            </concept>
-            <concept>
-                <code value="1299022"/>
-                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral
-                    Tablet [Advil Cold and Sinus]"/>
-            </concept>
-            <concept>
                 <code value="206886"/>
                 <display value="Ibuprofen 200 MG Oral Tablet [Genpril]"/>
             </concept>
@@ -403,11 +363,6 @@
                 <display value="Ibuprofen 200 MG Oral Capsule [Wal-Profen]"/>
             </concept>
             <concept>
-                <code value="901818"/>
-                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet
-                    [Advil PM]"/>
-            </concept>
-            <concept>
                 <code value="850424"/>
                 <display value="Ibuprofen 200 MG Oral Tablet [Ibuprohm]"/>
             </concept>
@@ -429,16 +384,6 @@
                 <display value="Ibuprofen 200 MG Oral Tablet [Ultraprin]"/>
             </concept>
             <concept>
-                <code value="902633"/>
-                <display value="Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG Oral
-                    Capsule [Advil PM Liqui Gels]"/>
-            </concept>
-            <concept>
-                <code value="1369777"/>
-                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral
-                    Tablet [Advil Congestion Relief]"/>
-            </concept>
-            <concept>
                 <code value="1359097"/>
                 <display value="Ibuprofen 200 MG Oral Tablet [Ibutab]"/>
             </concept>
@@ -456,23 +401,12 @@
                 <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG Oral Tablet [Xylon]"/>
             </concept>
             <concept>
-                <code value="1722333"/>
-                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral
-                    Tablet [Advil Sinus Congestion and Pain]"/>
-            </concept>
-            <concept>
                 <code value="1300267"/>
                 <display value="Ibuprofen 200 MG Oral Tablet [Proprinal]"/>
             </concept>
             <concept>
                 <code value="541713"/>
                 <display value="Ibuprofen 800 MG Oral Tablet [Samson 8]"/>
-            </concept>
-
-            <concept>
-                <code value="1299088"/>
-                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG
-                    [Wal-Profen Cold and Sinus]"/>
             </concept>
             <concept>
                 <code value="1100068"/>
@@ -528,11 +462,6 @@
                 <display value="Ibuprofen 800 MG [Motrin]"/>
             </concept>
             <concept>
-                <code value="1299019"/>
-                <display value="Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG
-                    [Advil Cold and Sinus]"/>
-            </concept>
-            <concept>
                 <code value="567688"/>
                 <display value="Ibuprofen 200 MG [Genpril]"/>
             </concept>
@@ -574,10 +503,6 @@
                 <display value="Ibuprofen 200 MG [Wal-Profen]"/>
             </concept>
             <concept>
-                <code value="901817"/>
-                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG [Advil PM]"/>
-            </concept>
-            <concept>
                 <code value="850422"/>
                 <display value="Ibuprofen 200 MG [Ibuprohm]"/>
             </concept>
@@ -598,16 +523,6 @@
                 <display value="Ibuprofen 200 MG [Ultraprin]"/>
             </concept>
             <concept>
-                <code value="902631"/>
-                <display value="Diphenhydramine Hydrochloride 25 MG / Ibuprofen 200 MG
-                    [Advil PM Liqui Gels]"/>
-            </concept>
-            <concept>
-                <code value="1369776"/>
-                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG [Advil
-                    Congestion Relief]"/>
-            </concept>
-            <concept>
                 <code value="1359093"/>
                 <display value="Ibuprofen 200 MG [Ibutab]"/>
             </concept>
@@ -625,23 +540,12 @@
                 <display value="Hydrocodone Bitartrate 10 MG / Ibuprofen 200 MG [Xylon]"/>
             </concept>
             <concept>
-                <code value="1722329"/>
-                <display value="Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG [Advil
-                    Sinus Congestion and Pain]"/>
-            </concept>
-            <concept>
                 <code value="1300263"/>
                 <display value="Ibuprofen 200 MG [Proprinal]"/>
             </concept>
             <concept>
                 <code value="541711"/>
                 <display value="Ibuprofen 800 MG [Samson 8]"/>
-            </concept>
-
-
-            <concept>
-                <code value="1090449"/>
-                <display value="Ibuprofen / Pseudoephedrine Oral Tablet [Wal-Profen Cold and Sinus]"/>
             </concept>
             <concept>
                 <code value="1100069"/>
@@ -655,11 +559,6 @@
                 <code value="365861"/>
                 <display value="Ibuprofen Oral Suspension [Advil]"/>
             </concept>
-            <concept>
-                <code value="367939"/>
-                <display value="Ibuprofen / Pseudoephedrine Oral Tablet [Advil Cold and Sinus]"/>
-            </concept>
-
             <concept>
                 <code value="368308"/>
                 <display value="Hydrocodone / Ibuprofen Oral Tablet [Vicoprofen]"/>
@@ -681,10 +580,6 @@
                 <display value="Ibuprofen Oral Tablet [Ibu]"/>
             </concept>
             <concept>
-                <code value="643063"/>
-                <display value="Diphenhydramine / Ibuprofen Oral Tablet [Advil PM]"/>
-            </concept>
-            <concept>
                 <code value="644385"/>
                 <display value="Ibuprofen Oral Capsule [Wal-Profen]"/>
             </concept>
@@ -704,10 +599,6 @@
             <concept>
                 <code value="792241"/>
                 <display value="Ibuprofen Chewable Tablet [Motrin]"/>
-            </concept>
-            <concept>
-                <code value="795911"/>
-                <display value="Ibuprofen / Pseudoephedrine Oral Capsule [Advil Cold and Sinus]"/>
             </concept>
             <concept>
                 <code value="724134"/>
@@ -746,14 +637,6 @@
                 <display value="Ibuprofen Oral Tablet [Nuprin]"/>
             </concept>
             <concept>
-                <code value="902632"/>
-                <display value="Diphenhydramine / Ibuprofen Oral Capsule [Advil PM Liqui Gels]"/>
-            </concept>
-            <concept>
-                <code value="993802"/>
-                <display value="Ibuprofen / Phenylephrine Oral Tablet [Advil Congestion Relief]"/>
-            </concept>
-            <concept>
                 <code value="1359094"/>
                 <display value="Ibuprofen Oral Tablet [Ibutab]"/>
             </concept>
@@ -762,12 +645,6 @@
                 <code value="1542985"/>
                 <display value="Hydrocodone / Ibuprofen Oral Tablet [Xylon]"/>
             </concept>
-            <concept>
-                <code value="1722330"/>
-                <display value="Ibuprofen / Phenylephrine Oral Tablet [Advil Sinus
-                    Congestion and Pain]"/>
-            </concept>
-
             <concept>
                 <code value="1791366"/>
                 <display value="Ibuprofen Injection [Neoprofen]"/>
@@ -1239,22 +1116,6 @@
                 <display value="Chlorpheniramine / Ibuprofen / Phenylephrine Pill"/>
             </concept>
             <concept>
-                <code value="1172034"/>
-                <display value="Advil PM Liqui Gels Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1172035"/>
-                <display value="Advil PM Liqui Gels Pill"/>
-            </concept>
-            <concept>
-                <code value="1172036"/>
-                <display value="Advil PM Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1172037"/>
-                <display value="Advil PM Pill"/>
-            </concept>
-            <concept>
                 <code value="1182819"/>
                 <display value="Motrin PM Oral Product"/>
             </concept>
@@ -1427,38 +1288,6 @@
             <concept>
                 <code value="1186575"/>
                 <display value="Vicoprofen Pill"/>
-            </concept>
-            <concept>
-                <code value="1722331"/>
-                <display value="Advil Sinus Congestion and Pain Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1722332"/>
-                <display value="Advil Sinus Congestion and Pain Pill"/>
-            </concept>
-            <concept>
-                <code value="1171337"/>
-                <display value="Advil Cold and Sinus Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1171338"/>
-                <display value="Advil Cold and Sinus Pill"/>
-            </concept>
-            <concept>
-                <code value="1171339"/>
-                <display value="Advil Congestion Relief Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1171340"/>
-                <display value="Advil Congestion Relief Pill"/>
-            </concept>
-            <concept>
-                <code value="1187792"/>
-                <display value="Wal-Profen Cold and Sinus Oral Product"/>
-            </concept>
-            <concept>
-                <code value="1187793"/>
-                <display value="Wal-Profen Cold and Sinus Pill"/>
             </concept>
             <concept>
                 <code value="1296120"/>

@@ -26,8 +26,7 @@
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-<version value="??"/>
-            <version value="04-Jun-2018"/>
+	    <version value="??"/>
             <concept>
                 <code value="1043483"/>
                 <display value="Diclofenac Sodium 10 MG/ML Topical Cream [Surpass Anti-Inflammatory]"/>

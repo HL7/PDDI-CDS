@@ -24,8 +24,8 @@
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-<version value="??"/>
-            <version value="??"/>
+
+            
             <concept>
                 <code value="342280"/>
                 <display value="Inspra"/>

@@ -24,8 +24,6 @@
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-<version value="??"/>
-            
             <concept>
                 <code value="215927"/>
                 <display value="Celebrex"/>

@@ -39,7 +39,7 @@ Please read more about the implementation guide publishing process here: http://
 
 Running the publisher"
 ```
-    java -jar org.hl7.fhir.publisher.jar
+    _genonce
 ```     
 
-Then, execute ig.json from the GUI. This will render webpages with html files in output folder (e.g., index.html).
+

@@ -6,7 +6,7 @@
     <version value="0.3.0"/>
     <name value="PDDI_CDS"/>
     <status value="draft"/>
-    <title value="(DRAFT) Potential Drug-Drug Interaction (PDDI) CDS IG : Ballot for Comment 3"/>
+    <title value="(DRAFT) Potential Drug-Drug Interaction (PDDI) CDS IG : STU2 Ballot"/>
     <experimental value="true"/>
     <date value="2022-06-23"/>
     <fhirVersion value="4.0.1"/>

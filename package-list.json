@@ -11,6 +11,16 @@
   "current" : true
  },
  {
+  "version": "2.0.0-ballot",
+  "date": "TBD",
+  "desc": "Release 2.0.0 STU2 Ballot",
+  "descmd": "",
+  "path": "http://hl7.org/fhir/uv/pddi/2023Jan",
+  "status": "ballot",
+  "sequence": "STU 2",
+  "fhirversion": "4.0.1"
+ },
+ {
    "version": "0.2.0",
    "date": "TBD",
    "desc": "Release 0.2.0 STU1 Ballot 2",

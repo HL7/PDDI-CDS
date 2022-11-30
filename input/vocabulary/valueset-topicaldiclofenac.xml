@@ -7,7 +7,7 @@
     <name value="Valueset_topicaldiclofenac"/>
     <title value="Topical Diclofenac Medications Value Set"/>
     <status value="draft"/>
-    <date value="2018-06-20"/>
+    <date value="2022-11-29"/>
     <publisher value="PDDI CDS"/>
     <contact>
         <name value="Richard Boyce"/>
@@ -22,7 +22,7 @@
         </coding>
     </jurisdiction>
     <purpose value="Provide terminology for PDDI CDS (warfarin + NSAIDs rule) FHIR resources"/>
-    <copyright value="Attribution CC BY"/>
+    <copyright value="(copyright expectations unknown)"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>

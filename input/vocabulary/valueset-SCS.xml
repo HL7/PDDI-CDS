@@ -24,7 +24,7 @@
         </coding>
     </jurisdiction>
     <purpose value="Provide Systemic Corticosteroids drug class terminology for PDDI CDS FHIR resources"/>
-    <copyright value="Attribution CC BY"/>
+    <copyright value="(copyright expectations unknown)"/>
     <compose>
         <include>
             <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-aldosterone"/>

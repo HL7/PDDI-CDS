@@ -27,8 +27,7 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="02-Jul-2018" />
-                  <concept>
+                                    <concept>
                      <code value="202988" />
                      <display value="Lanoxin" />
                   </concept>
@@ -311,7 +310,7 @@
                   <display value="World" />
                </coding>
             </jurisdiction>
-            <copyright value="Attribution CC BY" />
+            <copyright value="material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc" />
             <compose>
                <include>
                   <system value="http://loinc.org" />
@@ -359,8 +358,7 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="02-Jul-2018" />
-                  <concept>
+                                    <concept>
                      <code value="1093175" />
                      <display value="Optimmune" />
                   </concept>
@@ -815,8 +813,7 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="02-Jul-2018" />
-                  <concept>
+                                    <concept>
                      <code value="342280" />
                      <display value="Inspra" />
                   </concept>
@@ -923,7 +920,6 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="02-Jul-2018" />
                   <concept>
                      <code value="1943340" />
                      <display value="Carospir" />
@@ -1250,7 +1246,7 @@
                   <display value="World" />
                </coding>
             </jurisdiction>
-            <copyright value="Attribution CC BY" />
+            <copyright value="material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc" />
             <compose>
                <include>
                   <system value="http://loinc.org" />
@@ -1338,7 +1334,7 @@
                   <display value="World" />
                </coding>
             </jurisdiction>
-            <copyright value="Attribution CC BY" />
+            <copyright value="material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc" />
             <compose>
                <include>
                   <system value="http://loinc.org" />
@@ -1386,7 +1382,7 @@
                   <display value="World" />
                </coding>
             </jurisdiction>
-            <copyright value="Attribution CC BY" />
+            <copyright value="material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc" />
             <compose>
                <include>
                   <system value="http://loinc.org" />
@@ -1442,7 +1438,7 @@
                   <display value="World" />
                </coding>
             </jurisdiction>
-            <copyright value="Attribution CC BY" />
+            <copyright value="material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc" />
             <compose>
                <include>
                   <system value="http://loinc.org" />
@@ -1502,8 +1498,7 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="06-Aug-2018" />
-                  <concept>
+<concept>
                      <code value="203538" />
                      <display value="Bumex" />
                   </concept>
@@ -1722,8 +1717,7 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="06-Aug-2018" />
-                  <concept>
+<concept>
                      <code value="151689" />
                      <display value="Edecrin" />
                   </concept>
@@ -1854,8 +1848,7 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="06-Aug-2018" />
-                  <concept>
+<concept>
                      <code value="1112198" />
                      <display value="Disal" />
                   </concept>
@@ -2314,9 +2307,8 @@
             <compose>
                <include>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
-                  <version value="06-Aug-2018" />
-                  <concept>
-                     <code value="71974" />
+		  <concept>
+                  <code value="71974" />
                      <display value="Demadex" />
                   </concept>
                   <concept>

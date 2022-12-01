@@ -20,11 +20,11 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
-    <copyright value="Attribution CC BY"/>
+    <copyright value="(copyright expectations unknown)"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-<version value="??"/>
+
             
             <concept>
                 <code value="1093175"/>

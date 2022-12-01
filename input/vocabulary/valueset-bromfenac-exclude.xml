@@ -21,11 +21,11 @@
         </coding>
     </jurisdiction>
     <purpose value="To refine valueset for Warfarin + NSAID PDDI-CDS"/>
-    <copyright value="Attribution CC BY"/>
+    <copyright value="(copyright expectations unknown)"/>
     <compose>
         <include>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-<version value="??"/>
+
             
             <concept>
                 <code value="1020510"/>

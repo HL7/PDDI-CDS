@@ -1,6 +1,15 @@
 
 ### Introduction
 
+Where possible, new and updated content will be highlighted with green text and background.
+{:.new-content}
+
+<div markdown="1" class="bg-info">
+
+{{ site.data.package-list.list[0].desc }}
+
+</div>
+
 ### Intended Audiences
 
 The primary intended audience includes individuals seeking guidance on how to implement drug-drug interaction clinical decision support using modern health information technology standards. This implementation guide is written with the intention of showing how potential drug-drug interaction (PDDI) alerts more specifically tailored to patient context could be presented through the electronic health record during computerized provider order entry using modern standards. It is also written for a more general audience of individuals creating medication safety knowledge artifacts that they intend to  disseminate to healthcare organizations. This implementation guide is focused on drug therapy ordering conducted with an inpatient or outpatient electronic health record. If the system can send medication orders present in the National Council for Prescription Drug Programs (NCPDP) e-prescribing medication history for outpatient drugs as FHIR resources to the CDS service then, these resources could be included in CDS logic. This implementation guide solely focuses on drug to drug interactions. It is true that vitamins, herbals, and food also have interactions with therapeutic drugs and cause adverse events. However, the representation of these entities with EHR systems is not as standardized as therapeutic drugs. Future versions of the implementation guide might add additional use cases and clarification on how to handle these entities.

@@ -1,0 +1,10 @@
+{
+    "package-id" : "hl7.fhir.uv.pddi",
+    "version": "2.0.0-ballot",
+    "path": "http://hl7.org/fhir/uv/pddi/2023Jan",
+    "milestone": "false",
+    "status": "ballot",
+    "sequence": "STU 2",
+    "desc": "Release 2.0.0 STU2 Ballot",
+    "descmd": "This ballot incorporates changes from implementation and connectathon experience as well as previous ballot reconciliation. See the home page of the ballot IG for a detailed change log."
+}

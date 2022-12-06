@@ -25,7 +25,7 @@
     <contact>
         <telecom>
             <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
+            <value value="http://hl7.org/Special/committees/dss"/>
         </telecom>
     </contact>
     <definition>

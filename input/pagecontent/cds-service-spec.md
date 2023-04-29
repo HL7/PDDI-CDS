@@ -133,19 +133,17 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 
 * Here is a list of FHIR tools that might be of interest to implementers:
 
-	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
-    
-	* Local (preferred)
+  * [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
 
-           <b> The HAPI links DO NOT work </b>
-	    * [HAPI RESTful Server](http://hapifhir.io/doc_rest_server.html)
+  * Local (preferred)
 
-		* [HAPI JPA Server](http://hapifhir.io/doc_jpa.html)
+    * [HAPI RESTful Server](https://hapifhir.io/hapi-fhir/docs/server_plain/server_types.html)
 
-		* [HAPI JAX-RS Server](http://hapifhir.io/doc_rest_server_jaxrs.html)
+    * [HAPI JPA Server](https://hapifhir.io/hapi-fhir/docs/server_jpa/introduction.html)
 
-		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
-			
+    * [HAPI JAX-RS Server](https://hapifhir.io/hapi-fhir/docs/server_plain/jax_rs.html)
+
+    * [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
 
 
 #### CDS Function

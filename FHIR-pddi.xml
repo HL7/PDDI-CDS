@@ -150,5 +150,5 @@
 <page deprecated="true" key="test-data" name="Test data" url="test-data"/>
 <page key="testdata" name="Test data defined as part of the PDDI CDS Implementation Guide"/>
 <page deprecated="true" key="use-case" name="Use Case" url="use-cases"/>
-<page key="use-cases" name="Use Case - a potential interaction between warfarin and non-steroidal anti-inflammatory drugs (NSAIDs)"/>
+<page key="use-cases" name="Use Case - Examples of NPDIs and PDDIs"/>
 </specification>

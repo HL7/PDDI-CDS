@@ -7,14 +7,14 @@ Note that assumption of the use cases presented on this page is that the drugs i
 
 The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimal information model for representing clinically actionable knowledge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimal information model. The IG use case shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
 
-#### Warfarin + NSAIDs Logic Table 
+#### Warfarin + NSAIDs Logic Table
 {:.no_toc}
 
 <figure class="figure">
 	<figcaption class="figure-caption">
 		Legend: <span style="color: #30d529">&#9678;</span> = No special precautions.
 		<span style="color: #f9bd3b">&#9632;</span> = Assess risk and take action if necessary.
-		<span style="color: #fb0082">&#9670;</span> = Use only if benefit outweighs risk. 
+		<span style="color: #fb0082">&#9670;</span> = Use only if benefit outweighs risk.
 		<br>
 		Note that this rule was originally developed through &quot;Individualized Drug Interactions&quot; (AHRQ Project R21-HS023826-01) by Daniel Malone, John Horn, and Philp Hansten.
 	</figcaption>
@@ -42,7 +42,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td> 
+	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -50,7 +50,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of bleeding including gastrointestinal bleeding,  intracranial hemorrhage,  and cerebral hemorrhage</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td> 
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -138,7 +138,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
       <tr>
 	<td style="background-color: #f4fff2"><strong>Frequency of Exposure to the PDDI:</strong> Unknown</td>
       </tr>
-      <tr>		      
+      <tr>
 	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
           rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available. </td>
       </tr>
@@ -159,14 +159,14 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
 
 This is another IG use case that  shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
 
-#### Digoxin + Cyclosporine Logic Table 
+#### Digoxin + Cyclosporine Logic Table
 {:.no_toc}
 
 <figure class="figure">
 	<figcaption class="figure-caption">
 		Legend: <span style="color: #30d529">&#9678;</span> = No special precautions.
 		<span style="color: #f9bd3b">&#9632;</span> = Assess risk and take action if necessary.
-		<span style="color: #fb0082">&#9670;</span> = Use only if benefit outweighs risk. 
+		<span style="color: #fb0082">&#9670;</span> = Use only if benefit outweighs risk.
 		<br>
 		Note that this rule was originally developed through &quot;Individualized Drug Interactions&quot; (AHRQ Project R21-HS023826-01) by Thomase Reese, Daniel Malone, John Horn, and Philp Hansten.
 	</figcaption>
@@ -192,7 +192,7 @@ This is another IG use case that  shows that the potential interactions often ne
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td> 
+	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -200,7 +200,7 @@ This is another IG use case that  shows that the potential interactions often ne
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of digitalis toxicity that may lead to cardiac arrhythmias</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td> 
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -230,7 +230,7 @@ This is another IG use case that  shows that the potential interactions often ne
     <table>
       <tr>
 	<td style="background-color: #f4fff2"><strong>Contextual information/modifying factors</strong>:
-          <ol>  
+          <ol>
             <li>Relevant digoxin concentration in normal range
               <ul><strong>Recommended Action:</strong> Assess risk and take action if necessary</ul>
               <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> For patients with a reliable plasma digoxin concentration in normal range, it is reasonable to anticipate an increase in plasma concentrations after the initiation of cyclosporine. Following initiation, close monitoring and adjusting the digoxin dose as needed is recommended. (Dorian et al. Clin Invest Med 1988; 11(2):108-112) (Dorian et al. Transplant Proc. 1987; 19(1):1825-1827). Taken 4-6 hours after the most recent dose, the approximate therapeutic range is 0.8 to 2.0 ng/mL (1 to 2.6 nmol/L); however, toxicity has been observed with concentrations in this range.</ul>
@@ -257,7 +257,7 @@ This is another IG use case that  shows that the potential interactions often ne
       <tr>
 	<td style="background-color: #f4fff2"><strong>Frequency of Exposure to the PDDI:</strong> Unknown</td>
       </tr>
-      <tr>		      
+      <tr>
 	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
           rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available. </td>
       </tr>
@@ -269,6 +269,228 @@ This is another IG use case that  shows that the potential interactions often ne
       <tr>
 	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
           rarely available but can help a clinician assess the risk/benefit trade-off of exposure to PDDI. Such information SHOULD be provided if available. </td>
+      </tr>
+    </table>
+</div>
+
+### Cannabis Natural Prodocut Interactions
+
+
+This is another IG use case that shows a few examples with natural products interactions involving cannabis. Although these are not standard drug - drug interactions, these examples still follow the minimal information model.
+
+#### Cannabis + DOAC Minimal Information Model
+
+##### Cannabis + DOAC Logic Table
+{:.no_toc}
+
+<figure class="figure">
+	<figcaption class="figure-caption">
+		Legend: <span style="color: #30d529">&#9678;</span> = No special precautions.
+		<span style="color: #f9bd3b">&#9632;</span> = Usually Avoid Combination or Minimize Risk.
+		<span style="color: #fb0082">&#9670;</span> = Avoid combination.
+		<br>
+		Note that this rule was originally developed by Dr. Kojo Abanyie with input from Dr. Daniel Malone, Dr. Lorenzo Villa-Zapata, and Dr. Xiaotong Li.
+	</figcaption>
+	<a href = "CBD-DOAC.png" target ="_blank" > <img src="CBD-DOAC.png" class="figure-img img-responsive img-rounded center-block" alt="CBD + DOAC NPDI" /></a>
+</figure>
+
+##### Cannabis + DOAC PDDI Minimal Information Model Elements
+{:.no_toc}
+
+<div>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Drugs involved</strong>: Cannabis and DOAC</td>
+      </tr>
+      <tr>
+	<td>
+	  <strong>Comment:</strong> The drugs involved in a NPDI MUST be explicitly stated. To support a computable representation of the NPDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>. Due the novelty of natural products in terminology sets, use of <a href="https://mor.nlm.nih.gov/RxMix/" target="new">RxMix</a>may be helpful in finding a set of terms relating to the natural product in consideration.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of bleeding due to increased exposure from DOAC </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The clinical consequences associated with a NPDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the NPDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Bleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability.</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> A NPDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cannabis products. DOACS are substrates of P-glycoprotein.</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The mechanism of a NPDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Recommended Action</strong>: For patients on DOACs, patients should be monitored for potential increased bleeding incidence as well as miminize any additional bleeding risks. Patients with poor renal function should be monitored more closely due to increased exposure to DOAC, particualrly for patients on dabigatran. In these cases, cannabis should be discontinued to avoid bleeding events. Of note, patients on apixaban potentially have a lower risk of adverse events when taken in conjunction with cannabis. </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Contextual information/modifying factors</strong>:
+          <ol>
+            <li>The DOAC is Apixaban
+              <ul><strong>Recommended Action:</strong> No Special Precautions</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> Strong evidence does not exist with apixaban as a prominent substrate of P-gp. In addition, product labeling suggest the risk is associated with strong CYP3A4 and P-gp inhibitors.(Eliquis (apixaban) [prescribing information]) Research also does not strongly support cannabis as a strong dual inhibitor of CYP3A4 and P-gp.</ul>
+            </li>
+            <li>The DOAC is rivaroxaban, edoxaban, dabigatran
+              <ul><strong>Recommended Action:</strong> Minimize Risk</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> </ul>
+               <ul>Evidence supports rivaroxaban and edoxaban as prominent substrats of P-gp. This is further substantiated by the product labels for rivaroxaban, edoxaban and dabigatran(Xarelto (rivaroxaban) [prescribing information], Sayvaysa (edoxaban) [prescribing information], and Pradaxa (dabigatran etexilate) [prescribing information]) The potency of cannabis as a P-gp inhibitor is unclear given the available evidence.[Zhu et al. J Pharmacol Exp Ther. 2006;317(2):850-857.]  </ul>
+            </li>
+            <li>The DOAC is dabigatran and the patient has a CrCl less than 50 or AKI/CKD.
+              <ul><strong>Recommended Action:</strong> Avoid Combination</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> </ul>
+               <ul>The product labeling for dabigatran has warnings regarding severe renal impairment. It also mentiones that the concomitant use of P-gp inhibitors can cause an increased exposure of dabigatran.(Pradaxa (dabigatran etexilate) [prescribing information])</ul>
+            </li>
+           </ol>
+	</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">Contextual information/modifying factors</a> are necessary for alerts that
+          are both sensitive and specific. Like clinical consequences, each known factor SHOULD be
+          stated as specifically as possible. The factors SHOULD be amenable to implementation as executable
+          logic using value sets from clinical terminologies such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a>, the
+	  <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>, <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a>, and <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. As is used in this
+          example, each factor SHOULD be related to a specific <a href='http://purl.obolibrary.org/obo/MPIO_0000008' target="new">recommended action</a> that is supported by the <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Frequency of Exposure to the NPDI:</strong> Unknown</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
+          rarely available but can help a clinician assess the risk/benefit trade-off of exposure to NPDI. Such information SHOULD be provided if available. </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Frequency of Harm for persons who have been exposed to the NPDI:</strong> Unknown</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
+          rarely available but can help a clinician assess the risk/benefit trade-off of exposure to NPDI. Such information SHOULD be provided if available. </td>
+      </tr>
+    </table>
+</div>
+
+#### Cannabis + Clopidogrel Minimal Information Model
+
+##### Cannabis + Clopidogrel Logic Table
+{:.no_toc}
+
+<figure class="figure">
+	<figcaption class="figure-caption">
+		Legend: <span style="color: #30d529">&#9678;</span> = No special precautions.
+		<span style="color: #f9bd3b">&#9632;</span> = Usually Avoid Combination or Minimize Risk.
+		<span style="color: #fb0082">&#9670;</span> = Avoid combination.
+		<br>
+		Note that this rule was originally developed by Dr. Kojo Abanyie with input from Dr. Daniel Malone, Dr. Lorenzo Villa-Zapata, and Dr. Xiaotong Li.
+	</figcaption>
+	<a href = "CBD-Clopidogrel.png" target ="_blank" > <img src="CBD-Clopidogrel.png" class="figure-img img-responsive img-rounded center-block" alt="CBD + Clopidogrel NPDI" /></a>
+</figure>
+
+##### Cannabis + Clopidogrel PDDI Minimal Information Model Elements
+{:.no_toc}
+
+<div>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Drugs involved</strong>: Cannabis and Clopidogrel</td>
+      </tr>
+      <tr>
+	<td>
+	  <strong>Comment:</strong> The drugs involved in a NPDI MUST be explicitly stated. To support a computable representation of the NPDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>. Due the novelty of natural products in terminology sets, use of <a href="https://mor.nlm.nih.gov/RxMix/" target="new">RxMix</a>may be helpful in finding a set of terms relating to the natural product in consideration.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of ischemic events due decreased availability of clopidogrel's active metabolite. </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The clinical consequences associated with a NPDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the NPDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Ischemic events are serious can cause serious potential clinical consquences as it can result in death, life-threatening hospitalization, and disability.</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> A NPDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through CYP2C19 inhibition by cannabis products. </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> The mechanism of a NPDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Recommended Action</strong>: Monitor the patient for ischemic events and consider discontinuation of the cannabis product or use of another antiplatelet agent such as aspirin or another P2Y12 inhibitor. </td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Contextual information/modifying factors</strong>:
+          <ol>
+            <li>The patient is only on clopidogrel and a cannabinoid or the patient is on clopidogrel, a cannabinoid, and another non-CYP2C19 inhibitor
+              <ul><strong>Recommended Action:</strong> No Special Precautions</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong> Clopidogrel needs to be metabolized into it's active metabolite for it to be effective against ischemic events. (Plavix (clopidogrel) [prescribing information]) As such, cannabis inhibtion of CYP2C19 can cause an increase ischemic events.</ul>
+            </li>
+            <li>The patient is on clopidogrel, a cannabinoid, and an additional CYP2C19 inhibitor.
+              <ul><strong>Recommended Action:</strong> Avoid Combination</ul>
+              <ul><strong>Evidence for a Suspected Drug-Drug Interaction:</strong>  </ul>
+               <ul>Since clopidogrel needs to be metabolized by CYP2C19, inhibtion of cannabis and other CYP2C19 inhibitors can potentially cause a significant increase in ischemic events.</ul>
+            </li>
+           </ol>
+	</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">Contextual information/modifying factors</a> are necessary for alerts that
+          are both sensitive and specific. Like clinical consequences, each known factor SHOULD be
+          stated as specifically as possible. The factors SHOULD be amenable to implementation as executable
+          logic using value sets from clinical terminologies such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a>, the
+	  <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>, <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a>, and <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. As is used in this
+          example, each factor SHOULD be related to a specific <a href='http://purl.obolibrary.org/obo/MPIO_0000008' target="new">recommended action</a> that is supported by the <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Frequency of Exposure to the NPDI:</strong> Unknown</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
+          rarely available but can help a clinician assess the risk/benefit trade-off of exposure to NPDI. Such information SHOULD be provided if available. </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+	<td style="background-color: #f4fff2"><strong>Frequency of Harm for persons who have been exposed to the NPDI:</strong> Unknown</td>
+      </tr>
+      <tr>
+	<td><strong>Comment:</strong> Frequency of exposure and frequency of harm information is
+          rarely available but can help a clinician assess the risk/benefit trade-off of exposure to NPDI. Such information SHOULD be provided if available. </td>
       </tr>
     </table>
 </div>

@@ -273,7 +273,7 @@ This is another IG use case that  shows that the potential interactions often ne
     </table>
 </div>
 
-### Cannabis Natural Prodocut Interactions
+### Cannabis Natural Product Interactions
 
 
 This is another IG use case that shows a few examples with natural products interactions involving cannabis. Although these are not standard drug - drug interactions, these examples still follow the minimal information model.

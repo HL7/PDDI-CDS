@@ -12,7 +12,7 @@
     <snapshot>
         <element id="Extension:indicator">
             <path value="Extension"/>
-            <short value="info | warning | hard-stop"/>
+            <short value="info | warning | critical"/>
             <definition value="Indicates urgency/importance of the action."/>
             <min value="1"/>
             <max value="1"/>
@@ -111,7 +111,7 @@
     <differential>
         <element id="Extension:indicator">
             <path value="Extension"/>
-            <short value="info | warning | hard-stop"/>
+            <short value="info | warning | critical"/>
             <definition value="Indicates urgency/importance of the action."/>
             <min value="1"/>
             <max value="1"/>

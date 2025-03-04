@@ -19,8 +19,8 @@
                 <display value="Warning"/>
             </concept>
             <concept>
-                <code value="hard-stop"/>
-                <display value="Hard Stop"/>
+                <code value="critical"/>
+                <display value="Critical"/>
             </concept>
         </include>
     </compose>

@@ -3,6 +3,9 @@
   <id value="codesystem-PDDICDS-indicator"/>
     <title value="PDDI CDS indicator" />
     <url value="http://hl7.org/fhir/uv/pddi/CodeSystem/codesystem-PDDICDS-indicator"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="cds"/>
+    </extension>
     <name value="Codesystem_PDDICDS_indicator"/>
     <status value="draft"/>
     <experimental value="true"/>
@@ -20,8 +23,8 @@
         <definition value="Indicates that the workflow result is a warning"/>
     </concept>
     <concept>
-        <code value="hard-stop"/>
-        <display value="Hard Stop"/>
+        <code value="critical"/>
+        <display value="Critical"/>
         <definition value="Indicates that the workflow should not be allowed to proceed"/>
     </concept>
 </CodeSystem>

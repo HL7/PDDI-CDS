@@ -1,8 +1,8 @@
 ### Introduction
 
-Note that assumption of the use cases presented on this page is that the drugs involved in the potential drug-drug interaction (PDDI) CDS service logic include only sets of terminology codes for specific semantic clinical/branded drugs that have a formulation indicative of the route of administration. This is very typical for electronic health record systems. It is left to developers of CDS rules to consider how to handle situations where an EHR system triggers the CDS service using a selected ingredient rather than a semantic clinical drug.
+Note that assumption of the use case examples presented on this page is that the drugs involved in the potential drug-drug interaction (PDDI) CDS service logic include only sets of terminology codes for specific semantic clinical/branded drugs that have a formulation indicative of the route of administration. This is very typical for electronic health record systems. It is left to developers of CDS rules to consider how to handle situations where an EHR system triggers the CDS service using a selected ingredient rather than a semantic clinical drug.
 
-### Warfarin + NSAIDs
+### Warfarin + NSAIDs (Informational Example)
 
 
 The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact represents a relatively complex contextualized PDDI CDS algorithm. The knowledge artifact contains logic that uses both drug and patient contextual factors. The original rule was developed by clinical experts as part of the W3C Community Group effort to develop a [minimal information model for representing clinically actionable knowledge about PDDIs](https://w3id.org/hclscg/pddi). Table 1 is the Warfarin + NSAIDs knowledge artifact at the narrative level using the minimal information model. The IG use case shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
@@ -42,7 +42,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	  <strong>Comment:</strong> The drugs involved in a PDDI SHOULD be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -50,7 +50,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of bleeding including gastrointestinal bleeding,  intracranial hemorrhage,  and cerebral hemorrhage</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI SHOULD be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -58,7 +58,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
 	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Bleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> A PDDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+	<td><strong>Comment:</strong> A PDDI clinical consequence SHOULD be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
       </tr>
     </table>
     <table>
@@ -71,7 +71,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
           upper gastrointestinal bleeding (UGIB).</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The mechanism of a PDDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies. </td>
+	<td><strong>Comment:</strong> The mechanism of a PDDI SHOULD be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies. </td>
       </tr>
     </table>
     <table>
@@ -159,7 +159,7 @@ The  Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) knowledge artifact
 
 This is another IG use case that  shows that the potential interactions often need to consider route and formulation. The minimal information model specifies  contextual  information/modifying factors which these would fall under.
 
-#### Digoxin + Cyclosporine Logic Table
+#### Digoxin + Cyclosporine Logic Table (Informational Example)
 {:.no_toc}
 
 <figure class="figure">
@@ -192,7 +192,7 @@ This is another IG use case that  shows that the potential interactions often ne
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	  <strong>Comment:</strong> The drugs involved in a PDDI SHOULD be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -200,7 +200,7 @@ This is another IG use case that  shows that the potential interactions often ne
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of digitalis toxicity that may lead to cardiac arrhythmias</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI SHOULD be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -208,7 +208,7 @@ This is another IG use case that  shows that the potential interactions often ne
 	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Digitalis toxicity is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> A PDDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+	<td><strong>Comment:</strong> A PDDI clinical consequence SHOULD be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
       </tr>
     </table>
     <table>
@@ -216,7 +216,7 @@ This is another IG use case that  shows that the potential interactions often ne
 	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cyclosporine. P-glycoprotein is a major transporter for digoxin efflux.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The mechanism of a PDDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+	<td><strong>Comment:</strong> The mechanism of a PDDI SHOULD be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
       </tr>
     </table>
     <table>
@@ -278,7 +278,7 @@ This is another IG use case that  shows that the potential interactions often ne
 
 This is another IG use case that shows a few examples with natural products interactions involving cannabis. Although these are not standard drug - drug interactions, these examples still follow the minimal information model.
 
-#### Cannabis + DOAC Minimal Information Model
+#### Cannabis + DOAC Minimal Information Model (Informational Example)
 
 ##### Cannabis + DOAC Logic Table
 {:.no_toc}
@@ -304,7 +304,7 @@ This is another IG use case that shows a few examples with natural products inte
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a NPDI MUST be explicitly stated. To support a computable representation of the NPDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>. Due the novelty of natural products in terminology sets, use of <a href="https://mor.nlm.nih.gov/RxMix/" target="new">RxMix</a>may be helpful in finding a set of terms relating to the natural product in consideration.</td>
+	  <strong>Comment:</strong> The drugs involved in a NPDI SHOULD be explicitly stated. To support a computable representation of the NPDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>. Due the novelty of natural products in terminology sets, use of <a href="https://mor.nlm.nih.gov/RxMix/" target="new">RxMix</a>may be helpful in finding a set of terms relating to the natural product in consideration.</td>
       </tr>
     </table>
     <table>
@@ -312,7 +312,7 @@ This is another IG use case that shows a few examples with natural products inte
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of bleeding due to increased exposure from DOAC </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a NPDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the NPDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	<td><strong>Comment:</strong> The clinical consequences associated with a NPDI SHOULD be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the NPDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -320,7 +320,7 @@ This is another IG use case that shows a few examples with natural products inte
 	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Bleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> A NPDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+	<td><strong>Comment:</strong> A NPDI clinical consequence SHOULD be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
       </tr>
     </table>
     <table>
@@ -328,7 +328,7 @@ This is another IG use case that shows a few examples with natural products inte
 	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cannabis products. DOACS are substrates of P-glycoprotein.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The mechanism of a NPDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+	<td><strong>Comment:</strong> The mechanism of a NPDI SHOULD be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
       </tr>
     </table>
     <table>
@@ -389,7 +389,7 @@ This is another IG use case that shows a few examples with natural products inte
     </table>
 </div>
 
-#### Cannabis + Clopidogrel Minimal Information Model
+#### Cannabis + Clopidogrel Minimal Information Model (Informational Example)
 
 ##### Cannabis + Clopidogrel Logic Table
 {:.no_toc}
@@ -415,7 +415,7 @@ This is another IG use case that shows a few examples with natural products inte
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a NPDI MUST be explicitly stated. To support a computable representation of the NPDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>. Due the novelty of natural products in terminology sets, use of <a href="https://mor.nlm.nih.gov/RxMix/" target="new">RxMix</a>may be helpful in finding a set of terms relating to the natural product in consideration.</td>
+	  <strong>Comment:</strong> The drugs involved in a NPDI SHOULD be explicitly stated. To support a computable representation of the NPDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>. Due the novelty of natural products in terminology sets, use of <a href="https://mor.nlm.nih.gov/RxMix/" target="new">RxMix</a>may be helpful in finding a set of terms relating to the natural product in consideration.</td>
       </tr>
     </table>
     <table>
@@ -423,7 +423,7 @@ This is another IG use case that shows a few examples with natural products inte
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of ischemic events due decreased availability of clopidogrel's active metabolite. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a NPDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the NPDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	<td><strong>Comment:</strong> The clinical consequences associated with a NPDI SHOULD be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the NPDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -431,7 +431,7 @@ This is another IG use case that shows a few examples with natural products inte
 	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Ischemic events are serious can cause serious potential clinical consquences as it can result in death, life-threatening hospitalization, and disability.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> A NPDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+	<td><strong>Comment:</strong> A NPDI clinical consequence SHOULD be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
       </tr>
     </table>
     <table>
@@ -439,7 +439,7 @@ This is another IG use case that shows a few examples with natural products inte
 	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through CYP2C19 inhibition by cannabis products. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The mechanism of a NPDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+	<td><strong>Comment:</strong> The mechanism of a NPDI SHOULD be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
       </tr>
     </table>
     <table>

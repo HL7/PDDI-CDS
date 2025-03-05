@@ -8,30 +8,30 @@
 
 **CDS Hooks.**
 
-* The prefetch template for the `order-select` service (if used) MUST include medication resources but could include Condition or other resources important for the service to assess for PDDIs
+* The prefetch template for the `order-select` service (if used) SHOULD include medication resources but could include Condition or other resources important for the service to assess for PDDIs
 
-**A CDS rule execution engine (service).** 
+**A CDS rule execution engine (service).**
 
-* The CDS rule execution engine MUST be able to process CDS Hooks requests and return CDS Hooks Card responses. In processing a CDS request, it MUST also be able to process FHIR data including clinical and terminology resources.
+* The CDS rule execution engine SHOULD be able to process CDS Hooks requests and return CDS Hooks Card responses. In processing a CDS request, it SHOULD also be able to process FHIR data including clinical and terminology resources.
 
 * If the CDS rule execution engine does not receive prefetch data in the request it SHOULD query the FHIR server via network call.
 
 * A rule engine MAY execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html), either directly or compiled to [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md). While this method is described in the current IG, implementers MAY choose to use various programming languages, rule engines and/or machine learning models rather than CQL+FHIR.
 
-* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it MUST support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses. 
+* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it SHOULD support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses.
 
-* It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it MUST return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
+* It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
 
 **An electronic health record (EHR) CDS client.**
 
 
-* Prior to a hook trigger and subsequent processes, the EHR MUST initiate a [CDS Discovery](#cds-discovery) request. The CDS discovery response is for the system and would not be viewed by the clinician.
+* Prior to a hook trigger and subsequent processes, the EHR SHOULD initiate a [CDS Discovery](#cds-discovery) request. The CDS discovery response is for the system and would not be viewed by the clinician.
 
-* The EHR MUST call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) MUST contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
+* The EHR SHOULD call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) SHOULD contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
 
-* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses. 
+* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses.
 
-### Preliminaries 
+### Preliminaries
 {:.no_toc}
 
 This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Later sections describe implementation details using a specific knowledge artifact example. Structured artifacts that implement the logic and behavior described below are available under [Artifacts](artifacts.html).
@@ -40,18 +40,18 @@ This section contains documentation on how to implement PDDI CDS artifacts from 
 #### Getting Started with PDDI CDS
 {:.no_toc}
 
-The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
+The words SHOULD, SHOULD NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
 
 
 #### What You Will Need
 {:.no_toc}
 
-* A web service that processes CDS requests using a CDS rule execution engine. The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
+* A web service that processes CDS requests using a CDS rule execution engine. The service SHOULD be able to process CDS Hooks requests and return CDS Hooks Card responses.
 
-* A web service that processes CDS requests MUST be able to process FHIR data including clinical and terminology resources. 
+* A web service that processes CDS requests SHOULD be able to process FHIR data including clinical and terminology resources.
 
 * The EHR system that sends requests to the service MAY provide access to the service to relevant patient data in the EHR via a FHIR server. EHR systems that do not provide access to addition patient data will potentially receive more limited CDS because the service will only work with data in the `context` and `prefetch` fields of CDS Hooks requests.
-			
+
 
 
 #### CDS Function
@@ -72,7 +72,7 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 
 **NEED TO ADD SECTION REGARDING EVIDENCE RESOURCE AND EBM ON FHIR**
 
-#### CPOE Workflow Hooks 
+#### CPOE Workflow Hooks
 {:.no_toc}
 
 Figure 1 depicts hook triggers for a medication prescribing example. The implementation follows the [CDS Hooks `order-select`](https://cds-hooks.org/hooks/order-select/) and [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specifications that define trigger events when a clinician enters a medication and is ready to sign one or more medication orders for a patient. The `order-select` hook defines the initial trigger at the start of the CPOE workflow. The `order-sign` hook is among the last workflow events before an order is promoted out of a draft status. Having the option to trigger the CDS service at *only one* of two different events in the workflow sets PDDI CDS apart from most conventional CDS systems that trigger CDS at the time of order signing. By moving CDS triggers earlier in the order entry workflow (i.e., `order-select`), clinicians will have actionable information in the middle of their decision-making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective CDS. Note that it might not be possible to develop CDS Logic to evaluate a candidate order at the "order-select" stage.' In these cases, appropriately, there would be no ability for the EHR to subscribe to a service specific to the drug-drug interaction that triggers at order-select.
@@ -90,28 +90,28 @@ Figure 1 depicts hook triggers for a medication prescribing example. The impleme
 
 * It is RECOMMENDED that knowledge artifacts for PDDI CDS are written so that clinician-focused response information adheres to the 8 detailed best practice recommendations discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://w3id.org/hclscg/pddi).
 
-**A CDS rule execution engine (service).** 
+**A CDS rule execution engine (service).**
 
-* The CDS rule execution engine MUST be able to process CDS Hooks requests and return CDS Hooks Card responses. In processing a CDS request, it MUST also be able to process FHIR data including clinical and terminology resources.
+* The CDS rule execution engine SHOULD be able to process CDS Hooks requests and return CDS Hooks Card responses. In processing a CDS request, it SHOULD also be able to process FHIR data including clinical and terminology resources.
 
-* If the CDS rule execution engine does not receive prefetch data in the request it MUST query the FHIR server via network call.
+* If the CDS rule execution engine does not receive prefetch data in the request it SHOULD query the FHIR server via network call.
 
 * It is RECOMMENDED that the rule engine be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
 
-* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it MUST support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses. 
+* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it SHOULD support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses.
 
-* It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it MUST return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
+* It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
 
 **An electronic health record (EHR) CDS client.**
 
 
-* Prior to a hook trigger and subsequent processes, the EHR MUST initiate a [CDS Discovery](#cds-discovery) request. The CDS discovery response is for the system and would not be viewed by the clinician.
+* Prior to a hook trigger and subsequent processes, the EHR SHOULD initiate a [CDS Discovery](#cds-discovery) request. The CDS discovery response is for the system and would not be viewed by the clinician.
 
-* The EHR MUST call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) MUST contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
+* The EHR SHOULD call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) SHOULD contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
 
-* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses. 
+* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses.
 
-### Preliminaries 
+### Preliminaries
 
 This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Later sections describe implementation details using a specific knowledge artifact example. Structured artifacts that implement the logic and behavior described below are available under [Artifacts](artifacts.html).
 
@@ -119,22 +119,22 @@ This section contains documentation on how to implement PDDI CDS artifacts from 
 #### Getting Started with PDDI CDS
 {:.no_toc}
 
-The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
+The words SHOULD, SHOULD NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
 
 
 #### What You Will Need
 {:.no_toc}
 
-* A web service that processes CDS requests using a CDS rule execution engine. The service MUST be able to process CDS Hooks requests and return CDS Hooks Card responses.
+* A web service that processes CDS requests using a CDS rule execution engine. The service SHOULD be able to process CDS Hooks requests and return CDS Hooks Card responses.
 
-* A web service that processes CDS requests MUST be able to process FHIR data including clinical and terminology resources. 
+* A web service that processes CDS requests SHOULD be able to process FHIR data including clinical and terminology resources.
 
 * The EHR system that sends requests to the service MAY provide access to the service to relevant patient data in the EHR via a FHIR server. EHR systems that do not provide access to addition patient data will potentially receive more limited CDS because the service will only work with data in the `context` and `prefetch` fields of CDS Hooks requests.
 
 * Here is a list of FHIR tools that might be of interest to implementers:
 
-	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing) 
-    
+	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing)
+
 	* Local (preferred)
 
            <b> The HAPI links DO NOT work </b>
@@ -145,7 +145,7 @@ The words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMM
 		* [HAPI JAX-RS Server](http://hapifhir.io/doc_rest_server_jaxrs.html)
 
 		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
-			
+
 
 
 #### CDS Function
@@ -166,7 +166,7 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 
 **NEED TO ADD SECTION REGARDING EVIDENCE RESOURCE AND EBM ON FHIR**
 
-#### CPOE Workflow Hooks 
+#### CPOE Workflow Hooks
 {:.no_toc}
 
 Figure 1 depicts hook triggers for a medication prescribing example. The implementation follows the [CDS Hooks `order-select`](https://cds-hooks.org/hooks/order-select/) and [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specifications that define trigger events when a clinician enters a medication and is ready to sign one or more medication orders for a patient. The `order-select` hook defines the initial trigger at the start of the CPOE workflow. The `order-sign` hook is among the last workflow events before an order is promoted out of a draft status. From a clinical and technical perspective, triggering the CDS service at two events in the workflow sets PDDI CDS apart from most conventional CDS systems that trigger CDS at the time of order signing. By moving CDS triggers earlier in the order entry workflow (i.e., `order-select`), clinicians will have actionable information in the middle of their decision-making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective CDS.
@@ -178,16 +178,16 @@ Figure 1 depicts hook triggers for a medication prescribing example. The impleme
 
 Note that the current CDS Hook specification does not have a hook to provide the CDS information at an intermediate step between product selection and signing the order.
 
-#### Prefetch Role 
+#### Prefetch Role
 {:.no_toc}
 
-For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing CDS service network calls to external resources such as a FHIR server. When a client program subscribes to the PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As described below, the prefetch requirements are different for `order-select` and `order-sign` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call. 
+For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing CDS service network calls to external resources such as a FHIR server. When a client program subscribes to the PDDI CDS service, the service SHOULD return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As described below, the prefetch requirements are different for `order-select` and `order-sign` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it SHOULD query the server via network call.
 
 #### Security and authorization
 
-Implementers need to consider and address security and privacy concerns that might arise when from providing CDS as a service. One thing to consider is if the clinician ordering a drug is not authorized to have access to information masked due to a patient's consent directive that restricts sharing. For example, consider the [Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) Use Case](./use-cases.html) where the clinician selects warfarin for a patient currently prescribed a NSAID and a proton pump inhibitor. It is conceivable that the clinician would not be aware that the patient is also taking a selective serotonin reuptake inhibitor (SSRI) for a major depressive disorder because the patient did not consent to share this information with anyone besides the mental health provider who prescribed the SSRI. Assuming that the FHIR Authorization Server enforces the patient's consent directive not to disclose to the CDS that the patient is taking a SSRI then, the clinician will not be alerted about the PDDI with NSAID. However, the FHIR Authorization Server could also have an organizational policy that authorizes the CDS as a "super user" and permits it to access to information that is masked from an unauthorized clinician. If the CDS service identifies a PDDI that could result from the order selected by the clinician, it could return a CDS Hook card cautioning the clinician of a possible counter-indication, and recommending that the clinician ask the patient about any medications that the patient has not shared. This would fall under a ["Break the Glass" (BTG)](https://hipaa.yale.edu/security/break-glass-procedure-granting-emergency-access-critical-ephi-systems) scenario and would require a special procedure.  A similar CDS BTG scenario was demonstrated during the [HIMSS 201902 Orlando Consumer Centered Care Planning Interoperability Showcase](https://confluence.hl7.org/display/SEC/HIMSS+201902+Orlando) and [is described here](https://confluence.hl7.org/display/SEC/HIMSS+201902+Sharing+with+Protections). It was sponsored by the HL7 Security and CBCP WGs, VA, Allscripts, Perspecta, MyPatientLink and others. For more information, see https://build.fhir.org/security-labels.html#break-the-glass and https://build.fhir.org/operationoutcome-example-break-the-glass.html. 
+Implementers need to consider and address security and privacy concerns that might arise when from providing CDS as a service. One thing to consider is if the clinician ordering a drug is not authorized to have access to information masked due to a patient's consent directive that restricts sharing. For example, consider the [Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) Use Case](./use-cases.html) where the clinician selects warfarin for a patient currently prescribed a NSAID and a proton pump inhibitor. It is conceivable that the clinician would not be aware that the patient is also taking a selective serotonin reuptake inhibitor (SSRI) for a major depressive disorder because the patient did not consent to share this information with anyone besides the mental health provider who prescribed the SSRI. Assuming that the FHIR Authorization Server enforces the patient's consent directive not to disclose to the CDS that the patient is taking a SSRI then, the clinician will not be alerted about the PDDI with NSAID. However, the FHIR Authorization Server could also have an organizational policy that authorizes the CDS as a "super user" and permits it to access to information that is masked from an unauthorized clinician. If the CDS service identifies a PDDI that could result from the order selected by the clinician, it could return a CDS Hook card cautioning the clinician of a possible counter-indication, and recommending that the clinician ask the patient about any medications that the patient has not shared. This would fall under a ["Break the Glass" (BTG)](https://hipaa.yale.edu/security/break-glass-procedure-granting-emergency-access-critical-ephi-systems) scenario and would require a special procedure.  A similar CDS BTG scenario was demonstrated during the [HIMSS 201902 Orlando Consumer Centered Care Planning Interoperability Showcase](https://confluence.hl7.org/display/SEC/HIMSS+201902+Orlando) and [is described here](https://confluence.hl7.org/display/SEC/HIMSS+201902+Sharing+with+Protections). It was sponsored by the HL7 Security and CBCP WGs, VA, Allscripts, Perspecta, MyPatientLink and others. For more information, see https://build.fhir.org/security-labels.html#break-the-glass and https://build.fhir.org/operationoutcome-example-break-the-glass.html.
 
-It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it MUST return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
+It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
 
 #### Configuration Options and the CDS Service
 {:.no_toc}
@@ -203,23 +203,23 @@ It is critical for the practicing clinicians using the EHR to be consulted with/
 ##### The CDS Hooks Feedback Endpoint and the CDS Service
 {:.no_toc}
 
-The [CDS Hooks feedback service](https://github.com/cds-hooks/docs/wiki/Feedback-endpoint-for-CDS-Hooks-1.1) provides a mechanism for the CDS Service to receive an update from the client on the acceptance or rejection of a suggestion. This is valuable information to enable a service to improve its behavior towards the goal of the end-user having a positive and meaningful experience with the CDS. There are four distinct, possible outcomes for an end user's single interaction with a CDS Hooks suggestion card: suggestion accepted, card ignored, card dismissed without reason, card dismissed with reason. While the feedback mechanism could potentially provide the CDS Service with greater context for coordination between `order-select` and `order-sign` card responses, the coordination mechanism described in this IG does not require its use. EHR clients that implement the hook coordination mechanism (see [advanced implementation](#advanced-implementation)) MAY integrate feedback to inform how the service filters cards. However, this is not a requirement.  
+The [CDS Hooks feedback service](https://github.com/cds-hooks/docs/wiki/Feedback-endpoint-for-CDS-Hooks-1.1) provides a mechanism for the CDS Service to receive an update from the client on the acceptance or rejection of a suggestion. This is valuable information to enable a service to improve its behavior towards the goal of the end-user having a positive and meaningful experience with the CDS. There are four distinct, possible outcomes for an end user's single interaction with a CDS Hooks suggestion card: suggestion accepted, card ignored, card dismissed without reason, card dismissed with reason. While the feedback mechanism could potentially provide the CDS Service with greater context for coordination between `order-select` and `order-sign` card responses, the coordination mechanism described in this IG does not require its use. EHR clients that implement the hook coordination mechanism (see [advanced implementation](#advanced-implementation)) MAY integrate feedback to inform how the service filters cards. However, this is not a requirement.
 
 
 #### Filtering CDS Hooks response cards at `order-sign`: CDS Service versus EHR Client
 {:.no_toc}
 
 The preferred implementation is to configure the CDS service to filter duplicative response cards previously shown to the prescriber at `order-select` as demonstrated in the [advanced implementation](#advanced-implementation).  In order for PDDI CDS to be both sensitive and specific, different contextual factors are sent to the CDS service depending upon the order entry workflow step the clinician is engaged in.  At the time of medication selection, a `order-select` CDS Hook sends medication resources to the CDS service. Later, at the time of order signing, a `order-sign` CDS Hook sends other contextual resources specific to a PDDI identified from processing `order-select`. This might include retrospective patient conditions, lab measurements, and other information. One potential advantage of this approach is a reduction the amount of information needed to provide actionable PDDI information to the clinician. The approach might also limit the amount of information the EHR has to provide for an order entry task. For example, if a clinician starts an NSAID order for a patient that was taking warfarin and decides to discontinue the order based on the presented cards, the clinician only needs to read and process medication factors, and the EHR would not display additional patient resources such as age and history of upper gastrointestinal bleed.
- 
-#### Process 
+
+#### Process
 {:.no_toc}
 
-This section provides an overview of the processes and components of the PDDI CDS. It is delineated by [Basic](#basic-implementation) and [Advanced](#advanced-implementation) Implementation sections. The Basic Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Advanced Implementation is a target for future iterations to optimize the CDS artifacts. 
+This section provides an overview of the processes and components of the PDDI CDS. It is delineated by [Basic](#basic-implementation) and [Advanced](#advanced-implementation) Implementation sections. The Basic Implementation describes the technology specifications, and what structured code is available in this implementation guide. The Advanced Implementation is a target for future iterations to optimize the CDS artifacts.
 
 #### CDS Discovery
 {:.no_toc}
 
-Prior to a hook trigger and subsequent processes, the EHR MUST initiate a CDS Discovery (Figure 2). CDS Discovery is to identify CDS services and obtain associated prefetch templates. A prefetch template is a dictionary of read and search requests for needed resources of a particular service. The PDDI CDS service MAY provide a prefetch template for each service, and the EHR SHOULD populate prefetch templates with relevant patient data for the anticipated CDS Hook request. The CDS discovery response is for the system and would not be viewed by the clinician.
+Prior to a hook trigger and subsequent processes, the EHR SHOULD initiate a CDS Discovery (Figure 2). CDS Discovery is to identify CDS services and obtain associated prefetch templates. A prefetch template is a dictionary of read and search requests for needed resources of a particular service. The PDDI CDS service MAY provide a prefetch template for each service, and the EHR SHOULD populate prefetch templates with relevant patient data for the anticipated CDS Hook request. The CDS discovery response is for the system and would not be viewed by the clinician.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 2: CDS Service Discovery </strong></figcaption>
@@ -297,12 +297,12 @@ GET http://FHIR.org/PDDI-CDS
 
 ### Basic Implementation
 
-The Basic Implementation uses the `order-sign 1.0` and is a more simplistic approach compared to the [Advanced Implementation](#advanced-implementation). The CDS Hooks specification states that `order-sign 1.0` fires when a clinician is ready to sign one or more orders for a patient, (including orders for medications, procedures, labs and other orders). This hook is among the last workflow events before an order is promoted out of a draft status. The context contains all order details, such as dose, quantity, route, etc, although the order has not yet been signed and therefore still exists in a draft status. Use this hook when your service requires all order details, and the clinician will accept recommended changes. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.  
+The Basic Implementation uses the `order-sign 1.0` and is a more simplistic approach compared to the [Advanced Implementation](#advanced-implementation). The CDS Hooks specification states that `order-sign 1.0` fires when a clinician is ready to sign one or more orders for a patient, (including orders for medications, procedures, labs and other orders). This hook is among the last workflow events before an order is promoted out of a draft status. The context contains all order details, such as dose, quantity, route, etc, although the order has not yet been signed and therefore still exists in a draft status. Use this hook when your service requires all order details, and the clinician will accept recommended changes. Since EHR platforms may have different discrete steps in the order entry process, the implementor decides what action (e.g., selecting a medication product, accepting order completion) triggers the CDS Hooks request.
 
 #### Summary of Operations
 {:.no_toc}
 
-The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `order-sign`) and ends with the user's action in response to the Card response suggestion(s) (Figure 3). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery). 
+The process for a unique instance of PDDI CDS begins with the user triggering a CDS Hooks request (i.e., `order-sign`) and ends with the user's action in response to the Card response suggestion(s) (Figure 3). The parse and pre-process subprocess is to determine if a FHIR server query needed. The Clinical Reasoning module evaluates the complete request and creates information to send back the the EHR. The event subprocesses may occur in response to a specific instance (i.e., SMART authorization and FHIR access) or asynchronous of the specific instance (i.e., CDS Discovery).
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 3: Basic Implementation – Order Sign Service Summary </strong></figcaption>
@@ -320,15 +320,15 @@ The PDDI CDS artifacts use the [current HL7 CDS Hooks specification](https://cds
 
 
 
-#### CDS Hooks Request 
+#### CDS Hooks Request
 {:.no_toc}
 
-The EHR MUST call the PDDI CDS service by sending an HTTP `POST` containing `JSON` to the service endpoint (e.g.,`http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds`). The JSON (CDS Hooks request) MUST contain specified information for the hook that was triggered, FHIR server, user, context, and prefetch.
+The EHR SHOULD call the PDDI CDS service by sending an HTTP `POST` containing `JSON` to the service endpoint (e.g.,`http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds`). The JSON (CDS Hooks request) SHOULD contain specified information for the hook that was triggered, FHIR server, user, context, and prefetch.
 
 **Context**
 {:.no_toc}
 
-The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `order-sign` hook specifies the `context` MUST include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process. 
+The `context` element of a CDS Hooks request contains contextual data for the current task and is specified below. For example, the `order-sign` hook specifies the `context` SHOULD include the medication product (i.e., `medication` element of the MedicationRequest resource) of the order in process.
 
 **order-sign 1.0.**
 {:.no_toc}
@@ -345,13 +345,13 @@ Field | Optionality | Prefetch Token | Type | Description
 
 PDDI Configuration Items
 {:.no_toc}
-The CDS Service MAY process configuration options sent as within an extension resource with the CDS Hooks request in the field `configuration-items`. At the present time, there are no standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
-			    			    			    
+The CDS Service MAY process configuration options sent as within an extension resource with the CDS Hooks request in the field `configuration-items`. At the present time, there are no standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts.
+
 
 **Prefetch**
 {:.no_toc}
 
-The `prefetch` element contains patient data that is provided by the EHR upon submission of the CDS Hook to the CDS service. The CDS service MUST provide the EHR with a prefetch template at the time of service discovery. The `prefetch` element MAY specify patient data other than medications for the purpose of individualizing the CDS logic and response. The prefetch query MUST be designed to obtain data for the patient indicated by the context `patientID`. The CDS service SHOULD then compare the `context` medication to the patient's current medications in the `prefetch` element. 
+The `prefetch` element contains patient data that is provided by the EHR upon submission of the CDS Hook to the CDS service. The CDS service SHOULD provide the EHR with a prefetch template at the time of service discovery. The `prefetch` element MAY specify patient data other than medications for the purpose of individualizing the CDS logic and response. The prefetch query SHOULD be designed to obtain data for the patient indicated by the context `patientID`. The CDS service SHOULD then compare the `context` medication to the patient's current medications in the `prefetch` element.
 
 > *Note:* For simplicity, this implementation guide uses the term "prefetch" regardless of whether the EHR supplies the data prior to a hook request or if it is queried by the CDS service as a post-hoc FHIR server request.
 
@@ -363,13 +363,13 @@ The `prefetch` element contains patient data that is provided by the EHR upon su
 **Bundle**
 {:.no_toc}
 
-A `Bundle` is a FHIR resource that groups resources into a single instance, which is ideal for messaging with CDS Hooks, storing a collection of resources obtained on CDS Discovery, and providing flexibility in using the collections as a persistent instance. PDDI CDS implementors MUST use the bundle resource for certain `context` elements and all `prefetch` resources. For each prefetch template query, a `Bundle` MUST be created to group the resources. A prefetch element MAY contain several `Bundle` resources with several other resources grouped within.
+A `Bundle` is a FHIR resource that groups resources into a single instance, which is ideal for messaging with CDS Hooks, storing a collection of resources obtained on CDS Discovery, and providing flexibility in using the collections as a persistent instance. PDDI CDS implementors SHOULD use the bundle resource for certain `context` elements and all `prefetch` resources. For each prefetch template query, a `Bundle` SHOULD be created to group the resources. A prefetch element MAY contain several `Bundle` resources with several other resources grouped within.
 
 
 #### FHIR Server Request
 {:.no_toc}
 
-A FHIR server request by the CDS service is necessary in the event the request `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 4. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request. 
+A FHIR server request by the CDS service is necessary in the event the request `prefetch` element is empty. While the `prefetch` element is OPTIONAL, it SHOULD NOT be partially fulfilled. The post-hoc FHIR server query is performed at the parse and pre-process phase shown in Figure 4. To accomplish a FHIR server request, the server URL and the OAuth authorization token (i.e. `fhirServer,` `fhirAuthorization`) SHOULD be provided in the CDS Hooks request.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 4: Basic – Parse and Pre-process CDS Hooks request </strong></figcaption>
@@ -776,14 +776,14 @@ The CDS service response is a Card array. Each Card has specified attributes tha
 ### Advanced Implementation
 
 
-The Advanced Implementation is a proposed target to optimize PDDI CDS artifacts. It builds on the [Basic Implementation](#basic-implementation); however, implementors MUST select either Basic or Advanced Implementation and *not* both. This section does not provide a comprehensive overview of the implementation but highlights deviations from the Basic Implementation above. 
+The Advanced Implementation is a proposed target to optimize PDDI CDS artifacts. It builds on the [Basic Implementation](#basic-implementation); however, implementors SHOULD select either Basic or Advanced Implementation and *not* both. This section does not provide a comprehensive overview of the implementation but highlights deviations from the Basic Implementation above.
 
 
 Differences between the Basic and Advanced Implementations include:
 
 1. Defining two CDS Hooks triggers in CPOE workflow (i.e., `order-select` and `order-sign`)
 
-2. Creating a `order-select` specification 
+2. Creating a `order-select` specification
 
 3. Modify `order-sign` specification
 
@@ -890,7 +890,7 @@ Coordinating the Order Select Service with the Order Sign Service is a key aspec
 The Advanced Implementation specifies the use of both the `order-select` and `order-sign` CDS Hooks during a single medication order task.
 
 
-**Context** 
+**Context**
 {:.no_toc}
 
 The `context` element of the `order-select` CDS Hooks request is identical to the `order-sign` specification used in the Basic Implementation. For details on the specifications are below.
@@ -902,7 +902,7 @@ The `context` element of the `order-select` CDS Hooks request is identical to th
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | :----: | ----
 `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
-`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
+`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
 `selections`  | REQUIRED | No | *array* | The FHIR id of the newly selected order(s). The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
@@ -912,11 +912,11 @@ Field | Optionality | Prefetch Token | Type | Description
  {:.no_toc}
 
 
- Field       | Optionality        |  Prefetch Token     |Type  | Description 
+ Field       | Optionality        |  Prefetch Token     |Type  | Description
  :------------- |:-------------:|:-------: |:-----:| :-----------------
  `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
- `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
- `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
+ `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context
+ `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context
  `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 **Extension**
@@ -924,15 +924,15 @@ Field | Optionality | Prefetch Token | Type | Description
 
 PDDI Configuration Items
 {:.no_toc}
-The CDS Service MUST process configuration options sent as within an extension resource with the CDS Hooks request in the field `configuration-items`. There are two standard configuration options that the service and client MUST use for coordination during PDDI CDS:  `cache-for-order-sign-filtering` (only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`). All of these configuration options accept Boolean values and are required for the advanced implementation. The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results. 
+The CDS Service SHOULD process configuration options sent as within an extension resource with the CDS Hooks request in the field `configuration-items`. There are two standard configuration options that the service and client SHOULD use for coordination during PDDI CDS:  `cache-for-order-sign-filtering` (only used in `order-select`), `filter-out-repeated-alerts` (only used in `order-sign`). All of these configuration options accept Boolean values and are required for the advanced implementation. The `cache-for-order-sign-filtering` option is used to cache the medication resource during `order-select` and is used as a reference during `order-sign` if `filter-out-repeated-alerts` is set to TRUE. The `filter-out-repeated-alerts` option is used to hide card results if they were shown in the `order-select` results.
 
-At the present time, there are no other standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts. 
+At the present time, there are no other standard configuration options for the basic implementation of PDDI CDS. Balloting such options as a standard is for future work. While not a recommendation, some examples can be shown. One example would be a configuration such as `alert-non-serious` that accepts accepts a Boolean value indicating to the CDS service if it should provide alerts for PDDIs that have an indicator other than 'serious'. Another example would be a configuration such as `show-evidence-support`  indicating to the CDS service that it should provide more detailed evidence support for its alerts.
 
 
 **Prefetch**
 {:.no_toc}
 
-The order entry task is split into two separate CDS Hooks events (i.e., services). The prefetch template for the `order-select` service MUST include medication resources but could include Condition or other resources important for the service to assess for PDDIs.
+The order entry task is split into two separate CDS Hooks events (i.e., services). The prefetch template for the `order-select` service SHOULD include medication resources but could include Condition or other resources important for the service to assess for PDDIs.
 
 
 **CDS Hooks Request Example**
@@ -944,7 +944,7 @@ The order entry task is split into two separate CDS Hooks events (i.e., services
 #### Advanced – FHIR Server Request
 {:.no_toc}
 
-The parse and pre-process event for a `order-select` request in the Advanced Implementation is identical to what occurs with `order-sign` for the Basic Implementation. Processing of `order-sign` for the Advanced Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the medication that was cached during `order-select` if `cache-for-order-sign-filtering` was set to TRUE. If `filter-out-repeated-alerts` is also set to TRUE during `order-sign` then repeated alert cards will not be returned. 
+The parse and pre-process event for a `order-select` request in the Advanced Implementation is identical to what occurs with `order-sign` for the Basic Implementation. Processing of `order-sign` for the Advanced Implementation service is slightly different. During the parse and pre-process phase the CDS service checks the medication that was finally ordered against the medication that was cached during `order-select` if `cache-for-order-sign-filtering` was set to TRUE. If `filter-out-repeated-alerts` is also set to TRUE during `order-sign` then repeated alert cards will not be returned.
 
 
 <figure class="figure">
@@ -966,8 +966,8 @@ The parse and pre-process event for a `order-select` request in the Advanced Imp
       "summary": "Potential drug-drug interaction between naproxen 500mg tablet and warfarin 5mg tablet",
       "indicator": "critical",
       "detail": "Non-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin.",
-      
-snipped for brevity        
+
+snipped for brevity
 ~~~
 
 **Card Display Example**
@@ -1358,7 +1358,7 @@ snipped for brevity
 
 ### Basic Implementation for the Warfarin + NSAIDs Knowledge Artifact
 
-Figure 8 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 9 builds on Figure 8 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 8 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service SHOULD return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 9 builds on Figure 8 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -1373,7 +1373,7 @@ Many PDDI CDS scenarios have similar drug and patient related decision points. I
 
 1. whether the prescribed NSAID is topical diclofenac,
 
-2. whether the patient is taking a proton pump inhibitor, and 
+2. whether the patient is taking a proton pump inhibitor, and
 
 3. the presence or absence of risk factors involving age, exacerbating medications, and history of upper gastrointestinal bleed
 
@@ -1386,7 +1386,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 **Context**
 {:.no_toc}
 
-* [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/) 
+* [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/)
 
 **Prefetch**
 {:.no_toc}
@@ -1397,14 +1397,14 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 	* [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
 	* [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
 
-> *Note:* The use of multiple medication resources is to ensure a comprehensive capture of medications the patient may be taking. In some cases the implementing institution may only have access to MedicationRequest (prescription order), and in other cases they may have access to several resources for a specific medication intervention (e.g., prescription order from medical office, prescription product picked up from pharmacy). The 100-day look-back period is a general starting point. Implementors SHOULD refine this based on the available data. For example, MedicationAdministration is typically documented in the inpatient setting when a nurse administers a medication. This data source may be a more reliable proxy for blood concentrations and could be used to refine CDS logic. 
+> *Note:* The use of multiple medication resources is to ensure a comprehensive capture of medications the patient may be taking. In some cases the implementing institution may only have access to MedicationRequest (prescription order), and in other cases they may have access to several resources for a specific medication intervention (e.g., prescription order from medical office, prescription product picked up from pharmacy). The 100-day look-back period is a general starting point. Implementors SHOULD refine this based on the available data. For example, MedicationAdministration is typically documented in the inpatient setting when a nurse administers a medication. This data source may be a more reliable proxy for blood concentrations and could be used to refine CDS logic.
 
 * Age of patient on current date.
     * [Patient](https://www.hl7.org/fhir/patient.html)
-    
+
 * Rolling 5-year look-back period for history of upper gastrointestinal bleed.
     * [Condition](https://www.hl7.org/fhir/condition.html)
-    
+
 
 #### CDS Hooks Cards
 {:.no_toc}
@@ -1419,20 +1419,20 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 #### Card Actions
 {:.no_toc}
 
-The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting substitute acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.  
+The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting substitute acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.
 
-* `create` 
-    * Substituting NSAID for acetaminophen – MedicationRequest for acetaminophen 
+* `create`
+    * Substituting NSAID for acetaminophen – MedicationRequest for acetaminophen
     * Adding proton pump inhibitor – MedicationRequest for proton pump inhibitor
-* `update` 
+* `update`
 * `delete`
-    * Remove current NSAID order 
+    * Remove current NSAID order
 
-> *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities. 
+> *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities.
 
 ### Advanced Implementation - Warfarin + NSAIDs Knowledge Artifact
 
-The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two separate hooks and services. Figures 10 and 11 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the response card (i.e., "critical" – red to "warning" – orange). 
+The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two separate hooks and services. Figures 10 and 11 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the response card (i.e., "critical" – red to "warning" – orange).
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 10: Warfarin + NSAIDs order-select logic </strong></figcaption>
@@ -1461,7 +1461,7 @@ The Advanced Implementation for the Warfarin + NSAIDs artifact is split into two
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | :----: | ----
 `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
-`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
+`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
 `selections`  | REQUIRED | No | *array* | The FHIR id of the newly selected order(s). The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
@@ -1471,11 +1471,11 @@ Field | Optionality | Prefetch Token | Type | Description
  {:.no_toc}
 
 
- Field       | Optionality        |  Prefetch Token     |Type  | Description 
+ Field       | Optionality        |  Prefetch Token     |Type  | Description
  :------------- |:-------------:|:-------: |:-----:| :-----------------
  `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
- `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
- `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
+ `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context
+ `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context
  `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
@@ -1493,10 +1493,10 @@ Field | Optionality | Prefetch Token | Type | Description
 
 * Age of patient on current date.
     * [Patient](https://www.hl7.org/fhir/patient.html)
-    
+
 * Rolling 5-year look-back period for history of upper gastrointestinal bleed.
     * [Condition](https://www.hl7.org/fhir/condition.html)
-    
+
 
 #### CDS Hooks Cards
 {:.no_toc}
@@ -1509,7 +1509,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ### Basic Implementation for the Digoxin + Cyclosporine Knowledge Artifact
 
-Figure 13 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 14 builds on Figure 13 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 13 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Basic Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service SHOULD return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 14 builds on Figure 13 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -1524,7 +1524,7 @@ The Digoxin + Cyclosporine exemplar artifact has two main decision blocks:
 
 1. whether the patient is taking digoxin and/or cyclosporine at the time of the current order for digoxin or cyclosporine, and
 
-2. whether the patient has risk factors that may potentiate the risk of digitalis toxicity. 
+2. whether the patient has risk factors that may potentiate the risk of digitalis toxicity.
 
 
 #### CDS Hooks Request
@@ -1535,7 +1535,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 **Context**
 {:.no_toc}
 
-* [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/) 
+* [`order-sign 1.0`](https://cds-hooks.org/hooks/order-sign/)
 
 **Prefetch**
 {:.no_toc}
@@ -1545,16 +1545,16 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
     * [MedicationDispense](https://www.hl7.org/fhir/medicationdispense.html)
     * [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
     * [MedicationAdministration](https://www.hl7.org/fhir/medicationadministration.html)
-    
+
 * Rolling 100-day look-back period for digoxin concentration
     * [Observation](https://www.hl7.org/fhir/observation.html)
 
 * Rolling 100-day look-back period for serum creatinine
     * [Observation](https://www.hl7.org/fhir/observation.html)
-    
+
 * Rolling 100-day look-back period for electrolytes including: potassium, magnesium, and calcium
     * [Observation](https://www.hl7.org/fhir/observation.html)
-        
+
 
 #### CDS Hooks Cards
 {:.no_toc}
@@ -1567,22 +1567,22 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 #### Card Actions
 {:.no_toc}
 
-The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.  
+The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.
 
-* `create` 
-    * Adding order for digoxin level measure – ProcedureRequest for serum digoxin trough within 24 hours 
+* `create`
+    * Adding order for digoxin level measure – ProcedureRequest for serum digoxin trough within 24 hours
     * Add consultation for either prescriber of digoxin or cyclosporine depending on which the patient is currently taking – ProcedureRequest consultation
     * Add order for electrolyte panel(s) (i.e., calcium, magnesium, potassium) and renal function (e.g., eGRF and serum creatinine) – ProcedureRequest for labs to be drawn
-* `update` 
+* `update`
     * Reduce digoxin order currenlty on the patient's profile – MedicationRequest for low-dose digoxin
 * `delete`
-    * Remove current order for digoxin or cyclosporine 
+    * Remove current order for digoxin or cyclosporine
 
-> *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities. 
+> *Note:* These actions are options that SHOULD be customized to an institutions needs and capabilities.
 
 ### Advanced Implementation - Digoxin + Cyclosporine Knowledge Artifact
 
-The Advanced Implementation for the Digoxin + Cyclosporine artifact is split into two separate hooks and services. Figures 15 and 16 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the response card (i.e., "critical" – red to "warning" – orange). 
+The Advanced Implementation for the Digoxin + Cyclosporine artifact is split into two separate hooks and services. Figures 15 and 16 depict the decision tree for warning indicators (i.e., green, orange, red) and contextual factors for both Hooks (i.e., `order-select` and `order-sign`). Figure 10 provides a Card display example for each CDS Hooks instance within the order entry workflow. In the provided Card display example, the clinician decided to order the NSAID medication but adds a proton pump inhibitor, in response to the card suggestion. This action results in a downgrade of the response card (i.e., "critical" – red to "warning" – orange).
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 15: Digoxin + Cyclosporine order-select logic </strong></figcaption>
@@ -1610,7 +1610,7 @@ The Advanced Implementation for the Digoxin + Cyclosporine artifact is split int
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | :----: | ----
 `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
-`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
+`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
 `selections`  | REQUIRED | No | *array* | The FHIR id of the newly selected order(s). The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
 `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
@@ -1620,11 +1620,11 @@ Field | Optionality | Prefetch Token | Type | Description
  {:.no_toc}
 
 
- Field       | Optionality        |  Prefetch Token     |Type  | Description 
+ Field       | Optionality        |  Prefetch Token     |Type  | Description
  :------------- |:-------------:|:-------: |:-----:| :-----------------
  `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
- `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context 
- `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context 
+ `patientId`     | REQUIRED | Yes|string | The FHIR Patient.id of the current patient in context
+ `encounterId`     | OPTIONAL    | Yes |   *string* | The FHIR Encounter.id of the current encounter in context
  `draftOrders` | REQUIRED     | No |    *object* | R4 - FHIR Bundle of *draft* MedicationRequest resource for the current order entry task
 
 
@@ -1645,7 +1645,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 * Rolling 100-day look-back period for serum creatinine
     * [Observation](https://www.hl7.org/fhir/observation.html)
-    
+
 * Rolling 100-day look-back period for electrolytes including: potassium, magnesium, and calcium
     * [Observation](https://www.hl7.org/fhir/observation.html)
 
@@ -1661,9 +1661,9 @@ Field | Optionality | Prefetch Token | Type | Description
 
 ### CDS Message Filtering
 
-The following tables have been created to better conceptualize the various scenarios where message filtering may occur 
-for the clinician during `order-sign`. The assumptions used when creating these tables are that `cache-for-order-sign-filtering` 
-and `filter-out-repeated-alerts` for both `order-select` and `order-sign` are set to TRUE. During `order-select` the 
+The following tables have been created to better conceptualize the various scenarios where message filtering may occur
+for the clinician during `order-sign`. The assumptions used when creating these tables are that `cache-for-order-sign-filtering`
+and `filter-out-repeated-alerts` for both `order-select` and `order-sign` are set to TRUE. During `order-select` the
 following items are cached in order to properly handle message filtering.
 
 * Ordering Clinician
@@ -1734,8 +1734,8 @@ Clinician A starts the `order-select` process, gets interrupted and prevented fr
 #### Scenario - Order-select is called multiple times with updates to the draft orders
 {:.no_toc}
 Clinician A starts the `order-select` process with 1 medication in the draft orders that triggers a rule set. Clinician A
- then add a second medication to draft orders which triggers a different rule set. Clinician A then begins the `order-sign` 
- process with both medications in the draft orders. 
+ then add a second medication to draft orders which triggers a different rule set. Clinician A then begins the `order-sign`
+ process with both medications in the draft orders.
 
 | Indicator for the branch triggered (medication 1) | Indicator for the branch triggered (medication 2) | Will alerts be filtered | Description                                                                                                                                                                                                                                                                |
 |---------------------------------------------------|---------------------------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1769,7 +1769,7 @@ Clinician A completes the `order-select` process, something prevents them from s
 #### Scenario - Order-select is called for patient A but order-sign is completed after the same clinician sees another patient
 {:.no_toc}
 
-Since the patient ID is used to create a unique cached medication statement, if a clinician completes the `order-select` with patient 
+Since the patient ID is used to create a unique cached medication statement, if a clinician completes the `order-select` with patient
 A but does an `order-select`/`order-sign` with patient B before completing `order-sign` for patient A, the message filtering
  will not be affected. This may be another situation where a time-out could be beneficial for the clinician so that messages will not be filtered.
 Another solution would be to track if a clinician completes `order-select` for a new patient before completing `order-sign` for their initial patient.
@@ -1797,11 +1797,11 @@ The CDS Hooks specification states that the `patient-view 1.0` fires when the us
 This implementation varies from the previous [Basic](#basic-implementation) and [Advanced](#advanced-implementation) as
 it does not rely on medications being selected and in fact does not allow for any to be passed via the `context` field
 of the CDS Hooks request. The context contains only the identifiers for the user and the patient, meaning that any rule
-that is fired must rely on existing patient resources and prefetch data. 
+that is fired SHOULD rely on existing patient resources and prefetch data.
 
 #### Summary of Operations
 
-Figure 18 depicts the summary of operations for the Patient View Service. 
+Figure 18 depicts the summary of operations for the Patient View Service.
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 18: Patient View – PDDI CDS Service Summary </strong></figcaption>
   <img src="patient-view.png" class="figure-img img-responsive img-rounded center-block" alt="patient-view.png" />
@@ -1856,13 +1856,13 @@ no `selections` or `draftOrders`. For details on the specifications are below.
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | :----: | :----: | ----
 `userId` | REQUIRED | Yes | *string* | The id of the current user. For this hook, the user is expected to be of type Practitioner. For example, `Practitioner/123Describe`
-`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient 
+`patientId` | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter
 
 **Extension**
 {:.no_toc}
 
-PDDI Configuration Items 
+PDDI Configuration Items
 
 Unlike what was discussed in the [Basic](#cds-hooks-request) and [Advanced](#advanced--cds-hooks-request)
 , `cache-for-order-sign-filtering` and `filter-out-repeated-alerts` serve no purpose for this request due to the timing
@@ -1873,17 +1873,17 @@ applied here.
 {:.no_toc}
 
 The `prefetch` element contains patient data that is provided by the EHR upon submission of the CDS Hook to the CDS
-service. The CDS service MUST provide the EHR with a prefetch template at the time of service discovery. The `prefetch`
+service. The CDS service SHOULD provide the EHR with a prefetch template at the time of service discovery. The `prefetch`
 element MAY specify patient data other than medications for the purpose of individualizing the CDS logic and response.
-The prefetch query MUST be designed to obtain data for the patient indicated by the context `patientID`.
+The prefetch query SHOULD be designed to obtain data for the patient indicated by the context `patientID`.
 
 #### FHIR Server Request
 {:.no_toc}
 
 A FHIR server request by the CDS service is necessary in the event the request `prefetch` element is empty. While
-the `prefetch` element is OPTIONAL, it MUST NOT be partially fulfilled. The post-hoc FHIR server query is performed at
+the `prefetch` element is OPTIONAL, it SHOULD NOT be partially fulfilled. The post-hoc FHIR server query is performed at
 the parse and pre-process phase shown in Figure 4. To accomplish a FHIR server request, the server URL and the OAuth
-authorization token (i.e. `fhirServer,` `fhirAuthorization`) MUST be provided in the CDS Hooks request.
+authorization token (i.e. `fhirServer,` `fhirAuthorization`) SHOULD be provided in the CDS Hooks request.
 
 <figure class="figure">
 <figcaption class="figure-caption"><strong>Figure 19: Patient View – Parse and Pre-process CDS Hooks request </strong></figcaption>

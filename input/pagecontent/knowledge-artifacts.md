@@ -1,19 +1,19 @@
 
 ### Clinical Reasoning
 
-This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition`, `CarePlan`, `RequestGroup`, and CQL libraries. 
+This section describes the components and processes of the Clinical Reasoning module used for the PDDI CDS artifacts. The Clinical Reasoning module provides resources and operations to enable sharing and evaluation of clinical knowledge artifacts. For the PDDI CDS artifacts this encompasses the `PlanDefinition`, `CarePlan`, `RequestGroup`, and CQL libraries.
 
 > *Note:* While resources and CQL libraries are specified for this implementation guide, these are not required for PDDI CDS functionality. The `PlanDefinition`, however, is RECOMMENDED to create sharable PDDI knowledge artifacts.
 
 #### PlanDefinition
 {:.no_toc}
 
-In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are four main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.` 
+In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are four main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.`
 
 **TriggerDefinition**
 {:.no_toc}
 
-The `TriggerDefinition` uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The `TriggerDefinition` for a `PlanDefinition` written for PDDI CDS MUST be based on one of the CDS Hooks requests `order-sign` and `order-select.`
+The `TriggerDefinition` uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The `TriggerDefinition` for a `PlanDefinition` written for PDDI CDS SHOULD be based on one of the CDS Hooks requests `order-sign` and `order-select.`
 
 ~~~
 "triggerDefinition": {
@@ -24,7 +24,7 @@ The `TriggerDefinition` uses the Name Event, which allows triggering of an event
 "triggerDefinition": {
               "type": "named-event",
               "eventName": "order-select"
-~~~              
+~~~
 
 **Condition**
 {:.no_toc}
@@ -37,12 +37,12 @@ The `condition` element is used to determine whether or not the CDS logic is to 
                 "kind": "applicability",
                 "language": "text/cql",
                 "expression": "Inclusion Criteria"
-~~~                
+~~~
 
 **Action**
 {:.no_toc}
 
-The `Action` element provides the specific action(s) and associated information. Only one action can be taken for each group, which is reflected by the Card actions where the user can only select one action per suggestion. 
+The `Action` element provides the specific action(s) and associated information. Only one action can be taken for each group, which is reflected by the Card actions where the user can only select one action per suggestion.
 
 ~~~
 "condition": [
@@ -72,7 +72,7 @@ The `Action` element provides the specific action(s) and associated information.
                 ],
                 "action": [
                 snipped for brevity
-~~~                
+~~~
 
 **DynamicValue**
 {:.no_toc}
@@ -90,17 +90,17 @@ The `DynamicValue` enables customization of the statically defined resources. Si
 ~~~
 
 
-#### CarePlan and RequestGroup 
+#### CarePlan and RequestGroup
 {:.no_toc}
 
 
-The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes the `CarePlan` and `RequestGroup` resources as requests, thereby expressing the intention for something to occur. The CDS service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimal information model elements and associated actions. The `CarePlan` references four `RequestGroup` resources under the the `activity` element. The `RequestGroup` `action` element provides the suggestions and actions in the response card. The `CarePlan` and `RequestGroup` resources are subsequently transformed into a CDS Hooks Card response and sent to the EHR. 
+The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes the `CarePlan` and `RequestGroup` resources as requests, thereby expressing the intention for something to occur. The CDS service creates a `CarePlan` that references a `RequestGroup` for each CDS Hook response Card. As an example, in this implementation guide, the Warfarin + NSAID artifact creates four response cards, each containing minimal information model elements and associated actions. The `CarePlan` references four `RequestGroup` resources under the the `activity` element. The `RequestGroup` `action` element provides the suggestions and actions in the response card. The `CarePlan` and `RequestGroup` resources are subsequently transformed into a CDS Hooks Card response and sent to the EHR.
 
 
 ### CQL Library
 {:.no_toc}
 
-<!-- 
+<!--
 * for someone new to CQL would need to know  - point them elsewhere
 * brief overview of the logic
 
@@ -110,7 +110,7 @@ The FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html) categorizes
 * how to create the specific library resource for PDD CDS
 * connection of CQL to PlanDefinition
 * libraries entail and how to use them, utility functions and other libaries
-* highlight specific instances that are unique to this implementation 
+* highlight specific instances that are unique to this implementation
 -->
 
 It is RECOMMENDED that a CDS rule execution engine for PDDI CDS be able to execute CDS rules written in [CQL](https://ecqi.healthit.gov/cql-clinical-quality-language). CQL was developed by HL7 for clinical experts to express knowledge in an author-friendly and human-readable but computable language.
@@ -183,7 +183,7 @@ For the PDDI CDS value sets, refer to [Terminology](terminology.html) page for t
 **Parameters**
 {:.no_toc}
 
-The parameters defined in a library MAY be referenced by name in any expression within the library. 
+The parameters defined in a library MAY be referenced by name in any expression within the library.
 
 ~~~
 parameter ContextPrescriptions List<MedicationRequest>
@@ -283,7 +283,7 @@ For the best performance, the CQL logic should be translated into ELM XML format
 **PlanDefinition**
 {:.no_toc}
 
-In PlanDefinition resource, the `library` element defines the reference to the logic used by the PlanDefinition. An example for `warfarin-nsaids-cds` PlanDefinition resource is the reference to `Library/warfarin-nsaids-cds` Library resource. 
+In PlanDefinition resource, the `library` element defines the reference to the logic used by the PlanDefinition. An example for `warfarin-nsaids-cds` PlanDefinition resource is the reference to `Library/warfarin-nsaids-cds` Library resource.
 
 ~~~
 "library": [
@@ -332,9 +332,9 @@ Similar to `condition` element, `dynamicValue` element within the `action` eleme
 
 ~~~
 define "Get Base Summary":
-  'Potential Drug-Drug Interaction between warfarin (' 
-    + Common.GetMedicationNames("Warfarin Rx") 
-    + ') and NSAID (' 
+  'Potential Drug-Drug Interaction between warfarin ('
+    + Common.GetMedicationNames("Warfarin Rx")
+    + ') and NSAID ('
     + Common.GetMedicationNames("NSAID Prescription")
     + ').'
 
@@ -347,7 +347,7 @@ define "Get Base Indicator":
   else 'warning'
 ~~~
 
-### Knowledge Artifacts 
+### Knowledge Artifacts
 
 The following artifacts represent the behavior for implementing PDDI CDS:
 

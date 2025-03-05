@@ -23,7 +23,7 @@ Figure 1 depicts hook triggers for Level 1 and 2 Implementations. The primary di
 ## <span style="color:silver"> 6.3.0 </span> Prefetch Role
 {:.no_toc}
 
-For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing CDS service network calls to external resources such as a FHIR server. When a client program subscribes to the PDDI CDS service, the service MUST return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As described below, the prefetch requirements are different for `order-select` and `order-sign` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it MUST query the server via network call.
+For technical implementers, the intended role of prefetch is to improve the CDS service performance. This is achieved by minimizing CDS service network calls to external resources such as a FHIR server. When a client program subscribes to the PDDI CDS service, the service SHOULD return a prefetch specification in the response. This specification identifies resources that the PDDI CDS service SHOULD receive upon request. As described below, the prefetch requirements are different for `order-select` and `order-sign` services. The ideal scenario for both implementations and services is to send prefetch data with the CDS Hooks request. The implementor has flexibility on when and how to fulfill the prefetch templates (e.g., data in EHR memory or server call), which will likely result in a solution that reduces the burden of the server and improves the CDS service efficiency. If the CDS service does not receive prefetch data in the request it SHOULD query the server via network call.
 
 # <span style="color:silver"> 7.0.0 </span> Warfarin + NSAIDs
 
@@ -42,7 +42,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	  <strong>Comment:</strong> The drugs involved in a PDDI SHOULD be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -50,7 +50,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of bleeding including gastrointestinal bleeding,  intracranial hemorrhage,  and cerebral hemorrhage</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI SHOULD be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -58,7 +58,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Bleeding is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> A PDDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+	<td><strong>Comment:</strong> A PDDI clinical consequence SHOULD be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
       </tr>
     </table>
     <table>
@@ -66,7 +66,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 	<td style="background-color: #f4fff2"><strong>Severity</strong>: While bleeding is a serious potential clinical consequence, severity can vary from easily tolerated to incapacitating </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence MUST be reported if known. The severity of a PDDI clinical consequence MUST be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href="https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ">Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
+	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence SHOULD be reported if known. The severity of a PDDI clinical consequence SHOULD be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href="https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ">Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
       </tr>
     </table>
     <table>
@@ -79,7 +79,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
           upper gastrointestinal bleeding (UGIB).</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The mechanism of a PDDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies. </td>
+	<td><strong>Comment:</strong> The mechanism of a PDDI SHOULD be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies. </td>
       </tr>
     </table>
     <table>
@@ -164,7 +164,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
 
 ## <span style="color:silver"> 7.2.0 </span> Level 1 Implementation - Warfarin + NSAIDs Knowledge Artifact (semi-structured)
 
-Figure 2 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service MUST return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
+Figure 2 depicts how a PDDI CDS implementer would translate a minimal information model narrative to a semi-structured knowledge artifact. The Level 1 Implementation uses a single CDS service call and response with the `order-sign` hook. The decision tree results in three warning indicators (i.e., green, orange, red) and contextual factors that MAY be passed to the clinician.  After processing the CDS Hooks `order-sign` request, the CDS service SHOULD return CDS Hooks Cards that MAY include actions with associated FHIR resources. Figure 3 builds on Figure 2 by depicting a Card display example within the order entry workflow. The decision points, `order-sign` request, and Card(s) response are discussed further in the sections below.
 
 
 <figure class="figure">
@@ -332,7 +332,7 @@ Field | Optionality | Prefetch Token | Type | Description
       </tr>
       <tr>
 	<td>
-	  <strong>Comment:</strong> The drugs involved in a PDDI MUST be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	  <strong>Comment:</strong> The drugs involved in a PDDI SHOULD be explicitly stated. To support a computable representation of the PDDI, the drugs involved SHOULD be listed as sets of terms from a terminology such as <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="new">RxNorm</a> or the <a href="https://www.whocc.no/atc/structure_and_principles/" target="new">Anatomical Therapeutic Chemical Classification System (ATC)</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -340,7 +340,7 @@ Field | Optionality | Prefetch Token | Type | Description
 	<td style="background-color: #f4fff2"><strong>Clinical Consequences</strong>: Increased risk of digitalis toxicity that may lead to cardiac arrhythmias</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI MUST be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
+	<td><strong>Comment:</strong> The clinical consequences associated with a PDDI SHOULD be reported if known. Clinical consequences SHOULD refer health outcomes as specifically as possible. To support a computable representation of the PDDI, clinical consequences SHOULD be represented as one or more sets of terms from a terminology such as <a href="http://www.who.int/classifications/icd/en/" target="new">ICD-10</a> or <a href="https://www.snomed.org/snomed-ct" target="new">SNOMED-CT</a>. Such so called <i>value sets</i> MAY be referenced by a URI to a public repository such as the <a href="https://vsac.nlm.nih.gov/" target="new">Value Set Authority Center</a> that is maintained by the <a href="https://www.nlm.nih.gov/" target="new">United States National Library of Medicine</a>.</td>
       </tr>
     </table>
     <table>
@@ -348,7 +348,7 @@ Field | Optionality | Prefetch Token | Type | Description
 	<td style="background-color: #f4fff2"><strong>Seriousness</strong>: Digitalis toxicity is a serious potential clinical consequence because it can result in death, life-threatening hospitalization, and disability. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> A PDDI clinical consequence MUST be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
+	<td><strong>Comment:</strong> A PDDI clinical consequence SHOULD be noted as <i>serious</i> if it can result in death, life-threatening hospitalization, congenital anomaly, disability, or if it requires intervention to prevent permanent impairment or damage.</td>
       </tr>
     </table>
     <table>
@@ -356,7 +356,7 @@ Field | Optionality | Prefetch Token | Type | Description
 	<td style="background-color: #f4fff2"><strong>Severity</strong>: While digitalis toxicity is a serious potential clinical consequence, it can produce a range of cardiac arrhythmias and rhythm disturbances that vary in severity, from manageable bradycardia to life-threatening ventricular fibrillation. </td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence MUST be reported if known. The severity of a PDDI clinical consequence MUST be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href='https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ'>Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
+	<td><strong>Comment:</strong> The severity of a PDDI clinical consequence SHOULD be reported if known. The severity of a PDDI clinical consequence SHOULD be noted using non-ambiguous terms or phrases. Any of the existing terminologies for adverse event severity, such as <a href='https://wiki.nci.nih.gov/display/VKC/Common+Terminology+Criteria+for+Adverse+Events+FAQ'>Common Terminology Criteria for Adverse Event (CTCAE)</a>, MAY be used for describing a PDDI clinical consequence.</td>
       </tr>
     </table>
     <table>
@@ -364,7 +364,7 @@ Field | Optionality | Prefetch Token | Type | Description
 	<td style="background-color: #f4fff2"><strong>Mechanism of Interaction</strong>: The mechanism of this interaction appears to be mediated through P-glycoprotein inhibition by cyclosporine. P-glycoprotein is a major transporter for digoxin efflux.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> The mechanism of a PDDI MUST be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
+	<td><strong>Comment:</strong> The mechanism of a PDDI SHOULD be reported if known. The description SHOULD be written for a clinician audience and include details that help the clinician decide what course of management action to take. To reduce ambiguity, the description MAY refer to specific drugs or health conditions using codes from terminologies.</td>
       </tr>
     </table>
     <table>

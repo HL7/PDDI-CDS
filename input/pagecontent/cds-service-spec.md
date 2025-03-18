@@ -22,6 +22,8 @@
 
 * It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
 
+* A CDS service MAY choose to use a DetectedIssue resource to convey additional information about a drug-drug interaction. If a DetectedIssue is provided, it SHOULD be incorporated within the CDS Hooks response as a suggested action with type create.
+
 **An electronic health record (EHR) CDS client.**
 
 

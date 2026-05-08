@@ -49,7 +49,7 @@
 <artifact id="Procedure/procedure-digoxin-cyclosporine-magnesium" key="Procedure-procedure-digoxin-cyclosporine-magnesium" name="procedure-digoxin-cyclosporine-magnesium"/>
 <artifact id="Procedure/procedure-digoxin-cyclosporine-potassium" key="Procedure-procedure-digoxin-cyclosporine-potassium" name="procedure-digoxin-cyclosporine-potassium"/>
 <artifact id="ValueSet/valueset-AAS" key="ValueSet-valueset-AAS" name="valueset-AAS"/>
-<artifact id="ValueSet/valueset-CYCS" key="ValueSet-valueset-CYCS" name="valueset-CYCS"/>
+<artifact deprecated="true" id="ValueSet/valueset-CYCS" key="ValueSet-valueset-CYCS" name="valueset-CYCS"/>
 <artifact id="ValueSet/valueset-Hx-UGIB-snomed" key="ValueSet-valueset-Hx-UGIB-snomed" name="valueset-Hx-UGIB-snomed"/>
 <artifact id="ValueSet/valueset-LOOPDIURETIC" key="ValueSet-valueset-LOOPDIURETIC" name="valueset-LOOPDIURETIC"/>
 <artifact id="ValueSet/valueset-NSAIDS" key="ValueSet-valueset-NSAIDS" name="valueset-NSAIDS"/>

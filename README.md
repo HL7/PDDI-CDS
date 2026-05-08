@@ -26,6 +26,10 @@ Guilherme Del Fiol guilherme.delfiol@utah.edu
 Download jar from https://github.com/HL7/fhir-ig-publisher/releases
 
     java -jar "org.hl7.fhir.publisher.jar" -ig ig.ini
+
+On Linux/macOS you can also use the helper script to download or refresh the publisher and related build scripts:
+
+    sh _updatePublisher.sh
     
 You can then access it locally by using Python for example:
     
@@ -35,7 +39,7 @@ Then access it at http://localhost:8000/output/
        
 ## ig publisher GUI
 
-Please read more about the implementation guide publishing process here: http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation 
+Please read more about the implementation guide publishing process here: https://confluence.hl7.org/spaces/CDA/pages/453914402/CDA+IG+Authors+101+-+IG+Publisher+Basics
 
 Running the publisher"
 ```

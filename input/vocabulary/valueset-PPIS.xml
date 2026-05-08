@@ -4,6 +4,9 @@
     <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PPIS"/>
     <version value="US 1.1"/>
     <experimental value="true"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-rules-text">
+        <valueMarkdown value="Query NLM RxClass for [Proton Pump Inhibitor|EPC](https://mor.nlm.nih.gov/RxClass/search?query=Proton%20Pump%20Inhibitor%7CEPC&amp;searchBy=class&amp;sourceIds=&amp;drugSources=atc1-4%7Catc%2Cepc%7Cdailymed%2Cdisease%7Cmedrt%2Cchem%7Cdailymed%2Cmoa%7Cdailymed%2Cpe%7Cdailymed%2Cpk%7Cmedrt%2Ctc%7Cfmtsme%2Cva%7Cva%2Cdispos%7Csnomedct%2Cstruct%7Csnomedct%2Cschedule%7Crxnorm%2Ccvx%7Ccdc#) to identify the class members appropriate for prescribable drug identification. Then use NLM RxClass/RxMix tooling to derive the current RxNorm Semantic Clinical Drug and related prescribable forms needed for implementation, preserving the PDDI CDS semantics expected by downstream functional tests."/>
+    </extension>
     <name value="Valueset_PPIS"/>
     <title value="Proton Pump Inhibitor Drug Value Set"/>
     <status value="draft"/>
@@ -12,9 +15,7 @@
     <contact>
         <name value="Richard Boyce"/>
     </contact>
-    <description value="ValueSet of ValueSets containing drug identifiers for each member in the
-    Established Pharmacologic Class (EPC) Proton Pump Inhibitor drug class (id: N0000175525).
-    Member by RxNorm: getRelatedByType (BN,BPCK,GPCK,IN,MIN,PIN,SBD,SBDC,SBDF,SBDG,SCD,SCDC,SCDF,SCDG)"/>
+    <description value="Value set representing the proton pump inhibitor drug class for PDDI CDS. Membership should be maintained using the documented RxClass/RxMix derivation process rather than a locally enumerated expansion."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -24,24 +25,4 @@
     </jurisdiction>
     <purpose value="Proton Pump Inhibitor drug class terminology for PDDI CDS FHIR resources"/>
     <copyright value="(copyright expectations unknown)"/>
-    <compose>
-        <include>
-            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-dexlansoprazole"/>
-        </include>
-        <include>
-            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-esomeprazole"/>
-        </include>
-        <include>
-            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-lansoprazole"/>
-        </include>
-        <include>
-            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-omeprazole"/>
-        </include>
-        <include>
-            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-pantoprazole"/>
-        </include>
-        <include>
-            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rabeprazole"/>
-        </include>
-    </compose>
 </ValueSet>

@@ -1,4 +1,4 @@
-This section provides a summary of the role of terminology value sets in PDDI CDS. It is intended to be informative so the example values sets are examples only. Note also, this IG does not discuss more advanced approaches to such as the use of the Value Set RulesText extension, which allows a person to specify a script that a user SHOULD follow to determine the RxNorm expansion needed for members of a drug class.  Another thing to consider is that, for some drug-drug interaction, one or more value sets based on drug classes might be the correct way to represent the interacting medications. However, this is generally not the case for pharmacokinetic drug interactions.
+This section provides a summary of the role of terminology value sets in PDDI CDS. It is intended to be informative so the example values sets are examples only. For terminology design and maintenance, implementers should also consult the [FHIR Terminology Module](https://hl7.org/fhir/terminology-module.html) and the [FHIR IG Guidance on terminology](https://build.fhir.org/ig/FHIR/ig-guidance/terminology.html). In this IG, some drug-identification value sets point to terminology content maintained in VSAC, while selected drug-class value sets are retained locally with the Value Set RulesText extension to document a reproducible process for deriving the current RxNorm expansion needed for implementation. Another thing to consider is that, for some drug-drug interaction, one or more value sets based on drug classes might be the correct way to represent the interacting medications. However, this is generally not the case for pharmacokinetic drug interactions.
 
 ### Value Sets
 
@@ -52,6 +52,3 @@ The Element ValueSet-excludes are signified with an identical name to the Elemen
 {% include list-simple-codesystems.xhtml %}
 
 <p/><p/>
-
-
-

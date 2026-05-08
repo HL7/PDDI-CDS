@@ -69,13 +69,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/valueset-CYCS"/>
-            </reference>
-            <name value="valueset-CYCS"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/valueset-LOOPDIURETIC"/>
             </reference>
             <name value="valueset-LOOPDIURETIC"/>

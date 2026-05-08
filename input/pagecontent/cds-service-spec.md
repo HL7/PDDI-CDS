@@ -288,7 +288,7 @@ A FHIR server request by the CDS service is necessary in the event the request `
 #### CDS Hooks Response and Card Display
 {:.no_toc}
 
-The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimal information model (e.g., `summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
+The CDS service response is a Card array. Each Card has specified attributes that map to the core elements of the minimal information model (e.g., `summary` = Drugs Involved). Each Card has a `suggestions` array and each suggestion has an `action` array. A CDS service MAY also include a `DetectedIssue` resource to convey additional information about a drug-drug interaction; when provided in a CDS Hooks response, the `DetectedIssue` SHOULD be included as a suggested action with type `create`. The Card `indicator` element dictates how the EHR presents the alert (e.g., `indicator` = "critical" could be a modal alert).
 
 **Example 3: CDS Hooks Response**
 
@@ -1326,7 +1326,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 #### Card Actions
 {:.no_toc}
 
-The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting substitute acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.
+The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. A CDS service MAY also use a `create` action to include a `DetectedIssue` resource when additional information about a drug-drug interaction should be conveyed in the CDS Hooks response. For example, if a suggestion recommends substituting substitute acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.
 
 * `create`
     * Substituting NSAID for acetaminophen – MedicationRequest for acetaminophen
@@ -1474,7 +1474,7 @@ The `order-sign` request includes `context` and `prefetch` elements with FHIR re
 #### Card Actions
 {:.no_toc}
 
-The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. For example, if a suggestion recommends substituting acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.
+The CDS Hooks service response supports providing actionable information to clinicians at the time of medication order entry. A response Card has an `action` element within the suggestion attribute. The `action` element is defined by three types including `create, update, and delete.` Depending on the type of action, resources may be provided that facilitate the suggestion. A CDS service MAY also use a `create` action to include a `DetectedIssue` resource when additional information about a drug-drug interaction should be conveyed in the CDS Hooks response. For example, if a suggestion recommends substituting acetaminophen for naproxen, a `create` action may be used to apply a MedicationRequest for acetaminophen to the current order entry task. The actions, types and associated resources are listed below.
 
 * `create`
     * Adding order for digoxin level measure – ProcedureRequest for serum digoxin trough within 24 hours

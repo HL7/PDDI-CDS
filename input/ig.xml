@@ -34,13 +34,6 @@
     <definition>
         <resource>
             <reference>
-                <reference value="CodeSystem/codesystem-PDDICDS-indicator"/>
-            </reference>
-            <name value="codesystem-PDDICDS-indicator"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/valueset-AAS"/>
             </reference>
             <name value="valueset-AAS"/>
@@ -534,14 +527,6 @@
                 <reference value="ValueSet/valueset-paramethasone"/>
             </reference>
             <name value="valueset-paramethasone"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-PDDICDS-indicator"/>
-            </reference>
-            <description value="valueset-PDDICDS-indicator"/>
-            <name value="valueset-PDDICDS-indicator"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

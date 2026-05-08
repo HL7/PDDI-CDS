@@ -11,7 +11,7 @@
 <artifact deprecated="true" id="CodeSystem/PDDICDS-indicator" key="PDDICDSIndicator" name="PDDICDSIndicator"/>
 <artifact deprecated="true" id="StructureDefinition/PDDICDS-requestgroup-action-indicator" key="PDDIRequestGroupActionIndicator" name="PDDIRequestGroupActionIndicator"/>
 <artifact deprecated="true" id="StructureDefinition/PDDICDS-valueset" key="PDDIValueSet" name="PDDIValueSet"/>
-<artifact id="CodeSystem/codesystem-PDDICDS-indicator" key="CodeSystem-codesystem-PDDICDS-indicator" name="codesystem-PDDICDS-indicator"/>
+<artifact deprecated="true" id="CodeSystem/codesystem-PDDICDS-indicator" key="CodeSystem-codesystem-PDDICDS-indicator" name="codesystem-PDDICDS-indicator"/>
 <artifact id="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch" key="Condition-condition-warfarin-nsaid-Hx-UGIB-prefetch" name="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
 <artifact id="Encounter/encounter-digoxin-cyclosporine-context" key="Encounter-encounter-digoxin-cyclosporine-context" name="encounter-digoxin-cyclosporine-context"/>
 <artifact id="Encounter/encounter-digoxin-cyclosporine-prefetch" key="Encounter-encounter-digoxin-cyclosporine-prefetch" name="encounter-digoxin-cyclosporine-prefetch"/>
@@ -56,7 +56,7 @@
 <artifact id="ValueSet/valueset-LOOPDIURETIC-example" key="ValueSet-valueset-LOOPDIURETIC-example" name="valueset-LOOPDIURETIC-example"/>
 <artifact id="ValueSet/valueset-NSAIDS" key="ValueSet-valueset-NSAIDS" name="valueset-NSAIDS"/>
 <artifact id="ValueSet/valueset-NSAIDS-example" key="ValueSet-valueset-NSAIDS-example" name="valueset-NSAIDS-example"/>
-<artifact id="ValueSet/valueset-PDDICDS-indicator" key="ValueSet-valueset-PDDICDS-indicator" name="valueset-PDDICDS-indicator"/>
+<artifact deprecated="true" id="ValueSet/valueset-PDDICDS-indicator" key="ValueSet-valueset-PDDICDS-indicator" name="valueset-PDDICDS-indicator"/>
 <artifact id="ValueSet/valueset-PPIS" key="ValueSet-valueset-PPIS" name="valueset-PPIS"/>
 <artifact id="ValueSet/valueset-PPIS-example" key="ValueSet-valueset-PPIS-example" name="valueset-PPIS-example"/>
 <artifact id="ValueSet/valueset-SCS" key="ValueSet-valueset-SCS" name="valueset-SCS"/>

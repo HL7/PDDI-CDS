@@ -7,9 +7,13 @@
     <status value="draft"/>
     <date value="2018-06-20"/>
     <experimental value="true" />
-    <publisher value="PDDI CDS"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <name value="Richard Boyce"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
+        </telecom>
     </contact>
     <description value="ValueSet containing SNOMED-CT codes for upper gastrointestinal bleed."/>
     <jurisdiction>

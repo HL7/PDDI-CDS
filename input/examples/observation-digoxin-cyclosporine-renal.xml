@@ -31,14 +31,14 @@
         <valueQuantity>
             <value value="60"/>
             <comparator value="&gt;"/>
-            <unit value="mL/min/1.73m2"/>
+            <unit value="mL/min/{1.73_m2}"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="mL/min/{1.73_m2}"/>
         </valueQuantity>
         <referenceRange>
             <low>
                 <value value="60"/>
-                <unit value="mL/min/1.73m2"/>
+                <unit value="mL/min/{1.73_m2}"/>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="mL/min/{1.73_m2}"/>
             </low>
@@ -65,14 +65,14 @@
         </code>
         <valueQuantity>
             <value value="60"/>
-            <unit value="mL/min/1.73m2"/>
+            <unit value="mL/min/{1.73_m2}"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="mL/min/{1.73_m2}"/>
         </valueQuantity>
         <referenceRange>
             <low>
                 <value value="60"/>
-                <unit value="mL/min/1.73m2"/>
+                <unit value="mL/min/{1.73_m2}"/>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="mL/min/{1.73_m2}"/>
             </low>

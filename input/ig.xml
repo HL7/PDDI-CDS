@@ -6,7 +6,7 @@
         <valueCode value="cds"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use"/>
+        <valueCode value="informative"/>
     </extension>
     <!-- see http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Canonical_URL-->
     <version value="1.0.0-ballot"/>
@@ -27,11 +27,11 @@
             <code value="001"/>
         </coding>
     </jurisdiction>
-    <publisher value="HL7 Clinical Decision Support Workgroup"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <telecom>
             <system value="url"/>
-            <value value="http://hl7.org/Special/committees/dss"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
         </telecom>
     </contact>
     <definition>

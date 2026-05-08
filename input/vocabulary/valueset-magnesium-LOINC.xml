@@ -8,9 +8,13 @@
     <title value="LOINC Codes for Serum Potassium"/>
     <status value="draft"/>
     <date value="2018-08-03"/>
-    <publisher value="PDDI CDS"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <name value="Richard Boyce"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
+        </telecom>
     </contact>
     <description value="ValueSet containing serum magnesium LOINC identifiers from the Top 2000 Common Lab Results US."/>
     <jurisdiction>
@@ -24,7 +28,7 @@
     <compose>
         <include>
             <system value="http://loinc.org"/>
-            <version value="2.73"/>
+            <version value="2.82"/>
             <concept>
                 <code value="19123-9"/>
                 <display value="Magnesium [Mass/volume] in Serum or Plasma"/>

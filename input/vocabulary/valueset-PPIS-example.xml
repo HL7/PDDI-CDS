@@ -8,9 +8,13 @@
     <title value="Proton Pump Inhibitor Drug Value Set (Composite Example)"/>
     <status value="draft"/>
     <date value="2018-06-27"/>
-    <publisher value="PDDI CDS"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <name value="Richard Boyce"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
+        </telecom>
     </contact>
     <description value="Informative composite example showing one way to assemble proton pump inhibitor terminology from supporting element value sets for pedagogical use and testing."/>
     <jurisdiction>

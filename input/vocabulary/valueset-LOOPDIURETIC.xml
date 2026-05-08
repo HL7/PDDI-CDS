@@ -11,9 +11,13 @@
     <title value="Loop Diuretic Drug Value Set"/>
     <status value="draft"/>
     <date value="2018-08-06"/>
-    <publisher value="PDDI CDS"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <name value="Richard Boyce"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
+        </telecom>
     </contact>
     <description value="Value set representing the loop diuretic drug class for PDDI CDS. Membership should be maintained using the documented RxClass/RxMix derivation process rather than a locally enumerated expansion."/>
     <jurisdiction>

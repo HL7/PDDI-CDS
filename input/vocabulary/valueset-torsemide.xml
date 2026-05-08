@@ -8,9 +8,13 @@
     <title value="Torsemide Medications Value Set"/>
     <status value="draft"/>
     <date value="2022-11-29"/>
-    <publisher value="PDDI CDS"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <name value="Richard Boyce"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
+        </telecom>
     </contact>
     <description value="ValueSet containing drug identifiers for torsemide."/>
     <jurisdiction>

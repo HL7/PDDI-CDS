@@ -12,9 +12,13 @@
     <title value="Digoxin Medications Value Set"/>
     <status value="draft"/>
     <date value="2018-07-28"/>
-    <publisher value="PDDI CDS"/>
+    <publisher value="HL7 International / Clinical Decision Support"/>
     <contact>
         <name value="Richard Boyce"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/dss"/>
+        </telecom>
     </contact>
     <description value="This PDDI CDS value set corresponds to the VSAC Digoxin value set, OID 2.16.840.1.113762.1.4.1213.125. The VSAC artifact is the authoritative maintained source for the drug identifiers represented by this IG value set."/>
     <jurisdiction>

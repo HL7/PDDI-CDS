@@ -6,7 +6,7 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="33914-3"/>
-            <display value="Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"/>
+            <display value="Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M"/>
         </coding>
     </code>
     <subject>
@@ -25,7 +25,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="48643-1"/>
-                <display value="Glomerular filtration rate/1.73 sq M.predicted among blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"/>
+                <display value="Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among black population"/>
             </coding>
         </code>
         <valueQuantity>
@@ -60,7 +60,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="48642-3"/>
-                <display value="Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"/>
+                <display value="Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among non black population"/>
             </coding>
         </code>
         <valueQuantity>

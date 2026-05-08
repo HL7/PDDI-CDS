@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-AAS-example"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-AAS-example"/>
+    <version value="US 1.1"/>
+    <experimental value="true"/>
+    <name value="Valueset_AAS_example"/>
+    <title value="Aldosterone Antagonists Drug Value Set (Composite Example)"/>
+    <status value="draft"/>
+    <date value="2018-07-02"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="Informative composite example showing one way to assemble aldosterone antagonist terminology from supporting element value sets for pedagogical use and testing."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide an informative composite example of Aldosterone Antagonist drug class terminology for PDDI CDS FHIR resources"/>
+    <copyright value="(copyright expectations unknown)"/>
+    <compose>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-eplerenone"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-spironolactone"/>
+        </include>
+    </compose>
+</ValueSet>

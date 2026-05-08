@@ -38,13 +38,7 @@
   <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>
   <definition>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/codesystem-PDDICDS-indicator"/>
-      </reference>
-      <name value="codesystem-PDDICDS-indicator"/>
-      <exampleBoolean value="false"/>
-    </resource>
+    
     <resource>
       <reference>
         <reference value="ValueSet/valueset-AAS"/>
@@ -73,13 +67,7 @@
       <name value="valueset-SCS"/>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-CYCS"/>
-      </reference>
-      <name value="valueset-CYCS"/>
-      <exampleBoolean value="false"/>
-    </resource>
+    
     <resource>
       <reference>
         <reference value="ValueSet/valueset-LOOPDIURETIC"/>
@@ -514,13 +502,7 @@
       <name value="valueset-paramethasone"/>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/valueset-PDDICDS-indicator"/>
-      </reference>
-      <name value="valueset-PDDICDS-indicator"/>
-      <exampleBoolean value="false"/>
-    </resource>
+    
     <resource>
       <reference>
         <reference value="ValueSet/valueset-piroxicam"/>

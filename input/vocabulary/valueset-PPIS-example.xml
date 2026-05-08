@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-PPIS-example"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PPIS-example"/>
+    <version value="US 1.1"/>
+    <experimental value="true"/>
+    <name value="Valueset_PPIS_example"/>
+    <title value="Proton Pump Inhibitor Drug Value Set (Composite Example)"/>
+    <status value="draft"/>
+    <date value="2018-06-27"/>
+    <publisher value="PDDI CDS"/>
+    <contact>
+        <name value="Richard Boyce"/>
+    </contact>
+    <description value="Informative composite example showing one way to assemble proton pump inhibitor terminology from supporting element value sets for pedagogical use and testing."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Provide an informative composite example of Proton Pump Inhibitor drug class terminology for PDDI CDS FHIR resources"/>
+    <copyright value="(copyright expectations unknown)"/>
+    <compose>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-dexlansoprazole"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-esomeprazole"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-lansoprazole"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-omeprazole"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-pantoprazole"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rabeprazole"/>
+        </include>
+    </compose>
+</ValueSet>

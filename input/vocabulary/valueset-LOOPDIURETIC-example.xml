@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-LOOPDIURETIC-example"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-LOOPDIURETIC-example"/>
+    <version value="US 1.0"/>
+    <experimental value="true"/>
+    <name value="Valueset_LOOPDIURETIC_example"/>
+    <title value="Loop Diuretic Drug Value Set (Composite Example)"/>
+    <status value="draft"/>
+    <date value="2018-08-06"/>
+    <publisher value="PDDI CDS"/>
+    <contact><name value="Richard Boyce"/></contact>
+    <description value="Informative composite example showing one way to assemble loop diuretic terminology from supporting element value sets for pedagogical use and testing."/>
+    <jurisdiction><coding><system value="urn:iso:std:iso:3166"/><code value="US"/><display value="United States of America"/></coding></jurisdiction>
+    <purpose value="Provide an informative composite example of Loop Diuretic drug class terminology for PDDI CDS FHIR resources"/>
+    <copyright value="(copyright expectations unknown)"/>
+    <compose>
+        <include><valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-bumetanide"/></include>
+        <include><valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ethacrynate"/></include>
+        <include><valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-furosemide"/></include>
+        <include><valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-torsemide"/></include>
+    </compose>
+</ValueSet>

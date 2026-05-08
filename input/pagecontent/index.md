@@ -59,7 +59,7 @@ The example CDS services shown in this implementation guide were written without
 
 This implementation guide:
 
-1. Describes a potential PDDI CDS use case (Warfarin + NSAIDs):
+1. Describes example potential PDDI CDS use cases (Warfarin + NSAIDs ad Digoxin + Cyclosporine). These are exemplars and not intended to be actively used in clinical contexts at this time. For the each, a CDS Service Specification is given summarizing:
 
 	* CDS at the time that an ordering clinician selects a drug to add to an order ("order-select"), and
 	* CDS at the time an ordering clinician signs a drug order ("order-sign")

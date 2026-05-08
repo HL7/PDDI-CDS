@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pddi/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/PDDI-CDS" url="http://hl7.org/fhir/uv/pddi">
-<version code="current" url="http://build.fhir.org/ig/HL7/PDDI-CDS"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pddi/2023Jan" ciUrl="https://build.fhir.org/ig/HL7/PDDI-CDS" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/PDDI-CDS" url="http://hl7.org/fhir/uv/pddi">
+<version code="current" url="https://build.fhir.org/ig/HL7/PDDI-CDS"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/pddi/2023Jan"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2020Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2018Sep"/>
@@ -144,7 +144,7 @@
 <page key="index" name="Implementation Guide for PDDI CDS (DRAFT)"/>
 <page key="knowledge-artifacts" name="Knowledge Representation for PDDI CDS"/>
 <page key="downloads" name="PDDI CDS – Downloads"/>
-<page key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
+<page deprecated="true" key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology defined for the PDDI CDS Implementation Guide"/>
 <page deprecated="true" key="test-data" name="Test data" url="test-data"/>

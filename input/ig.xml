@@ -48,9 +48,23 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/valueset-AAS-example"/>
+            </reference>
+            <name value="valueset-AAS-example"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/valueset-NSAIDS"/>
             </reference>
             <name value="valueset-NSAIDS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-NSAIDS-example"/>
+            </reference>
+            <name value="valueset-NSAIDS-example"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -62,6 +76,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/valueset-PPIS-example"/>
+            </reference>
+            <name value="valueset-PPIS-example"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/valueset-SCS"/>
             </reference>
             <name value="valueset-SCS"/>
@@ -69,9 +90,23 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/valueset-SCS-example"/>
+            </reference>
+            <name value="valueset-SCS-example"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/valueset-LOOPDIURETIC"/>
             </reference>
             <name value="valueset-LOOPDIURETIC"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-LOOPDIURETIC-example"/>
+            </reference>
+            <name value="valueset-LOOPDIURETIC-example"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

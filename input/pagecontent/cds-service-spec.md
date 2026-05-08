@@ -54,7 +54,7 @@ The words SHOULD, SHOULD NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RE
 
 * The EHR system that sends requests to the service MAY provide access to the service to relevant patient data in the EHR via a FHIR server. EHR systems that do not provide access to addition patient data will potentially receive more limited CDS because the service will only work with data in the `context` and `prefetch` fields of CDS Hooks requests.
 
-
+* Implementers will typically also need access to a FHIR server and related testing or authoring tools appropriate to their local environment and deployment approach.
 
 #### CDS Function
 {:.no_toc}
@@ -71,8 +71,6 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 
 * SMART authentication during FHIR server requests
 
-
-**NEED TO ADD SECTION REGARDING EVIDENCE RESOURCE AND EBM ON FHIR**
 
 #### CPOE Workflow Hooks
 {:.no_toc}
@@ -84,101 +82,8 @@ Figure 1 depicts hook triggers for a medication prescribing example. The impleme
   <a href = "CPOE_workflow_2.svg" target ="_blank" > <img src= "CPOE_workflow_2.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow_2.svg" /></a>
 </figure>
 
-
-#### Summary of Normative Recommendations
-{:.no_toc}
-
-**PDDI CDS knowledge artifacts.**valueset-warfarin.xml
-
-* It is RECOMMENDED that knowledge artifacts for PDDI CDS are written so that clinician-focused response information adheres to the 8 detailed best practice recommendations discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://w3id.org/hclscg/pddi).
-
-**A CDS rule execution engine (service).**
-
-* The CDS rule execution engine SHOULD be able to process CDS Hooks requests and return CDS Hooks Card responses. In processing a CDS request, it SHOULD also be able to process FHIR data including clinical and terminology resources.
-
-* If the CDS rule execution engine does not receive prefetch data in the request it SHOULD query the FHIR server via network call.
-
-* It is RECOMMENDED that the rule engine be able to execute CDS rules written in [CQL](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=400) and represented as a [FHIR Library](http://build.fhir.org/library.html) resource, either directly or compiled to HL7 [Expression Logical Model](https://github.com/cqframework/clinical_quality_language/blob/master/Src/java/cql-to-elm/OVERVIEW.md).
-
-* If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it SHOULD support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses.
-
-* It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
-
-**An electronic health record (EHR) CDS client.**
-
-
-* Prior to a hook trigger and subsequent processes, the EHR SHOULD initiate a [CDS Discovery](#cds-discovery) request. The CDS discovery response is for the system and would not be viewed by the clinician.
-
-* The EHR SHOULD call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) SHOULD contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
-
-* If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses.
-
-### Preliminaries
-
-This section contains documentation on how to implement PDDI CDS artifacts from a clinical and technical perspective. Later sections describe implementation details using a specific knowledge artifact example. Structured artifacts that implement the logic and behavior described below are available under [Artifacts](artifacts.html).
-
-
-#### Getting Started with PDDI CDS
-{:.no_toc}
-
-The words SHOULD, SHOULD NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
-
-
-#### What You Will Need
-{:.no_toc}
-
-* A web service that processes CDS requests using a CDS rule execution engine. The service SHOULD be able to process CDS Hooks requests and return CDS Hooks Card responses.
-
-* A web service that processes CDS requests SHOULD be able to process FHIR data including clinical and terminology resources.
-
-* The EHR system that sends requests to the service MAY provide access to the service to relevant patient data in the EHR via a FHIR server. EHR systems that do not provide access to addition patient data will potentially receive more limited CDS because the service will only work with data in the `context` and `prefetch` fields of CDS Hooks requests.
-
-* Here is a list of FHIR tools that might be of interest to implementers:
-
-	* [Public](http://wiki.hl7.org/index.php?title=Publicly_Available_FHIR_Servers_for_testing)
-
-	* Local (preferred)
-
-           <b> The HAPI links DO NOT work </b>
-	    * [HAPI RESTful Server](http://hapifhir.io/doc_rest_server.html)
-
-		* [HAPI JPA Server](http://hapifhir.io/doc_jpa.html)
-
-		* [HAPI JAX-RS Server](http://hapifhir.io/doc_rest_server_jaxrs.html)
-
-		* [.NET Server](https://github.com/ewoutkramer/fhir-net-api)
-
-
-
-#### CDS Function
-{:.no_toc}
-
-To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a pre-specified step the workflow process. The CDS service then parses and processes the request to determine if the prescribed medication conflicts with a medication the patient is presumably taking. If this condition is satisfied, the CDS service provides individualized information based on the PDDI knowledge base. While each implementation may employ a slightly different approach to ensure successful integration of the CDS system. Here are several general aspects to assess:
-
-* A technical framework for the EHR to interact with the CDS service by
-
-    * creating and sending CDS Hooks requests
-
-    * capturing and presenting CDS Hooks card responses
-
-* Use of FHIR terminologies (e.g., RxNorm, LOINC) and other FHIR resources
-
-* SMART authentication during FHIR server requests
-
-
-**NEED TO ADD SECTION REGARDING EVIDENCE RESOURCE AND EBM ON FHIR**
-
-#### CPOE Workflow Hooks
-{:.no_toc}
-
-Figure 1 depicts hook triggers for a medication prescribing example. The implementation follows the [CDS Hooks `order-select`](https://cds-hooks.org/hooks/order-select/) and [CDS Hooks `order-sign`](https://cds-hooks.org/hooks/order-sign/) specifications that define trigger events when a clinician enters a medication and is ready to sign one or more medication orders for a patient. The `order-select` hook defines the initial trigger at the start of the CPOE workflow. The `order-sign` hook is among the last workflow events before an order is promoted out of a draft status. From a clinical and technical perspective, triggering the CDS service at two events in the workflow sets PDDI CDS apart from most conventional CDS systems that trigger CDS at the time of order signing. By moving CDS triggers earlier in the order entry workflow (i.e., `order-select`), clinicians will have actionable information in the middle of their decision-making process. We think that providing information at this stage presents less of a cognitive burden on the clinician and will lead to more effective CDS.
-
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Workflow and CDS Hooks for medication prescription </strong></figcaption>
-  <a href = "CPOE_workflow_2.svg" target ="_blank" > <img src= "CPOE_workflow_2.svg" class="figure-img img-responsive img-rounded center-block" alt="CPOE_workflow_2.svg" /></a>
-</figure>
-
 Note that the current CDS Hook specification does not have a hook to provide the CDS information at an intermediate step between product selection and signing the order.
+
 
 #### Prefetch Role
 {:.no_toc}

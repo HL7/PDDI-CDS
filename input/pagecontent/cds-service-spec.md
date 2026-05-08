@@ -71,6 +71,7 @@ To invoke the PDDI CDS service, the EHR needs to send a CDS Hooks request at a p
 
 * SMART authentication during FHIR server requests
 
+This implementation guide focuses on CDS Hooks as a service-based integration approach for delivering patient-specific PDDI guidance at key points in the prescribing workflow. PDDI capability could also be delivered through a SMART-on-FHIR application, consistent with the application-based and hybrid mechanisms of integration described in the HL7 CPG guidance. For example, a SMART-on-FHIR application could present detailed PDDI information, recommendations, and supporting context within an app launched from the EHR, either as an alternative to CDS Hooks cards or in coordination with CDS Hooks-triggered services. [Recent peer-reviewed published work](https://pmc.ncbi.nlm.nih.gov/articles/PMC12150700/) is a tested example (though for a differente use case than PDDI CDS) that illustrates the feasibility of browser-based CDS capabilities integrated alongside the EHR user interface.
 
 #### CPOE Workflow Hooks
 {:.no_toc}

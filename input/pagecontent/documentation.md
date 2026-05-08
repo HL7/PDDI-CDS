@@ -90,7 +90,7 @@ The  Warfarin + NSAIDs knowledge artifact represents a relatively complex contex
           over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href="http://purl.obolibrary.org/obo/MPIO_0000004" target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a href="http://purl.obolibrary.org/obo/MPIO_0000000" target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href="http://purl.obolibrary.org/obo/MPIO_0000004" target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Implementers MAY use the <a href="https://build.fhir.org/ig/HL7/ebm/en/" target="new">EBM-on-FHIR Implementation Guide</a> to represent structured references to evidence supporting PDDI recommendations. Recommendations that depend on <a href="http://purl.obolibrary.org/obo/MPIO_0000000" target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
       </tr>
     </table>
     <table>
@@ -372,7 +372,7 @@ Field | Optionality | Prefetch Token | Type | Description
 	<td style="background-color: #f4fff2"><strong>Recommended Action</strong>: For patients with a reliable plasma digoxin concentration in normal range, it is reasonable to anticipate an increase in plasma concentrations after the initiation of cyclosporine. Following initiation, close monitoring and adjusting the digoxin dose as needed is recommended.</td>
       </tr>
       <tr>
-	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Recommendations that depend on <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
+	<td><strong>Comment:</strong> Any recommended actions that apply to all patient exposures SHOULD be stated using clear and concise language. The recommended action statement SHOULD also provide citations to <a href='http://purl.obolibrary.org/obo/MPIO_0000004' target="new">evidence for a suspected drug-drug interaction</a> (not provided in this example). Implementers MAY use the <a href="https://build.fhir.org/ig/HL7/ebm/en/" target="new">EBM-on-FHIR Implementation Guide</a> to represent structured references to evidence supporting PDDI recommendations. Recommendations that depend on <a href='http://purl.obolibrary.org/obo/MPIO_0000000' target="new">contextual information/modifying factors</a> SHOULD be mentioned separately to support context-specific presentation of such information.</td>
       </tr>
     </table>
     <table>

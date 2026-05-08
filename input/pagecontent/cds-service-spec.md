@@ -1704,7 +1704,10 @@ The CDS Hooks specification states that the `patient-view 1.0` fires when the us
 This implementation varies from the previous [Basic](#basic-implementation) and [Advanced](#advanced-implementation) as
 it does not rely on medications being selected and in fact does not allow for any to be passed via the `context` field
 of the CDS Hooks request. The context contains only the identifiers for the user and the patient, meaning that any rule
-that is fired SHOULD rely on existing patient resources and prefetch data.
+that is fired SHOULD rely on existing patient resources and prefetch data. The `patient-view` hook may also be useful for
+shared decision-making use cases in which a clinician reviews current PDDI risks with a patient outside active order
+entry. Related published work has demonstrated this approach for anticoagulant-related drug-drug interactions using HL7
+standards-based CDS components (<a href="https://pubmed.ncbi.nlm.nih.gov/35358893/">Thiess et al.</a>).
 
 #### Summary of Operations
 

@@ -119,16 +119,12 @@
 
             <concept>
                 <code value="851210"/>
-                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
-                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
-                    (Ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]"/>
+                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]"/>
             </concept>
 
             <concept>
                 <code value="851209"/>
-                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG /
-                    Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60
-                    (Ibuprofen 400 MG Oral Tablet) } Pack"/>
+                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 400 MG Oral Tablet) } Pack"/>
             </concept>
             <concept>
                 <code value="5640"/>
@@ -376,8 +372,7 @@
             </concept>
             <concept>
                 <code value="895666"/>
-                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet
-                    [Motrin PM]"/>
+                <display value="Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet [Motrin PM]"/>
             </concept>
             <concept>
                 <code value="900434"/>
@@ -756,8 +751,7 @@
             </concept>
             <concept>
                 <code value="997280"/>
-                <display value="Codeine Phosphate 20 MG / Ibuprofen 300 MG Extended Release
-                    Oral Tablet"/>
+                <display value="Codeine Phosphate 20 MG / Ibuprofen 300 MG Extended Release Oral Tablet"/>
             </concept>
             <concept>
                 <code value="1369775"/>
@@ -769,13 +763,11 @@
             </concept>
             <concept>
                 <code value="1297369"/>
-                <display value="Chlorpheniramine Maleate 0.2 MG/ML / Ibuprofen 20 MG/ML /
-                    Pseudoephedrine Hydrochloride 3 MG/ML Oral Suspension"/>
+                <display value="Chlorpheniramine Maleate 0.2 MG/ML / Ibuprofen 20 MG/ML / Pseudoephedrine Hydrochloride 3 MG/ML Oral Suspension"/>
             </concept>
             <concept>
                 <code value="1297390"/>
-                <display value="Chlorpheniramine Maleate 2 MG / Ibuprofen 200 MG /
-                    Pseudoephedrine Hydrochloride 30 MG Oral Tablet"/>
+                <display value="Chlorpheniramine Maleate 2 MG / Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet"/>
             </concept>
             <concept>
                 <code value="1299018"/>
@@ -787,13 +779,11 @@
             </concept>
             <concept>
                 <code value="1310487"/>
-                <display value="Ibuprofen 20 MG/ML / Pseudoephedrine Hydrochloride 3 MG/ML
-                    Oral Suspension"/>
+                <display value="Ibuprofen 20 MG/ML / Pseudoephedrine Hydrochloride 3 MG/ML Oral Suspension"/>
             </concept>
             <concept>
                 <code value="1310503"/>
-                <display value="Chlorpheniramine Maleate 4 MG / Ibuprofen 200 MG /
-                    Phenylephrine Hydrochloride 10 MG Oral Tablet"/>
+                <display value="Chlorpheniramine Maleate 4 MG / Ibuprofen 200 MG / Phenylephrine Hydrochloride 10 MG Oral Tablet"/>
             </concept>
             <concept>
                 <code value="1049589"/>

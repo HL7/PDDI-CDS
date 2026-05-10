@@ -52,8 +52,7 @@
             </concept>
             <concept>
                 <code value="834023"/>
-                <display value="{21 (Methylprednisolone 4 MG Oral Tablet [Medrol]) } Pack
-                    [Medrol Dosepak]"/>
+                <display value="{21 (Methylprednisolone 4 MG Oral Tablet [Medrol]) } Pack [Medrol Dosepak]"/>
             </concept>
             <concept>
                 <code value="762675"/>
@@ -309,8 +308,7 @@
             </concept>
             <concept>
                 <code value="1358498"/>
-                <display value="Lidocaine Hydrochloride 10 MG/ML / methylprednisolone
-                    acetate 40 MG/ML Injectable Suspension"/>
+                <display value="Lidocaine Hydrochloride 10 MG/ML / methylprednisolone acetate 40 MG/ML Injectable Suspension"/>
             </concept>
             <concept>
                 <code value="1358510"/>

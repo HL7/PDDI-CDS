@@ -1,6 +1,9 @@
 
 ### Introduction
 
+This implementation guide is targeted at drug-drug interaction CDS implementers who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record.
+
+<!--
 Where possible, new and updated content will be highlighted with green text and background.
 {:.new-content}
 
@@ -9,6 +12,7 @@ Where possible, new and updated content will be highlighted with green text and 
 {{ site.data.package-list.list[0].desc }}
 
 </div>
+-->
 
 ### Intended Audiences
 

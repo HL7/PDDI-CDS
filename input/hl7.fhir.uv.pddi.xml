@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="ig"/>
-    <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/ig"/>
+    <id value="hl7.fhir.uv.pddi"/>
+    <url value="http://hl7.org/fhir/uv/pddi/ImplementationGuide/hl7.fhir.uv.pddi"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
         <valueCode value="cds"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="informative"/>
+        <valueCode value="trial-use"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+        <valueInteger value="3"/>
     </extension>
     <!-- see http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Canonical_URL-->
-    <version value="1.0.0-ballot"/>
-    <name value="PDDI_CDS"/>
-    <status value="draft"/>
-    <title value="Potential Drug-Drug Interaction (PDDI) CDS IG : STU1 Ballot 2"/>
-    <experimental value="true"/>
+    <version value="1.0.0"/>
+    <name value="PDDICDS"/>
+    <status value="active"/>
+    <title value="Potential Drug-Drug Interaction (PDDI) Clinical Decision Support"/>
+    <experimental value="false"/>
     <date value="2022-06-23"/>
     <fhirVersion value="4.0.1"/>
     <!-- <fhirVersion value="4.2.0"/> -->
@@ -990,6 +993,11 @@
                 <generation value="markdown"/>
             </page>
             <page>
+                <nameUrl value="changes.html"/>
+                <title value="Changes"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="downloads.html"/>
                 <title value="PDDI CDS – Downloads"/>
                 <generation value="markdown"/>
@@ -1002,7 +1010,7 @@
         </page>
         <parameter>
             <code value="releaselabel"/>
-            <value value="STU Ballot"/>
+            <value value="STU 1"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>

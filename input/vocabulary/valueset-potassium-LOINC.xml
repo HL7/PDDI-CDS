@@ -31,55 +31,55 @@
             <version value="2.82"/>
             <concept>
                 <code value="75940-7"/>
-                <display value="Potassium [Mass/​volume] in Blood"/>
+                <display value="Potassium [Mass/volume] in Blood"/>
             </concept>
             <concept>
                 <code value="12812-4"/>
-                <display value="Potassium [Moles/​volume] in Serum or Plasma --2nd specimen"/>
+                <display value="Potassium [Moles/volume] in Serum or Plasma --2nd specimen"/>
             </concept>
             <concept>
                 <code value="12813-2"/>
-                <display value="Potassium [Moles/​volume] in Serum or Plasma --3rd specimen"/>
+                <display value="Potassium [Moles/volume] in Serum or Plasma --3rd specimen"/>
             </concept>
             <concept>
                 <code value="22760-3"/>
-                <display value="Potassium [Mass/​volume] in Serum or Plasma"/>
+                <display value="Potassium [Mass/volume] in Serum or Plasma"/>
             </concept>
             <concept>
                 <code value="2823-3"/>
-                <display value="Potassium [Moles/​volume] in Serum or Plasma"/>
+                <display value="Potassium [Moles/volume] in Serum or Plasma"/>
             </concept>
             <concept>
                 <code value="2824-1"/>
-                <display value="Potassium [Moles/​volume] in Red Blood Cells"/>
+                <display value="Potassium [Moles/volume] in Red Blood Cells"/>
             </concept>
             <concept>
                 <code value="29349-8"/>
-                <display value="Potassium [Moles/​volume] in Serum or Plasma --post dialysis"/>
+                <display value="Potassium [Moles/volume] in Serum or Plasma --post dialysis"/>
             </concept>
             <concept>
                 <code value="32713-0"/>
-                <display value="Potassium [Moles/​volume] in Arterial blood"/>
+                <display value="Potassium [Moles/volume] in Arterial blood"/>
             </concept>
             <concept>
                 <code value="39789-3"/>
-                <display value="Potassium [Moles/​volume] in Venous blood"/>
+                <display value="Potassium [Moles/volume] in Venous blood"/>
             </concept>
             <concept>
                 <code value="39790-1"/>
-                <display value="Potassium [Moles/​volume] in Capillary blood"/>
+                <display value="Potassium [Moles/volume] in Capillary blood"/>
             </concept>
             <concept>
                 <code value="41656-0"/>
-                <display value="Potassium [Moles/​volume] in Mixed venous blood"/>
+                <display value="Potassium [Moles/volume] in Mixed venous blood"/>
             </concept>
             <concept>
                 <code value="51618-7"/>
-                <display value="Potassium [Moles/​volume] in Serum or Plasma --pre dialysis"/>
+                <display value="Potassium [Moles/volume] in Serum or Plasma --pre dialysis"/>
             </concept>
             <concept>
                 <code value="6298-4"/>
-                <display value="Potassium [Moles/​volume] in Blood"/>
+                <display value="Potassium [Moles/volume] in Blood"/>
             </concept>
         </include>
     </compose>

@@ -98,7 +98,7 @@
          </concept>
          <concept>
             <code value="1008651" />
-            <display value="Betamethasone / Diclofenac / Vitamin B 12" />
+            <display value="betamethasone / diclofenac / vitamin B12" />
          </concept>
          <concept>
             <code value="1009044" />
@@ -142,7 +142,7 @@
          </concept>
          <concept>
             <code value="855628" />
-            <display value="diclofenac epolamine 0.013 MG/MG Medicated Patch [Flector]" />
+            <display value="Twice-Daily diclofenac epolamine 0.013 MG/MG Medicated Patch [Flector]" />
          </concept>
          <concept>
             <code value="854803" />
@@ -178,7 +178,7 @@
          </concept>
          <concept>
             <code value="858346" />
-            <display value="Diclofenac Potassium 25 MG Oral Capsule [Zipsor]" />
+            <display value="diclofenac 25 MG Oral Capsule [Zipsor]" />
          </concept>
          <concept>
             <code value="859066" />
@@ -446,7 +446,7 @@
          </concept>
          <concept>
             <code value="855626" />
-            <display value="diclofenac epolamine 0.013 MG/MG Medicated Patch" />
+            <display value="Twice-Daily diclofenac epolamine 0.013 MG/MG Medicated Patch" />
          </concept>
          <concept>
             <code value="1043478" />

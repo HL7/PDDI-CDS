@@ -119,12 +119,12 @@
 
             <concept>
                 <code value="851210"/>
-                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]"/>
+                <display value="{60 (caffeine 65 MG / riboflavin 6.25 MG / thiamine 25 MG / vitamin B12 0.125 MG / vitamin B6 25 MG Oral Capsule) / 60 (ibuprofen 400 MG Oral Tablet) } Pack [IC 400 Kit]"/>
             </concept>
 
             <concept>
                 <code value="851209"/>
-                <display value="{60 (Caffeine 65 MG / Riboflavin 6.25 MG / Thiamine 25 MG / Vitamin B 12 0.125 MG / Vitamin B6 25 MG Oral Capsule) / 60 (Ibuprofen 400 MG Oral Tablet) } Pack"/>
+                <display value="caffeine 65 MG / riboflavin 6.25 MG / thiamine 25 MG / vitamin B12 125 MCG / vitamin B6 25 MG Oral Capsule (60) / ibuprofen 400 MG Oral Tablet (60) Pack"/>
             </concept>
             <concept>
                 <code value="5640"/>
@@ -136,7 +136,7 @@
             </concept>
             <concept>
                 <code value="1007373"/>
-                <display value="Ibuprofen / Vitamin B 12"/>
+                <display value="ibuprofen / vitamin B12"/>
             </concept>
             <concept>
                 <code value="1007410"/>
@@ -241,7 +241,7 @@
             </concept>
             <concept>
                 <code value="36761"/>
-                <display value="solufenum"/>
+                <display value="ibuprofen lysine"/>
             </concept>
             <concept>
                 <code value="1429044"/>

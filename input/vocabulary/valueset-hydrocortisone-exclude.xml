@@ -347,7 +347,7 @@
          </concept>
          <concept>
             <code value="310868" />
-            <display value="Hydrocortisone 10 MG/ML Rectal Cream [Preparation H Hydrocortisone]" />
+            <display value="hydrocortisone 10 MG/ML Rectal Cream" />
          </concept>
          <concept>
             <code value="802059" />
@@ -387,7 +387,7 @@
          </concept>
          <concept>
             <code value="543492" />
-            <display value="Hydrocortisone 10 MG/ML Rectal Cream [Procto-Pak]" />
+            <display value="hydrocortisone 10 MG/ML Topical Cream [Procto-Pak]" />
          </concept>
          <concept>
             <code value="1370760" />
@@ -1403,7 +1403,7 @@
          </concept>
          <concept>
             <code value="1606353" />
-            <display value="Hydrocortisone 0.01 MG/MG / Ketoconazole 0.0015 MG/MG Otic Ointment" />
+            <display value="hydrocortisone 0.01 MG/MG / ketoconazole 0.0015 MG/MG Otic Gel" />
          </concept>
          <concept>
             <code value="310867" />

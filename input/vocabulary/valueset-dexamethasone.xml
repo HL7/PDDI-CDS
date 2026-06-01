@@ -266,7 +266,7 @@
          </concept>
          <concept>
             <code value="688245" />
-            <display value="Dexamethasone 0.0005 MG/MG Ophthalmic Ointment [Maxidex]" />
+            <display value="dexamethasone phosphate 0.0005 MG/MG Ophthalmic Ointment [Maxidex]" />
          </concept>
          <concept>
             <code value="205595" />
@@ -550,7 +550,7 @@
          </concept>
          <concept>
             <code value="226343" />
-            <display value="Dexamethasone 1 MG/ML Ophthalmic Solution" />
+            <display value="dexamethasone phosphate 1 MG/ML Ophthalmic Solution" />
          </concept>
          <concept>
             <code value="227142" />
@@ -570,7 +570,7 @@
          </concept>
          <concept>
             <code value="309690" />
-            <display value="Dexamethasone 0.0005 MG/MG Ophthalmic Ointment" />
+            <display value="dexamethasone phosphate 0.0005 MG/MG Ophthalmic Ointment" />
          </concept>
          <concept>
             <code value="309692" />

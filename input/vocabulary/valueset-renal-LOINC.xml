@@ -31,23 +31,23 @@
             <version value="2.82"/>
             <concept>
                 <code value="2160-0"/>
-                <display value="Creatinine [Mass/​volume] in Serum or Plasma"/>
+                <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
             </concept>
             <concept>
                 <code value="33914-3"/>
-                <display value="Glomerular filtration rate/​1.73 sq M.predicted [Volume Rate/​Area] in Serum or Plasma by Creatinine-based formula (MDRD)"/>
+                <display value="Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M"/>
             </concept>
             <concept>
                 <code value="50044-7"/>
-                <display value="Glomerular filtration rate/​1.73 sq M predicted among females [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"/>
+                <display value="Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among female population"/>
             </concept>
             <concept>
                 <code value="48642-3"/>
-                <display value="Glomerular filtration rate/​1.73 sq M predicted among non-blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"/>
+                <display value="Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among non black population"/>
             </concept>
             <concept>
                 <code value="48643-1"/>
-                <display value="Glomerular filtration rate/​1.73 sq M predicted among blacks [Volume Rate/​Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"/>
+                <display value="Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among black population"/>
             </concept>
         </include>
     </compose>

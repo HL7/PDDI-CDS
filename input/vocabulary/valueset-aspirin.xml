@@ -246,7 +246,7 @@
          </concept>
          <concept>
             <code value="1730187" />
-            <display value="{12 (Aspirin 325 MG / Dextromethorphan Hydrobromide 10 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) / 8 (Aspirin 500 MG / Dextromethorphan Hydrobromide 10 MG / doxylamine succinate 6.25 MG / Phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) } Pack" />
+            <display value="1 daytime (aspirin 325 MG / dextromethorphan HBr 10 MG / phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) / 1 nighttime (aspirin 500 MG / dextromethorphan HBr 10 MG / doxylamine succinate 6.25 MG / phenylephrine bitartrate 7.8 MG Effervescent Oral Tablet) Pack" />
          </concept>
          <concept>
             <code value="1191" />
@@ -774,7 +774,7 @@
          </concept>
          <concept>
             <code value="723530" />
-            <display value="Acetaminophen 250 MG / Aspirin 250 MG Oral Tablet [Excedrin Back and Body]" />
+            <display value="acetaminophen 250 MG / aspirin 250 MG Oral Tablet [Excedrin Back &amp; Body]" />
          </concept>
          <concept>
             <code value="723533" />
@@ -1038,7 +1038,7 @@
          </concept>
          <concept>
             <code value="723528" />
-            <display value="Acetaminophen 250 MG / Aspirin 250 MG [Excedrin Back and Body]" />
+            <display value="acetaminophen 250 MG / aspirin 250 MG [Excedrin Back &amp; Body]" />
          </concept>
          <concept>
             <code value="723531" />
@@ -1262,7 +1262,7 @@
          </concept>
          <concept>
             <code value="723529" />
-            <display value="Acetaminophen / Aspirin Oral Tablet [Excedrin Back and Body]" />
+            <display value="acetaminophen / aspirin Oral Tablet [Excedrin &amp; Body]" />
          </concept>
          <concept>
             <code value="723532" />
@@ -2835,11 +2835,11 @@
          </concept>
          <concept>
             <code value="1172555" />
-            <display value="Excedrin Back and Body Oral Product" />
+            <display value="Excedrin Back &amp; Body Oral Product" />
          </concept>
          <concept>
             <code value="1172556" />
-            <display value="Excedrin Back and Body Pill" />
+            <display value="Excedrin Back &amp; Body Pill" />
          </concept>
          <concept>
             <code value="1172559" />

@@ -31,11 +31,11 @@
             <version value="2.82"/>
             <concept>
                 <code value="10535-3"/>
-                <display value="Digoxin [Mass/​volume] in Serum or Plasma"/>
+                <display value="Digoxin [Mass/volume] in Serum or Plasma"/>
             </concept>
             <concept>
                 <code value="3563-4"/>
-                <display value="Digoxin>12 hours post dose [Mass/​volume] in Serum or Plasma"/>
+                <display value="Digoxin>12 hours post dose [Mass/volume] in Serum or Plasma"/>
             </concept>
         </include>
     </compose>

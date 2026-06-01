@@ -4,15 +4,15 @@ using FHIR version ''3.0.0''
 
 // include PDDICDSCommon version ''1.0'' called Common
 
-valueset "Digoxin": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-digoxin''
-valueset "Cyclosporine": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine''
-valueset "Aldosterone Antagonists": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-AAS''
-valueset "Loop Diuretics": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-LOOPDIURETIC''
-valueset "Digoxin LOINC": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-digoxin-LOINC''
-valueset "Potassium LOINC": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-potassium-LOINC''
-valueset "Magnesium LOINC": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-magnesium-LOINC''
-valueset "Calcium LOINC": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-calcium-LOINC''
-valueset "Renal LOINC": ''http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-renal-LOINC''
+valueset "Digoxin": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin''
+valueset "Cyclosporine": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cyclosporine''
+valueset "Aldosterone Antagonists": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-AAS''
+valueset "Loop Diuretics": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-LOOPDIURETIC''
+valueset "Digoxin LOINC": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin-LOINC''
+valueset "Potassium LOINC": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-potassium-LOINC''
+valueset "Magnesium LOINC": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-magnesium-LOINC''
+valueset "Calcium LOINC": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-calcium-LOINC''
+valueset "Renal LOINC": ''http://hl7.org/fhir/uv/pddi/ValueSet/valueset-renal-LOINC''
 
 parameter ContextPrescriptions List<MedicationRequest>
 

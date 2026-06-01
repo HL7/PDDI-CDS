@@ -1,0 +1,25 @@
+{
+    "resourceType": "ActivityDefinition",
+    "id": "ad205",
+    "name": "AD205",
+    "title": "ActivityDefinition AD205",
+    "status": "active",
+    "experimental": true,
+    "description": "Digoxin-cyclosporine activity definition for corrected serum creatinine",
+    "kind": "ServiceRequest",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "313822004",
+                "display": "Corrected serum creatinine measurement"
+            }
+        ],
+        "text": "Serum Creatinine"
+    },
+    "participant": [
+        {
+            "type": "practitioner"
+        }
+    ]
+}

@@ -8,22 +8,22 @@ This section describes the components and processes of the Clinical Reasoning mo
 #### PlanDefinition
 {:.no_toc}
 
-In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are four main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `TriggerDefinition,` `Condition,` `DynamicValue,` and `Action.`
+In the FHIR resource [workflow](https://www.hl7.org/fhir/workflow.html), the PlanDefinition resource is categorized as a definition. Resources in this category define an action that can occur with a patient. There are four main elements of the `PlanDefinition` that are used for the PDDI CDS instances. These elements include `Trigger,` `Condition,` `DynamicValue,` and `Action.`
 
-**TriggerDefinition**
+**Trigger**
 {:.no_toc}
 
-The `TriggerDefinition` uses the Name Event, which allows triggering of an event opposed to a scheduled or fixed event. The `TriggerDefinition` for a `PlanDefinition` written for PDDI CDS SHOULD be based on one of the CDS Hooks requests `order-sign` and `order-select.`
+The `Trigger` uses the Named Event, which allows triggering of an event opposed to a scheduled or fixed event. The `Trigger` for a `PlanDefinition` written for PDDI CDS SHOULD be based on one of the CDS Hooks requests `order-sign` and `order-select.`
 
 ~~~
-"triggerDefinition": {
+"trigger": {
               "type": "named-event",
-              "eventName": "order-sign"
+              "name": "order-sign"
 ~~~
 ~~~
-"triggerDefinition": {
+"trigger": {
               "type": "named-event",
-              "eventName": "order-select"
+              "name": "order-select"
 ~~~
 
 **Condition**
@@ -35,8 +35,10 @@ The `condition` element is used to determine whether or not the CDS logic is to 
 "condition": [
               {
                 "kind": "applicability",
-                "language": "text/cql",
-                "expression": "Inclusion Criteria"
+                "expression": {
+                  "language": "text/cql-identifier",
+                  "expression": "Inclusion Criteria"
+                }
 ~~~
 
 **Action**
@@ -48,8 +50,10 @@ The `Action` element provides the specific action(s) and associated information.
 "condition": [
               {
                 "kind": "applicability",
-                "language": "text/cql",
-                "expression": "Inclusion Criteria"
+                "expression": {
+                  "language": "text/cql-identifier",
+                  "expression": "Inclusion Criteria"
+                }
               }
             ],
             "action": [
@@ -59,15 +63,24 @@ The `Action` element provides the specific action(s) and associated information.
                 "dynamicValue": [
                   {
                     "path": "action.title",
-                    "expression": "Get Base Summary"
+                    "expression": {
+                      "language": "text/cql-identifier",
+                      "expression": "Get Base Summary"
+                    }
                   },
                   {
                     "path": "action.description",
-                    "expression": "Get Base Detail"
+                    "expression": {
+                      "language": "text/cql-identifier",
+                      "expression": "Get Base Detail"
+                    }
                   },
                   {
                     "path": "activity.extension",
-                    "expression": "Get Base Indicator"
+                    "expression": {
+                      "language": "text/cql-identifier",
+                      "expression": "Get Base Indicator"
+                    }
                   }
                 ],
                 "action": [
@@ -86,7 +99,10 @@ The `DynamicValue` enables customization of the statically defined resources. Si
                     "dynamicValue": [
                       {
                         "path": "action.label",
-                        "expression": "Get Card 2 Label"
+                        "expression": {
+                          "language": "text/cql-identifier",
+                          "expression": "Get Card 2 Label"
+                        }
 ~~~
 
 
@@ -123,10 +139,10 @@ All artifact logic using CQL are wrapped in a container called a library. There 
 **Library**
 {:.no_toc}
 
-The library declaration defines the library name used as an identifier for other CQL libraries to reference. The version is an optional declaration.
+The library declaration defines the library name used as an identifier for other CQL libraries to reference. The version is the same as the implementation guide in which the library is published (1.0.0 in this case).
 
 ~~~
-   library Warfarin_NSAIDs_CDS version '1.0'
+   library WarfarinNSAIDsCDSLogic version '1.0.0'
 ~~~
 
 **Data Models**
@@ -135,10 +151,10 @@ The library declaration defines the library name used as an identifier for other
 Data models define the structures that can be used within retrieve expressions in the library.
 
 ~~~
-   using FHIR version '3.0.0'
+   using FHIR version '4.0.1'
 ~~~
 
-For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary data model within the library. The data model supports all [FHIR R4](https://www.hl7.org/fhir/index.html) resources including MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense, Observation, and Condition.
+For the PDDI CDS artifacts, FHIR model, version 4.0.1 is used as the primary data model within the library. The data model supports all [FHIR R4](https://www.hl7.org/fhir/index.html) resources including MedicationRequest, MedicationStatement, MedicationAdministration, MedicationDispense, Observation, and Condition.
 
 **Libraries**
 {:.no_toc}
@@ -146,15 +162,15 @@ For the PDDI CDS artifacts, FHIR model, version 3.0.0 is used as the primary dat
 Statements defined in specific libraries can be reused in other libraries as a reference by a locally assigned name.
 
 ~~~
-   include PDDICDS_Common version '1.0' called Common
+   include PDDICDSCommon version '1.0.0' called Common
 ~~~
 
-As an example below, statements defined in the PDDICDS_Common library, version 1.0, can now be referenced using the assigned name of Common.
+As an example below, statements defined in the PDDICDSCommon library, version 1.0.0, can now be referenced using the assigned name of Common.
 
 ~~~
-  define "NSAID Prescription":
-    ContextPrescriptions P
-      where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+      if "Is Context medication digoxin"
+        then Common.GetDrugNames("Digoxin Prescription")
+      else Common.GetDrugNames("Digoxin Rx")
 ~~~
 
 **Terminology**
@@ -166,14 +182,14 @@ A value set declaration specifies a local identifier that represents a value set
   valueset "Warfarins": 'http://hl7.org/fhir/uv/pddi/ValueSet/valueset-warfarin'
 ~~~
 
-This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the value set, an uniform resource identifier (URI) in this case is `http://hl7.org/fhir/uv/pddi/ValueSet/valueset-warfarin`. The external identifier should be an ID or a uniform resource identifier (URI).
+This definition establishes the local identifier `Warfarins` as a reference to the external identifier for the value set, a Uniform Resource Identifier (URI) in this case is `http://hl7.org/fhir/uv/pddi/ValueSet/valueset-warfarin`. The external identifier SHALL be the Uniform Resource Identifier (URI) for the valueset, consistent with terminology usage in FHIR.
 
 This valueset definition can then be used within the library wherever a valueset can be used:
 
 ~~~
   define "Warfarin Rx":
     [MedicationRequest: "Warfarins"] MR
-      where MR.authoredOn.value in Interval[Today() - 100 days, null]
+      where MR.authoredOn.toInterval() during Interval[Today() - 100 days, null]
 ~~~
 
 The above statement collects all MedicationRequest resources with a code in the `Warfarins` value set and the authored date within 100-day look-back period.
@@ -213,7 +229,7 @@ This parameter definition can now be referenced anywhere within the CQL library:
 ~~~
 define "NSAID Prescription":
   ContextPrescriptions P
-    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+    where P.medication in "NSAIDs"
 ~~~
 
 **Context**
@@ -230,13 +246,13 @@ The `context Patient` declaration to restrict the information that will be retur
 **Statements**
 {:.no_toc}
 
-`Define` statements describing named expressions that can be referenced either from other expressions within the same library or by containing decision support artifacts.
+`define` statements describing named expressions that can be referenced either from other expressions within the same library or by containing decision support artifacts.
 
 ~~~
 define "GI Bleeds Condition":
   Last(
     [Condition: "History of GI Bleeds"] C
-      sort by assertedDate.value
+      sort by assertedDate().value
   )
 ~~~
 
@@ -250,20 +266,18 @@ This example defines the `GI Bleeds Condition` statement, which retrieves the mo
 
 The Library resource contains the CQL library in base64 format. As an example below, the CQL library is encoded to base64 format and stored by using the Library FHIR resource.
 
-In Library resource, the `relatedArtifact` element defines the dependent relationship between libraries. For example, `warfarin-nsaids-cds` library references the `PDDICDS_Common` library and that relationship is described in the `relatedArtifact` element.
+In Library resource, the `relatedArtifact` element defines the dependent relationship between libraries. For example, `warfarin-nsaids-cds` library references the `PDDICDSCommon` library and that relationship is described in the `relatedArtifact` element.
 
 ~~~
 {
   "resource": {
     "resourceType": "Library",
-    "id": "warfarin-nsaids-cds",
+    "id": "WarfarinNSAIDsCDSLogic",
     ...
     "relatedArtifact": [
       {
         "type": "depends-on",
-        "resource": {
-          "reference": "Library/PDDICDSCommon"
-        }
+        "resource": "http://hl7.org/fhir/uv/pddi/Library/PDDICDSCommon"
       }
     ],
     "content": [
@@ -280,17 +294,23 @@ When the Clinical Reasoning module processes the data, the library resource is l
 
 For the best performance, the CQL logic should be translated into ELM XML format before being stored in the Library resource. This will enable the Clinical Reasoning module to execute the CQL logic without performing the translation.
 
+Note that the publisher will do this automatically if the `path-binary` parameter is set to the CQL source directory (typically `input/cql`), and the `content` element of the Library resource has an `id` that references the name of the CQL source file:
+
+~~~
+    "content": [{
+      "id": "ig-loader-WarfarinNSAIDsCDSLogic.cql"
+    }]
+~~~
+
+For more information on this feature of the publisher, see [Binary Adjunct Files](https://build.fhir.org/ig/FHIR/ig-guidance/binaries.html#binary-adjunct-files) in the FHIR IG Guidance IG.
+
 **PlanDefinition**
 {:.no_toc}
 
-In PlanDefinition resource, the `library` element defines the reference to the logic used by the PlanDefinition. An example for `warfarin-nsaids-cds` PlanDefinition resource is the reference to `Library/warfarin-nsaids-cds` Library resource.
+In PlanDefinition resource, the `library` element defines the reference to the logic used by the PlanDefinition. An example for `warfarin-nsaids-cds` PlanDefinition resource is the reference to `http://hl7.org/fhir/uv/pddi/Library/WarfarinNSAIDsCDSLogic` Library resource.
 
 ~~~
-"library": [
-  {
-    "reference": "Library/warfarin-nsaids-cds"
-  }
-],
+"library": [ "http://hl7.org/fhir/uv/pddi/Library/WarfarinNSAIDsCDSLogic" ],
 ~~~
 
 This library contains the logic used by the PlanDefinition to establish the condition, and to dynamically construct the guidance so that it reflects the data for the current patient.
@@ -311,21 +331,21 @@ define "Is context medication topical diclofenac":
 
 define "Topical Diclofenac Prescription":
   ContextPrescriptions P
-    where Common.ToCode(P.medication.coding[0]) in "Topical Diclofenac"
+    where P.medication in "Topical Diclofenac"
 
 define "Is warfarin in prefetch":
   exists ("Warfarin Rx")
 
 define "Warfarin Rx":
   [MedicationRequest: "Warfarins"] MR
-    where MR.authoredOn.value in Interval[Today() - 100 days, null]
+    where MR.authoredOn.toInterval() during Interval[Today() - 100 days, null]
 
 define "Is context medication systemic NSAID":
   exists ("NSAID Prescription")
 
 define "NSAID Prescription":
   ContextPrescriptions P
-    where Common.ToCode(P.medication.coding[0]) in "NSAIDs"
+    where P.medication in "NSAIDs"
 ~~~
 
 Similar to `condition` element, `dynamicValue` element within the `action` element allows to customize the card content depending on the logic defined in the library. As an example, the `Get Base Summary` statement below specified in `dynamicValue` element will be evaluated, and the dynamic content containing medication names will be returned.
@@ -350,6 +370,22 @@ define "Get Base Indicator":
 ### Knowledge Artifacts
 
 The following artifacts represent the behavior for implementing PDDI CDS:
+
+| Resource | Type | Description |
+| --- | --- | --- |
+| [Common PDDI-CDS Library](Library-PDDICDSCommon.html) | [Library](https://www.hl7.org/fhir/library.html) | CQL Library that provides common logic for the recommendations |
+| [Warfarin NSAIDs Select PlanDefinition](PlanDefinition-warfarin-nsaids-cds-select.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
+| [Warfarin NSAIDs Sign PlanDefinition](PlanDefinition-warfarin-nsaids-cds-sign.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Warfarin NSAIDs Recommendation |
+| [Warfarin NSAIDs Logic Library](Library-WarfarinNSAIDsCDSLogic.html) | [Library](https://www.hl7.org/fhir/library.html) | Defines the logic and data requirements to support evaluation of Warfarin NSAIDs recommendation |
+| [Warfarin NSAIDs ActivityDefinition](artifacts.html#knowledge-artifacts-activity-definitions) | Example Activity Definitions |  |
+| [Digoxin Cyclosporine Select PlanDefinition](PlanDefinition-digoxin-cyclosporine-cds-select.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Digoxin Cyclosporine Recommendation |
+| [Digoxin Cyclosporine Sign PlanDefinition](PlanDefinition-digoxin-cyclosporine-cds-sign.html)  |	[PlanDefinition](https://www.hl7.org/fhir/plandefinition.html)  | Event-Condition-Action rule that implements behavior for Digoxin Cyclosporine Recommendation |
+| [Digoxin Cyclosporine Logic Library](Library-DigoxinCyclosporineCDSLogic.html) | [Library](https://www.hl7.org/fhir/library.html) | Defines the data requirements to support evaluation of Digoxin Cyclosporine recommendation |
+| [Digoxin Cyclosporine ActivityDefinition](artifacts.html#knowledge-artifacts-activity-definitions) | Example Activity Definitions |  |
+
+#### STU3 Support
+
+For systems still using FHIR STU3, the following artifacts represent the behavior for implementing PDDI CDS in STU3:
 
 | Resource | Type | Description |
 | --- | --- | --- |

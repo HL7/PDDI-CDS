@@ -4,7 +4,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-digoxin" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin" />
             <id value="valueset-digoxin" />
             <version value="US 1.1" />
             <name value="valueset-digoxin" />
@@ -291,7 +291,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-digoxin-LOINC" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-digoxin-LOINC" />
             <id value="valueset-digoxin-LOINC" />
             <version value="Intl. 1.0" />
             <name value="valueset-digoxin-LOINC" />
@@ -335,7 +335,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cyclosporine" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cyclosporine" />
             <id value="valueset-cyclosporine" />
             <version value="US 1.1" />
             <name value="valueset-cyclosporine" />
@@ -790,7 +790,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-eplerenone" />
             <id value="valueset-eplerenone" />
             <version value="US 1.1" />
             <name value="valueset-eplerenone" />
@@ -897,7 +897,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-spironolactone" />
             <id value="valueset-spironolactone" />
             <version value="US 1.1" />
             <name value="valueset-spironolactone" />
@@ -1188,7 +1188,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-AAS" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-AAS" />
             <id value="valueset-AAS" />
             <version value="US 1.1" />
             <name value="valueset-AAS" />
@@ -1211,10 +1211,10 @@
             <copyright value="Attribution CC BY" />
             <compose>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-eplerenone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-spironolactone" />
                </include>
             </compose>
          </ValueSet>
@@ -1227,7 +1227,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-potassium-LOINC" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-potassium-LOINC" />
             <id value="valueset-potassium-LOINC" />
             <version value="Intl. 1.0" />
             <name value="valueset-potassium-LOINC" />
@@ -1315,7 +1315,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-magnesium-LOINC" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-magnesium-LOINC" />
             <id value="valueset-magnesium-LOINC" />
             <version value="Intl. 1.0" />
             <name value="valueset-magnesium-LOINC" />
@@ -1363,7 +1363,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-calcium-LOINC" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-calcium-LOINC" />
             <id value="valueset-calcium-LOINC" />
             <version value="Intl. 1.0" />
             <name value="valueset-calcium-LOINC" />
@@ -1419,7 +1419,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-renal-LOINC" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-renal-LOINC" />
             <id value="valueset-renal-LOINC" />
             <version value="Intl. 1.0" />
             <name value="valueset-renal-LOINC" />
@@ -1475,7 +1475,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bumetanide" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-bumetanide" />
             <id value="valueset-bumetanide" />
             <version value="US 1.0" />
             <name value="valueset-bumetanide" />
@@ -1694,7 +1694,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ethacrynate" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ethacrynate" />
             <id value="valueset-ethacrynate" />
             <version value="US 1.0" />
             <name value="valueset-ethacrynate" />
@@ -1825,7 +1825,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-furosemide" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-furosemide" />
             <id value="valueset-furosemide" />
             <version value="US 1.0" />
             <name value="valueset-furosemide" />
@@ -2284,7 +2284,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-torsemide" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-torsemide" />
             <id value="valueset-torsemide" />
             <version value="US 1.0" />
             <name value="valueset-torsemide" />
@@ -2463,7 +2463,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-LOOPDIURETIC" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-LOOPDIURETIC" />
             <id value="valueset-LOOPDIURETIC" />
             <version value="US 1.0" />
             <name value="valueset-LOOPDIURETIC" />
@@ -2486,16 +2486,16 @@
             <copyright value="Attribution CC BY" />
             <compose>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bumetanide" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-bumetanide" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ethacrynate" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ethacrynate" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-furosemide" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-furosemide" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-torsemide" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-torsemide" />
                </include>
             </compose>
          </ValueSet>

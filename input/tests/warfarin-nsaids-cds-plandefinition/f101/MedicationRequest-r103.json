@@ -1,0 +1,61 @@
+﻿{
+    "resourceType": "MedicationRequest",
+    "id": "r103",
+    "status": "active",
+    "intent": "order",
+    "category": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/medication-request-category",
+                "code": "outpatient"
+            }
+        ]
+    },
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "197684",
+                "display": "Etodolac 200 MG Oral Capsule"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f101"
+    },
+    "context": {
+        "reference": "Encounter/e101"
+    },
+    "authoredOn": "2018-08-02",
+    "dosageInstruction": [
+        {
+            "timing": {
+                "repeat": {
+                    "frequency": 1,
+                    "period": 3.0,
+                    "periodUnit": "d"
+                }
+            },
+            "asNeededBoolean": false,
+            "doseQuantity": {
+                "value": 1.0,
+                "unit": "patch"
+            }
+        }
+    ],
+    "dispenseRequest": {
+        "validityPeriod": {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression",
+                    "valueString": "FHIR.Period { start: FHIR.dateTime { value: Today() - 4 months }, end: FHIR.dateTime { value: Today() + 3 months } }"
+                }
+            ]
+        },
+        "numberOfRepeatsAllowed": 3,
+        "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "d"
+        }
+    }
+}

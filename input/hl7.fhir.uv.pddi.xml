@@ -24,6 +24,17 @@
     <!-- <fhirVersion value="4.3.0-snapshot1"/> -->
     <!-- <fhirVersion value="4.6.0"/> -->
     <packageId value="hl7.fhir.uv.pddi"/>
+    <dependsOn id="cql">
+      <uri value="http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql"/>
+      <packageId value="hl7.fhir.uv.cql"/>
+      <!--Use the newer version so we can take advantage of new FHIRCommon content  -->
+      <version value="2.0.0"/>
+    </dependsOn>    
+    <dependsOn id="crmi">
+      <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
+      <packageId value="hl7.fhir.uv.crmi"/>
+      <version value="1.0.0"/>
+    </dependsOn>    
     <jurisdiction>
         <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -973,36 +984,57 @@
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="informative"/>
+                </extension>
                 <nameUrl value="use-cases.html"/>
                 <title value="Use Case - Examples of NPDIs and PDDIs"/>
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="trial-use"/>
+                </extension>
                 <nameUrl value="cds-service-spec.html"/>
                 <title value="CDS Service Specification"/>
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="trial-use"/>
+                </extension>
                 <nameUrl value="terminology.html"/>
                 <title value="Terminology defined for the PDDI CDS Implementation Guide"/>
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="trial-use"/>
+                </extension>
                 <nameUrl value="knowledge-artifacts.html"/>
                 <title value="Knowledge Representation for PDDI CDS"/>
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="informative"/>
+                </extension>
                 <nameUrl value="changes.html"/>
                 <title value="Changes"/>
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="informative"/>
+                </extension>
                 <nameUrl value="downloads.html"/>
                 <title value="PDDI CDS – Downloads"/>
                 <generation value="markdown"/>
             </page>
             <page>
+                <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+                    <valueCode value="informative"/>
+                </extension>
                 <nameUrl value="testdata.html"/>
                 <title value="Test data defined as part of the PDDI CDS Implementation Guide"/>
                 <generation value="markdown"/>
@@ -1015,6 +1047,14 @@
         <parameter>
             <code value="copyrightyear"/>
             <value value="2021+"/>
+        </parameter>
+        <parameter>
+            <code value="path-binary"/>
+            <value value="input/cql"/>
+        </parameter>
+        <parameter>
+            <code value="path-liquid-ig"/>
+            <value value="templates/liquid"/>
         </parameter>
     </definition>
 </ImplementationGuide>

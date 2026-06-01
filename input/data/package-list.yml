@@ -1,6 +1,6 @@
 package-id: hl7.fhir.uv.pddi
 title: Potential Drug-Drug Interaction
-canonical: 'http://hl7.org/fhir/uv/pddi'
+canonical: 'http://hl7.org/fhir/uv/pddi/'
 introduction: >-
   This implementation guide is targeted at drug-drug interaction CDS implementers who seek to increase the specificity and clinical relevance of potential drug-drug interaction (PDDI) alerts presented through the electronic health record.
 list:

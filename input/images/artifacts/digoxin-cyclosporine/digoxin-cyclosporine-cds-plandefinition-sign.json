@@ -14,7 +14,7 @@
     ]
   },
   "status": "draft",
-  "url": "http://hl7.org/fhir/ig/PDDI-CDS/PlanDefinition/digoxin-cyclosporine-cds-sign",
+  "url": "http://hl7.org/fhir/uv/pddi/PlanDefinition/digoxin-cyclosporine-cds-sign",
   "topic": [
     {
       "text": "Digoxin Cyclosporine Prescribing"
@@ -134,7 +134,7 @@
             {
               "label": "Consultation",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Request communication with digoxin prescriber",
@@ -152,7 +152,7 @@
             {
               "label": "Consultation",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Request communication with cyclosporine prescriber",
@@ -170,7 +170,7 @@
             {
               "label": "Cancel digoxin",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "remove"
               },
               "description": "Discontinue digoxin order",
@@ -185,7 +185,7 @@
             {
               "label": "Cancel cyclosporine",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "remove"
               },
               "description": "Discontinue cyclosporine order",
@@ -200,7 +200,7 @@
             {
               "label": "Digoxin Level",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Order digoxin trough within 24 hours from initiation",
@@ -225,12 +225,12 @@
             {
               "type": "citation",
               "display": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#dorian1998"
+              "url": "http://hl7.org/fhir/uv/pddi/citations#dorian1998"
             },
             {
               "type": "citation",
               "display": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#dorian1987"
+              "url": "http://hl7.org/fhir/uv/pddi/citations#dorian1987"
             }
           ],
           "condition": [
@@ -258,7 +258,7 @@
             {
               "label": "Digoxin Level",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Order digoxin trough within 24 hours from the initiation of cyclosporine",
@@ -269,7 +269,7 @@
             {
               "label": "New Digoxin",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Preemptively reduce digoxin dose with new order ",
@@ -294,12 +294,12 @@
             {
               "type": "citation",
               "display": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#lip1993"
+              "url": "http://hl7.org/fhir/uv/pddi/citations#lip1993"
             },
             {
               "type": "citation",
               "display": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
-              "url": "http://hl7.org/fhir/ig/PDDI-CDS/citations#nda20405"
+              "url": "http://hl7.org/fhir/uv/pddi/citations#nda20405"
             }
           ],
           "dynamicValue": [
@@ -320,7 +320,7 @@
             {
               "label": "Serum Creatinine",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Order for serum creatinine",
@@ -331,7 +331,7 @@
             {
               "label": "Electrolyte Panel",
               "type": {
-                "system": "http://hl7.org/fhir/ValueSet/action-type",
+                "system": "http://terminology.hl7.org/CodeSystem/action-type",
                 "code": "create"
               },
               "description": "Order for electrolyte panel",

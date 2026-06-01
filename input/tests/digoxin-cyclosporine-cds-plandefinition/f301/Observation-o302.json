@@ -1,0 +1,27 @@
+﻿{
+    "resourceType": "Observation",
+    "id": "o302",
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "75940-7",
+                "display": "Potassium [Mass/​volume] in Blood"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f301"
+    },
+    "context": {
+        "reference": "Encounter/e301"
+    },
+    "effectiveDateTime": "2018-08-28",
+    "valueQuantity": {
+        "value": 3.6,
+        "unit": "mEq/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mEq/L"
+    }
+}

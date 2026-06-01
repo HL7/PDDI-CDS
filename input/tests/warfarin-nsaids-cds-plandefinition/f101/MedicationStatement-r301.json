@@ -1,0 +1,21 @@
+﻿{
+    "resourceType": "MedicationStatement",
+    "id": "r301",
+    "status": "active",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "display": "Spironolactone 100 MG Oral Tablet",
+                "code": 198222
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f101"
+    },
+    "context": {
+        "reference": "Encounter/e101"
+    },
+    "effectiveDateTime": "2018-08-02"
+}

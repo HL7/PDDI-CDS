@@ -1,0 +1,25 @@
+﻿{
+    "resourceType": "ActivityDefinition",
+    "id": "ad101",
+    "name": "AD101",
+    "title": "ActivityDefinition AD101",
+    "description": "Warfarin-NSAIDs activity definition for acetaminophen 325 MG Oral Tablet",
+    "status": "active",
+    "experimental": true,
+    "kind": "MedicationRequest",
+    "productCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "313782",
+                "display": "Acetaminophen 325 MG Oral Tablet"
+            }
+        ],
+        "text": "Acetaminophen 325 MG Oral Tablet"
+    },
+    "participant": [
+        {
+            "type": "practitioner"
+        }
+    ]
+}

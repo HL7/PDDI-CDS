@@ -1,0 +1,30 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "r302",
+    "status": "active",
+    "intent": "order",
+    "category": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/medication-request-category",
+                "code": "outpatient"
+            }
+        ]
+    },
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "197606",
+                "display": "Digoxin 0.25 MG Oral Tablet"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f301"
+    },
+    "context": {
+        "reference": "Encounter/e301"
+    },
+    "authoredOn": "2018-08-02"
+}

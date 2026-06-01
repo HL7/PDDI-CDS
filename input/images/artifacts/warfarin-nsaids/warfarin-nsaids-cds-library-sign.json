@@ -3,7 +3,7 @@
   "id": "warfarin-nsaids-cds-sign",
   "version": "1.0",
   "status": "draft",
-  "url": "http://hl7.org/fhir/ig/PDDI-CDS/Library/warfarin-nsaids-cds-sign",
+  "url": "http://hl7.org/fhir/uv/pddi/Library/warfarin-nsaids-cds-sign",
   "type": {
     "coding": [
       {

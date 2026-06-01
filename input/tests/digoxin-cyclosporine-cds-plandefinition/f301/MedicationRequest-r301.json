@@ -1,0 +1,30 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "r301",
+    "status": "active",
+    "intent": "order",
+    "category": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/medication-request-category",
+                "code": "outpatient"
+            }
+        ]
+    },
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "display": "Cyclosporine 100 MG",
+                "code": "315749"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/f301"
+    },
+    "context": {
+        "reference": "Encounter/e301"
+    },
+    "authoredOn": "2018-08-02"
+}

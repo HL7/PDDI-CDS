@@ -1,0 +1,21 @@
+{
+  "resourceType": "Library",
+  "id": "PDDICDSCommon",
+  "status": "active",
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/pddi/Library/PDDICDSCommon",
+  "name": "PDDICDSCommon",
+  "title": "Potential Drug-Durg Interaction (PDDI) Clinical Decision Support (CDS) Common Logic",
+  "description": "Common logic for drug-drug interaction detection for order selection and prescribing",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "content": [{
+    "id": "ig-loader-PDDICDSCommon.cql"
+  }]
+}

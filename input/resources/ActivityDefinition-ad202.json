@@ -1,0 +1,25 @@
+{
+    "resourceType": "ActivityDefinition",
+    "id": "ad202",
+    "name": "AD202",
+    "title": "ActivityDefinition AD202",
+    "status": "active",
+    "experimental": true,
+    "description": "Digoxin-cyclosporine activity definition for consultation",
+    "kind": "ServiceRequest",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "11429006",
+                "display": "Consultation"
+            }
+        ],
+        "text": "Consultation"
+    },
+    "participant": [
+        {
+            "type": "practitioner"
+        }
+    ]
+}

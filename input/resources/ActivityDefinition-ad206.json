@@ -1,0 +1,35 @@
+{
+    "resourceType": "ActivityDefinition",
+    "id": "ad206",
+    "name": "AD206",
+    "title": "ActivityDefinition AD206",
+    "status": "active",
+    "experimental": true,
+    "description": "Digoxin-cyclosporine activity definition for electrolyte panel",
+    "kind": "ServiceRequest",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "271236005",
+                "display": "Serum potassium level"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "312475002",
+                "display": "Plasma magnesium level"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "390963002",
+                "display": "Plasma calcium level"
+            }
+        ],
+        "text": "Electrolyte Panel"
+    },
+    "participant": [
+        {
+            "type": "practitioner"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "resourceType": "ActivityDefinition",
+    "id": "ad203",
+    "name": "AD203",
+    "title": "ActivityDefinition AD203",
+    "status": "active",
+    "experimental": true,
+    "description": "Digoxin-cyclosporine activity definition for serum digoxin measurement",
+    "kind": "ServiceRequest",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "269872007",
+                "display": "Serum digoxin measurement"
+            }
+        ],
+        "text": "Serum digoxin measurement"
+    },
+    "participant": [
+        {
+            "type": "practitioner"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 
-### Summary of Normative Recommendations
+### Summary of Conformance Expectations
 
 
 **PDDI CDS knowledge artifacts.**
@@ -574,15 +574,15 @@ The CDS service response is a Card array. Each Card has specified attributes tha
       "links": [
         {
           "label": "digoxin-cyclosporine PDDI knowledge artifact",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+          "url": "http://hl7.org/fhir/uv/pddi/derived-from#digoxin-cyclosporine-knowledge-artifact"
         },
         {
           "label": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian1988"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#dorian1988"
         },
         {
           "label": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian#1987"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#dorian#1987"
         }
       ]
     },
@@ -665,15 +665,15 @@ The CDS service response is a Card array. Each Card has specified attributes tha
       "links": [
         {
           "label": "digoxin-cyclosporine PDDI knowledge artifact",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+          "url": "http://hl7.org/fhir/uv/pddi/derived-from#digoxin-cyclosporine-knowledge-artifact"
         },
         {
           "label": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#lip1993"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#lip1993"
         },
         {
           "label": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#nda20405"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#nda20405"
         }
       ]
     }
@@ -1141,15 +1141,15 @@ snipped for brevity
       "links": [
         {
           "label": "digoxin-cyclosporine PDDI knowledge artifact",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+          "url": "http://hl7.org/fhir/uv/pddi/derived-from#digoxin-cyclosporine-knowledge-artifact"
         },
         {
           "label": "(Dorian et al. Clin Invest Med 1988; 11(2):108-112) ",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian1988"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#dorian1988"
         },
         {
           "label": "(Dorian et al. Transplant Proc. 1987; 19(1):1825-1827)",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#dorian#1987"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#dorian#1987"
         }
       ]
     },
@@ -1232,15 +1232,15 @@ snipped for brevity
       "links": [
         {
           "label": "digoxin-cyclosporine PDDI knowledge artifact",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/derived-from#digoxin-cyclosporine-knowledge-artifact"
+          "url": "http://hl7.org/fhir/uv/pddi/derived-from#digoxin-cyclosporine-knowledge-artifact"
         },
         {
           "label": "(Lip et al. Postgrad Med J. 1993; 69(811):337)",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#lip1993"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#lip1993"
         },
         {
           "label": "(Digoxin-FDA [prescribing information] NDA 20405/S-004)",
-          "url": "http://hl7.org/fhir/ig/PDDI-CDS/citation#nda20405"
+          "url": "http://hl7.org/fhir/uv/pddi/citation#nda20405"
         }
       ]
     }

@@ -5,7 +5,7 @@
       <resource>
         <ValueSet xmlns="http://hl7.org/fhir">
           <id value="valueset-topicaldiclofenac"/>
-          <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-topicaldiclofenac"/>
+          <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-topicaldiclofenac"/>
           <name value="valueset-topicaldiclofenac"/>
           <version value="US 1.1"/>
           <title value="Topical Diclofenac Medications Value Set"/>
@@ -74,7 +74,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diclofenac" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-diclofenac" />
             <id value="valueset-diclofenac" />
             <version value="US 1.1" />
             <name value="valueset-diclofenac" />
@@ -794,7 +794,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-warfarin" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-warfarin" />
             <id value="valueset-warfarin" />
             <version value="US 1.1" />
             <name value="valueset-warfarin" />
@@ -1126,7 +1126,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aspirin" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-aspirin" />
             <id value="valueset-aspirin" />
             <version value="US 1.1" />
             <name value="valueset-aspirin" />
@@ -4250,7 +4250,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-bromfenac" />
             <id value="valueset-bromfenac" />
             <version value="US 1.1" />
             <name value="valueset-bromfenac" />
@@ -4386,7 +4386,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-celecoxib" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-celecoxib" />
             <id value="valueset-celecoxib" />
             <version value="US 1.1" />
             <name value="valueset-celecoxib" />
@@ -4546,7 +4546,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diflunisal" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-diflunisal" />
             <id value="valueset-diflunisal" />
             <version value="US 1.1" />
             <name value="valueset-diflunisal" />
@@ -4614,7 +4614,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-etodolac" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-etodolac" />
             <id value="valueset-etodolac" />
             <version value="US 1.1" />
             <name value="valueset-etodolac" />
@@ -4746,7 +4746,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fenoprofen" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fenoprofen" />
             <id value="valueset-fenoprofen" />
             <version value="US 1.1" />
             <name value="valueset-fenoprofen" />
@@ -4930,7 +4930,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-flurbiprofen" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-flurbiprofen" />
             <id value="valueset-flurbiprofen" />
             <version value="US 1.1" />
             <name value="valueset-flurbiprofen" />
@@ -5102,7 +5102,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ibuprofen" />
             <id value="valueset-ibuprofen" />
             <version value="US 1.1" />
             <name value="valueset-ibuprofen" />
@@ -6670,7 +6670,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-indomethacin" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-indomethacin" />
             <id value="valueset-indomethacin" />
             <version value="US 1.1" />
             <name value="valueset-indomethacin" />
@@ -6970,7 +6970,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketoprofen" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ketoprofen" />
             <id value="valueset-ketoprofen" />
             <version value="US 1.1" />
             <name value="valueset-ketoprofen" />
@@ -7226,7 +7226,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketorolac" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ketorolac" />
             <id value="valueset-ketorolac" />
             <version value="US 1.1" />
             <name value="valueset-ketorolac" />
@@ -7530,7 +7530,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-mefenamate" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-mefenamate" />
             <id value="valueset-mefenamate" />
             <version value="US 1.1" />
             <name value="valueset-mefenamate" />
@@ -7630,7 +7630,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meloxicam" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-meloxicam" />
             <id value="valueset-meloxicam" />
             <version value="US 1.1" />
             <name value="valueset-meloxicam" />
@@ -8050,7 +8050,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nabumetone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-nabumetone" />
             <id value="valueset-nabumetone" />
             <version value="US 1.1" />
             <name value="valueset-nabumetone" />
@@ -8146,7 +8146,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-naproxen" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-naproxen" />
             <id value="valueset-naproxen" />
             <version value="US 1.1" />
             <name value="valueset-naproxen" />
@@ -8846,7 +8846,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nepafenac" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-nepafenac" />
             <id value="valueset-nepafenac" />
             <version value="US 1.1" />
             <name value="valueset-nepafenac" />
@@ -8950,7 +8950,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-oxaprozin" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-oxaprozin" />
             <id value="valueset-oxaprozin" />
             <version value="US 1.1" />
             <name value="valueset-oxaprozin" />
@@ -9046,7 +9046,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-piroxicam" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-piroxicam" />
             <id value="valueset-piroxicam" />
             <version value="US 1.1" />
             <name value="valueset-piroxicam" />
@@ -9258,7 +9258,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-sulindac" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-sulindac" />
             <id value="valueset-sulindac" />
             <version value="US 1.1" />
             <name value="valueset-sulindac" />
@@ -9334,7 +9334,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-tolmetin" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-tolmetin" />
             <id value="valueset-tolmetin" />
             <version value="US 1.1" />
             <name value="valueset-tolmetin" />
@@ -9418,7 +9418,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-NSAIDS" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-NSAIDS" />
             <id value="valueset-NSAIDS" />
             <version value="US 1.0" />
             <name value="valueset-NSAIDS" />
@@ -9441,67 +9441,67 @@
             <copyright value="Attribution CC BY" />
             <compose>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aspirin" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-aspirin" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-bromfenac" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-bromfenac" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-celecoxib" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-celecoxib" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diclofenac" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-diclofenac" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-diflunisal" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-diflunisal" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-etodolac" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-etodolac" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fenoprofen" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fenoprofen" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-flurbiprofen" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-flurbiprofen" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ibuprofen" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ibuprofen" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-indomethacin" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-indomethacin" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketoprofen" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ketoprofen" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-ketorolac" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-ketorolac" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-mefenamate" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-mefenamate" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meloxicam" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-meloxicam" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nabumetone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-nabumetone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-naproxen" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-naproxen" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-nepafenac" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-nepafenac" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-oxaprozin" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-oxaprozin" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-piroxicam" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-piroxicam" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-sulindac" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-sulindac" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-tolmetin" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-tolmetin" />
                </include>
             </compose>
          </ValueSet>
@@ -9514,7 +9514,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-eplerenone" />
             <id value="valueset-eplerenone" />
             <version value="US 1.1" />
             <name value="valueset-eplerenone" />
@@ -9622,7 +9622,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-spironolactone" />
             <id value="valueset-spironolactone" />
             <version value="US 1.1" />
             <name value="valueset-spironolactone" />
@@ -9914,7 +9914,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-AAS" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-AAS" />
             <id value="valueset-AAS" />
             <version value="US 1.1" />
             <name value="valueset-AAS" />
@@ -9937,10 +9937,10 @@
             <copyright value="Attribution CC BY" />
             <compose>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-eplerenone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-eplerenone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-spironolactone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-spironolactone" />
                </include>
             </compose>
          </ValueSet>
@@ -9953,7 +9953,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexlansoprazole" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-dexlansoprazole" />
             <id value="valueset-dexlansoprazole" />
             <version value="US 1.1" />
             <name value="valueset-dexlansoprazole" />
@@ -10077,7 +10077,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-esomeprazole" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-esomeprazole" />
             <id value="valueset-esomeprazole" />
             <version value="US 1.1" />
             <name value="valueset-esomeprazole" />
@@ -10417,7 +10417,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-lansoprazole" />
             <id value="valueset-lansoprazole" />
             <version value="US 1.1" />
             <name value="valueset-lansoprazole" />
@@ -10605,7 +10605,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-omeprazole" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-omeprazole" />
             <id value="valueset-omeprazole" />
             <version value="US 1.1" />
             <name value="valueset-omeprazole" />
@@ -11141,7 +11141,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-pantoprazole" />
             <id value="valueset-pantoprazole" />
             <version value="US 1.1" />
             <name value="valueset-pantoprazole" />
@@ -11297,7 +11297,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rabeprazole" />
             <id value="valueset-rabeprazole" />
             <version value="US 1.1" />
             <name value="valueset-rabeprazole" />
@@ -11437,7 +11437,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-PPIS" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-PPIS" />
             <id value="valueset-PPIS" />
             <version value="US 1.1" />
             <name value="valueset-PPIS" />
@@ -11460,22 +11460,22 @@
             <copyright value="Attribution CC BY" />
             <compose>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexlansoprazole" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-dexlansoprazole" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-esomeprazole" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-esomeprazole" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-lansoprazole" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-lansoprazole" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-omeprazole" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-omeprazole" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-pantoprazole" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-pantoprazole" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rabeprazole" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rabeprazole" />
                </include>
             </compose>
          </ValueSet>
@@ -11488,7 +11488,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-Hx-UGIB-snomed" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-Hx-UGIB-snomed" />
             <id value="valueset-Hx-UGIB-snomed" />
             <version value="1.0" />
             <name value="valueset-Hx-UGIB-snomed" />
@@ -11620,7 +11620,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aldosterone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-aldosterone" />
             <id value="valueset-aldosterone" />
             <version value="US 1.1" />
             <name value="valueset-aldosterone" />
@@ -11660,7 +11660,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-betamethasone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-betamethasone" />
             <id value="valueset-betamethasone" />
             <version value="US 1.1" />
             <name value="valueset-betamethasone" />
@@ -12784,7 +12784,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cloprednol" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cloprednol" />
             <id value="valueset-cloprednol" />
             <version value="US 1.1" />
             <name value="valueset-cloprednol" />
@@ -12824,7 +12824,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cortisone" />
             <id value="valueset-cortisone" />
             <version value="US 1.1" />
             <name value="valueset-cortisone" />
@@ -12920,7 +12920,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortivazol" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cortivazol" />
             <id value="valueset-cortivazol" />
             <version value="US 1.1" />
             <name value="valueset-cortivazol" />
@@ -12960,7 +12960,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-deflazacort" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-deflazacort" />
             <id value="valueset-deflazacort" />
             <version value="US 1.1" />
             <name value="valueset-deflazacort" />
@@ -13140,7 +13140,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-desoxycorticosterone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-desoxycorticosterone" />
             <id value="valueset-desoxycorticosterone" />
             <version value="US 1.1" />
             <name value="valueset-desoxycorticosterone" />
@@ -13252,7 +13252,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexamethasone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-dexamethasone" />
             <id value="valueset-dexamethasone" />
             <version value="US 1.1" />
             <name value="valueset-dexamethasone" />
@@ -14300,7 +14300,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fludrocortisone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fludrocortisone" />
             <id value="valueset-fludrocortisone" />
             <version value="US 1.1" />
             <name value="valueset-fludrocortisone" />
@@ -14368,7 +14368,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fluocortolone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fluocortolone" />
             <id value="valueset-fluocortolone" />
             <version value="US 1.1" />
             <name value="valueset-fluocortolone" />
@@ -14460,7 +14460,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-hydrocortisone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-hydrocortisone" />
             <id value="valueset-hydrocortisone" />
             <version value="US 1.1" />
             <name value="valueset-hydrocortisone" />
@@ -18896,7 +18896,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meprednisone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-meprednisone" />
             <id value="valueset-meprednisone" />
             <version value="US 1.1" />
             <name value="valueset-meprednisone" />
@@ -18940,7 +18940,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-methylprednisolone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-methylprednisolone" />
             <id value="valueset-methylprednisolone" />
             <version value="US 1.1" />
             <name value="valueset-methylprednisolone" />
@@ -19436,7 +19436,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-paramethasone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-paramethasone" />
             <id value="valueset-paramethasone" />
             <version value="US 1.1" />
             <name value="valueset-paramethasone" />
@@ -19484,7 +19484,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisolone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-prednisolone" />
             <id value="valueset-prednisolone" />
             <version value="US 1.1" />
             <name value="valueset-prednisolone" />
@@ -20620,7 +20620,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-prednisone" />
             <id value="valueset-prednisone" />
             <version value="US 1.1" />
             <name value="valueset-prednisone" />
@@ -20888,7 +20888,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednylidene" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-prednylidene" />
             <id value="valueset-prednylidene" />
             <version value="US 1.1" />
             <name value="valueset-prednylidene" />
@@ -20928,7 +20928,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rimexolone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rimexolone" />
             <id value="valueset-rimexolone" />
             <version value="US 1.1" />
             <name value="valueset-rimexolone" />
@@ -21004,7 +21004,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-triamcinolone" />
             <id value="valueset-triamcinolone" />
             <version value="US 1.1" />
             <name value="valueset-triamcinolone" />
@@ -21856,7 +21856,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-trilostane" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-trilostane" />
             <id value="valueset-trilostane" />
             <version value="US 1.1" />
             <name value="valueset-trilostane" />
@@ -22004,7 +22004,7 @@
    <entry>
       <resource>
          <ValueSet>
-            <url value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-SCS" />
+            <url value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-SCS" />
             <id value="valueset-SCS" />
             <version value="US 1.1" />
             <name value="valueset-SCS" />
@@ -22027,64 +22027,64 @@
             <copyright value="Attribution CC BY" />
             <compose>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-aldosterone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-aldosterone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-betamethasone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-betamethasone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cloprednol" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cloprednol" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortisone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cortisone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-cortivazol" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-cortivazol" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-deflazacort" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-deflazacort" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-desoxycorticosterone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-desoxycorticosterone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-dexamethasone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-dexamethasone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fludrocortisone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fludrocortisone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-fluocortolone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-fluocortolone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-hydrocortisone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-hydrocortisone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-meprednisone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-meprednisone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-methylprednisolone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-methylprednisolone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-paramethasone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-paramethasone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisolone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-prednisolone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednisone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-prednisone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-prednylidene" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-prednylidene" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-rimexolone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-rimexolone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-triamcinolone" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-triamcinolone" />
                </include>
                <include>
-                  <valueSet value="http://hl7.org/fhir/ig/PDDI-CDS/ValueSet/valueset-trilostane" />
+                  <valueSet value="http://hl7.org/fhir/uv/pddi/ValueSet/valueset-trilostane" />
                </include>
             </compose>
          </ValueSet>

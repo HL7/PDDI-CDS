@@ -59,7 +59,7 @@ The [Use Case](./use-cases.html) section of this implementation guide describes 
 
 The example CDS services shown in this implementation guide were written without the use of a specific authoring tool. The [Clinical Decision Support Authoring Tool](https://cds.ahrq.gov/cdsconnect/authoring) is a component of the CDS Connect project funded by the Agency for Healthcare Research and Quality [(AHRQ)](https://www.ahrq.gov/). It is possible to use the authoring tool to develop PDDI CDS logic using CQL. Interested persons can access [a test version of the tool with these features on GitHub](https://github.com/dbmi-pitt/AHRQ-CDS-Connect-Authoring-Tool). However, the authoring tool was not used to assist with PDDI CDS that uses CDS Hooks as specified in this implementation guide.
 
-In addition, these artifacts have been tested over the years in various ways including at connectathons and, most recently, using the VS code environment: https://github.com/dbmi-pitt/pddi-cds-vscode-validation 
+In addition, these artifacts have been tested over the years in various ways including at connectathons and, most recently, using the VS code environment: [pddi-cds-vscode-validation](https://github.com/dbmi-pitt/pddi-cds-vscode-validation)
 
 ### Scope
 

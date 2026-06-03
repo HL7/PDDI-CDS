@@ -26,10 +26,10 @@ All scenarios invoke the CDS service – so `prefetch` warfarin resources overla
 
 
 
-**Scenario 1: `context:` topical diclofenac – MedicationRequest; `prefetch:` warfarin – MedicationRequest **
+**Scenario 1: `context:` topical diclofenac – MedicationRequest; `prefetch:` warfarin – MedicationRequest**
 * [Request NSAID + Warfarin scenario 01](requests/request-warfarin-nsaid-scenario-01.json)
 
-**Scenario 2: `context:` systemic NSAID – MedicationRequest; `prefetch:` warfarin – MedicationRequest, proton pump inhibitor – MedicationRequest,**
+**Scenario 2: `context:` systemic NSAID – MedicationRequest; `prefetch:` warfarin – MedicationRequest, proton pump inhibitor – MedicationRequest**
 * [Request NSAID + Warfarin scenario 02](requests/request-warfarin-nsaid-scenario-02.json) 
 
 **Scenario 3: `context:` systemic NSAID – MedicationRequest; `prefetch:` wafarin – MedicationDispense, >65 years old – Patient, systemic corticosteroid – MedicationRequest**
@@ -60,7 +60,7 @@ All scenarios invoke the CDS service – so `prefetch` warfarin resources overla
 **Scenario 1: `context:` cyclosporine – MedicationRequest; `prefetch:` digoxin – MedicationDispense, digoxin level – Observation, furosemide – MedicationDispense**
 * [Request Digoxin + Cyclosporine scenario 01](requests/request-digoxin-cyclosporine-scenario-01.json)
 
-**Scenario 2: `context:` cyclosporine – MedicationRequest; `prefetch:` digoxin – MedicationDispense, cyclosporine - MedicationRequest, potassium – Observation,** 
+**Scenario 2: `context:` cyclosporine – MedicationRequest; `prefetch:` digoxin – MedicationDispense, cyclosporine - MedicationRequest, potassium – Observation** 
 * [Request Digoxin + Cyclosporine scenario 02](requests/request-digoxin-cyclosporine-scenario-02.json)
 
 **Scenario 3: `context:` digoxin – MedicationRequest; `prefetch:` cyclosporine – MedicationRequest, renal – Observation**

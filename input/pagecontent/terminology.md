@@ -44,11 +44,3 @@ The Element ValueSet-excludes are signified with an identical name to the Elemen
 
 <p/><p/>
 
-
-### Code Systems
-
-
-
-{% include list-simple-codesystems.xhtml %}
-
-<p/><p/>

@@ -1,5 +1,14 @@
 ### STU 1 (1.0.0)
 
+#### Non-Compatible Changes Applied
+
+* [FHIR-40097](https://jira.hl7.org/browse/FHIR-40097): Clarify CDS Hooks indicator values
+
+#### Compatible, Substantive Changes Applied
+
+* [FHIR-37697](https://jira.hl7.org/browse/FHIR-37697):  add a paragraph on evidence resource and EBM on FHIR
+* [FHIR-40035](https://jira.hl7.org/browse/FHIR-40035): Consider incorporation of DetectedIssue
+
 #### Non-Substantive Changes Applied
 
 * [FHIR-50176](https://jira.hl7.org/browse/FHIR-50176): Add discussion of delivery/integration using a SMART app
@@ -7,12 +16,9 @@
 * [FHIR-37693](https://jira.hl7.org/browse/FHIR-37693): Add a paragraph that makes clear what is meant by a 'remote' CDS service
 * [FHIR-37694](https://jira.hl7.org/browse/FHIR-37694): Need to fill in the section about patient-view
 * [FHIR-37695](https://jira.hl7.org/browse/FHIR-37695): ensure that the *minimal* information model for representing clinically actionable knowledge about PDDIs is not referred to as the "minimum" information model
-* [FHIR-37697](https://jira.hl7.org/browse/FHIR-37697):  add a paragraph on evidence resource and EBM on FHIR
 * [FHIR-39969](https://jira.hl7.org/browse/FHIR-39969): Improve the "universal" orientation of the guide 
 * [FHIR-39970](https://jira.hl7.org/browse/FHIR-39970): Revise the way profiles are included in the guide
-* [FHIR-40035](https://jira.hl7.org/browse/FHIR-40035): Consider incorporation of DetectedIssue
 * [FHIR-40037](https://jira.hl7.org/browse/FHIR-40037): Make the value sets based upon use of drug classes wherever possible
-* [FHIR-40097](https://jira.hl7.org/browse/FHIR-40097): Clarify CDS Hooks indicator values
 * [FHIR-39922](https://jira.hl7.org/browse/FHIR-39922): Typo in Introduction page
 
 ### STU 1 Ballot (1.0.0-ballot)

@@ -4,7 +4,7 @@
 
 **PDDI CDS knowledge artifacts.**
 
-* It is RECOMMENDED that knowledge artifacts for PDDI CDS are written so that clinician-focused response information adheres to the 8 detailed best practice recommendations discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://w3id.org/hclscg/pddi).
+* Knowledge artifacts for PDDI CDS SHOULD be written so that clinician-focused response information adheres to the 8 detailed best practice recommendations discussed in the Community Group Note titled [Minimum Representation of Potential Drug-Drug Interaction Knowledge and Evidence](https://w3id.org/hclscg/pddi).
 
 **CDS Hooks.**
 
@@ -20,7 +20,7 @@
 
 * If the engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, it SHOULD support processing of the configuration options described in [Extension subsection](#cds-hooks-request). If EHR clients do not send the configuration options, the default behavior of the service should be to NOT suppress card responses at order-sign that might duplicate card responses sent at order-select. This is because the EHR client should have an active role in the decision of whether to filter out alert responses.
 
-* It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
+* The rule engine SHOULD NOT be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
 
 * A CDS service MAY choose to use a DetectedIssue resource to convey additional information about a drug-drug interaction. If a DetectedIssue is provided, it SHOULD be incorporated within the CDS Hooks response as a suggested action with type create.
 
@@ -29,7 +29,7 @@
 
 * Prior to a hook trigger and subsequent processes, the EHR SHOULD initiate a [CDS Discovery](#cds-discovery) request. The CDS discovery response is for the system and would not be viewed by the clinician.
 
-* The EHR SHOULD call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) SHOULD contain specified information for the hook that was triggered including FHIR server, user, and context. Provision of prefetch data as specified by the CDS service is RECOMMENDED.
+* The EHR SHOULD call the PDDI CDS service by sending an HTTP POST containing a CDS Hooks request (JSON formatted) to the service endpoint (e.g.,http://FHIR.org/PDDI-CDS/warfarin-nsaids-cds). The JSON ([CDS Hooks request](#cds-hooks-request)) SHOULD contain specified information for the hook that was triggered including FHIR server, user, and context. CDS Services SHOULD provide prefetch data as part of their CDS Hooks Discovery response.
 
 * If the EHR client is requesting a CDS from an engine implements the advanced functionality described in this implementation guide (i.e., coordination between order-select and order-sign to prevent alert duplication) then, the client SHOULD use the configuration options described in [Extension subsection](#cds-hooks-request). The purpose of this is so that the EHR client has an active role in the decision to filter out alert responses.
 
@@ -42,7 +42,7 @@ This section contains documentation on how to implement PDDI CDS artifacts from 
 #### Getting Started with PDDI CDS
 {:.no_toc}
 
-The words SHOULD, SHOULD NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, AND OPTIONAL are used as defined [*"Key words for use in Request for Comment (RFC) to Indicate Requirement Levels".*](https://tools.ietf.org/html/rfc2119) S. Bradner. IETF. March 1997. Best Current Practice.
+This specification uses the conformance verbs SHALL, SHOULD, and MAY as described in the [Conformance Language](https://hl7.org/fhir/conformance-rules.html#conflang) topic of the base FHIR specification.
 
 
 #### What You Will Need
@@ -95,7 +95,7 @@ For technical implementers, the intended role of prefetch is to improve the CDS 
 
 Implementers need to consider and address security and privacy concerns that might arise when from providing CDS as a service. One thing to consider is if the clinician ordering a drug is not authorized to have access to information masked due to a patient's consent directive that restricts sharing. For example, consider the [Warfarin + non-steroidal anti-inflamatory drugs (NSAIDs) Use Case](./use-cases.html) where the clinician selects warfarin for a patient currently prescribed a NSAID and a proton pump inhibitor. It is conceivable that the clinician would not be aware that the patient is also taking a selective serotonin reuptake inhibitor (SSRI) for a major depressive disorder because the patient did not consent to share this information with anyone besides the mental health provider who prescribed the SSRI. Assuming that the FHIR Authorization Server enforces the patient's consent directive not to disclose to the CDS that the patient is taking a SSRI then, the clinician will not be alerted about the PDDI with NSAID. However, the FHIR Authorization Server could also have an organizational policy that authorizes the CDS as a "super user" and permits it to access to information that is masked from an unauthorized clinician. If the CDS service identifies a PDDI that could result from the order selected by the clinician, it could return a CDS Hook card cautioning the clinician of a possible counter-indication, and recommending that the clinician ask the patient about any medications that the patient has not shared. This would fall under a ["Break the Glass" (BTG)](https://hipaa.yale.edu/security/break-glass-procedure-granting-emergency-access-critical-ephi-systems) scenario and would require a special procedure.  A similar CDS BTG scenario was demonstrated during the [HIMSS 201902 Orlando Consumer Centered Care Planning Interoperability Showcase](https://confluence.hl7.org/display/SEC/HIMSS+201902+Orlando) and [is described here](https://confluence.hl7.org/display/SEC/HIMSS+201902+Sharing+with+Protections). It was sponsored by the HL7 Security and CBCP WGs, VA, Allscripts, Perspecta, MyPatientLink and others. For more information, see https://build.fhir.org/security-labels.html#break-the-glass and https://build.fhir.org/operationoutcome-example-break-the-glass.html.
 
-It is RECOMMENDED that the rule engine not be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
+The rule engine SHOULD NOT be given permission to access information that is masked from the clinician whose EHR session has triggered the CDS request (aka 'super user' status) unless there is a specific Break the Glass (BTG) procedure that covers such situations. If there a valid BTG procedure that allows the rule engine to access such information, it SHOULD return an information card stating that such a directive is present. The CDS card SHOULD include that the clinician will be held accountable for BTG throughout any related system audit.
 
 #### Configuration Options and the CDS Service
 {:.no_toc}
